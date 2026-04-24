@@ -14,7 +14,7 @@ El software en Linux se divide principalmente en tres categorías:
 1. Software de Servidor: Funciona en segundo plano, sin interacción directa con el monitor o el teclado. Su función es procesar datos o servir información a otros equipos (llamados *clientes*).
 2. Software de Escritorio: Aplicaciones con las que el usuario interactúa directamente (navegadores web, reproductores, editores). En muchos casos, este software actúa como un *cliente* que se conecta a un servidor. 
 
-![338](04%20-%20Otros/Imagenes/Pasted%20image%2020260423231426.png)
+![](04%20-%20Otros/Imagenes/Pasted%20image%2020260423231426.png)
 
 3. Herramientas: Utilidades que facilitan la gestión del sistema operativo (herramientas de configuración, la terminal o *shell*, y compiladores de código).
 
