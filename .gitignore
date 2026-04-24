@@ -1,0 +1,16 @@
+# --- ARCHIVOS DE OBSIDIAN ---
+# Ignorar el estado de tu ventana y qué notas dejaste abiertas
+.obsidian/workspace.json
+
+# Ignorar la caché del gráfico de nodos (pesa mucho y se genera solo)
+.obsidian/graph.json
+
+# Ignorar las configuraciones locales del propio plugin de Git
+.obsidian/plugins/obsidian-git/data.json
+
+
+# --- ARCHIVOS BASURA DEL SISTEMA ---
+# Archivos ocultos que crean Windows o macOS en las carpetas
+.DS_Store
+Thumbs.db
+Desktop.ini
