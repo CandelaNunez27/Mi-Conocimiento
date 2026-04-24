@@ -45,7 +45,7 @@ Acceso[^1]
 sudo apt upgrade
 ```
 
-copiar y pegar imágenes
+copiar y pegar imágenes con ctrl + p seleccionar link cosverter vault: links in Markdown para ser visibles en github
 ![194](04%20-%20Otros/Imagenes/icons%20tina.jpg)
 
 [^1]: Nota 1
