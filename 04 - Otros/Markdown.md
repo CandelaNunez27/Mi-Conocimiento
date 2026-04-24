@@ -46,6 +46,6 @@ sudo apt upgrade
 ```
 
 copiar y pegar imágenes
-![[icons tina.jpg|194]]
+![194](04%20-%20Otros/Imagenes/icons%20tina.jpg)
 
 [^1]: Nota 1
