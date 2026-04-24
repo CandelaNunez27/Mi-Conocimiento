@@ -74,48 +74,44 @@ Almacenan información estructurada y permiten realizar consultas o reportes uti
 
 Aunque los servidores son el fuerte de Linux, también cuenta con un riquísimo ecosistema de aplicaciones para el usuario final (escritorio).
 
-** La Interfaz Gráfica (Cómo funciona lo visual)**
+**La Interfaz Gráfica (Cómo funciona lo visual)**
 
-Por defecto, una estación de trabajo Linux es solo texto. Para tener una interfaz gráfica (GUI) y usar el ratón, se necesitan capas de software:
+- X Window (X11 / X.org): Es el servidor gráfico base. Permite que el software opere en modo visual y acepta las entradas del teclado y el ratón.
 
-- **X Window (X11 / X.org):** Es el servidor gráfico base. Permite que el software opere en modo visual y acepta las entradas del teclado y el ratón.
-    
-- **Administrador de Ventanas:** Es el nivel básico. Se encarga de dibujar los menús y gestionar las ventanas en la pantalla (Ejemplos: _Compiz, FVWM, Enlightenment_).
-    
-- **Entorno de Escritorio:** Es el nivel completo. Incluye su propio administrador de ventanas, pero le suma pantallas de inicio, administrador de archivos y muchísimas utilidades integradas. Los dos gigantes indiscutibles son **KDE** y **GNOME**.
-    
+- Administrador de Ventanas: Es el nivel básico. Se encarga de dibujar los menús y gestionar las ventanas en la pantalla (Ejemplos: _Compiz, FVWM, Enlightenment_).
 
-#### 2. Ofimática (Productividad)
+- Entorno de Escritorio: Es el nivel completo. Incluye su propio administrador de ventanas, pero le suma pantallas de inicio, administrador de archivos y muchísimas utilidades integradas. Los dos gigantes indiscutibles son KDE y GNOME.
+
+
+**Ofimática (Productividad)**
 
 La alternativa libre a Microsoft Office.
 
-- **LibreOffice y OpenOffice:** Ambas ofrecen procesador de textos, hojas de cálculo, presentaciones y buscan compatibilidad total con los formatos de Microsoft.
-    
-- _Historia y política del Open Source:_ Originalmente, _Sun Microsystems_ liberó **OpenOffice**. Cuando _Oracle_ compró Sun, la comunidad desconfió del soporte que Oracle le daría al proyecto. Como resultado, el proyecto se "bifurcó" (se dividió) creando **LibreOffice**. Hoy en día, LibreOffice tiene el mayor impulso y viene por defecto en la mayoría de las distribuciones.
-    
+- LibreOffice y OpenOffice: Ambas ofrecen procesador de textos, hojas de cálculo, presentaciones y buscan compatibilidad total con los formatos de Microsoft.
 
-#### 3. Navegadores Web y Correo Electrónico
+- _Historia y política del Open Source:_ Originalmente, _Sun Microsystems_ liberó OpenOffice. Cuando _Oracle_ compró Sun, la comunidad desconfió del soporte que Oracle le daría al proyecto. Como resultado, el proyecto se "bifurcó" (se dividió) creando LibreOffice. Hoy en día, LibreOffice tiene el mayor impulso y viene por defecto en la mayoría de las distribuciones.
 
-- **Navegadores:** **Firefox** y **Google Chrome** dominan el mercado de código abierto. Su sana competencia obliga a ambos equipos a innovar constantemente, lo que beneficia a todos los usuarios de internet.
-    
-- **Clientes de Correo (Escritorio):** * **Thunderbird** (de los creadores de Firefox/Mozilla).
+**Navegadores Web y Correo Electrónico**
+
+- Navegadores: Firefox y Google Chrome dominan el mercado de código abierto. Su sana competencia obliga a ambos equipos a innovar constantemente, lo que beneficia a todos los usuarios de internet.
+
+- Clientes de Correo (Escritorio):  Thunderbird (de los creadores de Firefox/Mozilla).
     
     - **Evolution** (del entorno GNOME).
-        
+    
     - **KMail** (del entorno KDE).
-        
+    
     - _Ventaja:_ Al usar protocolos estándar (POP, IMAP, SMTP), puedes cambiar de un cliente a otro sin perder tus correos.
-        
 
-##### 4. Herramientas Creativas y Multimedia
 
-Linux cuenta con software de nivel profesional para creadores:
+**Herramientas Creativas y Multimedia**
 
-- **Blender:** Modelado, animación y creación de películas en **3D** (utilizado incluso en producciones de Hollywood).
-    
-- **GIMP:** Manipulación y edición de imágenes en **2D** (la gran alternativa a Photoshop).
-    
-- **Audacity:** Grabación y edición de **audio**.
-    
+- Blender: Modelado, animación y creación de películas en 3D (utilizado incluso en producciones de Hollywood).
 
-¡Seguimos avanzando! Envíame el siguiente punto cuando estés listo.
+- GIMP: Manipulación y edición de imágenes en 2D (la gran alternativa a Photoshop).
+
+- Audacity: Grabación y edición de audio.
+
+
+
+

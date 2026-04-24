@@ -18,7 +18,7 @@ El kernel actúa como el administrador central de los recursos de hardware:
 
 - Gestión de entrada/salida (E/S): Controla el acceso al disco, la visualización de texto en el monitor y las conexiones de red.
 
-- Gestor de arranque(**bootloader**): **Es el código inicial que carga el kernel en memoria al encender la computadora**. En sistemas tipo UNIX, suele ser visible y editable.
+- Gestor de arranque(*bootloader*): *Es el código inicial que carga el kernel en memoria al encender la computadora*. En sistemas tipo UNIX, suele ser visible y editable.
 
 - Transferencia de control: Una vez cargado, el kernel inicia los servicios necesarios (red, servidores, etc.) para que el equipo sea funcional. 
 
@@ -34,11 +34,11 @@ Las aplicaciones dependen totalmente del kernel para funcionar y obtener recurso
 ### 2.3 Rol de Código Abierto
 Origen: Inició en 1991 como un proyecto personal de Linus Torvalds. Al crearse desde cero de forma abierta, la comunidad de usuarios pudo influir en su desarrollo y evitar los errores de sistemas UNIX anteriores.
 
-Código Fuente y Compilación: El software se escribe en código fuente (**instrucciones legibles por humanos; el kernel de Linux está escrito íntegramente en C**). Como la computadora no lo entiende de forma directa, un programa llamado compilador se encarga de traducirlo a instrucciones o código de máquina (ejecutable).
+Código Fuente y Compilación: El software se escribe en código fuente (*instrucciones legibles por humanos; el kernel de Linux está escrito íntegramente en C*). Como la computadora no lo entiende de forma directa, un programa llamado compilador se encarga de traducirlo a instrucciones o código de máquina (ejecutable).
 
 Filosofías de licenciamiento:
 
-- **Código Cerrado**: El usuario solo recibe y tiene derecho a usar el código de máquina final. **Las licencias suelen prohibir expresamente ver o intentar aplicar ingeniería inversa para descubrir el código fuente**.
+- *Código Cerrado*: El usuario solo recibe y tiene derecho a usar el código de máquina final. *Las licencias suelen prohibir expresamente ver o intentar aplicar ingeniería inversa para descubrir el código fuente*.
 
 - Código Abierto (Open Source): Se centra en garantizar el derecho de obtener, modificar y compartir el código fuente original. Aunque existen distintas variantes con diferentes reglas de redistribución, todas garantizan el acceso al código.
 
@@ -91,7 +91,7 @@ Evolución: Pasó de funcionar exclusivamente en la PC básica de su creador a s
 
 Sistemas Integrados (Embedded): Se adaptó a chips pequeños para dispositivos cotidianos (como enrutadores o grabadoras). Resulta más eficiente y económico para los fabricantes usar Linux como base que crear sistemas desde cero.
 
-**Dispositivos Móviles: El sistema operativo Android utiliza el kernel de Linux**. Esto aceleró el desarrollo de teléfonos y tablets, permitiendo a las empresas enfocarse en la interfaz del usuario final.
+*Dispositivos Móviles: El sistema operativo Android utiliza el kernel de Linux*. Esto aceleró el desarrollo de teléfonos y tablets, permitiendo a las empresas enfocarse en la interfaz del usuario final.
 
 Transparencia: En la mayoría de estos dispositivos de consumo, el usuario no nota que está usando Linux; el kernel simplemente opera de forma invisible y estable en segundo plano.
 
@@ -108,7 +108,7 @@ Rol de la máquina:
 - Servidor: Sin interfaz gráfica para ahorrar recursos; su fin es alojar servicios.
 
 Ciclos de Vida y Actualización:	
-**Diferenciamos ciclo de liberación -cada cuánto sale uno nuevo- del ciclo de mantenimiento -cuánto tiempo recibe actualizaciones-.**
+*Diferenciamos ciclo de liberación -cada cuánto sale uno nuevo- del ciclo de mantenimiento -cuánto tiempo recibe actualizaciones-.*
 - Ciclo largo (ej. RHEL): Ideal para servidores. Prioriza la estabilidad a largo plazo.
 - Ciclo corto (ej. Fedora): Ideal para escritorios. Ofrece el software más reciente.
 
@@ -127,7 +127,7 @@ Versiones de Escritorio:
 
 - Ciclo de vida: Nuevas versiones cada 3 a 5 años con soporte a largo plazo.
 
-- Compatibilidad: Su gran prioridad es la compatibilidad con versiones anteriores, llegando a incluir tecnología de máquinas virtuales para asegurar que el software antiguo siga funcionando. **Windows no tenía ninguna compatibilidad con Linux.**
+- Compatibilidad: Su gran prioridad es la compatibilidad con versiones anteriores, llegando a incluir tecnología de máquinas virtuales para asegurar que el software antiguo siga funcionando. *Windows no tenía ninguna compatibilidad con Linux.*
 
 Versiones de Servidor:
 
@@ -136,7 +136,7 @@ Versiones de Servidor:
 - Línea de comandos: Ha mejorado enormemente su capacidad de administración y automatización a través de la herramienta de scripting PowerShell.
 
 ### 3.3 Apple OS X
-Base UNIX: **A diferencia de Linux, OS X es un sistema operativo UNIX certificado, basado parcialmente en el proyecto FreeBSD.**
+Base UNIX: *A diferencia de Linux, OS X es un sistema operativo UNIX certificado, basado parcialmente en el proyecto FreeBSD.*
 
 Enfoque Principal: Está diseñado principalmente para escritorio, aunque cuenta con paquetes opcionales para gestionar servicios de red (como compartir archivos o inicios de sesión).
 
@@ -153,7 +153,7 @@ BSD es una familia de sistemas operativos de código abierto, siendo una alterna
 - Rol secundario: También pueden usarse como equipos de escritorio mediante la instalación de entornos gráficos como GNOME o KDE.
 
 ### 3.5 Otros UNIX Comerciales (Oracle Solaris, IBM AIX y HP-UX)
-**Los UNIX comerciales, a diferencia de Linux, sí pagan y pasan por la certificación oficial para usar el nombre UNIX legalmente.**
+*Los UNIX comerciales, a diferencia de Linux, sí pagan y pasan por la certificación oficial para usar el nombre UNIX legalmente.*
 
 Hardware propietario: A diferencia de Linux, estos sistemas se ejecutan exclusivamente en los equipos fabricados por sus propios creadores. Suelen ser máquinas grandes y muy potentes, diseñadas para integrarse con mainframes (sistemas informáticos heredados).
 
@@ -190,7 +190,7 @@ Niveles de Estabilidad:
 
 
 ### 3.7 Android
-Es la **distribución Linux para móviles más popular del mundo**, patrocinada por Google.
+Es la *distribución Linux para móviles más popular del mundo*, patrocinada por Google.
 
 La diferencia clave (Sin GNU): Usa el kernel de Linux, pero no incluye las herramientas tradicionales de GNU ni entornos gráficos clásicos (como Xorg). En su lugar, utiliza la máquina virtual Dalvik para ejecutar aplicaciones.
 
