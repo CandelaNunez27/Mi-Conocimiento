@@ -16,9 +16,11 @@ El motor: Virtualización
 
 - *Bare Metal*: Se instala directamente sobre hardware físico, para servidores y empresas.
 	- VMware ESXi, Hyper-V, KVM.
+
  ![128](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260415085443.png)
 
 - *Hosted*: Se instala como una app en el S.O anfitrión.
 	- VirtualBox, Workstation.
+
  ![123](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260415085455.png)
  
