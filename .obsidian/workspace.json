@@ -1,0 +1,272 @@
+{
+  "main": {
+    "id": "34feeadcef400415",
+    "type": "split",
+    "children": [
+      {
+        "id": "40f721689d6a6307",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d0903c8a49aff483",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "Imagenes/Pasted image 20260422091704.png"
+              },
+              "icon": "lucide-image",
+              "title": "Pasted image 20260422091704"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "228e6ce0161408d1",
+    "type": "split",
+    "children": [
+      {
+        "id": "f73fb1b7698164d6",
+        "type": "tabs",
+        "dimension": 68.6372745490982,
+        "children": [
+          {
+            "id": "e6bb5d90017c09e9",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Explorador de archivos"
+            }
+          },
+          {
+            "id": "55162510acda4f1b",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Buscar"
+            }
+          },
+          {
+            "id": "76c67e6dc4020b05",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Marcadores"
+            }
+          }
+        ]
+      },
+      {
+        "id": "35883c08bbbac9dc",
+        "type": "tabs",
+        "dimension": 31.362725450901802,
+        "children": [
+          {
+            "id": "f76b255a6c12c59c",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Vista gráfica"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 240.5
+  },
+  "right": {
+    "id": "2c47654ff3f8d557",
+    "type": "split",
+    "children": [
+      {
+        "id": "997bd93611b56028",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "2a41270ba61315d0",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Enlaces entrantes"
+            }
+          },
+          {
+            "id": "ef2013e00ba032e1",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "1° Año/Arquitectura de Computadoras/Módulo 1/003 - Codificación y Representación de Datos.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Enlaces salientes de 003 - Codificación y Representación de Datos"
+            }
+          },
+          {
+            "id": "f18960a56991269d",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Etiquetas"
+            }
+          },
+          {
+            "id": "fc9485ed9d9fa4d9",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "Todas las propiedades"
+            }
+          },
+          {
+            "id": "fd2337b2bade97e2",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "1° Año/Arquitectura de Computadoras/Módulo 1/003 - Codificación y Representación de Datos.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Esquema de 003 - Codificación y Representación de Datos"
+            }
+          },
+          {
+            "id": "7f13264dba127df2",
+            "type": "leaf",
+            "state": {
+              "type": "footnotes",
+              "state": {},
+              "icon": "lucide-file-signature",
+              "title": "Notas al pie"
+            }
+          },
+          {
+            "id": "983a1901fe281c0e",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {},
+              "icon": "calendar-with-checkmark",
+              "title": "Calendar"
+            }
+          }
+        ],
+        "currentTab": 6
+      }
+    ],
+    "direction": "horizontal",
+    "width": 225.5,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Abrir selector rápido": false,
+      "graph:Abrir vista gráfica": false,
+      "canvas:Crear nuevo lienzo": false,
+      "templates:Insertar plantilla": false,
+      "command-palette:Abrir paleta de comandos": false,
+      "bases:Crear nueva base": false,
+      "daily-notes:Abrir la nota de hoy": false
+    }
+  },
+  "active": "d0903c8a49aff483",
+  "lastOpenFiles": [
+    "Imagenes/Pasted image 20260422090053.png",
+    "Imagenes/Pasted image 20260422085912.png",
+    "Imagenes/Pasted image 20260422085724.png",
+    "Imagenes/Pasted image 20260422085556.png",
+    "Imagenes/Pasted image 20260422085524.png",
+    "Imagenes/Pasted image 20260422083736.png",
+    "Imagenes/Pasted image 20260422083337.png",
+    "Imagenes/Pasted image 20260415085455.png",
+    "Imagenes/Pasted image 20260415085443.png",
+    "Imagenes/Pasted image 20260415084103.png",
+    "Curso Arquitectura de Cloud/2026-04-17 Día 2 Práctica.md",
+    "Curso Arquitectura de Cloud/2026-04-22 Día 3 Introducción La Nube.md",
+    "Imagenes/Pasted image 20260422091704.png",
+    "Curso Arquitectura de Cloud/2026-04-15 Día 1 Introducción.md",
+    "Markdown.md",
+    "1° Año/01 - Arquitectura de Computadoras/Módulo 3.2/02 - Plataforma Arduino (Hardware y Software).md",
+    "1° Año/01 - Arquitectura de Computadoras/Módulo 3.2/03 - Programación de Arduino y Circuitos Prácticos.md",
+    "1° Año/01 - Arquitectura de Computadoras/Módulo 3.2/01 - Sistemas Embebidos y Microcontroladores.md",
+    "1° Año/01 - Arquitectura de Computadoras/Módulo 1.2/02 - Teoremas y Leyes del Álgebra de Boole.md",
+    "1° Año/01 - Arquitectura de Computadoras/Módulo 1.3/01 - Lógica Funcional y Unidad Aritmético Lógica (ULA).md",
+    "1° Año/01 - Arquitectura de Computadoras/Módulo 1.3/02 - Elementos de Memoria y Circuitos Secuenciales.md",
+    "1° Año/01 - Arquitectura de Computadoras/Módulo 2.1/02 - Unidad de Control y Ciclo de Instrucción.md",
+    "1° Año/01 - Arquitectura de Computadoras/Módulo 2.2/02 - Organización y Capacidad de Memoria.md",
+    "1° Año/01 - Arquitectura de Computadoras/Módulo 2.3/01 - Fundamentos de la Unidad de Entrada y Salida.md",
+    "1° Año/01 - Arquitectura de Computadoras/Módulo 2.3/02 - Técnicas de Sincronización y Transferencia.md",
+    "1° Año/01 - Arquitectura de Computadoras/Módulo 3.1/01 - Microarquitectura y Gestión de Memoria Avanzada.md",
+    "1° Año/01 - Arquitectura de Computadoras/Módulo 3.1/02 - Arquitecturas Paralelas y Topologías de Red.md",
+    "1° Año/01 - Arquitectura de Computadoras/Módulo 3.1/03 - HPC, Métricas de Rendimiento y Modelos.md",
+    "1° Año/01 - Arquitectura de Computadoras/Módulo 2.3/03 - Arquitectura de Buses y Estándares.md",
+    "1° Año/01 - Arquitectura de Computadoras/Módulo 1.1/01 - Arquitectura Básica y Señales.md",
+    "Curso Arquitectura de Cloud",
+    "1° Año/01 - Arquitectura de Computadoras/Módulo 2.2/01 - Funcionamiento de la Unidad de Memoria.md",
+    "1° Año/01 - Arquitectura de Computadoras/Módulo 1.1/02 - Sistemas de Numeración.md",
+    "1° Año/00 - Índice/00 - Arquitectura de Computadoras.md",
+    "Personal",
+    "1° Año/01 - Arquitectura de Computadoras/Módulo 2.2/03 - Expansión de Memoria y Diseño de Bancos.md",
+    "1° Año/01 - Arquitectura de Computadoras/Módulo 2.1/01 - Modelo Clásico de Von Neumann.md",
+    "1° Año/01 - Arquitectura de Computadoras/Módulo 2.1/03 - Lenguaje Ensamblador (Assembler).md",
+    "Imagenes",
+    "1° Año/01 - Arquitectura de Computadoras/Módulo 3.2",
+    "1° Año/01 - Arquitectura de Computadoras/Sin título.canvas",
+    "1° Año/01 - Arquitectura de Computadoras/Módulo 3.1",
+    "1° Año/01 - Arquitectura de Computadoras/Módulo 2.3",
+    "1° Año/01 - Arquitectura de Computadoras/Módulo 2.2",
+    "1° Año/01 - Arquitectura de Computadoras/Módulo 2.1",
+    "1° Año/01 - Arquitectura de Computadoras/Módulo 1.3",
+    "1° Año/01 - Arquitectura de Computadoras/Módulo 1.2"
+  ]
+}

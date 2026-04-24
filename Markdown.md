@@ -1,0 +1,51 @@
+# titulo
+## titulo
+### titulo
+#### titulo
+##### titulo
+###### titulo
+
+
+---
+línea
+
+*de costado*
+
+**negrita**
+
+~~tachado~~
+
+==resaltado amarillo
+
+- viñeta
+1. enumeración
+
+- [ ] tags
+- [x] Tareas
+
+Acceso[^1]
+
+| fecha | hora  |
+| ----- | ----- |
+| 22/03 | 18 hs |
+> **Ejemplos
+
+
+
+
+[1° Año] enlace dentro de obsidian
+
+[Google](https://www.google.com/?hl=es&zx=1775787126621 )
+
+
+![Tutorial](https://www.youtube.com/watch?v=8xgv8dy6w1I)
+
+
+```bash
+sudo apt upgrade
+```
+
+copiar y pegar imágenes
+![[icons tina.jpg|194]]
+
+[^1]: Nota 1
