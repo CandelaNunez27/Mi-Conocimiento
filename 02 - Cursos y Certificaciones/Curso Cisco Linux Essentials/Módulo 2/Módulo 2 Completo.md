@@ -220,3 +220,34 @@ La regla general es que el creador siempre retiene la propiedad intelectual; lo 
 FOSS (_Free and Open Source Software_) agrupa a todo este tipo de software donde el creador original "libera" su derecho a restringir quién o cómo se usa el programa, garantizando el acceso y la redistribución del código fuente.
 
 Diversidad de Licencias: Dado que el licenciamiento tiene un fuerte componente político y filosófico, muchas organizaciones han creado sus propias licencias de código abierto que se adaptan a sus intereses (ej. la licencia MIT, la de la Universidad de California, la de la Fundación Apache o las de la _Free Software Foundation_).
+
+---
+
+### 3.1 La Free Software Foundation y el Open Source Initiative
+
+Existen dos grandes organizaciones que lideran el mundo del código abierto, cada una con su propia filosofía:
+
+|**Característica**|**Free Software Foundation (FSF)**|**Open Source Initiative (OSI)**|
+|---|---|---|
+|**Fundadores**|Richard Stallman (1985).|Bruce Perens y Eric Raymond (1998).|
+|**Enfoque**|**"Software Libre":** Se enfoca en la ética y la libertad. Consideran que el software cerrado/propietario es perjudicial.|**"Código Abierto":** Nació porque sentían que la FSF era muy extrema/política. Tienen un enfoque más práctico y empresarial.|
+|**Regla de Oro**|**Copyleft:** Si modificas un software libre, _estás obligado_ a compartir tus cambios bajo la misma licencia.|**Permisivo:** Cero restricciones. Puedes usar el código abierto y modificarlo, sin estar obligado a compartir tus cambios.|
+|**Gestión de Licencias**|**Crea** sus propias licencias (Familia GPL).|**No crea** licencias; evalúa y _certifica_ licencias de terceros que cumplen sus principios.|
+#### Detalles Clave de la FSF (Free Software Foundation)
+
+- **Licencias GPL y LGPL:** Crearon la GPL (la de Linux) y la **LGPL** (_Lesser GPL_). La diferencia es que la LGPL permite que el software libre se enlace o trabaje junto a software cerrado (como un controlador de hardware propietario).
+
+- **Activismo:** Luchan contra las patentes de software y el DRM (Administración de Derechos Digitales) porque restringen la libertad del usuario.
+
+- **"Tivoización":** La empresa _TiVo_ usó Linux en sus grabadoras. Cumplió con entregar el código fuente, pero diseñó su hardware para que _rechazara_ cualquier código modificado por el usuario.
+    
+    - La FSF consideró esto una trampa y creó la **GPLv3** para prohibirlo.
+    
+    - Linus Torvalds estuvo en desacuerdo con la FSF en este punto, por lo que el kernel de Linux se quedó en la versión **GPLv2**.
+
+
+#### Detalles Clave de la OSI (Open Source Initiative)
+
+- **Licencias Permisivas (BSD y MIT):** La OSI certifica licencias muy simples cuyo único gran requisito es: _"Haz lo que quieras, pero no digas que lo escribiste tú (respeta el derecho de autor original)"_.
+
+- A diferencia del _Copyleft_ de la FSF, con una licencia permisiva (como BSD) puedes tomar código abierto, modificarlo y venderlo como un producto de **código cerrado**. Por esta razón, la FSF no aprueba este tipo de licencias.
