@@ -200,23 +200,23 @@ Al hablar de adquirir software, existen tres componentes fundamentales a tener e
 
 La regla general es que el creador siempre retiene la propiedad intelectual; lo que te otorgan es una licencia de uso. Precisamente, es la licencia el factor clave que distingue al código cerrado del código abierto.
 
-#### Comparativa de Modelos:
+***Comparativa de Modelos:**
 
 - Modelo de Código Cerrado (Ej. Microsoft Windows):
     
     - Licencia: Utiliza un CLUF / EULA (Contrato de Licencia de Usuario Final).
     
     - Restricciones: Microsoft entrega solo el código binario (ejecutable). Se restringe a una instalación por equipo, prohíbe realizar ingeniería inversa para ver el código fuente original y cobra por las versiones mayores.
-    
+
 - Modelo de Código Abierto (Ej. Linux):
     
     - Licencia: Linus Torvalds utiliza la GPLv2 (_GNU Public License versión 2_).
     
-    - Libertades y Reglas: El código fuente debe estar siempre disponible. Puedes modificarlo como quieras. Sin embargo, tiene una condición (copyleft): si distribuyes tus cambios, debes hacerlo bajo esta misma licencia** para que la comunidad siga beneficiándose. Además, no puedes cobrar por el código fuente en sí, solo por los gastos de distribución física si los hubiera.
+    - Libertades y Reglas: El código fuente debe estar siempre disponible. Puedes modificarlo como quieras. Sin embargo, tiene una condición (copyleft): si distribuyes tus cambios, debes hacerlo bajo esta misma licencia para que la comunidad siga beneficiándose. Además, no puedes cobrar por el código fuente en sí, solo por los gastos de distribución física si los hubiera.
 
 
-#### FOSS (Software Libre y de Código Abierto)
+**FOSS (Software Libre y de Código Abierto)**
 
 FOSS (_Free and Open Source Software_) agrupa a todo este tipo de software donde el creador original "libera" su derecho a restringir quién o cómo se usa el programa, garantizando el acceso y la redistribución del código fuente.
 
-**Diversidad de Licencias:** Dado que el licenciamiento tiene un fuerte componente político y filosófico, muchas organizaciones han creado sus propias licencias de código abierto que se adaptan a sus intereses (ej. la licencia MIT, la de la Universidad de California, la de la Fundación Apache o las de la _Free Software Foundation_).
+Diversidad de Licencias: Dado que el licenciamiento tiene un fuerte componente político y filosófico, muchas organizaciones han creado sus propias licencias de código abierto que se adaptan a sus intereses (ej. la licencia MIT, la de la Universidad de California, la de la Fundación Apache o las de la _Free Software Foundation_).
