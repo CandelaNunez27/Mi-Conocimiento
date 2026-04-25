@@ -3,6 +3,7 @@
 ## 1 Introducción
 Este módulo se centra en conocer las principales herramientas y aplicaciones de código abierto, así como en entender cómo funcionan las licencias de este tipo de software.
 
+---
 ## 2 Las Principales Aplicaciones de Código Abierto
 
 En Linux, una computadora puede cumplir múltiples roles (como servidor, escritorio o máquina de desarrollo). La gran ventaja de Linux es que no hace distinción técnica entre estos roles; la función de la máquina depende únicamente de qué aplicaciones decidas instalar y configurar.
@@ -24,7 +25,7 @@ Aplicaciones Móviles: Funcionan de manera similar a las de escritorio, pero est
 Diversidad y Libertad de Elección:
 Para cualquier tarea en Linux, existen muchísimas opciones (distintos navegadores, múltiples editores de texto, etc.). La magia del código abierto es que, si a una persona o comunidad no le gusta cómo funciona un programa, tiene la libertad de tomar el código y crear el suyo propio. Una habilidad clave en Linux es aprender a evaluar qué software usar: si ir a lo seguro con la opción líder, o probar lo más nuevo y vanguardista.
 
-
+---
 ## 2.1 Aplicaciones de Servidor
 Linux es altamente confiable y eficiente para ejecutar servidores. La configuración depende de un principio básico: instalar el software adecuado para el servicio específico que se desea ofrecer.
 
@@ -70,6 +71,8 @@ Almacenan información estructurada y permiten realizar consultas o reportes uti
 
 - Líderes de código abierto: MySQL y PostgreSQL.
 
+---
+
 ### 2.2 Aplicaciones de Escritorio
 
 Aunque los servidores son el fuerte de Linux, también cuenta con un riquísimo ecosistema de aplicaciones para el usuario final (escritorio).
@@ -112,6 +115,35 @@ La alternativa libre a Microsoft Office.
 
 - Audacity: Grabación y edición de audio.
 
+---
 
+### 2.3 Herramientas de Consola
+
+La administración del sistema y la automatización de tareas en Linux se realizan a través de la línea de comandos utilizando un shell.
+
+**El Shell y el Prompt**
+El shell es la interfaz que recibe tus comandos y se los pasa al kernel para que los ejecute. Al abrir la terminal, ves el prompt (la línea que espera tus órdenes), que tiene una estructura típica como esta: `usuario@servidor:~$`
+
+* `~` (Tilde o virgulilla): Es el atajo para referirse a tu directorio personal (*home*).
+* `$` (Signo de dólar): Indica que estás usando una cuenta estándar (sin privilegios de administrador/root).
+
+**Tipos de Shell**
+Existen diferentes shells para elegir, variando en su sintaxis y capacidades para hacer *scripts* (programación de tareas):
+* Familia Bourne: Su versión moderna es Bash (*Bourne Again Shell*). Es el shell predeterminado en la inmensa mayoría de los sistemas Linux.
+* Familia C shell: Usa una sintaxis prestada del lenguaje C. Su versión moderna es tcsh.
+* Otros populares: *Korn shell (ksh)* y *zsh*.
+
+**Editores de Texto en Consola**
+Son vitales para editar archivos de configuración directamente desde la terminal, sin interfaz gráfica.
+* Avanzados y complejos: vi (y su versión mejorada vim) y emacs. Son extremadamente potentes pero tienen una curva de aprendizaje alta.
+* Básicos y sencillos: nano y pico. Ideales para ediciones rápidas y simples.
+* La regla de oro de Linux: Aunque uses *nano* o *emacs* a diario, debes aprender el uso básico de `vi`. Es el único editor que viene preinstalado por obligación en *todos* los sistemas Linux, lo cual es vital si entras a un modo de recuperación para reparar un sistema dañado.
+
+**Administradores de Paquetes**
+Atrás quedaron los días de compilar software manualmente. Hoy se usan paquetes (aplicaciones empaquetadas y listas) que se descargan de servidores en internet llamados repositorios.
+* En sistemas Debian (ej. Ubuntu, Mint): Se usan los comandos `dpkg`, `apt-get` y `apt-cache`.
+* En sistemas Red Hat (ej. CentOS, Fedora): Se usan los comandos `rpm` y `yum`.
+
+---
 
 
