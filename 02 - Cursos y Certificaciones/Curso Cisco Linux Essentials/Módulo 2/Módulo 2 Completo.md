@@ -233,21 +233,38 @@ Existen dos grandes organizaciones que lideran el mundo del código abierto, cad
 | **Enfoque**              | "Software Libre": Se enfoca en la ética y la libertad. Consideran que el software cerrado/propietario es perjudicial. | "Código Abierto": Nació porque sentían que la FSF era muy extrema/política. Tienen un enfoque más práctico y empresarial. |
 | **Regla de Oro**         | Copyleft: Si modificas un software libre, _estás obligado_ a compartir tus cambios bajo la misma licencia.            | Permisivo: Cero restricciones. Puedes usar el código abierto y modificarlo, sin estar obligado a compartir tus cambios.   |
 | **Gestión de Licencias** | Crea sus propias licencias (Familia GPL).                                                                             | No crea licencias; evalúa y _certifica_ licencias de terceros que cumplen sus principios.                                 |
-#### Detalles Clave de la FSF (Free Software Foundation)
+**Detalles Clave de la FSF (Free Software Foundation)**
 
-- **Licencias GPL y LGPL:** Crearon la GPL (la de Linux) y la **LGPL** (_Lesser GPL_). La diferencia es que la LGPL permite que el software libre se enlace o trabaje junto a software cerrado (como un controlador de hardware propietario).
+- Licencias GPL y LGPL: Crearon la GPL (la de Linux) y la LGPL (_Lesser GPL_). La diferencia es que la LGPL permite que el software libre se enlace o trabaje junto a software cerrado (como un controlador de hardware propietario).
 
-- **Activismo:** Luchan contra las patentes de software y el DRM (Administración de Derechos Digitales) porque restringen la libertad del usuario.
+- Activismo: Luchan contra las patentes de software y el DRM (Administración de Derechos Digitales) porque restringen la libertad del usuario.
 
-- **"Tivoización":** La empresa _TiVo_ usó Linux en sus grabadoras. Cumplió con entregar el código fuente, pero diseñó su hardware para que _rechazara_ cualquier código modificado por el usuario.
+- "Tivoización": La empresa _TiVo_ usó Linux en sus grabadoras. Cumplió con entregar el código fuente, pero diseñó su hardware para que _rechazara_ cualquier código modificado por el usuario.
     
     - La FSF consideró esto una trampa y creó la **GPLv3** para prohibirlo.
     
     - Linus Torvalds estuvo en desacuerdo con la FSF en este punto, por lo que el kernel de Linux se quedó en la versión **GPLv2**.
 
 
-#### Detalles Clave de la OSI (Open Source Initiative)
+**Detalles Clave de la OSI (Open Source Initiative)**
 
-- **Licencias Permisivas (BSD y MIT):** La OSI certifica licencias muy simples cuyo único gran requisito es: _"Haz lo que quieras, pero no digas que lo escribiste tú (respeta el derecho de autor original)"_.
+- Licencias Permisivas (BSD y MIT): La OSI certifica licencias muy simples cuyo único gran requisito es: _"Haz lo que quieras, pero no digas que lo escribiste tú (respeta el derecho de autor original)"_.
 
-- A diferencia del _Copyleft_ de la FSF, con una licencia permisiva (como BSD) puedes tomar código abierto, modificarlo y venderlo como un producto de **código cerrado**. Por esta razón, la FSF no aprueba este tipo de licencias.
+- A diferencia del _Copyleft_ de la FSF, con una licencia permisiva (como BSD) puedes tomar código abierto, modificarlo y venderlo como un producto de código cerrado. Por esta razón, la FSF no aprueba este tipo de licencias.
+
+---
+
+### 3.2 Más Términos para lo Mismo (FOSS y FLOSS)
+
+Para evitar debates constantes entre las posturas de la FSF y la OSI, la comunidad empezó a utilizar siglas que agrupan a ambos mundos:
+
+- FOSS (Software Libre y de Código Abierto): Agrupa tanto los principios de _Free Software_ como de _Open Source_.
+
+- El problema de la traducción: En inglés, la palabra _"free"_ es ambigua. Puede significar gratuito ("gratis como una cerveza") o libre ("libre como la libertad de expresión").
+
+- FLOSS: Para solucionar esta ambigüedad del inglés, se incluyó la palabra _"Libre"_ (del español/francés), creando las siglas FLOSS (_Free / Libre / Open Source Software_).
+
+Conclusión práctica: Aunque estos términos "paraguas" ocultan las profundas diferencias filosóficas entre la FSF y la OSI, a nivel práctico significan una cosa muy clara para el usuario: *si un software es FOSS/FLOSS, sabes que no tienes que pagar por él y que tienes el derecho de redistribuirlo.*
+
+---
+
