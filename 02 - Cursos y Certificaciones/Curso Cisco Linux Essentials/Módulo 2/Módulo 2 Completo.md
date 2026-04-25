@@ -227,12 +227,12 @@ Diversidad de Licencias: Dado que el licenciamiento tiene un fuerte componente p
 
 Existen dos grandes organizaciones que lideran el mundo del código abierto, cada una con su propia filosofía:
 
-|**Característica**|**Free Software Foundation (FSF)**|**Open Source Initiative (OSI)**|
-|---|---|---|
-|**Fundadores**|Richard Stallman (1985).|Bruce Perens y Eric Raymond (1998).|
-|**Enfoque**|**"Software Libre":** Se enfoca en la ética y la libertad. Consideran que el software cerrado/propietario es perjudicial.|**"Código Abierto":** Nació porque sentían que la FSF era muy extrema/política. Tienen un enfoque más práctico y empresarial.|
-|**Regla de Oro**|**Copyleft:** Si modificas un software libre, _estás obligado_ a compartir tus cambios bajo la misma licencia.|**Permisivo:** Cero restricciones. Puedes usar el código abierto y modificarlo, sin estar obligado a compartir tus cambios.|
-|**Gestión de Licencias**|**Crea** sus propias licencias (Familia GPL).|**No crea** licencias; evalúa y _certifica_ licencias de terceros que cumplen sus principios.|
+| **Característica**       | **Free Software Foundation (FSF)**                                                                                    | **Open Source Initiative (OSI)**                                                                                          |
+| ------------------------ | --------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
+| **Fundadores**           | Richard Stallman (1985).                                                                                              | Bruce Perens y Eric Raymond (1998).                                                                                       |
+| **Enfoque**              | "Software Libre": Se enfoca en la ética y la libertad. Consideran que el software cerrado/propietario es perjudicial. | "Código Abierto": Nació porque sentían que la FSF era muy extrema/política. Tienen un enfoque más práctico y empresarial. |
+| **Regla de Oro**         | Copyleft: Si modificas un software libre, _estás obligado_ a compartir tus cambios bajo la misma licencia.            | Permisivo: Cero restricciones. Puedes usar el código abierto y modificarlo, sin estar obligado a compartir tus cambios.   |
+| **Gestión de Licencias** | Crea sus propias licencias (Familia GPL).                                                                             | No crea licencias; evalúa y _certifica_ licencias de terceros que cumplen sus principios.                                 |
 #### Detalles Clave de la FSF (Free Software Foundation)
 
 - **Licencias GPL y LGPL:** Crearon la GPL (la de Linux) y la **LGPL** (_Lesser GPL_). La diferencia es que la LGPL permite que el software libre se enlace o trabaje junto a software cerrado (como un controlador de hardware propietario).
