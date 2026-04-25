@@ -146,4 +146,77 @@ Atrás quedaron los días de compilar software manualmente. Hoy se usan paquetes
 
 ---
 
+### 2.4 Herramientas de Desarrollo
 
+Linux es una plataforma de primer nivel para programadores, ofreciendo un excelente soporte para múltiples lenguajes. Los lenguajes de programación se dividen en dos grandes grupos:
+
+**Lenguajes Compilados** 
+
+Se traducen completamente a código de máquina _antes_ de que el programa se ejecute. Son más rápidos y eficientes.
+
+- C: Es el lenguaje en el que está escrito Linux. Es sumamente eficiente, requiere pocos recursos y es ideal para sistemas operativos porque se ejecuta rapidísimo. (A partir de él nacieron _C++_ y _Objective C_).
+
+**El caso especial de Java (Compilación Intermedia):**
+
+- Java: No compila directamente al lenguaje del equipo, sino a un código intermedio (_bytecode_) pensado para una CPU hipotética llamada Máquina Virtual de Java (JVM).
+
+- _La gran ventaja:_ Puedes ejecutar un programa de Java en cualquier dispositivo del mundo (PC, servidor, TV) siempre y cuando tenga la JVM instalada. Además, la JVM se encarga de tareas complejas como asignar la memoria automáticamente.
+
+
+**Lenguajes Interpretados** 
+
+Se traducen a código de máquina línea por línea _mientras_ el programa se está ejecutando. Consumen más recursos del equipo, pero aumentan enormemente la productividad del programador (escriben menos código y no pierden tiempo compilando).
+
+- Perl: Nacido para manipular texto, es el clásico favorito de los administradores de sistemas para automatizar tareas.
+
+- PHP: Diseñado para crear páginas web dinámicas (trabaja en conjunto con servidores como Apache). Es muy fácil de aprender y es la base de proyectos gigantes como WordPress.
+
+- Ruby: Facilita la programación compleja. Muy famoso por su entorno web _Ruby on Rails_ y por ser la base de herramientas modernas para gestionar servidores de Linux (como _Chef_ y _Puppet_).
+
+- Python: Su sintaxis facilita tareas difíciles. Es el gran favorito en el mundo académico por sus potentes capacidades de procesamiento estadístico y de datos. Su entorno web más famoso es _Django_.
+
+
+**Librerías (Bibliotecas)**
+
+Son paquetes de código preescrito que resuelven tareas comunes, para que el programador no tenga que "reinventar la rueda".
+
+- ImageMagick: Librería para manipular imágenes directamente desde el código o la consola.
+
+- OpenSSL: Librería criptográfica estándar para añadir seguridad a programas y servidores web.
+
+- Librería de C (Nivel bajo): Proporciona las funciones más básicas del sistema (como leer y escribir archivos en el disco) y es utilizada "por debajo" por casi todos los demás lenguajes y aplicaciones.
+
+---
+
+### 2.3 Entendiendo el Software de Código Abierto y el Licenciamiento
+
+Al hablar de adquirir software, existen tres componentes fundamentales a tener en cuenta:
+
+1. Propiedad (Intelectual): ¿Quién es el dueño original de la idea o el código?
+
+2. Dinero: ¿Cómo es el modelo de negocio o la transacción financiera?
+
+3. Licencia: ¿Qué derechos adquieres tú? ¿Puedes usarlo en varias PCs, modificarlo o regalarlo?
+
+La regla general es que el creador siempre retiene la propiedad intelectual; lo que te otorgan es una licencia de uso. Precisamente, es la licencia el factor clave que distingue al código cerrado del código abierto.
+
+#### Comparativa de Modelos:
+
+- Modelo de Código Cerrado (Ej. Microsoft Windows):
+    
+    - Licencia: Utiliza un CLUF / EULA (Contrato de Licencia de Usuario Final).
+    
+    - Restricciones: Microsoft entrega solo el código binario (ejecutable). Se restringe a una instalación por equipo, prohíbe realizar ingeniería inversa para ver el código fuente original y cobra por las versiones mayores.
+    
+- Modelo de Código Abierto (Ej. Linux):
+    
+    - Licencia: Linus Torvalds utiliza la GPLv2 (_GNU Public License versión 2_).
+    
+    - Libertades y Reglas: El código fuente debe estar siempre disponible. Puedes modificarlo como quieras. Sin embargo, tiene una condición (copyleft): si distribuyes tus cambios, debes hacerlo bajo esta misma licencia** para que la comunidad siga beneficiándose. Además, no puedes cobrar por el código fuente en sí, solo por los gastos de distribución física si los hubiera.
+
+
+#### FOSS (Software Libre y de Código Abierto)
+
+FOSS (_Free and Open Source Software_) agrupa a todo este tipo de software donde el creador original "libera" su derecho a restringir quién o cómo se usa el programa, garantizando el acceso y la redistribución del código fuente.
+
+**Diversidad de Licencias:** Dado que el licenciamiento tiene un fuerte componente político y filosófico, muchas organizaciones han creado sus propias licencias de código abierto que se adaptan a sus intereses (ej. la licencia MIT, la de la Universidad de California, la de la Fundación Apache o las de la _Free Software Foundation_).
