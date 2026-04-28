@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "2c47654ff3f8d557",
@@ -206,6 +207,7 @@
   },
   "active": "857d4a252756a637",
   "lastOpenFiles": [
+    "04 - Otros/Imagenes/Pasted image 20260428024408.png",
     "02 - Cursos y Certificaciones/Curso Cisco Linux Essentials/Módulo 2/Módulo 2 Completo.md",
     "02 - Cursos y Certificaciones/Curso Cisco Linux Essentials/Módulo 3/Módulo 3 Completo.md",
     "02 - Cursos y Certificaciones/Curso Cisco Linux Essentials/Módulo 2/Examen 2 Módulo 2 Respuestas.md",
@@ -251,7 +253,6 @@
     "01 - Tec Redes Datos y Telecom/1° Año/01 - Arquitectura de Computadoras/Módulo 3.1/01 - Microarquitectura y Gestión de Memoria Avanzada.md",
     "01 - Tec Redes Datos y Telecom/1° Año/01 - Arquitectura de Computadoras/Módulo 3.1/02 - Arquitecturas Paralelas y Topologías de Red.md",
     "01 - Tec Redes Datos y Telecom/1° Año/01 - Arquitectura de Computadoras/Módulo 3.1/03 - HPC, Métricas de Rendimiento y Modelos.md",
-    "01 - Tec Redes Datos y Telecom/1° Año/01 - Arquitectura de Computadoras/Módulo 2.3/03 - Arquitectura de Buses y Estándares.md",
     "1° Año/01 - Arquitectura de Computadoras/Sin título.canvas"
   ]
 }
