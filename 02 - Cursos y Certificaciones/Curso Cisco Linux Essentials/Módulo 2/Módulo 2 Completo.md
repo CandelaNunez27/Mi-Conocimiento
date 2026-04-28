@@ -39,7 +39,7 @@ Alojan y entregan contenido a través de los protocolos HTTP/HTTPS. El contenido
 2. Servidores de Correo Electrónico
 El flujo de correo se divide en tres roles o componentes principales, lo que permite gran flexibilidad en Linux para elegir la herramienta ideal para cada etapa:
 
-- MTA (Mail Transfer Agent): Usa SMTP para enrutar y transferir el correo entre servidores.
+- *MTA (Mail Transfer Agent): Usa SMTP para enrutar y transferir el correo entre servidores.*
   Ejemplos: sendmail (el clásico) y Postfix (diseñado para ser más simple y seguro).
 
 - MDA (Mail Delivery Agent / Agente Local): Recibe el correo del MTA y lo guarda en el buzón local del usuario.
@@ -51,18 +51,18 @@ El flujo de correo se divide en tres roles o componentes principales, lo que per
 3. Servidores para Compartir Archivos
 La elección depende de los sistemas operativos que convivan en la red local:
 
-- Samba: El estándar para redes mixtas. Permite que un servidor Linux se comporte como una máquina Windows (compartiendo archivos e integrándose a sus dominios).
+- *Samba*: El estándar para redes mixtas. Permite que un servidor Linux se comporte como una máquina Windows (compartiendo archivos e integrándose a sus dominios).
 
-- Netatalk: Permite a Linux comportarse como un servidor de archivos nativo para equipos Apple.
+- *Netatalk*: Permite a Linux comportarse como un servidor de archivos nativo para equipos Apple.
 
-- NFS (Network File System): El protocolo nativo de UNIX/Linux. Suele estar integrado en el kernel y permite montar discos de red de forma transparente, como si fueran discos físicos locales.
+- *NFS (Network File System)*: El protocolo nativo de UNIX/Linux. Suele estar integrado en el kernel y permite montar discos de red de forma transparente, como si fueran discos físicos locales.
 
 4. Servicios de Infraestructura y Directorio
 Servicios críticos para el funcionamiento de cualquier red de datos:
 
 - DNS (Domain Name System): Traduce nombres de dominio (ej. linux.com) a direcciones IP. El software más utilizado es bind (mantenido por el Internet Software Consortium - ISC).
 
-- LDAP (Lightweight Directory Access Protocol): Base de datos jerárquica (en forma de árbol) para centralizar directorios de usuarios, roles y autenticación. El líder indiscutido es OpenLDAP.
+- *LDAP (Lightweight Directory Access Protocol): Base de datos jerárquica (en forma de árbol) para centralizar directorios de usuarios, roles y autenticación. El líder indiscutido es OpenLDAP.*
 
 - *DHCP (Dynamic Host Configuration Protocol): Asigna dinámicamente direcciones IP a los equipos cuando se conectan a la red. El servidor más común es ISC DHCP.*
 
@@ -90,7 +90,7 @@ Aunque los servidores son el fuerte de Linux, también cuenta con un riquísimo 
 
 La alternativa libre a Microsoft Office.
 
-- LibreOffice y OpenOffice: Ambas ofrecen procesador de textos, hojas de cálculo, presentaciones y buscan compatibilidad total con los formatos de Microsoft.
+- *LibreOffice y OpenOffice*: Ambas ofrecen procesador de textos, hojas de cálculo, presentaciones y buscan compatibilidad total con los formatos de Microsoft.
 
 - Historia y política del Open Source: Originalmente, Sun Microsystems liberó OpenOffice. Cuando Oracle compró Sun, la comunidad desconfió del soporte que Oracle le daría al proyecto. Como resultado, el proyecto se "bifurcó" (se dividió) creando LibreOffice. Hoy en día, LibreOffice tiene el mayor impulso y viene por defecto en la mayoría de las distribuciones.
 
@@ -154,7 +154,7 @@ Linux es una plataforma de primer nivel para programadores, ofreciendo un excele
 
 Se traducen completamente a código de máquina antes de que el programa se ejecute. Son más rápidos y eficientes.
 
-- C: Es el lenguaje en el que está escrito Linux. Es sumamente eficiente, requiere pocos recursos y es ideal para sistemas operativos porque se ejecuta rapidísimo. (A partir de él nacieron C++ y Objective C).
+- *C*: Es el lenguaje en el que está escrito Linux. Es sumamente eficiente, requiere pocos recursos y es ideal para sistemas operativos porque se ejecuta rapidísimo. (A partir de él nacieron C++ y Objective C).
 
 **El caso especial de Java (Compilación Intermedia):**
 
@@ -210,7 +210,7 @@ La regla general es que el creador siempre retiene la propiedad intelectual; lo 
 
 - Modelo de Código Abierto (Ej. Linux):
     
-    - Licencia: Linus Torvalds utiliza la GPLv2 (GNU Public License versión 2).
+    - *Licencia: Linus Torvalds utiliza la GPLv2 (GNU Public License versión 2).*
     
     - Libertades y Reglas: El código fuente debe estar siempre disponible. Puedes modificarlo como quieras. Sin embargo, tiene una condición (copyleft): si distribuyes tus cambios, debes hacerlo bajo esta misma licencia para que la comunidad siga beneficiándose. Además, no puedes cobrar por el código fuente en sí, solo por los gastos de distribución física si los hubiera.
 

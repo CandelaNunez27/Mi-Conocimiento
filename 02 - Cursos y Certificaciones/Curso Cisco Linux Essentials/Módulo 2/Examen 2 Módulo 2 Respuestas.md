@@ -57,3 +57,35 @@ CORRECT - See Section 2.3.1
   - No Rights Reserved (sin derechos reservados)
   
 CORRECT - See Section 2.3.3
+
+---
+## 11) Si quieres crear un blog, ¿qué software sería más útil?
+  - WordPress
+  
+CORRECT - See Section 2.2.1
+
+## 12)¿Cuál de las siguientes piezas del software no está enfocadas al intercambio de archivos? (seleccione dos)
+  - X-Window
+  - PostgreSQL
+  
+CORRECT - See Section 2.2.1
+
+## 13)Si quieres crear e imprimir una factura, ¿qué software puedes utilizar?
+  -  LibreOffice
+  
+CORRECT - See Section 2.2.2
+
+## 14)¿Cuál de lo siguiente es cierto acerca de los lenguajes de programación compilados?
+  -   C es un lenguaje compilado
+  
+CORRECT - See Section 2.2.4
+
+## 15)¿Qué software de servidor usarías para crear un directorio de empresa que puedas utilizar para buscar y autenticar?
+  -   OpenLDAP
+  
+CORRECT - See Section 2.2.1
+
+## 16)El propósito principal de un agente de transferencia de correo es:
+  -   Entregar el correo entre los servidores
+  
+CORRECT - See Section 2.2.1
