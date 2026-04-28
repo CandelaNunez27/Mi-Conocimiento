@@ -272,17 +272,41 @@ Conclusión práctica: Aunque estos términos "paraguas" ocultan las profundas d
 
 Las licencias de software (FOSS) no están pensadas para obras creativas como dibujos, textos o planos. Para este tipo de contenido se usan otros esquemas:
 
-- **Dominio Público (CC0):** El autor renuncia a _todos_ los derechos sobre su obra. Cualquiera puede usarla sin restricciones.
+- Dominio Público (CC0): El autor renuncia a _todos_ los derechos sobre su obra. Cualquiera puede usarla sin restricciones.
 
-- **Licencias Creative Commons (CC):** Permiten al autor elegir exactamente qué permisos otorga sobre su obra, combinando estas 4 reglas básicas:
+- Licencias Creative Commons (CC): Permiten al autor elegir exactamente qué permisos otorga sobre su obra, combinando estas 4 reglas básicas:
     
-    - **BY (Atribución):** Uso libre, pero es obligatorio dar crédito al autor.
+    - BY (Atribución): Uso libre, pero es obligatorio dar crédito al autor.
     
-    - **SA (Compartir Igual / ShareAlike):** Las obras derivadas deben usar esta misma licencia (funciona como el _copyleft_).
+    - SA (Compartir Igual / ShareAlike): Las obras derivadas deben usar esta misma licencia (funciona como el _copyleft_).
     
-    - **ND (Sin Derivadas / No-Derivs):** Se puede compartir la obra, pero _está prohibido modificarla_.
+    - ND (Sin Derivadas / No-Derivs): Se puede compartir la obra, pero _está prohibido modificarla_.
     
-    - **NC (No Comercial):** Prohíbe utilizar la obra para ganar dinero.
+    - NC (No Comercial): Prohíbe utilizar la obra para ganar dinero.
 
 _(Estas reglas se combinan para crear la licencia deseada. Por ejemplo, **CC-BY-NC** te obliga a dar crédito y te prohíbe el uso comercial)_
+
+---
+
+### 3.4 Los Modelos de Negocio de Código Abierto
+
+Si el software de código abierto se distribuye gratuitamente ¿Cómo es posible generar ingresos? Existen varias estrategias comerciales clave:
+
+- **Soporte y Consultoría:** El modelo más común. Entregas el software gratis, pero cobras por instalarlo, brindar soporte técnico, ofrecer garantías o solucionar errores específicos a medida.
+
+- **Suscripciones y Servicios Adicionales:** Se ofrece el programa gratuitamente, pero se cobra por conectarlo a un servicio exclusivo que mejora su funcionamiento (ej. el software _MythTV_ es gratis, pero se paga una suscripción para recibir la guía de horarios de televisión).
+
+- **Empaquetado con Hardware:** Integrar el software libre en un dispositivo físico o sistema cerrado y vender el equipo completo (ej. enrutadores, firewalls o consolas de entretenimiento).
+
+- **Patrocinio y Desarrollo Corporativo:**
+    
+    - Muchas empresas dependen tanto de proyectos de código abierto que contratan a desarrolladores a tiempo completo para mantenerlos.
+    
+    - _Ejemplos notables:_ La Fundación Linux contrató a Linus Torvalds para dedicarse a Linux; Google contrató al creador de Python; AT&T paga a empleados exclusivamente para mantener proyectos de Ruby on Rails.
+
+- **Prestigio Profesional y Reclutamiento:**
+    
+    - _Para el programador:_ Contribuir al código abierto es una forma de mostrar un currículum real y público. Los empleadores pueden ver directamente la calidad de tu trabajo.
+    
+    - _Para las empresas:_ Liberar partes de su código interno atrae a talentos de alto nivel interesados en el proyecto.
 
