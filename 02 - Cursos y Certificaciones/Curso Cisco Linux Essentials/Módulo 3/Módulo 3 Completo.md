@@ -25,17 +25,13 @@ La mayoría de los servidores se ejecutan en este modo porque cargar una interfa
 ---
 ### 3.3 Línea de Comandos
 
-- **¿Qué es?:** Es una interfaz de entrada de texto que te permite darle instrucciones al sistema operativo, abarcando desde un comando simple de una sola palabra hasta _scripts_ (secuencias de programación) muy complejos.
+Es una interfaz de entrada de texto que te permite darle instrucciones al sistema operativo, abarcando desde un comando simple de una sola palabra hasta scripts (secuencias de programación) muy complejos.
 
 - **Cómo acceder a ella:**
     
-    - **En Modo Texto:** Al iniciar sesión, te encuentras inmediatamente dentro de la consola.
+    - En Modo Texto: Al iniciar sesión, te encuentras inmediatamente dentro de la consola.
     
-    - **En Modo Gráfico:** Debes iniciar un **shell gráfico**, que es básicamente la misma consola de texto tradicional pero dentro de una ventana que puedes mover, maximizar o redimensionar. * **¿Cómo encontrarla en el escritorio gráfico?**
-    
-    - Los escritorios en Linux varían, pero generalmente debes buscar en tus menús una aplicación llamada **terminal** o **x-term** (ambas cumplen la misma función, solo varían en su aspecto estético).
-    
-    - _Tip de eficiencia:_ En lugar de perderte buscando en los menús, la forma más rápida es usar la herramienta de búsqueda de tu entorno (como el _Dash_ en Ubuntu) y simplemente escribir la palabra "terminal" para ejecutarla al instante.
+    - En Modo Gráfico: Debes iniciar un shell gráfico, que es básicamente la misma consola de texto tradicional pero dentro de una ventana que puedes mover, maximizar o redimensionar. 
 
 ---
 
