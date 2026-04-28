@@ -78,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "2c47654ff3f8d557",
@@ -207,9 +206,9 @@
   },
   "active": "857d4a252756a637",
   "lastOpenFiles": [
-    "04 - Otros/Imagenes/Pasted image 20260428024408.png",
     "02 - Cursos y Certificaciones/Curso Cisco Linux Essentials/Módulo 2/Módulo 2 Completo.md",
     "02 - Cursos y Certificaciones/Curso Cisco Linux Essentials/Módulo 3/Módulo 3 Completo.md",
+    "04 - Otros/Imagenes/Pasted image 20260428024408.png",
     "02 - Cursos y Certificaciones/Curso Cisco Linux Essentials/Módulo 2/Examen 2 Módulo 2 Respuestas.md",
     "02 - Cursos y Certificaciones/Curso Cisco Linux Essentials/Módulo 3",
     "02 - Cursos y Certificaciones/Curso Cisco Linux Essentials/Módulo 1/Examen 1 Módulo 1 Respuestas.md",
@@ -239,7 +238,6 @@
     "04 - Otros/Imagenes/Pasted image 20260422085724.png",
     "04 - Otros/Imagenes/Pasted image 20260422085556.png",
     "04 - Otros/Imagenes/Pasted image 20260422085524.png",
-    "04 - Otros/Imagenes/Pasted image 20260422083736.png",
     "01 - Tec Redes Datos y Telecom/1° Año/01 - Arquitectura de Computadoras/Módulo 3.2/02 - Plataforma Arduino (Hardware y Software).md",
     "01 - Tec Redes Datos y Telecom/1° Año/01 - Arquitectura de Computadoras/Módulo 3.2/03 - Programación de Arduino y Circuitos Prácticos.md",
     "01 - Tec Redes Datos y Telecom/1° Año/01 - Arquitectura de Computadoras/Módulo 3.2/01 - Sistemas Embebidos y Microcontroladores.md",
