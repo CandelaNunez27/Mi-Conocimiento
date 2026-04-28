@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "02 - Cursos y Certificaciones/Curso Cisco Linux Essentials/Módulo 2/Módulo 2 Completo.md",
+                "file": "02 - Cursos y Certificaciones/Curso Cisco Linux Essentials/Módulo 2/Examen 2 Módulo 2 Respuestas.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Módulo 2 Completo"
+              "title": "Examen 2 Módulo 2 Respuestas"
             }
           }
         ]
@@ -78,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "2c47654ff3f8d557",
@@ -205,13 +204,15 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "857d4a252756a637",
+  "active": "e6bb5d90017c09e9",
   "lastOpenFiles": [
+    "02 - Cursos y Certificaciones/Curso Cisco Linux Essentials/Módulo 1/Examen 1 Módulo 1 Respuestas.md",
+    "02 - Cursos y Certificaciones/Curso Cisco Linux Essentials/Módulo 2/Examen 2 Módulo 2 Respuestas.md",
+    "02 - Cursos y Certificaciones/Curso Cisco Linux Essentials/Módulo 2/Módulo 2 Resumen General.md",
     "02 - Cursos y Certificaciones/Curso Cisco Linux Essentials/Módulo 1/Módulo 1 Resumen General.md",
     "02 - Cursos y Certificaciones/Curso Cisco Linux Essentials/Módulo 1/Módulo 1 Completo.md",
     "02 - Cursos y Certificaciones/Curso Cisco Linux Essentials/Módulo 2/Módulo 2 Completo.md",
     "04 - Otros/Markdown.md",
-    "02 - Cursos y Certificaciones/Curso Cisco Linux Essentials/Módulo 1/Examen 1 Módulo 1 Respuestas.md",
     "04 - Otros/Imagenes/Pasted image 20260423231426.png",
     "04 - Otros/Imagenes/Pasted image 20260423231123.png",
     "Imagenes/Pasted image 20260423231040.png",
@@ -251,7 +252,6 @@
     "01 - Tec Redes Datos y Telecom/1° Año/01 - Arquitectura de Computadoras/Módulo 2.3/03 - Arquitectura de Buses y Estándares.md",
     "01 - Tec Redes Datos y Telecom/1° Año/01 - Arquitectura de Computadoras/Módulo 1.1/01 - Arquitectura Básica y Señales.md",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud",
-    "01 - Tec Redes Datos y Telecom/1° Año/01 - Arquitectura de Computadoras/Módulo 2.2/01 - Funcionamiento de la Unidad de Memoria.md",
     "1° Año/01 - Arquitectura de Computadoras/Sin título.canvas"
   ]
 }

@@ -290,23 +290,24 @@ _(Estas reglas se combinan para crear la licencia deseada. Por ejemplo, **CC-BY-
 
 ### 3.4 Los Modelos de Negocio de Código Abierto
 
-Si el software de código abierto se distribuye gratuitamente ¿Cómo es posible generar ingresos? Existen varias estrategias comerciales clave:
+Si el software de código abierto se distribuye gratuitamente ¿Cómo es posible generar ingresos?
 
-- **Soporte y Consultoría:** El modelo más común. Entregas el software gratis, pero cobras por instalarlo, brindar soporte técnico, ofrecer garantías o solucionar errores específicos a medida.
+- Soporte y Consultoría: El modelo más común. Entregas el software gratis, pero cobras por instalarlo, brindar soporte técnico, ofrecer garantías o solucionar errores específicos a medida.
 
-- **Suscripciones y Servicios Adicionales:** Se ofrece el programa gratuitamente, pero se cobra por conectarlo a un servicio exclusivo que mejora su funcionamiento (ej. el software _MythTV_ es gratis, pero se paga una suscripción para recibir la guía de horarios de televisión).
+- Suscripciones y Servicios Adicionales: Se ofrece el programa gratuitamente, pero se cobra por conectarlo a un servicio exclusivo que mejora su funcionamiento (ej. el software _MythTV_ es gratis, pero se paga una suscripción para recibir la guía de horarios de televisión).
 
-- **Empaquetado con Hardware:** Integrar el software libre en un dispositivo físico o sistema cerrado y vender el equipo completo (ej. enrutadores, firewalls o consolas de entretenimiento).
+- Empaquetado con Hardware: Integrar el software libre en un dispositivo físico o sistema cerrado y vender el equipo completo (ej. enrutadores, firewalls o consolas de entretenimiento).
 
-- **Patrocinio y Desarrollo Corporativo:**
+- Patrocinio y Desarrollo Corporativo:
     
     - Muchas empresas dependen tanto de proyectos de código abierto que contratan a desarrolladores a tiempo completo para mantenerlos.
     
     - _Ejemplos notables:_ La Fundación Linux contrató a Linus Torvalds para dedicarse a Linux; Google contrató al creador de Python; AT&T paga a empleados exclusivamente para mantener proyectos de Ruby on Rails.
 
-- **Prestigio Profesional y Reclutamiento:**
+- Prestigio Profesional y Reclutamiento:
     
     - _Para el programador:_ Contribuir al código abierto es una forma de mostrar un currículum real y público. Los empleadores pueden ver directamente la calidad de tu trabajo.
     
     - _Para las empresas:_ Liberar partes de su código interno atrae a talentos de alto nivel interesados en el proyecto.
 
+---
