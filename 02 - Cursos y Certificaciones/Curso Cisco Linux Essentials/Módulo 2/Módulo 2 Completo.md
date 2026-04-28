@@ -235,13 +235,13 @@ Existen dos grandes organizaciones que lideran el mundo del código abierto, cad
 | **Gestión de Licencias** | Crea sus propias licencias (Familia GPL).                                                                             | No crea licencias; evalúa y certifica licencias de terceros que cumplen sus principios.                                   |
 **Detalles Clave de la FSF (Free Software Foundation)**
 
-- Licencias GPL y LGPL: Crearon la GPL (la de Linux) y la LGPL (Lesser GPL). La diferencia es que la LGPL permite que el software libre se enlace o trabaje junto a software cerrado (como un controlador de hardware propietario).
+- Licencias GPL y LGPL: Crearon la GPL (la de Linux) y la LGPL (Lesser GPL). *La diferencia es que la LGPL permite que el software libre se enlace o trabaje junto a software cerrado (como un controlador de hardware propietario).*
 
 - Activismo: Luchan contra las patentes de software y el DRM (Administración de Derechos Digitales) porque restringen la libertad del usuario.
 
 - "Tivoización": La empresa TiVo usó Linux en sus grabadoras. Cumplió con entregar el código fuente, pero diseñó su hardware para que rechazara cualquier código modificado por el usuario.
     
-    - La FSF consideró esto una trampa y creó la **GPLv3** para prohibirlo.
+    - *La FSF consideró esto una trampa y creó la **GPLv3** para prohibirlo.*
     
     - Linus Torvalds estuvo en desacuerdo con la FSF en este punto, por lo que el kernel de Linux se quedó en la versión **GPLv2**.
 
@@ -250,7 +250,7 @@ Existen dos grandes organizaciones que lideran el mundo del código abierto, cad
 
 - Licencias Permisivas (BSD y MIT): La OSI certifica licencias muy simples cuyo único gran requisito es: _"Haz lo que quieras, pero no digas que lo escribiste tú (respeta el derecho de autor original)"_.
 
-- A diferencia del Copyleft de la FSF, con una licencia permisiva (como BSD) puedes tomar código abierto, modificarlo y venderlo como un producto de código cerrado. Por esta razón, la FSF no aprueba este tipo de licencias.
+- *A diferencia del Copyleft de la FSF, con una licencia permisiva (como BSD) puedes tomar código abierto, modificarlo y venderlo como un producto de código cerrado. Por esta razón, la FSF no aprueba este tipo de licencias.*
 
 ---
 
@@ -258,11 +258,11 @@ Existen dos grandes organizaciones que lideran el mundo del código abierto, cad
 
 Para evitar debates constantes entre las posturas de la FSF y la OSI, la comunidad empezó a utilizar siglas que agrupan a ambos mundos:
 
-- FOSS (Software Libre y de Código Abierto): Agrupa tanto los principios de _Free Software_ como de _Open Source_.
+- FOSS (Software Libre y de Código Abierto): Agrupa tanto los principios de Free Software como de Open Source.
 
-- El problema de la traducción: En inglés, la palabra _"free"_ es ambigua. Puede significar gratuito ("gratis como una cerveza") o libre ("libre como la libertad de expresión").
+- El problema de la traducción: En inglés, la palabra "free" es ambigua. Puede significar gratuito ("gratis como una cerveza") o libre ("libre como la libertad de expresión").
 
-- FLOSS: Para solucionar esta ambigüedad del inglés, se incluyó la palabra _"Libre"_ (del español/francés), creando las siglas FLOSS (_Free / Libre / Open Source Software_).
+- FLOSS: Para solucionar esta ambigüedad del inglés, se incluyó la palabra "Libre" (del español/francés), creando las siglas FLOSS (Free / Libre / Open Source Software).
 
 Conclusión práctica: Aunque estos términos "paraguas" ocultan las profundas diferencias filosóficas entre la FSF y la OSI, a nivel práctico significan una cosa muy clara para el usuario: *si un software es FOSS/FLOSS, sabes que no tienes que pagar por él y que tienes el derecho de redistribuirlo.*
 
@@ -272,19 +272,19 @@ Conclusión práctica: Aunque estos términos "paraguas" ocultan las profundas d
 
 Las licencias de software (FOSS) no están pensadas para obras creativas como dibujos, textos o planos. Para este tipo de contenido se usan otros esquemas:
 
-- Dominio Público (CC0): El autor renuncia a _todos_ los derechos sobre su obra. Cualquiera puede usarla sin restricciones.
+- Dominio Público (CC0 o *No Rights Reserved*): El autor renuncia a todos los derechos sobre su obra. Cualquiera puede usarla sin restricciones.
 
 - Licencias Creative Commons (CC): Permiten al autor elegir exactamente qué permisos otorga sobre su obra, combinando estas 4 reglas básicas:
     
     - BY (Atribución): Uso libre, pero es obligatorio dar crédito al autor.
     
-    - SA (Compartir Igual / ShareAlike): Las obras derivadas deben usar esta misma licencia (funciona como el _copyleft_).
+    - SA (Compartir Igual / ShareAlike): Las obras derivadas deben usar esta misma licencia (funciona como el copyleft).
     
-    - ND (Sin Derivadas / No-Derivs): Se puede compartir la obra, pero _está prohibido modificarla_.
+    - ND (Sin Derivadas / No-Derivs): Se puede compartir la obra, pero está prohibido modificarla.
     
     - NC (No Comercial): Prohíbe utilizar la obra para ganar dinero.
 
-_(Estas reglas se combinan para crear la licencia deseada. Por ejemplo, **CC-BY-NC** te obliga a dar crédito y te prohíbe el uso comercial)_
+(Estas reglas se combinan para crear la licencia deseada. Por ejemplo, **CC-BY-NC** te obliga a dar crédito y te prohíbe el uso comercial)
 
 ---
 

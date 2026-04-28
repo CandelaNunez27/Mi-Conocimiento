@@ -1,60 +1,59 @@
 # Examen 2 - Módulo 2
 
-## 1) Linux está escrito en:
-  - C
+## 1) Cuando se inicia una computadora, ésta puede obtener información de su red a través de:
+  - DHCP
 
-CORRECT - See Section 1.2.3
-
-
-## 2) El código origen se refiere a:
-  - Una versión de los programas informáticos legible por el ser humano
-
-CORRECT - See Section 1.2.3
+CORRECT - See Section 2.2.1
 
 
-## 3) La plataforma Linux que se ejecuta en los teléfonos móviles se llama:
-  - Android
+## 2) Administrador de paquetes:
+  -  Descarga el software a través de Internet
 
-CORRECT - See Section 1.2.5
-
-
-## 4) El fin de bootloader es:
-  - Cargar el kernel al encender la computadora
-
-CORRECT - See Section 1.2.1
+CORRECT - See Section 2.2.3
 
 
-## 5) Una licencia para la que no puede obtener acceso al código origen se llama:
+## 3) ¿Qué aplicación usarías para editar y reconstruir los archivos de sonido para crear un podcast?
+  -  Audacity
+
+CORRECT - See Section 2.2.1
+
+
+## 4) El nombre Richard Stallman se asocia con:
+  - The Free Software Foundation
+
+CORRECT - See Section 2.3.1
+
+
+## 5) Un "copyleft provision" en una licencia de software significa:
   - Código cerrado
 
-CORRECT - See Section 1.2.3
+CORRECT - See Section 2.3.1
 
 
-## 6) ¿De qué distribución deriva Ubuntu?
+## 6) La mayor diferencia entre las licencias GPLv2 y BSD es:
   - Debian
 
-CORRECT - See Section 1.2.4
+CORRECT - See Section 2.3.1
 
 
-## 7) Un ciclo de mantenimiento:
-  - Describe por cuánto tiempo la versión del software recibirá soporte
+## 7) ¿Cuál de las siguientes licencias fue creada por la FSF?
+  - GPLv3
 
-CORRECT - See Section 1.3.1
-
-
-## 8) Apple OS X no es:
-  - Derivado de Linux
-
-CORRECT - See Section 1.3.3
+CORRECT - See Section 2.3.1
 
 
-## 9) Microsoft Windows no:
-  - Tiene un modo de compatibilidad de Linux
+## 8) Un término genérico para el Código Abierto y el Software Gratuito es:
+  - FLOSS
 
-CORRECT - See Section 1.3.2
+CORRECT - See Section 2.3.2
 
 
-## 10) Otros UNIX comerciales:
-  - Están certificados por UNIX
+## 9) La diferencia entre la GPL y LGPL son:
+  - LGPL permite la conexión del software sin GPL
+CORRECT - See Section 2.3.1
 
-CORRECT - See Section 1.3.5
+
+## 10) La versión de licencia Creative Commons de una Dominio Público es:
+  - No Rights Reserved (sin derechos reservados)
+  
+CORRECT - See Section 2.3.3
