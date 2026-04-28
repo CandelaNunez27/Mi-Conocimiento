@@ -123,6 +123,6 @@ Las cookies "propias" son útiles (mantienen tu sesión iniciada), pero el probl
  Puedes limitar esto configurando tu navegador para que envíe la señal voluntaria de "No rastrear", rechace automáticamente las cookies de terceros y elimine el historial al cerrarse. (Nota: una privacidad demasiado estricta puede hacer que algunas páginas dejen de funcionar bien).
  
  **Anonimato Extremo con Tor** 
- Si buscas ocultar totalmente quién eres y desde dónde te conectas, el Navegador Tor es la herramienta indicada. Rebota tu tráfico por distintos servidores del mundo para ocultar tu origen. La desventaja es que, por seguridad extrema, desactiva funciones (scripts) que hacen que muchas webs modernas no se vean bien.
+ Si buscas ocultar totalmente quién eres y desde dónde te conectas, el Navegador Tor ("The Onion Router") es la herramienta indicada. Rebota tu tráfico por distintos servidores del mundo para ocultar tu origen. La desventaja es que, por seguridad extrema, desactiva funciones (scripts) que hacen que muchas webs modernas no se vean bien.
 
 ---
