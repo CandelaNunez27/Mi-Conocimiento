@@ -268,3 +268,21 @@ Conclusión práctica: Aunque estos términos "paraguas" ocultan las profundas d
 
 ---
 
+### 3.3 Otros Esquemas de Concesión de Licencias
+
+Las licencias de software (FOSS) no están pensadas para obras creativas como dibujos, textos o planos. Para este tipo de contenido se usan otros esquemas:
+
+- **Dominio Público (CC0):** El autor renuncia a _todos_ los derechos sobre su obra. Cualquiera puede usarla sin restricciones.
+
+- **Licencias Creative Commons (CC):** Permiten al autor elegir exactamente qué permisos otorga sobre su obra, combinando estas 4 reglas básicas:
+    
+    - **BY (Atribución):** Uso libre, pero es obligatorio dar crédito al autor.
+    
+    - **SA (Compartir Igual / ShareAlike):** Las obras derivadas deben usar esta misma licencia (funciona como el _copyleft_).
+    
+    - **ND (Sin Derivadas / No-Derivs):** Se puede compartir la obra, pero _está prohibido modificarla_.
+    
+    - **NC (No Comercial):** Prohíbe utilizar la obra para ganar dinero.
+
+_(Estas reglas se combinan para crear la licencia deseada. Por ejemplo, **CC-BY-NC** te obliga a dar crédito y te prohíbe el uso comercial)_
+
