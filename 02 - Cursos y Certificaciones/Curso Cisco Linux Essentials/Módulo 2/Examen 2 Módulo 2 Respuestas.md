@@ -89,3 +89,8 @@ CORRECT - See Section 2.2.1
   -   Entregar el correo entre los servidores
   
 CORRECT - See Section 2.2.1
+
+## 17)¿Bajo qué licencia se distribuye Linux?
+  -   GPLv2
+  
+CORRECT - See Section 2.3
