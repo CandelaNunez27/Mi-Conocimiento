@@ -62,74 +62,51 @@ Es llevar la virtualización a una escala global, utilizando centros de datos re
 
 ---
 
-### 2.3 Herramientas de Consola
+### 3.5 Utilizar Linux para el Trabajo
 
-La administración del sistema y la automatización de tareas en Linux se realizan a través de la línea de comandos utilizando un shell.
+**Ofimática: LibreOffice (y OpenOffice)**
 
-**El Shell y el Prompt**
-El shell es la interfaz que recibe tus comandos y se los pasa al kernel para que los ejecute. Al abrir la terminal, ves el prompt (la línea que espera tus órdenes), que tiene una estructura típica como esta: `usuario@servidor:~$`
+Es la suite principal que cubre las tres grandes necesidades de oficina. Es altamente compatible con formatos de Microsoft Office y permite exportar directamente a PDF
 
-* `~` (Tilde o virgulilla): Es el atajo para referirse a tu directorio personal (home).
-* `$` (Signo de dólar): Indica que estás usando una cuenta estándar (sin privilegios de administrador/root).
+- Procesador de Textos (Writer): Para crear informes y memos. Soporta texto, imágenes, tablas y permite vincular datos desde una hoja de cálculo (para que los informes se actualicen automáticamente si cambian los números).
 
-**Tipos de Shell**
-Existen diferentes shells para elegir, variando en su sintaxis y capacidades para hacer scripts (programación de tareas):
-* Familia Bourne: Su versión moderna es Bash (Bourne Again Shell). Es el shell predeterminado en la inmensa mayoría de los sistemas Linux.
-* Familia C shell: Usa una sintaxis prestada del lenguaje C. Su versión moderna es tcsh.
-* Otros populares: Korn shell (ksh) y zsh.
+- Hoja de Cálculo (Calc): Para números, análisis de ventas y predicciones. No solo usa celdas; permite aplicar fórmulas matemáticas complejas y generar gráficos dinámicos.
 
-**Editores de Texto en Consola**
-Son vitales para editar archivos de configuración directamente desde la terminal, sin interfaz gráfica.
-* Avanzados y complejos: `vi` (y su versión mejorada `vim`) y `emacs`. Son extremadamente potentes pero tienen una curva de aprendizaje alta.
-* Básicos y sencillos: `nano` y `pico`. Ideales para ediciones rápidas y simples.
-* La regla de oro de Linux: Aunque uses `nano` o `emacs` a diario, debes aprender el uso básico de `vi`. Es el único editor que viene preinstalado por obligación en todos los sistemas Linux, lo cual es vital si entras a un modo de recuperación para reparar un sistema dañado.
+- Presentaciones: Para crear diapositivas para exponer con texto, gráficos y videos.
 
-**Administradores de Paquetes**
-Atrás quedaron los días de compilar software manualmente. *Hoy se usan paquetes (aplicaciones empaquetadas y listas) que se descargan de servidores en internet llamados repositorios.*
-* En sistemas Debian (ej. Ubuntu, Mint): Se usan los comandos `dpkg`, `apt-get` y `apt-cache`.
-* En sistemas Red Hat (ej. CentOS, Fedora): Se usan los comandos `rpm` y `yum`.
+- Extras: Permite el uso de extensiones, pudiendo integrarse, por ejemplo, con software Wiki para intranets empresariales.
+
+
+**Navegadores Web**
+
+- Firefox y Google Chrome: consideran a Linux un "ciudadano de primera clase". Esto significa que las versiones de Linux reciben las actualizaciones, nuevas funciones y parches de seguridad al mismo tiempo que Windows o Mac.
+
+- Limitación externa: Históricamente, algunos complementos cerrados de terceros (como el antiguo Adobe Flash) podían tener problemas, ya que dependían del soporte de empresas externas con otras prioridades.
 
 ---
 
-### 2.4 Herramientas de Desarrollo
+### 3.6 Proteger tu Equipo Linux
 
-Linux es una plataforma de primer nivel para programadores, ofreciendo un excelente soporte para múltiples lenguajes. Los lenguajes de programación se dividen en dos grandes grupos:
+Dado que Linux no distingue entre un usuario sentado frente al teclado y uno conectado desde internet, la seguridad es un factor obligatorio. Se basa en tres medidas fundamentales:
 
-**Lenguajes Compilados** 
+**1. Gestión de Contraseñas**
 
-Se traducen completamente a código de máquina antes de que el programa se ejecute. Son más rápidos y eficientes.
+La regla de oro es usar contraseñas fuertes (mínimo 10 caracteres, combinando mayúsculas, minúsculas, números y símbolos) y únicas para cada sitio o servicio.
 
-- *C*: Es el lenguaje en el que está escrito Linux. Es sumamente eficiente, requiere pocos recursos y es ideal para sistemas operativos porque se ejecuta rapidísimo. (A partir de él nacieron C++ y Objective C).
+- Herramienta clave: Para no tener que memorizar decenas de claves complejas, se recomienda usar un gestor como KeePassX. De esta forma, solo necesitas recordar la contraseña de inicio de sesión de tu equipo y la contraseña maestra de KeePassX.
 
-**El caso especial de Java (Compilación Intermedia):**
+**2. Actualizaciones Constantes**
 
-- Java: No compila directamente al lenguaje del equipo, sino a un código intermedio (bytecode) pensado para una CPU hipotética llamada Máquina Virtual de Java (JVM).
-
-- La gran ventaja: Puedes ejecutar un programa de Java en cualquier dispositivo del mundo (PC, servidor, TV) siempre y cuando tenga la JVM instalada. Además, la JVM se encarga de tareas complejas como asignar la memoria automáticamente.
+Mantener el software al día es vital para cerrar brechas de seguridad. En distribuciones como Ubuntu, se puede configurar el sistema gráficamente para que busque actualizaciones diariamente. Las actualizaciones críticas (de seguridad) te pedirán instalarse de inmediato, mientras que el resto puede agruparse para instalarse semanalmente.
 
 
-**Lenguajes Interpretados** 
+**3. Firewall (Cortafuegos)**
 
-Se traducen a código de máquina línea por línea mientras el programa se está ejecutando. Consumen más recursos del equipo, pero aumentan enormemente la productividad del programador (escriben menos código y no pierden tiempo compilando).
+ Es un sistema que filtra el tráfico de red, bloqueando conexiones entrantes que no hayas solicitado tú mismo.
 
-- Perl: Nacido para manipular texto, es el clásico favorito de los administradores de sistemas para automatizar tareas.
+- iptables: Es el potente sistema de firewall que Linux trae integrado "bajo el capó" (se maneja mediante complejos comandos de texto).
 
-- PHP: Diseñado para crear páginas web dinámicas (trabaja en conjunto con servidores como Apache). Es muy fácil de aprender y es la base de proyectos gigantes como WordPress.
-
-- Ruby: Facilita la programación compleja. Muy famoso por su entorno web Ruby on Rails y por ser la base de herramientas modernas para gestionar servidores de Linux (como Chef y Puppet).
-
-- Python: Su sintaxis facilita tareas difíciles. Es el gran favorito en el mundo académico por sus potentes capacidades de procesamiento estadístico y de datos. Su entorno web más famoso es Django.
-
-
-**Librerías (Bibliotecas)**
-
-Son paquetes de código preescrito que resuelven tareas comunes, para que el programador no tenga que "reinventar la rueda".
-
-- ImageMagick: Librería para manipular imágenes directamente desde el código o la consola.
-
-- OpenSSL: Librería criptográfica estándar para añadir seguridad a programas y servidores web.
-
-- Librería de C (Nivel bajo): Proporciona las funciones más básicas del sistema (como leer y escribir archivos en el disco) y es utilizada "por debajo" por casi todos los demás lenguajes y aplicaciones.
+- **gufw:** Es una interfaz gráfica (GUI) sencilla para el firewall de Ubuntu. Permite activar la protección con un solo clic y añadir excepciones fácilmente, sin tener que lidiar con la complejidad de `iptables`.
 
 ---
 
