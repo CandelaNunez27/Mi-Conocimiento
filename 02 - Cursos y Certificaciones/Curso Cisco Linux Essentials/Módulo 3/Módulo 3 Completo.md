@@ -35,47 +35,30 @@ Es una interfaz de entrada de texto que te permite darle instrucciones al sistem
 
 ---
 
-### 2.2 Aplicaciones de Escritorio
+### 3.4 Virtualización y Cloud Computing
 
-Aunque los servidores son el fuerte de Linux, también cuenta con un riquísimo ecosistema de aplicaciones para el usuario final (escritorio).
+Dado que el modo multiusuario clásico de Linux tiene límites (un usuario puede consumir todos los recursos del sistema), la industria utiliza la virtualización.
 
-**La Interfaz Gráfica (Cómo funciona lo visual)**
+**Virtualización** 
+Es dividir un servidor físico potente en varios servidores virtuales totalmente independientes.
 
-- X Window (X11 / X.org): Es el servidor gráfico base. Permite que el software opere en modo visual y acepta las entradas del teclado y el ratón.
+- Host (Anfitrión): El servidor físico real.
 
-- Administrador de Ventanas: Es el nivel básico. Se encarga de dibujar los menús y gestionar las ventanas en la pantalla (Ejemplos: Compiz, FVWM, Enlightenment).
+- Hipervisor: El software que reparte la CPU, RAM y disco.
 
-- Entorno de Escritorio: Es el nivel completo. Incluye su propio administrador de ventanas, pero le suma pantallas de inicio, administrador de archivos y muchísimas utilidades integradas. Los dos gigantes indiscutibles son KDE y GNOME.
+- Invitados (Guests): Las máquinas virtuales (VMs). Funcionan aisladas y no saben que están virtualizadas.
 
-
-**Ofimática (Productividad)**
-
-La alternativa libre a Microsoft Office.
-
-- *LibreOffice y OpenOffice*: Ambas ofrecen procesador de textos, hojas de cálculo, presentaciones y buscan compatibilidad total con los formatos de Microsoft.
-
-- Historia y política del Open Source: Originalmente, Sun Microsystems liberó OpenOffice. Cuando Oracle compró Sun, la comunidad desconfió del soporte que Oracle le daría al proyecto. Como resultado, el proyecto se "bifurcó" (se dividió) creando LibreOffice. Hoy en día, LibreOffice tiene el mayor impulso y viene por defecto en la mayoría de las distribuciones.
-
-**Navegadores Web y Correo Electrónico**
-
-- Navegadores: Firefox y Google Chrome dominan el mercado de código abierto. Su sana competencia obliga a ambos equipos a innovar constantemente, lo que beneficia a todos los usuarios de internet.
-
-- Clientes de Correo (Escritorio):  Thunderbird (de los creadores de Firefox/Mozilla).
-    
-    - **Evolution** (del entorno GNOME).
-    
-    - **KMail** (del entorno KDE).
-    
-    - _Ventaja:_ Al usar protocolos estándar (POP, IMAP, SMTP), puedes cambiar de un cliente a otro sin perder tus correos.
+- Ventajas: Ahorro gigante en hardware, energía y espacio. Es muy fácil crear y borrar máquinas de prueba.
 
 
-**Herramientas Creativas y Multimedia**
+**Cloud Computing (La Nube)**
+Es llevar la virtualización a una escala global, utilizando centros de datos remotos de terceros.
 
-- Blender: Modelado, animación y creación de películas en 3D (utilizado incluso en producciones de Hollywood).
+- El Modelo: En lugar de comprar y mantener tus propios servidores físicos, los alquilas en la nube de forma virtual.
 
-- GIMP: Manipulación y edición de imágenes en 2D (la gran alternativa a Photoshop).
+- Pago por uso: Solo pagas por los recursos exactos (Gigabytes, CPU) que consumes al mes.
 
-- *Audacity: Grabación y edición de audio.*
+- El Rey de la Nube: Linux es el motor absoluto; la inmensa mayoría de la infraestructura en la nube funciona sobre su kernel.
 
 ---
 
