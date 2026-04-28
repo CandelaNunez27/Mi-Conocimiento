@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "02 - Cursos y Certificaciones/Curso Cisco Linux Essentials/Módulo 3/Examen 3 Módulo 3 Respuestas.md",
+                "file": "02 - Cursos y Certificaciones/Curso Cisco Linux Essentials/Módulo 1/Examen 1 Módulo 1 Respuestas.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Examen 3 Módulo 3 Respuestas"
+              "title": "Examen 1 Módulo 1 Respuestas"
             }
           },
           {
@@ -35,8 +35,7 @@
               "title": "Módulo 3 Completo"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -219,14 +218,15 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "e6ab7123857a94f4",
+  "active": "e6bb5d90017c09e9",
   "lastOpenFiles": [
+    "02 - Cursos y Certificaciones/Curso Cisco Linux Essentials/Módulo 4",
+    "02 - Cursos y Certificaciones/Curso Cisco Linux Essentials/Módulo 2/Examen 2 Módulo 2 Respuestas.md",
     "02 - Cursos y Certificaciones/Curso Cisco Linux Essentials/Módulo 3/Examen 3 Módulo 3 Respuestas.md",
     "02 - Cursos y Certificaciones/Curso Cisco Linux Essentials/Módulo 3/Módulo 3 Completo.md",
     "02 - Cursos y Certificaciones/Curso Cisco Linux Essentials/Módulo 3/Módulo 3 Resumen General.md",
     "02 - Cursos y Certificaciones/Curso Cisco Linux Essentials/Módulo 2/Módulo 2 Completo.md",
     "04 - Otros/Imagenes/Pasted image 20260428024408.png",
-    "02 - Cursos y Certificaciones/Curso Cisco Linux Essentials/Módulo 2/Examen 2 Módulo 2 Respuestas.md",
     "02 - Cursos y Certificaciones/Curso Cisco Linux Essentials/Módulo 3",
     "02 - Cursos y Certificaciones/Curso Cisco Linux Essentials/Módulo 1/Examen 1 Módulo 1 Respuestas.md",
     "02 - Cursos y Certificaciones/Curso Cisco Linux Essentials/Módulo 2/Módulo 2 Resumen General.md",
@@ -266,7 +266,6 @@
     "01 - Tec Redes Datos y Telecom/1° Año/01 - Arquitectura de Computadoras/Módulo 2.3/01 - Fundamentos de la Unidad de Entrada y Salida.md",
     "01 - Tec Redes Datos y Telecom/1° Año/01 - Arquitectura de Computadoras/Módulo 2.3/02 - Técnicas de Sincronización y Transferencia.md",
     "01 - Tec Redes Datos y Telecom/1° Año/01 - Arquitectura de Computadoras/Módulo 3.1/01 - Microarquitectura y Gestión de Memoria Avanzada.md",
-    "01 - Tec Redes Datos y Telecom/1° Año/01 - Arquitectura de Computadoras/Módulo 3.1/02 - Arquitecturas Paralelas y Topologías de Red.md",
     "1° Año/01 - Arquitectura de Computadoras/Sin título.canvas"
   ]
 }

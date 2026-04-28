@@ -31,7 +31,7 @@ Es una interfaz de entrada de texto que te permite darle instrucciones al sistem
     
     - En Modo Texto: Al iniciar sesión, te encuentras inmediatamente dentro de la consola.
     
-    - En Modo Gráfico: Debes iniciar un shell gráfico, que es básicamente la misma consola de texto tradicional pero dentro de una ventana que puedes mover, maximizar o redimensionar. 
+    - *En Modo Gráfico: Debes iniciar un shell gráfico, que es básicamente la misma consola de texto tradicional pero dentro de una ventana que puedes mover, maximizar o redimensionar. *
 
 ---
 
@@ -42,11 +42,11 @@ Dado que el modo multiusuario clásico de Linux tiene límites (un usuario puede
 **Virtualización** 
 Es dividir un servidor físico potente en varios servidores virtuales totalmente independientes.
 
-- Host (Anfitrión): El servidor físico real.
+- *Host (Anfitrión): El servidor físico real.*
 
 - Hipervisor: El software que reparte la CPU, RAM y disco.
 
-- Invitados (Guests): Las máquinas virtuales (VMs). Funcionan aisladas y no saben que están virtualizadas.
+- *Invitados (Guests): Las máquinas virtuales (VMs). Funcionan aisladas y no saben que están virtualizadas.*
 
 - Ventajas: Ahorro gigante en hardware, energía y espacio. Es muy fácil crear y borrar máquinas de prueba.
 
@@ -68,7 +68,7 @@ Es llevar la virtualización a una escala global, utilizando centros de datos re
 
 Es la suite principal que cubre las tres grandes necesidades de oficina. Es altamente compatible con formatos de Microsoft Office y permite exportar directamente a PDF
 
-- Procesador de Textos (Writer): Para crear informes y memos. Soporta texto, imágenes, tablas y permite vincular datos desde una hoja de cálculo (para que los informes se actualicen automáticamente si cambian los números).
+- *Procesador de Textos (Writer): Para crear informes y memos. Soporta texto, imágenes, tablas y permite vincular datos desde una hoja de cálculo (para que los informes se actualicen automáticamente si cambian los números).*
 
 - Hoja de Cálculo (Calc): Para números, análisis de ventas y predicciones. No solo usa celdas; permite aplicar fórmulas matemáticas complejas y generar gráficos dinámicos.
 
@@ -93,16 +93,16 @@ Dado que Linux no distingue entre un usuario sentado frente al teclado y uno con
 
 La regla de oro es usar contraseñas fuertes (mínimo 10 caracteres, combinando mayúsculas, minúsculas, números y símbolos) y únicas para cada sitio o servicio.
 
-- Herramienta clave: Para no tener que memorizar decenas de claves complejas, se recomienda usar un gestor como KeePassX. De esta forma, solo necesitas recordar la contraseña de inicio de sesión de tu equipo y la contraseña maestra de KeePassX.
+- *Herramienta clave: Para no tener que memorizar decenas de claves complejas, se recomienda usar un gestor como KeePassX. De esta forma, solo necesitas recordar la contraseña de inicio de sesión de tu equipo y la contraseña maestra de KeePassX.*
 
 **2. Actualizaciones Constantes**
 
-Mantener el software al día es vital para cerrar brechas de seguridad. En distribuciones como Ubuntu, se puede configurar el sistema gráficamente para que busque actualizaciones diariamente. Las actualizaciones críticas (de seguridad) te pedirán instalarse de inmediato, mientras que el resto puede agruparse para instalarse semanalmente.
+Mantener el software al día es vital para cerrar brechas de seguridad. En distribuciones como Ubuntu, *se puede configurar el sistema gráficamente para que busque actualizaciones diariamente*.* Las actualizaciones críticas (de seguridad) te pedirán instalarse de inmediato, mientras que el resto puede agruparse para instalarse semanalmente.
 
 
 **3. Firewall (Cortafuegos)**
 
- Es un sistema que filtra el tráfico de red, bloqueando conexiones entrantes que no hayas solicitado tú mismo.
+*Es un sistema que filtra el tráfico de red, bloqueando conexiones entrantes que no hayas solicitado tú mismo para evitar que las personas remotas ejecuten los programas en tu computadora.*
 
 - iptables: Es el potente sistema de firewall que Linux trae integrado "bajo el capó" (se maneja mediante complejos comandos de texto).
 
@@ -117,12 +117,12 @@ Cada vez que navegas dejas un rastro o "huella digital". Para proteger tu inform
  Usa contraseñas únicas para cada sitio (apoyándote en gestores como KeePassX). Así, si hackean una página, el resto de tus cuentas estarán a salvo. Además, comparte solo los datos personales estrictamente necesarios para evitar que suplanten tu identidad en el banco.
 
 **El Rastreo de las Cookies**
-Las cookies "propias" son útiles (mantienen tu sesión iniciada), pero el problema son las cookies de terceros (píxeles de anunciantes o botones de redes sociales incrustados). Al estar en muchas webs distintas, rastrean tu actividad a través de todo internet para armar un perfil sobre ti.
+Las cookies "propias" son útiles (mantienen tu sesión iniciada), pero el problema son las cookies de terceros *(píxeles de anunciantes o botones/likes de redes sociales incrustados). Al estar en muchas webs distintas, rastrean tu actividad a través de todo internet para armar un perfil sobre ti.*
 
 **Configuración del Navegador**
- Puedes limitar esto configurando tu navegador para que envíe la señal voluntaria de "No rastrear", rechace automáticamente las cookies de terceros y elimine el historial al cerrarse. (Nota: una privacidad demasiado estricta puede hacer que algunas páginas dejen de funcionar bien).
+ Puedes limitar esto configurando tu navegador para que envíe la señal voluntaria de "No rastrear", rechace automáticamente las cookies de terceros y elimine el historial al cerrarse. *(Nota: una privacidad demasiado estricta puede hacer que algunas páginas dejen de funcionar bien).*
  
  **Anonimato Extremo con Tor** 
- Si buscas ocultar totalmente quién eres y desde dónde te conectas, el Navegador Tor ("The Onion Router") es la herramienta indicada. Rebota tu tráfico por distintos servidores del mundo para ocultar tu origen. La desventaja es que, por seguridad extrema, desactiva funciones (scripts) que hacen que muchas webs modernas no se vean bien.
+ *Si buscas ocultar totalmente quién eres y desde dónde te conectas, el Navegador Tor ("The Onion Router")* es la herramienta indicada. Rebota tu tráfico por distintos servidores del mundo para ocultar tu origen. La desventaja es que, por seguridad extrema, desactiva funciones (scripts) que hacen que muchas webs modernas no se vean bien.
 
 ---

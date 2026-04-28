@@ -1,96 +1,70 @@
 # Examen 3 - Módulo 3
 
 ## 1) Un servidor probablemente se ejecute en modo gráfico. ¿Verdadero o falso?
+  
   - Falso
 
-CORRECT - See Section 2.2.1
+CORRECT - See Section 3.2
 
 
-## 2) Administrador de paquetes:
-  -  Descarga el software a través de Internet
+## 2) ¿Ejecutando qué aplicacione en modo gráfico puede llegar al shell?
 
-CORRECT - See Section 2.2.3
+  -  Terminal
 
-
-## 3) ¿Qué aplicación usarías para editar y reconstruir los archivos de sonido para crear un podcast?
-  -  Audacity
-
-CORRECT - See Section 2.2.1
+CORRECT - See Section 3.3
 
 
-## 4) El nombre Richard Stallman se asocia con:
-  - The Free Software Foundation
+## 3) Virtualización significa:
+ 
+  -  Un único host puede dividirse en varios huéspedes
 
-CORRECT - See Section 2.3.1
-
-
-## 5) Un "copyleft provision" en una licencia de software significa:
-  - Código cerrado
-
-CORRECT - See Section 2.3.1
+CORRECT - See Section 3.4
 
 
-## 6) La mayor diferencia entre las licencias GPLv2 y BSD es:
-  - Debian
-
-CORRECT - See Section 2.3.1
-
-
-## 7) ¿Cuál de las siguientes licencias fue creada por la FSF?
-  - GPLv3
-
-CORRECT - See Section 2.3.1
-
-
-## 8) Un término genérico para el Código Abierto y el Software Gratuito es:
-  - FLOSS
-
-CORRECT - See Section 2.3.2
-
-
-## 9) La diferencia entre la GPL y LGPL son:
-  - LGPL permite la conexión del software sin GPL
-CORRECT - See Section 2.3.1
-
-
-## 10) La versión de licencia Creative Commons de una Dominio Público es:
-  - No Rights Reserved (sin derechos reservados)
-  
-CORRECT - See Section 2.3.3
-
----
-## 11) Si quieres crear un blog, ¿qué software sería más útil?
-  - WordPress
-  
-CORRECT - See Section 2.2.1
-
-## 12)¿Cuál de las siguientes piezas del software no está enfocadas al intercambio de archivos? (seleccione dos)
-  - X-Window
-  - PostgreSQL
-  
-CORRECT - See Section 2.2.1
-
-## 13)Si quieres crear e imprimir una factura, ¿qué software puedes utilizar?
+## 4) Si quieres escribir un informe que tuvieras que imprimir, es probable que utilices:
+ 
   -  LibreOffice
-  
-CORRECT - See Section 2.2.2
 
-## 14)¿Cuál de lo siguiente es cierto acerca de los lenguajes de programación compilados?
-  -   C es un lenguaje compilado
-  
-CORRECT - See Section 2.2.4
+CORRECT - See Section 3.5
 
-## 15)¿Qué software de servidor usarías para crear un directorio de empresa que puedas utilizar para buscar y autenticar?
-  -   OpenLDAP
-  
-CORRECT - See Section 2.2.1
 
-## 16)El propósito principal de un agente de transferencia de correo es:
-  -   Entregar el correo entre los servidores
-  
-CORRECT - See Section 2.2.1
+## 5) Si quieres almacenar nombres de usuario y las contraseñas para diferentes sitios web de una manera segura, puedes utilizar:
+ 
+  -  KeePassX
 
-## 17)¿Bajo qué licencia se distribuye Linux?
-  -   GPLv2
+CORRECT - See Section 3.6
+
+
+## 6) Puedes configurar tu computadora para comprobar si hay actualizaciones de forma automática. ¿Verdadero o falso?
+ 
+  - Verdadero
+
+CORRECT - See Section 3.6
+
+
+## 7) ¿Cuál de las siguientes es una herramienta que te ayuda a anonimizar la navegación por Internet?
+
+  - El onion router
+
+CORRECT - See Section 3.7
+
+
+## 8) Los botones "me gusta" de las redes sociales pueden realizar un seguimiento de tu actividad a través de Internet. ¿Verdadero o falso?
   
-CORRECT - See Section 2.3
+  - Verdadero
+
+CORRECT - See Section 3.7
+
+
+## 9) ¿Qué se puede hacer para evitar que las personas remotas ejecuten los programas en tu computadora?
+ 
+  - Encender un firewall
+  
+CORRECT - See Section 3.6
+
+
+## 10) ¿Cuáles son la compensacione de aumentar el nivel de privacidad que tienes en tu navegador web?
+
+  -  Los sitios pueden no funcionar correctamente
+  
+CORRECT - See Section 3.7
