@@ -1,64 +1,46 @@
-# Módulo 3
+# Módulo 4
 
 ## 1 Introducción
-Para ser un buen administrador de sistemas, primero debes usar Linux como tu escritorio diario y dominar las TIC básicas. Usarlo a diario acelera tu aprendizaje y te ayuda a empatizar con los usuarios. El trabajo no es solo configurar servidores; también incluye muchas tareas de oficina, como enviar correos y redactar documentación. El rol de "Administrador de Sistemas" es la posición más buscada por los reclutadores en el área de TI
+
+**GUI (Interfaz Gráfica)**
+Se controla haciendo clics. Es una forma fácil de administrar el sistema y resulta indispensable para trabajar con gráficos o videos.
+
+ **CLI (Línea de Comandos)**
+Se controla únicamente mediante el teclado. Aunque al principio cuesta porque exige memorizar comandos , ofrece mayor velocidad, un control más preciso y la capacidad de automatizar tareas (mediante scripting).
+
+**¿Por qué elegir la CLI?:** 
+Por la flexibilidad y movilidad que otorga. Si dominas la consola, serás capaz de operar de manera eficaz CUALQUIER distribución de Linux en cualquier empresa, sin depender de la interfaz gráfica que tengan instalada
 
 ---
-## 2 Modo Gráfico vs. No Gráfico
+## 2 Interfaz de Línea de Comandos (CLI)
 
-**Modo Gráfico (Escritorio):**
+La CLI es una interfaz basada en texto que funciona mediante el trabajo en equipo de dos elementos clave:
 
- Entorno visual con ventanas que se pueden mover y redimensionar, menús e íconos. Es el entorno clásico para el usuario final (donde usas navegadores web, LibreOffice, clientes de correo visuales, etc.). Permite iniciar sesión visualmente y abrir múltiples ventanas de terminal (shells) al mismo tiempo, lo cual es muy útil para administrar varios equipos remotos.
+- El Terminal: Es la aplicación visible donde el usuario escribe los comandos y donde aparecen los resultados o los mensajes de error. Su función es tomar ese texto y pasárselo al shell.
 
-**Modo No Gráfico (Consola / Texto):**
-
-Interfaz basada puramente en texto. Tras ingresar tu usuario y contraseña, entras directamente al shell. No existen ventanas para navegar con el ratón. Aunque sigue habiendo editores de texto, navegadores y clientes de correo, todo funciona exclusivamente mediante texto. 
-La mayoría de los servidores se ejecutan en este modo porque cargar una interfaz gráfica consumiría recursos innecesariamente (ya que casi nadie interactúa físicamente frente al servidor).
-
-![406](../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260428024408.png)
-
-**Elementos en pantalla:**
-- MOTD (Message of the Day / Mensaje del día):** Texto que puede aparecer justo después de iniciar sesión para dar información importante configurada por el administrador.
-
-- Desplazamiento: A medida que ingresas comandos (como el comando `w` para ver quién está conectado), el texto viejo se desplaza hacia arriba. Es responsabilidad del programa de terminal recordar el historial para que puedas subir y leer comandos anteriores.
+- El Shell: Es el intérprete del sistema. Recibe el texto enviado por el terminal y lo traduce a instrucciones reales que el sistema operativo puede ejecutar
 
 ---
-### 3 Línea de Comandos
+### 3 Acceso a la Terminal
 
-Es una interfaz de entrada de texto que te permite darle instrucciones al sistema operativo, abarcando desde un comando simple de una sola palabra hasta scripts (secuencias de programación) muy complejos.
+El acceso a la línea de comandos depende de cómo inicie el sistema:
 
-- **Cómo acceder a ella:**
-    
-    - En Modo Texto: Al iniciar sesión, te encuentras inmediatamente dentro de la consola.
-    
-    - *En Modo Gráfico: Debes iniciar un shell gráfico, que es básicamente la misma consola de texto tradicional pero dentro de una ventana que puedes mover, maximizar o redimensionar. *
+- Arranque Directo (Servidores): Inician directamente en la consola de texto para no desperdiciar recursos gráficos y maximizar la velocidad.
+
+- Terminal de GUI: En sistemas con escritorio, es un programa que emula la terminal y se abre fácilmente desde los menús.
+
+- Terminal Virtual: Es una consola pura que se ejecuta en paralelo a la interfaz gráfica. Se accede mediante atajos de teclado (como `Ctrl-Alt-F1`) y te exige iniciar sesión nuevamente antes de usarla. Puede no estar disponible si usas máquinas virtuales.
 
 ---
+### 3.1 El Prompt (Símbolo del sistema)
 
-### 4 Virtualización y Cloud Computing
+El prompt es el indicador visual que aparece en la terminal cuando el sistema ha terminado de ejecutar cualquier proceso y está listo para que introduzcas un nuevo comando.
 
-Dado que el modo multiusuario clásico de Linux tiene límites (un usuario puede consumir todos los recursos del sistema), la industria utiliza la virtualización.
+Aunque su aspecto puede variar según la distribución de Linux, normalmente proporciona información de contexto muy útil. Tomando como ejemplo la estructura `sysadmin@localhost:~$`:
 
-**Virtualización** 
-Es dividir un servidor físico potente en varios servidores virtuales totalmente independientes.
-
-- *Host (Anfitrión): El servidor físico real.*
-
-- Hipervisor: El software que reparte la CPU, RAM y disco.
-
-- *Invitados (Guests): Las máquinas virtuales (VMs). Funcionan aisladas y no saben que están virtualizadas.*
-
-- Ventajas: Ahorro gigante en hardware, energía y espacio. Es muy fácil crear y borrar máquinas de prueba.
-
-
-**Cloud Computing (La Nube)**
-Es llevar la virtualización a una escala global, utilizando centros de datos remotos de terceros.
-
-- El Modelo: En lugar de comprar y mantener tus propios servidores físicos, los alquilas en la nube de forma virtual.
-
-- Pago por uso: Solo pagas por los recursos exactos (Gigabytes, CPU) que consumes al mes.
-
-- El Rey de la Nube: Linux es el motor absoluto; la inmensa mayoría de la infraestructura en la nube funciona sobre su kernel.
+- `sysadmin`: Indica el nombre del usuario que tiene la sesión iniciada.
+- `localhost`: Es el nombre del equipo o sistema en el que estás trabajando.
+- `~` (Tilde): Muestra el directorio actual en el que te encuentras. En el mundo Linux, este símbolo es una abreviatura universal para referirse al directorio personal (o home) de tu usuario (por ejemplo, `/home/sysadmin`).
 
 ---
 
