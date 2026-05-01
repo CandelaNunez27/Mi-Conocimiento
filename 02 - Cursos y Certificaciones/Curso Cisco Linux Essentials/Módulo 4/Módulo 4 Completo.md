@@ -43,52 +43,38 @@ Aunque su aspecto puede variar según la distribución de Linux, normalmente pro
 - `~` (Tilde): Muestra el directorio actual en el que te encuentras. En el mundo Linux, este símbolo es una abreviatura universal para referirse al directorio personal (o home) de tu usuario (por ejemplo, `/home/sysadmin`).
 
 ---
+### 3.2 El Shell
 
-### 5 Utilizar Linux para el Trabajo
+El shell es el intérprete del sistema: se encarga de traducir los comandos que escribe el usuario en acciones reales que el sistema operativo ejecuta. En Linux el más utilizado por defecto en las distribuciones es el BASH shell. Sus características y funciones principales incluyen:
 
-**Ofimática: LibreOffice (y OpenOffice)**
+- Historial de comandos: Recuerda el registro de lo que has escrito, permitiéndote volver a ejecutar comandos previos de forma rápida.
 
-Es la suite principal que cubre las tres grandes necesidades de oficina. Es altamente compatible con formatos de Microsoft Office y permite exportar directamente a PDF
+- Scripting: Permite guardar secuencias de comandos en un archivo para ejecutarlos todos a la vez. Además, soporta funciones de programación puras (como condicionales y subrutinas).
 
-- *Procesador de Textos (Writer): Para crear informes y memos. Soporta texto, imágenes, tablas y permite vincular datos desde una hoja de cálculo (para que los informes se actualicen automáticamente si cambian los números).*
+- Alias: Permite crear atajos o "apodos" cortos para ejecutar comandos largos o complejos.
 
-- Hoja de Cálculo (Calc): Para números, análisis de ventas y predicciones. No solo usa celdas; permite aplicar fórmulas matemáticas complejas y generar gráficos dinámicos.
-
-- Presentaciones: Para crear diapositivas para exponer con texto, gráficos y videos.
-
-- Extras: Permite el uso de extensiones, pudiendo integrarse, por ejemplo, con software Wiki para intranets empresariales.
-
-
-**Navegadores Web**
-
-- Firefox y Google Chrome: consideran a Linux un "ciudadano de primera clase". Esto significa que las versiones de Linux reciben las actualizaciones, nuevas funciones y parches de seguridad al mismo tiempo que Windows o Mac.
-
-- Limitación externa: Históricamente, algunos complementos cerrados de terceros (como el antiguo Adobe Flash) podían tener problemas, ya que dependían del soporte de empresas externas con otras prioridades.
+- Variables: Se usan para almacenar información vital del sistema que el shell utiliza para modificar el comportamiento de los comandos y funciones.
 
 ---
+### 4.3.3 El Formato de los Comandos
 
-### 6 Proteger tu Equipo Linux
+La estructura estándar de una instrucción en Linux es: `comando [opciones] [argumentos]`
 
-Dado que Linux no distingue entre un usuario sentado frente al teclado y uno conectado desde internet, la seguridad es un factor obligatorio. Se basa en tres medidas fundamentales:
+- Comando: La acción principal que deseas ejecutar (ej. `ls` para listar).
 
-**1. Gestión de Contraseñas**
+- Opciones: Modifican cómo actúa el comando.
 
-La regla de oro es usar contraseñas fuertes (mínimo 10 caracteres, combinando mayúsculas, minúsculas, números y símbolos) y únicas para cada sitio o servicio.
+- Argumentos: Indican el objetivo sobre el cual recae la acción, como un archivo o la ruta de un directorio.
 
-- *Herramienta clave: Para no tener que memorizar decenas de claves complejas, se recomienda usar un gestor como KeePassX. De esta forma, solo necesitas recordar la contraseña de inicio de sesión de tu equipo y la contraseña maestra de KeePassX.*
+**Regla de Oro:** Linux es case-sensitive (distingue mayúsculas de minúsculas). Debes escribir comandos, opciones y argumentos exactamente como corresponden, ya que el sistema ve a las mayúsculas y minúsculas como caracteres totalmente distintos.
 
-**2. Actualizaciones Constantes**
+**Ejemplos prácticos con `ls`:**
 
-Mantener el software al día es vital para cerrar brechas de seguridad. En distribuciones como Ubuntu, *se puede configurar el sistema gráficamente para que busque actualizaciones diariamente*.* Las actualizaciones críticas (de seguridad) te pedirán instalarse de inmediato, mientras que el resto puede agruparse para instalarse semanalmente.
+- `ls`: Lista los archivos del directorio actual.
 
+- `ls /etc/ppp`: Usa un argumento para listar los archivos de ese directorio en específico.
 
-**3. Firewall (Cortafuegos)**
-
-*Es un sistema que filtra el tráfico de red, bloqueando conexiones entrantes que no hayas solicitado tú mismo para evitar que las personas remotas ejecuten los programas en tu computadora.*
-
-- iptables: Es el potente sistema de firewall que Linux trae integrado "bajo el capó" (se maneja mediante complejos comandos de texto).
-
-- gufw: Es una interfaz gráfica (GUI) sencilla para el firewall de Ubuntu. Permite activar la protección con un solo clic y añadir excepciones fácilmente, sin tener que lidiar con la complejidad de `iptables`.
+- `ls /etc/ppp /etc/ssh`: Utiliza múltiples argumentos (separados por un espacio) para listar el contenido de ambos directorios al mismo tiempo.
 
 ---
 ### 7 Protegerte a ti Mismo
