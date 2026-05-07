@@ -21,4 +21,15 @@ Depende, si necesito arrancar y no tengo los dispositivos fisicos, entonces si. 
 
 ![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260507000757.png)
 
-#### Mod
+#### Modelos IA generativa
+
+![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260507001341.png)
+
+#### FinOps (Técnicas para ser lo más eficiente económicamente)
+
+![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260507002004.png)
+
+# Multicloud: Caso de Uso
+
+![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260507002336.png)
+
