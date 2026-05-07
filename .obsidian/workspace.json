@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/2026-05-06 Día 7 (6 fue feriado) Práctica.md",
+                "file": "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/2026-05-06 Día 7 (6 fue feriado) Téoria y Práctica Sobre Proveedores.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026-05-06 Día 7 (6 fue feriado) Práctica"
+              "title": "2026-05-06 Día 7 (6 fue feriado) Téoria y Práctica Sobre Proveedores"
             }
           }
         ]
@@ -224,12 +224,16 @@
   },
   "active": "cb31d924805cd6c2",
   "lastOpenFiles": [
-    "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/2026-04-24 Día 4 Práctica.md",
-    "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/2026-05-06 Día 7 (6 fue feriado) Práctica.md",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/2026-04-29 Día 5 Redes en la Nube.md",
-    "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/2026-04-15 Día 1 Introducción.md",
-    "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/2026-04-17 Día 2 Práctica.md",
+    "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/2026-04-24 Día 4 Práctica.md",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/2026-04-22 Día 3 Introducción La Nube.md",
+    "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/2026-04-17 Día 2 Práctica.md",
+    "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/2026-04-15 Día 1 Introducción.md",
+    "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/2026-05-06 Día 7 (6 fue feriado) Téoria y Práctica Sobre Proveedores.md",
+    "04 - Otros/Imagenes/Pasted image 20260507000757.png",
+    "04 - Otros/Imagenes/Pasted image 20260507000419.png",
+    "04 - Otros/Imagenes/Pasted image 20260507000159.png",
+    "04 - Otros/Imagenes/Pasted image 20260506235915.png",
     "04 - Otros/Imagenes/Pasted image 20260506233521.png",
     "04 - Otros/Imagenes/Pasted image 20260506233233.png",
     "04 - Otros/Imagenes/Pasted image 20260506232858.png",
@@ -249,9 +253,6 @@
     "02 - Cursos y Certificaciones/Curso Cisco Linux Essentials/Módulo 1/Módulo 1 Resumen General.md",
     "02 - Cursos y Certificaciones/Curso Cisco Linux Essentials/Módulo 1/Módulo 1 Completo.md",
     "04 - Otros/Markdown.md",
-    "04 - Otros/Imagenes/Pasted image 20260423231426.png",
-    "04 - Otros/Imagenes/Pasted image 20260423231123.png",
-    "Imagenes/Pasted image 20260423231040.png",
     "Imagenes",
     "02 - Cursos y Certificaciones/Curso Cisco Linux Essentials/Módulo 2",
     "02 - Cursos y Certificaciones/Curso Cisco Linux Essentials/Módulo 1",
@@ -261,7 +262,6 @@
     "03 - Proyectos y Laboratorios",
     "02 - Cursos y Certificaciones",
     "01 - Tec Redes Datos y Telecom/1° Año/00 - Índice/00 - Arquitectura de Computadoras.md",
-    "04 - Otros/Imagenes/Pasted image 20260422091704.png",
     "01 - Tec Redes Datos y Telecom/1° Año/01 - Arquitectura de Computadoras/Módulo 3.2/02 - Plataforma Arduino (Hardware y Software).md",
     "01 - Tec Redes Datos y Telecom/1° Año/01 - Arquitectura de Computadoras/Módulo 3.2/03 - Programación de Arduino y Circuitos Prácticos.md",
     "01 - Tec Redes Datos y Telecom/1° Año/01 - Arquitectura de Computadoras/Módulo 3.2/01 - Sistemas Embebidos y Microcontroladores.md",
@@ -269,7 +269,6 @@
     "01 - Tec Redes Datos y Telecom/1° Año/01 - Arquitectura de Computadoras/Módulo 1.3/01 - Lógica Funcional y Unidad Aritmético Lógica (ULA).md",
     "01 - Tec Redes Datos y Telecom/1° Año/01 - Arquitectura de Computadoras/Módulo 1.3/02 - Elementos de Memoria y Circuitos Secuenciales.md",
     "01 - Tec Redes Datos y Telecom/1° Año/01 - Arquitectura de Computadoras/Módulo 2.1/02 - Unidad de Control y Ciclo de Instrucción.md",
-    "01 - Tec Redes Datos y Telecom/1° Año/01 - Arquitectura de Computadoras/Módulo 2.2/02 - Organización y Capacidad de Memoria.md",
     "1° Año/01 - Arquitectura de Computadoras/Sin título.canvas"
   ]
 }
