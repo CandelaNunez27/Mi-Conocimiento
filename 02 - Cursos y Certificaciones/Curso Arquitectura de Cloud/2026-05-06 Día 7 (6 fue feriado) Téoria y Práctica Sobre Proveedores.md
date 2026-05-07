@@ -37,6 +37,22 @@ El marketing de compras tuyo analizando tus interacciones para mostrarte otro co
 ---
 # Práctica
 
-Se ingreso ha *aws* y se configuro un *VPC*.
+Se ingreso ha *aws* y se configuro un *VPC* y se vieron conceptos de la clase pasada en la web.
 Viene una VPC por defecto que recomienda no borrarla. Contiene un mapa de de recursos con subredes y tablas de conexión que están totalmente abiertas al gateway, por ende no es recomendable usar esta como vpc porque esta toda expuesta.
 
+#### Crear VPC
+
+- Nombre: mi-vpc
+- CIDR IPv4: 10.0.0.0/16
+- Crear Subred Pública:
+	- Nombre: public-subnet-1
+	- Seleccionar zona: EEEUU
+	- Bloque de CIDR de VPC IPv4: 10.0.0.0/16
+	- Bloque de CIDR de la subred IPv4: 10.0.1.0/24
+	- Se puede agregar tags como "ventas"
+- Crear Subred Privada:
+	- Nombre: private-subnet-1
+	- Seleccionar zona: EEEUU
+	- Bloque de CIDR de VPC IPv4: 10.0.0.0/16
+	- Bloque de CIDR de la subred IPv4: 10.0.2.0/24
+	- Se puede agregar tags como "data"
