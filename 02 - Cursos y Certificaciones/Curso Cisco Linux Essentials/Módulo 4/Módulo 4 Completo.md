@@ -94,21 +94,23 @@ El sistema guarda automáticamente un registro de todo lo que escribes en la ter
 
 **1. Ver y navegar por el historial:**
 
-- **`history`**: Muestra una lista numerada con todos tus comandos recientes.
+- `history`: Muestra una lista numerada con todos tus comandos recientes.
 
-- **Teclado**: Usa la **Flecha Arriba (↑)** para retroceder por tu historial. Una vez encuentres el comando, presiona _Enter_ para ejecutarlo, o usa las flechas laterales para editar el texto antes de enviarlo.    
+- Teclado: Usa la Flecha Arriba (↑) para retroceder por tu historial. Una vez encuentres el comando, presiona Enter para ejecutarlo, o usa las flechas laterales para editar el texto antes de enviarlo.    
 
 **2. Atajos rápidos (Expansión del historial):** El signo de exclamación (`!`) te permite ejecutar comandos anteriores al instante sin tener que buscarlos:
 
-- **`!numero`** (ej. `!3`): Ejecuta el comando ubicado en esa posición exacta de tu lista.
+- `!numero` (ej. `!3`): Ejecuta el comando ubicado en esa posición exacta de tu lista.
 
-- **`!!`**: Vuelve a ejecutar inmediatamente tu último comando (muy útil si olvidaste poner `sudo` al principio).
+- `!!`: Vuelve a ejecutar inmediatamente tu último comando (muy útil si olvidaste poner `sudo` al principio).
 
-- **`!-5`**: Ejecuta el quinto comando, pero contando desde el final de la lista hacia arriba.
+- `!-5`: Ejecuta el quinto comando, pero contando desde el final de la lista hacia arriba.
 
-- **`!texto`** (ej. `!ls`): Ejecuta el comando más reciente que empiece con esas letras.
+- `!texto` (ej. `!ls`): Ejecuta el comando más reciente que empiece con esas letras.
 
-- **`history 5`**: En lugar de toda la lista, te muestra únicamente los últimos 5 comandos ejecutados.
+- `history 5`: En lugar de toda la lista, te muestra únicamente los últimos 5 comandos ejecutados.
+
+![](../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260501021742.png)
 
 ---
 
