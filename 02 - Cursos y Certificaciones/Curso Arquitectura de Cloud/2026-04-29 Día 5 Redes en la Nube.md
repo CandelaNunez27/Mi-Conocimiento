@@ -1,3 +1,5 @@
+**Clase Grabada**: https://drive.google.com/file/d/15Ck5ZFR4TvNEgqXuhTc0Vh2UQ4SfeUXl/view?usp=sharing 
+
 **Páginas para virtualizar:**
 https://killercoda.com/ terminal con laboratorios (Linux, grafana, ... ).
 https://labex.io/ terminal con interfaz con laboratorios (Linux, cybersecurity, ....) dura una 1 hs y se va renovando.
@@ -40,4 +42,9 @@ Se debe separar lo público de lo privado, y tráfico interno controlado como vp
 La seguridad se gestiona en capas concéntricas:
 - **IAM**: Identidad como perímetro.
 - **NACL**: Firewall a nivel Subred (Stateless).
-- **Security Groups**: Firewall a nivel Insta
+- **Security Groups**: Firewall a nivel Instancia (Stateful)
+![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260506232858.png)
+
+# Ejemplo de Arquitectura en 2 capas
+
+![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260506233233.png)

@@ -1,3 +1,7 @@
+
+**Clase Grabada**: https://drive.google.com/file/d/12GFY5a6z0tpkgzZ0pDZXv-5yjh55dHpK/view?usp=sharing
+
+**Aula Virtual**: https://aulavirtualipap.mendoza.gov.ar/moodle/ (Usuario: 27464734568, Contraseña: 46473456)
 # Fundamentos
 
 ## La Era On-Premise

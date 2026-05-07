@@ -1,3 +1,5 @@
+
+**Clase Grabada**: https://drive.google.com/file/d/1mduQbK87IXD8soMmEU4a-bpMUIr10OQP/view?usp=sharing
 # ¿Cómo funciona la nube?
 Se puede crear su propia nube. Necesitan corriente, refrigeración, baterías, conexión de red estable, ciberseguridad, equipos potentes para configuraciones de red contemplando la seguridad de firmware, poder de computo, gran capacidad para almacenar base de datos. 
 
