@@ -56,3 +56,18 @@ Viene una VPC por defecto que recomienda no borrarla. Contiene un mapa de de rec
 	- Bloque de CIDR de VPC IPv4: 10.0.0.0/16
 	- Bloque de CIDR de la subred IPv4: 10.0.2.0/24
 	- Se puede agregar tags como "data"
+
+#### Crear Servicios Instancia EC2
+
+- Nombre: ec2-1
+- ISO: (Ubuntu, Amazon Linux, macOS, Windows, Red Hat, SUSE Linux, Debian)
+- Seleccionar hardware disponible:  64 bit, CPU 2 Nucleos, 4GB RAM
+- Se puede poner contraseña a la maquina
+- Network Settings:  
+	- Seleccionar vpc:  mi-vpc
+	- Subnet: public-subnet-1
+	- Auto asignacion de ip pública: activado
+	- Customizar que ip o quienes pueden conectarse con la maquina
+- Se puede generar el script para que se crea la maquina automáticamente (como una receta).
+- Todo esto se puede hacer por consola, o se puede ejecutar ese script receta en consola. (profesor lo mostrara en la siguiente clase).
+- 
