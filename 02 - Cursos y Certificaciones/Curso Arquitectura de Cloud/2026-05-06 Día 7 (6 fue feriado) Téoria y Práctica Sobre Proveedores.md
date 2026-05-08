@@ -69,5 +69,14 @@ Viene una VPC por defecto que recomienda no borrarla. Contiene un mapa de de rec
 	- Auto asignacion de ip pública: activado
 	- Customizar que ip o quienes pueden conectarse con la maquina
 - Se puede generar el script para que se crea la maquina automáticamente (como una receta).
-- Todo esto se puede hacer por consola, o se puede ejecutar ese script receta en consola. (profesor lo mostrara en la siguiente clase).
-- 
+- Todo esto se puede hacer por consola, o se puede ejecutar ese script receta en consola. (profesor lo mostrara en la siguiente clase con el usuario con permisos).
+
+#### Crear privilegios con usuario 
+
+- En IAM users
+- En security credentials
+- En Access Keys:
+	- Crear access keys
+	- Permitir que use la CLI (Línea de Comandos)
+	- Descripción: Acceso a consola
+	-  Se mostrara el access key y el secret access key que este solo se mostrara una sola vez.
