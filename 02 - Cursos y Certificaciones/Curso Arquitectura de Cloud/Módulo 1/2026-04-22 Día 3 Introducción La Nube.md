@@ -44,12 +44,12 @@ El cliente se asegura de los datos, de IAM, Cifrado, no hay que ser un punto de 
 En esta clase vamos a meternos en cómo funciona la nube por dentro. Si en la Semana 1 vimos los “fierros” y la virtualización, hoy vamos a analizar quién se hace cargo de qué dentro de la infraestructura
 
 
-**Modelos de servicio: La pirámide de responsabilidad**
+#### Modelos de servicio: La pirámide de responsabilidad
 
 La diferencia crítica entre estos modelos no es solo tecnológica, sino de gestión y control. Se suele explicar con la analogía de "La pizza como servicio", pero aquí lo veremos desde la ingeniería de sistemas.
 
 
-**A. IaaS (Infrastructure as a Service) - "Tú lo construyes"**
+###### A. IaaS (Infrastructure as a Service) - "Tú lo construyes"**
 
 Es el nivel más bajo de abstracción. El proveedor te da los recursos de computación básicos (servidores virtuales, red, almacenamiento).
 
@@ -59,7 +59,7 @@ Es el nivel más bajo de abstracción. El proveedor te da los recursos de comput
 
 ●       **Ejemplo:** Un servidor **EC2 de AWS** o una **VM en Azure**. Tú eliges si instalas Linux o Windows y eres responsable de que sea seguro.
 
-**B. PaaS (Platform as a Service) - "Tú solo programas"**
+###### B. PaaS (Platform as a Service) - "Tú solo programas"
 
 Diseñado para desarrolladores. El proveedor abstrae el sistema operativo y el hardware. Tú solo entregas el código.
 
@@ -69,7 +69,7 @@ Diseñado para desarrolladores. El proveedor abstrae el sistema operativo y el h
 
 ●       **Ejemplo: Google App Engine o Heroku.** No tenés que preocuparte por actualizar el sistema operativo o el kernel; solo por que tu código funcione correctamente.
 
-**C. SaaS (Software as a Service) - "Tú solo consumes"**
+###### C. SaaS (Software as a Service) - "Tú solo consumes"
 
 El modelo de consumo final. No ves servidores, ni código, ni bases de datos.
 
@@ -79,7 +79,7 @@ El modelo de consumo final. No ves servidores, ni código, ni bases de datos.
 
 ●       **Ejemplo:** **Google Workspace (Gmail, Drive)** o **Salesforce**.
 
-**Análisis de diferencias críticas: cuadro comparativo entre ambos modelos.**
+###### Análisis de diferencias críticas: cuadro comparativo entre ambos modelos.
 
 | Característica   | IaaS                                           | PaaS                        | SaaS                       |
 | ---------------- | ---------------------------------------------- | --------------------------- | -------------------------- |
@@ -88,14 +88,14 @@ El modelo de consumo final. No ves servidores, ni código, ni bases de datos.
 | Público objetivo | Administradores de Sistemas / Cloud Architects | Desarrolladores de Software | Usuarios finales / Negocio |
 | Mantenimiento    | Alto (actualizar SO)                           | Bajo (solo código)          | Nulo                       |
 
-**Modelos de despliegue:**
+#### Modelos de despliegue:
 
 **Antes de empezar pensemos ¿Dónde están mis datos? ....**
 
-![](https://aulavirtualipap.mendoza.gov.ar/moodle/pluginfile.php/75591/mod_book/chapter/1366/video.jpg)  
+![](https://youtu.be/tVbniAqMEPs?si=FXrwqZqjLnj7Hzve)  
 
   
-**A. Nube Pública (Public Cloud)**
+###### A. Nube Pública (Public Cloud)
 
 Los servicios se ofrecen a través de la internet pública y son compartidos por múltiples organizaciones (multi-tenancy).
 
@@ -105,7 +105,7 @@ Los servicios se ofrecen a través de la internet pública y son compartidos por
 
 ●       **Líderes:** AWS, Azure, Google Cloud (GCP).
 
-**B. Nube Privada (Private Cloud)**
+###### B. Nube Privada (Private Cloud)
 
 La infraestructura es dedicada exclusivamente a una sola organización. Puede estar físicamente en el data center de la empresa o alojada por un tercero.
 
@@ -113,7 +113,7 @@ La infraestructura es dedicada exclusivamente a una sola organización. Puede es
 
 ●       **Tecnología clave:** OpenStack o VMware vCloud.
 
-**C. Nube Híbrida (Hybrid Cloud)**
+###### C. Nube Híbrida (Hybrid Cloud)
 
 Es la combinación de ambas, conectadas mediante tecnología que permite que los datos y las aplicaciones se compartan entre ellas.
 
@@ -147,17 +147,13 @@ Vamos a ver por qué muchas organizaciones eligen la nube híbrida para tener ma
 
 **Innovación y agilidad:** La informática en la nube híbrida facilita un despliegue más rápido y el acceso a nuevas tecnologías, proporcionando a las empresas una ventaja competitiva.
 
-  
-
-![](https://aulavirtualipap.mendoza.gov.ar/moodle/pluginfile.php/75591/mod_book/chapter/1366/image%20%283%29.png)  
-
 **_Punto clave:_**
 
 _La **Nube Híbrida** no es solo "usar dos nubes", requiere una conexión técnica sólida (como un túnel VPN o Direct Connect)._
 
   
 
-**Responsabilidad Compartida**:
+#### Responsabilidad Compartida:
 
 En la nube, la seguridad de la infraestructura es del proveedor, pero la seguridad en la nube (tus datos) es tuya.
 
@@ -165,21 +161,20 @@ En el mundo de la nube, el Modelo de Responsabilidad Compartida es la "letra chi
 
 La regla de oro es simple: El proveedor (CSP) es responsable de la seguridad _de_ la nube, y tú eres responsable de la seguridad _en_ la nube**.**
 
-**El espectro de responsabilidad según el modelo**
+###### El espectro de responsabilidad según el modelo
 
 Dependiendo de qué tan "administrado" sea el servicio que contrates, tu carga de trabajo cambia. Aquí es donde muchos fallan al asumir que, por estar en la nube, "todo está respaldado y protegido".
 
-|   |   |   |   |   |
-|---|---|---|---|---|
-|Capa de Tecnología|On-Premise|IaaS (Infraestructura)|PaaS (Plataforma)|SaaS (Software)|
-|Datos y Contenido|Tú|Tú|Tú|Tú|
-|Identidad y Acceso (IAM)|Tú|Tú|Tú|Tú|
-|Aplicaciones|Tú|Tú|Tú|Proveedor|
-|Sistema Operativo (OS)|Tú|Tú|Proveedor|Proveedor|
-|Red y Virtualización|Tú|Proveedor|Proveedor|Proveedor|
-|Infraestructura Física|Tú|Proveedor|Proveedor|Proveedor|
+| Capa de Tecnología       | On-Premise | IaaS (Infraestructura) | PaaS (Plataforma) | SaaS (Software) |
+| ------------------------ | ---------- | ---------------------- | ----------------- | --------------- |
+| Datos y Contenido        | Tú         | Tú                     | Tú                | Tú              |
+| Identidad y Acceso (IAM) | Tú         | Tú                     | Tú                | Tú              |
+| Aplicaciones             | Tú         | Tú                     | Tú                | Proveedor       |
+| Sistema Operativo (OS)   | Tú         | Tú                     | Proveedor         | Proveedor       |
+| Red y Virtualización     | Tú         | Proveedor              | Proveedor         | Proveedor       |
+| Infraestructura Física   | Tú         | Proveedor              | Proveedor         | Proveedor       |
 
-**Los 3 puntos críticos que suelen olvidarse**
+###### Los 3 puntos críticos que suelen olvidarse
 
 **1. Los Datos siempre son tuyos**
 
@@ -195,7 +190,6 @@ El proveedor garantiza que nadie entrará físicamente al servidor, pero si tu c
 
 _**Dato clave:** La mayoría de las fallas de seguridad en la nube no son por vulnerabilidades del proveedor, sino por **malas configuraciones** del usuario._
 
-  
 
 **¿Cómo saber si estás cumpliendo tu parte?**
 
