@@ -1,5 +1,3 @@
-**Clase Grabada**: https://drive.google.com/file/d/1YZODY4eklbJaPUicdFIWvrWA1DU-G5e6/view?usp=sharing
-
 # Fundamentos: ¿Nube si o no?
 
 Depende, si necesito arrancar y no tengo los dispositivos físicos, entonces si. Sino hibrida. evaluando el contexto de la empresa. El arquitecto de la nube moderno no se casa con un proveedor, se casa con la eficiencia, a resiliencia y el costo-beneficio del negocio.
@@ -80,3 +78,90 @@ Viene una VPC por defecto que recomienda no borrarla. Contiene un mapa de de rec
 	- Permitir que use la CLI (Línea de Comandos)
 	- Descripción: Acceso a consola
 	-  Se mostrara el access key y el secret access key que este solo se mostrara una sola vez.
+
+---
+
+# Material de Clase
+
+### 1. Introducción
+
+Esta clase está diseñada para proporcionar una visión estratégica y técnica sobre el ecosistema de los "Tres Grandes" (AWS, Azure y Google Cloud).
+
+![](https://aulavirtualipap.mendoza.gov.ar/moodle/pluginfile.php/75595/mod_book/chapter/1369/image%20%285%29.png)  
+
+En 2026, la decisión ya no es "si ir a la nube", sino "cómo orquestar múltiples nubes" para maximizar la eficiencia y la innovación.
+
+**El panorama estratégico en 2026**  
+
+El mercado de la nube ha madurado hacia un modelo de **soberanía digital** y **especialización**. Aunque AWS mantiene el liderazgo en cuota de mercado, la brecha se ha cerrado debido a la verticalización de servicios.
+
+![](https://aulavirtualipap.mendoza.gov.ar/moodle/pluginfile.php/75595/mod_book/chapter/1369/image%20%286%29.png)
+
+  
+
+|   |   |   |   |
+|---|---|---|---|
+|Característica|Amazon Web Services (AWS)|Microsoft Azure|Google Cloud (GCP)|
+|Cuota de Mercado (aprox.)|~31%|~25%|~13%|
+|Perfil Ideal|Empresas que buscan un catálogo más amplio y escalabilidad extrema.|Corporaciones con ecosistema Microsoft y enfoque híbrido.|Startups nativas digitales, IA generativa y análisis de datos masivos.|
+|Fortaleza Técnica|Madurez de servicios e infraestructura global (Regiones/Zonas).|Integración nativa con Active Directory, M365 y SQL Server.|Liderazgo en Kubernetes (GKE), IA (Vertex AI) y redes de baja latencia.|
+
+**Comparativa técnica por dominios**
+
+Te dejamos material para profundizar:
+
+![](https://aulavirtualipap.mendoza.gov.ar/moodle/pluginfile.php/75595/mod_book/chapter/1369/video.jpg)  
+
+  
+
+  
+
+**A. Cómputo (Compute)**
+
+Es el motor de cualquier arquitectura. La tendencia actual es el uso de procesadores propios (ARM) para optimizar el costo/rendimiento.
+
+●       **AWS (EC2):** Ofrece la mayor variedad de instancias. Sus chips **Graviton4** (lanzados recientemente) permiten un ahorro de hasta el 40% frente a los x86 tradicionales.
+
+●       **Azure (Virtual Machines):** tiene una fuerte integración con entornos Windows. Su ventaja estratégica es **Azure Arc**, que permite gestionar VMs en otras nubes o localmente como si fueran de Azure.
+
+●       **GCP (Compute Engine):** permite crear instancias personalizadas, definiendo una cantidad específica de CPU y RAM, evitando pagar por recursos no utilizados.
+
+**Almacenamiento y bases de datos**
+
+|   |   |   |   |
+|---|---|---|---|
+|Servicio|AWS|Azure|GCP|
+|Objetos|S3 (El estándar de la industria)|Blob Storage|Cloud Storage|
+|Relacional|RDS / Aurora|Azure SQL / Cosmos DB (PostgreSQL)|Cloud SQL / Spanner|
+|NoSQL|DynamoDB|Cosmos DB|Firestore / BigTable|
+
+  
+
+_**Nota:** Google **Cloud Spanner** sigue siendo el referente para bases de datos relacionales con escalabilidad horizontal global y consistencia fuerte, ideal para transacciones financieras globales._
+
+  
+
+**Inteligencia artificial y datos**
+
+En 2026, la IA es el principal motor de migración a la nube.
+
+●       **Google Cloud:** Es el líder indiscutido en innovación de modelos. **Gemini** integrado en **Vertex AI** ofrece herramientas de entrenamiento y despliegue que suelen ser más ágiles para equipos de Data Science.
+
+●       **Microsoft Azure:** Su alianza con OpenAI le da exclusividad sobre los modelos GPT más avanzados mediante **Azure OpenAI Service**, lo que lo hace imbatible para aplicaciones empresariales de lenguaje natural integradas en Teams/Office.
+
+●       **AWS:** Apuesta por la "democratización" con **Amazon Bedrock**, una plataforma que permite elegir entre múltiples modelos (Claude, Llama, Mistral) sin gestionar infraestructura.
+
+**Criterios para la toma de decisiones estratégicas**
+
+Para decidir qué proveedor (o combinación de ellos) utilizar, se deben evaluar los siguientes vectores:
+
+1. **Vendor Lock-in (Dependencia):** ¿Qué tan fácil es salir? El uso de contenedores (**Kubernetes**) facilita la portabilidad.
+2. **Estructura de Costos (FinOps):**
+
+- **AWS:** ofrece descuentos mediante reservas y compromisos de uso. Puede generar ahorros importantes, aunque su estructura es compleja.
+- **Azure:** Ventaja Híbrida (si ya tienes licencias Windows/SQL Server locales, el ahorro es enorme).
+- **GCP:** descuentos automáticos por uso sostenido y facturación por segundo.
+
+4. **Cumplimiento y Regulación:** En la UE y Latinoamérica, la residencia de datos es clave. Azure suele tener una ligera ventaja en certificaciones gubernamentales específicas.
+
+_**Ejemplo:** Una empresa de retail utiliza AWS para su e-commerce global por su estabilidad, pero procesa toda su analítica de marketing en BigQuery (GCP) debido a su velocidad superior en consultas masivas de datos._
