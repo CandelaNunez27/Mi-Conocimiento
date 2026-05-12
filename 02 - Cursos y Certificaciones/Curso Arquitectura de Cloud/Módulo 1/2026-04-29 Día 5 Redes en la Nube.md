@@ -43,9 +43,9 @@ La seguridad se gestiona en capas concéntricas:
 - **IAM**: Identidad como perímetro.
 - **NACL**: Firewall a nivel Subred (Stateless).
 - **Security Groups**: Firewall a nivel Instancia (Stateful)
-![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260506232858.png)
+![](../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260506232858.png)
 
 # Ejemplo de Lab Arquitectura en 2 capas
 
-![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260506233233.png)
+![](../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260506233233.png)
 
