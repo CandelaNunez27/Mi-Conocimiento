@@ -6,7 +6,7 @@ Se puede crear su propia nube. Necesitan corriente, refrigeración, baterías, c
 ![Pasted image 20260422083337](../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260422083337.png)
 
 # Responsabilidades del usuario o proveedor
-**On-Premise:** Todo mío 
+**On-Premise:** Todo mío.
 
 **IaaS (Infraestructura de Servicio):** Te dejo limpiamente el hardware y red para que uno pueda usar cualquier hipervisor y S.O. que quiera. Vas a tener que administrar todo el S.O. 
 
