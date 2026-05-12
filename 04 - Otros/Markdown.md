@@ -49,3 +49,5 @@ copiar y pegar imágenes con ctrl + p seleccionar link cosverter vault: links in
 ![194](04%20-%20Otros/Imagenes/icons%20tina.jpg)
 
 [^1]: Nota 1
+
+CTRL + P : para abrir barra de acciones.
