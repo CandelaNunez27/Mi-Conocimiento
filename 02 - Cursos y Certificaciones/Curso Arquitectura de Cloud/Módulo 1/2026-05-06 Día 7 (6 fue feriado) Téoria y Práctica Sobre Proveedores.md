@@ -86,37 +86,24 @@ Viene una VPC por defecto que recomienda no borrarla. Contiene un mapa de de rec
 ### 1. Introducción
 
 Esta clase está diseñada para proporcionar una visión estratégica y técnica sobre el ecosistema de los "Tres Grandes" (AWS, Azure y Google Cloud).
-
-![](https://aulavirtualipap.mendoza.gov.ar/moodle/pluginfile.php/75595/mod_book/chapter/1369/image%20%285%29.png)  
-
 En 2026, la decisión ya no es "si ir a la nube", sino "cómo orquestar múltiples nubes" para maximizar la eficiencia y la innovación.
 
-**El panorama estratégico en 2026**  
+#### El panorama estratégico en 2026
 
 El mercado de la nube ha madurado hacia un modelo de **soberanía digital** y **especialización**. Aunque AWS mantiene el liderazgo en cuota de mercado, la brecha se ha cerrado debido a la verticalización de servicios.
 
-![](https://aulavirtualipap.mendoza.gov.ar/moodle/pluginfile.php/75595/mod_book/chapter/1369/image%20%286%29.png)
+| Característica            | Amazon Web Services (AWS)                                           | Microsoft Azure                                             | Google Cloud (GCP)                                                      |
+| ------------------------- | ------------------------------------------------------------------- | ----------------------------------------------------------- | ----------------------------------------------------------------------- |
+| Cuota de Mercado (aprox.) | ~31%                                                                | ~25%                                                        | ~13%                                                                    |
+| Perfil Ideal              | Empresas que buscan un catálogo más amplio y escalabilidad extrema. | Corporaciones con ecosistema Microsoft y enfoque híbrido.   | Startups nativas digitales, IA generativa y análisis de datos masivos.  |
+| Fortaleza Técnica         | Madurez de servicios e infraestructura global (Regiones/Zonas).     | Integración nativa con Active Directory, M365 y SQL Server. | Liderazgo en Kubernetes (GKE), IA (Vertex AI) y redes de baja latencia. |
 
-  
-
-|   |   |   |   |
-|---|---|---|---|
-|Característica|Amazon Web Services (AWS)|Microsoft Azure|Google Cloud (GCP)|
-|Cuota de Mercado (aprox.)|~31%|~25%|~13%|
-|Perfil Ideal|Empresas que buscan un catálogo más amplio y escalabilidad extrema.|Corporaciones con ecosistema Microsoft y enfoque híbrido.|Startups nativas digitales, IA generativa y análisis de datos masivos.|
-|Fortaleza Técnica|Madurez de servicios e infraestructura global (Regiones/Zonas).|Integración nativa con Active Directory, M365 y SQL Server.|Liderazgo en Kubernetes (GKE), IA (Vertex AI) y redes de baja latencia.|
-
-**Comparativa técnica por dominios**
+#### Comparativa técnica por dominios
 
 Te dejamos material para profundizar:
+![Comparativa de nubes](https://youtu.be/oK1bdIHMCQo?si=luEV10KTSgyMsO0N)
 
-![](https://aulavirtualipap.mendoza.gov.ar/moodle/pluginfile.php/75595/mod_book/chapter/1369/video.jpg)  
-
-  
-
-  
-
-**A. Cómputo (Compute)**
+#### A. Cómputo (Compute)
 
 Es el motor de cualquier arquitectura. La tendencia actual es el uso de procesadores propios (ARM) para optimizar el costo/rendimiento.
 
@@ -126,22 +113,20 @@ Es el motor de cualquier arquitectura. La tendencia actual es el uso de procesad
 
 ●       **GCP (Compute Engine):** permite crear instancias personalizadas, definiendo una cantidad específica de CPU y RAM, evitando pagar por recursos no utilizados.
 
-**Almacenamiento y bases de datos**
+#### Almacenamiento y bases de datos
 
-|   |   |   |   |
-|---|---|---|---|
-|Servicio|AWS|Azure|GCP|
-|Objetos|S3 (El estándar de la industria)|Blob Storage|Cloud Storage|
-|Relacional|RDS / Aurora|Azure SQL / Cosmos DB (PostgreSQL)|Cloud SQL / Spanner|
-|NoSQL|DynamoDB|Cosmos DB|Firestore / BigTable|
+| Servicio   | AWS                              | Azure                              | GCP                  |
+| ---------- | -------------------------------- | ---------------------------------- | -------------------- |
+| Objetos    | S3 (El estándar de la industria) | Blob Storage                       | Cloud Storage        |
+| Relacional | RDS / Aurora                     | Azure SQL / Cosmos DB (PostgreSQL) | Cloud SQL / Spanner  |
+| NoSQL      | DynamoDB                         | Cosmos DB                          | Firestore / BigTable |
 
-  
 
 _**Nota:** Google **Cloud Spanner** sigue siendo el referente para bases de datos relacionales con escalabilidad horizontal global y consistencia fuerte, ideal para transacciones financieras globales._
 
   
 
-**Inteligencia artificial y datos**
+#### Inteligencia artificial y datos
 
 En 2026, la IA es el principal motor de migración a la nube.
 
@@ -151,7 +136,7 @@ En 2026, la IA es el principal motor de migración a la nube.
 
 ●       **AWS:** Apuesta por la "democratización" con **Amazon Bedrock**, una plataforma que permite elegir entre múltiples modelos (Claude, Llama, Mistral) sin gestionar infraestructura.
 
-**Criterios para la toma de decisiones estratégicas**
+#### Criterios para la toma de decisiones estratégicas**
 
 Para decidir qué proveedor (o combinación de ellos) utilizar, se deben evaluar los siguientes vectores:
 
@@ -165,3 +150,8 @@ Para decidir qué proveedor (o combinación de ellos) utilizar, se deben evaluar
 4. **Cumplimiento y Regulación:** En la UE y Latinoamérica, la residencia de datos es clave. Azure suele tener una ligera ventaja en certificaciones gubernamentales específicas.
 
 _**Ejemplo:** Una empresa de retail utiliza AWS para su e-commerce global por su estabilidad, pero procesa toda su analítica de marketing en BigQuery (GCP) debido a su velocidad superior en consultas masivas de datos._
+
+---
+# Grabación de la Clase
+
+https://drive.google.com/file/d/1YZODY4eklbJaPUicdFIWvrWA1DU-G5e6/view?usp=sharing

@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 1/2026-05-06 Día 7 (6 fue feriado) Téoria y Práctica Sobre Proveedores.md",
+                "file": "04 - Otros/Markdown.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026-05-06 Día 7 (6 fue feriado) Téoria y Práctica Sobre Proveedores"
+              "title": "Markdown"
             }
           },
           {
@@ -27,15 +27,16 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 1/TP 1 Módulo 1.md",
+                "file": "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 1/2026-04-29 Día 5 Redes en la Nube.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "TP 1 Módulo 1"
+              "title": "2026-04-29 Día 5 Redes en la Nube"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -236,15 +237,16 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "cb31d924805cd6c2",
+  "active": "fc12b4356ddcf9a1",
   "lastOpenFiles": [
-    "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 1/2026-05-08 Día 8 Práctica.md",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 1/2026-05-06 Día 7 (6 fue feriado) Téoria y Práctica Sobre Proveedores.md",
+    "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 1/2026-04-29 Día 5 Redes en la Nube.md",
+    "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 1/2026-05-08 Día 8 Práctica.md",
+    "04 - Otros/Markdown.md",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 1/TP 1 Módulo 1.md",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 1/2026-04-22 Día 3 Introducción La Nube.md",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 1/2026-04-17 Día 2 Práctica.md",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 1/2026-04-15 Día 1 Introducción.md",
-    "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 1/2026-04-29 Día 5 Redes en la Nube.md",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 1/2026-04-24 Día 4 Práctica.md",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 1",
     "04 - Otros/Imagenes/Pasted image 20260508093031.png",
@@ -269,7 +271,6 @@
     "02 - Cursos y Certificaciones/Curso Cisco Linux Essentials/Módulo 3",
     "02 - Cursos y Certificaciones/Curso Cisco Linux Essentials/Módulo 2/Módulo 2 Resumen General.md",
     "02 - Cursos y Certificaciones/Curso Cisco Linux Essentials/Módulo 1/Módulo 1 Resumen General.md",
-    "04 - Otros/Markdown.md",
     "Imagenes",
     "02 - Cursos y Certificaciones/Curso Cisco Linux Essentials/Módulo 2",
     "02 - Cursos y Certificaciones/Curso Cisco Linux Essentials/Módulo 1",
