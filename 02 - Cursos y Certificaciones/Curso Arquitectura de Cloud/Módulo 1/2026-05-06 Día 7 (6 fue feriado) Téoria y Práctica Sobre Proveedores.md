@@ -154,4 +154,4 @@ _**Ejemplo:** Una empresa de retail utiliza AWS para su e-commerce global por s
 ---
 # Grabación de la Clase
 
-https://drive.google.com/file/d/1YZODY4eklbJaPUicdFIWvrWA1DU-G5e6/view?usp=sharing
+**Clase Grabada**: https://drive.google.com/file/d/1YZODY4eklbJaPUicdFIWvrWA1DU-G5e6/view?usp=sharing

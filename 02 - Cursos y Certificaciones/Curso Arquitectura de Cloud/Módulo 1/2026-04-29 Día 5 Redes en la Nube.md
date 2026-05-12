@@ -1,5 +1,3 @@
-**Clase Grabada**: https://drive.google.com/file/d/15Ck5ZFR4TvNEgqXuhTc0Vh2UQ4SfeUXl/view?usp=sharing 
-
 **Páginas para virtualizar:**
 https://killercoda.com/ terminal con laboratorios (Linux, grafana, ... ).
 https://labex.io/ terminal con interfaz con laboratorios (Linux, cybersecurity, ....) dura una 1 hs y se va renovando.
@@ -130,17 +128,16 @@ Para profundizar te dejamos la siguiente fuente:
 
   
 
-**Segmentación de red: pública vs. privada**
+#### Segmentación de red: pública vs. privada
 
 Este es el concepto más importante de la semana. **Nunca** debes poner una base de datos en una subred pública.
 
-|   |   |   |
-|---|---|---|
-|Tipo de Subred|Propósito|Ejemplo de Recurso|
-|Pública|Accesible desde internet.|Balanceadores de carga, Servidores Web.|
-|Privada|Aislada, sólo acceso interno.|Bases de Datos (RDS/SQL), Microservicios.|
+| Tipo de Subred | Propósito                     | Ejemplo de Recurso                        |
+| -------------- | ----------------------------- | ----------------------------------------- |
+| Pública        | Accesible desde internet.     | Balanceadores de carga, Servidores Web.   |
+| Privada        | Aislada, sólo acceso interno. | Bases de Datos (RDS/SQL), Microservicios. |
 
-**Conectividad y seguridad (El "muro")**
+#### Conectividad y seguridad (El "muro")
 
 La seguridad y conectividad en la nube ("el muro") se basa en un modelo de responsabilidad compartida, donde proveedores como [AWS](https://www.google.com/url?sa=i&source=web&rct=j&url=https://aws.plainenglish.io.en2es.search.translate.goog/the-5-pillars-of-cloud-computing-essentials-explained-8eaebdb20a45&ved=2ahUKEwifvrz-zPWSAxVOHLkGHQwZIJQQy_kOegQIARAB&opi=89978449&cd&psig=AOvVaw0e-atvrRXuTvWr2_sgcxIM&ust=1772141853179000) protegen la infraestructura, mientras el usuario asegura datos y accesos. El "muro" moderno ya no es solo perimetral; se centra en la identidad (IAM), [cifrado](https://www.google.com/search?q=cifrado&client=opera-gx&hs=nr6&sca_esv=b7a78c7db20616cf&ei=dmufaZjNFNLa5OUPlL2LsAM&biw=1325&bih=620&ved=2ahUKEwifvrz-zPWSAxVOHLkGHQwZIJQQgK4QegQIARAC&uact=5&oq=Conectividad+y+seguridad+%28El+%22muro%22%29+en+la+nue+%28cloud%29&gs_lp=Egxnd3Mtd2l6LXNlcnAiNkNvbmVjdGl2aWRhZCB5IHNlZ3VyaWRhZCAoRWwgIm11cm8iKSBlbiBsYSBudWUgKGNsb3VkKTIFECEYnwVIhl1QiQhY7lVwA3gBkAEAmAGcAaABtg-qAQQ1LjEzuAEDyAEA-AEBmAIVoAKfEsICChAAGEcY1gQYsAPCAgUQIRigAcICBRAAGO8FwgIIEAAYgAQYogSYAwCIBgGQBgiSBwQzLjE4oAeBRLIHBDAuMTi4B-8RwgcGMi00LjE3yAfTAYAIAQ&sclient=gws-wiz-serp) y [Confianza Cero](https://www.google.com/search?q=Confianza+Cero&client=opera-gx&hs=nr6&sca_esv=b7a78c7db20616cf&ei=dmufaZjNFNLa5OUPlL2LsAM&biw=1325&bih=620&ved=2ahUKEwifvrz-zPWSAxVOHLkGHQwZIJQQgK4QegQIARAD&uact=5&oq=Conectividad+y+seguridad+%28El+%22muro%22%29+en+la+nue+%28cloud%29&gs_lp=Egxnd3Mtd2l6LXNlcnAiNkNvbmVjdGl2aWRhZCB5IHNlZ3VyaWRhZCAoRWwgIm11cm8iKSBlbiBsYSBudWUgKGNsb3VkKTIFECEYnwVIhl1QiQhY7lVwA3gBkAEAmAGcAaABtg-qAQQ1LjEzuAEDyAEA-AEBmAIVoAKfEsICChAAGEcY1gQYsAPCAgUQIRigAcICBRAAGO8FwgIIEAAYgAQYogSYAwCIBgGQBgiSBwQzLjE4oAeBRLIHBDAuMTi4B-8RwgcGMi00LjE3yAfTAYAIAQ&sclient=gws-wiz-serp) para proteger recursos en entornos híbridos y multinube. 
 
@@ -177,3 +174,9 @@ _●       Subred Privada: Aloja la base de datos MySQL. Solo acepta trá
 _Caso B: Azure VNet Peering_
 
 _Si tu empresa compra otra compañía, puedes conectar sus redes usando VNet Peering. Esto permite que las máquinas virtuales de ambas redes se comuniquen usando IPs privadas, como si estuvieran en la misma red local, sin pasar por el internet público._
+
+---
+
+# Grabación de Clase
+
+https://drive.google.com/file/d/15Ck5ZFR4TvNEgqXuhTc0Vh2UQ4SfeUXl/view?usp=sharing 
