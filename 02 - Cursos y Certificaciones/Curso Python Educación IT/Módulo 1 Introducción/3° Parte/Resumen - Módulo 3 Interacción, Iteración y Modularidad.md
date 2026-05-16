@@ -39,7 +39,7 @@ Los bucles (o ciclos) son estructuras que te permiten repetir un bloque de códi
 
 ### Listas / Arreglos (Arrays): 
 
-Son colecciones ordenadas de datos. Puedes guardar números, textos, booleanos e incluso otras listas dentro de ellas. Se suele hacer lista de distintas cosas pero de la misma categoria.
+Son colecciones ordenadas de datos. Puedes guardar números, textos, booleanos e incluso otras listas dentro de ellas. Se suele hacer lista de distintas cosas pero de la misma categoría.
 
 - **Índices:** Los elementos dentro de una lista están ordenados por posiciones llamadas índices. En la programación, **los índices siempre empiezan a contar desde el cero (0)**. Es decir, el primer elemento de tu lista está en la posición 0, el segundo en la 1, y así sucesivamente.
 
@@ -65,16 +65,7 @@ Una función es un bloque de código encapsulado y con un nombre específico que
 
 - **Modularidad:** Las funciones permiten dividir un problema complejo en problemas más pequeños y fáciles de resolver. Hacen que el código sea más ordenado, legible y fácil de reparar si algo falla.
 
-*Ejemplo de funcion
+*Ejemplo de función
 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260516032230.png)
 
 
-
-
-- **Concepto:** Una función es un bloque de código encapsulado y con un nombre específico que realiza una tarea determinada. Sigue el principio "DRY" (_Don't Repeat Yourself_ - No te repitas): si tienes un código que usas muchas veces, lo metes en una función y simplemente la "llamas" cuando la necesites.
-
-- **Parámetros / Argumentos:** Son los datos de entrada que la función necesita para trabajar. Funcionan como variables locales que solo existen dentro de la función. Por ejemplo, una función llamada `sumar(a, b)` necesita dos parámetros.
-
-- **Retorno (Return):** Es el resultado que la función "devuelve" al programa principal una vez que termina su trabajo. No todas las funciones retornan algo (algunas solo imprimen un mensaje), pero cuando lo hacen, ese valor puede guardarse en una variable para seguir operando.
-
-- **Modularidad:** Las funciones permiten dividir un problema complejo en problemas más pequeños y fáciles de resolver. Hacen que el código sea más ordenado, legible y fácil de reparar si algo falla.
