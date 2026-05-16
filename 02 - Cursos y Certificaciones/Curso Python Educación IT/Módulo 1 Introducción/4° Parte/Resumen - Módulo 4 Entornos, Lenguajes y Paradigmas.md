@@ -38,6 +38,8 @@ Un lenguaje de programación tiene un vocabulario y reglas gramaticales (sintaxi
 
 # 3. Áreas y lenguajes actuales
 
+### Áreas
+
 El uso de un lenguaje depende del objetivo o área de desarrollo:
 - **Front-End:** Es el desarrollo de la interfaz que ve el usuario (del lado del cliente). Utiliza **HTML** (para la estructura básica/paredes), **CSS** (para el diseño visual/terminaciones) y **JavaScript** (para la interactividad). _Dato importante:_ HTML y CSS no son lenguajes de programación, sino lenguajes de maquetado web, ya que no tienen sentencias de control.
 
@@ -51,7 +53,22 @@ El uso de un lenguaje depende del objetivo o área de desarrollo:
 
 - **Bases de Datos:** Se emplea **SQL** para almacenar, manipular y consultar datos en bases relacionales (tablas).
 
-- QA Testing: encargado de verificar la calidad de software, solucionar errores y mejora continua de la calidad. Debe conocer de **Pyt**
+- **QA Testing:** encargado de verificar la calidad de software, solucionar errores y mejora continua de la calidad. Debe conocer de **Python, HTML, Base de datos, análisis y herramientas de web, y experiencia de usuario (UX)**
+
+- **Seguridad Informatica**: Proteger la información, rompiendo ellos mismos para ver vulnerabilidades. Conocen de **Linux, redes, protocolos de comunicación y desarrollar herramientoas con Python**
+
+- **Desarrollo Mobile:** Más que nada en desarrollo de App y juegos, trabajan junto con marketing. Deben conocer **Kotlin, base de datos relacionales y no, servicios web, conocer tecnologias front-end y back-end
+
+- **Desarrollo IoT:** internet de las cosas, conectar objetos cotidianos, para telemetría. Deben manejar  **Python, C, C++, Trabajar con front-end y back-end,  base de datos y servicios web.
+
+### Lenguajes Actuales
+
+- **Python:** lenguaje interpretado, multiplataforma y multiparadigma, tipado dinamico y sirve para muchas tareas. Simple y legible, popular en datos, machine learning, IA, aplicaciones, web, automatización, IoT, seguridad, etc.
+- **R:** para ciencias de datos
+- **Java:** Se utiliza mucho para desarrollar app en escritorio y mobile.
+- **SQL:** consulta a bases de datos, consultar o guardar datos.
+- **JavaScript:** Mejorar la navegacion desde el cliente, para paginas web
+- 
 
 
 ---
