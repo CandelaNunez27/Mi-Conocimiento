@@ -74,12 +74,16 @@ Permiten combinar múltiples condiciones relacionales para evaluar si un conjunt
 
 - **IF (Si):** Evalúa una condición principal. Si el resultado es Verdadero, ejecuta el bloque de código interno.
 
-- **ELSE (Sino):** Se utiliza siempre como complemento de un IF. Si la condición del IF fue Falsa, el programa ejecutará automáticamente el código que esté dentro del ELSE.
-
-- **ELSE IF / ELIF (Sino si):** Permite evaluar múltiples condiciones en cadena si la primera (IF) no se cumplió. Si la condición del ELIF es verdadera, se ejecuta su código y se ignoran las demás.
 
 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260516010437.png)
 
+
+- **ELSE (Sino):** Se utiliza siempre como complemento de un IF. Si la condición del IF fue Falsa, el programa ejecutará automáticamente el código que esté dentro del ELSE.
+
+
 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260516010450.png)
+
+
+- **ELSE IF / ELIF (Sino si):** Permite evaluar múltiples condiciones en cadena si la primera (IF) no se cumplió. Si la condición del ELIF es verdadera, se ejecuta su código y se ignoran las demás.
 
 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260516010509.png)
