@@ -5,15 +5,22 @@ La **informática** es la disciplina que abarca los métodos y técnicas para el
 
 ### Generaciones de Computadoras:
 
-* **1ra Generación (1946-1955):** Utilizaban tubos de vacío o válvulas electrónicas. Eran máquinas de gran tamaño, no tenían sistema operativo y funcionaban mediante tarjetas perforadas (ej. ENIAC). También se decia que antes la primera era 
+- **Pre - Generaciones:** Se decía que todo comenzó con la maquina anticitera (200 A.C)que padecía los movimientos de los astros en los cielos.  Luego la primera calculadora llamada la Pascalina (1623 - 1662). La maquina Diferencial era una calculadora, pero para funciones polinómicas. Y por ultimo, la Z1, que era una gran calculadora electromecanica que dio inicio a las generaciones
 
-![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260515231526.png) ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260515231612.png) 
+
+
+![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260515232241.png) ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260515232423.png) ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260515232658.png)
+ ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260515231526.png)
+
+* **1ra Generación (1946-1955):** Utilizaban tubos de vacío o válvulas electrónicas. Eran máquinas de gran tamaño, no tenían sistema operativo y funcionaban mediante tarjetas perforadas,  para cálculos físicos y el ejercito (ej. ENIAC). 
+
+ ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260515231612.png) 
 
 * **2da Generación (1958-1964):** Las válvulas fueron sustituidas por transistores y memorias magnéticas. En esta etapa se comenzaron a utilizar lenguajes de alto nivel como ALGOL, FORTRAN y COBOL.
 
 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260515231638.png)
 
-* **3ra Generación (1964-1971):** Se caracterizó por la invención del circuito integrado (chip). Esto permitió integrar los componentes en una sola pieza, logrando equipos más rápidos, confiables, de menor tamaño y con menor consumo de energía.
+* **3ra Generación (1964-1971):** Se caracterizó por la invención del circuito integrado (chip, conjunto de transistores) y el almacenamiento magnetico. Esto permitió integrar los componentes en una sola pieza, logrando equipos más rápidos, confiables, de menor tamaño y con menor consumo de energía.
 
 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260515231655.png)
 
@@ -21,7 +28,7 @@ La **informática** es la disciplina que abarca los métodos y técnicas para el
 
 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260515231720.png)
 
-* **5ta Generación (1981-1989):** Enfocada en desarrollar ordenadores con tecnología más avanzada y lenguajes de programación más potentes. IBM estableció el estándar de compatibilidad para la "computadora de escritorio".
+* **5ta Generación (1981-1989):** Enfocada en desarrollar ordenadores con tecnología más avanzada para el disquete y lenguajes de programación más potentes. IBM estableció el estándar de compatibilidad para la "computadora de escritorio".
 
 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260515231737.png)
 
@@ -35,10 +42,39 @@ La **informática** es la disciplina que abarca los métodos y técnicas para el
 
 ---
 
-# 2. Hardware, Software y Sistemas Operativos
+# 2. Sistemas Numéricos
+
+Son conjuntos ordenados de símbolos y reglas utilizados para representar cantidades numéricas, y cada sistema se identifica por su base (cantidad de símbolos diferentes que emplea). Son sistemas posicionales, ya que un símbolo cambia de valor según su posición.
+
+* **Sistema Decimal:** Es de base 10 y utiliza los dígitos del 0 al 9.
+
+* **Sistema Binario:** Es de base 2 y emplea solo los símbolos 0 y 1. Es fundamental en la informática para representar el voltaje del hardware (0 = apagado, 1 = encendido).
+
+* **Sistema Hexadecimal:** Es de base 16 y utiliza los números del 0 al 9, seguidos de las letras A, B, C, D, E y F (las cuales representan los valores del 10 al 15 respectivamente).
+
+![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260515233555.png)
+
+### Conversiones
+
+* *Decimal a Binario / Hexadecimal:* Se realizan divisiones sucesivas (por 2 o por 16, según corresponda) y se escriben los restos obtenidos en orden inverso.
+
+
+
+* *Binario a Decimal:* Se multiplica cada dígito por la potencia de 2 correspondiente a su posición (empezando de derecha a izquierda con el exponente 0) y se suman todos los valores.
+
+
+
+
+
+
+
+
+---
+
+# 3. Hardware, Software y Sistemas Operativos
 
 * 
-**Hardware:** Son los componentes físicos y tangibles de la computadora. Se clasifica según su función:
+*Hardware:** Son los componentes físicos y tangibles de la computadora. Se clasifica según su función:
 
 
 * 
@@ -122,34 +158,6 @@ La **informática** es la disciplina que abarca los métodos y técnicas para el
 
 
 ---
-
-#### 4. Sistemas Numéricos
-
-Son conjuntos ordenados de símbolos y reglas utilizados para representar cantidades numéricas, y cada sistema se identifica por su base (cantidad de símbolos diferentes que emplea). Son sistemas posicionales, ya que un símbolo cambia de valor según su posición.
-
-* 
-**Sistema Decimal:** Es de base 10 y utiliza los dígitos del 0 al 9.
-
-
-* 
-**Sistema Binario:** Es de base 2 y emplea solo los símbolos 0 y 1. Es fundamental en la informática para representar el voltaje del hardware (0 = apagado, 1 = encendido).
-
-
-* 
-**Sistema Hexadecimal:** Es de base 16 y utiliza los números del 0 al 9, seguidos de las letras A, B, C, D, E y F (las cuales representan los valores del 10 al 15 respectivamente).
-
-
-* **Conversiones:**
-* 
-*Decimal a Binario / Hexadecimal:* Se realizan divisiones sucesivas (por 2 o por 16, según corresponda) y se escriben los restos obtenidos en orden inverso.
-
-
-* 
-*Binario a Decimal:* Se multiplica cada dígito por la potencia de 2 correspondiente a su posición (empezando de derecha a izquierda con el exponente 0) y se suman todos los valores.
-
-
-
-
 
 ---
 
