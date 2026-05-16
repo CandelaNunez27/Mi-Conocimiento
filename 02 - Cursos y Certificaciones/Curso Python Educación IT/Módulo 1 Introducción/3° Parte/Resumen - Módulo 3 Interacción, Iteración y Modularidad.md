@@ -39,7 +39,7 @@ Los bucles (o ciclos) son estructuras que te permiten repetir un bloque de códi
 
 ### Listas / Arreglos (Arrays): 
 
-Son colecciones ordenadas de datos. Puedes guardar números, textos, booleanos e incluso otras listas dentro de ellas.
+Son colecciones ordenadas de datos. Puedes guardar números, textos, booleanos e incluso otras listas dentro de ellas. Se suele hacer lista de distintas cosas pero de la misma categoria.
 
 - **Índices:** Los elementos dentro de una lista están ordenados por posiciones llamadas índices. En la programación, **los índices siempre empiezan a contar desde el cero (0)**. Es decir, el primer elemento de tu lista está en la posición 0, el segundo en la 1, y así sucesivamente.
 
@@ -50,6 +50,7 @@ Son colecciones ordenadas de datos. Puedes guardar números, textos, booleanos e
     - _Escritura:_ Modificar el valor de un dato en una posición específica.
     - _Agregar/Eliminar:_ Sumar nuevos elementos al final o en el medio del conjunto, o borrar elementos existentes.
     - _Longitud:_ Obtener la cantidad total de elementos que contiene el conjunto.
+![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260516181312.png) ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260516181413.png)
 
 
 ---
