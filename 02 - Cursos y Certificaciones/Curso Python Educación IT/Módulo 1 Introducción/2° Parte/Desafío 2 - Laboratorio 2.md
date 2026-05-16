@@ -151,8 +151,18 @@ False o (True  y  True) == True
 ##### A. Completar
 Genere una lista a mano de los múltiplos de 3 y de 5, desde 1 hasta el número 50 sin incluir. (Es solo escribir en un papel los números múltiplos). Recordemos que los múltiplos son aquellos que al dividir, la división tiene resto nulo.
 
-multiplos = 0
-if 3
+``` python
+# Creamos una lista vacía para guardar los múltiplos 
+multiplos = [] 
 
+# Vamos desde 1 hasta 50 (en Python, el límite superior no se incluye, así que frena en 49)
+for numero in range(1, 50): 
+	if numero % 3 == 0 or numero % 5 == 0: 
+	multiplos.append(numero) 
 
-*RTA = 7.5 kg*
+# Mostramos el resultado en la pantalla
+print("Los múltiplos de 3 y 5 menores a 50 son:")
+print(multiplos)
+```
+
+*RTA = Los números 15, 30 y 45

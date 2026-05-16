@@ -27,15 +27,16 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "02 - Cursos y Certificaciones/Curso Python Educación IT/Módulo 1 Introducción/2° Parte/Resumen - Módulo 2 Fundamentos Lógicos de la Programación.md",
+                "file": "02 - Cursos y Certificaciones/Curso Python Educación IT/Módulo 1 Introducción/2° Parte/Examen 2.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Resumen - Módulo 2 Fundamentos Lógicos de la Programación"
+              "title": "Examen 2"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -236,9 +237,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "626b3ed26901bb94",
+  "active": "94fb6f733562cbd8",
   "lastOpenFiles": [
     "02 - Cursos y Certificaciones/Curso Python Educación IT/Módulo 1 Introducción/2° Parte/Resumen - Módulo 2 Fundamentos Lógicos de la Programación.md",
+    "02 - Cursos y Certificaciones/Curso Python Educación IT/Módulo 1 Introducción/2° Parte/Examen 2.md",
     "02 - Cursos y Certificaciones/Curso Python Educación IT/Módulo 1 Introducción/2° Parte/Desafío 2 - Laboratorio 2.md",
     "02 - Cursos y Certificaciones/Curso Python Educación IT/Módulo 1 Introducción/1° Parte/Desafío 1 - Laboratorio 1.md",
     "02 - Cursos y Certificaciones/Curso Python Educación IT/Módulo 1 Introducción/1° Parte/Resumen Módulo 1 Introducción a la Programación.md",
