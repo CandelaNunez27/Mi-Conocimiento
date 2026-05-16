@@ -32,6 +32,8 @@ Un lenguaje de programación tiene un vocabulario y reglas gramaticales (sintaxi
 - **Interpretados:** El código es traducido en vivo por un programa llamado "intérprete". Tienen tipado dinámico, son de alto nivel y funcionan en cualquier sistema operativo que tenga el intérprete instalado. Como desventaja, consumen más recursos y son un poco más lentos porque corren dos programas a la vez.
 
 
+
+
 ---
 
 # 3. Áreas y lenguajes actuales
@@ -43,11 +45,14 @@ El uso de un lenguaje depende del objetivo o área de desarrollo:
 
 - **Full Stack:** Es un programador senior integral que domina tanto el Front-End como el Back-End, y puede diseñar la arquitectura completa de los servidores.
 
-- **Data Science:** Se encarga de analizar datos masivos (Big Data) e implementar Machine Learning (algoritmos que aprenden de los datos). Utiliza lenguajes como **Python, R** (ideal para estadística y gráficos) **y SQL**.
+- **Data Science:** Se encarga de analizar datos masivos (Big Data) e implementar Machine Learning (algoritmos que aprenden de los datos). Utiliza lenguajes como **Python, R** (ideal para estadística y gráficos) **Matlab, Octave, Julia y SQL**.
 
 - **Desarrollo Mobile:** Creación de apps para teléfonos usando lenguajes como **Java** o **Kotlin** (este último reconocido oficialmente por Google y líder actual).
 
 - **Bases de Datos:** Se emplea **SQL** para almacenar, manipular y consultar datos en bases relacionales (tablas).
+
+- QA Testing: encargado de verificar la calidad de software, solucionar errores y mejora continua de la calidad. Debe conocer de **Pyt**
+
 
 ---
 
