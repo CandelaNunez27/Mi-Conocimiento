@@ -8,35 +8,20 @@
         "type": "tabs",
         "children": [
           {
-            "id": "626b3ed26901bb94",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "02 - Cursos y Certificaciones/Curso Python Educación IT/Módulo 1 Introducción/2° Parte/Desafío 2 - Laboratorio 2.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Desafío 2 - Laboratorio 2"
-            }
-          },
-          {
             "id": "94fb6f733562cbd8",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "02 - Cursos y Certificaciones/Curso Python Educación IT/Módulo 1 Introducción/2° Parte/Examen 2.md",
+                "file": "02 - Cursos y Certificaciones/Curso Python Educación IT/Módulo 1 Introducción/3° Parte/Desafío 3 - Laboratorio 3.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Examen 2"
+              "title": "Desafío 3 - Laboratorio 3"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -239,11 +224,18 @@
   },
   "active": "94fb6f733562cbd8",
   "lastOpenFiles": [
-    "02 - Cursos y Certificaciones/Curso Python Educación IT/Módulo 1 Introducción/2° Parte/Resumen - Módulo 2 Fundamentos Lógicos de la Programación.md",
-    "02 - Cursos y Certificaciones/Curso Python Educación IT/Módulo 1 Introducción/2° Parte/Examen 2.md",
+    "02 - Cursos y Certificaciones/Curso Python Educación IT/Módulo 1 Introducción/3° Parte/Examen 3.md",
+    "02 - Cursos y Certificaciones/Curso Python Educación IT/Módulo 1 Introducción/3° Parte/Resumen - Módulo 3.md",
+    "04 - Otros/Imagenes/Pasted image 20260516032230.png",
+    "04 - Otros/Imagenes/Pasted image 20260516032117.png",
+    "04 - Otros/Imagenes/Pasted image 20260516031831.png",
+    "04 - Otros/Imagenes/Pasted image 20260516031817.png",
+    "02 - Cursos y Certificaciones/Curso Python Educación IT/Módulo 1 Introducción/3° Parte/Desafío 3 - Laboratorio 3.md",
     "02 - Cursos y Certificaciones/Curso Python Educación IT/Módulo 1 Introducción/2° Parte/Desafío 2 - Laboratorio 2.md",
-    "02 - Cursos y Certificaciones/Curso Python Educación IT/Módulo 1 Introducción/1° Parte/Desafío 1 - Laboratorio 1.md",
+    "02 - Cursos y Certificaciones/Curso Python Educación IT/Módulo 1 Introducción/2° Parte/Examen 2.md",
     "02 - Cursos y Certificaciones/Curso Python Educación IT/Módulo 1 Introducción/1° Parte/Resumen Módulo 1 Introducción a la Programación.md",
+    "02 - Cursos y Certificaciones/Curso Python Educación IT/Módulo 1 Introducción/2° Parte/Resumen - Módulo 2 Fundamentos Lógicos de la Programación.md",
+    "02 - Cursos y Certificaciones/Curso Python Educación IT/Módulo 1 Introducción/1° Parte/Desafío 1 - Laboratorio 1.md",
     "04 - Otros/Plantillas/Examen Corto Plantilla.md",
     "04 - Otros/Plantillas/Examen largo plantilla.md",
     "04 - Otros/Imagenes/Pasted image 20260516012342.png",
@@ -252,10 +244,6 @@
     "04 - Otros/Imagenes/Pasted image 20260516010450.png",
     "04 - Otros/Imagenes/Pasted image 20260516010437.png",
     "04 - Otros/Imagenes/Pasted image 20260516010356.png",
-    "04 - Otros/Imagenes/Pasted image 20260516010337.png",
-    "04 - Otros/Imagenes/Pasted image 20260516010237.png",
-    "04 - Otros/Imagenes/Pasted image 20260516010219.png",
-    "04 - Otros/Imagenes/Pasted image 20260516010043.png",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 1/TP Obligatorio/TP 1 Módulo 1.md",
     "02 - Cursos y Certificaciones/Curso Python Educación IT/Módulo 1 Introducción/1° Parte/Examen 1.md",
     "02 - Cursos y Certificaciones/Curso Cisco Linux Essentials/Módulo 3/Examen 3 Módulo 3 Respuestas.md",
@@ -281,10 +269,6 @@
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 1/Clases/2026-05-06 Día 7 (6 fue feriado) Téoria y Práctica Sobre Proveedores.md",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 1/Clases/2026-05-08 Día 8 Práctica.md",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 1/Clases/2026-04-17 Día 2 Práctica.md",
-    "02 - Cursos y Certificaciones/Curso Cisco Linux Essentials/Módulo 4/Módulo 4 Completo.md",
-    "02 - Cursos y Certificaciones/Curso Cisco Linux Essentials/Módulo 3/Módulo 3 Completo.md",
-    "02 - Cursos y Certificaciones/Curso Cisco Linux Essentials/Módulo 2/Módulo 2 Completo.md",
-    "02 - Cursos y Certificaciones/Curso Cisco Linux Essentials/Módulo 1/Módulo 1 Completo.md",
     "1° Año/01 - Arquitectura de Computadoras/Sin título.canvas"
   ]
 }

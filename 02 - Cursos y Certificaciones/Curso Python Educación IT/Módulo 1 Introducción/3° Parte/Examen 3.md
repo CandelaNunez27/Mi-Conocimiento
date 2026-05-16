@@ -1,4 +1,4 @@
-# Examen 2 - Módulo 1.2
+# Examen 3 - Módulo 1.3
 
 ## 1) ¿Qué es una variable?
   
