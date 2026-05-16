@@ -5,35 +5,41 @@
 ##### A. En PSeInt, pedir por teclado el nombre de una persona y mostrar un saludo acompañando el nombre.
 
 *RTA = 
-Inicio
-nombre = 
-ingresar nombre
-escribir "Hola" nombre
-fin*
+Algoritmo Ingresar_Nombre
+nombre = ""
+Escribir "Ingrese su nombre: "
+leer nombre
+escribir "Hola ", nombre
+FinAlgoritmo*
 ## Ejercicio 2
 
 ##### A. En PSeInt, pedir por teclado la edad de una persona, y que el programa decida si la persona es menor o mayor de edad.
 
 *RTA = 
-Inicio
-edad = 
-ingresar edad
-si edad < 18
+Algoritmo Comparar_edad
+edad = 0
+
+*Escribir "Ingrese su edad: "
+leer edad
+Si edad < 18
 	escribir "Es menor de edad"
-	sino
+	Sino
 		escribir "Es mayor de edad"
-fin*
+		FinSI
+FinAlgoritmo*
 ## Ejercicio 3
 
 ##### A. Incrementar una variable con un bucle en PSeInt.
 
 *RTA = 
-Inicio
-edad = 
-ingresar edad
-for edad < 18
-	edad ++
-fin
+Algoritmo Incrementar_variable
+x = 0
+
+*Mientras x < 10 Hacer
+	Escribir x
+	x ++
+	Fin Mientras
+FinAlgoritmo
 
 ## Ejercicio 4
 
@@ -95,7 +101,7 @@ leer altura
 *funcion calcular area
 area = (base * altura)  / 2
 Escribir "El area del triangulo es ", area
-fin*
+FinAlgoritmo*
 
 
 ## Ejercicio 2
@@ -106,18 +112,18 @@ Desde PSeInt, crear un programa que pida el radio de un círculo y luego muestre
 *RTA = 
 Algoritmo perímetro_circulo
 radio = 0
-diametro = 0
-perimetro = 0
+diámetro = 0
+perímetro = 0
 
 *funcion pedir datos
 Escribir "Ingrese radio:"
 leer radio
 
-funcion calcular perimetro
+*funcion calcular perimetro
 diametro = radio * 2
 perimetro = pi * diametro
-escribir perometro
-fin
+Escribir "El perimetro el circulo es ",  perimetro
+FinAlgoritmo
 
 ## Ejercicio 3
 
@@ -136,9 +142,18 @@ d) 100 % 5 == *0*
 Desde PSeInt, pida un número entero por teclado. Luego, determine si ese número ingresado es múltiplo de 3 y de 5. Avisar al usuario que el número ingresado es múltiplo o no.
 
 *RTA = 
+Algoritmo multiplo
+num = 0 
+Escribir "Es multiplo de 3 y de 5 ?"
+Escribir "Ingrese el numero: " 
+Leer num
+Si num % 3 == 0 y num % 5 = =0 Entonces 
+	Escribir "El numero ingresado es multiplo de 3 y de 5"
+	 SiNo 
+		 Escribir "El numero no es multiplo"
+ Fin Si FinAlgoritmo
 
-
-
+otra forma
 ``` python
 # Creamos una lista vacía para guardar los múltiplos 
 multiplos = [] 
@@ -160,3 +175,10 @@ print(multiplos)
 Escriba (en papel, con sus palabras, pseudocódigo) un algoritmo que incremente una variable que arranca en 1 y aumente de uno en uno hasta 10.
 
 *RTA = 
+1. Tengo la variable i = 1 (que arranca en 1) 
+2. Mientras i < 10 (menor a diez) 
+3. Dentro del bucle puedo incrementar a i de uno en uno. i = i + 1 (Podría ir mostrando dentro del bucle por pantalla el incremento)
+4. código
+while i < 10
+	print i
+	i++
