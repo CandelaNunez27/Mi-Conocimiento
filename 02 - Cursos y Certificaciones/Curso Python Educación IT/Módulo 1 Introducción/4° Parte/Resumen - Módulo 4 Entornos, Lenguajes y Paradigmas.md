@@ -68,8 +68,13 @@ El uso de un lenguaje depende del objetivo o área de desarrollo:
 - **Java:** Se utiliza mucho para desarrollar app en escritorio y mobile.
 - **SQL:** consulta a bases de datos, consultar o guardar datos.
 - **JavaScript:** Mejorar la navegacion desde el cliente, para paginas web
-- 
-
+- **HTML y CSS:**  html es texto plano y trabaja con etiquetas, CSS mejora la presentacion de HTML
+- **HTML, CSS y JavaScript:**:** el tridente del front-end, html y ccs no son lenguajes de programación, si son lenguajes de desarrollo y maquetadura.
+- **PHP:** usado por back end , facil acceso y grandes herramientas.
+- **Kotlin:** viene remplazando a java en el desarrollo de app mobiles
+- **C#:** es una evolucion de C y C++. para ser empleado en un amplia gama de aplicaciones empresariales ejecutadas en el framework .NET.
+- **C:**  fue credado por Dennis Ritchie, se puede usar en desarrollo en S.O, es complicado, y necesita compilacion.
+- **C++:** evoluciono de C, orientado a objetos. Se lo utiliza en Hardware, y necesita ser compilados
 
 ---
 
