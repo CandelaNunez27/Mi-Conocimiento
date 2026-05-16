@@ -86,4 +86,6 @@ Permiten combinar múltiples condiciones relacionales para evaluar si un conjunt
 
 - **ELSE IF / ELIF (Sino si):** Permite evaluar múltiples condiciones en cadena si la primera (IF) no se cumplió. Si la condición del ELIF es verdadera, se ejecuta su código y se ignoran las demás.
 
+*Ejemplo de tomar un café*
 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260516010509.png)
+

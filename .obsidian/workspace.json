@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "02 - Cursos y Certificaciones/Curso Python Education TI/Módulo 1 Introducción/1° Parte/Desafío 1 - Laboratorio 1.md",
+                "file": "02 - Cursos y Certificaciones/Curso Python Educación IT/Módulo 1 Introducción/2° Parte/Desafío 2 - Laboratorio 2.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Desafío 1 - Laboratorio 1"
+              "title": "Desafío 2 - Laboratorio 2"
             }
           },
           {
@@ -27,7 +27,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "02 - Cursos y Certificaciones/Curso Python Education TI/Módulo 1 Introducción/2° Parte/Resumen - Módulo 2 Fundamentos Lógicos de la Programación.md",
+                "file": "02 - Cursos y Certificaciones/Curso Python Educación IT/Módulo 1 Introducción/2° Parte/Resumen - Módulo 2 Fundamentos Lógicos de la Programación.md",
                 "mode": "source",
                 "source": false
               },
@@ -35,8 +35,7 @@
               "title": "Resumen - Módulo 2 Fundamentos Lógicos de la Programación"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -237,14 +236,14 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "94fb6f733562cbd8",
+  "active": "626b3ed26901bb94",
   "lastOpenFiles": [
-    "02 - Cursos y Certificaciones/Curso Python Education TI/Módulo 1 Introducción/1° Parte/Desafío 1 - Laboratorio 1.md",
-    "02 - Cursos y Certificaciones/Curso Python Education TI/Módulo 1 Introducción/1° Parte/Resumen Módulo 1 Introducción a la Programación.md",
+    "02 - Cursos y Certificaciones/Curso Python Educación IT/Módulo 1 Introducción/1° Parte/Desafío 1 - Laboratorio 1.md",
+    "02 - Cursos y Certificaciones/Curso Python Educación IT/Módulo 1 Introducción/2° Parte/Resumen - Módulo 2 Fundamentos Lógicos de la Programación.md",
+    "02 - Cursos y Certificaciones/Curso Python Educación IT/Módulo 1 Introducción/1° Parte/Resumen Módulo 1 Introducción a la Programación.md",
     "04 - Otros/Plantillas/Examen Corto Plantilla.md",
     "04 - Otros/Plantillas/Examen largo plantilla.md",
-    "02 - Cursos y Certificaciones/Curso Python Education TI/Módulo 1 Introducción/2° Parte/Desafío 2 - Laboratorio 2.md",
-    "02 - Cursos y Certificaciones/Curso Python Education TI/Módulo 1 Introducción/2° Parte/Resumen - Módulo 2 Fundamentos Lógicos de la Programación.md",
+    "02 - Cursos y Certificaciones/Curso Python Educación IT/Módulo 1 Introducción/2° Parte/Desafío 2 - Laboratorio 2.md",
     "04 - Otros/Imagenes/Pasted image 20260516012342.png",
     "04 - Otros/Imagenes/Pasted image 20260516012312.png",
     "04 - Otros/Imagenes/Pasted image 20260516010509.png",
@@ -256,15 +255,15 @@
     "04 - Otros/Imagenes/Pasted image 20260516010219.png",
     "04 - Otros/Imagenes/Pasted image 20260516010043.png",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 1/TP Obligatorio/TP 1 Módulo 1.md",
-    "02 - Cursos y Certificaciones/Curso Python Education TI/Módulo 1 Introducción/1° Parte/Examen 1.md",
+    "02 - Cursos y Certificaciones/Curso Python Educación IT/Módulo 1 Introducción/1° Parte/Examen 1.md",
     "02 - Cursos y Certificaciones/Curso Cisco Linux Essentials/Módulo 3/Examen 3 Módulo 3 Respuestas.md",
     "02 - Cursos y Certificaciones/Curso Cisco Linux Essentials/Módulo 1/Examen 1 Módulo 1 Respuestas.md",
-    "02 - Cursos y Certificaciones/Curso Python Education TI/Módulo 1 Introducción/4° Parte",
-    "02 - Cursos y Certificaciones/Curso Python Education TI/Módulo 1 Introducción/3° Parte",
-    "02 - Cursos y Certificaciones/Curso Python Education TI/Módulo 1 Introducción/2° Parte",
-    "02 - Cursos y Certificaciones/Curso Python Education TI/Módulo 1 Introducción/1° Parte",
-    "02 - Cursos y Certificaciones/Curso Python Education TI/Módulo 1 Introducción",
-    "02 - Cursos y Certificaciones/Curso Python Education TI",
+    "02 - Cursos y Certificaciones/Curso Python Educación IT/Módulo 1 Introducción/4° Parte",
+    "02 - Cursos y Certificaciones/Curso Python Educación IT/Módulo 1 Introducción/3° Parte",
+    "02 - Cursos y Certificaciones/Curso Python Educación IT/Módulo 1 Introducción/2° Parte",
+    "02 - Cursos y Certificaciones/Curso Python Educación IT/Módulo 1 Introducción/1° Parte",
+    "02 - Cursos y Certificaciones/Curso Python Educación IT/Módulo 1 Introducción",
+    "02 - Cursos y Certificaciones/Curso Python Educación IT",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 2/Clases/2026-05-13.md",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 2/Clases/Sin título.md",
     "04 - Otros/Plantillas/Plantilla clases Cloud.md",

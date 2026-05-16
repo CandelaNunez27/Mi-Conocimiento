@@ -4,29 +4,25 @@
 
 ##### A. Una variable de nombre x, inicia con el valor 0. Si realizo la siguiente operatoria: x= ((10 + 50) * 2) / 4 ¿Con qué valor queda la variable x?
 
-28 / 2 = resto 0
-14 / 2 = resto 0
-7 / 2 = resto 1
-3 / 2 = resto 1
-1 
-*RTA = 11100*
+x = 0
+x= ((10 + 50) * 2) / 4 
+x = 30
+*RTA = 30*
 
 ## Ejercicio 2
 
 ##### A. En el ejercicio anterior, la variable x terminó con un valor. ¿Qué tipo de dato es el que tiene asociado x?
 
-110101
-1x 2^5 +1x 2^4 + 0x 2^3 + 1x2^2 + 0x 2^1 + 1 x 2^0
-32 + 16 + 0 + 4 + 0 + 1
-*RTA = 53*
+*RTA = Valor numérico, INT*
 
 ## Ejercicio 3
 
 ##### A. ¿Cuál es el resultado de x al operar…?
 
 x = 10 % 2
+x = 1
+*RTA = 1
 
-*RTA = 15 1 2 10 4*
 
 ##### B. ¿Cuál es el resultado de x al operar…?
 
