@@ -65,15 +65,15 @@ El uso de un lenguaje depende del objetivo o área de desarrollo:
 
 - **Python:** lenguaje interpretado, multiplataforma y multiparadigma, tipado dinamico y sirve para muchas tareas. Simple y legible, popular en datos, machine learning, IA, aplicaciones, web, automatización, IoT, seguridad, etc.
 - **R:** para ciencias de datos
-- **Java:** Se utiliza mucho para desarrollar app en escritorio y mobile.
+- **Java:** Se utiliza mucho para desarrollar app en escritorio y Mobile.
 - **SQL:** consulta a bases de datos, consultar o guardar datos.
-- **JavaScript:** Mejorar la navegacion desde el cliente, para paginas web
-- **HTML y CSS:**  html es texto plano y trabaja con etiquetas, CSS mejora la presentacion de HTML
+- **JavaScript:** Mejorar la navegación desde el cliente, para paginas web
+- **HTML y CSS:**  html es texto plano y trabaja con etiquetas, CSS mejora la presentación de HTML
 - **HTML, CSS y JavaScript:**:** el tridente del front-end, html y ccs no son lenguajes de programación, si son lenguajes de desarrollo y maquetadura.
 - **PHP:** usado por back end , facil acceso y grandes herramientas.
 - **Kotlin:** viene remplazando a java en el desarrollo de app mobiles
-- **C#:** es una evolucion de C y C++. para ser empleado en un amplia gama de aplicaciones empresariales ejecutadas en el framework .NET.
-- **C:**  fue credado por Dennis Ritchie, se puede usar en desarrollo en S.O, es complicado, y necesita compilacion.
+- **C#:** es una evolución de C y C++. para ser empleado en un amplia gama de aplicaciones empresariales ejecutadas en el framework .NET.
+- **C:**  fue creado por Dennis Ritchie, se puede usar en desarrollo en S.O, es complicado, y necesita compilacion.
 - **C++:** evoluciono de C, orientado a objetos. Se lo utiliza en Hardware, y necesita ser compilados
 
 ---
@@ -81,7 +81,7 @@ El uso de un lenguaje depende del objetivo o área de desarrollo:
 # 4. Entornos y editores
 
 Para programar, los editores básicos de las computadoras (como Notepad o TextEdit) son insuficientes porque carecen de funciones clave. Por ello, se utilizan editores de código especializados:
-- **Visual Studio Code (VS Code):** Desarrollado por Microsoft, es un estándar en el ambiente de programación. Es gratuito, de código abierto, personalizable e incluye herramientas clave como autocompletado inteligente y control integrado de Git.
+- **Visual Studio Code (VS Code):** Desarrollado por Microsoft, es un estándar en el ambiente de programación. Es gratuito, de código abierto, personalizable con plugins e incluye herramientas clave como autocompletado inteligente y control integrado de Git.
 
 - **Sublime Text:** Es un editor multiplataforma, ligero y muy rápido. Su gran ventaja es que es increíblemente extensible mediante la instalación de _plugins_ para personalizarlo.
 

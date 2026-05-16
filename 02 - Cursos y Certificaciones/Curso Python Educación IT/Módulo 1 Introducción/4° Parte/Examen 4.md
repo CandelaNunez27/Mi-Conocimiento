@@ -1,23 +1,23 @@
 # Examen 4 - Módulo 1.4
 
-## 1) Todos los programas tienen:
+## 1) ¿Qué es un paradigma en programación?
   
-  - Una entrada, un proceso y una salida.
+  - Son un concepto, formas de como escribir y resolver problemas con código.
 
-## 2) ¿El teclado es la unica entrada?
+## 2) ¿Qué significa POO?
   
-  - Falso, el teclado es uno de las tantas posibilidades.
+  - Programación Orientada a objetos
 
-## 3) Un bucle en programación es una:
+## 3) ¿Qué es un lenguaje de programación?
   
-  - Estructura de control cíclica, se ejecuta mientras se cumpla la condición.
+  - Un conjunto de reglas gramaticales, instrucciones, pata que un dispositivo ejecute tareas.
 
-## 4) ¿Que significa el termino iterar?
+## 4) Con lenguajes interpretados...
   
-  - Repetirción de una parte de nuestro programa, repetir, recorrer.
+  - Nuestros códigos corren con un intérprete.
 
-## 5) ¿Los conjuntos de datos se pueden recorrer?
+## 5) ¿Qué es una aplicación de consola?
   
-  - Si, por lo general se usa alguna estructura cíclica como un bucle para esa tarea.
+  - Son aplicaciones que corren en una ventana tipo línea de comando(consola).
   
 # Nota: 100
