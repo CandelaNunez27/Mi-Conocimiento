@@ -58,20 +58,15 @@ F 1 2 A 4
 
 ##### A. Área. Calcule el área de un triángulo (rectángulo) de altura 5 y de base 2. (Resultado sin unidades).
 
-((5+5) + 2)^3
-12^3
-*RTA = 1728*
-
-(5^2) + 2
-25 + 2
-*RTA = 27*
-
+(2 x 5) / 2
+10 / 2
+*RTA = 5*
 ### Ejercicio 3
 
 ##### A. Perímetro. Calcule el perímetro de un círculo cuyo radio es 5. (Resultado sin unidades).
 
-5 x pi
-*RTA = 15
+2 x pi x 5
+*RTA = 31.4
 
 ### Ejercicio 4
 
@@ -82,7 +77,7 @@ El carnicero le comenta que tiene que calcular 500 gramos de carne por persona. 
 
 0.5 x (18 - 3)
 0.5 x  15
-*RTA = 7.5*
+*RTA = 7.5 kg*
 
 ### Ejercicio 5
 
@@ -90,7 +85,10 @@ El carnicero le comenta que tiene que calcular 500 gramos de carne por persona. 
 Un conductor de micros de larga distancia mira su reloj y ve que son las 18:00hs. Está por partir a una ciudad "X", sabe que si viaja a 60Km/h (velocidad constante) llega a esta ciudad a la medianoche.
 Si nuestro conductor hipotético decide viajar a una velocidad de 90Km/h. ¿A qué hora llegará?
 
-18 hs - 00 hs = 
-
-*RTA = 7.5*
+18 hs - 00 hs = 6 hs a 60km/h = 360 km
+X a 90km/h = 360 km
+X = 360 / 90
+x = 4 hs
+4 a 90km/h = 360 km
+*RTA = 4 hs*
 
