@@ -1,5 +1,3 @@
-
-
 # 1. Glosario y Conceptos Clave de Programación
 
 * **Variable:** Es un nombre utilizado en informática para representar un valor o dato.
