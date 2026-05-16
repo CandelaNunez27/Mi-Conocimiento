@@ -80,17 +80,22 @@ fin
 Desde PSeInt, crear un programa que pida por teclado la base y la altura de un triángulo, y nos arroje por pantalla el resultado del cálculo del área del triángulo.
 
 *RTA = 
-inicio
+Algoritmo area_triangulo
 area = 0.0
 base = 0
 altura = 0
-funcion pedir datos
-ingresar base
-ingresar altura
-funcion calcular area
+
+*funcion pedir datos
+Escribir "Ingrese base:"
+leer base
+
+*Escribir "Ingrese altura:"
+leer altura
+
+*funcion calcular area
 area = (base * altura)  / 2
-escribir area
-fin
+Escribir "El area del triangulo es ", area
+fin*
 
 
 ## Ejercicio 2
@@ -99,12 +104,15 @@ fin
 Desde PSeInt, crear un programa que pida el radio de un círculo y luego muestre por pantalla el resultado del perímetro.
 
 *RTA = 
-inicio
+Algoritmo perímetro_circulo
 radio = 0
 diametro = 0
 perimetro = 0
-funcion pedir datos
-ingresar radio
+
+*funcion pedir datos
+Escribir "Ingrese radio:"
+leer radio
+
 funcion calcular perimetro
 diametro = radio * 2
 perimetro = pi * diametro
