@@ -1,4 +1,4 @@
-# 1. Entrada de datos
+# 1. Concepto y tipos de paradigmas
 
 La entrada de datos es el mecanismo por el cual un programa recibe información del mundo exterior (generalmente del usuario a través del teclado) para procesarla. Esto hace que los programas sean interactivos y dinámicos, ya que no siempre trabajan con valores fijos predefinidos en el código.
 
@@ -13,7 +13,7 @@ La entrada de datos es el mecanismo por el cual un programa recibe información 
 
 ---
 
-# 2. Estructura de Control tipo Bucle
+# 2. Tipos de lenguajes y características
 
 Los bucles (o ciclos) son estructuras que te permiten repetir un bloque de código múltiples veces sin tener que escribirlo una y otra vez. Se basan en una condición lógica.
 
@@ -33,7 +33,7 @@ Los bucles (o ciclos) son estructuras que te permiten repetir un bloque de códi
 
 ---
 
-# 3. Conjunto de datos y operaciones
+# 3. Áreas y lenguajes actuales
 
  A diferencia de una variable normal que guarda un solo valor, un conjunto de datos permite almacenar múltiples valores bajo un mismo nombre.
 
@@ -55,7 +55,7 @@ Son colecciones ordenadas de datos. Puedes guardar números, textos, booleanos e
 
 ---
 
-# 4. Concepto de funciones
+# 4. Entornos y editores
 
 Una función es un bloque de código encapsulado y con un nombre específico que realiza una tarea determinada. Sigue el principio "DRY" (_Don't Repeat Yourself_ - No te repitas): si tienes un código que usas muchas veces, lo metes en una función y simplemente la "llamas" cuando la necesites.
 

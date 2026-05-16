@@ -2,7 +2,7 @@
 
 ## Ejercicio 1
 
-##### A. En PSeInt, pedir por teclado el nombre de una persona y mostrar un saludo acompañando el nombre.
+##### A. Un banco decide entregar tarjetas de crédito a los clientes que tengan una edad mayor a 35 años y un sueldo mínimo de 500 dólares. Hacer un programa que pida la edad y el sueldo de una persona, luego decida si se le entrega o no el beneficio.
 
 *RTA = 
 Algoritmo Ingresar_Nombre
@@ -13,7 +13,25 @@ escribir "Hola ", nombre
 FinAlgoritmo*
 ## Ejercicio 2
 
-##### A. En PSeInt, pedir por teclado la edad de una persona, y que el programa decida si la persona es menor o mayor de edad.
+##### A. En PSeInt, pedir por teclado el peso y la altura de una persona. Calcular el índice de masa corporal (imc). El índice de masa corporal se calcula: 
+
+*RTA = 
+Algoritmo Comparar_edad
+edad = 0
+
+*Escribir "Ingrese su edad: "
+leer edad
+Si edad < 18
+	escribir "Es menor de edad"
+	Sino
+		escribir "Es mayor de edad"
+		FinSI
+FinAlgoritmo*
+
+##### B. A partir del punto A, determinar si la persona está con bajo peso, peso normal o sobrepeso. 
+- imc < 18 : bajo peso 
+- imc >= 18 y imc < 25: peso normal 
+- imc>= 25 : sobrepeso
 
 *RTA = 
 Algoritmo Comparar_edad
@@ -29,7 +47,8 @@ Si edad < 18
 FinAlgoritmo*
 ## Ejercicio 3
 
-##### A. Incrementar una variable con un bucle en PSeInt.
+##### A. Pasar el diagrama de flujo de la derecha a un programa de PSeInt.
+![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260516190002.png)
 
 *RTA = 
 Algoritmo Incrementar_variable
@@ -88,7 +107,7 @@ FinAlgoritmo
 ## Ejercicio 1
 
 ##### A. Programar
-Desde PSeInt, crear un programa que pida por teclado la base y la altura de un triángulo, y nos arroje por pantalla el resultado del cálculo del área del triángulo.
+Desde PSeInt crear un programa que incremente una variable de uno en uno desde 1, hasta 10. Resolverlo con la sentencia tipo bucle. Mostrar el incremento por pantalla.
 
 *RTA = 
 Algoritmo area_triangulo
@@ -109,7 +128,7 @@ FinAlgoritmo*
 ## Ejercicio 2
 
 ##### A. Programar
-Desde PSeInt, crear un programa que pida el radio de un círculo y luego muestre por pantalla el resultado del perímetro.
+Desde PSeInt, crear un programa que dado un número máximo (ingresado por teclado), diga los múltiplos de 3 y de 5 desde 1 hasta ese máximo.
 
 *RTA = 
 Algoritmo perímetro_circulo
@@ -128,7 +147,7 @@ FinAlgoritmo
 ## Ejercicio 3
 
 ##### A. Completar 
-En todos los lenguajes de programación existe el operador " % " (permite saber si una división tiene resto nulo o no). En el módulo anterior vimos este operador. Estos ejemplos te serán de referencia: 10 % 2 == 0 , el resto es 0. Otro ejemplo, 8 % 3 == 2, el resto es 2
+Desde PSeInt, crear un programa que, al ingresar un número, determine si es primo o no es primo. (Los números primos son aquellos que solo son divisibles entre ellos mismos y el 1)
 
 Entonces complete los siguientes casos: 
 a) 11 % 2 == *1*
@@ -139,7 +158,7 @@ d) 100 % 5 == *0*
 ## Ejercicio 4
 
 ##### A. Programar
-Desde PSeInt, pida un número entero por teclado. Luego, determine si ese número ingresado es múltiplo de 3 y de 5. Avisar al usuario que el número ingresado es múltiplo o no.
+Desde PSeInt, crear un programa que pida un número máximo (ingresar por teclado), y después pida otro segundo número hasta que este segundo supere al primero. (Si el segundo no supera al primero, vuelva a pedir hasta que en el algún momento se cumpla con lo pedido).
 
 *RTA = 
 Algoritmo multiplo
@@ -172,7 +191,12 @@ print(multiplos)
 ## Ejercicio 5
 
 ##### A. Incrementar de uno en uno
-Escriba (en papel, con sus palabras, pseudocódigo) un algoritmo que incremente una variable que arranca en 1 y aumente de uno en uno hasta 10.
+Calcular un promedio de 5 notas. Esas notas van a ingresar por teclado, pero debemos usar un bucle para que todo se realice de forma automática. La idea sería: 
+1. Crear una variable para que cuentes las vueltas (i = 1) y crear una variable para que almacene la suma (suma = 0). 
+2. Mientras i <= 5, pedir las notas en orden. 
+3. Dentro del bucle debemos incrementar la variable suma que almacena todas las notas (suma = suma + nota), e incrementar la variable de las vueltas(i = i + 1). 
+4. Por último, dividir suma en 5 (prom = suma / 5). 
+5. Mostrar el resultado por la pantalla.
 
 *RTA = 
 1. Tengo la variable i = 1 (que arranca en 1) 
