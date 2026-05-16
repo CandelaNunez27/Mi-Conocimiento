@@ -2,7 +2,7 @@
 
 ### Ejercicio 1
 
-##### A. Convertir a binario el número decimal 28.
+##### A. Una variable de nombre x, inicia con el valor 0. Si realizo la siguiente operatoria: x= ((10 + 50) * 2) / 4 ¿Con qué valor queda la variable x?
 
 28 / 2 = resto 0
 14 / 2 = resto 0
@@ -10,50 +10,89 @@
 3 / 2 = resto 1
 1 
 *RTA = 11100*
-##### B. Convertir a binario el número decimal 71.
-
-71 / 2 = resto 1
-35 / 2 = resto 1
-17 / 2 = resto 1
-8 / 2 = resto 0
-4 / 2 = resto 0
-2 / 2 = resto 0
-1
-*RTA = 1000111*
 
 ### Ejercicio 2
 
-##### A. Convertir a decimal el número binario 110101.
+##### A. En el ejercicio anterior, la variable x terminó con un valor. ¿Qué tipo de dato es el que tiene asociado x?
 
 110101
 1x 2^5 +1x 2^4 + 0x 2^3 + 1x2^2 + 0x 2^1 + 1 x 2^0
 32 + 16 + 0 + 4 + 0 + 1
 *RTA = 53*
-##### B. Convertir a decimal el número binario 100101.
-
-100101
-1x 2^5 +0x 2^4 + 0x 2^3 + 1x2^2 + 0x 2^1 + 1 x 2^0
-32 + 0 + 0 + 4 + 0 + 1
-*RTA = 37*
 
 ### Ejercicio 3
 
-##### A. Convertir a decimal el F12A4 (hexadecimal).
+##### A. ¿Cuál es el resultado de x al operar…?
 
-F 1 2 A 4
-15 1 2 10 4
+x = 10 % 2
+
 *RTA = 15 1 2 10 4*
+
+##### B. ¿Cuál es el resultado de x al operar…?
+
+x = 9 % 2
+
+*RTA = 15 1 2 10 4*
+##### C. ¿Cuál es el resultado de x al operar…?
+
+x = 15 % 3
+
+*RTA = 15 1 2 10 4*
+
+### Ejercicio 4
+
+##### A. Complete la tabla con los resultados.
+
+![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260516012312.png)
+
+*RTA = 53*
+
+### Ejercicio 5
+
+##### A. Complete la tabla con los resultados.
+
+![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260516012342.png)
+
+*RTA = 53*
+
+---
 
 # Laboratorio 2
 
 ### Ejercicio 1
 
-##### A. Promedio. Calcule el promedio matemático de los siguientes números: [ 10 , 8 , 6 ]
+##### A. Se tienen las siguientes ecuaciones. Diga el resultado si es posible:
 
-(10 + 8 + 6) / 3
-24 / 3
+x = 10 + 0
+
 *RTA = 8*
 
+
+### Ejercicio 2
+
+##### A. Se tienen las siguientes ecuaciones. Diga el resultado si es posible:
+
+x = 10 + 0
+
+*RTA = 8*
+
+##### B. Se tienen las siguientes ecuaciones. Diga el resultado si es posible:
+
+y = 125 - 0
+
+*RTA = 8*
+
+##### C. Se tienen las siguientes ecuaciones. Diga el resultado si es posible:
+
+z = 50 * 0
+
+*RTA = 8*
+
+##### D. Se tienen las siguientes ecuaciones. Diga el resultado si es posible:
+
+t = 100 / 0
+
+*RTA = 8*
 ### Ejercicio 2
 
 ##### A. Área. Calcule el área de un triángulo (rectángulo) de altura 5 y de base 2. (Resultado sin unidades).

@@ -27,16 +27,15 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "02 - Cursos y Certificaciones/Curso Python Education TI/Módulo 1 Introducción/2° Parte/Sin título.md",
+                "file": "02 - Cursos y Certificaciones/Curso Python Education TI/Módulo 1 Introducción/2° Parte/Resumen - Módulo 2 Fundamentos Lógicos de la Programación.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Sin título"
+              "title": "Resumen - Módulo 2 Fundamentos Lógicos de la Programación"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -237,11 +236,13 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "94fb6f733562cbd8",
+  "active": "626b3ed26901bb94",
   "lastOpenFiles": [
+    "02 - Cursos y Certificaciones/Curso Python Education TI/Módulo 1 Introducción/2° Parte/Resumen - Módulo 2 Fundamentos Lógicos de la Programación.md",
     "02 - Cursos y Certificaciones/Curso Python Education TI/Módulo 1 Introducción/2° Parte/Desafío 2 - Laboratorio 2.md",
+    "04 - Otros/Imagenes/Pasted image 20260516012342.png",
+    "04 - Otros/Imagenes/Pasted image 20260516012312.png",
     "02 - Cursos y Certificaciones/Curso Python Education TI/Módulo 1 Introducción/1° Parte/Desafío 1 - Laboratorio 1.md",
-    "02 - Cursos y Certificaciones/Curso Python Education TI/Módulo 1 Introducción/2° Parte/Sin título.md",
     "04 - Otros/Imagenes/Pasted image 20260516010509.png",
     "04 - Otros/Imagenes/Pasted image 20260516010450.png",
     "04 - Otros/Imagenes/Pasted image 20260516010437.png",
@@ -257,8 +258,6 @@
     "02 - Cursos y Certificaciones/Curso Python Education TI/Módulo 1 Introducción/1° Parte/Examen 1.md",
     "02 - Cursos y Certificaciones/Curso Cisco Linux Essentials/Módulo 3/Examen 3 Módulo 3 Respuestas.md",
     "02 - Cursos y Certificaciones/Curso Cisco Linux Essentials/Módulo 1/Examen 1 Módulo 1 Respuestas.md",
-    "04 - Otros/Imagenes/Pasted image 20260515234801.png",
-    "04 - Otros/Imagenes/Pasted image 20260515234749.png",
     "02 - Cursos y Certificaciones/Curso Python Education TI/Módulo 1 Introducción/4° Parte",
     "02 - Cursos y Certificaciones/Curso Python Education TI/Módulo 1 Introducción/3° Parte",
     "02 - Cursos y Certificaciones/Curso Python Education TI/Módulo 1 Introducción/2° Parte",
@@ -284,7 +283,6 @@
     "02 - Cursos y Certificaciones/Curso Cisco Linux Essentials/Módulo 3/Módulo 3 Completo.md",
     "02 - Cursos y Certificaciones/Curso Cisco Linux Essentials/Módulo 2/Módulo 2 Completo.md",
     "02 - Cursos y Certificaciones/Curso Cisco Linux Essentials/Módulo 1/Módulo 1 Completo.md",
-    "02 - Cursos y Certificaciones/Curso Cisco Linux Essentials/Módulo 2/Examen 2 Módulo 2 Respuestas.md",
     "1° Año/01 - Arquitectura de Computadoras/Sin título.canvas"
   ]
 }
