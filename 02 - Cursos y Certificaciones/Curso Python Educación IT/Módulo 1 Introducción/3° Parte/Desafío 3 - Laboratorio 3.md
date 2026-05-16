@@ -2,51 +2,50 @@
 
 ## Ejercicio 1
 
-##### A. Una variable de nombre x, inicia con el valor 0. Si realizo la siguiente operatoria: x= ((10 + 50) * 2) / 4 ¿Con qué valor queda la variable x?
+##### A. En PSeInt, pedir por teclado el nombre de una persona y mostrar un saludo acompañando el nombre.
 
-x = 0
-x= ((10 + 50) * 2) / 4 
-x = 30
-*RTA = 30*
-
+*RTA = 
+Inicio
+nombre = 
+ingresar nombre
+escribir "Hola" nombre
+fin*
 ## Ejercicio 2
 
-##### A. En el ejercicio anterior, la variable x terminó con un valor. ¿Qué tipo de dato es el que tiene asociado x?
+##### A. En PSeInt, pedir por teclado la edad de una persona, y que el programa decida si la persona es menor o mayor de edad.
 
-*RTA = Valor numérico, INT*
-
+*RTA = 
+Inicio
+edad = 
+ingresar edad
+si edad < 18
+	escribir "Es menor de edad"
+	sino
+		escribir "Es mayor de edad"
+fin*
 ## Ejercicio 3
 
-##### A. ¿Cuál es el resultado de x al operar…?
+##### A. Incrementar una variable con un bucle en PSeInt.
 
-x = 10 % 2
-x = 1
-*RTA = 0*
-
-##### B. ¿Cuál es el resultado de x al operar…?
-
-x = 9 % 2
-
-*RTA = 1*
-##### C. ¿Cuál es el resultado de x al operar…?
-
-x = 15 % 3
-
-*RTA = 0*
+*RTA = 
+Inicio
+edad = 
+ingresar edad
+for edad < 18
+	edad ++
+fin
 
 ## Ejercicio 4
 
-##### A. Complete la tabla con los resultados.
+##### A. Crea un conjunto de numeros en PSeInt y mostrar alguno de los datos guardados.
 
-![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260516012312.png)
-
-
-| p   | q   | p & q |
-| --- | --- | ----- |
-| V   | V   | *V*   |
-| V   | F   | *F*   |
-| F   | V   | *F*   |
-| F   | F   | *F*   |
+*RTA = 
+Inicio
+edad = 
+ingresar edad
+for edad < 18
+	edad ++
+fin
 
 
 ## Ejercicio 5
@@ -81,88 +80,48 @@ funcion pedir datos
 ingresar base
 ingresar altura
 funcion calcular area
-area = (altura * 2) + base
+area = (base * altura)  / 2
 escribir area
 fin
- La suma da como resultado un entero(INT). La resta da como resultado un entero(INT).  La multiplicación da como resultado un entero(INT).  La división puede dar como resultado un entero(INT) o un decimal (Float).*
 
 
 ## Ejercicio 2
 
-##### A. Se tienen las siguientes ecuaciones. Diga el resultado si es posible:
+##### A. Programar
+Desde PSeInt, crear un programa que pida el radio de un círculo y luego muestre por pantalla el resultado del perímetro.
 
-x = 10 + 0
+*RTA = 
+inicio
+radio = 0
+diametro = 0
+perimetro = 0
+funcion pedir datos
+ingresar radio
+funcion calcular perimetro
+diametro = radio * 2
+perimetro = pi * diametro
+escribir perometro
+fin
 
-*RTA = 10*
-
-##### B. Se tienen las siguientes ecuaciones. Diga el resultado si es posible:
-
-y = 125 - 0
-
-*RTA = 125*
-
-##### C. Se tienen las siguientes ecuaciones. Diga el resultado si es posible:
-
-z = 50 * 0
-
-*RTA = 0*
-
-##### D. Se tienen las siguientes ecuaciones. Diga el resultado si es posible:
-
-t = 100 / 0
-
-*RTA = Indefinido*
 ## Ejercicio 3
 
-##### A. Complete con los operadores de comparación <, == , >     x = 5     y = 10     z =50
+##### A. Completar 
+En todos los lenguajes de programación existe el operador " % " (permite saber si una división tiene resto nulo o no). En el módulo anterior vimos este operador. Estos ejemplos te serán de referencia: 10 % 2 == 0 , el resto es 0. Otro ejemplo, 8 % 3 == 2, el resto es 2
 
-x ___ y
-5 ___ 10
-5 < 10
-*RTA = 5 < 10*
+Entonces complete los siguientes casos: 
+a) 11 % 2 == *1*
+b) 9 % 3 == *0*
+c) 7 % 2 == *1*
+d) 100 % 5 == *0*
 
-##### B. Complete con los operadores de comparación <, == , >     x = 5     y = 10     z =50
-
-z ___ x
-10___5
-10 > 5
-*RTA = 10 > 5*
-
-##### C. Complete con los operadores de comparación <, == , >     x = 5     y = 10     z =50
-
-2 . x  ___  y
-2 . 5 ___ 10
-10  == 10
-*RTA = 10 == 10*
-##### D. Complete con los operadores de comparación <, == , >     x = 5     y = 10     z =50
-
-z ___ y . x
-50 ___ 10 . 5
-50 == 50
-*RTA = 50 == 50*
 ## Ejercicio 4
 
-##### A. Complete con los operadores lógicos and[y] , or[o], not[no]
+##### A. Programar
+Desde PSeInt, pida un número entero por teclado. Luego, determine si ese número ingresado es múltiplo de 3 y de 5. Avisar al usuario que el número ingresado es múltiplo o no.
 
-True___ False == True
-True o False == True
-*RTA = True o False == True*
+*RTA = 
 
-##### B. Complete con los operadores lógicos and[y] , or[o], not[no]
 
-___ True == False
-no  True == False
-*RTA = no  True == False*
-
-##### C. Complete con los operadores lógicos and[y] , or[o], not[no]
-
-False___(True ___ True) == True
-False o (True  y  True) == True
-*RTA = False o (True  y  True) == True*
-## Ejercicio 5
-
-##### A. Completar
-Genere una lista a mano de los múltiplos de 3 y de 5, desde 1 hasta el número 50 sin incluir. (Es solo escribir en un papel los números múltiplos). Recordemos que los múltiplos son aquellos que al dividir, la división tiene resto nulo.
 
 ``` python
 # Creamos una lista vacía para guardar los múltiplos 
@@ -176,6 +135,12 @@ for numero in range(1, 50):
 # Mostramos el resultado en la pantalla
 print("Los múltiplos de 3 y 5 menores a 50 son:")
 print(multiplos)
-```
+````
 
-*RTA = Los números 15, 30 y 45
+
+## Ejercicio 5
+
+##### A. Incrementar de uno en uno
+Escriba (en papel, con sus palabras, pseudocódigo) un algoritmo que incremente una variable que arranca en 1 y aumente de uno en uno hasta 10.
+
+*RTA = 
