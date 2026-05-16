@@ -6,7 +6,8 @@ Son espacios reservados en la memoria de la computadora que almacenan informaci�
 - hay lenguajes de tipado dinámico que aceptan variables de todo tipo de dato
 
 ### Tipos de Datos: 
-Definen qué clase de información puede almacenar una variable y qué operaciones se pueden realizar con ella. Darle un valor a una variable se llama asignación.
+Definen qué clase de información puede almacenar una variable y qué operaciones se pueden realizar con ella. 
+Darle un valor a una variable se llama asignación *Ej: le asigno 400 a la variable dato, dato = 400*
 
 - **Enteros (Integer):** Números exactos sin decimales (ejemplo: 10, -5).
 
@@ -23,11 +24,14 @@ Definen qué clase de información puede almacenar una variable y qué operacion
 
 # 2. Operadores Aritméticos y Relacionales
 
-- **Operadores Aritméticos:** Se utilizan para realizar cálculos matemáticos directamente en el código. Incluyen la suma (+), resta (-), multiplicación (asterisco), división (/) y el módulo o resto de una división (%).
-
-- **Operadores Relacionales:** Sirven para comparar dos valores o variables. El resultado de esta comparación siempre devuelve un valor booleano (Verdadero o Falso).
+### Operadores Aritméticos: 
+Se utilizan para realizar cálculos matemáticos directamente en el código. Incluyen la suma (+), resta (-), multiplicación (asterisco), división (/) y el módulo o resto de una división (%).
 
 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260516010219.png)
+
+
+### Operadores Relacionales: 
+Sirven para comparar dos valores o variables. El resultado de esta comparación siempre devuelve un valor booleano (Verdadero o Falso). El igual siempre va a la derecha.
 
 - **Igualdad (= =):** Verifica si dos valores son exactamente iguales.
 
@@ -44,9 +48,12 @@ Definen qué clase de información puede almacenar una variable y qué operacion
 
 # 3. Lógica y Operadores Booleanos
 
-- **Lógica Booleana:** Es el sistema de toma de decisiones de una computadora, fundamentado en el álgebra de Boole.
+### Lógica Booleana: 
+Es el sistema de toma de decisiones de una computadora, fundamentado en el álgebra de Boole.
 
-- **Operadores Lógicos:** Permiten combinar múltiples condiciones relacionales para evaluar si un conjunto de reglas se cumple o no.
+![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260516010337.png)
+### Operadores Lógicos: 
+Permiten combinar múltiples condiciones relacionales para evaluar si un conjunto de reglas se cumple o no.
 
 - **AND (Y lógico):** Devuelve Verdadero solo si **todas** las condiciones evaluadas son verdaderas. Si una sola es falsa, el resultado global es falso.
 
@@ -54,7 +61,6 @@ Definen qué clase de información puede almacenar una variable y qué operacion
 
 - **NOT (Negación):** Invierte el valor lógico de una condición. Si el resultado era Verdadero, lo convierte en Falso, y viceversa.
 
-![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260516010337.png)
 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260516010356.png)
 
 
