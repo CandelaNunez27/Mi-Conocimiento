@@ -5,28 +5,37 @@
 ##### A. Un banco decide entregar tarjetas de crédito a los clientes que tengan una edad mayor a 35 años y un sueldo mínimo de 500 dólares. Hacer un programa que pida la edad y el sueldo de una persona, luego decida si se le entrega o no el beneficio.
 
 *RTA = 
-Algoritmo Ingresar_Nombre
-nombre = ""
-Escribir "Ingrese su nombre: "
-leer nombre
-escribir "Hola ", nombre
-FinAlgoritmo*
+Algoritmo banco
+edad = 0 
+sueldo = 0 
+
+*Escribir “Ingrese su edad:” 
+Leer edad
+Escribir “Ingrese su sueldo en dolares:”
+Leer sueldo 
+
+*Si edad > 18 y sueldo > 500 Entonces 
+	Escribir “Recibe la tarjeta de credito” 
+	SiNo 
+	Escribir “No recibe la tarjeta” 
+	Fin Si 
+Fin Algoritmo*
 ## Ejercicio 2
 
 ##### A. En PSeInt, pedir por teclado el peso y la altura de una persona. Calcular el índice de masa corporal (imc). El índice de masa corporal se calcula: 
 
-*RTA = 
-Algoritmo Comparar_edad
-edad = 0
+*Algoritmo imc_calculo
+peso = 0 
+altura = 0 
 
-*Escribir "Ingrese su edad: "
-leer edad
-Si edad < 18
-	escribir "Es menor de edad"
-	Sino
-		escribir "Es mayor de edad"
-		FinSI
-FinAlgoritmo*
+*Escribir “Ingrese su peso:” 
+Leer peso
+Escribir “Ingrese su altura:”
+Leer altura
+
+*imc = peso / (altura . altura) 
+Escribir “Su imc es:”, imc 
+Fin Algoritmo*
 
 ##### B. A partir del punto A, determinar si la persona está con bajo peso, peso normal o sobrepeso. 
 - imc < 18 : bajo peso 
@@ -34,69 +43,45 @@ FinAlgoritmo*
 - imc>= 25 : sobrepeso
 
 *RTA = 
-Algoritmo Comparar_edad
-edad = 0
+Algoritmo imc_calculo 
+peso = 0 
+altura = 0 
 
-*Escribir "Ingrese su edad: "
-leer edad
-Si edad < 18
-	escribir "Es menor de edad"
-	Sino
-		escribir "Es mayor de edad"
-		FinSI
-FinAlgoritmo*
+*Escribir “Ingrese su peso:” 
+Leer peso
+Escribir “Ingrese su altura:” 
+Leer altura 
+
+*imc = peso / (altura . altura) 
+	Escribir “Su imc es:”, imc 
+Si imc < 18 Entonces
+	Escribir “Bajo peso”
+	 SiNo
+		  Si imc ≥ 18 y imc < 25 Entonces
+		   Escribir “Peso normal” 
+		   SiNo 
+		   Escribir “Sobrepeso”
+		    Fin Si 
+		Fin Si 
+Fin Algoritmo*
 ## Ejercicio 3
 
 ##### A. Pasar el diagrama de flujo de la derecha a un programa de PSeInt.
 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260516190002.png)
 
 *RTA = 
-Algoritmo Incrementar_variable
-x = 0
+Algoritmo costos_laborales
+horast = 0
+costoh = 0
 
-*Mientras x < 10 Hacer
-	Escribir x
-	x ++
-	Fin Mientras
-FinAlgoritmo
+*Escribir “Ingrese horas trabajadas:” 
+Leer horast 
+Escribir “Ingrese valor hora:” 
+Leer costoh 
 
-## Ejercicio 4
-
-##### A. Crea un conjunto de numeros en PSeInt y mostrar alguno de los datos guardados.
-
-*RTA = 
-Algoritmo ejemplo_conjuntos
-Dimension datos (5)
-datos[1] = 50
-datos[2] = 100
-datos[3] = 150 
-datos[4] = 200
-datos[5] = 250
-Escribir datos [1]
-FinAlgoritmo
-
-
-## Ejercicio 5
-
-##### A. Crear un programa en PSeInt para recorrer un conjunto de datos.
-
-*RTA = 
-Algoritmo ejemplo_conjuntos
-Dimension datos (5)
-datos[1] = 50
-datos[2] = 100
-datos[3] = 150 
-datos[4] = 200
-datos[5] = 250
-Indice = 1
-Mientras indice ≤ 5 Hacer 
-	Escribir datos[indice] 
-	indice = indice + 1 
-	Fin Mientras 
-FinAlgoritmo
-
-
-
+*sueldo = horast * costoh 
+Escribir “Su sueldo es:”, sueldo 
+Fin Algoritmo
 
 
 
@@ -110,19 +95,13 @@ FinAlgoritmo
 Desde PSeInt crear un programa que incremente una variable de uno en uno desde 1, hasta 10. Resolverlo con la sentencia tipo bucle. Mostrar el incremento por pantalla.
 
 *RTA = 
-Algoritmo area_triangulo
-area = 0.0
-base = 0
-altura = 0
-
-*Escribir "Ingrese base:"
-leer base
-Escribir "Ingrese altura:"
-leer altura
-
-*area = (base * altura)  / 2
-Escribir "El area del triangulo es ", area
-FinAlgoritmo*
+Algoritmo incremento
+i = 1
+Mientras i<10 Hacer 
+	Escribir i
+	 i = i + 1
+	  Fin Mientras 
+Fin Algoritmo*
 
 
 ## Ejercicio 2
@@ -131,29 +110,42 @@ FinAlgoritmo*
 Desde PSeInt, crear un programa que dado un número máximo (ingresado por teclado), diga los múltiplos de 3 y de 5 desde 1 hasta ese máximo.
 
 *RTA = 
-Algoritmo perímetro_circulo
-radio = 0
-diámetro = 0
-perímetro = 0
-
-*Escribir "Ingrese radio:"
-leer radio
-
-*diametro = radio * 2
-perimetro = pi * diametro
-Escribir "El perimetro el circulo es ",  perimetro
-FinAlgoritmo
-
+Algoritmo multiplo
+i = 1 
+maximo = 0 
+Escribir “Ingrese un numero maximo:” 
+Leer maximo 
+Mientras i< maximo Hacer
+	Si i%3 == 0 y i%5 == 0, Entonces 
+	Escribir “El”, i, “es multiplo de 3 y 5”
+	 Fin Si
+	  i = i + 1 
+	  Fin Mientras 
+Fin Algoritmo
 ## Ejercicio 3
 
 ##### A. Completar 
 Desde PSeInt, crear un programa que, al ingresar un número, determine si es primo o no es primo. (Los números primos son aquellos que solo son divisibles entre ellos mismos y el 1)
 
-Entonces complete los siguientes casos: 
-a) 11 % 2 == *1*
-b) 9 % 3 == *0*
-c) 7 % 2 == *1*
-d) 100 % 5 == *0*
+*RTA = 
+Algoritmo primos 
+i = 1
+num = 0
+contador = 0 
+Escribir “Ingrese un numero:”
+Leer num 
+Mientras i≤num Hacer
+	Si num%i == 0 Entonces
+	 contador = contador + 1 
+	 Fin Si
+	  i = i + 1 
+	  Fin Mientras 
+	Si contador == 2 Entonces 
+		Escribir num, “es primo”
+		 SiNo
+		  Escribir num, “no es primo” 
+		  Fin Si
+ Fin Algoritmo
 
 ## Ejercicio 4
 
@@ -161,32 +153,23 @@ d) 100 % 5 == *0*
 Desde PSeInt, crear un programa que pida un número máximo (ingresar por teclado), y después pida otro segundo número hasta que este segundo supere al primero. (Si el segundo no supera al primero, vuelva a pedir hasta que en el algún momento se cumpla con lo pedido).
 
 *RTA = 
-Algoritmo multiplo
-num = 0 
-Escribir "Es multiplo de 3 y de 5 ?"
-Escribir "Ingrese el numero: " 
-Leer num
-Si num % 3 == 0 y num % 5 = =0 Entonces 
-	Escribir "El numero ingresado es multiplo de 3 y de 5"
-	 SiNo 
-		 Escribir "El numero no es multiplo"
- Fin Si FinAlgoritmo
+Algoritmo bucle_2_numeros
+numero_uno = 0 
+numero_dos = 0 
 
-otra forma
-``` python
-# Creamos una lista vacía para guardar los múltiplos 
-multiplos = [] 
+*Escribir “Ingrese primer numero:” 
+Leer numero_uno 
+Escribir “Ingrese segundo numero:” 
+Leer numero_dos 
 
-# Vamos desde 1 hasta 50 (en Python, el límite superior no se incluye, así que frena en 49)
-for numero in range(1, 50): 
-	if numero % 3 == 0 or numero % 5 == 0: 
-	multiplos.append(numero) 
+*Mientras numero_uno > numero_dos Hacer 
+	Escribir “El primero sigue siendo mayor” 
+	Escribir “Vuelva a ingresar el segundo valor:” 
+	Leer numero_dos 
+	Fin Mientras 
 
-# Mostramos el resultado en la pantalla
-print("Los múltiplos de 3 y 5 menores a 50 son:")
-print(multiplos)
-````
-
+*Escribir numero_uno, “vs”, numero_dos 
+Fin Algoritmo
 
 ## Ejercicio 5
 
@@ -199,10 +182,18 @@ Calcular un promedio de 5 notas. Esas notas van a ingresar por teclado, pero deb
 5. Mostrar el resultado por la pantalla.
 
 *RTA = 
-1. Tengo la variable i = 1 (que arranca en 1) 
-2. Mientras i < 10 (menor a diez) 
-3. Dentro del bucle puedo incrementar a i de uno en uno. i = i + 1 (Podría ir mostrando dentro del bucle por pantalla el incremento)
-4. código
-while i < 10
-	print i
-	i++
+Algoritmo promedio_5_notas_bucle
+i = 1
+suma = 0
+
+*Mientras i≤5 Hacer
+	nota = 0
+	 Escribir “Ingrese nota”, i, “:”
+	Leer nota
+	 suma = suma + nota
+	  i = i + 1
+	Fin Mientras
+ 
+ *prom = suma / 5
+  Escribir “El promedio es”, prom
+Fin Algoritmo
