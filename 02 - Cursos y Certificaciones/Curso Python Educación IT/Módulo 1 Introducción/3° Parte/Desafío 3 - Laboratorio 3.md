@@ -42,24 +42,32 @@ fin
 *RTA = 
 Inicio
 edad = 
+edades =[]
 ingresar edad
 for edad < 18
 	edad ++
+	edades = edad
 fin
 
 
 ## Ejercicio 5
 
-##### A. Complete la tabla con los resultados.
+##### A. Crear un programa en PSeInt para recorrer un conjunto de datos.
 
-![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260516012342.png)
+*RTA = 
+Inicio
+edad = 
+edades =[5]
+ingresar edad
+for edad < 18
+	edad ++
+	edades = edad
+for i <=1 && i >=5
+	escribir edades
+	i++
+fin
 
-| p   | q   | p o q |
-| --- | --- | ----- |
-| V   | V   | *V*   |
-| V   | F   | *V*   |
-| F   | V   | *V*   |
-| F   | F   | *F*   |
+
 
 
 ---
