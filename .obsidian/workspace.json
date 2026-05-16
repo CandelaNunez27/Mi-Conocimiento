@@ -8,21 +8,21 @@
         "type": "tabs",
         "children": [
           {
-            "id": "94fb6f733562cbd8",
+            "id": "955d4ba7fac8cbe2",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "02 - Cursos y Certificaciones/Curso Python Educación IT/Módulo 1 Introducción/4° Parte/Resumen - Módulo 4 Entornos, Lenguajes y Paradigmas.md",
+                "file": "02 - Cursos y Certificaciones/Curso Python Educación IT/Módulo 1 Introducción/Examen Integrador.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Resumen - Módulo 4 Entornos, Lenguajes y Paradigmas"
+              "title": "Examen Integrador"
             }
           },
           {
-            "id": "955d4ba7fac8cbe2",
+            "id": "94fb6f733562cbd8",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -33,6 +33,34 @@
               },
               "icon": "lucide-file",
               "title": "Examen 4"
+            }
+          },
+          {
+            "id": "5203c2763d3abc98",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "02 - Cursos y Certificaciones/Curso Python Educación IT/Módulo 1 Introducción/3° Parte/Examen 3.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Examen 3"
+            }
+          },
+          {
+            "id": "7cae818403909348",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "02 - Cursos y Certificaciones/Curso Python Educación IT/Módulo 1 Introducción/2° Parte/Examen 2.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Examen 2"
             }
           }
         ]
@@ -236,13 +264,15 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "94fb6f733562cbd8",
+  "active": "955d4ba7fac8cbe2",
   "lastOpenFiles": [
-    "02 - Cursos y Certificaciones/Curso Python Educación IT/Módulo 1 Introducción/2° Parte/Resumen - Módulo 2 Fundamentos Lógicos de la Programación.md",
-    "02 - Cursos y Certificaciones/Curso Python Educación IT/Módulo 1 Introducción/2° Parte/Examen 2.md",
-    "02 - Cursos y Certificaciones/Curso Python Educación IT/Módulo 1 Introducción/3° Parte/Examen 3.md",
-    "02 - Cursos y Certificaciones/Curso Python Educación IT/Módulo 1 Introducción/4° Parte/Resumen - Módulo 4 Entornos, Lenguajes y Paradigmas.md",
     "02 - Cursos y Certificaciones/Curso Python Educación IT/Módulo 1 Introducción/4° Parte/Examen 4.md",
+    "02 - Cursos y Certificaciones/Curso Python Educación IT/Módulo 1 Introducción/Examen Integrador.md",
+    "02 - Cursos y Certificaciones/Curso Python Educación IT/Módulo 1 Introducción/3° Parte/Examen 3.md",
+    "02 - Cursos y Certificaciones/Curso Python Educación IT/Módulo 1 Introducción/2° Parte/Examen 2.md",
+    "02 - Cursos y Certificaciones/Curso Python Educación IT/Módulo 1 Introducción/1° Parte/Examen 1.md",
+    "02 - Cursos y Certificaciones/Curso Python Educación IT/Módulo 1 Introducción/4° Parte/Resumen - Módulo 4 Entornos, Lenguajes y Paradigmas.md",
+    "02 - Cursos y Certificaciones/Curso Python Educación IT/Módulo 1 Introducción/2° Parte/Resumen - Módulo 2 Fundamentos Lógicos de la Programación.md",
     "02 - Cursos y Certificaciones/Curso Python Educación IT/Módulo 1 Introducción/4° Parte/Desafío 4 - Laboratorio 4.md",
     "04 - Otros/Imagenes/Pasted image 20260516190002.png",
     "02 - Cursos y Certificaciones/Curso Python Educación IT/Módulo 1 Introducción/3° Parte/Resumen - Módulo 3 Interacción, Iteración y Modularidad.md",
@@ -262,7 +292,6 @@
     "04 - Otros/Plantillas/Examen Corto Plantilla.md",
     "04 - Otros/Plantillas/Examen largo plantilla.md",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 1/TP Obligatorio/TP 1 Módulo 1.md",
-    "02 - Cursos y Certificaciones/Curso Python Educación IT/Módulo 1 Introducción/1° Parte/Examen 1.md",
     "02 - Cursos y Certificaciones/Curso Cisco Linux Essentials/Módulo 3/Examen 3 Módulo 3 Respuestas.md",
     "02 - Cursos y Certificaciones/Curso Cisco Linux Essentials/Módulo 1/Examen 1 Módulo 1 Respuestas.md",
     "02 - Cursos y Certificaciones/Curso Python Educación IT/Módulo 1 Introducción/4° Parte",

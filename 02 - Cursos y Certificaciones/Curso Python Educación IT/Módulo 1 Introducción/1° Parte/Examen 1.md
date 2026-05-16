@@ -1,4 +1,4 @@
-# Examen 1 - Módulo 1
+# Examen 1 - Módulo 1.1
 
 ## 1) ¿Cuáles son los símbolos del sistema binario?
   
