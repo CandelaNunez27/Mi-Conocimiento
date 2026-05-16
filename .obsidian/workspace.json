@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "02 - Cursos y Certificaciones/Curso Python Education TI/Módulo 1 Introducción/2° Parte/Desafío 2 - Laboratorio 2.md",
+                "file": "02 - Cursos y Certificaciones/Curso Python Education TI/Módulo 1 Introducción/1° Parte/Desafío 1 - Laboratorio 1.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Desafío 2 - Laboratorio 2"
+              "title": "Desafío 1 - Laboratorio 1"
             }
           },
           {
@@ -35,7 +35,8 @@
               "title": "Resumen - Módulo 2 Fundamentos Lógicos de la Programación"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -236,13 +237,16 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "626b3ed26901bb94",
+  "active": "94fb6f733562cbd8",
   "lastOpenFiles": [
-    "02 - Cursos y Certificaciones/Curso Python Education TI/Módulo 1 Introducción/2° Parte/Resumen - Módulo 2 Fundamentos Lógicos de la Programación.md",
+    "02 - Cursos y Certificaciones/Curso Python Education TI/Módulo 1 Introducción/1° Parte/Desafío 1 - Laboratorio 1.md",
+    "02 - Cursos y Certificaciones/Curso Python Education TI/Módulo 1 Introducción/1° Parte/Resumen Módulo 1 Introducción a la Programación.md",
+    "04 - Otros/Plantillas/Examen Corto Plantilla.md",
+    "04 - Otros/Plantillas/Examen largo plantilla.md",
     "02 - Cursos y Certificaciones/Curso Python Education TI/Módulo 1 Introducción/2° Parte/Desafío 2 - Laboratorio 2.md",
+    "02 - Cursos y Certificaciones/Curso Python Education TI/Módulo 1 Introducción/2° Parte/Resumen - Módulo 2 Fundamentos Lógicos de la Programación.md",
     "04 - Otros/Imagenes/Pasted image 20260516012342.png",
     "04 - Otros/Imagenes/Pasted image 20260516012312.png",
-    "02 - Cursos y Certificaciones/Curso Python Education TI/Módulo 1 Introducción/1° Parte/Desafío 1 - Laboratorio 1.md",
     "04 - Otros/Imagenes/Pasted image 20260516010509.png",
     "04 - Otros/Imagenes/Pasted image 20260516010450.png",
     "04 - Otros/Imagenes/Pasted image 20260516010437.png",
@@ -251,10 +255,7 @@
     "04 - Otros/Imagenes/Pasted image 20260516010237.png",
     "04 - Otros/Imagenes/Pasted image 20260516010219.png",
     "04 - Otros/Imagenes/Pasted image 20260516010043.png",
-    "02 - Cursos y Certificaciones/Curso Python Education TI/Módulo 1 Introducción/1° Parte/Resumen Módulo 1 Introducción a la Programación.md",
-    "04 - Otros/Plantillas/Examen largo plantilla.md",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 1/TP Obligatorio/TP 1 Módulo 1.md",
-    "04 - Otros/Plantillas/Examen Corto Plantilla.md",
     "02 - Cursos y Certificaciones/Curso Python Education TI/Módulo 1 Introducción/1° Parte/Examen 1.md",
     "02 - Cursos y Certificaciones/Curso Cisco Linux Essentials/Módulo 3/Examen 3 Módulo 3 Respuestas.md",
     "02 - Cursos y Certificaciones/Curso Cisco Linux Essentials/Módulo 1/Examen 1 Módulo 1 Respuestas.md",

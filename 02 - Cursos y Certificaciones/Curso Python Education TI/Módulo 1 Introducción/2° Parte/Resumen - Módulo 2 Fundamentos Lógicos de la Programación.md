@@ -1,8 +1,12 @@
 # 1. Variables y Tipos de Datos
 
-- **Variables:** Son espacios reservados en la memoria de la computadora que almacenan información. Se identifican con un nombre único y su valor puede cambiar, actualizarse o reescribirse durante la ejecución del programa.
+### Variables:
+Son espacios reservados en la memoria de la computadora que almacenan información. Se identifican con un nombre único y su valor puede cambiar, actualizarse o reescribirse durante la ejecución del programa.
+- hay lenguajes de tipado estáticos que solo aceptan variables de un solo tipo de dato
+- hay lenguajes de tipado dinámico que aceptan variables de todo tipo de dato
 
-- **Tipos de Datos:** Definen qué clase de información puede almacenar una variable y qué operaciones se pueden realizar con ella.
+### Tipos de Datos: 
+Definen qué clase de información puede almacenar una variable y qué operaciones se pueden realizar con ella. Darle un valor a una variable se llama asignación.
 
 - **Enteros (Integer):** Números exactos sin decimales (ejemplo: 10, -5).
 
@@ -19,7 +23,7 @@
 
 # 2. Operadores Aritméticos y Relacionales
 
-- **Operadores Aritméticos:** Se utilizan para realizar cálculos matemáticos directamente en el código. Incluyen la suma (+), resta (-), multiplicación (*), división (/) y el módulo o resto de una división (%).
+- **Operadores Aritméticos:** Se utilizan para realizar cálculos matemáticos directamente en el código. Incluyen la suma (+), resta (-), multiplicación (asterisco), división (/) y el módulo o resto de una división (%).
 
 - **Operadores Relacionales:** Sirven para comparar dos valores o variables. El resultado de esta comparación siempre devuelve un valor booleano (Verdadero o Falso).
 
