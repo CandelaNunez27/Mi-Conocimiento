@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "02 - Cursos y Certificaciones/Curso Python Educación IT/Módulo 1 Introducción/3° Parte/Resumen - Módulo 3 Interacción, Iteración y Modularidad.md",
+                "file": "02 - Cursos y Certificaciones/Curso Python Educación IT/Módulo 1 Introducción/4° Parte/Examen 4.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Resumen - Módulo 3 Interacción, Iteración y Modularidad"
+              "title": "Examen 4"
             }
           },
           {
@@ -27,15 +27,16 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "02 - Cursos y Certificaciones/Curso Python Educación IT/Módulo 1 Introducción/3° Parte/Desafío 3 - Laboratorio 3.md",
+                "file": "02 - Cursos y Certificaciones/Curso Python Educación IT/Módulo 1 Introducción/4° Parte/Resumen - Módulo 4.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Desafío 3 - Laboratorio 3"
+              "title": "Resumen - Módulo 4"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -236,8 +237,16 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "94fb6f733562cbd8",
+  "active": "e6bb5d90017c09e9",
   "lastOpenFiles": [
+    "02 - Cursos y Certificaciones/Curso Python Educación IT/Módulo 1 Introducción/3° Parte/Resumen - Módulo 3 Interacción, Iteración y Modularidad.md",
+    "02 - Cursos y Certificaciones/Curso Python Educación IT/Módulo 1 Introducción/4° Parte/Resumen - Módulo 4.md",
+    "02 - Cursos y Certificaciones/Curso Python Educación IT/Módulo 1 Introducción/4° Parte/Desafío 4 - Laboratorio 4.md",
+    "02 - Cursos y Certificaciones/Curso Python Educación IT/Módulo 1 Introducción/3° Parte/Desafío 3 - Laboratorio 3.md",
+    "02 - Cursos y Certificaciones/Curso Python Educación IT/Módulo 1 Introducción/4° Parte/Examen 4.md",
+    "02 - Cursos y Certificaciones/Curso Python Educación IT/Módulo 1 Introducción/3° Parte/Examen 3.md",
+    "04 - Otros/Imagenes/Pasted image 20260516183142.png",
+    "04 - Otros/Imagenes/Pasted image 20260516183002.png",
     "04 - Otros/Imagenes/Pasted image 20260516181413.png",
     "04 - Otros/Imagenes/Pasted image 20260516181312.png",
     "04 - Otros/Imagenes/Pasted image 20260516175740.png",
@@ -245,13 +254,7 @@
     "04 - Otros/Imagenes/Pasted image 20260516175236.png",
     "04 - Otros/Imagenes/Pasted image 20260516175126.png",
     "04 - Otros/Imagenes/Pasted image 20260516175040.png",
-    "02 - Cursos y Certificaciones/Curso Python Educación IT/Módulo 1 Introducción/3° Parte/Desafío 3 - Laboratorio 3.md",
-    "02 - Cursos y Certificaciones/Curso Python Educación IT/Módulo 1 Introducción/3° Parte/Resumen - Módulo 3 Interacción, Iteración y Modularidad.md",
-    "02 - Cursos y Certificaciones/Curso Python Educación IT/Módulo 1 Introducción/3° Parte/Examen 3.md",
     "04 - Otros/Imagenes/Pasted image 20260516032230.png",
-    "04 - Otros/Imagenes/Pasted image 20260516032117.png",
-    "04 - Otros/Imagenes/Pasted image 20260516031831.png",
-    "04 - Otros/Imagenes/Pasted image 20260516031817.png",
     "02 - Cursos y Certificaciones/Curso Python Educación IT/Módulo 1 Introducción/2° Parte/Desafío 2 - Laboratorio 2.md",
     "02 - Cursos y Certificaciones/Curso Python Educación IT/Módulo 1 Introducción/2° Parte/Examen 2.md",
     "02 - Cursos y Certificaciones/Curso Python Educación IT/Módulo 1 Introducción/1° Parte/Resumen Módulo 1 Introducción a la Programación.md",
@@ -282,8 +285,6 @@
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 1/Clases/2026-04-29 Día 5 Redes en la Nube.md",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 1/Clases/2026-04-24 Día 4 Práctica.md",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 1/Clases/2026-05-06 Día 7 (6 fue feriado) Téoria y Práctica Sobre Proveedores.md",
-    "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 1/Clases/2026-05-08 Día 8 Práctica.md",
-    "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 1/Clases/2026-04-17 Día 2 Práctica.md",
     "1° Año/01 - Arquitectura de Computadoras/Sin título.canvas"
   ]
 }

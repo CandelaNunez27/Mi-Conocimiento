@@ -1,4 +1,4 @@
-# Desafío 3
+# Desafío 4
 
 ## Ejercicio 1
 
@@ -83,7 +83,7 @@ FinAlgoritmo
 
 ---
 
-# Laboratorio 3
+# Laboratorio 4
 
 ## Ejercicio 1
 
