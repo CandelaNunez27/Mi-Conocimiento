@@ -21,19 +21,18 @@ x = 30
 
 x = 10 % 2
 x = 1
-*RTA = 1
-
+*RTA = 0*
 
 ##### B. ¿Cuál es el resultado de x al operar…?
 
 x = 9 % 2
 
-*RTA = 15 1 2 10 4*
+*RTA = 1*
 ##### C. ¿Cuál es el resultado de x al operar…?
 
 x = 15 % 3
 
-*RTA = 15 1 2 10 4*
+*RTA = 0*
 
 ## Ejercicio 4
 
@@ -41,7 +40,14 @@ x = 15 % 3
 
 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260516012312.png)
 
-*RTA = 53*
+
+| p   | q   | p & q |
+| --- | --- | ----- |
+| V   | V   | *V*   |
+| V   | F   | *F*   |
+| F   | V   | *F*   |
+| F   | F   | *F*   |
+
 
 ## Ejercicio 5
 
@@ -49,7 +55,13 @@ x = 15 % 3
 
 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260516012342.png)
 
-*RTA = 53*
+| p   | q   | p o q |
+| --- | --- | ----- |
+| V   | V   | *V*   |
+| V   | F   | *V*   |
+| F   | V   | *V*   |
+| F   | F   | *F*   |
+
 
 ---
 
@@ -59,9 +71,7 @@ x = 15 % 3
 
 ##### A. Al sumar 2 números enteros, ¿El resultado de qué tipo será? ¿Al restar? ¿Al multiplicar? ¿Al dividir?
 
-x = 10 + 0
-
-*RTA = 8*
+*RTA = La suma da como resultado un entero(INT). La resta da como resultado un entero(INT).  La multiplicación da como resultado un entero(INT).  La división puede dar como resultado un entero(INT) o un decimal (Float).*
 
 
 ## Ejercicio 2
@@ -70,67 +80,79 @@ x = 10 + 0
 
 x = 10 + 0
 
-*RTA = 8*
+*RTA = 10*
 
 ##### B. Se tienen las siguientes ecuaciones. Diga el resultado si es posible:
 
 y = 125 - 0
 
-*RTA = 8*
+*RTA = 125*
 
 ##### C. Se tienen las siguientes ecuaciones. Diga el resultado si es posible:
 
 z = 50 * 0
 
-*RTA = 8*
+*RTA = 0*
 
 ##### D. Se tienen las siguientes ecuaciones. Diga el resultado si es posible:
 
 t = 100 / 0
 
-*RTA = 8*
+*RTA = Indefinido*
 ## Ejercicio 3
 
 ##### A. Complete con los operadores de comparación <, == , >     x = 5     y = 10     z =50
 
 x ___ y
-
-*RTA = 5*
+5 ___ 10
+5 < 10
+*RTA = 5 < 10*
 
 ##### B. Complete con los operadores de comparación <, == , >     x = 5     y = 10     z =50
 
 z ___ x
-
+10___5
+10 > 5
+*RTA = 10 > 5*
 
 ##### C. Complete con los operadores de comparación <, == , >     x = 5     y = 10     z =50
 
-2 x X  ___  y
-
+2 . x  ___  y
+2 . 5 ___ 10
+10  == 10
+*RTA = 10 == 10*
 ##### D. Complete con los operadores de comparación <, == , >     x = 5     y = 10     z =50
 
-z ___ y x X
-
+z ___ y . x
+50 ___ 10 . 5
+50 == 50
+*RTA = 50 == 50*
 ## Ejercicio 4
 
 ##### A. Complete con los operadores lógicos and[y] , or[o], not[no]
 
 True___ False == True
-*RTA = 31.4
+True o False == True
+*RTA = True o False == True*
 
 ##### B. Complete con los operadores lógicos and[y] , or[o], not[no]
 
 ___ True == False
-*RTA = 31.4*
+no  True == False
+*RTA = no  True == False*
 
 ##### C. Complete con los operadores lógicos and[y] , or[o], not[no]
 
 False___(True ___ True) == True
-*RTA = 31.4*
+False o (True  y  True) == True
+*RTA = False o (True  y  True) == True*
 ## Ejercicio 5
 
 ##### A. Completar
 Genere una lista a mano de los múltiplos de 3 y de 5, desde 1 hasta el número 50 sin incluir. (Es solo escribir en un papel los números múltiplos). Recordemos que los múltiplos son aquellos que al dividir, la división tiene resto nulo.
 
-0.5 x (18 - 3)
-0.5 x  15
+multiplos = 0
+if 3
+
+
 *RTA = 7.5 kg*
