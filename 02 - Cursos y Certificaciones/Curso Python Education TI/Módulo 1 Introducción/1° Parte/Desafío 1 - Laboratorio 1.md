@@ -34,5 +34,63 @@
 100101
 1x 2^5 +0x 2^4 + 0x 2^3 + 1x2^2 + 0x 2^1 + 1 x 2^0
 32 + 0 + 0 + 4 + 0 + 1
-*RTA = 53*
+*RTA = 37*
+
+### Ejercicio 3
+
+##### A. Convertir a decimal el F12A4 (hexadecimal).
+
+F 1 2 A 4
+15 1 2 10 4
+*RTA = 15 1 2 10 4*
+
+# Laboratorio 1
+
+### Ejercicio 1
+
+##### A. Promedio. Calcule el promedio matemático de los siguientes números: [ 10 , 8 , 6 ]
+
+(10 + 8 + 6) / 3
+24 / 3
+*RTA = 8*
+
+### Ejercicio 2
+
+##### A. Área. Calcule el área de un triángulo (rectángulo) de altura 5 y de base 2. (Resultado sin unidades).
+
+((5+5) + 2)^3
+12^3
+*RTA = 1728*
+
+(5^2) + 2
+25 + 2
+*RTA = 27*
+
+### Ejercicio 3
+
+##### A. Perímetro. Calcule el perímetro de un círculo cuyo radio es 5. (Resultado sin unidades).
+
+5 x pi
+*RTA = 15
+
+### Ejercicio 4
+
+##### A. Matemática e ingenio
+Sebastián está por preparar un asado (comida típica en Argentina y países de Latinoamérica). Necesita calcular cuántos kilos de carne va a
+comprar. 
+El carnicero le comenta que tiene que calcular 500 gramos de carne por persona. Son un total de 18 invitados y 3 de ellos son vegetarianos (no comen carne). ¿Cuántos kilos va a comprar?
+
+0.5 x (18 - 3)
+0.5 x  15
+*RTA = 7.5*
+
+### Ejercicio 5
+
+##### A. Matemática e ingenio
+Un conductor de micros de larga distancia mira su reloj y ve que son las 18:00hs. Está por partir a una ciudad "X", sabe que si viaja a 60Km/h (velocidad constante) llega a esta ciudad a la medianoche.
+Si nuestro conductor hipotético decide viajar a una velocidad de 90Km/h. ¿A qué hora llegará?
+
+18 hs - 00 hs = 
+
+*RTA = 7.5*
 
