@@ -46,14 +46,15 @@ FinAlgoritmo
 ##### A. Crea un conjunto de numeros en PSeInt y mostrar alguno de los datos guardados.
 
 *RTA = 
-Inicio
-edad = 
-edades =[]
-ingresar edad
-for edad < 18
-	edad ++
-	edades = edad
-fin
+Algoritmo ejemplo_conjuntos
+Dimension datos (5)
+datos[1] = 50
+datos[2] = 100
+datos[3] = 150 
+datos[4] = 200
+datos[5] = 250
+Escribir datos [1]
+FinAlgoritmo
 
 
 ## Ejercicio 5
@@ -61,17 +62,21 @@ fin
 ##### A. Crear un programa en PSeInt para recorrer un conjunto de datos.
 
 *RTA = 
-Inicio
-edad = 
-edades =[5]
-ingresar edad
-for edad < 18
-	edad ++
-	edades = edad
-for i <=1 && i >=5
-	escribir edades
-	i++
-fin
+Algoritmo ejemplo_conjuntos
+Dimension datos (5)
+datos[1] = 50
+datos[2] = 100
+datos[3] = 150 
+datos[4] = 200
+datos[5] = 250
+Indice = 1
+Mientras indice ≤ 5 Hacer 
+	Escribir datos[indice] 
+	indice = indice + 1 
+	Fin Mientras 
+FinAlgoritmo
+
+
 
 
 

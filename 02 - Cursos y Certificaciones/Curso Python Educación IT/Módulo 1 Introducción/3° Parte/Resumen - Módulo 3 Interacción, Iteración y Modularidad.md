@@ -6,15 +6,25 @@ La entrada de datos es el mecanismo por el cual un programa recibe información 
 
 - **Conversión de Tipos (Casting):** Por defecto, casi todo lo que ingresa el usuario se lee como una cadena de texto (_String_). Si necesitas hacer cálculos matemáticos con ese ingreso, es obligatorio convertir ese texto al tipo de dato numérico adecuado (_Integer_ o _Float_) antes de procesarlo.
 
+- **Hay otros medios de entrada de datos:** Como micrófonos, cámaras, sensores, etc.
+
+*Ejemplos de entrada de dato por teclado por PSeINT*
+![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260516175040.png) ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260516175126.png)
+
 ---
 
 # 2. Estructura de Control tipo Bucle
 
 Los bucles (o ciclos) son estructuras que te permiten repetir un bloque de código múltiples veces sin tener que escribirlo una y otra vez. Se basan en una condición lógica.
 
+![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260516175236.png)
+
 ### Distintos Bucles 
 
 - **Bucle MIENTRAS (While):** Repite un bloque de código _mientras_ una condición específica sea Verdadera (True). Antes de cada nueva repetición, vuelve a evaluar la condición. Si la condición se vuelve Falsa (False), el bucle se detiene y el programa continúa.
+
+![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260516175358.png)
+![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260516175740.png)
 
 - **Bucle PARA (For):** Se utiliza generalmente cuando sabes de antemano cuántas veces necesitas repetir el código, o cuando necesitas recorrer elemento por elemento un conjunto de datos (como una lista).
 
