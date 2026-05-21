@@ -12,7 +12,7 @@
   
   - Una entrada, un proceso y una salida.
 
-## 4) ¿El teclado es la unica entrada?
+## 4) ¿El teclado es la única entrada?
   
   - Falso, el teclado es uno de las tantas posibilidades.
 
@@ -49,21 +49,36 @@
   
   - Programación Orientada a objetos
 
-## 7) ¿Los conjuntos de datos se pueden acceder?
+## 13) ¿Qué es un lenguaje de programación?
   
-  - Si, se pueden acceder por su nombre y un índice.
+  - Un conjunto de reglas gramaticales, instrucciones, pata que un dispositivo ejecute tareas.
+
+## 14) Los lenguajes de bajo nivel....
+  
+  - Son más cercanos al idioma que hablan las máquinas.
 
 
-## 7) ¿Los conjuntos de datos se pueden acceder?
+## 15) Los lenguajes de alto nivel....
   
-  - Si, se pueden acceder por su nombre y un índice.
+  - Son más cercanos al humano.
 
-## 7) ¿Los conjuntos de datos se pueden acceder?
+## 16) Con lenguajes interpretados...
   
-  - Si, se pueden acceder por su nombre y un índice.
+  - Nuestros códigos corren con un intérprete.
 
-## 7) ¿Los conjuntos de datos se pueden acceder?
+## 17) ¿Qué es una aplicación de consola?
   
-  - Si, se pueden acceder por su nombre y un índice.
+  - Son aplicaciones que corren en una ventana tipo línea de comando(consola).
+
+## 18) ¿Que es un desarrollador full-stack?
+  
+  - Una persona que programa o conoce tanto front, como back-end.
+## 19) ¿Un QA tester a que se dedica?
+  
+  - Se encarga de testear la calidad del software
+
+## 20) Un experto en seguridad informática...
+  
+  - Pone a prueba sistemas y establece estrategias defensivas para proteger datos.
 
 # Nota: 100
