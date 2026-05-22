@@ -1,4 +1,16 @@
-# 
+# Fundamento Framework 6R
+
+Estrategias de migración a Cloud, siendo el Framework 6R el corazón estratégico de cualquier proyecto de adopción de nube. Decidiendo el futuro técnico y financiero de cada aplicación.
+
+1. **Retener (Rehost)**: agarrar y subir/mover cada elemento (como una vm en la nube), migración rápida para salvar en catastrofes.
+2. **Re-alojar (Replatform)**: agarrar y lo modifico un poco (una vm que tenia cierta cantidad de almacenamiento lo reduzco al subirlo a la nube), sirve para optimizar recursos para eficiencia y economia.
+3. **Re-plataformar (Refactor)**: 
+4. **Refactorizar (Repurchase)**:
+5. **Remplazar (Retire)**:
+6. **Retirar (Retain)**:
+
+![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260522014712.png)
+![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260522015421.png)
 
 
 
