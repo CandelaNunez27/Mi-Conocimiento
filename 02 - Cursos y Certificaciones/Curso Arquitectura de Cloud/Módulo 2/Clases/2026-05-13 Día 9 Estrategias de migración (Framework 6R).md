@@ -2,12 +2,12 @@
 
 Estrategias de migración a Cloud, siendo el Framework 6R el corazón estratégico de cualquier proyecto de adopción de nube. Decidiendo el futuro técnico y financiero de cada aplicación.
 
-1. **Retener (Rehost)**: agarrar y subir/mover cada elemento (como una vm en la nube), migración rápida para salvar en catastrofes.
-2. **Re-alojar (Replatform)**: agarrar y lo modifico un poco (una vm que tenia cierta cantidad de almacenamiento lo reduzco al subirlo a la nube), sirve para optimizar recursos para eficiencia y economia.
-3. **Re-plataformar (Refactor)**: 
-4. **Refactorizar (Repurchase)**:
-5. **Remplazar (Retire)**:
-6. **Retirar (Retain)**:
+1. **Retener (Rehost)**: agarrar y subir/mover cada elemento (ej: como una vm en la nube), migración rápida para salvar en catastrofes.
+2. **Re-alojar (Replatform)**: agarrar y lo modifico un poco (ej: una vm que tenia cierta cantidad de almacenamiento lo reduzco al subirlo a la nube), sirve para optimizar recursos para eficiencia y economía.
+3. **Re-plataformar (Refactor)**: Re-arquitecturar lo modifico y toco código (ej: actualizo S.O, librerías, software, código fuente), se debe trabajar en conjunto con los back-end y otros trabajadores IT.
+4. **Refactorizar (Repurchase)**: Remplazar cambiar todo completamente (ej: usar totalmente Google Gmail en vez de POP3, IMAP), totalmente 0 mantenimiento.
+5. **Remplazar (Retire)**: Eliminar totalmente cosas obsoletas. Ahorrar costos
+6. **Retirar (Retain)**: Mantenerlo, tener cosas obligatoriamente en on-primes. (ej: datos que solo funcionan en windows xp)
 
 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260522014712.png)
 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260522015421.png)
