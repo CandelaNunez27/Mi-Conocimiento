@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "02 - Cursos y Certificaciones/Curso Python Educación IT/Módulo 1 Introducción/Examen Integrador.md",
+                "file": "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 2/Clases/2026-05-13 Día 9 Estrategias de migración (Framework 6R).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Examen Integrador"
+              "title": "2026-05-13 Día 9 Estrategias de migración (Framework 6R)"
             }
           }
         ]
@@ -96,7 +96,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "2c47654ff3f8d557",
@@ -222,11 +223,22 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "e6bb5d90017c09e9",
+  "active": "955d4ba7fac8cbe2",
   "lastOpenFiles": [
-    "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 2/Clases/2026-05-13 Día 9.md",
-    "02 - Cursos y Certificaciones/Curso Python Educación IT/Módulo 1 Introducción/4° Parte/Examen 4.md",
+    "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 1/Clases/2026-04-24 Día 4 Práctica.md",
+    "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 1/Clases/2026-04-22 Día 3 Introducción La Nube.md",
+    "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 1/Clases/2026-04-17 Día 2 Práctica.md",
+    "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 1/Clases/2026-04-15 Día 1 Introducción.md",
+    "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 2/Clases/2026-05-13 Día 9 Estrategias de migración (Framework 6R).md",
+    "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 1/TP Obligatorio/TP 1 Módulo 1.md",
+    "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 1/Clases/2026-04-29 Día 5 Redes en la Nube.md",
+    "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 1/Clases/2026-05-06 Día 7 (6 fue feriado) Téoria y Práctica Sobre Proveedores.md",
+    "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 1/Clases/2026-05-08 Día 8 Práctica.md",
+    "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 2/Clases/Sin título.md",
+    "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 2/Clases/2026-05-13.md",
+    "04 - Otros/Plantillas/Plantilla clases Cloud.md",
     "02 - Cursos y Certificaciones/Curso Python Educación IT/Módulo 1 Introducción/Examen Integrador.md",
+    "02 - Cursos y Certificaciones/Curso Python Educación IT/Módulo 1 Introducción/4° Parte/Examen 4.md",
     "02 - Cursos y Certificaciones/Curso Python Educación IT/Módulo 1 Introducción/3° Parte/Examen 3.md",
     "02 - Cursos y Certificaciones/Curso Python Educación IT/Módulo 1 Introducción/2° Parte/Examen 2.md",
     "02 - Cursos y Certificaciones/Curso Python Educación IT/Módulo 1 Introducción/1° Parte/Examen 1.md",
@@ -249,27 +261,16 @@
     "02 - Cursos y Certificaciones/Curso Python Educación IT/Módulo 1 Introducción/1° Parte/Resumen Módulo 1 Introducción a la Programación.md",
     "02 - Cursos y Certificaciones/Curso Python Educación IT/Módulo 1 Introducción/1° Parte/Desafío 1 - Laboratorio 1.md",
     "04 - Otros/Plantillas/Examen Corto Plantilla.md",
-    "04 - Otros/Plantillas/Examen largo plantilla.md",
-    "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 1/TP Obligatorio/TP 1 Módulo 1.md",
-    "02 - Cursos y Certificaciones/Curso Cisco Linux Essentials/Módulo 3/Examen 3 Módulo 3 Respuestas.md",
-    "02 - Cursos y Certificaciones/Curso Cisco Linux Essentials/Módulo 1/Examen 1 Módulo 1 Respuestas.md",
     "02 - Cursos y Certificaciones/Curso Python Educación IT/Módulo 1 Introducción/4° Parte",
     "02 - Cursos y Certificaciones/Curso Python Educación IT/Módulo 1 Introducción/3° Parte",
     "02 - Cursos y Certificaciones/Curso Python Educación IT/Módulo 1 Introducción/2° Parte",
     "02 - Cursos y Certificaciones/Curso Python Educación IT/Módulo 1 Introducción/1° Parte",
     "02 - Cursos y Certificaciones/Curso Python Educación IT/Módulo 1 Introducción",
     "02 - Cursos y Certificaciones/Curso Python Educación IT",
-    "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 2/Clases/2026-05-13.md",
-    "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 2/Clases/Sin título.md",
-    "04 - Otros/Plantillas/Plantilla clases Cloud.md",
-    "04 - Otros/Markdown.md",
-    "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 1/Clases/2026-04-15 Día 1 Introducción.md",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 2/TP Obligatorio",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 2/Clases",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 1/Clases",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 1/TP Obligatorio",
-    "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 1/Clases/2026-04-22 Día 3 Introducción La Nube.md",
-    "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 1/Clases/2026-04-29 Día 5 Redes en la Nube.md",
     "1° Año/01 - Arquitectura de Computadoras/Sin título.canvas"
   ]
 }
