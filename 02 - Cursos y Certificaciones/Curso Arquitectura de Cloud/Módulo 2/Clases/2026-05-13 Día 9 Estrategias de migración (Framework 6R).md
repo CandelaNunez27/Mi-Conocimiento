@@ -157,4 +157,4 @@ Para decidir qué "R" aplicar, se suele seguir este flujo de trabajo:
 
 # Grabación de la Clase
 
-**Clase Grabada:** 
+**Clase Grabada:** https://drive.google.com/file/d/1lY1II3WZHtD4mNVg_t-vxP-Tsp-5uUau/view?usp=sharing  
