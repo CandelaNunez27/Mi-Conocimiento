@@ -12,6 +12,26 @@ Estrategias de migración a Cloud, siendo el Framework 6R el corazón estratégi
 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260522014712.png)
 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260522015421.png)
 
+# Comparativa Los Rápidos
+
+![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260522021606.png)
+
+# Comparativa Adaptación
+
+![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260522021817.png)
+
+# Comparativa Optimización
+
+![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260522022056.png)
+
+# Evaluación y planificación 4 Fases de Ejecución
+
+Si se elige algunas de las 6R se debe emplear:
+1.  Evaluar: Identificar las opciones de las 6R, todo el contexto se debe analizar.
+2. Planificar: Ya con la 6R elegida se empiezan a aplicar esa estrategia elegida.
+3. Desplegar: ya tenemos la arquitectura en la nube desplegada.
+4. Optimizar: ajustar costos y rendimiento.
+![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260522022356.png)
 
 
 
