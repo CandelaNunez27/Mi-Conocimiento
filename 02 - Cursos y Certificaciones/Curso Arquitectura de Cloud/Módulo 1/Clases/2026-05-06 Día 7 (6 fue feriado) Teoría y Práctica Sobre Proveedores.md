@@ -36,8 +36,9 @@ El marketing de compras tuyo analizando tus interacciones para mostrarte otro co
 # Práctica
 
 Se ingreso ha *aws* y se configuro un *VPC* y se vieron conceptos de la clase pasada en la web.
-Viene una VPC por defecto que recomienda no borrarla. Contiene un mapa de de recursos con subredes y tablas de conexión que están totalmente abiertas al gateway, por ende no es recomendable usar esta como vpc porque esta toda expuesta.
+Viene una VPC por defecto que recomienda no borrarla ni usarla. Contiene un mapa de de recursos con subredes y tablas de conexión que están totalmente abiertas al gateway, por ende no es recomendable usar esta como vpc porque esta toda expuesta.
 
+k
 #### Crear VPC
 
 - Nombre: mi-vpc
@@ -136,7 +137,7 @@ En 2026, la IA es el principal motor de migración a la nube.
 
 ●       **AWS:** Apuesta por la "democratización" con **Amazon Bedrock**, una plataforma que permite elegir entre múltiples modelos (Claude, Llama, Mistral) sin gestionar infraestructura.
 
-#### Criterios para la toma de decisiones estratégicas**
+#### Criterios para la toma de decisiones estratégicas
 
 Para decidir qué proveedor (o combinación de ellos) utilizar, se deben evaluar los siguientes vectores:
 

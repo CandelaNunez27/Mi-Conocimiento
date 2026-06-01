@@ -113,6 +113,10 @@ El sistema guarda automáticamente un registro de todo lo que escribes en la ter
 ![](../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260501021742.png)
 
 ---
+### 5, Introducción a las Variables del Shell BASH
+
+
+
 
 
 
