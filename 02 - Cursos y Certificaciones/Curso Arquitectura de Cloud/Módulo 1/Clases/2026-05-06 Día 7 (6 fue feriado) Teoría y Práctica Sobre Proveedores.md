@@ -41,20 +41,29 @@ Viene una VPC (red virtual aislada, primera instancia de separación lógica) po
 
 #### Crear VPC
 
-- Nombre: mi-vpc
-- CIDR IPv4: 10.0.0.0/16
+
+
+- Crear VPC:
+	- Nombre: mi-vpc
+	- CIDR IPv4: 10.0.0.0/16
+  ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260602232926.png)
 - Crear Subred Pública:
 	- Nombre: public-subnet-1
 	- Seleccionar zona: EEEUU
 	- Bloque de CIDR de VPC IPv4: 10.0.0.0/16
 	- Bloque de CIDR de la subred IPv4: 10.0.1.0/24
-	- Se puede agregar tags como "ventas"
+	- Se puede agregar tags como "ventas" como autor
+
+![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260602233505.png)
+
 - Crear Subred Privada:
 	- Nombre: private-subnet-1
 	- Seleccionar zona: EEEUU
 	- Bloque de CIDR de VPC IPv4: 10.0.0.0/16
 	- Bloque de CIDR de la subred IPv4: 10.0.2.0/24
-	- Se puede agregar tags como "data"
+	- Se puede agregar tags como "data" como autor
+![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260602233159.png)
+
 
 #### Crear Servicios Instancia EC2
 
