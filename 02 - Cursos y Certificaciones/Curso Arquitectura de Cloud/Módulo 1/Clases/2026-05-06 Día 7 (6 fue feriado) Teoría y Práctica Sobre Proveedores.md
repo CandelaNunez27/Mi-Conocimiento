@@ -36,9 +36,9 @@ El marketing de compras tuyo analizando tus interacciones para mostrarte otro co
 # Práctica
 
 Se ingreso ha *aws* y se configuro un *VPC* y se vieron conceptos de la clase pasada en la web.
-Viene una VPC por defecto que recomienda no borrarla ni usarla. Contiene un mapa de de recursos con subredes y tablas de conexión que están totalmente abiertas al gateway, por ende no es recomendable usar esta como vpc porque esta toda expuesta.
+Viene una VPC (red virtual aislada, primera instancia de separación lógica) por defecto que recomienda no borrarla ni usarla. Contiene un mapa de de recursos con subredes y tablas de conexión que están totalmente abiertas al gateway, por ende no es recomendable usar esta como vpc porque esta toda expuesta.
 
-www
+
 #### Crear VPC
 
 - Nombre: mi-vpc
