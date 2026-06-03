@@ -212,14 +212,14 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "obsidian-git:Open Git source control": false,
       "switcher:Abrir selector rápido": false,
       "graph:Abrir vista gráfica": false,
       "canvas:Crear nuevo lienzo": false,
       "templates:Insertar plantilla": false,
       "command-palette:Abrir paleta de comandos": false,
       "bases:Crear nueva base": false,
-      "daily-notes:Abrir la nota de hoy": false,
-      "obsidian-git:Open Git source control": false
+      "daily-notes:Abrir la nota de hoy": false
     }
   },
   "active": "955d4ba7fac8cbe2",
