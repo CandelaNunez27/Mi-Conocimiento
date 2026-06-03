@@ -78,6 +78,153 @@ Viene una VPC (red virtual aislada, primera instancia de separación lógica) po
 	- Customizar que ip o quienes pueden conectarse con la maquina
 - Se puede generar el script para que se crea la maquina automáticamente (como una receta).
 - Todo esto se puede hacer por consola, o se puede ejecutar ese script receta en consola. (profesor lo mostrara en la siguiente clase con el usuario con permisos).
+![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260602234519.png)
+![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260602234601.png)
+![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260602234629.png)
+![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260602234714.png)
+![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260602234743.png)
+en formato de código la creacion de esta ec2
+```
+
+AWSTemplateFormatVersion: '2010-09-09'
+Description: 'CloudFormation template generated from AWS CLI commands - Creates EC2 security group and instance with RDP access'
+
+Parameters:
+  VpcId:
+    Type: String
+    Default: 'vpc-0e2fcaa2b65edae04'
+    Description: 'VPC ID for the security group'
+  
+  SubnetId:
+    Type: String
+    Default: 'subnet-0ee7132f1dbf8fddf'
+    Description: 'Subnet ID for the EC2 instance'
+  
+  KeyName:
+    Type: String
+    Default: 'Cande'
+    Description: 'EC2 Key Pair name for SSH access'
+  
+  ImageId:
+    Type: String
+    Default: 'ami-091138d0f0d41ff90'
+    Description: 'AMI ID for the EC2 instance'
+  
+  AllowedRDPCidr:
+    Type: String
+    Default: '38.51.28.45/32'
+    Description: 'CIDR block allowed for RDP access'
+
+Resources:
+  # Security Group - launch-wizard-1
+  # Creates a security group in the specified VPC to control inbound/outbound traffic
+  LaunchWizardSecurityGroup:
+    Type: 'AWS::EC2::SecurityGroup'
+    Properties:
+      GroupName: 'launch-wizard-1'
+      GroupDescription: 'launch-wizard-1 created 2026-06-03T02:36:34.018Z'
+      VpcId: !Ref VpcId
+      # Security group ingress rule for RDP access (port 3389)
+      # Allows RDP connections from specific IP address
+      SecurityGroupIngress:
+        - IpProtocol: tcp
+          FromPort: 3389
+          ToPort: 3389
+          CidrIp: !Ref AllowedRDPCidr
+          Description: 'Allow RDP access from specific IP'
+      Tags:
+        - Key: Name
+          Value: 'launch-wizard-1'
+        - Key: ManagedBy
+          Value: 'CloudFormation'
+
+  # EC2 Instance - ec2-1
+  # Creates a t3.micro instance with Windows AMI and custom configurations
+  EC2Instance:
+    Type: 'AWS::EC2::Instance'
+    DependsOn: LaunchWizardSecurityGroup
+    Properties:
+      # Instance configuration
+      ImageId: !Ref ImageId
+      InstanceType: 't3.micro'
+      KeyName: !Ref KeyName
+      
+      # Network configuration
+      # Associates public IP and attaches to specified subnet and security group
+      NetworkInterfaces:
+        - AssociatePublicIpAddress: true
+          DeviceIndex: 0
+          SubnetId: !Ref SubnetId
+          GroupSet:
+            - !Ref LaunchWizardSecurityGroup
+      
+      # Block device mapping configuration
+      # Configures root volume with gp3 storage type, encryption, and performance settings
+      BlockDeviceMappings:
+        - DeviceName: '/dev/sda1'
+          Ebs:
+            VolumeSize: 30
+            VolumeType: 'gp3'
+            Iops: 3000
+            Throughput: 125
+            DeleteOnTermination: true
+            Encrypted: false
+      
+      # CPU Credits configuration for T3 instance
+      # Sets unlimited mode for burstable performance
+      CreditSpecification:
+        CPUCredits: 'unlimited'
+      
+      # Instance metadata service configuration
+      # Enforces IMDSv2 for enhanced security
+      MetadataOptions:
+        HttpEndpoint: 'enabled'
+        HttpPutResponseHopLimit: 2
+        HttpTokens: 'required'
+      
+      # Private DNS name options
+      # Configures hostname type and DNS record settings
+      PrivateDnsNameOptions:
+        HostnameType: 'ip-name'
+        EnableResourceNameDnsARecord: false
+        EnableResourceNameDnsAAAARecord: false
+      
+      # Instance tags
+      Tags:
+        - Key: Name
+          Value: 'ec2-1'
+        - Key: ManagedBy
+          Value: 'CloudFormation'
+
+Outputs:
+  SecurityGroupId:
+    Description: 'ID of the created security group'
+    Value: !Ref LaunchWizardSecurityGroup
+    Export:
+      Name: !Sub '${AWS::StackName}-SecurityGroupId'
+  
+  InstanceId:
+    Description: 'ID of the created EC2 instance'
+    Value: !Ref EC2Instance
+    Export:
+      Name: !Sub '${AWS::StackName}-InstanceId'
+  
+  InstancePublicIp:
+    Description: 'Public IP address of the EC2 instance'
+    Value: !GetAtt EC2Instance.PublicIp
+    Export:
+      Name: !Sub '${AWS::StackName}-PublicIp'
+  
+  InstancePrivateIp:
+    Description: 'Private IP address of the EC2 instance'
+    Value: !GetAtt EC2Instance.PrivateIp
+    Export:
+      Name: !Sub '${AWS::StackName}-PrivateIp'
+
+
+```
+
+
 
 #### Crear privilegios con usuario 
 
