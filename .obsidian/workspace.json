@@ -96,8 +96,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "2c47654ff3f8d557",
@@ -225,9 +224,11 @@
   },
   "active": "955d4ba7fac8cbe2",
   "lastOpenFiles": [
-    "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 1/TP Obligatorio/TP 1 Módulo 1.md",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 1/Clases/2026-04-15 Día 1 Introducción.md",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 1/Clases/2026-05-08 Día 8 Práctica.md",
+    "04 - Otros/Imagenes/Pasted image 20260603031150.png",
+    "04 - Otros/Imagenes/Pasted image 20260603030923.png",
+    "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 1/TP Obligatorio/TP 1 Módulo 1.md",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 2/Clases/2026-05-15 Día 10 Práctica.md",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 2/Clases/2026-05-13 Día 9 Estrategias de migración (Framework 6R).md",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 1/Clases/2026-05-06 Día 7 (6 fue feriado) Teoría y Práctica Sobre Proveedores.md",
@@ -239,8 +240,6 @@
     "04 - Otros/Imagenes/Pasted image 20260602234629.png",
     "04 - Otros/Imagenes/Pasted image 20260602234601.png",
     "04 - Otros/Imagenes/Pasted image 20260602234519.png",
-    "04 - Otros/Imagenes/Pasted image 20260602233505.png",
-    "04 - Otros/Imagenes/Pasted image 20260602233159.png",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 1/Clases/2026-04-29 Día 5 Redes en la Nube.md",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 1/Clases/2026-04-24 Día 4 Práctica.md",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 1/Clases/2026-04-22 Día 3 Introducción La Nube.md",
