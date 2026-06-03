@@ -1,5 +1,6 @@
 
-**Aula Virtual**: https://aulavirtualipap.mendoza.gov.ar/moodle/ (Usuario: 27464734568, Contraseña: 46473456)
+**Aula Virtual**: https://aulavirtualipap.mendoza.gov.ar/moodle/ 
+**Repositorio con recursos**: https://github.com/juliangigena/course_ing_cloud.git 
 # Fundamentos
 
 ## La Era On-Premise
