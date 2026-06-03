@@ -236,6 +236,12 @@ Outputs:
 	- Descripción: Acceso a consola
 	-  Se mostrara el access key y el secret access key que este solo se mostrara una sola vez.
 
+![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260603000218.png)
+![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260603000251.png)
+![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260603000414.png)
+
+
+
 ---
 
 # Material de Clase
