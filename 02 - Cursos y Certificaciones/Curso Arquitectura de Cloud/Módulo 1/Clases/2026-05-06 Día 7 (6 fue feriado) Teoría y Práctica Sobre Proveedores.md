@@ -224,8 +224,8 @@ Outputs:
 
 ```
 
-luego se elimino todo, pero para ello hay que ir eliminando por partes
-
+Luego se elimino todo, pero para ello hay que ir eliminando por partes (primera la ec2 y luego la vpc).
+Y se recalca que estas configuraciones en web no son buenas practicas.
 #### Crear privilegios con usuario 
 
 - En IAM users
