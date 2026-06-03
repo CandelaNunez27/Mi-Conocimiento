@@ -224,7 +224,7 @@ Outputs:
 
 ```
 
-
+luego se elimino todo, pero para ello hay que ir eliminando por partes
 
 #### Crear privilegios con usuario 
 
