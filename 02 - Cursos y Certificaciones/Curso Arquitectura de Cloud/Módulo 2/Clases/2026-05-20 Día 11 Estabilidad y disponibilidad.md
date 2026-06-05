@@ -32,6 +32,9 @@
 
 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260605184153.png)
 
+# Ejemplo de Disponibilidad
+
+
 
 
 
