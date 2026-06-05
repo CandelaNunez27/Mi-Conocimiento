@@ -96,7 +96,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "2c47654ff3f8d557",
@@ -224,6 +225,8 @@
   },
   "active": "955d4ba7fac8cbe2",
   "lastOpenFiles": [
+    "04 - Otros/Imagenes/Pasted image 20260605181115.png",
+    "04 - Otros/Imagenes/Pasted image 20260605180824.png",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 2/Clases/2026-05-15 Día 10 Práctica.md",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 2/Clases/2026-05-20 Día 11 Estabilidad y disponibilidad.md",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 2/Clases/2026-05-13 Día 9 Estrategias de migración (Framework 6R).md",
@@ -239,7 +242,6 @@
     "04 - Otros/Imagenes/Pasted image 20260603045911.png",
     "04 - Otros/Imagenes/Pasted image 20260603045042.png",
     "04 - Otros/Imagenes/Pasted image 20260603044231.png",
-    "04 - Otros/Imagenes/Pasted image 20260603043528.png",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 1/Clases/2026-04-15 Día 1 Introducción.md",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 1/Clases/2026-05-06 Día 7 (6 fue feriado) Teoría y Práctica Sobre Proveedores.md",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 1/Clases/2026-04-29 Día 5 Redes en la Nube.md",
@@ -259,7 +261,6 @@
     "02 - Cursos y Certificaciones/Curso Python Educación IT/Módulo 1 Introducción/1° Parte/Examen 1.md",
     "02 - Cursos y Certificaciones/Curso Python Educación IT/Módulo 1 Introducción/4° Parte/Resumen - Módulo 4 Entornos, Lenguajes y Paradigmas.md",
     "02 - Cursos y Certificaciones/Curso Python Educación IT/Módulo 1 Introducción/2° Parte/Resumen - Módulo 2 Fundamentos Lógicos de la Programación.md",
-    "02 - Cursos y Certificaciones/Curso Python Educación IT/Módulo 1 Introducción/4° Parte/Desafío 4 - Laboratorio 4.md",
     "02 - Cursos y Certificaciones/Curso Python Educación IT/Módulo 1 Introducción/4° Parte",
     "02 - Cursos y Certificaciones/Curso Python Educación IT/Módulo 1 Introducción/3° Parte",
     "02 - Cursos y Certificaciones/Curso Python Educación IT/Módulo 1 Introducción/2° Parte",
