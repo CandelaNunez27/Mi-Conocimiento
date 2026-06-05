@@ -1,4 +1,8 @@
-# Estabilidad y disponibilidad
+# Fundamento Estabilidad
+La magia de la nube: de servidores estáticos a ecosistemas inteligentes que respiran y crecen según el ritmo de ti negocio.
+
+
+
 
 
 
