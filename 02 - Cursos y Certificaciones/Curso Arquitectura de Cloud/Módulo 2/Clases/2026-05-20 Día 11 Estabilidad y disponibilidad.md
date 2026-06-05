@@ -22,12 +22,18 @@
 
 # Administración tráfico Balanceadores de carga
 
-**Application Load Balancer (ALB):** maneja el trafico a nivel de aplicación 7, 
+**Application Load Balancer (ALB):** maneja el tráfico a nivel de aplicación (7),  maneja el tráfico web y se le indica que responda a la URL del balanceador en base a métodos y base a esos métodos elegís a que servidor enviarle la petición. Ej: miservidor.com/api va aun servidor y miservidor.com/web va al otro.
 
+**Network Load Balancer (NLB):** maneja el tráfico a nivel de transporte (4), maneja todo el tráfico de red como TCP/UDP,  incluye el trafico de capa 7 para no tener tantos puertos abiertos, generando mejor rendimiento y sin latencia.
 
-*Nota: estas nombres de los balanceadores son los nombres de los servicios de AWS*
+**Gateway/Classic Load Balancer:** maneja tráfico en capa de red, con una mezcla de transporte y aplicación (3, 4 y 7). Gateway es la administración a nivel de red con Firewalls (fortinet, ...)  y gateway inicial de capas más altas como Cloufer. Classic se puede poner varios balanceadores con sus gateways.
+
+*Nota: estos nombres de los balanceadores son los nombres de los servicios de AWS*
 
 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260605184153.png)
+
+
+
 
 ---
 
