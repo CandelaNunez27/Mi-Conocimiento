@@ -36,7 +36,7 @@
 
 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260606232524.png)
 
-Imaginamos que somos un portal de noticias, pero tuvimos una hora pico por una noticia viral. Importante tener un monitoreo y alertas ara estas ocasiones. CPU generara latencia, por saturación. 
+Imaginamos que somos un portal de noticias, pero tuvimos una hora pico por una noticia viral. Importante tener un monitoreo y alertas ara estas ocasiones. CPU generara latencia, por saturación. Para ello tenemos los ASG Auto Scaling Group (Grupo de Escalado Automático). Es un servicio que agrupa instancias de servidores (Amazon EC2) para ajustar automáticamente su cantidad según la demanda. Su función principal es añadir más servidores cuando hay mucho tráfico y eliminarlos cuando la demanda baja (deja de ser viral), reduciendo costos. Y con el balanceador empieza a poner en operación a estos nuevos servidores. Finalmente, ASG empieza a terminar instancias y nos quedamos con las dos nuevas. (se eliminan las dos viejas y dos nuevas, quedando las dos nuevas por que tendrán una imagen más nueva, para tener los nuevos parches de seguridad).
 
 ---
 
