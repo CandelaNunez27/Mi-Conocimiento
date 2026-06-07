@@ -34,9 +34,9 @@
 
 # Ejemplo de Disponibilidad
 
+![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260606232524.png)
 
-
-
+Imaginamos que somos un portal de noticias, pero tuvimos una hora pico por una noticia viral. Importante tener un monitoreo y alertas ara estas ocasiones. CPU generara latencia, por saturación. 
 
 ---
 
