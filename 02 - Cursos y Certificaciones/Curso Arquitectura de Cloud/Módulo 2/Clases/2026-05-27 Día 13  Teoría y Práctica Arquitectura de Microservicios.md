@@ -62,13 +62,16 @@ Tenemos dos servicios:
 
 2. **Servicio de Inventario (Backend):** Verifica si hay stock.
 
-
-Simularemos que el **Inventario** se vuelve extremadamente lento (latencia de 10 segundos). Veremos cómo esto bloquea al **Servicio de Órdenes** hasta dejarlo inútil.
+Simularemos que el Inventario se vuelve extremadamente lento (latencia de 10 segundos). Veremos cómo esto bloquea al Servicio de Órdenes hasta dejarlo inútil.
 
 ### Preparación
 
-1. Se necesitara ciertas carpertas y archivos:
-	Una carpeta llamada resiliencia que contendra el docker compose (). Una sub carpeta llamada app-inventario con un archivo app.py y un Dockerfile ( crea la imagen a mi gusto). Otra sub carpeta llamada app-ordenes que tambien tiene un app.py y su Dockerfile ()
+1. Se necesitara ciertas carpetas y archivos:
+	Una carpeta llamada resiliencia que contendra el docker compose (para automatizar los run de los servicios). Una sub carpeta llamada app-inventario con un archivo app.py y un Dockerfile ( crea la imagen a mi gusto). Otra sub carpeta llamada app-ordenes que también tiene un app.py y su Dockerfile (con distinto puerto).
+
+2. Arrancar el contenedor:
+	`sudo docker compose up -d `
+
 
 
 
