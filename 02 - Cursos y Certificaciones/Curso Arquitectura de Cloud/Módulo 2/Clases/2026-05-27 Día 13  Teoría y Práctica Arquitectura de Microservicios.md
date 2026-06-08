@@ -52,7 +52,7 @@ En las etapas de reservas, les deja completar las primeras pero en la última fa
 
 ---
 
-# Práctica: Demostrar cómo un fallo en un microservicio secundario agora los recursos del servicio principal y cómo aplicar una "Degradación Elegante" (Fallback)
+# Práctica (1º parte): Demostrar cómo un fallo en un microservicio secundario agora los recursos del servicio principal y cómo aplicar una "Degradación Elegante" (Fallback)
 
 ### El Escenario
 
@@ -71,11 +71,15 @@ Simularemos que el Inventario se vuelve extremadamente lento (latencia de 10 seg
 
 2. Arrancar el contenedor:
 	Nos paramos en resiliencia y tiramos `sudo docker compose up -d --buil` 
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260608034006.png)
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260608034041.png)
+	
 
 
 
 
 
+---
 
 # Guía del Profesor
 
@@ -108,7 +112,6 @@ Simularemos que el **Inventario** se vuelve extremadamente lento (latencia de 10
 
 Crea una carpeta llamada `lab-resiliencia` con la siguiente estructura:
 
-```text
 
 resiliencia/
 
