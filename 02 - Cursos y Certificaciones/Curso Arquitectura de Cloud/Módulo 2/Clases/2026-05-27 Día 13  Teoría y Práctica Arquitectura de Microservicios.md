@@ -70,7 +70,7 @@ Simularemos que el Inventario se vuelve extremadamente lento (latencia de 10 seg
 	Una carpeta llamada resiliencia que contendra el docker compose (para automatizar los run de los servicios). Una sub carpeta llamada app-inventario con un archivo app.py y un Dockerfile ( crea la imagen a mi gusto). Otra sub carpeta llamada app-ordenes que también tiene un app.py y su Dockerfile (con distinto puerto).
 
 2. Arrancar el contenedor:
-	`sudo docker compose up -d `
+	Nos paramos en resiliencia y tiramos `sudo docker compose up -d --buil` 
 
 
 
