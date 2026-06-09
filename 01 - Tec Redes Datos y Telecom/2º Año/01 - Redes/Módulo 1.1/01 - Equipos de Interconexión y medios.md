@@ -27,3 +27,5 @@ Para que los dispositivos puedan comunicarse, existen diferentes equipos de inte
 * **Fibra Óptica:** Transmisión mediante pulsos de luz (mayor velocidad e inmunidad al ruido).
 
 * **Inalámbrico:** Canales de radio terrestres (WiFi, telefonía móvil) y satelitales.
+
+*Símbolos comunes de las redes de datos*
