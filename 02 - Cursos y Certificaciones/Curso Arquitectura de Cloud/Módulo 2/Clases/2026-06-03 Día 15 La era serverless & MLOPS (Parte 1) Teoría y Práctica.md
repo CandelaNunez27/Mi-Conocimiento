@@ -1,3 +1,4 @@
+# Teoría
 # Fundamentos El paradigma actual
 
 El panorama antes era tener que gestionar absolutamente todo el servidor por cuenta propia. Ahora Serverless en delegar la gestión del servidor, enfocando nos en un código eficiente y sin necesidad de ir armando nuestros servidor, o sea, desarrollo y aws me lo da armado (infraestructura de código).
@@ -21,8 +22,17 @@ Lo que se busca son:
 
 # Fundamentos Ahorro extremo
 
-Las base de datos tradicionales estan prendidas 24/7, pero en entornos no produc se pueden programar apagados. 
-Ahorro en una base de datos,
+Las base de datos tradicionales están prendidas 24/7, pero en entornos no productivos se pueden programar apagados. Y en caso en producción que tiene que estar activa 24/7 se puede hacer algunas configuraciones de picos de mas demanda y costo, junto con una base de consumo estandarizada. Ojo que siempre el almacenamiento y el poder de computo prendido será pago.
 
 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260608230131.png)
+
+# Fundamentos A tener en cuenta
+
+Cuidado con el servicio serverless, el primer arranque puede tardar algunos segundos generando latencia y también hay tiempos de ejecución estándar de no más de 15 min, o sea que no esta pensado para correr cosas grandes de gran capacidad de procesamiento (además que empieza a ser muy cara a cada minuto que pase). 
+Por ellos se usa por ejemplo Lambda para procesos que no tienen que tener latencias y ser super rápidas como los logins o que sea el pasa mano de ciertos datos.
+
+![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260608230857.png)
+
+---
+# Pr
 
