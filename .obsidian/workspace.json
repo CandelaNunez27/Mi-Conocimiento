@@ -96,7 +96,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "2c47654ff3f8d557",
@@ -222,7 +223,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "e6bb5d90017c09e9",
+  "active": "955d4ba7fac8cbe2",
   "lastOpenFiles": [
     "01 - Tec Redes Datos y Telecom/2º Año/01 - Redes/Portafolio Redes",
     "01 - Tec Redes Datos y Telecom/2º Año/01 - Redes/Módulo 1.1",
