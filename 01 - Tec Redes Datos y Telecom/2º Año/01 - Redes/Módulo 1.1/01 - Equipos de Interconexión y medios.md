@@ -16,7 +16,9 @@ Para que los dispositivos puedan comunicarse, existen diferentes equipos de inte
 
 * **Router (Encaminador - Capa 3):** Es el dispositivo encargado de interconectar *diferentes* redes (por ejemplo, tu red local con Internet). Utiliza **Direcciones IP** para enviar los paquetes de datos a través de la mejor ruta posible leyendo sus tablas de enrutamiento.
 
-*Capas del Modelo OSI: Router y *
+*Capas del Modelo OSI: Router y Switch*
+![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260609153452.png)
+
 
 ## 3. Medios Físicos de Transmisión
 
