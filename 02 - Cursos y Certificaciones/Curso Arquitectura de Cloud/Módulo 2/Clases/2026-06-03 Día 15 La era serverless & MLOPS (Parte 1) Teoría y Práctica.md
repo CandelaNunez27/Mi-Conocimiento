@@ -1,4 +1,4 @@
-# Teoría
+# Teoría: La era serverless & MLOPS
 # Fundamentos El paradigma actual
 
 El panorama antes era tener que gestionar absolutamente todo el servidor por cuenta propia. Ahora Serverless en delegar la gestión del servidor, enfocando nos en un código eficiente y sin necesidad de ir armando nuestros servidor, o sea, desarrollo y aws me lo da armado (infraestructura de código).
@@ -34,5 +34,13 @@ Por ellos se usa por ejemplo Lambda para procesos que no tienen que tener latenc
 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260608230857.png)
 
 ---
-# Pr
+# Práctica: Muestra de opciones Serverless. Ver si un archivo se puede exportar segun lo que pese con Lambda
 
+Trabajaremos en la consola web de aws que nos servirá de contra punto para luego la práctica por código.
+
+### Preparamos la Cola de espera 
+
+1. Creamos la Cola:
+	Entramos a aws por web y ingresamos a Simple Queue Service. Que son las colas de procesos que esperan a que el Lambda los procese. Le damos a crear Cola y completamos los campos necesarios.
+	 
+	
