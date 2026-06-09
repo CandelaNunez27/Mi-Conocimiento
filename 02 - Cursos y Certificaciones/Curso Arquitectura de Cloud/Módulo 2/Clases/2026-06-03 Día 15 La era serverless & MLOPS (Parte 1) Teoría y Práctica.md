@@ -42,5 +42,10 @@ Trabajaremos en la consola web de aws que nos servirá de contra punto para lueg
 
 1. Creamos la Cola:
 	Entramos a aws por web y ingresamos a Simple Queue Service. Que son las colas de procesos que esperan a que el Lambda los procese. Le damos a crear Cola y completamos los campos necesarios.
-	 
+	 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260608233840.png)
+	 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260608233928.png)
+	 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260608234006.png)
+	Estandar es el orden de tráfico que el primero que entra es el primero que sale.
+	Fifo: es el orden de tráfico que el último que entra es el primero que sale
+	
 	
