@@ -41,11 +41,23 @@ Trabajaremos en la consola web de aws que nos servirá de contra punto para lueg
 ### Preparamos la Cola de espera 
 
 1. Creamos la Cola:
-	Entramos a aws por web y ingresamos a Simple Queue Service. Que son las colas de procesos que esperan a que el Lambda los procese. Le damos a crear Cola y completamos los campos necesarios.
+	Entramos a aws por web y ingresamos a Simple Queue Service. Que son las colas de procesos que esperan a que el Lambda los procese. Le damos a crear Cola y completamos los campos necesarios. Nos ayudan para los arranques en frio.
 	 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260608233840.png)
 	 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260608233928.png)
 	 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260608234006.png)
-	Estandar es el orden de tráfico que el primero que entra es el primero que sale.
+	Estándar es el orden de tráfico que el primero que entra es el primero que sale.
 	Fifo: es el orden de tráfico que el último que entra es el primero que sale
+
+
+### SNS
+
+1. Creamos SNS
+	nos vamos a Simple Notification Service, que es un cartero enviando notificaciones de un lado a otro, también nos ayudan un poco con los arranques en frio.
+	Topicos(temas) son nuestras direcciónes donde ira el cartero. nos creamos un topico.
 	
 	
+
+
+Nombre: ColaProcesamientoS3
+ARN(Identificador unico) : arn:aws:sqs:us-east-1:632914961478:ColaProcesamientoS3
+Topic: NotificacionesS3
