@@ -74,7 +74,18 @@ Tenemos un cliente que nos pide que provemos si puede subir un archivo CSV  y co
 	nos vamos a S3 (nuestro almacenamiento) y le damos a crear Bucket
 	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260609004343.png)
 	El nombre no tiene que estar usado por nadie en el mundo.
-	Una vez creada nos vamos a sus propiedades y nos vamos a event notifications para crearle una notificación. Nos permite poder si hay alguna ruta en expesifico que quiero que me alerte o que tipo de eventos me aviso como cuando se crea a
+	
+	Una vez creada nos vamos a sus propiedades y nos vamos a event notifications para crearle una notificación. Nos permite poder si hay alguna ruta en expesifico que quiero que me alerte o que tipo de eventos me aviso como cuando se crea algun objeto y muchas más opciones de configuración.
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260609005226.png)
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260609005253.png)
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260609005410.png)
+
+### Lambda
+
+1. Creamos Lambda
+	Nos vamos a Lambda y le damos a crear una función. Donde será nuestro poder de computo,
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260609005845.png)
+	
 
 Nombre: ColaProcesamientoS3
 ARN(Identificador unico) : arn:aws:sqs:us-east-1:632914961478:ColaProcesamientoS3
