@@ -156,7 +156,7 @@ return {
 	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260609015616.png)
 	
 
-### Prueba si nuestro caminito funciona
+### Prueba si nuestro caminito funciona con un archivo
 
 1. Monitoreo
 	dentro del lamda nos vamos a Monitorear, le personalizamos para que muestre 30min
@@ -179,7 +179,23 @@ return {
 	
 
 4. Ver logs
-	en lambda nos vamos a ver registros de CloudWa
+	en lambda nos vamos a ver registros de CloudWatch, y seleccionamos el registro reciente que nos muestra el tamaño del archivo que era nuestro objetivo
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260609024913.png)
+5. en s3 borramos el archivo cargado
+
+### Prueba si nuestro caminito funciona cargando dos archivos a la vez
+
+1. Cargamos en s3 los dos juntos y miramos las metricas.(tardara un poco más y uno ingresara y otra estara en la cola)
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260609025823.png)
+
+2. En SQS
+
+
+
+
+
+
+
 
 
 ---
