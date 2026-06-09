@@ -86,10 +86,9 @@ Tenemos un cliente que nos pide que provemos si puede subir un archivo CSV  y co
 	Nos vamos a Lambda y le damos a crear una función. Donde será nuestro poder de computo,
 	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260609005845.png)
 	Al crearla nos saldra una ventana de visual studio code y colocaremos este código:
-	``` python
-	import json
 
-  
+``` python
+import json
 
 def lambda_handler(event, context):
 
@@ -134,15 +133,20 @@ return {
 'body': json.dumps('Procesamiento completado con éxito')
 
 }
-	```
-	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260609013006.png)
-	
-	Y nos programa el proceso de como ingresa el archivo y que nos devuelve el volumen del archivo. Luego le damos Deploy para que se guarde
-	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260609013343.png)
-	Ahora le agragamos el Trigger (desencadenador) que es el SQS, para ello nos vamos a add trigger, donde nos tirara un error pero podemos ver como la inteligencia artificial de amazon no lo resuelve.
+```
+
+
+![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260609013006.png)
+
+
+Y nos programa el proceso de como ingresa el archivo y que nos devuelve el volumen del archivo. Luego le damos Deploy para que se guarde
+
+![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260609013343.png)
+	Ahora le agregamos el Trigger (desencadenador) que es el SQS, para ello nos vamos a add trigger, donde nos tirara un error pero podemos ver como la inteligencia artificial de amazon no lo resuelve.
 	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260609013851.png)
 	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260609014042.png)
 	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260609014135.png)
+
 2. Solución con la IA
 	Nos vamos a IAM, Roles y buscamos "ProcesadorMensajesSQS-role-g0bqf8eo", en permisos le damos a crear politicas insertadas
 	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260609014604.png)
