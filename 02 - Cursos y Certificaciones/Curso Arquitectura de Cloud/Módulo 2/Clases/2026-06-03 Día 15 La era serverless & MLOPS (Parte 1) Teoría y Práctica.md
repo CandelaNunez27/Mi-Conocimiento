@@ -142,7 +142,8 @@ return {
 Y nos programa el proceso de como ingresa el archivo y que nos devuelve el volumen del archivo. Luego le damos Deploy para que se guarde
 
 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260609013343.png)
-	Ahora le agregamos el Trigger (desencadenador) que es el SQS, para ello nos vamos a add trigger, donde nos tirara un error pero podemos ver como la inteligencia artificial de amazon no lo resuelve.
+
+Ahora le agregamos el Trigger (desencadenador) que es el SQS, para ello nos vamos a add trigger, donde nos tirara un error pero podemos ver como la inteligencia artificial de amazon no lo resuelve.
 	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260609013851.png)
 	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260609014042.png)
 	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260609014135.png)
