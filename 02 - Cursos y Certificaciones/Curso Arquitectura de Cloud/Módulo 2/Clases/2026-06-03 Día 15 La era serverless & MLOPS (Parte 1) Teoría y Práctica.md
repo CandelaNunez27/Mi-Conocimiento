@@ -167,12 +167,19 @@ return {
 	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260609020426.png)
 
 3. S3
-	En otra pestaña nos vamos al S3, Y le subimos el archivo CSV que tengamos
-Nombre: ColaProcesamientoS3
-ARN(Identificador unico) : arn:aws:sqs:us-east-1:632914961478:ColaProcesamientoS3
-Topic: NotificacionesS3
-arn:aws:sns:us-east-1:632914961478:NotificacionesS3
+	En otra pestaña nos vamos al S3, Y le subimos el archivo CSV que tengamos (yo los genere con ia que le pedi que me dira dos una de 380bytes y otro de 175bytes), primero subimos el de 175b, y nos fijamos en las metricas de monitoreo cambian
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260609023829.png)
 
+4. Metrias al subir el 175bytes
+	en SQS
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260609024054.png)
+	
+	En Lambda
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260609024315.png)
+	
+
+4. Ver logs
+	en lambda nos vamos a ver registros de CloudWa
 
 
 ---
