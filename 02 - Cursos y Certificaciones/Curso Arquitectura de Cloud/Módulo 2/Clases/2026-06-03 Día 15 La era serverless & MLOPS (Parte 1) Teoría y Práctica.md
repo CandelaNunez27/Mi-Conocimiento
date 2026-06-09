@@ -189,6 +189,18 @@ return {
 	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260609025823.png)
 
 2. En SQS
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260609030238.png)
+
+3. losgs
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260609030507.png)
+
+### Borrar todo
+
+1. Borramos los archivos
+2. borramos el bucket
+3.  borro la sqs
+4. borro la sns, eliminar tema y subcripcion
+5. borrar lambda
 
 
 
