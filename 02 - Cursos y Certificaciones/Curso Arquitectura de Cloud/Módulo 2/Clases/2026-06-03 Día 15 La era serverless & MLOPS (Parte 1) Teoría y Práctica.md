@@ -38,7 +38,11 @@ Por ellos se usa por ejemplo Lambda para procesos que no tienen que tener latenc
 
 Trabajaremos en la consola web de aws que nos servirá de contra punto para luego la práctica por código.
 
-### Preparamos la Cola de espera 
+### Escenario
+
+Tenemos un cliente que nos pide que provemos si puede subir un archivo
+
+### SQS 
 
 1. Creamos la Cola:
 	Entramos a aws por web y ingresamos a Simple Queue Service. Que son las colas de procesos que esperan a que el Lambda los procese. Le damos a crear Cola y completamos los campos necesarios. Nos ayudan para los arranques en frio.
@@ -53,7 +57,13 @@ Trabajaremos en la consola web de aws que nos servirá de contra punto para lueg
 
 1. Creamos SNS
 	nos vamos a Simple Notification Service, que es un cartero enviando notificaciones de un lado a otro, también nos ayudan un poco con los arranques en frio.
-	Topicos(temas) son nuestras direcciónes donde ira el cartero. nos creamos un topico.
+	Topicos(temas) es el cartero que tendra subcripciones que son sus direcciones asignada donde ira punto a punto. nos creamos un topico.
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260609002030.png)
+	Una vez creado el topico, le creamos una subscripción para que trabaje con nuestro SQS indicandole su ARN (Identificador único)
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260609002545.png)
+	Al crear la subscripción saldra que se subscribió correctamente pero por si llegase a fallar tendríamos que ir otra vez a SQS para modificar las políticas de acceso y agregarle este código.
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260609003018.png)
+	
 	
 	
 
@@ -61,3 +71,4 @@ Trabajaremos en la consola web de aws que nos servirá de contra punto para lueg
 Nombre: ColaProcesamientoS3
 ARN(Identificador unico) : arn:aws:sqs:us-east-1:632914961478:ColaProcesamientoS3
 Topic: NotificacionesS3
+arn:aws:sns:us-east-1:632914961478:NotificacionesS3
