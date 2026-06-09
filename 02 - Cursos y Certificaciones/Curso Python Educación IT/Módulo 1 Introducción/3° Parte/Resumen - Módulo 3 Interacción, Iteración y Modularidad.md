@@ -9,6 +9,7 @@ La entrada de datos es el mecanismo por el cual un programa recibe información 
 - **Hay otros medios de entrada de datos:** Como micrófonos, cámaras, sensores, etc.
 
 *Ejemplos de entrada de dato por teclado por PSeINT*
+
 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260516175040.png) ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260516175126.png)
 
 ---
@@ -66,5 +67,6 @@ Una función es un bloque de código encapsulado y con un nombre específico que
 - **Modularidad:** Las funciones permiten dividir un problema complejo en problemas más pequeños y fáciles de resolver. Hacen que el código sea más ordenado, legible y fácil de reparar si algo falla.
 
 *Ejemplo de función
+
 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260516032230.png) 
 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260516183142.png)
