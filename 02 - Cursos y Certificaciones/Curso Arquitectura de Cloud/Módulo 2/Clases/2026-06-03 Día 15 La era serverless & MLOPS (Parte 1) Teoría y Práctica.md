@@ -34,13 +34,16 @@ Por ellos se usa por ejemplo Lambda para procesos que no tienen que tener latenc
 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260608230857.png)
 
 ---
-# Práctica: Muestra de opciones Serverless. Ver si un archivo se puede exportar segun lo que pese con Lambda
+# Práctica: Muestra de opciones Serverless. Ver si un archivo se puede exportar según lo que pese con Lambda
 
 Trabajaremos en la consola web de aws que nos servirá de contra punto para luego la práctica por código.
 
 ### Escenario
 
-Tenemos un cliente que nos pide que provemos si puede subir un archivo
+Tenemos un cliente que nos pide que provemos si puede subir un archivo CSV  y con una estructura se pueda usar lambda para que nos dé el peso del archivo y si se puede mover el archivo CSV.
+
+![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260609003540.png)
+
 
 ### SQS 
 
@@ -64,9 +67,14 @@ Tenemos un cliente que nos pide que provemos si puede subir un archivo
 	Al crear la subscripción saldra que se subscribió correctamente pero por si llegase a fallar tendríamos que ir otra vez a SQS para modificar las políticas de acceso y agregarle este código.
 	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260609003018.png)
 	
-	
-	
 
+### S3 
+
+1. Creamos el S3 Buckets
+	nos vamos a S3 (nuestro almacenamiento) y le damos a crear Bucket
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260609004343.png)
+	El nombre no tiene que estar usado por nadie en el mundo.
+	Una vez creada nos vamos a sus propiedades y nos vamos a event notifications para crearle una notificación. Nos permite poder si hay alguna ruta en expesifico que quiero que me alerte o que tipo de eventos me aviso como cuando se crea a
 
 Nombre: ColaProcesamientoS3
 ARN(Identificador unico) : arn:aws:sqs:us-east-1:632914961478:ColaProcesamientoS3
