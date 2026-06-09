@@ -148,8 +148,26 @@ return {
 	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260609014604.png)
 	
 	Seleccionamos que es json y le colocamos el código que nos describe.
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260609015049.png)
+	
+	Luego, le colocamos un nombre y la creamos
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260609015318.png)
+	y ahora volvemos a intentar agregar el trigger
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260609015616.png)
 	
 
+### Prueba si nuestro caminito funciona
+
+1. Monitoreo
+	dentro del lamda nos vamos a Monitorear, le personalizamos para que muestre 30min
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260609015958.png)
+
+2. SQS
+	En otra pestaña nos vamos a SQS, también nos vamos a monitoreo y a 30min
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260609020426.png)
+
+3. S3
+	En otra pestaña nos vamos al S3
 Nombre: ColaProcesamientoS3
 ARN(Identificador unico) : arn:aws:sqs:us-east-1:632914961478:ColaProcesamientoS3
 Topic: NotificacionesS3
