@@ -96,7 +96,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "2c47654ff3f8d557",
@@ -224,6 +225,7 @@
   },
   "active": "955d4ba7fac8cbe2",
   "lastOpenFiles": [
+    "04 - Otros/Imagenes/Pasted image 20260608222118.png",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 2/Clases/2026-05-29 Día 14 Práctica.md",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 2/Clases/2026-06-03 Día 15 La era serverless & MLOPS (Parte 1) Teoría y Práctica.md",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 2/Clases/2026-05-27 Día 13  Teoría y Práctica Arquitectura de Microservicios.md",
@@ -259,7 +261,6 @@
     "02 - Cursos y Certificaciones/Curso Python Educación IT/Módulo 1 Introducción/Examen Integrador.md",
     "02 - Cursos y Certificaciones/Curso Python Educación IT/Módulo 1 Introducción/4° Parte/Examen 4.md",
     "02 - Cursos y Certificaciones/Curso Python Educación IT/Módulo 1 Introducción/3° Parte/Examen 3.md",
-    "02 - Cursos y Certificaciones/Curso Python Educación IT/Módulo 1 Introducción/2° Parte/Examen 2.md",
     "02 - Cursos y Certificaciones/Curso Python Educación IT/Módulo 1 Introducción/4° Parte",
     "02 - Cursos y Certificaciones/Curso Python Educación IT/Módulo 1 Introducción/3° Parte",
     "02 - Cursos y Certificaciones/Curso Python Educación IT/Módulo 1 Introducción/2° Parte",
