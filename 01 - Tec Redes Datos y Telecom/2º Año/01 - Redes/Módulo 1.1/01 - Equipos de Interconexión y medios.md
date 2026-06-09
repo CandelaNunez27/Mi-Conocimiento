@@ -29,3 +29,4 @@ Para que los dispositivos puedan comunicarse, existen diferentes equipos de inte
 * **Inalámbrico:** Canales de radio terrestres (WiFi, telefonía móvil) y satelitales.
 
 *Símbolos comunes de las redes de datos*
+![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260609153725.png)
