@@ -167,7 +167,7 @@ return {
 	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260609020426.png)
 
 3. S3
-	En otra pestaña nos vamos al S3
+	En otra pestaña nos vamos al S3, Y le subimos el archivo CSV que tengamos
 Nombre: ColaProcesamientoS3
 ARN(Identificador unico) : arn:aws:sqs:us-east-1:632914961478:ColaProcesamientoS3
 Topic: NotificacionesS3
