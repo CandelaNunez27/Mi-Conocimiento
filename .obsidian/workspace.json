@@ -4,7 +4,7 @@
     "type": "split",
     "children": [
       {
-        "id": "b261673aaf31b8fd",
+        "id": "17d17cf447a1c7e8",
         "type": "tabs",
         "children": [
           {
@@ -27,16 +27,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01 - Tec Redes Datos y Telecom/2º Año/01 - Redes/Módulo 1.2/Sin título.md",
+                "file": "01 - Tec Redes Datos y Telecom/2º Año/01 - Redes/Módulo 1.2/03 - Protocolos de Resolución de Direcciones (ARP y RARP).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Sin título"
+              "title": "03 - Protocolos de Resolución de Direcciones (ARP y RARP)"
+            }
+          },
+          {
+            "id": "f44e5bc1f2514361",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "01 - Tec Redes Datos y Telecom/2º Año/01 - Redes/Módulo 1.2/01 - Capa de Enlace y Protocolo Ethernet.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "01 - Capa de Enlace y Protocolo Ethernet"
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -111,7 +125,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "2c47654ff3f8d557",
@@ -237,10 +252,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "e6bb5d90017c09e9",
+  "active": "f44e5bc1f2514361",
   "lastOpenFiles": [
+    "01 - Tec Redes Datos y Telecom/2º Año/01 - Redes/Módulo 1.2/03 - Protocolos de Resolución de Direcciones (ARP y RARP).md",
+    "01 - Tec Redes Datos y Telecom/2º Año/01 - Redes/Módulo 1.2/01 - Capa de Enlace y Protocolo Ethernet.md",
     "01 - Tec Redes Datos y Telecom/2º Año/00- Índice/00 - Redes.md",
-    "01 - Tec Redes Datos y Telecom/2º Año/01 - Redes/Módulo 1.2/Sin título.md",
     "01 - Tec Redes Datos y Telecom/2º Año/01 - Redes/Módulo 1.1/01 - Equipos de Interconexión y medios.md",
     "01 - Tec Redes Datos y Telecom/2º Año/01 - Redes/Módulo 1.2",
     "01 - Tec Redes Datos y Telecom/1° Año/00 - Índice/00 - Arquitectura de Computadoras.md",
@@ -280,7 +296,6 @@
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 1/Clases/Sin título.md",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 1/TP Obligatorio/TP 1 Módulo 1.md",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 1/Clases/2026-04-15 Día 1 Introducción.md",
-    "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 1/Clases/2026-04-29 Día 5 Redes en la Nube.md",
     "02 - Cursos y Certificaciones/Curso Python Educación IT/Módulo 1 Introducción/4° Parte",
     "02 - Cursos y Certificaciones/Curso Python Educación IT/Módulo 1 Introducción/3° Parte",
     "02 - Cursos y Certificaciones/Curso Python Educación IT/Módulo 1 Introducción/2° Parte",
