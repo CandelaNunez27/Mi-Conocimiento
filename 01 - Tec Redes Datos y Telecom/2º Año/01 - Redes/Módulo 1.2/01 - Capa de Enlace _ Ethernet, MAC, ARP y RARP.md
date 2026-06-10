@@ -89,3 +89,5 @@ Hace exactamente el proceso opuesto a ARP: permite que un dispositivo que conoce
 * **Switches:** Equipos de **Capa 2**. Interconectan dispositivos dentro de una misma red local, analizan e interconectan tramas basándose en **direcciones MAC** y operan de forma automática (Plug and Play). 
 
 * **Routers:** Equipos de **Capa 3**. Interconectan redes completamente diferentes, analizan paquetes basándose en **direcciones IP** y requieren una configuración manual explícita de sus interfaces y tablas de ruteo.
+
+![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260610014234.png)

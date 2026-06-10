@@ -55,16 +55,16 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01 - Tec Redes Datos y Telecom/2º Año/01 - Redes/Módulo 1.2/02 - Switches Ethernet - Funcionamiento y Segmentación.md",
+                "file": "01 - Tec Redes Datos y Telecom/2º Año/01 - Redes/Módulo 1.2/02 - Switches Ethernet y Diseño de Redes.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "02 - Switches Ethernet - Funcionamiento y Segmentación"
+              "title": "02 - Switches Ethernet y Diseño de Redes"
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -266,14 +266,15 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "f44e5bc1f2514361",
+  "active": "29e53feb63cf4eb3",
   "lastOpenFiles": [
+    "01 - Tec Redes Datos y Telecom/2º Año/01 - Redes/Módulo 1.2/01 - Capa de Enlace _ Ethernet, MAC, ARP y RARP.md",
+    "04 - Otros/Imagenes/Pasted image 20260610014234.png",
     "04 - Otros/Imagenes/Pasted image 20260610013037.png",
     "04 - Otros/Imagenes/Pasted image 20260610012833.png",
     "04 - Otros/Imagenes/Pasted image 20260610003312.png",
     "01 - Tec Redes Datos y Telecom/2º Año/01 - Redes/Módulo 1.2/03 - Protocolos de Resolución de Direcciones (ARP y RARP).md",
-    "01 - Tec Redes Datos y Telecom/2º Año/01 - Redes/Módulo 1.2/02 - Switches Ethernet - Funcionamiento y Segmentación.md",
-    "01 - Tec Redes Datos y Telecom/2º Año/01 - Redes/Módulo 1.2/01 - Capa de Enlace _ Ethernet, MAC, ARP y RARP.md",
+    "01 - Tec Redes Datos y Telecom/2º Año/01 - Redes/Módulo 1.2/02 - Switches Ethernet y Diseño de Redes.md",
     "04 - Otros/Imagenes/Pasted image 20260609235058.png",
     "01 - Tec Redes Datos y Telecom/2º Año/00- Índice/00 - Redes.md",
     "01 - Tec Redes Datos y Telecom/2º Año/01 - Redes/Módulo 1.1/01 - Equipos de Interconexión y medios.md",
@@ -296,8 +297,6 @@
     "04 - Otros/Imagenes/Pasted image 20260609030507.png",
     "04 - Otros/Imagenes/Pasted image 20260609030238.png",
     "04 - Otros/Imagenes/Pasted image 20260609025823.png",
-    "04 - Otros/Imagenes/Pasted image 20260609025812.png",
-    "04 - Otros/Imagenes/Pasted image 20260609024913.png",
     "02 - Cursos y Certificaciones/Curso Python Educación IT/Módulo 1 Introducción/2° Parte/Resumen - Módulo 2 Fundamentos Lógicos de la Programación.md",
     "02 - Cursos y Certificaciones/Curso Python Educación IT/Módulo 1 Introducción/3° Parte/Resumen - Módulo 3 Interacción, Iteración y Modularidad.md",
     "02 - Cursos y Certificaciones/Curso Python Educación IT/Módulo 1 Introducción/4° Parte/Resumen - Módulo 4 Entornos, Lenguajes y Paradigmas.md",
