@@ -5,51 +5,68 @@
 Los switches Ethernet enlazan dispositivos entre sí copiando tramas desde un puerto de entrada hacia un puerto de salida. A diferencia del router (que encamina paquetes analizando IPs de Capa 3), el switch se maneja en **Capa 2**, aislando el tráfico localmente y requiriendo nula configuración inicial para tareas básicas.
 
 ## Direcciones y tabla de reenvío
+
 El switch basa sus decisiones en una tabla interna almacenada en la memoria RAM llamada **Tabla MAC o Tabla de Reenvío**. Esta tabla asocia de forma dinámica cada dirección MAC física del entorno con el número de puerto del switch donde se encuentra conectada.
 
 ## Aprendizaje de direcciones
+
 El switch crea su tabla de forma automática mediante la inspección del tráfico entrante: cada vez que una trama ingresa por un puerto físico, el switch lee el campo de la **MAC de origen** y la anota en la tabla junto al número de puerto. De esta forma, "aprende" dónde está parado cada equipo.
 
 ## Inundación de tramas
+
 Si una trama entra al switch buscando una MAC de destino que **no figura** todavía en la tabla de reenvío, el dispositivo realiza una copia de la trama y la **inunda (flooding)** enviándola por todos y cada uno de los puertos activos, excepto por el puerto por el cual ingresó originalmente.
 
-## Tráfico Broadcast y Multicast, Tráfico Broadcast y Multicast: Usos
+## Tráfico Unicast, Broadcast y Multicast: Usos
+
+* **Unicast:** Envío de información desde un único emisor directo hacia un único receptor.
+
 * **Broadcast:** Dirigido a la dirección `FF:FF:FF:FF:FF:FF`. El switch está obligado a inundarlo por todos sus puertos. Se usa obligatoriamente para protocolos de descubrimiento como ARP o DHCP.
+
 * **Multicast:** Dirigido a un grupo selecto de interfaces. El tráfico se reenvía de forma eficiente únicamente a los puertos que se hayan suscrito a dicho grupo (ej. IPTV o replicación de servidores).
 
 ## Combinando switches
+
 En infraestructuras reales, un solo switch no basta. Los switches se pueden interconectar entre sí mediante cables de red tradicionales para expandir la cantidad de bocas disponibles, uniendo los puertos de un switch a otro (uplink).
 
 ## Spanning Tree Protocol (STP)
+
 Al combinar múltiples switches, los administradores suelen tirar cables duplicados para tener conexiones de respaldo. Esto genera bucles físicos (bucles de red) donde las tramas de broadcast se duplican infinitamente destruyendo el rendimiento. **STP (estándar 802.1D)** es un protocolo que detecta estos bucles de forma lógica y **apaga/bloquea temporalmente los puertos redundantes**. Si el cable principal se corta, STP reactiva el puerto de respaldo automáticamente.
 
-
-
 ## Rendimiento de un switch
+
 El rendimiento global de la red conmutada se mide por su ancho de banda interno y su velocidad para procesar millones de tramas por segundo (throughput) sin generar demoras de cola o cuellos de botella.
 
 ## Desempeño en el reenvío de tramas
+
 Existen tres modos en los que el switch gestiona las tramas entrantes:
 * **Store-and-Forward:** Almacena la trama completa, calcula el código de error CRC y si está limpia la envía. Es el más seguro pero lento.
+
 * **Cut-Through:** Lee solo los primeros 6 bytes (MAC destino) y empieza a transmitir de inmediato. Latencia mínima, pero propaga tramas rotas.
+
 * **Fragment-Free:** Lee los primeros 64 bytes para asegurarse de esquivar fragmentos de colisiones comunes antes de empezar a transmitir.
 
 ## Memoria en los puertos del switch
+
 Los switches poseen buffers de memoria RAM para almacenar temporalmente las tramas cuando un puerto de salida está congestionado o saturado. Puede ser memoria compartida por todos los puertos o buffers dedicados e independientes por cada boca física.
 
 ## CPU y RAM en un switch
+
 Los switches administrables avanzados poseen su propia arquitectura interna de computadora: una CPU dedicada a procesar funciones lógicas complejas (como STP, seguridad o telemetría) y memoria RAM para sostener el sistema operativo del switch (ej. Cisco IOS o RouterOS) y las tablas de direcciones.
 
 ## Especificaciones generales de un switch
+
 Al evaluar un switch comercial se analizan factores críticos: la densidad de puertos (8, 24, 48 bocas), el ancho de banda del plano trasero (*backplane bandwidth*), el factor de forma (racks de 19 pulgadas) y el consumo eléctrico.
 
 ## Características básicas de un switch
+
 Incluyen capacidades estándar de negociación automática de velocidad (Auto-sensing), detección automática de la polaridad del cable (MDI/MDIX para no requerir cables cruzados), y luces indicadoras LED de actividad/enlace por cada puerto físico.
 
 ## LAN Virtual o VLAN
+
 Permite dividir un único switch físico en **múltiples switches lógicos e independientes**. Dispositivos en diferentes VLANs no pueden hablar entre sí directamente aunque estén conectados al mismo equipo físico, lo que aumenta drásticamente la seguridad, optimiza el rendimiento y reduce el tamaño de los dominios de difusión.
 
 ## Calidad de Servicio (QoS)
+
 Mecanismo que permite al switch **priorizar cierto tipo de tráfico crítico** sobre otros en situaciones de congestión. Por ejemplo, se configura para que los paquetes de Voz sobre IP (VoIP) o videoconferencias pasen primero antes que las descargas de archivos pesados de datos, evitando entrecortes.
 
 ## Diseño de la red
