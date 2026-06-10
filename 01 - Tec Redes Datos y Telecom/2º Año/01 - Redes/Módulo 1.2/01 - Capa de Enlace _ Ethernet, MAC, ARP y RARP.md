@@ -39,30 +39,53 @@ Dependiendo del protocolo utilizado, la capa de enlace puede ofrecer:
 A diferencia de los protocolos de capas superiores que corren puramente en software dentro del Sistema Operativo, la capa de enlace se implementa principalmente en el **hardware** del dispositivo, específicamente en el **Adaptador de Red (NIC - Network Interface Card)**. Este adaptador se conecta al bus del sistema y combina componentes de hardware, firmware y software (drivers).
 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260610003312.png)
 
-## 4. Direccionamiento Físico frente a Direccionamiento Lógico
-* **Dirección MAC (Physical Address):** Identificador físico y permanente de 48 bits, grabado de fábrica en la ROM de la tarjeta de interfaz de red (NIC). Se expresa en formato hexadecimal y se utiliza para direccionar tramas localmente dentro del mismo segmento de red (Capa 2).
-* **Dirección IP (Logical Address):** Dirección lógica de red asignada dinámicamente por software o manualmente. Permite el encaminamiento global de paquetes entre diferentes redes interconectadas del mundo (Capa 3).
+## Introducción a Ethernet
 
-## 5. Anatomía de la Trama Ethernet Estándar
-La trama es la estructura de datos que circula por el cableado LAN. Sus campos obligatorios son:
-1. **Preámbulo y SFD (7 + 1 Bytes):** Patrón de bits que permite la sincronización del reloj del receptor antes de que lleguen los datos.
-2. **Dirección MAC Destino (6 Bytes):** Dirección física del adaptador de red que debe recibir la trama.
-3. **Dirección MAC Origen (6 Bytes):** Dirección física del adaptador de red que emite la trama.
-4. **Tipo / Longitud (2 Bytes):** Indica el protocolo de capa superior encapsulado (ej. `0x0800` para IPv4, `0x0806` para mensajes ARP).
-5. **Datos / Carga útil (Payload):** El datagrama de red encapsulado. Posee un tamaño mínimo de 46 bytes y un máximo de 1500 bytes (MTU estándar).
-6. **FCS / CRC (4 Bytes):** Secuencia de verificación de trama basada en un código de redundancia cíclica para descartar tramas corruptas.
+Ethernet es la tecnología por cable dominante en el mundo LAN. Evolucionó desde un medio compartido primitivo hasta las conexiones conmutadas actuales de alta velocidad (Gigabit y superiores), estandarizadas por la IEEE.
 
+## Acceso a un medio compartido
+
+Originalmente, Ethernet utilizaba un único cable coaxial donde todos transmitían. Para gestionar el caos de que dos equipos hablasen a la vez, se diseñó el protocolo **CSMA/CD (Acceso Múltiple por Detección de Portadora y Detección de Colisiones)**:
+1. Escuchar el canal antes de transmitir. 
+2. Si está libre, transmitir.
+3. Si ocurre una colisión (dos transmiten a la vez), se detecta el choque eléctrico, se detiene la transmisión, se envía una señal de atasco y se espera un tiempo aleatorio antes de reintentar.
+![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260610012833.png)
 
 
-* **Restricción de Tamaño Mínimo (64 Bytes):** Si una trama mide menos de 64 bytes (excluyendo el preámbulo), se detecta como un fragmento de colisión (*runt frame*) y el hardware la elimina inmediatamente.
+## Funcionamiento de Ethernet
 
-## 6. Modos de Distribución del Tráfico
-* **Unicast:** Tráfico direccionado estrictamente desde un emisor hacia un único receptor identificado por su dirección MAC.
-* **Multicast:** Envío eficiente de datos desde un origen hacia un grupo específico de hosts que se han suscrito a una dirección especial.
-* **Broadcast:** Difusión masiva de datos dirigida a **todos** los dispositivos del segmento de red local. Utiliza la dirección física destino universal `FF:FF:FF:FF:FF:FF`.
+Ethernet es un protocolo **no orientado a la conexión y no fiable**. No realiza un "saludo de manos" previo antes de enviar tramas, y si una trama llega corrupta a destino, la placa de red simplemente la descarta sin avisar; la responsabilidad de recuperar ese dato se delega a capas superiores (como TCP en Capa 4).
 
-## 7. Protocolos de Resolución de Direcciones: ARP y RARP
-* **ARP (Address Resolution Protocol):** Traduce o mapea una dirección lógica conocida (IP) a una dirección física de hardware (MAC) dentro de la misma LAN.
-	* *Funcionamiento:* El host emisor envía un mensaje **ARP Request** en modo **Broadcast** preguntando por una IP específica. Todos lo reciben, pero solo el host con esa IP configurada responde con un **ARP Reply** en modo **Unicast** directo al emisor, revelando su dirección MAC.
-	* *ARP Cache:* Tabla dinámica en memoria RAM que almacena los mapeos IP-MAC descubiertos temporalmente para no inundar la red con solicitudes constantes.
-* **RARP (Reverse Address Resolution Protocol):** Realiza la función matemática inversa de ARP; permite a una máquina cliente averiguar su propia dirección IP a partir de su dirección física MAC conocida (usado históricamente en estaciones de trabajo sin disco duro).
+## Tipos de redes Ethernet
+
+![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260610013037.png)
+* **1000Base-T (Gigabit Ethernet):** 1000 Mbps, el estándar actual en la mayoría de los dispositivos locales. 
+
+## Power Over Ethernet (PoE)
+
+Estándar que permite enviar **corriente eléctrica continua (DC)** junto con los datos a través de los mismos hilos de cobre del cable de red de par trenzado. Esto elimina la necesidad de fuentes de alimentación externas para dispositivos como cámaras IP o teléfonos VoIP. 
+
+## Direcciones MAC
+
+* Es la dirección física de la Capa 2. 
+
+* Tiene un tamaño de **48 bits** (6 bytes) expresados habitualmente en formato hexadecimal (ej. `AA:BB:CC:11:22:33`). 
+
+* Viene grabada de fábrica de forma permanente en la ROM de la placa de red, garantizando que no existan dos tarjetas con la misma MAC en todo el mundo. 
+
+## ARP (Address Resolution Protocol)
+
+Protocolo crítico para el funcionamiento de la red local. Su único propósito es **traducir una dirección IP conocida a su correspondiente dirección MAC física**. 
+* Si un equipo quiere enviar un paquete a una IP pero no conoce su MAC, envía un mensaje **ARP Request en modo Broadcast** (a todos).
+
+* El dueño de esa IP responde con un **ARP Reply en modo Unicast** enviando su MAC física. Esta relación se guarda temporalmente en la tabla *ARP Cache*. 
+
+## RARP (Protocolo de Resolución de Dirección Inversa)
+
+Hace exactamente el proceso opuesto a ARP: permite que un dispositivo que conoce su dirección física MAC pueda consultar y averiguar qué dirección IP se le ha asignado en la red. Era usado históricamente por terminales viejas que no tenían disco duro para arrancar. 
+
+## Switches vs Routers
+
+* **Switches:** Equipos de **Capa 2**. Interconectan dispositivos dentro de una misma red local, analizan e interconectan tramas basándose en **direcciones MAC** y operan de forma automática (Plug and Play). 
+
+* **Routers:** Equipos de **Capa 3**. Interconectan redes completamente diferentes, analizan paquetes basándose en **direcciones IP** y requieren una configuración manual explícita de sus interfaces y tablas de ruteo.
