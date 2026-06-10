@@ -70,40 +70,45 @@ Permite dividir un único switch físico en **múltiples switches lógicos e ind
 Mecanismo que permite al switch **priorizar cierto tipo de tráfico crítico** sobre otros en situaciones de congestión. Por ejemplo, se configura para que los paquetes de Voz sobre IP (VoIP) o videoconferencias pasen primero antes que las descargas de archivos pesados de datos, evitando entrecortes.
 
 ## Diseño de la red
+
 Armar una infraestructura exige planificar meticulosamente cómo se distribuirá el tráfico para soportar el crecimiento de la empresa sin que la red colapse por malas conexiones.
 
 ## Aislación de tráfico entre clientes y servidores
+
 Por cuestiones de rendimiento y seguridad, los servidores de producción de alta demanda (como bases de datos o servidores web corporativos) deben colocarse en segmentos físicos o VLANs dedicadas de alta velocidad, separándolos del tráfico cotidiano e impredecible de las PCs de los usuarios finales.
 
 ## Jerarquía de switches y velocidad de uplink
+
 Para evitar cuellos de botella, los puertos que interconectan switches entre sí o switches con servidores (**Uplinks**) deben operar a una velocidad sustancialmente mayor que los puertos de acceso de los usuarios (ejemplo: usuarios a 100 Mbps o 1 Gbps, y los enlaces troncales o uplinks a 10 Gbps o más).
 
 ## Switches en el diseño de una red
+
 El switch no se coloca al azar; actúa como el bloque constructivo modular de toda la topología cableada de la organización.
 
 ## Diseño jerárquico
+
 Es el estándar de oro en redes corporativas. Divide la topología en tres capas lógicas bien definidas:
 1.  **Capa de Acceso:** Switches donde se conectan los usuarios finales (PCs, APs).
+
 2.  **Capa de Distribución:** Agrupa los switches de acceso, maneja políticas de seguridad, enrutamiento inter-VLAN y control de tráfico.
+
 3.  **Capa de Núcleo (Core):** Switches de altísima velocidad encargados únicamente de conmutar paquetes de forma masiva y ultrarrápida entre las distintas zonas de la red.
 
-
-
 ## Flexibilidad de la red
+
 Un buen diseño permite añadir nuevos switches, servidores o mudar puestos de trabajo completos sin necesidad de reestructurar el cableado principal ni detener la operación del resto de la red corporativa.
 
 ## Switches de propósito específico
-Según el entorno físico donde operen, se dividen en categorías especializadas: Switches Multicapa (con capacidades de ruteo de Capa 3), Switches de borde, Switches Apilables (*Stackables*, se unen con cables especiales de alta velocidad para gestionarse como una sola unidad) y Switches Industriales (diseñados para resistir polvo, humedad, vibraciones y temperaturas extremas en fábricas).
+
+Según el entorno físico donde operen, se dividen en categorías especializadas: 
+- Switches Multicapa (con capacidades de ruteo de Capa 3)
+- Switches de borde
+- Switches Apilables (*Stackables*, se unen con cables especiales de alta velocidad para gestionarse como una sola unidad)
+- Switches Industriales (diseñados para resistir polvo, humedad, vibraciones y temperaturas extremas en fábricas).
 
 ## Características avanzadas de un switch
+
 Los switches Enterprise modernos incorporan herramientas sofisticadas de auditoría y potencia: soporte avanzado para **PoE** (para alimentar antenas y cámaras remotas) y protocolos de telemetría como **sFlow, Netflow e IPFIX** (estándar internacional de la IETF), los cuales capturan y analizan los flujos de tráfico para identificar cuellos de botella y detectar ataques informáticos o anomalías de seguridad en tiempo real.
-
-
-
-
-
-
-
 
 
 
