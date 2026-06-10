@@ -34,7 +34,10 @@ Dependiendo del protocolo utilizado, la capa de enlace puede ofrecer:
 
 * **Corrección de Errores:** Capacidad de identificar y reparar errores de bits directamente en el receptor sin requerir una retransmisión de la trama.
 
+## 4. Implementación de la Capa de Enlace
+
 A diferencia de los protocolos de capas superiores que corren puramente en software dentro del Sistema Operativo, la capa de enlace se implementa principalmente en el **hardware** del dispositivo, específicamente en el **Adaptador de Red (NIC - Network Interface Card)**. Este adaptador se conecta al bus del sistema y combina componentes de hardware, firmware y software (drivers).
+![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260610003312.png)
 
 ## 4. Direccionamiento Físico frente a Direccionamiento Lógico
 * **Dirección MAC (Physical Address):** Identificador físico y permanente de 48 bits, grabado de fábrica en la ROM de la tarjeta de interfaz de red (NIC). Se expresa en formato hexadecimal y se utiliza para direccionar tramas localmente dentro del mismo segmento de red (Capa 2).
