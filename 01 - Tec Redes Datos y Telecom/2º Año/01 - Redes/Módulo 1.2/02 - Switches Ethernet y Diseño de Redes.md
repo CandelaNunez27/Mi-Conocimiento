@@ -31,6 +31,7 @@ En infraestructuras reales, un solo switch no basta. Los switches se pueden inte
 ## Spanning Tree Protocol (STP)
 
 Al combinar múltiples switches, los administradores suelen tirar cables duplicados para tener conexiones de respaldo. Esto genera bucles físicos (bucles de red) donde las tramas de broadcast se duplican infinitamente destruyendo el rendimiento. **STP (estándar 802.1D)** es un protocolo que detecta estos bucles de forma lógica y **apaga/bloquea temporalmente los puertos redundantes**. Si el cable principal se corta, STP reactiva el puerto de respaldo automáticamente.
+![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260610023125.png)
 
 ## Rendimiento de un switch
 
@@ -64,6 +65,7 @@ Incluyen capacidades estándar de negociación automática de velocidad (Auto-se
 ## LAN Virtual o VLAN
 
 Permite dividir un único switch físico en **múltiples switches lógicos e independientes**. Dispositivos en diferentes VLANs no pueden hablar entre sí directamente aunque estén conectados al mismo equipo físico, lo que aumenta drásticamente la seguridad, optimiza el rendimiento y reduce el tamaño de los dominios de difusión.
+![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260610022726.png)
 
 ## Calidad de Servicio (QoS)
 
@@ -80,6 +82,7 @@ Por cuestiones de rendimiento y seguridad, los servidores de producción de alta
 ## Jerarquía de switches y velocidad de uplink
 
 Para evitar cuellos de botella, los puertos que interconectan switches entre sí o switches con servidores (**Uplinks**) deben operar a una velocidad sustancialmente mayor que los puertos de acceso de los usuarios (ejemplo: usuarios a 100 Mbps o 1 Gbps, y los enlaces troncales o uplinks a 10 Gbps o más).
+![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260610022843.png)
 
 ## Switches en el diseño de una red
 
@@ -92,7 +95,9 @@ Es el estándar de oro en redes corporativas. Divide la topología en tres capas
 
 2.  **Capa de Distribución:** Agrupa los switches de acceso, maneja políticas de seguridad, enrutamiento inter-VLAN y control de tráfico.
 
-3.  **Capa de Núcleo (Core):** Switches de altísima velocidad encargados únicamente de conmutar paquetes de forma masiva y ultrarrápida entre las distintas zonas de la red.
+3.  **Capa de Núcleo (Core):** Switches de altísima velocidad encargados únicamente de conmutar paquetes de forma masiva y ultrarrápida entre las distintas zonas de la red
+![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260610023038.png)
+
 
 ## Flexibilidad de la red
 
