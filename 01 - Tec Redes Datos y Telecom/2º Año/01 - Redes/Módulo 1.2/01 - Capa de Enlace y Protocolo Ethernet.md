@@ -1,7 +1,7 @@
 # Capa de Enlace de Datos y Protocolo Ethernet
 
 La capa de enlace de datos se encarga de la transferencia fiable de información a través de un canal físico de comunicación. Su función principal es tomar los datagramas de la capa de red y encapsularlos en unidades llamadas **tramas (frames)**.
-
+![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260609235058.png)
 ## 1. Tipos de Canales en la Capa de Enlace
 
 El diseño de los protocolos varía según el tipo de medio físico utilizado:
@@ -10,12 +10,12 @@ El diseño de los protocolos varía según el tipo de medio físico utilizado:
 
 * **Canales Punto a Punto (Point-to-Point):** Conexión directa y exclusiva entre dos dispositivos, como el enlace entre dos routers o entre un módem residencial y el router del ISP. No sufren colisiones de datos.
 
-## 2. Parámetros Técnicos de Ethernet
+## 2. Parámetros Técnicos de Ethernet ( IEEE 802.3)
 
-* **Tamaño de la Trama Ethernet:** * **Mínimo:** **64 bytes**. Si una trama mide menos, se considera un fragmento de colisión (*runt frame*) y se descarta.
+* **Tamaño de la Trama Ethernet:** 
+	* **Mínimo:** **64 bytes**. Si una trama mide menos, se considera un fragmento de colisión (*runt frame*) y se descarta.
     * **Máximo estándar:** **1518 bytes** (puede llegar a 1522 bytes si incluye etiquetas de VLAN 802.1Q).
-
-* **MTU (Maximum Transmission Unit):** Es la unidad máxima de transferencia. Define el tamaño máximo del paquete de la capa de red (datos útiles) que puede ser transportado en una sola trama sin fragmentarse. Para Ethernet estándar, la MTU es de **1500 bytes**.
+    * **MTU (Maximum Transmission Unit):** Es la unidad máxima de transferencia. Define el tamaño máximo del paquete de la capa de red (datos útiles) que puede ser transportado en una sola trama sin fragmentarse. Para Ethernet estándar, la MTU es de **1500 bytes**.
 
 * **Jumbo Frames:** Son tramas Ethernet que transportan una carga útil (MTU) superior al estándar de 1500 bytes, llegando habitualmente hasta los **9000 bytes**. Se utilizan exclusivamente en redes de almacenamiento (SAN) o centros de datos para optimizar transferencias de gran volumen, ya que reducen drásticamente la carga de procesamiento (CPU) al generar menos cabeceras de red.
 
