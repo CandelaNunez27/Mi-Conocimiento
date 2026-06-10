@@ -62,6 +62,9 @@ Cualquier nodo final o dispositivo intermedio de la red maneja obligatoriamente 
 1. **Dirección MAC (Physical Address):** Identificador físico único de 48 bits grabado de fábrica en la placa de red (NIC). Es la dirección utilizada por la **Capa 2** (Switches) para mover la información localmente dentro de una misma LAN.
 2. **Dirección IP (Logical Address):** Dirección lógica asignada por software (de forma manual o por DHCP). Identifica el dispositivo dentro de una red global y es utilizada por la **Capa 3** (Routers) para encaminar datos entre diferentes redes del mundo.
 
+*Capas del Modelo OSI: Router y Switch*
+![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260609153452.png)
+
 ---
 
 ## 6. Arquitectura Cliente-Servidor
@@ -81,13 +84,6 @@ La capa física requiere un soporte material para guiar las señales. El program
 * **Medios Inalámbricos (Radiofrecuencia):**
 	* *Canales de radio terrestres:* Conexiones de corto y medio alcance como Wi-Fi, enlaces de microondas e infraestructura de telefonía móvil.
 	* *Canales de radio vía satélite:* Enlaces de comunicación utilizando repetidores en órbita (baja o geoestacionaria) para dar cobertura a zonas remotas de la tierra.
-
-
-*Capas del Modelo OSI: Router y Switch*
-![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260609153452.png)
-
-
-
 
 *Símbolos comunes de las redes de datos*
 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260609153725.png)
