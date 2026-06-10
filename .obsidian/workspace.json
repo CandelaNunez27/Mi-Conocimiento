@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01 - Tec Redes Datos y Telecom/2º Año/00- Índice/00 - Redes.md",
+                "file": "01 - Tec Redes Datos y Telecom/1° Año/00 - Índice/00 - Arquitectura de Computadoras.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "00 - Redes"
+              "title": "00 - Arquitectura de Computadoras"
             }
           },
           {
@@ -253,10 +253,10 @@
   },
   "active": "fed12be2aa6ef93a",
   "lastOpenFiles": [
-    "01 - Tec Redes Datos y Telecom/2º Año/01 - Redes/Módulo 1.1/02 - Hardware de Red e Interfaces Cisco.md",
-    "01 - Tec Redes Datos y Telecom/2º Año/00- Índice/00 - Redes.md",
-    "01 - Tec Redes Datos y Telecom/1° Año/00 - Índice/00 - Arquitectura de Computadoras.md",
     "01 - Tec Redes Datos y Telecom/2º Año/01 - Redes/Módulo 1.1/01 - Equipos de Interconexión y medios.md",
+    "01 - Tec Redes Datos y Telecom/1° Año/00 - Índice/00 - Arquitectura de Computadoras.md",
+    "01 - Tec Redes Datos y Telecom/2º Año/00- Índice/00 - Redes.md",
+    "01 - Tec Redes Datos y Telecom/2º Año/01 - Redes/Módulo 1.1/02 - Hardware de Red e Interfaces Cisco.md",
     "01 - Tec Redes Datos y Telecom/2º Año/00- Índice/Equipos de Interconexion de Red.md",
     "01 - Tec Redes Datos y Telecom/2º Año/01 - Redes/Módulo 1.1/03 - Utilidades de Red y Linux.md",
     "01 - Tec Redes Datos y Telecom/1° Año/01 - Arquitectura de Computadoras/Módulo 1.1/03 - Codificación y Representación de Datos.md",
