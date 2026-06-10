@@ -1,3 +1,22 @@
+# Práctica de Taller: Análisis de la Capa de Enlace con Wireshark
+
+## 1. Procedimiento de Laboratorio
+
+Pasos técnicos seguidos durante la actividad práctica para capturar e inspeccionar tramas reales en la red:
+1. Se inició el analizador de protocolos **Wireshark** con privilegios elevados de administrador.
+2. Se identificó la interfaz de red cableada activa observando el gráfico de picos de tráfico en tiempo real.
+3. Se abrió la terminal de Linux y se ejecutó el comando `ip route` (o `route -n`) para localizar la dirección IP de la puerta de enlace predeterminada o Router (ejemplo: `172.22.32.1`).
+4. Se inició una captura activa en Wireshark y en la terminal se procedió a disparar tráfico ICMP constante ejecutando: `ping 172.22.32.1`.
+5. En la barra de Wireshark se aplicó el filtro `arp` o `icmp` para aislar el tráfico de la capa de enlace.
+
+## 2. Inspección Detallada en Wireshark
+
+Al abrir el desglose de una trama Ethernet capturada, se pudieron constatar físicamente los conceptos teóricos:
+* **Cabecera Ethernet (Ethernet II):** Muestra con claridad los campos de la dirección MAC destino y MAC origen de 48 bits.
+* **El campo Type (Tipo):** Permite ver el código que indica qué protocolo viaja adentro de la carga útil. Cuando el switch transmite un mensaje ARP, el campo tipo muestra el valor hexadecimal **`0x0806`**, confirmando que la trama encapsula un paquete ARP de forma directa sin pasar por el protocolo IP.
+* **Comprobación de la Caché:** En la consola de Linux, al ejecutar `arp -a`, se listó de forma exitosa el mapa de las IPs locales y sus respectivas MAC físicas que el sistema operativo aprendió dinámicamente gracias al intercambio analizado.
+
+
 # Cuestionario Técnico de Taller: Capa de Enlace de Datos (AT02)
 
 Esta nota contiene la resolución detallada y formal del cuestionario de la Actividad de Taller Nº 2.
