@@ -13,16 +13,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01 - Tec Redes Datos y Telecom/1° Año/01 - Arquitectura de Computadoras/Módulo 1.1/03 - Codificación y Representación de Datos.md",
+                "file": "01 - Tec Redes Datos y Telecom/1° Año/00 - Índice/00 - Arquitectura de Computadoras.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "03 - Codificación y Representación de Datos"
+              "title": "00 - Arquitectura de Computadoras"
             }
           },
           {
-            "id": "221653a9e8317c92",
+            "id": "fed12be2aa6ef93a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "01 - Tec Redes Datos y Telecom/2º Año/00- Índice/00 - Redes.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "00 - Redes"
+            }
+          },
+          {
+            "id": "6ceb60d4c5886606",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -34,37 +48,9 @@
               "icon": "lucide-file",
               "title": "01 - Equipos de Interconexión y medios"
             }
-          },
-          {
-            "id": "8fd2ce47bbe7815b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "01 - Tec Redes Datos y Telecom/2º Año/01 - Redes/Módulo 1.1/02 - Hardware de Red e Interfaces Cisco.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "02 - Hardware de Red e Interfaces Cisco"
-            }
-          },
-          {
-            "id": "abf333bc3ba2ab3c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "01 - Tec Redes Datos y Telecom/2º Año/01 - Redes/Módulo 1.1/03 - Utilidades de Red y Linux.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "03 - Utilidades de Red y Linux"
-            }
           }
         ],
-        "currentTab": 3
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -265,11 +251,14 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "abf333bc3ba2ab3c",
+  "active": "fed12be2aa6ef93a",
   "lastOpenFiles": [
     "01 - Tec Redes Datos y Telecom/2º Año/01 - Redes/Módulo 1.1/02 - Hardware de Red e Interfaces Cisco.md",
-    "01 - Tec Redes Datos y Telecom/2º Año/01 - Redes/Módulo 1.1/03 - Utilidades de Red y Linux.md",
+    "01 - Tec Redes Datos y Telecom/2º Año/00- Índice/00 - Redes.md",
+    "01 - Tec Redes Datos y Telecom/1° Año/00 - Índice/00 - Arquitectura de Computadoras.md",
     "01 - Tec Redes Datos y Telecom/2º Año/01 - Redes/Módulo 1.1/01 - Equipos de Interconexión y medios.md",
+    "01 - Tec Redes Datos y Telecom/2º Año/00- Índice/Equipos de Interconexion de Red.md",
+    "01 - Tec Redes Datos y Telecom/2º Año/01 - Redes/Módulo 1.1/03 - Utilidades de Red y Linux.md",
     "01 - Tec Redes Datos y Telecom/1° Año/01 - Arquitectura de Computadoras/Módulo 1.1/03 - Codificación y Representación de Datos.md",
     "04 - Otros/Imagenes/Pasted image 20260609153725.png",
     "04 - Otros/Imagenes/Pasted image 20260609153452.png",
@@ -305,9 +294,6 @@
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 1/Clases/2026-04-15 Día 1 Introducción.md",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 1/Clases/2026-04-29 Día 5 Redes en la Nube.md",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 1/Clases/2026-04-24 Día 4 Práctica.md",
-    "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 1/Clases/2026-04-22 Día 3 Introducción La Nube.md",
-    "02 - Cursos y Certificaciones/Curso Cisco Linux Essentials/Módulo 4/Módulo 4 Completo.md",
-    "04 - Otros/Markdown.md",
     "02 - Cursos y Certificaciones/Curso Python Educación IT/Módulo 1 Introducción/4° Parte",
     "02 - Cursos y Certificaciones/Curso Python Educación IT/Módulo 1 Introducción/3° Parte",
     "02 - Cursos y Certificaciones/Curso Python Educación IT/Módulo 1 Introducción/2° Parte",

@@ -28,6 +28,7 @@ network:
         - to: default
           via: 10.10.10.1
       nameservers:
+	    search: [mydomain, otherdomain]
         addresses: [10.10.10.1, 1.1.1.1]
 ```
 * **Aplicar IP Dinámica:**
@@ -40,36 +41,25 @@ network:
       dhcp4: true
 ```
 * **Comando para aplicar:** `sudo netplan apply`
-
 ### Alpine Linux
 
 Las distribuciones ligeras o basadas en sistemas más tradicionales usan `/etc/network/interfaces`.
 
 - **Aplicar IP por DHCP:**
-    
-
-
-
-Bash
-
-```
+``` Bash
 auto eth0
 iface eth0 inet dhcp
 ```
 
 - **Aplicar IP Estática:**
-    
-
-Bash
-
-```
+```Bash
 auto eth0
 iface eth0 inet static
     address 192.168.1.100
     netmask 255.255.255.0
     gateway 192.168.1.1
+    dns-nameservers 8.8.8.8 8.8.4.4
 ```
-
 - **Comando para aplicar:** `sudo /etc/init.d/networking restart`
 
 
