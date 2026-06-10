@@ -20,13 +20,21 @@
 
 ## 3. Servicios Principales de la Capa de Enlace
 
+Dependiendo del protocolo utilizado, la capa de enlace puede ofrecer:
+
 * **Entramado (Framing):** Encapsulación de cada datagrama de red añadiendo una cabecera (*header*) y una cola (*trailer*) que delimitan el inicio y fin de la trama.
 
 * **Acceso al Enlace:** Regulación y control del uso del canal en redes de difusión (protocolos MAC).
-* **Entrega Fiable:** Garantía de que los datos crucen el enlace sin errores.
+
+* **Entrega Fiable:** Garantía de que los datos crucen el enlace sin errores. (reconocimientos ACK)
+
 * **Control de Flujo:** Mecanismo para evitar que un emisor rápido sature la capacidad de recepción de un host más lento.
+
 * **Detección de Errores:** Identificación de bits alterados por ruido o atenuación mediante el uso de bits de paridad, sumas de comprobación o códigos de redundancia cíclica (CRC).
+
 * **Corrección de Errores:** Capacidad de identificar y reparar errores de bits directamente en el receptor sin requerir una retransmisión de la trama.
+
+A diferencia de los protocolos de capas superiores que corren puramente en software dentro del Sistema Operativo, la capa de enlace se implementa principalmente en el **hardware** del dispositivo, específicamente en el **Adaptador de Red (NIC - Network Interface Card)**. Este adaptador se conecta al bus del sistema y combina componentes de hardware, firmware y software (drivers).
 
 ## 4. Direccionamiento Físico frente a Direccionamiento Lógico
 * **Dirección MAC (Physical Address):** Identificador físico y permanente de 48 bits, grabado de fábrica en la ROM de la tarjeta de interfaz de red (NIC). Se expresa en formato hexadecimal y se utiliza para direccionar tramas localmente dentro del mismo segmento de red (Capa 2).
