@@ -13,6 +13,13 @@
         "a": 1,
         "rgb": 16771589
       }
+    },
+    {
+      "query": "tag:#2º_Año  ",
+      "color": {
+        "a": 1,
+        "rgb": 4817631
+      }
     }
   ],
   "collapse-display": false,
@@ -25,6 +32,6 @@
   "repelStrength": 10,
   "linkStrength": 1,
   "linkDistance": 250,
-  "scale": 0.06699744995282346,
+  "scale": 0.10049617492923518,
   "close": true
 }

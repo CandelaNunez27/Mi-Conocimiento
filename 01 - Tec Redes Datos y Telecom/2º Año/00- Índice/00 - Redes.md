@@ -1,6 +1,6 @@
 # 🌐 Redes
 
-#2ºAño
+#2º_Año
 **Carrera:** Tecnicatura en Redes de Datos y Telecomunicaciones
 
 ---
