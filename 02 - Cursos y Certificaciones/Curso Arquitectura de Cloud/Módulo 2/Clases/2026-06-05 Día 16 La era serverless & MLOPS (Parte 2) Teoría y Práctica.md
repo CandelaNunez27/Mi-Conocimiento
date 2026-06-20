@@ -14,7 +14,9 @@ Se busca que la estructura sea escrita, se puede versionar para usar en github p
 # Fundamentos Paradigma IaC
 
 - **Imperativo:** La forma como se va a ejecutar, tiene un orden que lee de arriba hacia abajo.
-- **Declarativo:** Se le indi
+- **Declarativo:** Se le indica lo que uno quiere y no importa en que orden lo ejecute, simplemente que lo realice.
+- 
+- **Mutable:** 
 
 ---
 
