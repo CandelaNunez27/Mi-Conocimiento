@@ -1,9 +1,20 @@
 # Fundamentos El código como base
-No se utiliza los clics en interfaz web (peligro con los clics erróneos) sino por código. Definimos servidores,redes, bases de datos, roles y todo servicio, mediante archivos de texto plano que pueden ser versionados, revisados y automatizados.
+No se utiliza los clics en interfaz web (peligro con los clics erróneos) sino por código. Definimos servidores,redes, bases de datos, roles y todo servicio, mediante archivos de texto plano que pueden ser versionados, revisados y automatizados. El crear la receta mayor se hará una única vez (dedicar tiempo en el desarrollo) y ya se puede cuantas veces querramos.
 
-Se usa terrafor, c
+Se usa terrafor, con lenguaje compilado? se puede utilizar con docker.
+
 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260619235908.png)
 
+# Fundamentos Infraestructura como código (IaC)
+Se busca que la estructura sea escrita, se puede versionar para usar en github para que varios trabajadores trabajen en conjunto, aprovisionar con códigos para que cloud pueda implementar la arquitectura.
+
+![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260620000217.png)
+
+
+# Fundamentos Paradigma IaC
+
+- **Imperativo:** La forma como se va a ejecutar, tiene un orden que lee de arriba hacia abajo.
+- **Declarativo:** Se le indi
 
 ---
 
