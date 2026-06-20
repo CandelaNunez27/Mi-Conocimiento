@@ -15,8 +15,23 @@ Se busca que la estructura sea escrita, se puede versionar para usar en github p
 
 - **Imperativo:** La forma como se va a ejecutar, tiene un orden que lee de arriba hacia abajo.
 - **Declarativo:** Se le indica lo que uno quiere y no importa en que orden lo ejecute, simplemente que lo realice.
-- 
-- **Mutable:** 
+
+- **Mutable:** Si podemos modificar las cosas existentes con parches en caliente, como cambiar nombre de algo. Puede generar inconsistencia.
+- **Inmutable:** Se debe borrar y subir ahora con las modificaciones. Garantiza coherencia absoluta. 
+
+![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260620003425.png)
+
+# Fundamentos Ahorro extremo
+El MLOps aparecion con los distintos modelos (machine learning, ...). machine learning usa mucho el servicio serverless. El MLOps era una tarea de full stack developer (saber de front y back), pero no remplaza  a los que trabajan en cloud. 
+
+![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260620004307.png)
+
+# Fundamentos Básicos de IaC
+
+
+
+
+
 
 ---
 
