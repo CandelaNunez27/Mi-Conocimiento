@@ -1,3 +1,5 @@
+# Teoría: La era serverless & MLOps
+
 # Fundamentos El código como base
 No se utiliza los clics en interfaz web (peligro con los clics erróneos) sino por código. Definimos servidores,redes, bases de datos, roles y todo servicio, mediante archivos de texto plano que pueden ser versionados, revisados y automatizados. El crear la receta mayor se hará una única vez (dedicar tiempo en el desarrollo) y ya se puede cuantas veces querramos.
 
@@ -27,7 +29,12 @@ El MLOps aparecion con los distintos modelos (machine learning, ...). machine le
 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260620004307.png)
 
 # Fundamentos Básicos de IaC
+Aparece Terraform que nos sirve para tener una arquitectura modificable. Si el desarrollo esta en aws y se quiere pasar a azure se debe cambiar algunos nombres nada más, por ende es facil el traspaso.  
+Para que funcionen los comandos de terraform se debe tener un archivo.tf, para descargarse los plugins, librerias y demas para instalarse.
 
+![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260620004449.png)
+
+# Práctica: Muestra de opciones Serverless. Ver si un archivo se puede exportar según lo que pese con Lambda
 
 
 
