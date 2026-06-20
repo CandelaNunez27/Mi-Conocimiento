@@ -451,3 +451,16 @@ En la pestaña JSON, pega la siguiente política de acceso (SQSQueueAccessPolicy
 (Alternativamente, puedes adjuntar la política administrada oficial de AWS llamada AWSLambdaSQSQueueExecutionRole que ya contiene estos permisos de forma genérica).
 
 
+
+---
+
+# Material de Clase
+
+
+
+
+---
+
+# Grabación de la Clase
+
+**Clase Grabada:** https://drive.google.com/file/d/1EzHYeqUH-3Nwb6OjusQ5J7pkBhUbo9eh/view?usp=sharing
