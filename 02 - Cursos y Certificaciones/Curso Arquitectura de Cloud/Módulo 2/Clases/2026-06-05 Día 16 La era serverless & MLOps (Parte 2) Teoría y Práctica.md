@@ -41,9 +41,12 @@ Para que funcionen los comandos de terraform se debe tener un archivo.tf, para d
 
 1. Tener:
 	Instalado docker y terraform.
-	Tener una carpera llamada cloudformation con un archivo s3-sns-sqs-lambda.yaml, que tiene un bloque de recursos (resources)
+	Tener una carpera llamada cloudformation con un archivo s3-sns-sqs-lambda.yaml, que tiene un bloque de recursos (resources) y un Outputs (opcional). Resources contiene la creacion del topico de SNS, la creacion del SQS, creacion de subscripcion SNS y SQS (con bloque properties) , creación de Politica de SQS, creación de bucket s3, creación de las politicas de SNS, Creación de rol de IAM para lambda, creación y inyeccion del codigo para la funcion lambda, Mapeo de eventos conectando SQS con la lambda.
 
+### Ejecución
 
+1. Abrir Terminal en la carperta cloudformation:
+	
 
 
 
