@@ -41,9 +41,20 @@ Se puede desglozar el main.tf para no tener código duplicado, para tener varios
 
 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260621185327.png)
 
-# Terraform El dueño 
+# Terraform El dueño del estado terraform.tfstate
+Todos los archivos .tf son todas las solucitudes que le pido a la nube, lo que deseo que este en aws. 
+terraform.tfstate lo que hace es ser el intermediario entre lo que deseamos con la realidad, detalla lo que tenemos realmente y sus id. No se toque los terraform.tfstate por eso se modifica los parametros directamente desde el main.tf.  y cuidado con modificar desde la consola web porque tambien puede causar error ya que terraform.tfstate no tendria la realizad.
+Al realizar destroit se crea un terraform.tfstate.backup por si fue un error. quedando terraform.tfstate en blanco o minimamente.
+
+![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260621191522.png)
+
+# Terraform Evolución y adopción
+En la práctica anterior teníamos un gran main.tf pero como vimos en el punto Terraform Variables y escalabilidad se puede estructurar. Para eso se generan varios archivos .tf, si necesito hacer algún cambio voy directo al archivo y área especifica.
+
+Tambien existe los tres pasos que se ven en la imagen para pasar una nube ya creada a terraform
 
 
+![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260621192008.png)
 
 
 
