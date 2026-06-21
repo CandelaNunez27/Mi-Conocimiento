@@ -92,7 +92,37 @@ Para que funcionen los comandos de terraform se debe tener un archivo.tf, para d
 	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260621024257.png)
 	nos vamos a monitorear > ver registros de cloudWach
 	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260621025307.png)
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260621025522.png)
 	
+
+
+# Prueba de subir archivo Terraform
+1. en interfaz web:
+	abrimos dos pestañas una con s3 y otra con lambda.  
+	s3 (formatec-ingesta-tf:
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260621024434.png)
+	Subimos los archivos
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260621024624.png)
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260621025901.png)
+	
+	
+	
+	lambda (ProcesadorMensajesSQS-TF):
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260621024257.png)
+	nos vamos a monitorear > ver registros de cloudWach
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260621030133.png)
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260621030602.png)
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260621030635.png)
+
+
+### Eliminar todo
+1. en terraform tirar `terraform destroy -auto-`
+
+
+
+
+
+
 
 ---
 # Guía del Profesor
