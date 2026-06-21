@@ -79,7 +79,10 @@ Para que funcionen los comandos de terraform se debe tener un archivo.tf, para d
 	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260621022051.png)
 	Esto tarda mucho menos que cloudformation que puede tardar 10 min y este lo hizo en 1 min.
 
-
+# Prueba de subir archivo
+1. en interfaz web:
+	s3 > 
+	lambd
 
 ---
 # Guía del Profesor
