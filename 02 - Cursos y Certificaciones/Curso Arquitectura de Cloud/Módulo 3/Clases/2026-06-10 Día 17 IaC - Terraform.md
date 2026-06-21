@@ -20,9 +20,23 @@ Tiene la ventaja de que es multinube y dockers. Además es modular por lo que es
 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260621182758.png)
 
 # Terraform Ciclo de Vida
-- `terraform init`: donde tengamos nuestro main.tf 
+- `terraform init`: donde tengamos nuestro main.tf, crea archivos para preparar el entorno de trabajo.
+- `terraform plan`: lee el código y detectara los recursos que se crearan, dando un resumen de lo que se crea, modifica y lo que se destruye. Detecta algunos errores.
+- `terraform apply`: lee y los crea. (crea la lista tf estate)
+- `terraform destroy`: para eliminar la estructura
 
 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260621183559.png)
+
+# Terraform Estructura de código
+
+- **Provider**: se le indica el proveedor nos permite conectar en la API de la nube.
+- **Resource**:es un tipo de bloque, el tipo de lo que quiero crear
+- **"aws_instance"**: es el tipo de recurso, que elemento especifico se usara
+- **"web_server"** es el nombre que le colocaremos y el que usaremos al llamarlo en otras instancias del código. No es lo mismo que el nombre que se vera en la web.
+
+![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260621184859.png)
+
+
 
 
 
