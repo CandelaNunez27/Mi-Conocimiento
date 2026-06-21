@@ -116,9 +116,21 @@ Para que funcionen los comandos de terraform se debe tener un archivo.tf, para d
 
 
 ### Eliminar todo
-1. en terraform tirar `terraform destroy -auto-`
+1. en terraform tirar `terraform destroy -auto-approve`
+![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260621031628.png)
+![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260621031740.png)
+![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260621031815.png)
+![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260621031911.png)
+![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260621032037.png)
+![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260621032106.png)
+![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260621032154.png)
+![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260621032259.png)
+![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260621032315.png)
 
-
+2. en cloudformation  tirar: 
+	```
+	
+	```
 
 
 
