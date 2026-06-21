@@ -96,8 +96,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "2c47654ff3f8d557",
@@ -225,8 +224,10 @@
   },
   "active": "9b0a208c56697b1d",
   "lastOpenFiles": [
-    "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 2/Clases/2026-06-03 Día 15 La era serverless & MLOps (Parte 1) Teoría y Práctica.md",
+    "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 1/Clases/2026-05-08 Día 8 Práctica.md",
+    "04 - Otros/Plantillas/Plantilla clases Cloud.md",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 2/Clases/2026-06-05 Día 16 La era serverless & MLOps (Parte 2) Teoría y Práctica.md",
+    "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 2/Clases/2026-06-03 Día 15 La era serverless & MLOps (Parte 1) Teoría y Práctica.md",
     "04 - Otros/Imagenes/Pasted image 20260620004449.png",
     "04 - Otros/Imagenes/Pasted image 20260620004307.png",
     "04 - Otros/Imagenes/Pasted image 20260620003425.png",
@@ -265,7 +266,6 @@
     "02 - Cursos y Certificaciones/Curso Python Educación IT/Módulo 1 Introducción/2° Parte/Resumen - Módulo 2 Fundamentos Lógicos de la Programación.md",
     "02 - Cursos y Certificaciones/Curso Python Educación IT/Módulo 1 Introducción/3° Parte/Resumen - Módulo 3 Interacción, Iteración y Modularidad.md",
     "02 - Cursos y Certificaciones/Curso Python Educación IT/Módulo 1 Introducción/4° Parte/Resumen - Módulo 4 Entornos, Lenguajes y Paradigmas.md",
-    "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 2/Clases/2026-05-13 Día 9 Estrategias de migración (Framework 6R).md",
     "02 - Cursos y Certificaciones/Curso Python Educación IT/Módulo 1 Introducción/4° Parte",
     "02 - Cursos y Certificaciones/Curso Python Educación IT/Módulo 1 Introducción/3° Parte",
     "02 - Cursos y Certificaciones/Curso Python Educación IT/Módulo 1 Introducción/2° Parte",

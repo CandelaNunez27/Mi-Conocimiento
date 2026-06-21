@@ -37,7 +37,70 @@ Para que funcionen los comandos de terraform se debe tener un archivo.tf, para d
 # Práctica: Muestra de opciones Serverless. Ver si un archivo se puede exportar según lo que pese con Lambda
 
 
+### Preparación
 
+1. Tener:
+	Instalado docker y terraform.
+	Tener una carpera llamada cloudformation con un archivo s3-sns-sqs-lambda.yaml, que tiene un bloque de recursos (resources)
+
+
+
+
+
+
+
+---
+# Guía del Profesor
+
+  
+
+💻 Automatización Opción A: AWS CloudFormation (IaC Nativa)
+
+  
+
+Esta plantilla de CloudFormation (s3-sns-sqs-lambda.yaml) despliega el flujo completo de forma 100% automatizada e incluye las políticas de permisos necesarias para la interconexión segura.
+
+  
+
+Ejecutar comando: aws cloudformation create-stack....
+
+  
+
+Subir archivos .csv al bucket
+
+  
+
+Ejecutar comando: aws cloudformation delete-stack
+
+  
+
+📦 Automatización Opción B: Terraform (IaC Agnóstica)
+
+  
+
+Esta es la configuración de Terraform (main.tf) equivalente para el mismo aprovisionamiento. Permite explicarles a los alumnos la diferencia entre el enfoque declarativo puro de CloudFormation (JSON/YAML) frente al lenguaje HCL estructurado y modular de HashiCorp.
+
+  
+
+correr estos comandos:
+
+terraform init
+
+  
+
+terraform plan
+
+  
+
+terraform apply
+
+  
+
+Subir archivos .csv al bucket
+
+  
+
+terraform destroy
 
 
 ---
