@@ -173,6 +173,7 @@ Ahora le agregamos el Trigger (desencadenador) que es el SQS, para ello nos vamo
 
 3. S3
 	En otra pestaña nos vamos al S3, Y le subimos el archivo CSV que tengamos (yo los genere con ia que le pedi que me dira dos una de 380bytes y otro de 175bytes), primero subimos el de 175b, y nos fijamos en las metricas de monitoreo cambian
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260621024720.png)
 	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260609023829.png)
 
 4. Metrias al subir el 175bytes
