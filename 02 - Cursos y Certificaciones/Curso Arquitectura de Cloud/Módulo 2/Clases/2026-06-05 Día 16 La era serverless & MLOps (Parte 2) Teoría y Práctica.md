@@ -70,11 +70,14 @@ Para que funcionen los comandos de terraform se debe tener un archivo.tf, para d
 	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260620234905.png)
 	`terraform plan` para que muestre lo que va a crear (verde es crear, amarrillo es modificar y rojo eliminar)
 	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260621020813.png)
-	
-	```
-	terraform init
-	```
-	
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260621020933.png)
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260621021018.png)
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260621021053.png)
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260621021129.png)
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260621021201.png)
+	``terraform apply -auto-approve`
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260621022051.png)
+	Esto tarda mucho menos que cloudformation que puede tardar 10 min y este lo hizo en 1 min.
 
 
 
