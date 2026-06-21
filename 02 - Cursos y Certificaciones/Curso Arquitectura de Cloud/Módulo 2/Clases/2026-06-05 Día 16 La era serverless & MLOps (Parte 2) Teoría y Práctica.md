@@ -65,9 +65,11 @@ Para que funcionen los comandos de terraform se debe tener un archivo.tf, para d
 ### Ejecución de Terraform
 
 1. Abrir Terminal en la carpeta  terraform:
-	`terraform init`
+	`terraform init` 
 		
 	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260620234905.png)
+	`terraform plan` para que muestre lo que va a crear (verde es crear, amarrillo es modificar y rojo eliminar)
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260621020813.png)
 	
 	```
 	terraform init
