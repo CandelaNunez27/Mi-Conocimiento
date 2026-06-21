@@ -6,7 +6,25 @@ IaC quiere dejar los clics para pasar a código, por lo tardio que es hacerlo po
 
 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260621182152.png)
 
-# Fundamentos Paragi
+# Fundamentos Paradigma
+- **CloudFormations:** Una receta / Check list que se ejecuta en orden / pila de acciones. El código la hace de manera secuencial, leyendo y ejecutando.
+- **Terraform:** no hace un plan de acción de despliegue, ve como despegarlos de la manera más rápida posible.
+
+![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260621182714.png)
+
+# Fundamentos Terraform
+Terraform domina el mercado, las otras seria cloudformation, opentofu, kurumi, etc. Creado por HashiCorp y utiliza un lenguaje específico de dominio (DSL) llamado HCL (HashiCorp Configuration Language) Además, soporta de forma nativa la sintaxis JSON.
+
+Tiene la ventaja de que es multinube y dockers. Además es modular por lo que es especializado según la nube y la traducción de cambiar de nube es simple, se utiliza alguna IA que lo traduzca.
+
+![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260621182758.png)
+
+# Terraform Ciclo de Vida
+- `terraform init`: donde tengamos nuestro main.tf 
+
+![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260621183559.png)
+
+
 
 
 # Práctica: sawkl
