@@ -1,4 +1,4 @@
-# Teoría: Terraform
+# IaC - Terraform
 
 # Fundamentos IaC
 Aws tiene Cloudformation y las demás se enfocaron en terraform
@@ -51,23 +51,19 @@ Al realizar destroit se crea un terraform.tfstate.backup por si fue un error. qu
 # Terraform Evolución y adopción
 En la práctica anterior teníamos un gran main.tf pero como vimos en el punto Terraform Variables y escalabilidad se puede estructurar. Para eso se generan varios archivos .tf, si necesito hacer algún cambio voy directo al archivo y área especifica.
 
-Tambien existe los tres pasos que se ven en la imagen para pasar una nube ya creada a terraform
+También existe los tres pasos que se ven en la imagen para pasar una nube ya creada a terraform
+1. Definir la carcasa: Escribir un bloque vació en el archivo .tf
+	`resource "aws_instance" "server_web" {}
 
+2. Captura vincular el nombre con el ID real de la nube (se coloca la secuencia de caracteres en id)
+	`terraform import aws_instance.server_web "id"`
+
+3. Extracción de ADN: leer el estado capturado para extraer los valores reales y rellenar el archivo HCL. Terraform es ahora el dueño.
+	`terraform state show aws_instance.server_web`
 
 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260621192008.png)
 
 
-
-# Práctica: sawkl
-### hsk
-
-1. sdssdf:
-	sdsld
-
----
-# Guía del Profesor
-
-  
 ---
 
 # Material de Clase
