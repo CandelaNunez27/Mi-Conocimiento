@@ -129,8 +129,15 @@ Para que funcionen los comandos de terraform se debe tener un archivo.tf, para d
 
 2. en cloudformation  tirar: 
 	```
-	
+	aws cloudformation delete-stack --stack-name Lab-FormaTEC-Infra
 	```
+
+![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260621032554.png)
+
+![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260621032645.png)
+tirara error porque hay que borrar el contenido de dentro de los bucks, en terraform se le habia habilitado el permiso de borrar todo hasta con contenido. por lo que volvemos a intentarlo luego de borrar los archivos.
+
+![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260621032918.png)
 
 
 
