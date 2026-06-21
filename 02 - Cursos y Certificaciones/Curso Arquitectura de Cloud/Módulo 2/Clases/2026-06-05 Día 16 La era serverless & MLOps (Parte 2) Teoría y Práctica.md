@@ -60,16 +60,14 @@ Para que funcionen los comandos de terraform se debe tener un archivo.tf, para d
 
 1. Tener:
 	Instalado docker y terraform.
-	Tener una carpera llamada terraform con un archivo main.tf, que tiene un bloque de recursos (resources) y un Outputs (opcional). Resources contiene la configuracion de proveedor del topico de SNS, la creacion del SQS, creacion de subscripcion SNS y SQS (con bloque properties) , creación de Politica de SQS, creación de bucket s3, creación de las politicas de SNS, Creación de rol de IAM para lambda, creación y inyeccion del codigo para la funcion lambda, Mapeo de eventos conectando SQS con la lambda.
+	Tener una carpeta llamada terraform con un archivo lambda_funtion_payload.zip y un archivo main.tf, que contiene la configuración de proveedor (colocar que usarmos aws y qué region), creacion del topico de SNS, la creacion del SQS, creacion de subscripcion SNS y SQS (con bloque properties) , creación de Politica de SQS, creación de bucket s3,crear notificacion de backet a sns, creación de las politicas de SNS para entrada desde s3, Creación de rol de IAM para lambda, creación y inyeccion del .zip para la funcion lambda, Mapeo de eventos conectando SQS con la lambda.
 
 ### Ejecución de Terraform
 
-1. Abrir Terminal en la carperta cloudformation:
+1. Abrir Terminal en la carpeta  terraform:
 	```
-	aws cloudformation create-stack \
-      --stack-name Lab-FormaTEC-Infra \
-      --template-body file://s3-sns-sqs-lambda.yml \
-      --capabilities CAPABILITY_IAM
+	terraform init
+	
 	```
 	
 
