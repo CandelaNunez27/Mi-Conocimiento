@@ -27,14 +27,25 @@ Es desplegar uno o miles debe ser la misma con el mismo archivo de configuració
 
 # Fundamentos Los pilares de Ansible
 
-Ansible es open source y de código abierto, sin necesidad de gastar recursos instalando agentes, configuracion simple con curva de aprendizaje fácil si ya estas familiarizado  con los archivos yaml 
+Ansible es open source y de código abierto, sin necesidad de gastar recursos instalando agentes, configuración simple con curva de aprendizaje fácil si ya estas familiarizado  con los archivos yaml/json, se puede complementar con APIs como API de aws permitiendo configuraciones de servidores en nube, idempotencia para deslegar n configuraciones sobre n servidores.
 
+![](04%20-%20Otros/Imagenes/Pasted%20image%2020260622180500.png)
 
+# Fundamentos Conceptos necesarios
 
+Explicación del funcionamiento Ansible:
+- Dónde?: Contiene un inventariado que es un archivo que contiene las IP, DNS, o grupos de los servidores
+- Con qué?: Con modulos son herramientas que se elijen segun la necesidad, por ejemplo el modulo de apache porque sera un servidor web. estos modulos van a descargarlos.
+- Cómo?: Con Playbook que es el archivo yaml/json que es la receta de como se procesara las acciones deseadas. 
 
+![](04%20-%20Otros/Imagenes/Pasted%20image%2020260622181216.png)
 
+# Ejemplo La receta Palaybook (yaml)
 
+Se muestra el inventario junto la receta porque es solo uno, pero si hay muchas direcciones se necesita un archivo aparte para buena practica.
+Definimos la tareas con el name, llamamos al modulo que es la herramienta apt (herramienta para instalar cosas en ubuntu) 
 
+![](04%20-%20Otros/Imagenes/Pasted%20image%2020260622181343.png)
 
 
 
