@@ -98,7 +98,7 @@ https://docs.ansible.com/projects/ansible/latest/installation_guide/installation
 2. `sudo pacman -S ansible`
 
 3. `ansible --version`
-
+![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260622194659.png)
 
 ### Instalar minikube
 
