@@ -116,8 +116,31 @@ Fin de muestra de preparación de entorno en killercode.
 ### Preparación
 
 1. tener instalado docker, terraform, minikube
+
 2. Tener:
-	Carpeta terraform-docker con 
+	Carpeta terraform-docker con un main.tf , outputs.tf , providers.tf , variables.tf
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260621221309.png)
+
+3. Abrir terminal en esa ubicación y ejecutar `terraform init`, que nos creara algunos archivos. 
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260621221253.png)
+
+4.  nos salio un error al darle `terraform plan` por ello tiramos `sudo chmod 666 /var/run/docker.sock`
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260621222035.png)
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260621222140.png)
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260621222216.png)
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260621222232.png)
+	
+
+
+
+
+
+
+
+
+
+
+
 
 
 
