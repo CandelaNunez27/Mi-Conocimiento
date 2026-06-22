@@ -277,42 +277,21 @@ Fin de muestra de preparación de entorno en killercode.
 	 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260622005124.png)
 	 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260622005155.png)
 	 
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260622005612.png)
+
+5. `terraform plan`
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260622010002.png)
+
+6. ``terraform apply -auto-approve`
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260622010357.png)
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260622010453.png)
 	
 
-6. `terraform apply -auto-approve` lo creara 
-	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260621230954.png)
-	
-	
-	Nos vamos al navegador para ver si se creo la instancia aws > ec2. También ingresamos a su ip púplica
-	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260621231348.png)
-	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260621231641.png)
-
-
-### Qué pasa si se modifica el contenido para cambiar la fecha
-
-1. Nos vamos al archivo main.tf y modificamos el contenido del apache http
-	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260621231855.png)
-	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260621232003.png)
-	
-
-2. `terraform plan` veamos que muestra y que cambio
-	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260621232339.png)
-	Nos muestra que solo va a modificar, ya que no tocamos infraestructura sino solo el index de apache, por ende no es necesario destruir.
-
-3. `terraform apply -auto-approve` `
-	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260621232927.png)
-	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260621233012.png)
-	
-	
 
 ### Borrar
 
-1. Mostramos como terraform.tfstate esta antes y despues de tirar `terrafrom destroy -auto-approve`
+1. Mostramos como terraform.tfstate despues de tirar `terrafrom destroy -auto-approve`
 	terraform.tfstate cuando esta todo desplegado
-	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260621224525.png)
-	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260621224558.png)
-	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260621224630.png)
-	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260621224715.png)
 	
 	terraform.tfstate despues de destroy
 	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260621224859.png)
