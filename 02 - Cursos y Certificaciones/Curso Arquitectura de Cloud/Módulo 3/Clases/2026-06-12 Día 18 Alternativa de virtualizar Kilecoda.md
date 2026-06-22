@@ -64,6 +64,37 @@ https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli
 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260621212207.png)
 
 2. nos movemos a la carpeta de terraform
+![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260621212506.png)
+
+3. `systemctl status docker`
+![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260621212633.png)
+
+
+4.  `systemctl star docker`
+
+
+
+### Instalar ansible
+
+https://docs.ansible.com/projects/ansible/latest/installation_guide/installation_distros.html
+
+1. `sudo apt update`
+![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260621213053.png)
+
+2. `sudo apt install -y software-properties-common`
+![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260621213210.png)
+
+3. `sudo add-apt-repository --yes --update ppa:ansible/ansible`
+![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260621213311.png)
+
+
+
+4. `sudo apt install -y ansible`
+![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260621213516.png)
+![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260621213458.png)
+
+5. `ansible --version`
+![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260621213550.png)
 
 
 ---
