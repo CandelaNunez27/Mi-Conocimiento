@@ -224,11 +224,17 @@ Fin de muestra de preparación de entorno en killercode.
 	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260622012408.png)
 	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260622012445.png)
 	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260622012528.png)
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260622012553.png)
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260622012711.png)
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260622012741.png)
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260622012809.png)
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260622012828.png)
 	
 	terraform.tfstate despues de destroy
-	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260621224859.png)
-	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260621224913.png)
-	
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260622013042.png)
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260622013101.png)
+
+
 
 
 
