@@ -149,16 +149,33 @@ Fin de muestra de preparación de entorno en killercode.
 2. `terraform plan` veamos que muestra y que cambio
 	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260621223729.png)
 	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260621223750.png)
-	Nos mue
+	Nos muestra que va a destruir para modificar
 
+3. `terraform apply -auto-approve` `
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260621224040.png)
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260621224122.png)
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260621224151.png)
+	
 
+### Borrar
 
-
-
+1. Mostramos como terraform.tfstate esta antes y despues de tirar `terrafrom destroy -auto-approve`
+	terraform.tfstate cuando esta todo desplegado
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260621224525.png)
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260621224558.png)
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260621224630.png)
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260621224715.png)
+	
+	terraform.tfstate despues de destroy
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260621224859.png)
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260621224913.png)
+	
 
 # Práctica: Despliegue de terreform  con aws
 
+### Despliegue en terraform aws
 
+1. nos movemos a la carpeta terraforms-aws
 
 
 
@@ -221,23 +238,23 @@ docker-infra/
 
   
 
-# 1. Crear y acceder a la carpeta del proyecto
+### 1. Crear y acceder a la carpeta del proyecto
 
 mkdir docker-infra && cd docker-infra
 
   
 
-# 2. Crear los 4 archivos descritos en el Canvas (providers.tf, variables.tf, main.tf, outputs.tf) con sus respectivos códigos
+### 2. Crear los 4 archivos descritos en el Canvas (providers.tf, variables.tf, main.tf, outputs.tf) con sus respectivos códigos
 
   
 
-# 3. Inicializar el proveedor de Docker local
+### 3. Inicializar el proveedor de Docker local
 
 terraform init
 
   
 
-# 4. Ver los recursos que se van a crear
+### 4. Ver los recursos que se van a crear
 
 terraform plan
 
