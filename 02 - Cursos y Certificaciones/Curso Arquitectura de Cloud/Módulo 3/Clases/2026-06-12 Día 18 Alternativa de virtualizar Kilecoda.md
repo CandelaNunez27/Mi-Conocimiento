@@ -267,9 +267,19 @@ Fin de muestra de preparación de entorno en killercode.
 	
 
 4.   `terraform import aws_instance.servidor_importado i-06ffb6473c6206621` 
-	el 
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260622004330.png)
+	Es inteligente terraform que con la sentencia aws_instance.servidor_importado creara el terraform.tfstate
 
-5. `terraform apply -auto-approve` lo creara y ademas creara el terraform.tfstate
+5. buscar los parametros minimos
+	nos vamos a  terraform.tfstate ctrl + h y buscamos ami y type porque en el main.tf se necesita los requisitos mínimos y necesarios que son el ami y el instance_type
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260622004940.png)
+	 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260622005527.png)
+	 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260622005124.png)
+	 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260622005155.png)
+	 
+	
+
+6. `terraform apply -auto-approve` lo creara 
 	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260621230954.png)
 	
 	
