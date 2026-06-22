@@ -1,14 +1,37 @@
-# Teoría: sawkp
 
-# Fundamentos sdjaksl
-
-
-
-# Práctica: sawkl
+# Práctica: Terraform + Ansible en AWS
 ### Preparación
 
-1. sdssdf:
-	sdsld
+1. Tener:
+	carpeta con archivo host.ini (el incentario dirección IP del ec2), main.tf (la estructura desplegada por terraform), deploy.yml (tareas y configuraciones que le indicaremos con ansible).
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260622201953.png)
+
+2. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ---
 # Guía del Profesor
