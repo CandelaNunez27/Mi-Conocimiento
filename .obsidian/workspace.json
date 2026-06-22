@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 3/Clases/2026-06-12 Día 18 Alternativa de virtualizar Kilecoda.md",
+                "file": "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 3/Clases/2026-06-19 Día 20 Práctica Terraform y Ansible.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026-06-12 Día 18 Alternativa de virtualizar Kilecoda"
+              "title": "2026-06-19 Día 20 Práctica Terraform y Ansible"
             }
           }
         ]
@@ -33,7 +33,7 @@
       {
         "id": "f73fb1b7698164d6",
         "type": "tabs",
-        "dimension": 78.8,
+        "dimension": 75.4,
         "children": [
           {
             "id": "e6bb5d90017c09e9",
@@ -78,9 +78,9 @@
         ]
       },
       {
-        "id": "34f2f0798cfda3ea",
+        "id": "308942dea98d7ba7",
         "type": "tabs",
-        "dimension": 21.2,
+        "dimension": 24.6,
         "children": [
           {
             "id": "857d4a252756a637",
@@ -224,11 +224,17 @@
   },
   "active": "9b0a208c56697b1d",
   "lastOpenFiles": [
-    "04 - Otros/Imagenes/Pasted image 20260622194659.png",
-    "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 3/Clases/2026-06-10 Día 17 IaC - Terraform.md",
-    "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 3/Clases/2026-06-12 Día 18 Alternativa de virtualizar Kilecoda.md",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 3/Clases/2026-06-17 Día 19 Gestión de configuraciones Ansible.md",
+    "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 3/Clases/2026-06-19 Día 20 Práctica Terraform y Ansible.md",
+    "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 3/Clases/2026-06-12 Día 18 Alternativa de virtualizar Kilecoda.md",
     "04 - Otros/Tutorial.md",
+    "04 - Otros/Plantillas/Plantilla clases Cloud.md",
+    "04 - Otros/Plantillas/Examen Corto Plantilla.md",
+    "04 - Otros/Plantillas/Examen largo plantilla.md",
+    "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 3/Clases/2026-06-10 Día 17 IaC - Terraform.md",
+    "02 - Cursos y Certificaciones/Curso Python Educación IT/Módulo 1 Introducción/Examen Integrador.md",
+    "01 - Tec Redes Datos y Telecom/2º Año/01 - Redes/Portafolio Redes/01 - Laboratorio - Análisis de Capa de Enlace (Wireshark y ARP).md",
+    "04 - Otros/Imagenes/Pasted image 20260622194659.png",
     "04 - Otros/Imagenes/Pasted image 20260622181343.png",
     "04 - Otros/Imagenes/Pasted image 20260622181216.png",
     "04 - Otros/Imagenes/Pasted image 20260622180500.png",
@@ -238,7 +244,6 @@
     "04 - Otros/Imagenes/Pasted image 20260622173146.png",
     "04 - Otros/Imagenes/Pasted image 20260622013101.png",
     "04 - Otros/Imagenes/Pasted image 20260622013042.png",
-    "04 - Otros/Imagenes/Pasted image 20260622012828.png",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 1/Clases/2026-04-29 Día 5 Redes en la Nube.md",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 1/Clases/2026-04-24 Día 4 Práctica.md",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 1/Clases/2026-04-22 Día 3 Introducción La Nube.md",
@@ -248,7 +253,6 @@
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 2/Clases/2026-06-05 Día 16 La era serverless & MLOps (Parte 2) Teoría y Práctica.md",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 2/Clases/2026-06-03 Día 15 La era serverless & MLOps (Parte 1) Teoría y Práctica.md",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 1/Clases/2026-05-08 Día 8 Práctica.md",
-    "04 - Otros/Plantillas/Plantilla clases Cloud.md",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 2/Clases/2026-05-29 Día 14 Práctica.md",
     "01 - Tec Redes Datos y Telecom/2º Año/00- Índice/00 - Redes.md",
     "01 - Tec Redes Datos y Telecom/2º Año/01 - Redes/Módulo 1.2/02 - Switches Ethernet y Diseño de Redes.md",
@@ -256,15 +260,11 @@
     "01 - Tec Redes Datos y Telecom/2º Año/01 - Redes/Módulo 1.2/03 - Herramientas de Diagnóstico y Análisis de Tráfico.md",
     "01 - Tec Redes Datos y Telecom/1° Año/00 - Índice/00 - Arquitectura de Computadoras.md",
     "01 - Tec Redes Datos y Telecom/2º Año/01 - Redes/Módulo 1.1/03 - Utilidades de Red y Linux.md",
-    "01 - Tec Redes Datos y Telecom/2º Año/01 - Redes/Portafolio Redes/01 - Laboratorio - Análisis de Capa de Enlace (Wireshark y ARP).md",
     "01 - Tec Redes Datos y Telecom/2º Año/01 - Redes/Módulo 1.1/01 - Equipos de Interconexión y medios.md",
     "01 - Tec Redes Datos y Telecom/2º Año/01 - Redes/Módulo 1.2",
     "01 - Tec Redes Datos y Telecom/2º Año/01 - Redes/Módulo 1.1/02 - Hardware de Red e Interfaces Cisco.md",
-    "01 - Tec Redes Datos y Telecom/2º Año/00- Índice/Equipos de Interconexion de Red.md",
-    "01 - Tec Redes Datos y Telecom/1° Año/01 - Arquitectura de Computadoras/Módulo 1.1/03 - Codificación y Representación de Datos.md",
     "01 - Tec Redes Datos y Telecom/2º Año/01 - Redes/Portafolio Redes",
     "01 - Tec Redes Datos y Telecom/2º Año/01 - Redes/Módulo 1.1",
-    "01 - Tec Redes Datos y Telecom/1° Año/01 - Arquitectura de Computadoras/Módulo 1.1/02 - Sistemas de Numeración.md",
     "01 - Tec Redes Datos y Telecom/2º Año/01 - Redes",
     "01 - Tec Redes Datos y Telecom/2º Año/00- Índice",
     "01 - Tec Redes Datos y Telecom/2º Año",

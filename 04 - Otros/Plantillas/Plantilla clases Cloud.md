@@ -2,8 +2,10 @@
 
 # Fundamentos sdjaksl
 
+
+
 # Práctica: sawkl
-### hsk
+### Preparación
 
 1. sdssdf:
 	sdsld

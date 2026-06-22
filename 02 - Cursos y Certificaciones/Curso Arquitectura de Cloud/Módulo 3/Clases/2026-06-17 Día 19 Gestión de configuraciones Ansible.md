@@ -2,7 +2,7 @@
 
 # Fundamentos Ansible
 
-**Ansible:** (Automatización Sistémica) desmitificando Ansible de la configuracion manual a la intraestructura como documentacion legible. Se ve mucho en infraestructuras hibridas, busca que las configuraciones no sean manuales sino por código automatizadas. Automatiza los despliegues masivos con configuraciones yaml o json, instala y orquesta servicios automaticamente, 
+**Ansible:** (Automatización Sistémica) desmitificando Ansible de la configuracion manual a la intraestructura como documentacion legible. Se ve mucho en infraestructuras hibridas, busca que las configuraciones no sean manuales sino por código automatizadas. Automatiza los despliegues masivos con configuraciones yaml o json, instala y orquesta servicios automaticamente.
 
 ![](04%20-%20Otros/Imagenes/Pasted%20image%2020260622173146.png)
 
