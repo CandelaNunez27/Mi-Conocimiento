@@ -192,23 +192,23 @@ Fin de muestra de preparación de entorno en killercode.
 	
 
 4. `terraform apply -auto-approve` lo creara y ademas creara el terraform.tfstate
-	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260621222737.png)
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260621230954.png)
 	
-	Vemos el `docker ps` y ingresamos a la url desde un navegador
-	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260621223012.png)
-	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260621223113.png)
 	
+	Nos vamos al navegador para ver si se creo la instancia aws > ec2. También ingresamos a su ip púplica
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260621231348.png)
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260621231641.png)
 
 
-### Qué pasa si se modifica el puerto
+### Qué pasa si se modifica el contenido para cambiar la fecha
 
-1. Nos vamos al archivo variables.tf y modificamos el puerto a 8081 -> 8082
-	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260621223513.png)
+1. Nos vamos al archivo main.tf y modificamos el contenido del apache http
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260621231855.png)
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260621232003.png)
 	
 
 2. `terraform plan` veamos que muestra y que cambio
-	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260621223729.png)
-	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260621223750.png)
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260621232339.png)
 	Nos muestra que va a destruir para modificar
 
 3. `terraform apply -auto-approve` `
