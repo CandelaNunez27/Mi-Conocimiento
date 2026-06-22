@@ -13,8 +13,21 @@ Pero Ansible complementa siendo el ejecutor de configuraciones (s.o listo, confi
 
 ![](04%20-%20Otros/Imagenes/Pasted%20image%2020260622173456.png)
 
+# Fundamentos Ventajas
 
+Arquitectura sin agentes, no hace falta instalar ningún agentes en las maquinas y el controlador es unidireccional conectando con ssh o modelo push en windows. También se podria configurar routers o switch configurables que entiendan Python.
 
+![](04%20-%20Otros/Imagenes/Pasted%20image%2020260622175430.png)
+
+# Fundamentos Idempotencia
+
+Es desplegar uno o miles debe ser la misma con el mismo archivo de configuración, como multiplicar con cero siempre es cero. O sea que si desplegamos siemple el mismo archivo de configuración siempre desplegara iguales.
+
+![](04%20-%20Otros/Imagenes/Pasted%20image%2020260622175607.png)
+
+# Fundamentos Los pilares de Ansible
+
+Ansible es open source y de código abierto, sin necesidad de gastar recursos instalando agentes, configuracion simple con curva de aprendizaje fácil si ya estas familiarizado  con los archivos yaml 
 
 
 
@@ -72,3 +85,5 @@ Pero Ansible complementa siendo el ejecutor de configuraciones (s.o listo, confi
 # Grabación de la Clase
 
 **Clase Grabada:** 
+PARTE A: https://drive.google.com/file/d/1AoSZhOXa84f3YQbpy-W1nfYdmiUmJNVD/view?usp=sharing
+PARTE B https://drive.google.com/file/d/1OI3tA-8F1qUPwozQsL25rooUsqd-dwDZ/view?usp=sharing
