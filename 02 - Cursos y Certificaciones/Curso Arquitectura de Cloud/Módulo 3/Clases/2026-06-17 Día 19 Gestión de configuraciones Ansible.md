@@ -43,45 +43,9 @@ Explicación del funcionamiento Ansible:
 # Ejemplo La receta Palaybook (yaml)
 
 Se muestra el inventario junto la receta porque es solo uno, pero si hay muchas direcciones se necesita un archivo aparte para buena practica.
-Definimos la tareas con el name, llamamos al modulo que es la herramienta apt (herramienta para instalar cosas en ubuntu) 
+Definimos la tareas con el name, llamamos al modulo que es la herramienta apt (herramienta para instalar cosas en ubuntu). El estado present le indica que simpre tiene que esta presente por lo que ayuda a la idempotencia en los 10 servidores.
 
 ![](04%20-%20Otros/Imagenes/Pasted%20image%2020260622181343.png)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# Práctica: sawkl
-### hsk
-
-1. sdssdf:
-	sdsld
-
-
-
-
-
-
-
----
-# Guía del Profesor
 
   
 ---

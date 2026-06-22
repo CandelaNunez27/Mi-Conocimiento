@@ -91,6 +91,15 @@ https://docs.ansible.com/projects/ansible/latest/installation_guide/installation
 5. `ansible --version`
 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260621213550.png)
 
+### Instalar ansible para mi cachyOS
+
+1. `sudo pacman -Syu`
+
+2. `sudo pacman -S ansible`
+
+3. `ansible --version`
+
+
 ### Instalar minikube
 
 https://minikube.sigs.k8s.io/docs/start/?arch=%2Flinux%2Fx86-64%2Fstable%2Fbinary+download
