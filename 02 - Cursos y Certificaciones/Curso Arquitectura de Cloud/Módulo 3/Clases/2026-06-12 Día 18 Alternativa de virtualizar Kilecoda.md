@@ -107,10 +107,121 @@ sudo install minikube-linux-amd64 /usr/local/bin/minikube && rm minikube-linux-a
 minikube start
 ```
 
+Fin de muestra de preparación de entorno en killercode.
+
+---
+
+# Práctica: Despliegue de terreform  con docker, aws y import
+
+### Preparación
+
+1. tener instalado docker, terraform, minikube
+2. Tener:
+	Carpeta terraform-docker con 
+
+
+
+# Práctica: Despliegue de terreform  con aws
+
+
+
+
+
+
+# Práctica: Despliegue de terreform  con import
+
+
+
+
 
 
 ---
 # Guía del Profesor
+# Terraform
+
+Cuando trabajamos con Terraform de manera profesional en la industria, no escribimos todo en un único archivo gigante. En su lugar, dividimos el código en archivos especializados para maximizar la legibilidad, mantenibilidad y modularidad:
+
+  
+
+## providers.tf
+
+Configura los requerimientos de la versión de Terraform y declara los proveedores (plugins) necesarios para comunicarse con las APIs del exterior (AWS, GCP, Docker, etc.). Separa el cómo nos conectamos de la infraestructura en sí.
+
+  
+
+## variables.tf
+
+Declara las variables de entrada que el proyecto aceptará. Funciona como el "plano estructural" y los parámetros de configuración parametrizables, evitando escribir valores fijos (hardcoded) en el código.
+
+  
+
+## terraform.tfvars
+
+Contiene las asignaciones de valores reales para las variables definidas en variables.tf. Nunca se debe subir a Git si contiene secretos o claves de acceso.
+
+  
+
+## main.tf
+
+Es el núcleo operativo de nuestro despliegue. Aquí se declaran los recursos reales (máquinas virtuales, firewalls, redes, contenedores) que se van a construir.
+
+  
+
+## outputs.tf
+
+Define la información que Terraform imprimirá en pantalla al terminar con éxito el aprovisionamiento de recursos. Se usa para extraer IPs públicas, URIs de bases de datos o IDs de recursos útiles para el usuario o para canalizaciones de CI/CD.
+
+
+# Terraform-docker
+
+docker-infra/
+
+├── providers.tf
+
+├── variables.tf
+
+├── main.tf
+
+└── outputs.tf
+
+  
+
+# 1. Crear y acceder a la carpeta del proyecto
+
+mkdir docker-infra && cd docker-infra
+
+  
+
+# 2. Crear los 4 archivos descritos en el Canvas (providers.tf, variables.tf, main.tf, outputs.tf) con sus respectivos códigos
+
+  
+
+# 3. Inicializar el proveedor de Docker local
+
+terraform init
+
+  
+
+# 4. Ver los recursos que se van a crear
+
+terraform plan
+
+  
+
+# 5. Desplegar el contenedor de Nginx
+
+terraform apply -auto-approve
+
+  
+
+# 6. Probar en tu navegador ingresando a http://localhost:8081
+
+  
+
+# 7. Destruir el contenedor y limpiar tu máquina local al finalizar la clase
+
+terraform destroy -auto-approve
+
 
   
 ---
