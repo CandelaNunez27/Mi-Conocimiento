@@ -70,10 +70,6 @@ https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli
 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260621212633.png)
 
 
-4.  `systemctl star docker`
-
-
-
 ### Instalar ansible
 
 https://docs.ansible.com/projects/ansible/latest/installation_guide/installation_distros.html
@@ -88,13 +84,29 @@ https://docs.ansible.com/projects/ansible/latest/installation_guide/installation
 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260621213311.png)
 
 
-
 4. `sudo apt install -y ansible`
 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260621213516.png)
 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260621213458.png)
 
 5. `ansible --version`
 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260621213550.png)
+
+### Instalar minikube
+
+https://minikube.sigs.k8s.io/docs/start/?arch=%2Flinux%2Fx86-64%2Fstable%2Fbinary+download
+
+1. 
+```shell
+curl -LO https://github.com/kubernetes/minikube/releases/latest/download/minikube-linux-amd64
+sudo install minikube-linux-amd64 /usr/local/bin/minikube && rm minikube-linux-amd64
+```
+![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260621214530.png)
+
+2. 
+```shell
+minikube start
+```
+
 
 
 ---
