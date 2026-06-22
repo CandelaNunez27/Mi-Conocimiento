@@ -266,12 +266,8 @@ Fin de muestra de preparación de entorno en killercode.
 	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260622000623.png)
 	
 
-4.   `terraform plan`
-	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260621230537.png)
-	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260621230708.png)
-	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260621230727.png)
-	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260621230744.png)
-	
+4.   `terraform import aws_instance.servidor_importado i-06ffb6473c6206621` 
+	el 
 
 5. `terraform apply -auto-approve` lo creara y ademas creara el terraform.tfstate
 	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260621230954.png)
