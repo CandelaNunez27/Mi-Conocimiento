@@ -235,9 +235,82 @@ Fin de muestra de preparación de entorno en killercode.
 
 # Práctica: Despliegue de terreform  con import Importar Infraestructura Existente a Terraform
 
+### Preparación
+
 1. tener: 
 	Carpeta terraforms-import con un main.tf
 	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260621233856.png)
+
+2. Abrir terminal en esa ubicación y ejecutar lo siguiente para crear una instancia desde consola
+	```
+	aws ec2 run-instances \
+
+--image-id ami-03120525e2a3df46f \
+
+--count 1 \
+
+--instance-type t3.micro \
+
+--tag-specifications 'ResourceType=instance,Tags=[{Key=Name,Value=ServidorAAdoptar}]' \
+
+--query "Instances[0].InstanceId" \
+
+--output text
+	```
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260621234248.png)
+	Nos vamos a la consola web para ver si creo
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260621234505.png)
+
+
+3. `terraform init`, que nos creara algunos archivos. 
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260621230156.png)
+
+4.   `terraform plan`
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260621230537.png)
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260621230708.png)
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260621230727.png)
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260621230744.png)
+	
+
+5. `terraform apply -auto-approve` lo creara y ademas creara el terraform.tfstate
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260621230954.png)
+	
+	
+	Nos vamos al navegador para ver si se creo la instancia aws > ec2. También ingresamos a su ip púplica
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260621231348.png)
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260621231641.png)
+
+
+### Qué pasa si se modifica el contenido para cambiar la fecha
+
+1. Nos vamos al archivo main.tf y modificamos el contenido del apache http
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260621231855.png)
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260621232003.png)
+	
+
+2. `terraform plan` veamos que muestra y que cambio
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260621232339.png)
+	Nos muestra que solo va a modificar, ya que no tocamos infraestructura sino solo el index de apache, por ende no es necesario destruir.
+
+3. `terraform apply -auto-approve` `
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260621232927.png)
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260621233012.png)
+	
+	
+
+### Borrar
+
+1. Mostramos como terraform.tfstate esta antes y despues de tirar `terrafrom destroy -auto-approve`
+	terraform.tfstate cuando esta todo desplegado
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260621224525.png)
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260621224558.png)
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260621224630.png)
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260621224715.png)
+	
+	terraform.tfstate despues de destroy
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260621224859.png)
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260621224913.png)
+	
 
 
 
