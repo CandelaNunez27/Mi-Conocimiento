@@ -129,15 +129,27 @@ Fin de muestra de preparación de entorno en killercode.
 	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260621222140.png)
 	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260621222216.png)
 	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260621222232.png)
+	Por ende nos mostrara el id del container y una url de acceso.
+
+5. `terraform apply -auto-approve` lo creara y ademas creara el terraform.tfstate
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260621222737.png)
+	
+	Vemos el `docker ps` y ingresamos a la url desde un navegador
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260621223012.png)
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260621223113.png)
 	
 
 
+### Qué pasa si se modifica el puerto
 
+1. Nos vamos al archivo variables.tf y modificamos el puerto a 8081 -> 8082
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260621223513.png)
+	
 
-
-
-
-
+2. `terraform plan` veamos que muestra y que cambio
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260621223729.png)
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260621223750.png)
+	Nos mue
 
 
 
