@@ -214,17 +214,16 @@ Fin de muestra de preparación de entorno en killercode.
 3. `terraform apply -auto-approve` `
 	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260621232927.png)
 	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260621233012.png)
-	
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260622012205.png)
 	
 
 ### Borrar
 
 1. Mostramos como terraform.tfstate esta antes y despues de tirar `terrafrom destroy -auto-approve`
 	terraform.tfstate cuando esta todo desplegado
-	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260621224525.png)
-	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260621224558.png)
-	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260621224630.png)
-	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260621224715.png)
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260622012408.png)
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260622012445.png)
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260622012528.png)
 	
 	terraform.tfstate despues de destroy
 	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260621224859.png)
@@ -291,11 +290,10 @@ Fin de muestra de preparación de entorno en killercode.
 ### Borrar
 
 1. Mostramos como terraform.tfstate despues de tirar `terrafrom destroy -auto-approve`
-	terraform.tfstate cuando esta todo desplegado
 	
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260622011630.png)
 	terraform.tfstate despues de destroy
-	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260621224859.png)
-	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260621224913.png)
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260622011725.png)
 	
 
 
