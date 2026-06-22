@@ -263,7 +263,8 @@ Fin de muestra de preparación de entorno en killercode.
 
 
 3. `terraform init`, que nos creara algunos archivos. 
-	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260621230156.png)
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260622000623.png)
+	
 
 4.   `terraform plan`
 	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260621230537.png)
