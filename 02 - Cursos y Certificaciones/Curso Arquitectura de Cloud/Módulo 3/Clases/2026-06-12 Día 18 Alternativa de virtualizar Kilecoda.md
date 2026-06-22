@@ -209,12 +209,12 @@ Fin de muestra de preparación de entorno en killercode.
 
 2. `terraform plan` veamos que muestra y que cambio
 	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260621232339.png)
-	Nos muestra que va a destruir para modificar
+	Nos muestra que solo va a modificar, ya que no tocamos infraestructura sino solo el index de apache, por ende no es necesario destruir.
 
 3. `terraform apply -auto-approve` `
-	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260621224040.png)
-	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260621224122.png)
-	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260621224151.png)
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260621232927.png)
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260621233012.png)
+	
 	
 
 ### Borrar
@@ -235,7 +235,9 @@ Fin de muestra de preparación de entorno en killercode.
 
 # Práctica: Despliegue de terreform  con import Importar Infraestructura Existente a Terraform
 
-
+1. tener: 
+	Carpeta terraforms-import con un main.tf
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260621233856.png)
 
 
 
