@@ -173,14 +173,67 @@ Fin de muestra de preparación de entorno en killercode.
 
 # Práctica: Despliegue de terreform  con aws
 
-### Despliegue en terraform aws
-
-1. nos movemos a la carpeta terraforms-aws
+### Preparación
 
 
+1. Tener:
+	Carpeta terraform-aws con un main.tf , outputs.tf , providers.tf , variables.tf y terraform,tfvars
+	
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260621225910.png)
+
+2. Abrir terminal en esa ubicación y ejecutar `terraform init`, que nos creara algunos archivos. 
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260621230156.png)
+
+3.   `terraform plan`
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260621230537.png)
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260621230708.png)
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260621230727.png)
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260621230744.png)
+	
+
+4. `terraform apply -auto-approve` lo creara y ademas creara el terraform.tfstate
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260621222737.png)
+	
+	Vemos el `docker ps` y ingresamos a la url desde un navegador
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260621223012.png)
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260621223113.png)
+	
 
 
-# Práctica: Despliegue de terreform  con import
+### Qué pasa si se modifica el puerto
+
+1. Nos vamos al archivo variables.tf y modificamos el puerto a 8081 -> 8082
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260621223513.png)
+	
+
+2. `terraform plan` veamos que muestra y que cambio
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260621223729.png)
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260621223750.png)
+	Nos muestra que va a destruir para modificar
+
+3. `terraform apply -auto-approve` `
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260621224040.png)
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260621224122.png)
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260621224151.png)
+	
+
+### Borrar
+
+1. Mostramos como terraform.tfstate esta antes y despues de tirar `terrafrom destroy -auto-approve`
+	terraform.tfstate cuando esta todo desplegado
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260621224525.png)
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260621224558.png)
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260621224630.png)
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260621224715.png)
+	
+	terraform.tfstate despues de destroy
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260621224859.png)
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260621224913.png)
+	
+
+
+
+# Práctica: Despliegue de terreform  con import Importar Infraestructura Existente a Terraform
 
 
 
@@ -260,22 +313,241 @@ terraform plan
 
   
 
-# 5. Desplegar el contenedor de Nginx
+### 5. Desplegar el contenedor de Nginx
 
 terraform apply -auto-approve
 
   
 
-# 6. Probar en tu navegador ingresando a http://localhost:8081
+### 6. Probar en tu navegador ingresando a http://localhost:8081
 
   
 
-# 7. Destruir el contenedor y limpiar tu máquina local al finalizar la clase
+### 7. Destruir el contenedor y limpiar tu máquina local al finalizar la clase
 
 terraform destroy -auto-approve
 
 
+# Terraform con aws
+
+aws-infra/
+
+├── providers.tf
+
+├── variables.tf
+
+├── terraform.tfvars
+
+├── main.tf
+
+└── outputs.tf
+
   
+  
+
+### 1. Crear y acceder a la carpeta del proyecto
+
+mkdir aws-infra && cd aws-infra
+
+  
+
+### 2. Crear los 5 archivos descritos en el Canvas (providers.tf, variables.tf, terraform.tfvars, main.tf, outputs.tf)
+
+  
+
+### 3. Inicializar el proveedor de AWS
+
+terraform init
+
+  
+
+### 4. Previsualizar la creación de la instancia EC2 y Security Group
+
+terraform plan
+
+  
+
+### 5. Crear la infraestructura en AWS (instalará Apache mediante UserData automáticamente)
+
+terraform apply -auto-approve
+
+  
+
+### 6. Probar pegando la IP pública devuelta en el output en tu navegador web
+
+  
+
+### 7. IMPORTANTE: Destruir la instancia EC2 al terminar para no generar cargos extras
+
+terraform destroy -auto-approve
+
+
+
+# Terraform con import
+
+Importar Infraestructura Existente a Terraform
+
+  
+
+Uno de los mayores desafíos en el mundo laboral de DevOps es la "adopción de recursos huérfanos". A menudo, te encontrarás con infraestructuras creadas de forma manual con clics en la consola de AWS o generadas previamente mediante stacks de CloudFormation, y necesitarás migrar su gestión a Terraform sin destruirlas.
+
+  
+
+Para lograr esto, usaremos el proceso de Importación.
+
+  
+
+El Escenario
+
+  
+
+Imagina que queremos simular esta adopción en clase de manera interactiva. Para ello, primero crearemos manualmente una instancia EC2 de tipo "huérfana" mediante el uso de la AWS CLI (lo mínimo indispensable para tener un recurso real con su correspondiente ID), y posteriormente utilizaremos Terraform para adoptarla y controlarla.
+
+  
+
+Paso 0: Crear la Instancia de Origen con la AWS CLI
+
+  
+
+Pídele a tus alumnos que ejecuten este comando minimalista en su consola para simular la creación de la infraestructura externa que adoptaremos. El comando utiliza la AMI de Amazon Linux 2023 en us-east-1 (región recomendada) y le añade una etiqueta identificadora:
+
+  
+
+aws ec2 run-instances \
+
+--image-id ami-03120525e2a3df46f \
+
+--count 1 \
+
+--instance-type t3.micro \
+
+--tag-specifications 'ResourceType=instance,Tags=[{Key=Name,Value=ServidorAAdoptar}]' \
+
+--query "Instances[0].InstanceId" \
+
+--output text
+
+  
+  
+
+Toma nota del ID de la instancia de AWS devuelto en la consola (ej. i-0123456789abcdef0). Lo utilizaremos en los siguientes métodos.
+
+  
+
+Método 1: El nuevo bloque import (Recomendado - Terraform 1.5+)
+
+  
+
+Este es el enfoque moderno e inmensamente didáctico para enseñar en clase, porque permite escribir la declaración del recurso y la importación de manera declarativa.
+
+  
+
+Añade este bloque al final de tu archivo main.tf en la carpeta aws-infra:
+
+  
+
+### Declaración de importación formal
+
+import {
+
+to = aws_instance.servidor_importado
+
+id = "i-0123456789abcdef0" # Reemplazar con el ID de la instancia de AWS real
+
+}
+
+  
+
+### Declarar el recurso vacío en main.tf para que guarde las propiedades importadas
+
+resource "aws_instance" "servidor_importado" {
+
+### Terraform completará estos atributos basándose en el estado de AWS
+
+}
+
+  
+  
+
+Ejecuta la generación automática de código para completar tu recurso:
+
+  
+
+terraform plan -generate-config-out=generado.tf
+
+  
+  
+
+Esto generará automáticamente un archivo generado.tf con todos los parámetros exactos (AMI, red, tipo) que tiene la instancia actualmente en AWS. ¡Los alumnos quedarán asombrados!
+
+  
+
+Aplica los cambios para sincronizar el estado:
+
+  
+
+terraform apply -auto-approve
+
+  
+  
+
+¡Listo! Ahora la máquina manual está bajo el control total del ciclo de vida de Terraform.
+
+  
+
+Método 2: El comando clásico terraform import (CLI tradicional)
+
+  
+
+Este es el método heredado ampliamente utilizado en entornos de producción.
+
+  
+
+Primero, debes declarar manualmente el bloque de recurso vacío en tu main.tf:
+
+  
+
+resource "aws_instance" "servidor_importado" {
+
+### Dejar este bloque vacío por el momento
+
+}
+
+  
+  
+
+Ejecuta el comando de importación directa desde la terminal mapeando el ID lógico del código con el ID físico de AWS:
+
+  
+
+terraform import aws_instance.servidor_importado i-0123456789abcdef0
+
+  
+  
+
+Verás en tu consola un mensaje de éxito: Import successful!. Si revisas tu archivo local terraform.tfstate, verás que el JSON ahora contiene toda la metadata del servidor importado.
+
+  
+
+Ejecuta terraform plan. Notarás que Terraform te avisará de inconsistencias. Debes copiar los atributos reportados en el plan hacia tu recurso aws_instance.servidor_importado en el archivo main.tf hasta que al correr terraform plan el resultado sea: "No changes. Infrastructure is up-to-date."
+
+  
+
+## Eliminado
+
+aws ec2 terminate-instances --instance-ids i-0742a14b2f45915d2
+
+  
+
+terraform state rm aws_instance.servidor_importado
+
+
+
+
+
+
+
+
 ---
 
 # Material de Clase
