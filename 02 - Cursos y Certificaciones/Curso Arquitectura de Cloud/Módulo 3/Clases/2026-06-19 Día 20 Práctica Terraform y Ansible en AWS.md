@@ -21,6 +21,12 @@
 	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260622220803.png)
 
 3. Lo desplegamos con `terraform apply -auto-approve`
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260622222452.png)
+	Nos genera un archivo con la clave privada
+
+### Ansible
+
+1. En el paso anterior nos dio el output la ip publica y la key que la colocaremos en el archivo host.ini
 	
 
 
