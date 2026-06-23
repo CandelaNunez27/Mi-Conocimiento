@@ -64,7 +64,8 @@
 ### Borrar todo
 
 1. `terraform detroy -auto-approve`
-	
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260622234424.png)
+
 
 
 
