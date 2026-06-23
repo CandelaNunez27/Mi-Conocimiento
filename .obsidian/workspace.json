@@ -96,7 +96,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "2c47654ff3f8d557",
@@ -224,6 +225,11 @@
   },
   "active": "9b0a208c56697b1d",
   "lastOpenFiles": [
+    "04 - Otros/Imagenes/Pasted image 20260622220803.png",
+    "04 - Otros/Imagenes/Pasted image 20260622220740.png",
+    "04 - Otros/Imagenes/Pasted image 20260622220701.png",
+    "04 - Otros/Imagenes/Pasted image 20260622220638.png",
+    "04 - Otros/Imagenes/Pasted image 20260622220600.png",
     "04 - Otros/Imagenes/Pasted image 20260622215711.png",
     "04 - Otros/Imagenes/Pasted image 20260622201953.png",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 3/Clases/2026-06-17 Día 19 Gestión de configuraciones Ansible.md",
@@ -240,11 +246,6 @@
     "04 - Otros/Imagenes/Pasted image 20260622181343.png",
     "04 - Otros/Imagenes/Pasted image 20260622181216.png",
     "04 - Otros/Imagenes/Pasted image 20260622180500.png",
-    "04 - Otros/Imagenes/Pasted image 20260622175607.png",
-    "04 - Otros/Imagenes/Pasted image 20260622175430.png",
-    "04 - Otros/Imagenes/Pasted image 20260622173456.png",
-    "04 - Otros/Imagenes/Pasted image 20260622173146.png",
-    "04 - Otros/Imagenes/Pasted image 20260622013101.png",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 1/Clases/2026-04-29 Día 5 Redes en la Nube.md",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 1/Clases/2026-04-24 Día 4 Práctica.md",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 1/Clases/2026-04-22 Día 3 Introducción La Nube.md",

@@ -7,11 +7,21 @@
 	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260622201953.png)
 	
 
-2.  Desplegar terraform
+### Terraform
+
+1.  Desplegar terraform
 	Abrimos terminal en esa carpeta y ejecutamos`terraform init`
 	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260622215711.png)
-	
 
+2. Nos fijamos el resumen de lo que crearemos `terraform plan`
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260622220600.png)
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260622220638.png)
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260622220701.png)
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260622220740.png)
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260622220803.png)
+
+3. Lo desplegamos con `terraform apply -auto-approve`
+	
 
 
 
