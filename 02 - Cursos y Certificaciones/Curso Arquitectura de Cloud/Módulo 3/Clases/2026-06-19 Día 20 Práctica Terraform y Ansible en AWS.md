@@ -33,6 +33,7 @@
 	Modificamos el rol de IAM por el que creamos en practicas anteriores, esperamos unos minutos a que se actualice.
 	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260622224024.png)
 	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260622224237.png)
+	Comprobamos que no tiene docker
 	
 	
 
