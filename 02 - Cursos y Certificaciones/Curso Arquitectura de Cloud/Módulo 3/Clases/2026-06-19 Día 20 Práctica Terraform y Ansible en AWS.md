@@ -33,8 +33,10 @@
 	Modificamos el rol de IAM por el que creamos en practicas anteriores, esperamos unos minutos a que se actualice.
 	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260622224024.png)
 	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260622224237.png)
-	Comprobamos que no tiene docker
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260622230236.png)
 	
+	Comprobamos que no tiene docker
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260622230433.png)
 	
 
 
@@ -44,9 +46,12 @@
 	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260622223345.png)
 	
 
+2. Ejecutamos ansible con `ANSIBLE_HOST_KEY_CHECKING=False ansible-playbook -i host.ini deploy.yml`
+	Hace 
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260622231059.png)
+	
 
-
-
+3. Revisamos si se coloco la configuración de nginx y instalo docker
 
 
 
