@@ -22,11 +22,25 @@
 
 3. Lo desplegamos con `terraform apply -auto-approve`
 	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260622222452.png)
-	Nos genera un archivo con la clave privada
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260622223605.png)
+	
+	Nos genera un archivo pem-lab-terraform.pem con la clave privada RSA.
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260622223057.png)
+
+### Conexión ssm de aws
+
+1. le damos a connectar con ssm a la ec2 creada
+	Modificamos el rol de IAM por el que creamos en practicas anteriores, esperamos unos minutos a que se actualice.
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260622224024.png)
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260622224237.png)
+	
+	
+
 
 ### Ansible
 
 1. En el paso anterior nos dio el output la ip publica y la key que la colocaremos en el archivo host.ini
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260622223345.png)
 	
 
 
