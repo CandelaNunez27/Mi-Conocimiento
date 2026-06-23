@@ -36,7 +36,7 @@
 	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260622230236.png)
 	
 	Comprobamos que no tiene docker
-	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260622230433.png)
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260622231759.png)
 	
 
 
@@ -47,14 +47,24 @@
 	
 
 2. Ejecutamos ansible con `ANSIBLE_HOST_KEY_CHECKING=False ansible-playbook -i host.ini deploy.yml`
-	Hace 
+	El `ANSIBLE_HOST_KEY_CHECKING=False` es porque al hacer ssh hay una pregunta de yes/no y le colocamos este argumento para que se lo salte
 	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260622231059.png)
 	
 
 3. Revisamos si se coloco la configuración de nginx y instalo docker
+	Ahí vemos que a diferencia de antes si esta instalado docker 
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260622231722.png)
+	
+	vemos si nos levanto el contonedor nginx
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260622231954.png)
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260622232133.png)
+	
 
 
+### Borrar todo
 
+1. `terraform detroy -auto-approve`
+	
 
 
 
