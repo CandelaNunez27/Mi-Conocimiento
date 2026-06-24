@@ -36,17 +36,31 @@ Se utiliza la analogía de un restaurante
 
 Siempre arranca con el termino `FROM` para de esa manera descarga la imagen, por ejemplo una parte pequeña de ubuntu para utilizar python, sin necesidad de utilizar iso pesadas.
 `WORKDIR` Le indicamos la carpeta base del usuario y `COPY` es para copiar un archivo para el director de trabajo. 
-`RUN` Sirve para indicarle que haga o corra alguna acción, cualquier comando.  `COPY . .` Es copiar todo el directorio hasta el dockerfile, cuidado porque se puede copiar cosas que no queremos.  Suele ser la última linea del dockerfile, aunque puede estar o no, `CMD ["", ""]` suele para dejar un proceso activo en segundo plano.
+`RUN` Sirve para indicarle que haga o corra alguna acción, cualquier comando.  `COPY . .` Es copiar todo el directorio hasta el dockerfile, cuidado porque se puede copiar cosas que no queremos, aunque se utiliza para proyectos grandes.  Suele ser la última linea del dockerfile, aunque puede estar o no, `CMD ["", ""]` suele para dejar un proceso activo en segundo plano, solo funciona cuando le damos `docker start`.
 
 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260624183220.png)
 
 
+# Fundamentos Dockerhub 
+
+Es un repositorio que contiene muchas imágenes listas para descargar y usar. Cuidado por empresas más grandes por los limites de descarga en capa gratuita.
+
+![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260624184441.png)
 
 
+# Fundamentos Docker Compose
+
+Es un agregado que se descarga aparte, siendo el mejor amigo de docker para gestionar varios dockers que se quieren comunicar. No los orquesta simplemente los ordena. Tiene un limite al escalamiento, pero si nos permite lanzar varios docker a la vez de forma ordenada con un solo comando.
+
+![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260624185240.png)
 
 
+# Fundamentos Comandos
 
+- `docker build -t mi-app .`: build es quien transforma el dockerfile en imagen, -t es para agrarle un nombre a la imagen, y el . es para indicarle que el dockerfile esta en el directorio actual.
+- `docker run -d -p `
 
+![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260624185339.png)
 
 
 
