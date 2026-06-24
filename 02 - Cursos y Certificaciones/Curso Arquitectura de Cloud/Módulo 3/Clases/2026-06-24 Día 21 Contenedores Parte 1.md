@@ -57,23 +57,17 @@ Es un agregado que se descarga aparte, siendo el mejor amigo de docker para gest
 
 # Fundamentos Comandos
 
-- `docker build -t mi-app .`: build es quien transforma el dockerfile en imagen, -t es para agrarle un nombre a la imagen, y el . es para indicarle que el dockerfile esta en el directorio actual.
-- `docker run -d -p `
+- `docker build -t mi-app .`: build es quien transforma el dockerfile en imagen, -t es para agrarle un nombre a la imagen, y el . es para indicarle que el dockerfile esta en el directorio actual o colocarle la ruta completa de donde esta el dockerfile.
+- `docker run -d -p 3000:3000 mi-app`:  run arranca el contenedor (dejando el cmd andando), -d hace que corra en segundo plano para que no mecaptura la consola, -p es para colocarle el puerto de mi maquina colocarle el puerto que tendrá el docker, y mi-app es el nombre que le pusimos a la imagen.
+- `docker ps`: para listar los docker activos
+- `docker ps -a`: para listar todos los dockers (tanto activos como inactivos)
+- `docker stop <id>`: este comando lo inactiva sin eliminarlo
+- `docker exec -it <id> bash`: para acceder al contenedor.
 
 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260624185339.png)
 
 
-
-
-
-
-
-
-
-
-
-
-# Práctica: sawkl
+# Práctica: Docker (comandos-imágenes-compose)
 ### Preparación
 
 1. sdssdf:
