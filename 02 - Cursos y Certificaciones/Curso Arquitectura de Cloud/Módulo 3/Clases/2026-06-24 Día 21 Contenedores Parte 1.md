@@ -13,23 +13,32 @@ El tipico caso de desplegarlo en mi computadora y en servidor ya no. Esto pasa p
 
 # Fundamentos VM vs Containers
 
-Containerizar no necesita un hypervisor ni otro sistema operativo. Docker utiliza el hardware sin tener que simularlo, aislando por servicios / procesos independientes una de la otra. Como base de datos no tendria que estar en containers.
+Containerizar no necesita un hypervisor ni otro sistema operativo. Docker utiliza el hardware sin tener que simularlo, aislando por servicios / procesos independientes una de la otra. Como base de datos no tendría que estar en containers.
 
 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260624180335.png)
 
 # Fundamentos El motor
 
-Con la terminal mandamos las intrucciones al daemon(proceso que corre en segundo plano) de docker para que realice las tareas, crea y destruye los contenedores también gestionando recursos del kernet.
+Con la terminal mandamos las instrucciones al daemon (proceso que corre en segundo plano) de docker para que realice las tareas, crea y destruye los contenedores también gestionando recursos del kernet.
 
 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260624182411.png)
 
 # Fundamentos Los 3 pilares de Docker
 
-Se utiliza la analogia de un restaurante
-- **Dockerfile (La receta):** las instrucciones paso a paso para realizar las tareas para generar una imagen de lo que se quiere.
-- ****
+Se utiliza la analogía de un restaurante
+- **Dockerfile (La receta):** las instrucciones paso a paso para realizar las tareas para generar una imagen de lo que se quiere.  Importante para poder replicarlo y que funcione en todos lados.
+- **Imagen (El pastel congelado):** Resultado  de ejecutar la receta que nos da lo que queremos pero sin realizar nada con el aun.
+- **Contenedor (El pastel Servido):** El resultado ya puesto en marcha, siendo utilizado para su función.
 
+![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260624182900.png)
 
+# Fundamentos La receta desde dentro Dockerfile
+
+Siempre arranca con el termino `FROM` para de esa manera descarga la imagen, por ejemplo una parte pequeña de ubuntu para utilizar python, sin necesidad de utilizar iso pesadas.
+`WORKDIR` Le indicamos la carpeta base del usuario y `COPY` es para copiar un archivo para el director de trabajo. 
+`RUN` Sirve para indicarle que haga o corra alguna acción, cualquier comando.  `COPY . .` Es copiar todo el directorio hasta el dockerfile, cuidado porque se puede copiar cosas que no queremos.  Suele ser la última linea del dockerfile, aunque puede estar o no, `CMD ["", ""]` suele para dejar un proceso activo en segundo plano.
+
+![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260624183220.png)
 
 
 
