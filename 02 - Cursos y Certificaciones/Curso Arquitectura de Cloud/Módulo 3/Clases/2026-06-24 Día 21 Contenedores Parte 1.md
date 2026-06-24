@@ -17,7 +17,18 @@ Containerizar no necesita un hypervisor ni otro sistema operativo. Docker utiliz
 
 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260624180335.png)
 
-# Fundamentos 
+# Fundamentos El motor
+
+Con la terminal mandamos las intrucciones al daemon(proceso que corre en segundo plano) de docker para que realice las tareas, crea y destruye los contenedores también gestionando recursos del kernet.
+
+![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260624182411.png)
+
+# Fundamentos Los 3 pilares de Docker
+
+Se utiliza la analogia de un restaurante
+- **Dockerfile (La receta):** las instrucciones paso a paso para realizar las tareas para generar una imagen de lo que se quiere.
+- ****
+
 
 
 
