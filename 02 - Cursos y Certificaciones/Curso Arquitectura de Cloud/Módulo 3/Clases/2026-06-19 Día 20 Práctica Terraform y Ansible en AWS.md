@@ -135,11 +135,9 @@ ansible-docker-aws/
 ├── hosts.ini # Inventario de Ansible (IP destino)
 
 └── deploy.yml # Playbook de Ansible
+```
 
-  
-  
-
-# Paso a paso
+  # Paso a paso
 
   
 
@@ -164,6 +162,15 @@ ANSIBLE_HOST_KEY_CHECKING=False ansible-playbook -i host.ini deploy.yml
   
 
 ## Destruir toda la infraestructura con terraform
+
+
+
+
+
+
+
+
+
   
 ---
 
@@ -176,5 +183,5 @@ ANSIBLE_HOST_KEY_CHECKING=False ansible-playbook -i host.ini deploy.yml
 
 # Grabación de la Clase
 
-**Clase Grabada:** 
+**Clase Grabada:** https://drive.google.com/file/d/1y9Cwy3F8Jh41HV8sZbYVlvk-oFj0ROpM/view
 
