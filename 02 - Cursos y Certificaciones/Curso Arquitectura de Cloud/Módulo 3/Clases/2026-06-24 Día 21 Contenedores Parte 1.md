@@ -96,11 +96,18 @@ Se necesita crear una pagina web: donde quiero que entre a un contenedor front d
 ### Arrancar los docker
 
 1. Hacemos que docker lea el dockerfile para que cree la imagen:
-	`sudo docker build -t front` -t es tag o etiqueta que acá es el nombre. y el . es para que lo cree en el directorio actual
+	`cd front` `sudo docker build -t front .` -t es tag o etiqueta que acá es el nombre. y el . es para que lo cree en el directorio actual
 	
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260630231351.png)
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260630231518.png)
+	
+	`docker image ls |grep front` deberia de salirnos la imagen que creamos
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260630231735.png)
 	
 
-
+2. Arrancamos el docker front:
+	`docker run -d front` -d para que no nos capture la terminal con los logs
+	
 
 
 
