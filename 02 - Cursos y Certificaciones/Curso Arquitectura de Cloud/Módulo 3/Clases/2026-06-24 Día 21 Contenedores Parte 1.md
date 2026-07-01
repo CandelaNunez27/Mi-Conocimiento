@@ -76,9 +76,18 @@ Se necesita crear una pagina web: donde quiero que entre a un contenedor front d
 ### Preparación
 
 1. borrar conteiner que no sé esten utilizando:
-	`docjer container prune`
+	`docker container prune` en mi caso yo no tenia nada pero es para borrar conteiners en desuso
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260630223638.png)
+	
+	`docker image prune` para borrar imagenes descargadas que no he este usando de dockehub 
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260630223825.png)
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260630223839.png)
+	
+	para ser más agresivo se usa `docker system prune` o aun más `docker system prune -a`
 	
 
+2. Tenemos:
+	Dos carpetas una llamada front y otra back. (`mkdir front back`). En front tendremos los archivos index.html (`touch index.html`) que tendra una pequeña configuración html con su body y escuchando en la ruta http://localhost:3000/api/data  , Dockerfile (`touch Dockerfile`) que tendra el FROM con n
 ---
 # Guía del Profesor
 🎯 Objetivo del Laboratorio
