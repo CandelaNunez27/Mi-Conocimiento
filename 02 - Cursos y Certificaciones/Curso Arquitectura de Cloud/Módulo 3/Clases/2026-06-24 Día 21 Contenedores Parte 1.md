@@ -68,14 +68,50 @@ Es un agregado que se descarga aparte, siendo el mejor amigo de docker para gest
 
 
 # Práctica: Docker (comandos-imágenes-compose)
+
+Se necesita crear una pagina web: donde quiero que entre a un contenedor front desde un navegador por ende se necesitara abrir un puerto para navegacion web, y que esa web conteiner back haga algo y que lo escriba en la base de datos conteiner db con  un puerto interno. 
+
+![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260630222807.png)
+
 ### Preparación
 
-1. sdssdf:
-	sdsld
+1. borrar conteiner que no sé esten utilizando:
+	`docjer container prune`
+	
 
 ---
 # Guía del Profesor
+🎯 Objetivo del Laboratorio
 
+El alumno aprenderá a instalar y verificar Docker localmente en su máquina de desarrollo, construirá sus primeras imágenes personalizadas a través de un archivo Dockerfile, y orquestará un stack de tres capas completo (Frontend, Backend y Base de Datos) de forma efímera utilizando un archivo docker-compose.yml.
+
+
+🗺️ Arquitectura de la Aplicación (Fase 1: Efímera)
+
+![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260630222438.png)
+  
+  
+
+📋 Paso 0: Verificación de Docker en la terminal
+
+
+Pídele a tus alumnos que inicien su terminal (PowerShell, WSL o Terminal de macOS) y corran el primer "hola mundo" de validación del servicio:
+
+  
+
+# Validar versión instalada
+
+docker --version
+
+  
+
+# Ejecutar imagen de prueba oficial de Docker
+
+docker run --rm hello-world
+
+  
+
+docker compose up -d
   
 ---
 
