@@ -126,7 +126,9 @@ Se necesita crear una pagina web: donde quiero que entre a un contenedor front d
 	
 
 2. Levantamos con docker compose (estar parados en el lugar de docker-compose)
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260630233640.png)
 	`sudo docker compose up -d --build`
+	
 	
 
 
