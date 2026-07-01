@@ -87,7 +87,30 @@ Se necesita crear una pagina web: donde quiero que entre a un contenedor front d
 	
 
 2. Tenemos:
-	Dos carpetas una llamada front y otra back. (`mkdir front back`). En front tendremos los archivos index.html (`touch index.html`) que tendra una pequeña configuración html con su body y escuchando en la ruta http://localhost:3000/api/data  , Dockerfile (`touch Dockerfile`) que tendra el FROM con n
+	Dos carpetas una llamada front y otra back. (`mkdir front back`). 
+	
+	En front tendremos los archivos: index.html (`touch index.html`) que tendra una pequeña configuración html con su body y escuchando en la ruta http://localhost:3000/api/data  , Dockerfile (`touch Dockerfile`) que tendra el FROM con nginx:alpine COPY index.html /usr/share/nginx/html EXPONSE 80.
+	
+	En back tendremos los archivos: Dockerfile (`touch Dockerfile`) FROM node;18-slim WORDIR /app COPY package.json ./ RUN npm install COPY . . EXPOSE 3000 (puerto por defecto de node) CMD ["npm", "start"] , package.json (`touch package.json`) con unas dependencias, index.js (`touch index.js`) js porque es en back.
+
+### Arrancar los docker
+
+1. Hacemos que docker lea el dockerfile para que cree la imagen:
+	`sudo docker build -t front` -t es tag o etiqueta que acá es el nombre. y el . es para que lo cree en el directorio actual
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
 ---
 # Guía del Profesor
 🎯 Objetivo del Laboratorio
