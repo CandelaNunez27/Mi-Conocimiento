@@ -1,4 +1,4 @@
-# Teoría: Conceptos básicos y Flujos de Trabajo Local
+ # Teoría: Conceptos básicos y Flujos de Trabajo Local
 
 # Fundamentos Containerización
 
