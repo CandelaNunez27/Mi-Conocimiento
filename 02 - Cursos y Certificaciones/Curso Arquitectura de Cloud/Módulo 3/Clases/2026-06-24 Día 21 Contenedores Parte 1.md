@@ -93,7 +93,7 @@ Se necesita crear una pagina web: donde quiero que entre a un contenedor front d
 	
 	En back tendremos los archivos: Dockerfile (`touch Dockerfile`) FROM node;18-slim WORDIR /app COPY package.json ./ RUN npm install COPY . . EXPOSE 3000 (puerto por defecto de node) CMD ["npm", "start"] , package.json (`touch package.json`) con unas dependencias, index.js (`touch index.js`) js porque es en back.
 
-### Arrancar los docker
+### Arrancar los docker (sin docker-compose)
 
 1. Hacemos que docker lea el dockerfile para que cree la imagen:
 	`cd front` `sudo docker build -t front .` -t es tag o etiqueta que acá es el nombre. y el . es para que lo cree en el directorio actual
@@ -107,9 +107,27 @@ Se necesita crear una pagina web: donde quiero que entre a un contenedor front d
 
 2. Arrancamos el docker front:
 	`docker run -d front` -d para que no nos capture la terminal con los logs
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260630232226.png)
+
+3. Paramos todo para la practica de docker-compose:
+	`sudo docker stop <id>` 
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260630233228.png)
+	
+	`sudo docker container prune`
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260630233304.png)
+
+
+
+
+### Ahora la base de datos con docker-compose
+
+1. Creamos el archivo:
+	un archivo llamado docker-conpose.yml que esta fuera de las carpetas front y back. Este archivo contiene el servicio de la base de datos con la imagen postgres:15-alpine, es una base de datos efimera sin ningun tipo de volumen, un usuario y contraseña, y el puerto. tendra una seccion para conectar al back y por ultimo una seccion para conectar con front. 
 	
 
-
+2. Levantamos con docker compose (estar parados en el lugar de docker-compose)
+	`sudo docker compose up -d --build`
+	
 
 
 
