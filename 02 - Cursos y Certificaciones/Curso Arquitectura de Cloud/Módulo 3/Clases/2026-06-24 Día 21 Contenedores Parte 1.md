@@ -127,13 +127,22 @@ Se necesita crear una pagina web: donde quiero que entre a un contenedor front d
 
 2. Levantamos con docker compose (estar parados en el lugar de docker-compose)
 	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260630233640.png)
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260701015919.png)
+	
 	`sudo docker compose up -d --build`
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260701020231.png)
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260701020257.png)
 	
 	
 
+### Probar web
 
+1. verificamos si se levantaron los dockers
+	`sudo docker ps`
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260701020448.png)
 
-
+2. nos conectamos a la web por consola:
+	
 
 
 
