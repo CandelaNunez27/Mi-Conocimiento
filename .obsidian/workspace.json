@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 3/Clases/2026-06-26.md",
+                "file": "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 3/Clases/2026-06-26 Día 22 Contenedores Parte 2.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026-06-26"
+              "title": "2026-06-26 Día 22 Contenedores Parte 2"
             }
           }
         ]
@@ -224,8 +224,13 @@
   },
   "active": "9b0a208c56697b1d",
   "lastOpenFiles": [
+    "04 - Otros/Imagenes/Pasted image 20260703232949.png",
+    "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 3/Clases/2026-06-26 Día 22 Contenedores Parte 2.md",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 3/Clases/2026-06-24 Día 21 Contenedores Parte 1.md",
-    "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 3/Clases/2026-06-26.md",
+    "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 3/Clases/2026-06-19 Día 20 Práctica Terraform y Ansible en AWS.md",
+    "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 3/Clases/2026-06-17 Día 19 Gestión de configuraciones Ansible.md",
+    "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 3/Clases/2026-06-12 Día 18 Alternativa de virtualizar Kilecoda.md",
+    "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 3/Clases/2026-06-10 Día 17 IaC - Terraform.md",
     "04 - Otros/Imagenes/Pasted image 20260701021239.png",
     "04 - Otros/Imagenes/Pasted image 20260701021154.png",
     "04 - Otros/Imagenes/Pasted image 20260701020739.png",
@@ -236,14 +241,10 @@
     "04 - Otros/Imagenes/Pasted image 20260701015218.png",
     "04 - Otros/Imagenes/Pasted image 20260630233640.png",
     "04 - Otros/Imagenes/Pasted image 20260630233304.png",
-    "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 3/Clases/2026-06-19 Día 20 Práctica Terraform y Ansible en AWS.md",
-    "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 3/Clases/2026-06-17 Día 19 Gestión de configuraciones Ansible.md",
-    "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 3/Clases/2026-06-12 Día 18 Alternativa de virtualizar Kilecoda.md",
     "04 - Otros/Tutorial.md",
     "04 - Otros/Plantillas/Plantilla clases Cloud.md",
     "04 - Otros/Plantillas/Examen Corto Plantilla.md",
     "04 - Otros/Plantillas/Examen largo plantilla.md",
-    "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 3/Clases/2026-06-10 Día 17 IaC - Terraform.md",
     "02 - Cursos y Certificaciones/Curso Python Educación IT/Módulo 1 Introducción/Examen Integrador.md",
     "01 - Tec Redes Datos y Telecom/2º Año/01 - Redes/Portafolio Redes/01 - Laboratorio - Análisis de Capa de Enlace (Wireshark y ARP).md",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 1/Clases/2026-04-29 Día 5 Redes en la Nube.md",
@@ -261,7 +262,6 @@
     "01 - Tec Redes Datos y Telecom/2º Año/01 - Redes/Módulo 1.2/01 - Capa de Enlace _ Ethernet, MAC, ARP y RARP.md",
     "01 - Tec Redes Datos y Telecom/2º Año/01 - Redes/Módulo 1.2/03 - Herramientas de Diagnóstico y Análisis de Tráfico.md",
     "01 - Tec Redes Datos y Telecom/1° Año/00 - Índice/00 - Arquitectura de Computadoras.md",
-    "01 - Tec Redes Datos y Telecom/2º Año/01 - Redes/Módulo 1.1/03 - Utilidades de Red y Linux.md",
     "01 - Tec Redes Datos y Telecom/2º Año/01 - Redes/Módulo 1.2",
     "01 - Tec Redes Datos y Telecom/2º Año/01 - Redes/Portafolio Redes",
     "01 - Tec Redes Datos y Telecom/2º Año/01 - Redes/Módulo 1.1",

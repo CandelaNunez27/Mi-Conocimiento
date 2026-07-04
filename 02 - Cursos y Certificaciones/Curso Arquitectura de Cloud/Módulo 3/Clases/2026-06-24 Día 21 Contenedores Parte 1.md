@@ -1,5 +1,4 @@
- # Teoría: Conceptos básicos y Flujos de Trabajo Local
-
+# Teoría: Conceptos básicos y Flujo de trabajo local
 # Fundamentos Containerización
 
 La transicion estructural de configurar sistemas operativos complejos a empaquetar de forma segura procesos efimeros e independientes.
