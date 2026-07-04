@@ -23,6 +23,21 @@ El networking en contenedores: es posible separaciones de conexiones en cada doc
 
 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260704001102.png)
 
+# Evolución Volúmenes
+
+Los docker son efimeros, los datos no deben ser permanentes. Si contenia algun dato y se reinicio o apago y prendio, ya no tenes los datos porque vuelve a cero nuevito.
+Para lograr recuperar algunos datos, como logs, se le asigna un volumnen (como un espacio de disco, mas bien una ruta de una carpeta montandola, no es tanto como maquinas virtuales que le asignas una cantidad de disco). 
+Esta idea de efimero sigue tambien para los orquestadores.
+
+![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260704004133.png)
+
+# Buenas Prácticas Eficacia y Seguridad
+
+- Cuidar la optimizacion del tamaño de las imagenes con la Herramienta Multi-stage builds, genera imagenes en etapas para que de la imagen completa
+
+![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260704004829.png)
+
+
 
 
 
