@@ -33,7 +33,8 @@ Esta idea de efimero sigue tambien para los orquestadores.
 
 # Buenas Prácticas Eficacia y Seguridad
 
-- Cuidar la optimizacion del tamaño de las imagenes con la Herramienta Multi-stage builds, genera imagenes en etapas para que de la imagen completa
+- Cuidar la optimizacion del tamaño de las imagenes con la Herramienta Multi-stage builds, genera imagenes en etapas para que de la imagen completa solo se usé una imagen chiquita que fue la última con el resultado final del despliegue.
+- 
 
 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260704004829.png)
 
