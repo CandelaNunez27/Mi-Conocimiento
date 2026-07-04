@@ -96,7 +96,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "2c47654ff3f8d557",
@@ -222,8 +223,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "857d4a252756a637",
+  "active": "9b0a208c56697b1d",
   "lastOpenFiles": [
+    "04 - Otros/Imagenes/Pasted image 20260703235532.png",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 3/Clases/2026-06-26 Día 22 Contenedores Parte 2.md",
     "04 - Otros/Imagenes/Pasted image 20260703232949.png",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 3/Clases/2026-06-24 Día 21 Contenedores Parte 1.md",
