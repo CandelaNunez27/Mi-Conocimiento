@@ -141,8 +141,15 @@ Se necesita crear una pagina web: donde quiero que entre a un contenedor front d
 	`sudo docker ps`
 	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260701020448.png)
 
-2. nos conectamos a la web por consola:
-	
+2. nos conectamos a la web :
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260701020739.png)
+
+### Borrar todo
+
+1. `sudo docker compose down` apaga y borra todo
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260701021154.png)
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260701021239.png)
+
 
 
 

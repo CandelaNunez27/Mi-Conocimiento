@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 3/Clases/2026-06-24 Día 21 Contenedores Parte 1.md",
+                "file": "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 3/Clases/2026-06-26.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026-06-24 Día 21 Contenedores Parte 1"
+              "title": "2026-06-26"
             }
           }
         ]
@@ -96,8 +96,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "2c47654ff3f8d557",
@@ -225,6 +224,11 @@
   },
   "active": "9b0a208c56697b1d",
   "lastOpenFiles": [
+    "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 3/Clases/2026-06-24 Día 21 Contenedores Parte 1.md",
+    "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 3/Clases/2026-06-26.md",
+    "04 - Otros/Imagenes/Pasted image 20260701021239.png",
+    "04 - Otros/Imagenes/Pasted image 20260701021154.png",
+    "04 - Otros/Imagenes/Pasted image 20260701020739.png",
     "04 - Otros/Imagenes/Pasted image 20260701020448.png",
     "04 - Otros/Imagenes/Pasted image 20260701020257.png",
     "04 - Otros/Imagenes/Pasted image 20260701020231.png",
@@ -232,11 +236,6 @@
     "04 - Otros/Imagenes/Pasted image 20260701015218.png",
     "04 - Otros/Imagenes/Pasted image 20260630233640.png",
     "04 - Otros/Imagenes/Pasted image 20260630233304.png",
-    "04 - Otros/Imagenes/Pasted image 20260630233228.png",
-    "04 - Otros/Imagenes/Pasted image 20260630232226.png",
-    "04 - Otros/Imagenes/Pasted image 20260630231735.png",
-    "04 - Otros/Imagenes/Pasted image 20260630231518.png",
-    "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 3/Clases/2026-06-24 Día 21 Contenedores Parte 1.md",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 3/Clases/2026-06-19 Día 20 Práctica Terraform y Ansible en AWS.md",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 3/Clases/2026-06-17 Día 19 Gestión de configuraciones Ansible.md",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 3/Clases/2026-06-12 Día 18 Alternativa de virtualizar Kilecoda.md",
