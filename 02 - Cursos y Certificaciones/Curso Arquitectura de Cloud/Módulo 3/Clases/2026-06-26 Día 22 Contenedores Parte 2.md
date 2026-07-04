@@ -15,7 +15,11 @@ Un orquestador entiende cuando tiene que crecer y cuando no, de manera automatic
 
 # Evolución Networking
 
-El networking en contenedores: es posible separaciones de conexiones en cada docker. 
+El networking en contenedores: es posible separaciones de conexiones en cada docker.
+- Cuando no sé le coloca nada queda en modo **bridge**, asiendo de puente. El docker conecta interfaces virtuales a las computadores/servidores.
+- **Host** elimina la conexion y el docker trabaja directamente con el hardware local donde este desplegado, se suele usar mucho para servidor proxy (intermediario entre tu dispositivo e internet)
+- **Overlay** nos permite crear una pequeña subred que nos deja que varios contenedores expongan en el mismo puerto. Se necesitaria un proxy para hacerlo, siendo la base de los orquestadores como kubernetes para que  varios esten en un puerto y no se pisen. Casi no se usa en docker ya que seria más para orquestadores.
+- Para un aislamiento total se utiliza **none**. se utiliza para contonedores efimeros para tareitas pequeñas.
 
 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260704001102.png)
 
