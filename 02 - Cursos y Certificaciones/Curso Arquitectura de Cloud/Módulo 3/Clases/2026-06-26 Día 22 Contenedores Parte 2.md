@@ -42,19 +42,47 @@ Esta idea de efimero sigue tambien para los orquestadores.
 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260704004829.png)
 
 # Práctica: sawkl
+
+
+![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260705003533.png)
 ### Preparación
 
 1. Comprobar que este todo limpio
-	`docker container prune`
+	`sudo docker container prune`
 	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260705005039.png)
 	
+	`sudo docker image prune`
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260705010543.png)
+
 
 2. Copiamos los mismos archivos de la práctica anterior (cambia el dockerfile del backend):
 	Dos carpetas una llamada frontend y otra backend.  
 	
 	En frontend tendremos los archivos: index.html  que tendra una pequeña configuración html con su body y escuchando en la ruta http://localhost:3000/api/data  , Dockerfile que tendra el FROM con nginx:alpine COPY index.html /usr/share/nginx/html EXPONSE 80.
 	
-	En backend tendremos los archivos: Dockerfile FROM node;18-slim WORDIR /app COPY package.json ./ RUN npm install COPY . . EXPOSE 3000 (puerto por defecto de node) CMD ["npm", "start"] , package.json con unas dependencias, index.js js porque es en back.
+	En backend tendremos los archivos: Dockerfile (`touch Dockerfile`).
+		Etapa1: FROM node;18-slim AS base WORDIR /app COPY package*.json ./ RUN npm install 
+		Etapa2: FROM node:18-alpine WORDIR /app COPY --from=base /app/node_modules : ./node_modules COPY . . EXPOSE 3000 (puerto por defecto de node) CMD ["node", "index.js"]
+	package.json con unas dependencias, index.js js porque es en back.
+
+
+### Despliegue
+
+1. Creamos las imagenes:
+	`sudo docker build -t backend`
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ---
 # Guía del Profesor
