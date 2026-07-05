@@ -66,7 +66,7 @@ Esta idea de efimero sigue tambien para los orquestadores.
 	package.json con unas dependencias, index.js js porque es en back.
 
 
-### Despliegue
+### Despliegue sin docker compose
 
 1. Creamos las imagenes (nos movemos a la carpeta backend):
 	`sudo docker build -t backend .`
@@ -74,6 +74,19 @@ Esta idea de efimero sigue tambien para los orquestadores.
 	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260705011547.png)
 
 
+2. Arrancamos el docker backend:
+	`docker run -d -p 3000:3000 backend` -d para que no nos capture la terminal con los logs
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260705013906.png)
+
+3. Paramos todo para la practica de docker-compose:
+	`sudo docker stop <id>` 
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260705014050.png)
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260705014129.png)
+	`sudo docker container prune`
+	
+
+
+### 
 
 
 
