@@ -82,12 +82,45 @@ Esta idea de efimero sigue tambien para los orquestadores.
 	`sudo docker stop <id>` 
 	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260705014050.png)
 	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260705014129.png)
-	`sudo docker container prune`
 	
+	`sudo docker container prune`
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260705014208.png)
 
 
 ### 
 
+
+
+### Ahora la base de datos con docker-compose
+
+1. Creamos el archivo:
+	un archivo llamado docker-conpose.yml que esta fuera de las carpetas front y back. Este archivo contiene el servicio de la base de datos con la imagen postgres:15-alpine, es una base de datos efimera sin ningun tipo de volumen, un usuario y contraseña con variables que mandan a un archivo .env, y el puerto. tendra una seccion para conectar al back y por ultimo una seccion para conectar con front. 
+	
+
+2. Levantamos con docker compose (estar parados en el lugar de docker-compose)
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260630233640.png)
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260701015919.png)
+	
+	`sudo docker compose up -d --build`
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260701020231.png)
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260701020257.png)
+	
+	
+
+### Probar web
+
+1. verificamos si se levantaron los dockers
+	`sudo docker ps`
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260701020448.png)
+
+2. nos conectamos a la web :
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260701020739.png)
+
+### Borrar todo
+
+1. `sudo docker compose down` apaga y borra todo
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260701021154.png)
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260701021239.png)
 
 
 
