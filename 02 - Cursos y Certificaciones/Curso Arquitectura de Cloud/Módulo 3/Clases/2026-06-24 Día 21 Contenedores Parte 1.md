@@ -3,7 +3,6 @@
 
 La transicion estructural de configurar sistemas operativos complejos a empaquetar de forma segura procesos efimeros e independientes.
 
-
 # Fundamentos El finde de: En mi PC funciona
 
 El tipico caso de desplegarlo en mi computadora y en servidor ya no. Esto pasa porque la computadora del desarrollador tiene el Framework perfecto y anduvo, ya el servidor le puede faltar una libreria o siemplemente tienen distintos S.O. Para esto nos sirve containerizar.

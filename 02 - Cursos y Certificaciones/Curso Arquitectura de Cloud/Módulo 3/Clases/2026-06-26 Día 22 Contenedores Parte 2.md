@@ -41,22 +41,63 @@ Esta idea de efimero sigue tambien para los orquestadores.
 
 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260704004829.png)
 
-
-
-
-
-
-
 # Práctica: sawkl
 ### Preparación
 
-1. sdssdf:
-	sdsld
+1. Copiamos los mismos archivos de la práctica anterior:
+	Dos carpetas una llamada front y otra back. (`mkdir front back`). 
+	
+	En front tendremos los archivos: index.html (`touch index.html`) que tendra una pequeña configuración html con su body y escuchando en la ruta http://localhost:3000/api/data  , Dockerfile (`touch Dockerfile`) que tendra el FROM con nginx:alpine COPY index.html /usr/share/nginx/html EXPONSE 80.
+	
+	En back tendremos los archivos: Dockerfile (`touch Dockerfile`) FROM node;18-slim WORDIR /app COPY package.json ./ RUN npm install COPY . . EXPOSE 3000 (puerto por defecto de node) CMD ["npm", "start"] , package.json (`touch package.json`) con unas dependencias, index.js (`touch index.js`) js porque es en back.
 
 ---
 # Guía del Profesor
 
+  Módulo 3 - Clase 2: Parte 2
+
   
+
+🎯 Objetivo del Laboratorio
+
+  
+
+El alumno tomará la arquitectura web del Laboratorio anterior y la optimizará bajo estándares profesionales de producción:
+
+  
+
+Aislamiento de Redes (Networking): Separará la comunicación en dos redes independientes de forma que la Base de Datos sea totalmente invisible para el Frontend o el exterior, reduciendo el área de ataque.
+
+  
+
+Persistencia (Volúmenes): Integrará volúmenes locales gestionados por Docker para asegurar que los datos de Postgres sobrevivan a la destrucción del contenedor.
+
+  
+
+Optimización extrema (Multi-stage Build): Reestructurará los Dockerfiles utilizando compilación de múltiples etapas, reduciendo drásticamente el peso de las imágenes finales de producción.
+
+  
+
+🗺️ Arquitectura de Red Aislada (Fase 2: Producción)
+
+![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260705003533.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ---
 
 # Material de Clase
