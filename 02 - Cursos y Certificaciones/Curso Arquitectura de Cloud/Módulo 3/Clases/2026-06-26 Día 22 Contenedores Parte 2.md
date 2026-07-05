@@ -108,30 +108,29 @@ Esta idea de efimero sigue tambien para los orquestadores.
 	
 	`sudo docker compose up -d --build`
 	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260705022625.png)
-	
-	
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260705022733.png)
 	
 	
 
-### Probar web
+### Comprobamos 
 
 1. verificamos si se levantaron los dockers
 	`sudo docker ps`
-	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260701020448.png)
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260705022932.png)
 
 2. nos conectamos a la web :
-	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260701020739.png)
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260705022843.png)
+
+3. Mostramos que la parte 2 el backend pesa menos que la parte 1 gracias a Multi-stage
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260705023404.png)
+	
 
 ### Borrar todo
 
 1. `sudo docker compose down` apaga y borra todo
-	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260701021154.png)
-	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260701021239.png)
-
-
-
-
-
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260705023803.png)
+	
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260705023841.png)
 
 
 
@@ -168,20 +167,6 @@ Optimización extrema (Multi-stage Build): Reestructurará los Dockerfiles utili
 🗺️ Arquitectura de Red Aislada (Fase 2: Producción)
 
 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260705003533.png)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
