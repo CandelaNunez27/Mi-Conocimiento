@@ -94,16 +94,22 @@ Esta idea de efimero sigue tambien para los orquestadores.
 ### Ahora la base de datos con docker-compose
 
 1. Creamos el archivo:
-	un archivo llamado docker-conpose.yml que esta fuera de las carpetas front y back. Este archivo contiene el servicio de la base de datos con la imagen postgres:15-alpine, es una base de datos efimera sin ningun tipo de volumen, un usuario y contraseña con variables que mandan a un archivo .env, y el puerto. tendra una seccion para conectar al back y por ultimo una seccion para conectar con front. 
+	un archivo llamado docker-conpose.yml que esta fuera de las carpetas front y back. Este archivo contiene el servicio de la base de datos con la imagen postgres:15-alpine, es una base de datos con volumen, un usuario y contraseña con variables que mandan a un archivo .env, y el puerto no esta expuesto ya que la seguridad ahora lo maneja la red networks: red-privada. tendra una seccion para conectar al back con el puerto conectando con networks: red-publica red-privada. Una sección para conectar con front con el puerto conectando con networks: red-puplica. 
+	Ya luego, declaramos los volumes: datos_postgres: y por íltimo las redes networks: red-publica: drive: bridge y red-privada: drive: bridge
 	
 
 2. Levantamos con docker compose (estar parados en el lugar de docker-compose)
-	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260630233640.png)
-	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260701015919.png)
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260705022001.png)
+	
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260705022144.png)
+	
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260705022053.png)
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260705022114.png)
 	
 	`sudo docker compose up -d --build`
-	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260701020231.png)
-	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260701020257.png)
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260705022625.png)
+	
+	
 	
 	
 
