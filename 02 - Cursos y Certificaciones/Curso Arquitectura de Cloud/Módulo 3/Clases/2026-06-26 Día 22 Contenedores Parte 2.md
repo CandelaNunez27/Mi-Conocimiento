@@ -33,7 +33,9 @@ Esta idea de efimero sigue tambien para los orquestadores.
 
 # Buenas Prácticas Eficacia y Seguridad
 
-- Cuidar la optimizan del tamaño de las imagenes con la Herramienta Multi-stage builds, genera imagenes en etapas para que de la imagen completa solo se usé una imagen chiquita que fue la última con el resultado final del despliegue. Tambien ganaría velocidad al subir y bajar cuya imagen.
+- Cuidar el tamaño de las imagenes con la Herramienta Multi-stage builds, genera imagenes en etapas para que de la imagen completa solo se usé una imagen chiquita que fue la última con el resultado final del despliegue. Tambien ganaría velocidad al subir y bajar cuya imagen.
+![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260704013722.png)
+
 - Minimos privilegios, tratar de que nunca el usuario root sea el usuario de ejecución. Ya que se si se vulnera algun contenedor que opera en root, podria saltar con ssh a los servidores de arriba.
 - Escaneo continuo de las imagenes, ya que hay que tener actualizada o migradas las versiones para que esten con las biblotecas parcheadas.
 
