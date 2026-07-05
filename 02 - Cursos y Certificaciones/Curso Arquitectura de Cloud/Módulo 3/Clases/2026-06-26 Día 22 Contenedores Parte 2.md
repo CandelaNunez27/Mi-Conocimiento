@@ -68,8 +68,10 @@ Esta idea de efimero sigue tambien para los orquestadores.
 
 ### Despliegue
 
-1. Creamos las imagenes:
-	`sudo docker build -t backend`
+1. Creamos las imagenes (nos movemos a la carpeta backend):
+	`sudo docker build -t backend .`
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260705011331.png)
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260705011547.png)
 
 
 
