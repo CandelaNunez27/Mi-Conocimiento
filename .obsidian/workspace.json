@@ -96,7 +96,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "2c47654ff3f8d557",
@@ -224,6 +225,7 @@
   },
   "active": "9b0a208c56697b1d",
   "lastOpenFiles": [
+    "04 - Otros/Imagenes/Pasted image 20260714223234.png",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 3/Clases/2026-06-26 Día 22 Contenedores Parte 2.md",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 3/Clases/2026-07-01 Día 23 Kubernetes.md",
     "04 - Otros/Imagenes/Pasted image 20260705023841.png",
@@ -261,7 +263,6 @@
     "01 - Tec Redes Datos y Telecom/2º Año/01 - Redes/Módulo 1.2/02 - Switches Ethernet y Diseño de Redes.md",
     "01 - Tec Redes Datos y Telecom/2º Año/01 - Redes/Módulo 1.2/01 - Capa de Enlace _ Ethernet, MAC, ARP y RARP.md",
     "01 - Tec Redes Datos y Telecom/2º Año/01 - Redes/Módulo 1.2/03 - Herramientas de Diagnóstico y Análisis de Tráfico.md",
-    "01 - Tec Redes Datos y Telecom/1° Año/00 - Índice/00 - Arquitectura de Computadoras.md",
     "01 - Tec Redes Datos y Telecom/2º Año/01 - Redes/Módulo 1.2",
     "01 - Tec Redes Datos y Telecom/2º Año/01 - Redes/Portafolio Redes",
     "01 - Tec Redes Datos y Telecom/2º Año/01 - Redes/Módulo 1.1",
