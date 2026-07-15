@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 3/Clases/2026-06-26 Día 22 Contenedores Parte 2.md",
+                "file": "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 3/Clases/2026-07-01 Día 23.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026-06-26 Día 22 Contenedores Parte 2"
+              "title": "2026-07-01 Día 23"
             }
           }
         ]
@@ -33,7 +33,7 @@
       {
         "id": "f73fb1b7698164d6",
         "type": "tabs",
-        "dimension": 75.4,
+        "dimension": 78.3433133732535,
         "children": [
           {
             "id": "e6bb5d90017c09e9",
@@ -80,7 +80,7 @@
       {
         "id": "308942dea98d7ba7",
         "type": "tabs",
-        "dimension": 24.6,
+        "dimension": 21.656686626746506,
         "children": [
           {
             "id": "857d4a252756a637",
@@ -222,9 +222,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "857d4a252756a637",
+  "active": "9b0a208c56697b1d",
   "lastOpenFiles": [
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 3/Clases/2026-06-26 Día 22 Contenedores Parte 2.md",
+    "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 3/Clases/2026-07-01 Día 23.md",
     "04 - Otros/Imagenes/Pasted image 20260705023841.png",
     "04 - Otros/Imagenes/Pasted image 20260705023803.png",
     "04 - Otros/Imagenes/Pasted image 20260705023404.png",
