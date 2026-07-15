@@ -33,14 +33,24 @@ Para que esta comunicación entre ellos sea posible es necesario clusterizar que
 3. Facilita la configuraación de red
 4. Monta volumenes de forma dinamica
 5. Puede ser un balanceador de carga si se necesita
-6. Se le comunica la minima y la maxi
+6. Se le comunica la minima y la maxima permitida y él ajusta los recursos
+7. Con metricas sabe cuando tiene que reiniciar o retirar contenedores inactivos.
 
 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260714225349.png)
 
+# Fundamentos El Cluster de k8s
 
+La instalación on-prime no es facil, se necesita de minima dos servidores (pueden ser virtuales), uno llamado Plano de control y otro llamado Nodos de Trabajo
 
+![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260714230527.png)
 
+- Control Plane: Es el que administra y hace toda la magia a nivel de arquitectura, computo y toma de decisiones. Siendo el cerebro.
 
+![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260714230659.png)
+
+- Work node: Funcionan como los musculos, ellos levanta, administran, alojan a los pods, los crean, los administran. 
+
+![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260714230804.png)
 
 
 
