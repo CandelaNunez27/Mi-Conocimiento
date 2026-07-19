@@ -70,9 +70,32 @@ El contenedor es la aplicación dockerizada. EL deployment es la receta .yml sie
 
 # Fundamentos Imperativo vs Declarativo
 
-Imperactivo: cuando le digo a kubernetes "quiero x cosa"  y comparando con lo que tiene realiza las
+Es Imperactivo: cuando le digo a kubernetes "quiero x cosa"  y comparando sus metricas con lo que tiene realiza las modificaciones que se le pidio. 
 
 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260719022513.png)
+
+# Fundamentos K8s YAML
+
+El inicio del yaml es como esto:
+	`Kind`:  nos define lo que quiero hacer, qué tipo es.
+	`metadata`: simplemente es el nombre
+	`spec: replicas`: es por si quiero hacer replicas.
+
+![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260719022837.png)
+
+# Fundamentos HPA - Volúmenes
+
+HPA: Horizontal POD Autoscaler es la funcion que tiene kubernetes que esta constantemente monitoreando. lo que  se observa en la imagen son las metricas que con dos pod se le indico a hpa que si la carga del cpu supera el 70% duplica mas pod para bajar esta carga.
+
+![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260719023305.png)
+
+Volúmenes: el pod tendra datos efimeros para ello se le tiene que asiganar un volumen como en docker, pero la diferencia con docker es que previo a declarar un volumen
+
+![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260719023322.png)
+
+
+
+
 
 
 # Práctica: sawkl
