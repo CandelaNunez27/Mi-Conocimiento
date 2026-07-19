@@ -44,7 +44,7 @@ La instalación on-prime no es facil, se necesita de minima dos servidores (pued
 
 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260714230527.png)
 
-- Control Plane: Es el que administra y hace toda la magia a nivel de arquitectura, computo y toma de decisiones. Siendo el cerebro.
+- Control Plane: Es el que administra y hace toda la magia a nivel de arquitectura, computo y toma de decisiones. Siendo el cerebro. Kube-apiserver sería la puerta donde tirariamos los comandos siendo el traductor de comandos entre la computadora y el control plane, debemos ser administradores para tirar comandos. Kube-scheduler es el que adiministra las tareas y programa/calendariza todo lo que debe hacer (hoja de ruta). etcd es la memoria de datos siendo una base de datos no estructurada 
 
 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260714230659.png)
 
