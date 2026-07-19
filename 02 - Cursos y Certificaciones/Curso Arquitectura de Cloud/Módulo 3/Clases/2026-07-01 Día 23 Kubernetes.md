@@ -44,15 +44,27 @@ La instalación on-prime no es facil, se necesita de minima dos servidores (pued
 
 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260714230527.png)
 
-- Control Plane: Es el que administra y hace toda la magia a nivel de arquitectura, computo y toma de decisiones. Siendo el cerebro. Kube-apiserver sería la puerta donde tirariamos los comandos siendo el traductor de comandos entre la computadora y el control plane, debemos ser administradores para tirar comandos. Kube-scheduler es el que adiministra las tareas y programa/calendariza todo lo que debe hacer (hoja de ruta). etcd es la memoria de datos siendo una base de datos no estructurada 
+- Control Plane: Es el que administra y hace toda la magia a nivel de arquitectura, computo y toma de decisiones. Siendo el cerebro. 
+	- Kube-apiserver sería la puerta donde tirariamos los comandos siendo el traductor de comandos entre la computadora y el control plane, debemos ser administradores para tirar comandos.
+	- Kube-scheduler es el que adiministra las tareas y programa/calendariza todo lo que debe hacer (hoja de ruta). 
+	- etcd es la memoria de datos siendo una base de datos no estructurada, guardando todo lo que teiene que saber para a futuro entender todo lo que esta haciendo el control plane, es critico po lo que se debe casi no tocar. 
+	- En on-prime es Kube-controller-manager y en nube es cloud-controller-manager, en on-prime es el que controla que los Work node este haciendo las cosas bien y el cloud es el que enlaza con la nube que se administra solo.
 
 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260714230659.png)
 
-- Work node: Funcionan como los musculos, ellos levanta, administran, alojan a los pods, los crean, los administran. 
+- Work node: Funcionan como los músculos, ellos levanta, administran, alojan a los pods, los crean, los administran. 
+	- Kubelet de la capa de administración, le dice a cada contenedor que hacer.
+	- kube-proxy de la capa de administración, es quien se encarga de la comunicación entrada y salida por red.
+	- POD en la capa de acción tenemos todos los contenedores corriendo.
 
 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260714230804.png)
 
+# Fundamentos Jerarquía K8s
 
+El clúster es el work node. Luego el nodo es uno de los servidores que puede tener el clúster, es lugar donde se almacena fisicamente. POD esta dentro de cada nodo
+
+![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260719020802.png)
+![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260719020831.png)
 
 
 
