@@ -89,11 +89,15 @@ HPA: Horizontal POD Autoscaler es la funcion que tiene kubernetes que esta const
 
 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260719023305.png)
 
-Volúmenes: el pod tendra datos efimeros para ello se le tiene que asiganar un volumen como en docker, pero la diferencia con docker es que previo a declarar un volumen
+Volúmenes: el pod tendra datos efimeros para ello se le tiene que asiganar un volumen como en docker, pero la diferencia con docker es que previamente se debe declarar un volumen un PV (Persistent Volume), que es una parte de un disco que debe estar reservada para varios PVs.
 
 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260719023322.png)
 
+# Resumen Kubernetes
 
+
+
+![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260719024505.png)
 
 
 
