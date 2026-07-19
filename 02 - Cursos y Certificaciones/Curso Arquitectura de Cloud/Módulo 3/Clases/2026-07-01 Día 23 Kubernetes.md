@@ -85,17 +85,18 @@ El inicio del yaml es como esto:
 
 # Fundamentos HPA - Volúmenes
 
-HPA: Horizontal POD Autoscaler es la funcion que tiene kubernetes que esta constantemente monitoreando. lo que  se observa en la imagen son las metricas que con dos pod se le indico a hpa que si la carga del cpu supera el 70% duplica mas pod para bajar esta carga.
+HPA: Horizontal POD Autoscaler es la función que tiene kubernetes que esta constantemente monitoreando. lo que  se observa en la imagen son las métricas que con dos pod se le indico a hpa que si la carga del cpu supera el 70% duplica mas pod para bajar esta carga.
 
 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260719023305.png)
 
-Volúmenes: el pod tendra datos efimeros para ello se le tiene que asiganar un volumen como en docker, pero la diferencia con docker es que previamente se debe declarar un volumen un PV (Persistent Volume), que es una parte de un disco que debe estar reservada para varios PVs.
+Volúmenes: el pod tendrá datos efímeros para ello se le tiene que asignar un volumen como en docker, pero la diferencia con docker es que previamente se debe declarar un volumen un PV (Persistent Volume), que es una parte de un disco que debe estar reservada para varios PVs.
 
 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260719023322.png)
 
+*Nota: ya para infraestructuras más avanzadas usan Karpenter es una excelente herramienta para aprovisionar nodos al clúster bajo demandaSin embargo, para un flujo de autoescalado completo, se complementa con otras herramientas que manejan los Pods: .*
 # Resumen Kubernetes
 
-
+Kubernetes es un automatización que lee archivos yaml y también el estado actual del clúster, haciendo modificaciones decreciendo o creciendo según lo que compara con la realidad.
 
 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260719024505.png)
 
