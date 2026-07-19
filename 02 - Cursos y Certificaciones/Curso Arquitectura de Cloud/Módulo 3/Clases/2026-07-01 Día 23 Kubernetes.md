@@ -25,7 +25,6 @@ Para que esta comunicación entre ellos sea posible es necesario clusterizar que
 
 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260714225200.png)
 
-
 # Fundamentos Ciclo de vida k8s (Resiliencia)
 
 1. Kubernete puede crear contenedores
@@ -61,12 +60,19 @@ La instalación on-prime no es facil, se necesita de minima dos servidores (pued
 
 # Fundamentos Jerarquía K8s
 
-El clúster es el work node. Luego el nodo es uno de los servidores que puede tener el clúster, es lugar donde se almacena fisicamente. POD esta dentro de cada nodo
+El clúster es el work node. Luego el nodo es uno de los servidores que puede tener el clúster, es lugar donde se almacena fisicamente. POD es la unidad  minima que puede gestionar a nivel de computo kubernetes. Dentro estaran los contenedores, pueden ir uno o dos, cuando se colocan dos es porque se quiere que entre ellos casi no tengan latencia. 
 
 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260719020802.png)
+
+El contenedor es la aplicación dockerizada. EL deployment es la receta .yml siendo las directivas para el pod de como lo administre. POD unidad mínima que puede puede administrar kubernetes, ya que si tiene que eliminar kubernetes eliminaria el pod no el contenedor en sí. Service es el recurso que nos sirve para que le de conectividad a red o otros servicios.
+
 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260719020831.png)
 
+# Fundamentos Imperativo vs Declarativo
 
+Imperactivo: cuando le digo a kubernetes "quiero x cosa"  y comparando con lo que tiene realiza las
+
+![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260719022513.png)
 
 
 # Práctica: sawkl
@@ -90,4 +96,4 @@ El clúster es el work node. Luego el nodo es uno de los servidores que puede te
 
 # Grabación de la Clase
 
-**Clase Grabada:** 
+**Clase Grabada:** https://drive.google.com/file/d/18djocO3rKPTP8RTXEbiBWlTH8aCMJfaW/view 
