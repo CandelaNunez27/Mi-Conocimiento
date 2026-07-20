@@ -93,24 +93,12 @@ Volúmenes: el pod tendrá datos efímeros para ello se le tiene que asignar un 
 
 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260719023322.png)
 
-*Nota: ya para infraestructuras más avanzadas usan Karpenter es una excelente herramienta para aprovisionar nodos al clúster bajo demandaSin embargo, para un flujo de autoescalado completo, se complementa con otras herramientas que manejan los Pods: .*
+*Nota: ya para infraestructuras más avanzadas y para optimizar tu clúster de forma integral, se usan Karpenter. Es una excelente herramienta para aprovisionar nodos al clúster bajo demanda. Sin embargo, para un flujo de autoescalado completo, se complementa con otras herramientas que manejan los Pods: KEDA (Kubernetes Event-driven Autoscaling),Kubernetes HPA (Horizontal Pod Autoscaler), Kubernetes VPA (Vertical Pod Autoscaler) .*
 # Resumen Kubernetes
 
-Kubernetes es un automatización que lee archivos yaml y también el estado actual del clúster, haciendo modificaciones decreciendo o creciendo según lo que compara con la realidad.
+Kubernetes no es un ejecutor de comandos. Kubernetes es un automatización que lee archivos yaml y también el estado actual del clúster, haciendo modificaciones decreciendo o creciendo según lo que compara con la realidad.
 
 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260719024505.png)
-
-
-
-
-# Práctica: sawkl
-### Preparación
-
-1. sdssdf:
-	sdsld
-
----
-# Guía del Profesor
 
   
 ---
