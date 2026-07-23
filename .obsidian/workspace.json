@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 3/Clases/2026-06-12 Día 18 Alternativa de virtualizar Kilecoda.md",
+                "file": "2026-07-03.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026-06-12 Día 18 Alternativa de virtualizar Kilecoda"
+              "title": "2026-07-03"
             }
           }
         ]
@@ -207,8 +207,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 225.5,
-    "collapsed": true
+    "width": 225.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -224,11 +223,14 @@
   },
   "active": "9b0a208c56697b1d",
   "lastOpenFiles": [
+    "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 3/Clases/2026-07-01 Día 23 Kubernetes.md",
+    "2026-07-03.md",
+    "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 3/Clases/2026-06-12 Día 18 Alternativa de virtualizar Kilecoda.md",
+    "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 3/Clases/2026-06-10 Día 17 IaC - Terraform.md",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 3/Clases/2026-06-17 Día 19 Gestión de configuraciones Ansible.md",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 3/Clases/2026-06-19 Día 20 Práctica Terraform y Ansible en AWS.md",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 3/Clases/2026-06-24 Día 21 Contenedores Parte 1.md",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 3/Clases/2026-06-26 Día 22 Contenedores Parte 2.md",
-    "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 3/Clases/2026-07-01 Día 23 Kubernetes.md",
     "04 - Otros/Imagenes/Pasted image 20260719024505.png",
     "04 - Otros/Imagenes/Pasted image 20260719023322.png",
     "04 - Otros/Imagenes/Pasted image 20260719023305.png",
@@ -239,8 +241,6 @@
     "04 - Otros/Imagenes/Pasted image 20260714230804.png",
     "04 - Otros/Imagenes/Pasted image 20260714230659.png",
     "04 - Otros/Imagenes/Pasted image 20260714230527.png",
-    "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 3/Clases/2026-06-10 Día 17 IaC - Terraform.md",
-    "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 3/Clases/2026-06-12 Día 18 Alternativa de virtualizar Kilecoda.md",
     "04 - Otros/Tutorial.md",
     "04 - Otros/Plantillas/Plantilla clases Cloud.md",
     "04 - Otros/Plantillas/Examen Corto Plantilla.md",
