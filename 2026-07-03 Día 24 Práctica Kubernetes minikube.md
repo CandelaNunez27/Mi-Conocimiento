@@ -5,7 +5,14 @@
 	`sudo pacman -s minikube`
 	![](04%20-%20Otros/Imagenes/Pasted%20image%2020260722212846.png)
 	
-	`minikube start --drive-docker -p minik8s` drive para que use el servicio, -p para colocarle un nombre
+	`sudo usermod -aG docker SUPER` Para trabajar con los servicios de docker sin problema de permisos
+	![](04%20-%20Otros/Imagenes/Pasted%20image%2020260722215728.png)
+	
+	`newgrp docker` Actualiza la sesión de la terminal para que reconozca los nuevos permisos (aplicando los cambios al grupo)
+	![](04%20-%20Otros/Imagenes/Pasted%20image%2020260722220109.png)
+	
+	`minikube start --driver-docker -p minik8s` driver para que use el servicio, -p para colocarle un nombre. 
+	
 	
 
 ---
