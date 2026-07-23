@@ -12,7 +12,9 @@
 	![](04%20-%20Otros/Imagenes/Pasted%20image%2020260722220109.png)
 	
 	`minikube start --driver-docker -p minik8s` driver para que use el servicio, -p para colocarle un nombre. 
+	![](04%20-%20Otros/Imagenes/Pasted%20image%2020260722222128.png)
 	
+	se puede ver como dice que utilizara docker, que inicia un cluster de nombre minik8s como control plane, se descarga una imagen 
 	
 
 ---
