@@ -38,24 +38,40 @@
 
 2. Arrancamos con pod:
 	`kubectl run nginx-test --image=nginx:alpine` creamos un pod con la imagen de alpine
-	s
-	s
+	![](04%20-%20Otros/Imagenes/Pasted%20image%2020260724002830.png)
+	
 	`kubectl get pods` listado de pod creados
-	s
-	s
+	![](04%20-%20Otros/Imagenes/Pasted%20image%2020260724002912.png)
+	
 	`kubectl logs nginx-test` y `kubectl logs nginx-test --follow` nos mustra los log y --follow para verlos en vivo
 	así trabaja un travel suting (resuelve problemas)
-	s
-	s
+	![](04%20-%20Otros/Imagenes/Pasted%20image%2020260724003007.png)
+	
+	
+	
 	`kubectl exec -it nginx-test -- sh` para entrar dentro del nginx o sea el bash del pod y mostramos lo que tiene con `ls` para salir `exit`
-	s
-	s
-	s
+	
+	
+	
 	`kubectl delete pod nginx-test` para borrar este pod de prueba
 	
+	
 
-3. Manifiesto:
-	kubernetes no es un traductor de comandos. Se puede trabajar en grupo para ello se crean equipos (manifiestos). Para ello se crea un archivo pod1.yml (apiversion, kind: pod, metadatos con el nombre y etiqueta, spec: declara el conteiner y el poder de computo colocandole)
+3. Manifiesto (equipos de trabajo):
+	kubernetes no es un traductor de comandos. Se puede trabajar en grupo para ello se crean equipos (manifiestos). Para ello se crea un archivo pod1.yml (apiversion, kind: pod, metadatos con el nombre y etiqueta, spec: declara el conteiner y el poder de computo colocandole nombre, imagen, y puerto del contenedor: 80)
+	 
+	 
+	 
+	 `kubectl appy -f pod1.yml` para crearlo
+	 
+	 
+	 `kubectl get pod` lista los pods o para más información `kubectl describe pod pod-demo-red` es distinto al de logs `kubectl logs pod-demo-red` porque este comado muestra los logs del contenedor y comando anterior mustra los logs del pod
+	 
+	 
+	 `kubectl get pod -o yaml ` cuando uno de nuestro equipo creo un pod que no conocemos podemos utilizar este comando para ver informacion. si tengo un solo pod funciona si tengo mas le expecifico el nombre, tambien muestra informacion 
+	 
+	 
+	 `kubectl get pod -o yaml > export_pod1.yaml` tambien podemos exportar esa informacion, una copia donde podemos modificar y crear uno nuevo mejorado.
 	 
 
 
