@@ -61,7 +61,7 @@
 3. Manifiesto (equipos de trabajo):
 	kubernetes no es un traductor de comandos. Se puede trabajar en grupo para ello se crean equipos (manifiestos). Para ello se crea un archivo pod1.yml (apiversion, kind: pod, metadatos con el nombre y etiqueta, spec: declara el conteiner y el poder de computo colocandole nombre, imagen, y puerto del contenedor: 80)
 	 ![](04%20-%20Otros/Imagenes/Pasted%20image%2020260724003511.png)
-	 
+	 .
 	 
 	 `kubectl appy -f pod1.yml` para crearlo, hay que estar parados en la ruta expecifica
 	 ![](04%20-%20Otros/Imagenes/Pasted%20image%2020260724003622.png)
