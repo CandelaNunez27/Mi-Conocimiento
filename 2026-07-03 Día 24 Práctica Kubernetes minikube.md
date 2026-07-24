@@ -2,9 +2,11 @@
 ### Preparación
 
 1. Descargamos y permisos necesarios:
-	`sudo pacman -s minikube`
+	`sudo pacman -S minikube`
 	![](04%20-%20Otros/Imagenes/Pasted%20image%2020260722212846.png)
 	
+	`sudo pacman -S kubectl`	
+	![](04%20-%20Otros/Imagenes/Pasted%20image%2020260722235456.png)
 	
 	`sudo usermod -aG docker SUPER` Para trabajar con los servicios de docker sin problema de permisos
 	![](04%20-%20Otros/Imagenes/Pasted%20image%2020260722215728.png)
@@ -27,10 +29,14 @@
 
 ### Empezar a ver comandos de Kubernetes
 
-1. Utilizar Kubectl (es la linea de comunicacion con el kubernetes):
+1. Utilizar Kubectl (es la linea de comunicacion punto a punto con el kubernetes):
 	`kubectl config current-context` nos devuelve a que cluster estoy conectado
+	![](04%20-%20Otros/Imagenes/Pasted%20image%2020260722235555.png)
 	
-	`kubectl get ` 
+	`kubectl get namespace` o `kubectl get ns` get = obtener lo que tengo desplegado, ns  lista todos los espacios de nombre disponibles en el cluster, nos permite agrupar logicamente cosas como Pods, deployments y servicios de forma aislada.
+	![](04%20-%20Otros/Imagenes/Pasted%20image%2020260723000309.png)
+	
+	
 
 
 
