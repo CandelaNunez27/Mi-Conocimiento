@@ -1,4 +1,4 @@
-# Práctica: sawkl
+# Práctica: Primeros pasos con minikube
 ### Preparación
 
 1. Descargamos y permisos necesarios:
@@ -27,7 +27,7 @@
 	![](04%20-%20Otros/Imagenes/Pasted%20image%2020260722233758.png)
 
 
-### Empezar a ver comandos de Kubernetes
+### Empezar a ver comandos de Kubernetes (kubectl)
 
 1. Utilizar Kubectl (es la linea de comunicacion punto a punto con el kubernetes):
 	`kubectl config current-context` nos devuelve a que cluster estoy conectado
@@ -35,11 +35,28 @@
 	
 	`kubectl get namespace` o `kubectl get ns` get = obtener lo que tengo desplegado, ns  lista todos los espacios de nombre disponibles en el cluster, nos permite agrupar logicamente cosas como Pods, deployments y servicios de forma aislada.
 	![](04%20-%20Otros/Imagenes/Pasted%20image%2020260723000309.png)
+
+2. Arrancamos con pod:
+	`kubectl run nginx-test --image=nginx:alpine` creamos un pod con la imagen de alpine
+	s
+	s
+	`kubectl get pods` listado de pod creados
+	s
+	s
+	`kubectl logs nginx-test` y `kubectl logs nginx-test --follow` nos mustra los log y --follow para verlos en vivo
+	así trabaja un travel suting (resuelve problemas)
+	s
+	s
+	`kubectl exec -it nginx-test -- sh` para entrar dentro del nginx o sea el bash del pod y mostramos lo que tiene con `ls` para salir `exit`
+	s
+	s
+	s
+	`kubectl delete pod nginx-test` para borrar este pod de prueba
 	
-	
 
-
-
+3. Manifiesto:
+	kubernetes no es un traductor de comandos. Se puede trabajar en grupo para ello se crean equipos (manifiestos). Para ello se crea un archivo pod1.yml (apiversion, kind: pod, metadatos con el nombre y etiqueta, spec: declara el conteiner y el poder de computo colocandole)
+	 
 
 
 
