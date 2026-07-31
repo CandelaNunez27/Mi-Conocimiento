@@ -86,8 +86,15 @@
 ### Levantar servicios con .yml
 
 1. Servicio 1:
-	Tenemos el archivo svc_clusterid.yml donde hay appiversion
+	 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260731003351.png)
+	
+	 Tenemos el archivo svc_clusterid.yml donde hay apiVersion, kind:  Service, de nombre servicio-interno,  con el tipo, el puerto y la app que sera el pod (colocando su nombre), utilizando el selector para comunicarnos. Que este pod lo tenemos configurado en el archivo pod1.yml. Lo que hace este servicio es que si alguien consulta por el puerto 80 llevalo a ese puerto 80 de ese pod.
+	 
+	 `kubectl apply -f svc_clusterid.yml` para crear el servicio. `kubectl get service`. ya tendriamos el servicio creado. 
+	 
 
+2. Servicio 2 (Pod utilizado por el profesor para hacer travel suting donde trabaja):
+	Tenemos el archivo my_curl_pod.yml, que contiene apiVersion, kind: pod, metadata de nombre network-debugger y el nombre de la labels app igual. spec indicandole el conteiner a crear, con nombre networl-debug
 
 ---
 # Guía del Profesor
