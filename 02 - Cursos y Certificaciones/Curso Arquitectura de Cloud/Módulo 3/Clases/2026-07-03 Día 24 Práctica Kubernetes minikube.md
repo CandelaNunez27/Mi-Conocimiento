@@ -83,7 +83,10 @@
 	 
 	 ![](04%20-%20Otros/Imagenes/Pasted%20image%2020260724004308.png)
 
+### Levantar servicios con .yml
 
+1. Servicio 1:
+	Tenemos el archivo svc_clusterid.yml donde hay appiversion
 
 
 ---
