@@ -144,13 +144,17 @@
 
 4. Servicio 4:
 	 
+	 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260731235421.png)
 	 
 	 Tenemos el archivo svc_loadBalancer.yml donde hay apiVersion, kind:  Service, de nombre servicio-balanceador,  con el tipo loadBalancer, el puerto 80 y la app que sera el pod del archivo pod1.yml. Lo que hace este servicio es que nos soluciona el problema de no llegar desde nuestra pc, trayendo una ip externa a por ejemplo aws.
 	 
+	 `kubectl apply -f svc_loadBalancer.yml` y `kubectl get service` para crear el servicio y ver lo que ya tenemos en runing
+	 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260801000246.png)
 	 
 	 
+	 En  otra terminal dejar corriendo:  `minikube tunnel -p minik8s` nos crea el tunel que se quedara escuchando
 	 
-	 
+	 Volviendo a la terminal anterior realizamos `kubectl get service` o `kubectl get svc` que es lo mismo
 	 
 	 
 	 
