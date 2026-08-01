@@ -98,7 +98,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "2c47654ff3f8d557",
@@ -226,6 +227,9 @@
   },
   "active": "f141d2f26fd8b8c6",
   "lastOpenFiles": [
+    "04 - Otros/Imagenes/Pasted image 20260731230640.png",
+    "04 - Otros/Imagenes/Pasted image 20260731230204.png",
+    "04 - Otros/Imagenes/Pasted image 20260731225832.png",
     "04 - Otros/Tutorial.md",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 3/Clases/2026-07-03 Día 24 Práctica Kubernetes minikube.md",
     "04 - Otros/Imagenes/Pasted image 20260731222720.png",
@@ -236,8 +240,6 @@
     "04 - Otros/Imagenes/Pasted image 20260731215902.png",
     "04 - Otros/Imagenes/Pasted image 20260731215619.png",
     "04 - Otros/Imagenes/Pasted image 20260731215527.png",
-    "04 - Otros/Imagenes/Pasted image 20260731003351.png",
-    "04 - Otros/Imagenes/Pasted image 20260724004308.png",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 3/Clases/2026-07-01 Día 23 Kubernetes.md",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 3/Clases/2026-06-19 Día 20 Práctica Terraform y Ansible en AWS.md",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 3/Clases/2026-06-24 Día 21 Contenedores Parte 1.md",

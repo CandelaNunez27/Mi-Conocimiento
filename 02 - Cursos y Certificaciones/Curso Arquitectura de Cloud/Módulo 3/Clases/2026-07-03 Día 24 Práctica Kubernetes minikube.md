@@ -117,16 +117,23 @@
 	 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260731222720.png)
 	 
 
-3. Servicio 3: (lo deje en el minuto 46 clase 24)
+2. Servicio 3: 
 	 
-	 
+	 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260731225832.png)
 	 
 	 Tenemos el archivo svc_nodeport.yaml donde hay apiVersion, kind:  Service, de nombre servicio-externo-nodo,  con el tipo, el puerto tambien 80 pero con nodePort 31080 que esto fuerza al servicio utilizar este puerto. ey la app que sera el pod (colocando su nombre), utilizando el selector para comunicarnos. Que este pod lo tenemos configurado en el archivo pod1.yml. Lo que hace este servicio es que le decimos que al 80 mandalo al 31080 del cluster, quedando expuesto para nuestro kubernetes
 	 
 	 `kubectl apply -f svc_nodeport.yaml` y `kubectl get service` creamos el tercer servicio que nos permite la comunicación entre nuestro equipos
+	 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260731230204.png)
 	 
-	 `minikube ip` para ver nuestra ip de nuestro contenedor que corre minikube 
+	 `minikube -p minik8s ip` o `minikube profile list`para ver nuestra ip de nuestro contenedor que corre minikube, aunque todavia no se creo ninguna ip externa a la api. pero con esta ip nos permite a conectarnos desde nuetra pc
+	 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260731230640.png)
 	 
+	 
+	 
+	 `curl http://192.168.49.2:31080` y en el navegador
+	 
+	 Aunque no se pudo exponer por un tema de estar usando minikube.
 	 
 	 
 	 
