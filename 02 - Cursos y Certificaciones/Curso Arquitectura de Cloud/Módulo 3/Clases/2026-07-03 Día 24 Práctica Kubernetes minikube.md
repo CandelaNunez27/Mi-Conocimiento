@@ -117,7 +117,7 @@
 	 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260731222720.png)
 	 
 
-2. Servicio 3: 
+3. Servicio 3: 
 	 
 	 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260731225832.png)
 	 
@@ -141,8 +141,10 @@
 	 
 	 
 	 
-	 
 
+4. Servicio 4:
+	 
+	 
 	 Tenemos el archivo svc_loadBalancer.yml donde hay apiVersion, kind:  Service, de nombre servicio-balanceador,  con el tipo loadBalancer, el puerto 80 y la app que sera el pod del archivo pod1.yml. Lo que hace este servicio es que nos soluciona el problema de no llegar desde nuestra pc, trayendo una ip externa a por ejemplo aws.
 	 
 	 
