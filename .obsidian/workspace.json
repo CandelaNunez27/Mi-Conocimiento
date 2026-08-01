@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 3/Clases/2026-07-03 Día 24 Práctica Kubernetes minikube.md",
+                "file": "04 - Otros/Tutorial.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026-07-03 Día 24 Práctica Kubernetes minikube"
+              "title": "Tutorial"
             }
           }
         ]
@@ -42,7 +42,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical",
-                "autoReveal": false
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-folder-closed",
               "title": "Explorador de archivos"
@@ -96,8 +98,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "2c47654ff3f8d557",
@@ -225,6 +226,9 @@
   },
   "active": "9b0a208c56697b1d",
   "lastOpenFiles": [
+    "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 3/Clases/2026-07-03 Día 24 Práctica Kubernetes minikube.md",
+    "04 - Otros/Imagenes/Pasted image 20260731222720.png",
+    "04 - Otros/Imagenes/Pasted image 20260731222351.png",
     "04 - Otros/Imagenes/Pasted image 20260731222116.png",
     "04 - Otros/Imagenes/Pasted image 20260731221650.png",
     "04 - Otros/Imagenes/Pasted image 20260731221502.png",
@@ -233,14 +237,10 @@
     "04 - Otros/Imagenes/Pasted image 20260731215527.png",
     "04 - Otros/Imagenes/Pasted image 20260731003351.png",
     "04 - Otros/Imagenes/Pasted image 20260724004308.png",
-    "04 - Otros/Imagenes/Pasted image 20260724004144.png",
-    "04 - Otros/Imagenes/Pasted image 20260724004011.png",
-    "04 - Otros/Imagenes/Pasted image 20260724003950.png",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 3/Clases/2026-07-01 Día 23 Kubernetes.md",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 3/Clases/2026-06-19 Día 20 Práctica Terraform y Ansible en AWS.md",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 3/Clases/2026-06-24 Día 21 Contenedores Parte 1.md",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 3/Clases/2026-06-26 Día 22 Contenedores Parte 2.md",
-    "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 3/Clases/2026-07-03 Día 24 Práctica Kubernetes minikube.md",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 3/Clases/2026-06-12 Día 18 Alternativa de virtualizar Kilecoda.md",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 3/Clases/2026-06-10 Día 17 IaC - Terraform.md",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 3/Clases/2026-06-17 Día 19 Gestión de configuraciones Ansible.md",

@@ -11,17 +11,18 @@
 	`sudo usermod -aG docker SUPER` Para trabajar con los servicios de docker sin problema de permisos
 	![](04%20-%20Otros/Imagenes/Pasted%20image%2020260722215728.png)
 	
-	`newgrp docker` Actualiza la sesión de la terminal para que reconozca los nuevos permisos (aplicando los cambios al grupo)
+	 `newgrp docker` Actualiza la sesión de la terminal para que reconozca los nuevos permisos (aplicando los cambios al grupo)
 	![](04%20-%20Otros/Imagenes/Pasted%20image%2020260722220109.png)
 
 2. Arrancamos un minikube:
 	`minikube start --driver-docker -p minik8s` driver para que use el servicio, -p para colocarle un nombre. 
-	![](04%20-%20Otros/Imagenes/Pasted%20image%2020260722222128.png) 
+	 ![](04%20-%20Otros/Imagenes/Pasted%20image%2020260722222128.png) 
 	
 	se puede ver como dice que utilizara docker, que inicia un cluster de nombre minik8s como control plane, se descarga una imagen v0.0.50 creando un cluster de 2 nucleos y de 3072MB de ram, utilizando las versiones de kubernetes v1.35.1 y de docker v29.2.1, etc
 	
-	`minikube status -p minik8s` si no se le coloco nombre en el paso anterior no hace falta indicarle el nombre, pero en nuestro caso si con -p
-	![](04%20-%20Otros/Imagenes/Pasted%20image%2020260722233547.png)
+	 `minikube status -p minik8s` si no se le coloco nombre en el paso anterior no hace falta indicarle el nombre, pero en nuestro caso si con -p
+	 
+	 ![](04%20-%20Otros/Imagenes/Pasted%20image%2020260722233547.png)
 	
 	`docker ps`
 	![](04%20-%20Otros/Imagenes/Pasted%20image%2020260722233758.png)
@@ -33,7 +34,7 @@
 	`kubectl config current-context` nos devuelve a que cluster estoy conectado
 	![](04%20-%20Otros/Imagenes/Pasted%20image%2020260722235555.png)
 	
-	`kubectl get namespace` o `kubectl get ns` get = obtener lo que tengo desplegado, ns  lista todos los espacios de nombre disponibles en el cluster, nos permite agrupar logicamente cosas como Pods, deployments y servicios de forma aislada.
+	 `kubectl get namespace` o `kubectl get ns` get = obtener lo que tengo desplegado, ns  lista todos los espacios de nombre disponibles en el cluster, nos permite agrupar logicamente cosas como Pods, deployments y servicios de forma aislada.
 	![](04%20-%20Otros/Imagenes/Pasted%20image%2020260723000309.png)
 
 2. Arrancamos con pod:
@@ -43,15 +44,14 @@
 	`kubectl get pods` listado de pod creados
 	![](04%20-%20Otros/Imagenes/Pasted%20image%2020260724002912.png)
 	
-	`kubectl logs nginx-test` y `kubectl logs nginx-test --follow` nos mustra los log y --follow para verlos en vivo
+	 `kubectl logs nginx-test` y `kubectl logs nginx-test --follow` nos mustra los log y --follow para verlos en vivo
 	así trabaja un travel suting (resuelve problemas)
 	![](04%20-%20Otros/Imagenes/Pasted%20image%2020260724003007.png)
 	
 	![](04%20-%20Otros/Imagenes/Pasted%20image%2020260724003039.png)
 	
 	
-	
-	`kubectl exec -it nginx-test -- sh` para entrar dentro del nginx o sea el bash del pod y mostramos lo que tiene con `ls` , donde estamos parados con `pwd`  y para salir `exit`
+	 `kubectl exec -it nginx-test -- sh` para entrar dentro del nginx o sea el bash del pod y mostramos lo que tiene con `ls` , donde estamos parados con `pwd`  y para salir `exit`
 	![](04%20-%20Otros/Imagenes/Pasted%20image%2020260724003305.png)
 	
 	`kubectl delete pod nginx-test` para borrar este pod de prueba
@@ -97,6 +97,7 @@
 	 
 	 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260731215619.png)
 	 
+	
 	 Tenemos el archivo my_curl_pod.yml, que contiene apiVersion, kind: pod, metadata de nombre network-debugger y el nombre de la labels app igual. spec indicandole el conteiner a crear, con nombre networl-debugger-container, su imagen que es una imagen publica que descarga de aws, los comandos para que pueda descargarlo,  "-c" es para que entienda que es un comando lo de acontinuazcion.
 	 
 	 `kubectl apply -f my_curl_pod.yml` y `kubectl get pod`, tarda un poquito porque esta descargando la imagen, pero una vez listo nos permitira ingresar a ella
@@ -108,51 +109,88 @@
 	 
 	 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260731222116.png)
 	 
+	 Ahora nos conectaremos a nuestro pod, `kubectl exec -it pod-demo-red -- sh` donde tiramos `curl localhost`, y debería de responder exactamente lo mismo.
 	 
+	 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260731222351.png)
 	 
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	`kubectl get pod`, tarda un poquito porque esta descargando la imagen, pero una vez listo nos permitira ingresar a ella 
-	
-	`kubectl exec -it network-debugger -- sh ` ingresaremos al conteiner con la imagen. donde podremos tirar comandos como `curl http://servicio-interno` donde descubrira nuestro otro servicio, gracias a nuestro servicio-interno estoy pudiendo llegar a nuestro pod pod-demo-red. Para salir usamos `exit` 
-	
-	Ahora nos conectaremos a nuestro pod, `kubectl exec -it pod-demo-red -- sh` donde tiramos `curl localhost`, y debería de responder exactamente lo mismo.
-	
-	Pero si ejecutamos desde nuestra consola `curl http://servicio-interno`, no nos deberia de dejar acceder porque no esta expuesto el puerto. Para ello el tercer servicio.
-	
-	`kubectl apply -f my_curl_pod.yml`.
-	
+	 Pero si ejecutamos desde nuestra consola `curl http://servicio-interno`, no nos debería de dejar acceder porque no esta expuesto el puerto. Para ello el tercer servicio.
+	 
+	 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260731222720.png)
+	 
 
 3. Servicio 3: (lo deje en el minuto 46 clase 24)
+	 
+	 Tenemos el archivo svc_nodeport.yaml, que contiene apiVersion, kind: service, metadata de nombre servicio-externo-nodo. spec indicandole el conteiner a crear, con nombre networl-debugger-container, su imagen que es una imagen publica que descarga de aws, los comandos para que pueda descargarlo,  "-c" es para que entienda que es un comando lo de acontinuazcion. 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	dsd
+	 
+
 
 
 

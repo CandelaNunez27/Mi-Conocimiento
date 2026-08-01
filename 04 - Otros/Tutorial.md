@@ -52,6 +52,15 @@ copiar y pegar imágenes con ctrl + p seleccionar link cosverter vault: links in
 
 CTRL + P : para abrir barra de acciones.
 
+
+### Cuando se pongas mal las tabulaciones copiar esta tab que esta bien:
+
+	 tab
+
+
+
+
+---
 # hacer otra bodega
 
 ### Guía: Conectar nueva bóveda de Obsidian a GitHub (CachyOS)
