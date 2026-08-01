@@ -153,10 +153,18 @@
 	 
 	 
 	 En  otra terminal dejar corriendo:  `minikube tunnel -p minik8s` nos crea el tunel que se quedara escuchando
+	 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260801003354.png)
 	 
 	 Volviendo a la terminal anterior realizamos `kubectl get service` o `kubectl get svc` que es lo mismo
+	 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260801003032.png)
 	 
+	 Paso de estar pendiente a ya tener una asignada, en un caso donde no haya funcionado lo del servicio anterior tendria que salir 127.0.0.1 como a mi profesor
+	 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260801003717.png)
 	 
+	 Probamos la conexion `curl http://127.0.0.1` mi profesor y yo `curl http://10.102.163.11`
+	 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260801004036.png)
+	 
+	 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260801004311.png)
 	 
 	 
 	 
