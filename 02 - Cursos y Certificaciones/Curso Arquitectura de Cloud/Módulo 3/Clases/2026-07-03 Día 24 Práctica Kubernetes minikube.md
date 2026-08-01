@@ -96,13 +96,13 @@
 2. Servicio 2 (Pod utilizado por el profesor para hacer travel suting donde trabaja):
 	
 	
-	Tenemos el archivo my_curl_pod.yml, que contiene apiVersion, kind: pod, metadata de nombre network-debugger y el nombre de la labels app igual. spec indicandole el conteiner a crear, con nombre networl-debugger-container, su imagen que es una imagen publica que descarga de aws, los comandos para que pueda descargarlo, "-c" es para que entienda que es un comando lo de acontinuazcion. 
+	Tenemos el archivo my_curl_pod.yml, que contiene apiVersion, kind: pod, metadata de nombre network-debugger y el nombre de la labels app igual. spec indicandole el conteiner a crear, con nombre networl-debugger-container, su imagen que es una imagen publica que descarga de aws, los comandos para que pueda descargarlo, "-c" es para que entienda que es un comando lo de acontinuazcion.  
 	
-	`kubectl apply -f my_curl_pod.yml`
+	`kubectl apply -f my_curl_pod.yml` 
 	
-	`kubectl get pod`, tarda un poquito porque esta descargando la imagen, pero una vez listo nos permitira ingresar a ella
+	`kubectl get pod`, tarda un poquito porque esta descargando la imagen, pero una vez listo nos permitira ingresar a ella 
 	
-	`kubectl exec -it network-debugger -- sh ` ingresaremos al conteiner con la imagen. donde podremos tirar comandos como `curl http://servicio-interno` donde descubrira nuestro otro servicio, gracias a nuestro servicio-interno estoy pudiendo llegar a nuestro pod pod-demo-red. Para salir usamos `exit`
+	`kubectl exec -it network-debugger -- sh ` ingresaremos al conteiner con la imagen. donde podremos tirar comandos como `curl http://servicio-interno` donde descubrira nuestro otro servicio, gracias a nuestro servicio-interno estoy pudiendo llegar a nuestro pod pod-demo-red. Para salir usamos `exit` 
 	
 	Ahora nos conectaremos a nuestro pod, `kubectl exec -it pod-demo-red -- sh` donde tiramos `curl localhost`, y debería de responder exactamente lo mismo.
 	
