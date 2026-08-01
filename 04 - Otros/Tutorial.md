@@ -57,7 +57,7 @@ CTRL + P : para abrir barra de acciones.
 
 	 tab
 
-
+O escribir en el medio de la oración par que se vuelva a ubicar
 
 
 ---

@@ -8,7 +8,7 @@
 	`sudo pacman -S kubectl`	
 	![](04%20-%20Otros/Imagenes/Pasted%20image%2020260722235456.png)
 	
-	`sudo usermod -aG docker SUPER` Para trabajar con los servicios de docker sin problema de permisos
+	 `sudo usermod -aG docker SUPER` Para trabajar con los servicios de docker sin problema de permisos
 	![](04%20-%20Otros/Imagenes/Pasted%20image%2020260722215728.png)
 	
 	 `newgrp docker` Actualiza la sesión de la terminal para que reconozca los nuevos permisos (aplicando los cambios al grupo)
@@ -25,8 +25,7 @@
 	 ![](04%20-%20Otros/Imagenes/Pasted%20image%2020260722233547.png)
 	
 	`docker ps`
-	![](04%20-%20Otros/Imagenes/Pasted%20image%2020260722233758.png)
-
+	 ![](04%20-%20Otros/Imagenes/Pasted%20image%2020260722233758.png)
 
 ### Empezar a ver comandos de Kubernetes (kubectl)
 
@@ -38,7 +37,7 @@
 	![](04%20-%20Otros/Imagenes/Pasted%20image%2020260723000309.png)
 
 2. Arrancamos con pod:
-	`kubectl run nginx-test --image=nginx:alpine` creamos un pod con la imagen de alpine
+	 `kubectl run nginx-test --image=nginx:alpine` creamos un pod con la imagen de alpine
 	![](04%20-%20Otros/Imagenes/Pasted%20image%2020260724002830.png)
 	
 	`kubectl get pods` listado de pod creados
@@ -88,7 +87,7 @@
 1. Servicio 1:
 	 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260731003351.png)
 	
-	 Tenemos el archivo svc_clusterid.yml donde hay apiVersion, kind:  Service, de nombre servicio-interno,  con el tipo, el puerto y la app que sera el pod (colocando su nombre), utilizando el selector para comunicarnos. Que este pod lo tenemos configurado en el archivo pod1.yml. Lo que hace este servicio es que si alguien consulta por el puerto 80 llevalo a ese puerto 80 de ese pod.
+	 Tenemos el archivo svc_clusterid.yml donde hay apiVersion, kind:  Service, de nombre servicio-interno,  con el tipo ClusterIP, el puerto y la app que sera el pod (colocando su nombre), utilizando el selector para comunicarnos. Que este pod lo tenemos configurado en el archivo pod1.yml. Lo que hace este servicio es que si alguien consulta por el puerto 80 llevalo a ese puerto 80 de ese pod.
 	 
 	 `kubectl apply -f svc_clusterid.yml` para crear el servicio. `kubectl get service`. ya tendriamos el servicio creado. 
 	 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260731215527.png)
@@ -120,9 +119,13 @@
 
 3. Servicio 3: (lo deje en el minuto 46 clase 24)
 	 
-	 Tenemos el archivo svc_nodeport.yaml, que contiene apiVersion, kind: service, metadata de nombre servicio-externo-nodo. spec indicandole el conteiner a crear, con nombre networl-debugger-container, su imagen que es una imagen publica que descarga de aws, los comandos para que pueda descargarlo,  "-c" es para que entienda que es un comando lo de acontinuazcion. 
 	 
 	 
+	 Tenemos el archivo svc_nodeport.yaml donde hay apiVersion, kind:  Service, de nombre servicio-externo-nodo,  con el tipo, el puerto tambien 80 pero con nodePort 31080 que esto fuerza al servicio utilizar este puerto. ey la app que sera el pod (colocando su nombre), utilizando el selector para comunicarnos. Que este pod lo tenemos configurado en el archivo pod1.yml. Lo que hace este servicio es que le decimos que al 80 mandalo al 31080 del cluster, quedando expuesto para nuestro kubernetes
+	 
+	 `kubectl apply -f svc_nodeport.yaml` y `kubectl get service` creamos el tercer servicio que nos permite la comunicación entre nuestro equipos
+	 
+	 `minikube ip` para ver nuestra ip de nuestro contenedor que corre minikube 
 	 
 	 
 	 
@@ -223,4 +226,4 @@
 
 # Grabación de la Clase
 
-**Clase Grabada:** 
+**Clase Grabada:** https://drive.google.com/file/d/1qLWL5ZERM9CWPJYqHx_0EctjJnsUESjh/view
