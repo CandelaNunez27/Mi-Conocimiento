@@ -91,12 +91,24 @@
 	 Tenemos el archivo svc_clusterid.yml donde hay apiVersion, kind:  Service, de nombre servicio-interno,  con el tipo, el puerto y la app que sera el pod (colocando su nombre), utilizando el selector para comunicarnos. Que este pod lo tenemos configurado en el archivo pod1.yml. Lo que hace este servicio es que si alguien consulta por el puerto 80 llevalo a ese puerto 80 de ese pod.
 	 
 	 `kubectl apply -f svc_clusterid.yml` para crear el servicio. `kubectl get service`. ya tendriamos el servicio creado. 
+	 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260731215527.png)
 	 
-
 2. Servicio 2 (Pod utilizado por el profesor para hacer travel suting donde trabaja):
+	 
+	 Tenemos el archivo my_curl_pod.yml, que contiene apiVersion, kind: pod, metadata de nombre network-debugger y el nombre de la labels app igual. spec indicandole el conteiner a crear, con nombre networl-debugger-container, su imagen que es una imagen publica que descarga de aws, los comandos para que pueda descargarlo,  "-c" es para que entienda que es un comando lo de acontinuazcion.
+	 
+	 
 	
-	
-	Tenemos el archivo my_curl_pod.yml, que contiene apiVersion, kind: pod, metadata de nombre network-debugger y el nombre de la labels app igual. spec indicandole el conteiner a crear, con nombre networl-debugger-container, su imagen que es una imagen publica que descarga de aws, los comandos para que pueda descargarlo, "-c" es para que entienda que es un comando lo de acontinuazcion.  
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260731215619.png)
+
+4. sercicio:
+	Tenemos el archivo my_curl_pod.yml, que contiene apiVersion, kind: pod, metadata de nombre network-debugger y el nombre de la labels app igual. spec indicandole el conteiner a crear, con nombre networl-debugger-container, su imagen que es una imagen publica que descarga de aws, los comandos para que pueda descargarlo,  "-c" es para que entienda que es un comando lo de acontinuazcion.	
+	ADSDASDASADSAS DASDASD ASD KAÑSKDÑLASKDK ASÑDKAÑSKDASKDLÑ ALÑSKDKA LDKASLDK ALÑKS DÑKLASDAA LÑKSDALSK DLÑA
+	ASDASDASDADDASDASDASDASDADASDADADADV ALKS AJDLKAJSDJ SJDAL JSDLAJ SDLKJASJ DKLASD JAKJD AJSJA SJ LAJD AJD ADLKJ  ASLKDJALJSDLAJSD JAKDJLAKJDKLASDLJASDASDJLAKJ DLAJD LJ
+
+
+	SDJASJDAJSDASDDJASJDALJSDKJASdj ajsdalskdjalsjdlajsdljalsdjalksjdljSDJALSJDLKajS DJALSD ALSJD LAJSDLKAJSDJA SLDASD ALSD LAJD A
+	Tenemos el archivo my_curl_pod.yml, que contiene apiVersion, kind: pod, metadata de nombre network-debugger y el nombre de la labels app igual. spec indicandole el conteiner a crear, con nombre networl-debugger-container, su imagen que es una imagen publica que descarga de aws, los comandos para que pueda descargarlo,  "-c" es para que entienda que es un comando lo de acontinuazcion.
 	
 	`kubectl apply -f my_curl_pod.yml` 
 	
@@ -109,7 +121,7 @@
 	Pero si ejecutamos desde nuestra consola `curl http://servicio-interno`, no nos deberia de dejar acceder porque no esta expuesto el puerto. Para ello el tercer servicio.
 	
 
-2. Servicio 3: (lo deje en el minuto 46 clase 24)
+5. Servicio 3: (lo deje en el minuto 46 clase 24)
 
 
 
