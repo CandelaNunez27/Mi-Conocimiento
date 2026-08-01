@@ -121,28 +121,29 @@
 	 
 	 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260731225832.png)
 	 
-	 Tenemos el archivo svc_nodeport.yaml donde hay apiVersion, kind:  Service, de nombre servicio-externo-nodo,  con el tipo, el puerto tambien 80 pero con nodePort 31080 que esto fuerza al servicio utilizar este puerto. ey la app que sera el pod (colocando su nombre), utilizando el selector para comunicarnos. Que este pod lo tenemos configurado en el archivo pod1.yml. Lo que hace este servicio es que le decimos que al 80 mandalo al 31080 del cluster, quedando expuesto para nuestro kubernetes
+	 Tenemos el archivo svc_nodeport.yaml donde hay apiVersion, kind:  Service, de nombre servicio-externo-nodo,  con el tipo, el puerto tambien 80 pero con nodePort 31080 que esto fuerza al servicio utilizar este puerto. y la app que sera el pod del archivo pod1.yml. Lo que hace este servicio es que le decimos que al 80 mandalo al 31080 del cluster, quedando expuesto para nuestro kubernetes
 	 
 	 `kubectl apply -f svc_nodeport.yaml` y `kubectl get service` creamos el tercer servicio que nos permite la comunicación entre nuestro equipos
 	 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260731230204.png)
 	 
-	 `minikube -p minik8s ip` o `minikube profile list`para ver nuestra ip de nuestro contenedor que corre minikube, aunque todavia no se creo ninguna ip externa a la api. pero con esta ip nos permite a conectarnos desde nuetra pc
+	 `minikube -p minik8s ip` o `minikube profile list`para ver nuestra ip de nuestro contenedor que corre minikube, aunque todavia no se creo ninguna ip externa a la api. pero con esta ip nos permite a conectarnos desde nuetra pc. 
 	 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260731230640.png)
 	 
 	 
-	 
 	 `curl http://192.168.49.2:31080` y en el navegador
+	 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260731230945.png)
 	 
-	 Aunque no se pudo exponer por un tema de estar usando minikube.
+	 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260731231126.png)
 	 
-	 
-	 
-	 
-	 
+	 Aunque, aveces hay problemas al exponerlo por un tema de estar usando minikube con docker, ya que hay que indicarle a minikube que abra el puerto y su servicio docker tambien. Para ello se utiliza el siguiente servicio. 
 	 
 	 
 	 
 	 
+	 
+	 
+
+	 Tenemos el archivo svc_loadBalancer.yml donde hay apiVersion, kind:  Service, de nombre servicio-balanceador,  con el tipo loadBalancer, el puerto 80 y la app que sera el pod del archivo pod1.yml. Lo que hace este servicio es que nos soluciona el problema de no llegar desde nuestra pc, trayendo una ip externa a por ejemplo aws.
 	 
 	 
 	 
