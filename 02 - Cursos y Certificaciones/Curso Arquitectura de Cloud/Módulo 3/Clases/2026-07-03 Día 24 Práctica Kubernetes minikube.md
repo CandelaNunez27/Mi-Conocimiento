@@ -166,6 +166,8 @@
 	 
 	 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260801004311.png)
 	 
+	 La logica es que kaint lo conecta un puerto extra. Y no es buena practica exponer los nodepot porque nos estariamos pegando siempre al mismo servicio, para ello se hacen varios servicios que corren atras con servicios tipo clusterApi. ClusterApi es como si le fijaramos una ip con un puerto de manera privado. con nodeport estamos exponiendo pero tendria que ir uno a uno.  
+	 
 	 
 	 
 	 
