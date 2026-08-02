@@ -8,35 +8,20 @@
         "type": "tabs",
         "children": [
           {
-            "id": "f141d2f26fd8b8c6",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 3/Clases/2026-07-15 Repaso Docker.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "2026-07-15 Repaso Docker"
-            }
-          },
-          {
             "id": "aa92e956f9d1b376",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 3/Clases/2026-07-15 Repaso Docker.md",
+                "file": "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 3/Clases/2026-07-15 Repaso Docker y Kubernetes, Arquitectura Cloud con Ingress y Persistencia.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026-07-15 Repaso Docker"
+              "title": "2026-07-15 Repaso Docker y Kubernetes, Arquitectura Cloud con Ingress y Persistencia"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -113,7 +98,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "2c47654ff3f8d557",
@@ -241,8 +227,12 @@
   },
   "active": "aa92e956f9d1b376",
   "lastOpenFiles": [
+    "04 - Otros/Imagenes/Pasted image 20260802185358.png",
+    "04 - Otros/Imagenes/Pasted image 20260802185309.png",
+    "04 - Otros/Imagenes/Pasted image 20260802185115.png",
+    "04 - Otros/Imagenes/Pasted image 20260802184831.png",
     "04 - Otros/Tutorial.md",
-    "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 3/Clases/2026-07-15 Repaso Docker.md",
+    "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 3/Clases/2026-07-15 Repaso Docker y Kubernetes, Arquitectura Cloud con Ingress y Persistencia.md",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 3/Clases/2026-07-03 Día 24 Práctica Kubernetes minikube.md",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 3/Clases/2026-07-01 Día 23 Kubernetes.md",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 3/Clases/2026-06-26 Día 22 Contenedores Parte 2.md",
@@ -266,9 +256,6 @@
     "04 - Otros/Imagenes/Pasted image 20260802012940.png",
     "04 - Otros/Imagenes/Pasted image 20260802012900.png",
     "04 - Otros/Imagenes/Pasted image 20260802012745.png",
-    "04 - Otros/Imagenes/Pasted image 20260802012636.png",
-    "04 - Otros/Imagenes/Pasted image 20260802012432.png",
-    "04 - Otros/Imagenes/Pasted image 20260802012329.png",
     "04 - Otros/Plantillas/Plantilla clases Cloud.md",
     "04 - Otros/Plantillas/Examen Corto Plantilla.md",
     "04 - Otros/Plantillas/Examen largo plantilla.md",
@@ -276,7 +263,6 @@
     "01 - Tec Redes Datos y Telecom/2º Año/01 - Redes/Portafolio Redes/01 - Laboratorio - Análisis de Capa de Enlace (Wireshark y ARP).md",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 1/Clases/2026-04-29 Día 5 Redes en la Nube.md",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 1/Clases/2026-04-24 Día 4 Práctica.md",
-    "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 1/Clases/2026-04-22 Día 3 Introducción La Nube.md",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 3/Clases",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 3",
     "01 - Tec Redes Datos y Telecom/2º Año/01 - Redes/Módulo 1.2",
