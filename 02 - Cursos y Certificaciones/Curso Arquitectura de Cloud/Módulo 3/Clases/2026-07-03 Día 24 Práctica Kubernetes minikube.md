@@ -176,17 +176,19 @@
 	 
 	 Tenemos el archivo namespace.yaml con appiVersion, kind Namespace, metadata name formatec-apps. Este namespace es una division logica que nos permite realizar las mamuscas que se hablo en la teoria.
 	 
-	 
-	 
-	 
-	 
-	 
-	 
-	 
+	 `kubectl apply -f namespace.yaml` para crear el namespace
 	 
 
+2. Deploy base de datos (una mamusca):
 	 
+	 Tenemos el archivo deploy_db.yaml con kind Deployement, name postgres-db, namespace fomatec-apps (para que se coloque por debajo del namespace, encapsulado), label app db-backend, tiene dos spec donde el primero tiene replicas: 1, selector app postgres-pod, y template app postgres-pod, el segundo spec tiene que cree un contenedor, con sus datos.
 	 
+	 Luego de ese mismo archivo se encuentra dividido por unos --- donde arranca a codificar un servicio, apiversion, kind Service, Name postgres-db namespace formatec-apps, spec type ClusterIP, port 5432, selector app postgres-pod 
+	 
+
+	 `kubectl apply -f deploy_db.yaml` y `kubectl get pod` para crear el deploy. En la lista de pod no se tendria que ver el pod que crea el deploy_db.yaml porque presisamente esta encapsulado en namespace
+	  
+	 Para verlo se utiliza ``kubectl`
 	 
 	 
 	 
