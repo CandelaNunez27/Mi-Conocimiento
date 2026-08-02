@@ -13,14 +13,21 @@ Estructura del proyecto:
 	 
 
 2. arrancar un minikube:
-	 `minikube start`
+	 `minikube start` para arrancar el minikube default, default porque no se le coloco nombre
+	 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260802201425.png)
 	
-	 `minikube status`
+	 `minikube status` Se ve el estado running y que se llama minikube.
+	 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260802201549.png)
+	 
+	 
 	
-	 `minikube addons list ` lista de agregados / plugins que tiene minikube y que se pueden utilizar que son de terceros. De esa  lista vamos a activar el ingress que es creado por kubernetes, ingress-dns creado por minikube, istio y inspecktor-gadget creado por 3rd party
+	 `minikube addons list ` lista de agregados / plugins que tiene minikube y que se pueden utilizar que son de terceros. De esa  lista vamos a activar el ingress que es creado por kubernetes. Hay otros addons interesantes como ingress-dns creado por minikube, istio y inspecktor-gadget creado por 3rd party
+	 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260802201746.png)
+	
+	
 	 
 	 `minikube addons enable ingress` se vera enable en la lista
-	 
+	 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260802202311.png)
 
 
 3. En la carpeta docker
