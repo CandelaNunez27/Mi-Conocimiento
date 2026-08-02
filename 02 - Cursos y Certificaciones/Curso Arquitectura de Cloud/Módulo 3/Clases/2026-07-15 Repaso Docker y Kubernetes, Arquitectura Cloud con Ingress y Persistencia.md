@@ -27,7 +27,8 @@ Estructura del proyecto:
 	
 	 
 	 `minikube addons enable ingress` se vera enable en la lista
-	 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260802202311.png)
+	 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260802202311.png)![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260802202653.png)
+	 
 
 
 3. En la carpeta docker
@@ -36,7 +37,7 @@ Estructura del proyecto:
 	 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260802185358.png)
 	
 	 `docker build -t courseipap/frontend:1.0.0 -f Dockerfile.backend --no-cache .` y nos vamos a la carpetas de frontend y tiramos `docker build -t courseipap/frontend:1.0.0 -f Dockerfile.frontend --no-cache .` se buildea las imagenes,  -f es para colocarle el nombre del archivo.
-	 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260802191621.png)
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260802191621.png)
 	 
 	 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260802191343.png)
 	 
@@ -46,11 +47,28 @@ Estructura del proyecto:
 	 `docker image ls |grep ipap` para ver las imagenes que ya tenemos creadas  en nuestra maquina, pero minikube todavia no los reconoce.
 	 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260802191652.png)
 	 
-	 `minikube image load courseipap/backend:1.0.0` quedan cargadas las imagenes en minikube
-	 
+	 `minikube image load courseipap/backend:1.0.0` y `minikube image load courseipap/frontend:1.0.0` quedan cargadas las imagenes en minikube
+	 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260802203753.png)
 	 
 
-5. 
+
+### Despliegue de arquitectura
+
+1. Creamos los pod:
+	 Volvemos a la carpeta repaso que es la que contiene todo la actividad `cd ..`
+	 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260802204114.png)
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
 	 
 	 
 	 
