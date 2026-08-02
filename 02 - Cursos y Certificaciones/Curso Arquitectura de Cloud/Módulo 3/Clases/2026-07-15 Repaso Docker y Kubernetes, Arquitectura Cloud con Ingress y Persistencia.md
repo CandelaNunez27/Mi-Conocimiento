@@ -54,13 +54,13 @@ Estructura del proyecto:
 
 ### Despliegue de arquitectura
 
-1. Creamos los pod:
+1. Creamos el namespace:
 	 Volvemos a la carpeta repaso que es la que contiene todo la actividad `cd ..`
-	 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260802204114.png)
+	 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260802204328.png)
 	 
+	 `kubectl create namespace labipap` lo crearemos desde la consola ya que crear el archivo yaml como la clase pasada no es tan necesario ya que son muy poquitas lineas. `kubectl get ns`
 	 
-	 
-	 
+	  
 	 
 	 
 	 
