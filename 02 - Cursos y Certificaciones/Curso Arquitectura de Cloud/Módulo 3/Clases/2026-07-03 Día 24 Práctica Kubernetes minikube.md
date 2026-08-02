@@ -191,9 +191,17 @@
 	 `kubectl apply -f deploy_db.yaml` y `kubectl get pod` para crear el deploy. En la lista de pod no se tendria que ver el pod que crea el deploy_db.yaml porque presisamente esta encapsulado en namespace
 	 
 	 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260802012636.png)
+	 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260802012745.png)
 	 
 	 
 	 Para verlo se utiliza `kubectl get ns` o `kubectl get namespace` entonce una vez visto el nombre utilizamos `kubectl get pod -n formatec-apps` o `kubectl -n formatec-apps get po ` o `kubectl -n formatec-apps get all`
+	 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260802012900.png)
+	 
+	 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260802013021.png)
+	 
+	 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260802013110.png)
+	 
+	 
 	 
 	 Entonces se puede ver que la mamusca esta creada con esta esttructura:
 	 - Deployment_apps
@@ -201,70 +209,15 @@
 			 - pod
 	 y por otro lado el servicio que levantamos al final del archivo
 	 
-	 `kubectl delete -f deploy_db.yaml`
-	 
+	 `kubectl delete -f deploy_db.yaml`para eliminarlo
+	 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260802013150.png)
 	 
 	 
 
 ### Borrar todo lo que quedo
 
-1. `minikube stop` se para y se borra todo
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	dsd
-	 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+1. `minikube stop -p minik8s` se para y se borra todo
+	 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260802013318.png)
 
 
 ---
