@@ -33,7 +33,8 @@ Estructura del proyecto:
 	 `cd backend` nos movemos para la carpeta backend
 	 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260802185358.png)
 	
-	 `docker build -t courseipap/fronend:1.0.0 -f Dockerfile.backend --no-cache .` se buildea la imagen,  -f es para colocarle el nombre del archivo.
+	 `docker build -t courseipap/frontend:1.0.0 -f Dockerfile.backend --no-cache .` y nos vamos a la carpetas de frontend y tiramos `docker build -t courseipap/frontend:1.0.0 -f Dockerfile.frontend --no-cache .` se buildea las imagenes,  -f es para colocarle el nombre del archivo.
+	 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260802190630.png)
 	 
 	 
 
