@@ -117,15 +117,25 @@ Estructura del proyecto:
 
 2. Ingress (recurso de kubernetes):
 	Tenemos el archivo app-ingress.yaml  
+	 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260803011449.png)
+	 
 	 
 	 `kubectl -n labipap apply -f app-ingress.yaml` para que se cree. y nuevamente `kubectl get all -n labipap ` no lo va a mostrar porque no es un recurso basico. para verlo usamos `kubectl get ingress -n labipap`  con eso ya tendriamos las rutas de comunicacion.
+	 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260803011549.png)
+	 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260803011605.png)
 	 
-	 tiramos nuevamente `curl -v localhost` pero falla nuevamente por estar usando minikube. para eso hacemos como la clase anterior un tunel en una nueva terminal.
+	 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260803011652.png)
+	 
+	 
+	 Tiramos nuevamente `curl -v localhost` pero falla nuevamente por estar usando minikube. para eso hacemos como la clase anterior un tunel en una nueva terminal.
+	 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260803011744.png)
+	 
 	 
 	 `minikube tunnel` creara el tunel luego de pedirnos la contraseña de nuestra pc y nos quedara tomada la terminal.
+	 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260803011927.png)
 	 
-	 
-	 nuevamente volvemos a `curl localhost` y probamos en el navegador `http://localhost`y. Ahora si nos anda los dos. 
+	 nuevamente volvemos a `curl localhost` (en mi caso `curl 192.168.58.2`) y probamos en el navegador `http://localhost` (`http://192.168.58.2`) y. Ahora si nos anda los dos. 
+	 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260803012840.png)
 	 
 	 
 	 También probamos `curl localhost/api` nos sale un error pero medio engañoso, el api es un recurso que esta en nuestro ingress controler pero es algo de nuestro index.js que esta en nnuestra carpeta de docker > backend. si revisamoes ese index.js tiene atributos api/data por ende lo probamos, `curl localhos/api/data` este no nos devuelve nada.
