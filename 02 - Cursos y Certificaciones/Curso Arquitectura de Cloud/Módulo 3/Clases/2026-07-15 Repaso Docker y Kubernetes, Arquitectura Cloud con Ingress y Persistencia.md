@@ -81,9 +81,9 @@ Estructura del proyecto:
 	 `kubectl get pv -n labipap` mostrara los volumenes presistentes
 	 
 	 
+	 Ahora seguimos desplegando con `kubectl -n labipap apply -f postgres-deployment.yaml`
 	 
-	 
-	 
+	 y ahora como ya lo desplego todo el deployment lo veremos en `kubectl get all -n labipap` aunque nos aparece el pod de backend ready 0, puede ser un problema de la imagen pero para mas info tiramos `kubectl -n labipap describe pod backend-casdasdasd` buscamos el bloque de eventos, nos muestra el error con la imagen courseipap/backend:1.0.4. esa linea esta en el postgres-deployment.yaml en la parte del backend por ende lo cambiamos a courseipap/backend:1.0.0. Pero si tiramos `kubectl get pods -n labipap` nos sigue saliendo en ready 0. para eso se tiene que volver a ejecutar `kubectl -n labipap -f postgres-deployment.yaml` . Todo esto es para ver como se soluciona un error y siempre se suguiere que se haga un reinicio desde la mamusca mas grande en nuestro caso el deployment
 	 
 	 
 	 
