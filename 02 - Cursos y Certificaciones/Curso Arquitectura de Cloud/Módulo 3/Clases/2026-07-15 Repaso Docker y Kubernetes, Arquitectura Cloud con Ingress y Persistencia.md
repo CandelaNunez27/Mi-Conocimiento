@@ -139,10 +139,11 @@ Estructura del proyecto:
 	 
 	 en otra consola escribimos `kubectl delete -f postgres-deployment.yaml -n labipap` con esto borramos todo incluido la base de datos
 	 
-	 volvemos a mini_commerce y volvemos a tirar `SELECT = FROM registris;` donde s
+	 volvemos a mini_commerce y volvemos a tirar `SELECT = FROM registris;` donde nos mostrara Failed
 	 
+	 Ahora volvemos a levantar todo con `kubectl apply -f postgres-deployment.yaml -n labipap` y nos volvemos a conectar en la otra terminal con  `kubectl -n labipap exec -it db-troubleshooter -- psql -h db -U postgres -d mini_commerce`  y dentro tiramos  `SELECT = FROM registris;`  nos muestra que los registro volvieron y que no se borraron
 	 
-	 
+	 Todo gracias por el volumen persistente, porque por mas que borremos todo luego se puede recuperar.
 	 
 	 
 	 
@@ -192,4 +193,4 @@ Estructura del proyecto:
 
 # Grabación de la Clase
 
-**Clase Grabada:** 
+**Clase Grabada:** https://drive.google.com/file/d/1WpgKOoBmjLpVmXficgmih2fLVVsdDNQf/view
