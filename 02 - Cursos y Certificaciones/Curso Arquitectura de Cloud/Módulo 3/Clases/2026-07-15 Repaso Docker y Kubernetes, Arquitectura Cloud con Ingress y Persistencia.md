@@ -60,8 +60,9 @@ Estructura del proyecto:
 	 
 	 `kubectl create namespace labipap` lo crearemos desde la consola ya que crear el archivo yaml como la clase pasada no es tan necesario ya que son muy poquitas lineas. `kubectl get ns`
 	 
-	  
+	 Tenemos el archivo  postgres_deployment.yaml que tiene apiversion, kind Deployment, name postgres-db, spec containers volieMounts, secretkey que apunta al otro archivo db-secret-config.yaml. etc, con su servicio. luego un backend con su servicio, y por ultimo un frontend con su servicio
 	 
+	 Tenemos el archivo db-secret-config.yam 
 	 
 	 
 	 
