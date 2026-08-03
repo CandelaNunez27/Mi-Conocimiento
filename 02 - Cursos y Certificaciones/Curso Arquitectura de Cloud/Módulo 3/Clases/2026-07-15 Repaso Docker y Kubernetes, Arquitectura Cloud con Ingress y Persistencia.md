@@ -123,20 +123,23 @@ Estructura del proyecto:
 	 Actualmente la base de datos esta vacia por ende con este comando le colocaremos una "compra" `curl -X POST http://localhost/api/data -H "Content-Type: application/json" -d ´{"nombre": "Estudiante", "clase": "Kubernetes"}´ ` para ver que se guardo con exito ejecutamos curl localhost/api/data y nos sale.
 	 
 
-2.  Resiliencia en vivo (gran ventaja de kubernetes que no es tan facil con kubernetes):
+2.  Resiliencia en vivo (gran ventaja de kubernetes que no es tan fácil con kubernetes):
 	 Para ver como se logra la resiliencia en una terminal dejamos corriendo `while true; do curl -s http://localhost/api/data; echo ""; sleep 1; done` esto nos toma la consola para mostrar los resultados en vivo
 	 
 	 en otra terminal: `kubectl -n labipap get pod -w  ` esto nos toma la consola para quedar escuchando gracias al -w
 	 
 	 en otra terminal: `kubectl delete pod -l app=db -n labipap` se borrara un pod pero al instante volvera a crear otra (una replica) por ende la primera terminal  se cae mostrando error de conexion pero solo por 3 segundos (esto tardaria menos si no estubieramos en minikube sino en kubernetes). y se volvio a tener corriendo los 3 pod sin perder los datos de la base de  datos gracias a colocarle volumenes persistentes.
 	 
+
+3. Ultimas pruebas:
+	 `kubectl apply -f pod-db_troubleshost.yaml -n labipap` y `kubectl get po`creamos un pod  que solo tiene un pod con la imagen de alpine
 	 
 	 
+	 `kubectl -n labipap exec -it db-troubleshooter -- psql -h db -U postgres -d mini_commerce` dentro de ella tiramos `SELECT = FROM registris;`  nos muestra las compras que escribimos
 	 
+	 en otra consola escribimos `kubectl delete -f postgres-deployment.yaml -n labipap` con esto borramos todo incluido la base de datos
 	 
-	 
-	 
-	 
+	 volvemos a mini_commerce y volvemos a tirar `SELECT = FROM registris;` donde s
 	 
 	 
 	 
