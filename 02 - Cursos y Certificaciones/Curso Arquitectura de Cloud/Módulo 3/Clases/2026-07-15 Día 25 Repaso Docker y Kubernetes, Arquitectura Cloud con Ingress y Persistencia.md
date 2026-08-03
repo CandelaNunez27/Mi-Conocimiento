@@ -140,10 +140,11 @@ Estructura del proyecto:
 	 
 	 nuevamente volvemos a `curl localhost` (en mi caso `curl 192.168.58.2`) y probamos en el navegador `http://localhost` (`http://192.168.58.2`) y. Ahora si nos anda los dos. 
 	 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260803012840.png)
-	 
+	 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260803102820.png)
 	 
 	 También probamos `curl localhost/api` nos sale un error pero medio engañoso, el api es un recurso que esta en nuestro ingress controler pero es algo de nuestro index.js que esta en nnuestra carpeta de docker > backend. si revisamoes ese index.js tiene atributos api/data por ende lo probamos, `curl localhos/api/data` este no nos devuelve nada.
 	 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260803012928.png)
+	 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260803102901.png)
 	 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260803013115.png)
 	 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260803013138.png)
 	 
@@ -157,6 +158,8 @@ Estructura del proyecto:
 	 
 	 Luego de volver a aplicar se vera que `curl localhost/api/data` (`curl 192.168.58.2/api/data`) nos muestra una base de datos vacia, pero una base de datos existente.
 	 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260803013618.png)
+	 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260803102949.png)
+	 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260803103053.png)
 
 ### Compra del cliente, prueba de resiliencia y de persistencia
 
