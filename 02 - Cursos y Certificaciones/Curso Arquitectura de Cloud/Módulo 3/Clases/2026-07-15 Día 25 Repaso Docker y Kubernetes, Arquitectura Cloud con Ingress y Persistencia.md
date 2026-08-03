@@ -61,24 +61,28 @@ Estructura del proyecto:
 	 `kubectl create namespace labipap` lo crearemos desde la consola ya que crear el archivo yaml como la clase pasada no es tan necesario ya que son muy poquitas lineas. `kubectl get ns`
 	 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260803002740.png)
 	 
+	 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260803002822.png)
+	 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260803003045.png)Tenemos el archivo  postgres_deployment.yaml que tiene apiversion, kind Deployment, name postgres-db, spec containers volieMounts, secretkey que apunta al otro archivo db-secret-config.yaml. etc, con su servicio. luego un backend con su servicio, y por ultimo un frontend con su servicio
 	 
-	 Tenemos el archivo  postgres_deployment.yaml que tiene apiversion, kind Deployment, name postgres-db, spec containers volieMounts, secretkey que apunta al otro archivo db-secret-config.yaml. etc, con su servicio. luego un backend con su servicio, y por ultimo un frontend con su servicio
 	 
+	 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260803003426.png)
 	 Tenemos el archivo db-secret-config.yaml que tiene apiversion, kind Secret, name db-credentials, data usarname y passwoed en codificacion en bash64. Tambien tiene un Kind ConfigMap, name db-config, data db_name "mini_commerce"
 	 
 
-1. Deployment:
+2. Deployment:
 	 Ahora si empezamos a desplegarlo en nuestro namespace
-	 `kubectl apply -n lapipap -f db-storage.yaml` y `kubectl apply -n lapipap -f db-secret-config.yaml`
+	 `kubectl apply -n lapipap -f db-storage.yml` y `kubectl apply -n lapipap -f db-secret-config.yaml`
+	 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260803003838.png)
+	 
 	 
 	 `kubectl get all` o `kubectl get all -n labipap`no va a mostrar lo que creamos porque get all muestra más que nada servicios basicos, pods, etc
-	 
+	 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260803004042.png)
 	 
 	 `kubectl get secret -n labipap` aca si se mostrara el db-credentials
-	 
+	 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260803004201.png)
 	 
 	 `kubectl get cm -n labipap` mostrara el db-config y kube-root-ca.crt
-	 
+	 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260803004239.png)
 	 
 	 `kubectl get pv -n labipap` mostrara los volumenes presistentes
 	 
