@@ -158,6 +158,7 @@ Estructura del proyecto:
 
 1. Escribir en la base de datos (compra ecomers)
 	 Actualmente la base de datos esta vacia por ende con este comando le colocaremos una "compra" `curl -X POST http://localhost/api/data -H "Content-Type: application/json" -d ´{"nombre": "Estudiante", "clase": "Kubernetes"}´ ` para ver que se guardo con exito ejecutamos `curl localhost/api/data` y nos sale.
+	 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260803014531.png)
 	 
 
 2.  Resiliencia en vivo (gran ventaja de kubernetes que no es tan fácil con kubernetes):
