@@ -108,11 +108,16 @@ Estructura del proyecto:
 	 nuevamente volvemos a `curl localhost` y probamos en el navegador `http://localhost`y. Ahora si nos anda los dos. 
 	 
 	 
-	 También probamos `curl localhost/api` nos sale un error pero medio engañoso, el api es un recurso que esta en
+	 También probamos `curl localhost/api` nos sale un error pero medio engañoso, el api es un recurso que esta en nuestro ingress controler pero es algo de nuestro index.js que esta en nnuestra carpeta de docker > backend. si revisamoes ese index.js tiene atributos api/data por ende lo probamos, `curl localhos/api/data` este no nos devuelve nada.
 	 
 	 
+	 Este error no es un error de kubernetes si no es un error un de la configuracion. lo encontramos en el app-ingress.yaml en annotations. un rewrite-target es para las consultas localhost/.... a kubernetes no le interesa lo que se coloque despues del / . para ello se cambia el archivo app-ingress.yaml a por el archivo app-ingress.yml donde se le saca el rewrite. En este nuevo si les coloca las posibilidades que hay si se le coloca cosas distintas luego de la /.  Esto es bueno para generar estos dos caminos que vemos en el grafico de la arquitectura.
 	 
 	 
+	 Entonces para que funcione colocamos `kubectl -n labipap apply -f app-ingress.yml` y revisamos que siga corriendo el tunel
+	 
+	 
+	 P
 	 
 	 
 	 
