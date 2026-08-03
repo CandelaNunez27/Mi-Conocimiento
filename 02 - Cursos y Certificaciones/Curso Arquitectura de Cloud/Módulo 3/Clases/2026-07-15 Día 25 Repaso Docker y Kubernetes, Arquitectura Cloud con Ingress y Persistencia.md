@@ -164,12 +164,13 @@ Estructura del proyecto:
 ### Compra del cliente, prueba de resiliencia y de persistencia
 
 1. Escribir en la base de datos (compra ecomers)
-	 Actualmente la base de datos esta vacia por ende con este comando le colocaremos una "compra" `curl -X POST http://localhost/api/data -H "Content-Type: application/json" -d ´{"nombre": "Estudiante", "clase": "Kubernetes"}´ ` para ver que se guardo con exito ejecutamos `curl localhost/api/data` y nos sale.
-	 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260803014531.png)
-	 
+	 Actualmente la base de datos esta vacia por ende con este comando le colocaremos una "compra" `curl -X POST http://localhost/api/data -H "Content-Type: application/json" -d '{"nombre": "Estudiante", "clase": "Kubernetes"}' ` (`curl -X POST http://192.168.58.2/api/data -H "Content-Type: application/json" -d '{"nombre": "Estudiante", "clase": "Kubernetes"}'`)  para ver que se guardo con éxito ejecutamos `curl localhost/api/data` (`curl 192.168.58.2/api/data`) y nos sale.
+	 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260803104857.png)
+	 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260803104948.png)
+	 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260803105001.png)
 
 2.  Resiliencia en vivo (gran ventaja de kubernetes que no es tan fácil con kubernetes):
-	 Para ver como se logra la resiliencia en una terminal dejamos corriendo `while true; do curl -s http://localhost/api/data; echo ""; sleep 1; done` esto nos toma la consola para mostrar los resultados en vivo
+	 Para ver como se logra la resiliencia en una terminal dejamos corriendo `while true; do curl -s http://localhost/api/data; echo ""; sleep 1; done` (`while true; do curl -s http://192.168.58.2/api/data; echo ""; sleep 1; done`) esto nos toma la consola para mostrar los resultados en vivo
 	 
 	 en otra terminal: `kubectl -n labipap get pod -w  ` esto nos toma la consola para quedar escuchando gracias al -w
 	 
