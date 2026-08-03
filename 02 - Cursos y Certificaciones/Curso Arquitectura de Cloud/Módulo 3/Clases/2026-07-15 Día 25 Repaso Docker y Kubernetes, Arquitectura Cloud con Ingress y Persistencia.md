@@ -50,6 +50,10 @@ Estructura del proyecto:
 	 `minikube image load courseipap/backend:1.0.0` y `minikube image load courseipap/frontend:1.0.0` quedan cargadas las imagenes en minikube
 	 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260802203753.png)
 	 
+	 `minikube image ls` vemos si se cargaron correctamente
+	 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260803101610.png)
+	 
+	 
 
 
 ### Despliegue de arquitectura
