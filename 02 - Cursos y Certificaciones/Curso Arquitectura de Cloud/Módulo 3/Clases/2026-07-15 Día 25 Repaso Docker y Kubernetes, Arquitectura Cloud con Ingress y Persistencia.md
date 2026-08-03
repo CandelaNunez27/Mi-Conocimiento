@@ -85,11 +85,18 @@ Estructura del proyecto:
 	 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260803004239.png)
 	 
 	 `kubectl get pv -n labipap` mostrara los volumenes presistentes
-	 
+	 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260803004355.png)
 	 
 	 Ahora seguimos desplegando con `kubectl -n labipap apply -f postgres-deployment.yaml`
+	 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260803004831.png)
 	 
-	 y ahora como ya lo desplego todo el deployment lo veremos en `kubectl get all -n labipap` aunque nos aparece el pod de backend ready 0, puede ser un problema de la imagen pero para mas info tiramos `kubectl -n labipap describe pod backend-casdasdasd` buscamos el bloque de eventos, nos muestra el error con la imagen courseipap/backend:1.0.4. esa linea esta en el postgres-deployment.yaml en la parte del backend por ende lo cambiamos a courseipap/backend:1.0.0. Pero si tiramos `kubectl get pods -n labipap` nos sigue saliendo en ready 0. para eso se tiene que volver a ejecutar `kubectl -n labipap -f postgres-deployment.yaml` . Todo esto es para ver como se soluciona un error y siempre se suguiere que se haga un reinicio desde la mamusca mas grande en nuestro caso el deployment
+	 Y ahora como ya lo desplego todo el deployment lo veremos en `kubectl get all -n labipap` aunque nos aparece el pod de backend ready 0, puede ser un problema de la imagen pero para mas info tiramos `kubectl -n labipap describe pod backend-7cd7d84568-wkx8q 
+	 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260803005510.png)
+	 
+	 
+	 
+	 
+	 Buscamos el bloque de eventos, nos muestra el error con la imagen courseipap/backend:1.0.4. esa linea esta en el postgres-deployment.yaml en la parte del backend por ende lo cambiamos a courseipap/backend:1.0.0. Pero si tiramos `kubectl get pods -n labipap` nos sigue saliendo en ready 0. para eso se tiene que volver a ejecutar `kubectl -n labipap -f postgres-deployment.yaml` . Todo esto es para ver como se soluciona un error y siempre se suguiere que se haga un reinicio desde la mamusca mas grande en nuestro caso el deployment
 	 
 	 ahora estara todo bien en `kubectl get all -n labipap` y en `kubectl -n labipap describe pod backend-sdajsdjalksdja`
 	
