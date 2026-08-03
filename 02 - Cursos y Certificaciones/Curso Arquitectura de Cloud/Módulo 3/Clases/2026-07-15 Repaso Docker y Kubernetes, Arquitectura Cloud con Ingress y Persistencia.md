@@ -117,18 +117,18 @@ Estructura del proyecto:
 	 Entonces para que funcione colocamos `kubectl -n labipap apply -f app-ingress.yml` y revisamos que siga corriendo el tunel
 	 
 
-### Compra del cliente y resiliencia
+### Compra del cliente y prueba de resiliencia
 
 1. Escribir en la base de datos (compra ecomers)
 	 Actualmente la base de datos esta vacia por ende con este comando le colocaremos una "compra" `curl -X POST http://localhost/api/data -H "Content-Type: application/json" -d ´{"nombre": "Estudiante", "clase": "Kubernetes"}´ ` para ver que se guardo con exito ejecutamos curl localhost/api/data y nos sale.
 	 
 
-2.  
+2.  Resiliencia en vivo (gran ventaja de kubernetes que no es tan facil con kubernetes):
+	 Para ver como se logra la resiliencia en una terminal dejamos corriendo `while true; do curl -s http://localhost/api/data; echo ""; sleep 1; done` esto nos toma la consola para mostrar los resultados en vivo
 	 
+	 en otra terminal: `kubectl -n labipap get pod -w  ` esto nos toma la consola para quedar escuchando gracias al -w
 	 
-	 
-	 
-	 
+	 en otra terminal: `kubectl delete pod -l app=db -n labipap` se borrara un pod pero al instante volvera a crear otra (una replica) por ende la primera terminal  se cae mostrando error de conexion pero solo por 3 segundos (esto tardaria menos si no estubieramos en minikube sino en kubernetes). y se volvio a tener corriendo los 3 pod sin perder los datos de la base de  datos gracias a colocarle volumenes persistentes.
 	 
 	 
 	 
