@@ -116,9 +116,14 @@ Estructura del proyecto:
 	 
 	 Entonces para que funcione colocamos `kubectl -n labipap apply -f app-ingress.yml` y revisamos que siga corriendo el tunel
 	 
+
+### Compra del cliente y resiliencia
+
+1. Escribir en la base de datos (compra ecomers)
+	 Actualmente la base de datos esta vacia por ende con este comando le colocaremos una "compra" `curl -X POST http://localhost/api/data -H "Content-Type: application/json" -d ´{"nombre": "Estudiante", "clase": "Kubernetes"}´ ` para ver que se guardo con exito ejecutamos curl localhost/api/data y nos sale.
 	 
-	 P
-	 
+
+2.  
 	 
 	 
 	 
