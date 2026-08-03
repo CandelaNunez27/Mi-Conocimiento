@@ -85,16 +85,30 @@ Estructura del proyecto:
 	 
 	 y ahora como ya lo desplego todo el deployment lo veremos en `kubectl get all -n labipap` aunque nos aparece el pod de backend ready 0, puede ser un problema de la imagen pero para mas info tiramos `kubectl -n labipap describe pod backend-casdasdasd` buscamos el bloque de eventos, nos muestra el error con la imagen courseipap/backend:1.0.4. esa linea esta en el postgres-deployment.yaml en la parte del backend por ende lo cambiamos a courseipap/backend:1.0.0. Pero si tiramos `kubectl get pods -n labipap` nos sigue saliendo en ready 0. para eso se tiene que volver a ejecutar `kubectl -n labipap -f postgres-deployment.yaml` . Todo esto es para ver como se soluciona un error y siempre se suguiere que se haga un reinicio desde la mamusca mas grande en nuestro caso el deployment
 	 
+	 ahora estara todo bien en `kubectl get all -n labipap` y en `kubectl -n labipap describe pod backend-sdajsdjalksdja`
+	
 	 
 	 
+
+### Generamos la rutas de conectividad segun el grafico de la aquitectura
+ 
+ 1. Probamos desde nuestra pc
+	 `curl -v localhost` no nos muestra nada porque aun nos falta el ingress controler para que direccione todo.
+
+2. Ingress (recurso de kubernetes):
+	Tenemos el archivo app-ingress.yaml donde tenemos 
+	 
+	 `kubectl -n labipap apply -f app-ingress.yaml` para que se cree. y nuevamente `kubectl get all -n labipap ` no lo va a mostrar porque no es un recurso basico. para verlo usamos `kubectl get ingress -n labipap`  con eso ya tendriamos las rutas de comunicacion.
+	 
+	 tiramos nuevamente `curl -v localhost` pero falla nuevamente por estar usando minikube. para eso hacemos como la clase anterior un tunel en una nueva terminal.
+	 
+	 `minikube tunnel` creara el tunel luego de pedirnos la contraseña de nuestra pc y nos quedara tomada la terminal.
 	 
 	 
+	 nuevamente volvemos a `curl localhost` y probamos en el navegador `http://localhost`y. Ahora si nos anda los dos. 
 	 
 	 
-	 
-	 
-	 
-	 
+	 También probamos `curl localhost/api` nos sale un error pero medio engañoso, el api es un recurso que esta en
 	 
 	 
 	 
