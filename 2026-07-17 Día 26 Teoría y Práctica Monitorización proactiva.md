@@ -5,7 +5,8 @@
 Cuando se termino de desplegar es el momento de monitoriarlo.
 ![](04%20-%20Otros/Imagenes/Pasted%20image%2020260803233307.png)
 
-- **Monitorización Reactica**
+- **Monitorización Reactica:** arreglar algo luego de que se haya roto, respuesta luego del hecho, debe ser rápida la respuesta.
+- **Monitorización Proactividad:** 
 
 # Práctica: sawkl
 ### Preparación
