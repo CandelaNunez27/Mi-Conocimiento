@@ -170,18 +170,30 @@ Estructura del proyecto:
 	 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260803105001.png)
 
 2.  Resiliencia en vivo (gran ventaja de kubernetes que no es tan fácil con kubernetes):
-	 Para ver como se logra la resiliencia en una terminal dejamos corriendo `while true; do curl -s http://localhost/api/data; echo ""; sleep 1; done` (`while true; do curl -s http://192.168.58.2/api/data; echo ""; sleep 1; done`) esto nos toma la consola para mostrar los resultados en vivo
+	 Para ver como se logra la resiliencia en una terminal dejamos corriendo `while true; do curl -s http://localhost/api/data; echo ""; sleep 1; done` (`while true; do curl -s http://192.168.58.2/api/data; echo ""; sleep 1; done`) (`watch -n 1 curl -s http://192.168.58.2/api/data`) esto nos toma la consola para mostrar los resultados en vivo
+	 
+	 antes de borrarlo:![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260803111350.png)
+	 
+	 luego de borrar el pod:![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260803111145.png)
+	 
+	 Segundos después de haberlo borrado:![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260803111205.png)
+	 
 	 
 	 en otra terminal: `kubectl -n labipap get pod -w  ` esto nos toma la consola para quedar escuchando gracias al -w
+	 todo el proceso de borrar, copiar y crear un nuevo pod para que siga funcionando:
+	 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260803111251.png)
 	 
 	 en otra terminal: `kubectl delete pod -l app=db -n labipap` se borrara un pod pero al instante volvera a crear otra (una replica) por ende la primera terminal  se cae mostrando error de conexion pero solo por 3 segundos (esto tardaria menos si no estubieramos en minikube sino en kubernetes). y se volvio a tener corriendo los 3 pod sin perder los datos de la base de  datos gracias a colocarle volumenes persistentes.
 	 
+	 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260803111223.png)
+	 
 
 3. Ultimas pruebas:
-	 `kubectl apply -f pod-db_troubleshost.yaml -n labipap` y `kubectl get po`creamos un pod  que solo tiene un pod con la imagen de alpine
-	 
+	 `kubectl apply -f pod-db_troubleshoost.yaml -n labipap` y `kubectl get po`creamos un pod  que solo tiene un pod con la imagen de alpine
+	 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260803111654.png)
 	 
 	 `kubectl -n labipap exec -it db-troubleshooter -- psql -h db -U postgres -d mini_commerce` dentro de ella tiramos `SELECT = FROM registris;`  nos muestra las compras que escribimos
+	 
 	 
 	 en otra consola escribimos `kubectl delete -f postgres-deployment.yaml -n labipap` con esto borramos todo incluido la base de datos
 	 
