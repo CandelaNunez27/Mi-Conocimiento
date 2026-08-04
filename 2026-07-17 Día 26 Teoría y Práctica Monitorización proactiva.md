@@ -51,13 +51,14 @@ Para poder utilizar las dos maneras tenemos la regla de oro MeLT
 
 ![](04%20-%20Otros/Imagenes/Pasted%20image%2020260804111619.png)
 
-- **Stack TIG (Telegraf > InfluxDB > Grafana):** Son expecializados en métricas. Su camino sería Telegraf que recoge los datos numéricos, luego InfluxDB que almacena estos datos rápidamente para tener valor + tiempo. Finalmente Grafana que crea los tableros visuales de estas metricas.
+- **Stack TIG (Telegraf > InfluxDB > Grafana):** Son expecializados en métricas. Su camino sería Telegraf que recoge los datos numéricos muy bueno para redes, luego InfluxDB que almacena estos datos rápidamente para tener valor + tiempo. Finalmente Grafana que crea los tableros visuales de estas metricas.
   
-- **Stack LGP:** Son expecializados en Logs. Su camino sería Promtail que recoge los datos leyendo los archivo logs, luego Loki que almacena estos logs indexando solo etiquetas no todo el texto así lo hace más eficiente y economico. Finalmente Grafana que crea los tableros visuales de estos Logs.
+- **Stack LGP (Promtal > Loki > Grafana):** Son expecializados en Logs. Su camino sería Promtail que recoge los datos leyendo los archivo logs filtrandolos, luego Loki que almacena estos logs una base de datos no estructurada no sql indexando solo etiquetas no todo el texto así lo hace más eficiente y economico de espacio. Finalmente Grafana que crea los tableros visuales de estos Logs.
 
-Los dos apuntan a **Grafana** es el visualizador
+Los dos apuntan a **Grafana** es el visualizador, se puede hacer tableros tipo semáforo (Rojo error 500, amarillo si hay muchas demanda, verde si esta en 200 todo bien ), tableros de linea, barra, etc.
+Hay también más stacks: (AlertManagger > Prometheus > Grafana), ELK (Elasticsearch > Logstash > Kibana ), Zabixx dolor de cabeza, 
 
-
+# Herramientas / Tools Nativo AWS: Cloudwatch
 # Fundamentos 
 
 
