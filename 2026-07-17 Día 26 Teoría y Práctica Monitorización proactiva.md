@@ -59,6 +59,17 @@ Los dos apuntan a **Grafana** es el visualizador, se puede hacer tableros tipo s
 Hay también más stacks: (AlertManagger > Prometheus > Grafana), ELK (Elasticsearch > Logstash > Kibana ), Zabixx dolor de cabeza, 
 
 # Herramientas / Tools Nativo AWS: Cloudwatch
+
+![](04%20-%20Otros/Imagenes/Pasted%20image%2020260804114340.png)
+
+
+
+
+
+
+
+
+
 # Fundamentos 
 
 
