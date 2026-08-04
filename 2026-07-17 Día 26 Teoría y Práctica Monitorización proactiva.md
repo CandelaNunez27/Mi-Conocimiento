@@ -29,13 +29,13 @@ Para poder utilizar las dos maneras tenemos la regla de oro MeLT
 
 **OpenTelemetry (código abierto):** 
 
-1. Permite lenguajes de programacion, todos escribin los log de manera distinta dando soluciones distintas. Si quiero algo mas en datos engineer usualmente me voy más por Python, si quiero un backend muy robusto opto por Java, o si quiero algo liguero, rápido y moderno voy por GO.
+ Permite lenguajes de programacion, todos escribin los log de manera distinta dando soluciones distintas. Si quiero algo mas en datos engineer usualmente me voy más por Python, si quiero un backend muy robusto opto por Java, o si quiero algo liguero, rápido y moderno voy por GO.
 
-2.  Gracias a unas APIs y SDKs dedicada a cada uno, recibiendo sus logs los traducen.
+ Gracias a unas APIs y SDKs dedicada a cada uno, recibiendo sus logs los traducen.
 
-3. Luego de que los logs ya esten traducidos el OTel Conllector recibe de cada lenguaje y se encarga de procesandolos, filtrando y acomodandolos.
+ Luego de que los logs ya esten traducidos el OTel Conllector recibe de cada lenguaje y se encarga de procesandolos, filtrando y acomodandolos.
 
-4. Finalmente llegan a  los Backends Agnósticos que es donde vemos nosotros los datos filtrados y acomodados, algunas de ellas son Prometheus, Jaeger, AWS, plataformas de terceros.
+ Finalmente llegan a  los Backends Agnósticos que es donde vemos nosotros los datos filtrados y acomodados, algunas de ellas son Prometheus, Jaeger, AWS, plataformas de terceros.
 
 # Herramientas / Tools Prometheus
 
@@ -43,10 +43,22 @@ Para poder utilizar las dos maneras tenemos la regla de oro MeLT
 
 **Prometheus (código abierto):** 
 
-1. Hace lo mismo que OpenTelemetry ya que recolecta datos, los procesa. Aunque tiene un plus también puede asociarle una base de datos PromQL guardando los datos pudiendo colocarle que cada cierto tiempo le haga un pull de los logs. OpenTelemetry es distinto solamente porque hay que trabajar con los APIs y SDKs, Prometheus solo le decia a quien queres conectart y se conecta.
+ Hace lo mismo que OpenTelemetry ya que recolecta datos, los procesa. Aunque tiene un plus también puede asociarle una base de datos PromQL guardando los datos pudiendo colocarle que cada cierto tiempo le haga un pull de los logs. OpenTelemetry es distinto solamente porque hay que trabajar con los APIs y SDKs, Prometheus solo le decia a quien queres conectart y se conecta.
 
-2. Como guarda la inos permite hacer Contadores, Calibradores (Gauges), Hitrogramas, Resúmenes.
+ Como guarda la información en su pequeña base de datos nos permite ostrarla haciendo Contadores para ver como te fue a lo largo del tiempo, Calibradores (Gauges) para ver consumo de hardware, Histogramas para ver los picos de como responde nuestro programa, Resúmenes de como respondio nuestra app.
 
+# Herramientas / Tools Stacks: TIG ó LGP
+
+![](04%20-%20Otros/Imagenes/Pasted%20image%2020260804111619.png)
+
+- **Stack TIG (Telegraf > InfluxDB > Grafana):** Son expecializados en métricas. Su camino sería Telegraf que recoge los datos numéricos, luego InfluxDB que almacena estos datos rápidamente para tener valor + tiempo. Finalmente Grafana que crea los tableros visuales de estas metricas.
+  
+- **Stack LGP:** Son expecializados en Logs. Su camino sería Promtail que recoge los datos leyendo los archivo logs, luego Loki que almacena estos logs indexando solo etiquetas no todo el texto así lo hace más eficiente y economico. Finalmente Grafana que crea los tableros visuales de estos Logs.
+
+Los dos apuntan a **Grafana** es el visualizador
+
+
+# Fundamentos 
 
 
 
