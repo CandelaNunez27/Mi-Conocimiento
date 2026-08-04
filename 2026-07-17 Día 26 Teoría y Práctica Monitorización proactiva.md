@@ -29,8 +29,13 @@ Para poder utilizar las dos maneras tenemos la regla de oro MeLT
 
 **OpenTelemetry:** 
 
-Permite lenguajes de programacion, todos escribin los log de manera distinta dando soluciones distintas. Si quiero algo mas en datos engineer usualmente me voy más por python
+1. Permite lenguajes de programacion, todos escribin los log de manera distinta dando soluciones distintas. Si quiero algo mas en datos engineer usualmente me voy más por Python, si quiero un backend muy robusto opto por Java, o si quiero algo liguero, rápido y moderno voy por GO.
 
+2.  Gracias a unas APIs y SDKs dedicada a cada uno, recibiendo sus logs los traducen.
+
+3. Luego de que los logs ya esten traducidos el OTel Conllector recibe de cada lenguaje y se encarga de procesandolos, filtrando y acomodandolos.
+
+4. Finalmente llegan a  los Backends Agnósticos que es donde vemos nosotros los datos filtrados y acomodados, algunas de ellas son Prometheus, Jaeger, AWS, plataformas de terceros.
 
 
 
