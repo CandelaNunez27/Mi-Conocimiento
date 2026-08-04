@@ -27,7 +27,7 @@ Para poder utilizar las dos maneras tenemos la regla de oro MeLT
 
 ![](04%20-%20Otros/Imagenes/Pasted%20image%2020260804013034.png)
 
-**OpenTelemetry:** 
+**OpenTelemetry (código abierto):** 
 
 1. Permite lenguajes de programacion, todos escribin los log de manera distinta dando soluciones distintas. Si quiero algo mas en datos engineer usualmente me voy más por Python, si quiero un backend muy robusto opto por Java, o si quiero algo liguero, rápido y moderno voy por GO.
 
@@ -37,9 +37,15 @@ Para poder utilizar las dos maneras tenemos la regla de oro MeLT
 
 4. Finalmente llegan a  los Backends Agnósticos que es donde vemos nosotros los datos filtrados y acomodados, algunas de ellas son Prometheus, Jaeger, AWS, plataformas de terceros.
 
+# Herramientas / Tools Prometheus
 
+![](04%20-%20Otros/Imagenes/Pasted%20image%2020260804105424.png)
 
+**Prometheus (código abierto):** 
 
+1. Hace lo mismo que OpenTelemetry ya que recolecta datos, los procesa. Aunque tiene un plus también puede asociarle una base de datos PromQL guardando los datos pudiendo colocarle que cada cierto tiempo le haga un pull de los logs. OpenTelemetry es distinto solamente porque hay que trabajar con los APIs y SDKs, Prometheus solo le decia a quien queres conectart y se conecta.
+
+2. Como guarda la inos permite hacer Contadores, Calibradores (Gauges), Hitrogramas, Resúmenes.
 
 
 
