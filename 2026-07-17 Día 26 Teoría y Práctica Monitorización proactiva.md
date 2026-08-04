@@ -13,7 +13,17 @@ Se busca saber actuar de las dos formas.
 
 ![](04%20-%20Otros/Imagenes/Pasted%20image%2020260804010632.png)
 
+Para poder utilizar las dos maneras tenemos la regla de oro MeLT
+- **Métricas:** Son puramente los números, los porcentajes, rendimientos, promedios, de utilización de hardware, latencia de redes. Importante para el HPA ya que es estadistica pura.
+- **Registros (Logs):** Son escritura, eventos, las respuestas de las consultas. Sentencias que dejan las aplicaciones y los servicios.
+-  **Rastros (Traces):** Son el caminito a diferencia de los logs, camino de los distintos servicios para llegar a otros servicios, sirve para ver en que lugar hay latencia.
+  
+  Trabajadores de esto son:
+   - Un trabajador de SRE (Site Reliability Engineer o Ingeniero de Confiabilidad de Sitios), ellos monitorean, automatizan, gestionan incidentes y despliegan de forma segura.
+   - Un trabajador de NOC (Network Operations Center o Centro de Operaciones de Red) cuida que la red de internet y los servidores funcionen bien. 
+   - Un trabajador de SOC (Security Operations Center o Centro de Operaciones de Seguridad) protege los sistemas contra virus, robos de datos y ataques de ciberdelincuentes.
 
+# Fundamentos 
 
 
 
