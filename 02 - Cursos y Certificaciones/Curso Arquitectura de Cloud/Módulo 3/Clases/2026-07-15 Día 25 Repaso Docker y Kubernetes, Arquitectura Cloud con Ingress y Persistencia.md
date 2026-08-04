@@ -193,18 +193,26 @@ Estructura del proyecto:
 	 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260803111654.png)
 	 
 	 `kubectl -n labipap exec -it db-troubleshooter -- psql -h db -U postgres -d mini_commerce` dentro de ella tiramos `SELECT = FROM registris;`  nos muestra las compras que escribimos
-	 
+	 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260803223656.png)
 	 
 	 en otra consola escribimos `kubectl delete -f postgres-deployment.yaml -n labipap` con esto borramos todo incluido la base de datos
+	 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260803223821.png)
 	 
 	 volvemos a mini_commerce y volvemos a tirar `SELECT = FROM registris;` donde nos mostrara Failed
+	 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260803223936.png)
 	 
 	 Ahora volvemos a levantar todo con `kubectl apply -f postgres-deployment.yaml -n labipap` y nos volvemos a conectar en la otra terminal con  `kubectl -n labipap exec -it db-troubleshooter -- psql -h db -U postgres -d mini_commerce`  y dentro tiramos  `SELECT = FROM registris;`  nos muestra que los registro volvieron y que no se borraron
+	 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260803224107.png)
+	 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260803224151.png)
+	 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260803224228.png)
 	 
 	 Todo gracias por el volumen persistente, porque por mas que borremos todo luego se puede recuperar.
 	 
-	 
-	 
+### Finalizar
+
+1. Parar minikube
+	 `minikube stop` cerrara toda la arquitectura que creamos
+	 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260803224359.png)
 	 
  
 
