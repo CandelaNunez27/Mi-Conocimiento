@@ -221,7 +221,8 @@
       "templates:Insertar plantilla": false,
       "command-palette:Abrir paleta de comandos": false,
       "bases:Crear nueva base": false,
-      "daily-notes:Abrir la nota de hoy": false
+      "daily-notes:Abrir la nota de hoy": false,
+      "obsidian-git:Open Git source control": false
     }
   },
   "active": "aa92e956f9d1b376",

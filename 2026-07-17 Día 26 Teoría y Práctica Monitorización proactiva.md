@@ -27,9 +27,9 @@ Para poder utilizar las dos maneras tenemos la regla de oro MeLT
 
 ![](04%20-%20Otros/Imagenes/Pasted%20image%2020260804013034.png)
 
-**OpenTelemetry:** (26 min)
+**OpenTelemetry:** 
 
-
+Permite lenguajes de programacion, todos escribin los log de manera distinta dando soluciones distintas. Si quiero algo mas en datos engineer usualmente me voy más por python
 
 
 
