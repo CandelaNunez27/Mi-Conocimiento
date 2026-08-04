@@ -23,10 +23,11 @@ Para poder utilizar las dos maneras tenemos la regla de oro MeLT
    - Un trabajador de NOC (Network Operations Center o Centro de Operaciones de Red) cuida que la red de internet y los servidores funcionen bien. 
    - Un trabajador de SOC (Security Operations Center o Centro de Operaciones de Seguridad) protege los sistemas contra virus, robos de datos y ataques de ciberdelincuentes.
 
-# Fundamentos 
+# Herramientas /  Tools OpenTelemetry
 
+![](04%20-%20Otros/Imagenes/Pasted%20image%2020260804013034.png)
 
-
+**OpenTelemetry:** (26 min)
 
 
 

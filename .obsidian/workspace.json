@@ -201,8 +201,8 @@
             "state": {
               "type": "calendar",
               "state": {},
-              "icon": "calendar-with-checkmark",
-              "title": "Calendar"
+              "icon": "lucide-ghost",
+              "title": "calendar"
             }
           }
         ],
@@ -221,12 +221,12 @@
       "templates:Insertar plantilla": false,
       "command-palette:Abrir paleta de comandos": false,
       "bases:Crear nueva base": false,
-      "daily-notes:Abrir la nota de hoy": false,
-      "obsidian-git:Open Git source control": false
+      "daily-notes:Abrir la nota de hoy": false
     }
   },
   "active": "aa92e956f9d1b376",
   "lastOpenFiles": [
+    "04 - Otros/Imagenes/Pasted image 20260804013034.png",
     "04 - Otros/Imagenes/Pasted image 20260804010632.png",
     "04 - Otros/Imagenes/Pasted image 20260803233307.png",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 3/Clases/2026-07-15 Día 25 Repaso Docker y Kubernetes, Arquitectura Cloud con Ingress y Persistencia.md",
@@ -239,7 +239,6 @@
     "04 - Otros/Imagenes/Pasted image 20260803223852.png",
     "04 - Otros/Imagenes/Pasted image 20260803223821.png",
     "04 - Otros/Imagenes/Pasted image 20260803223656.png",
-    "04 - Otros/Imagenes/Pasted image 20260803111654.png",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 3/Clases/2026-07-03 Día 24 Práctica Kubernetes minikube.md",
     "04 - Otros/Tutorial.md",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 3/Clases/2026-07-01 Día 23 Kubernetes.md",
