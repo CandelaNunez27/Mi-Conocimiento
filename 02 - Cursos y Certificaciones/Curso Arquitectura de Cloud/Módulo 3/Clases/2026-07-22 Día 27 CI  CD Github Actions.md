@@ -56,11 +56,13 @@ El camino continuo que se divide en dos partes, una vez que ya tengo mi código 
 
 # Fundamentos Actions por dentro
 
+![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260805112106.png)
+
 Como funciona este motor / cual es su arquitectura (mamusca):
 - **Workflow:** tiene la receta completa, donde le dice a github que todo lo que esta aca son procesos que tenes que ejecutar.
 - **Job:** dentro de Workflow tendremos un lugar de trabajo, como una maquina virtual o pensarlo con contenedor. que jaran pequeñas acciones. por ejemplo workflow indicara a github que cree una mv con ubuntu, y el job pues se creara con ese ubuntu.
 - **Step (Run):** Son las tareas personalizadas que tiene que hacer ese job, por ejemplo run npm install.
-- **Step (User):**  Son tareas empaquetadas, tareas creadas por la comunidad como 
+- **Step (User):**  Son tareas empaquetadas, tareas creadas por la comunidad como por jemplo hacer un git pull a un código.
 
 
   
