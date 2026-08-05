@@ -91,15 +91,21 @@ Si son muchos logs se va el precio, tener precaución con eso.
 	 
 	 Una manera facil y rápida de desplegar todo lo de la clase anterior sin tener que ir uno por uno de los archivos, se coloco todo en una carpeta llamada labipap donde tiene todos los archivos de la clase anterior pero con una nomenclatura para que se ejecuten en orden (primero la ns, luego los secrets, ...). Para ello usamos `kubectl apply -f labipap`
 	 
-	 (cambio del 05 averageUtilizatios de 5 a 10)
+	 
+
+### HPA
+
+1. HPA el agregado de la clase anterior:
+	
 	 
 	 `kubectl -n labipap get all` para ver si se levanto todo
 	 
-	 Con la diferencia que antes no aparecia el horizontalpodautoscaler, esto se encuentra en el archivo 05-backend-hpa.yaml que contiene, apiVersion autoscaler/v2, kind HorizontalPodAutoscaler, name backend-hpa,  spec kind deployment, minReplicas 1, maxReplicas 3, metrics type resource, resource name cpu, target type utilization averageUtilizatios 10 Como se ve esta hpa en 12, por ende me creo mas pods, igualmente seguramente fueron creaods por el estres que sufre el cpu al 
+	 Con la diferencia que antes no aparecia el horizontalpodautoscaler, esto se encuentra en el archivo 05-backend-hpa.yaml que contiene, apiVersion autoscaler/v2, kind HorizontalPodAutoscaler, name backend-hpa,  spec kind deployment, minReplicas 1, maxReplicas 3, metrics type resource, resource name cpu, target type utilization averageUtilizatios 10 Como se ve esta hpa en 12%, por ende me creo mas pods, igualmente seguramente fueron creaods por el estres que sufre el cpu al crear todo el lab, por ende esperamos para ver como avanza y tiramos nuevamente `kubectl -n labipap get all`
+	 
+	 Luego revisamos que en el archivo 03-postgres-deploy
+	 
 	 
 	 Luego en otra terminal tiramos `minikube tunnel` y en otra nuevamente preguntamos si tenemos conexión con `curl `
-	 
-	 
 	 
 	 
 
