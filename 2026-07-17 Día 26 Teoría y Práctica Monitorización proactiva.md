@@ -127,7 +127,11 @@ Si son muchos logs se va el precio, tener precaución con eso.
 	 
 	 En esta carpeta llamada monitoring tenemos también archivos con nomeclatura para que se desplieguen en orden con `kubectl apply -f monitoring` 
 	 
+	`kubectl -n labipap get sa` para ver los serviceaccount
 	 
+
+2. 
+	`kubectl -n labipap get all` para ver como consume ahora
    
    
    
