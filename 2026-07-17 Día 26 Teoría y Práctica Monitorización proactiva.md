@@ -73,11 +73,33 @@ Si son muchos logs se va el precio, tener precaución con eso.
 
 1. minikube:
 	`minikube start` iniciamos minikube
-	
-	
-2. Se vuelve a levantar el mismo labipap:
-	
+	 
+	`minikube addons enable ingress` agregamos el addons de ingress si no lo tenemos
+	 
+	 `minikube addons enable metrics-server ` que es el nativo de kubernetes para registrar metricas.
+	 
+	 `minikube addons list` para ver los addos activados.
+	 
+	 `minikube image load courseipap/backend:1.0.0` y `minikube image load courseipap/frontend:1.0.0` si no lo tengo en `minikube image list`
+	 
+	 
+	 
+	 
+	 
 
+2. Lo dejamos como la clase anterior:
+	 
+	 Una manera facil y rápida de desplegar todo lo de la clase anterior sin tener que ir uno por uno de los archivos, se coloco todo en una carpeta llamada labipap donde tiene todos los archivos de la clase anterior pero con una nomenclatura para que se ejecuten en orden (primero la ns, luego los secrets, ...). Para ello usamos `kubectl apply -f labipap`
+	 
+	 (cambio del 05 averageUtilizatios de 5 a 10)
+	 
+	 
+	 
+	 Luego en otra terminal tiramos `minikube tunnel` y en otra nuevamente preguntamos si tenemos conexión con `curl `
+	 
+	 
+	 
+	 
 
 ---
 # Guía del Profesor
