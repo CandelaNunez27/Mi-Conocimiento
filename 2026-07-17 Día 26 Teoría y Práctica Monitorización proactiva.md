@@ -102,7 +102,13 @@ Si son muchos logs se va el precio, tener precaución con eso.
 	 
 	 Con la diferencia que antes no aparecia el horizontalpodautoscaler, esto se encuentra en el archivo 05-backend-hpa.yaml que contiene, apiVersion autoscaler/v2, kind HorizontalPodAutoscaler, name backend-hpa,  spec kind deployment, minReplicas 1, maxReplicas 3, metrics type resource, resource name cpu, target type utilization averageUtilizatios 10 Como se ve esta hpa en 12%, por ende me creo mas pods, igualmente seguramente fueron creaods por el estres que sufre el cpu al crear todo el lab, por ende esperamos para ver como avanza y tiramos nuevamente `kubectl -n labipap get all`
 	 
-	 Luego revisamos que en el archivo 03-postgres-deploy
+	 Luego revisamos que en el archivo 03-postgres-deployment-yaml tiene un apartado en el backend donde sale resources requests cpu 50m (solicita 50 milicores), limits cpu 100m (hasta 100 como maximo puede trabajar). Tambien se podria colocar memory para tambien colocarle cuanto puede usar. Cuando llega al limite va a ser como cuando se nos satura nuestra computadora, cuando se satura el cpu se vuelve lente, cuando es saturacion de memory puede reiniciarce. 
+	 
+	 `
+	 
+	 `kubectl -n labipap get all` para ver como consume de normal luego de ya haber arrancado, actualmente de 7% por ende nos vamos al 05 y a averageUtilizations lo subimos a  20 par ver como nos borra los pod que nos creaba para balancear. Ahora para aplicar los cambios ``
+	 
+	 `
 	 
 	 
 	 Luego en otra terminal tiramos `minikube tunnel` y en otra nuevamente preguntamos si tenemos conexión con `curl `
