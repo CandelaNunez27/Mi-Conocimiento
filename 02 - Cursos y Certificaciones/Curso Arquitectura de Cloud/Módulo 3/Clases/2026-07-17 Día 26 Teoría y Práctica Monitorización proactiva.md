@@ -130,7 +130,7 @@ Si son muchos logs se va el precio, tener precaución con eso.
 	`kubectl -n labipap get sa` para ver los serviceaccount
 	 
 
-2. Generar logs y primeras visualizaciones
+2. Generar logs 
 	 `kubectl -n labipap get all` para ver como consume ahora
 	 
 	 en otra terminal tiramos `minikube tunnel` para tener conexion
@@ -139,13 +139,32 @@ Si son muchos logs se va el precio, tener precaución con eso.
 	 
 	 en otra terminal tiramos `kubectl port-forward svc/prometheus 9090:9090 -n labipap` nos tomara la consola
 	 
-	 en otra consola tirar `curl localhost:3000` nos saldra en la terminal de grafana handling. luego en el navegador colocamos `http://localhost:3000`  colocandole de contraseña y usuario por primera vez admin, admin. y en otra pestaña tendremos `http://localhost:9090` donde nos vamos a Status > RuleHeath. 
+	 en otra consola tirar `curl localhost:3000` nos saldra en la terminal de grafana handling. 
+
+
+3. Primeras visualizaciones
 	 
-	 En Grafana le damos al menu lateral DashBoards > Create DashBoard > le damos al + > config visualization > le indicamos que se muestre los ultimos 15 min > le damos a code >  escribimos este query `up{job="kubernetes-pods"}` > run queries > elejimos el trablero de tarjetas de 1s y 0s
+	 luego en el navegador colocamos `http://localhost:3000`  colocandole de contraseña y usuario por primera vez admin, admin. y en otra pestaña tendremos `http://localhost:9090` donde nos vamos a Status > RuleHeath. 
+	 
+	 En Grafana le damos al menu lateral DashBoards > Create DashBoard > le damos al + > config visualization > le indicamos que se muestre los ultimos 15 min > le damos a code >  escribimos este query `up{job="kubernetes-pods"}` > run queries > elejimos el trablero de tarjetas de 1s y 0s > a ese le colocamos que la base sea de color rojo, que si dice 1 colocarle verde > le colocamos panel status > save > colocarle nombre Status > save. Ahora nos vamos dashboar y deveria aparecer > le colocamos que muestre los últimos 15 min
+	 
+	 se compara con lo que muestra el grafico con lo que muestra la consola, `kubectl -n labipap get all`  y chequeamos que muesten los mismos pods
    
-   
-   
-   
+4. Resiliencia nuevamente pero ahora la visualizamos:
+	 
+	 En otra terminal tiramos `curl localhost` nos mostrara el mini-comerce
+	 
+	`curl localhost/api/data` si esta vacia tiramos un registro 
+	 
+	 `curl -X POST http://localhost/api/data -H "Content-Type: application/json" -d '{"nombre": "Estudiante", "clase": "Kubernetes"}' ` (`curl -X POST http://192.168.58.2/api/data -H "Content-Type: application/json" -d '{"nombre": "Estudiante", "clase": "Kubernetes"}'`)  para ver que se guardo con éxito ejecutamos `curl localhost/api/data` (`curl 192.168.58.2/api/data`) y nos sale.
+	 
+	 en una terminal dejamos corriendo `while true; do curl -s http://localhost/api/data; echo ""; sleep 1; done` (`while true; do curl -s http://192.168.58.2/api/data; echo ""; sleep 1; done`) (`watch -n 1 curl -s http://192.168.58.2/api/data`) esto nos toma la consola para mostrar los resultados en vivo
+	 
+	 en otra terminal revisamos como genera carga el comando anterior, `kubectl -n labipap get all` para ver como consume ahora
+	 
+	 En otra terminal se puede estresar al cpu con este comando `kubectl get hpa -w -n labipap`  o con nos `while true; do curl -s http://l` tomara la consola
+	 
+	 
    
    
    
