@@ -123,7 +123,7 @@ Si son muchos logs se va el precio, tener precaución con eso.
 	 
 	 Tenemos el archivo 03-deployments.yaml apartado de prometheus con spec replicas 1, spec serviceAccountName prometheus-sa, containers .. port 9090 volumesMont. Para grafana parecido, tenemos  spec replicas 1, spec containers .. port 3000 volumesMont. Luego tenemos los servicios para conectarlos a estos dos que prometheus expone el puerto 9090 y el servicio de grafana que expone el puerto 3000.
 	 
-	 Tenemos el archivo 04-rbac.yaml que tiene kind ServiceAccount que es como un usuario de servicio ficticio que le damos indicaciones para que haga, 
+	 Tenemos el archivo 04-rbac.yaml que tiene kind ServiceAccount que es como un usuario de servicio ficticio que le damos indicaciones para que haga. Crea un kind ClusterRole que podra agarrar a los pods, los services y los endpoints, donde se les hará get, list y watch. esto porque prometheus necesita ingresara al kubernetes y hacer esas accciones para luego presentar esa información a grafana. Luego tenemos un kind ClusterRoleBinding que solo es para que el usuario sea atachado con ese role, se indica la api.
 	 
 	 En esta carpeta llamada monitoring tenemos también archivos con nomeclatura para que se desplieguen en orden con `kubectl apply -f monitoring` 
 	 
