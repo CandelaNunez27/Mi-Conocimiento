@@ -62,26 +62,20 @@ Hay también más stacks: (AlertManagger > Prometheus > Grafana), ELK (Elasticse
 
 ![](04%20-%20Otros/Imagenes/Pasted%20image%2020260804114340.png)
 
-La herramienta de las 
+La herramienta de las nubes es Cloudwatch, es se Naturaleza SaaS, muy facil de activarlo. Se útiliza para el monitoreo de computo y redes. Es algo límitado su uso pero se le suele utilizar mucho como pasa mano, todo lo que este pasando en aws, cloudwatch lo pasa a un visualizador, como teitadock nuestro monitoreo.
+Si son muchos logs se va el precio, tener precaución con eso.
 
 
 
 
-
-
-
-# Fundamentos 
-
-
-
-
-
-
-# Práctica: sawkl
+# Práctica: Monitorizar lo de la clase anterior
 ### Preparación
 
-1. sdssdf:
-	sdsld
+1. minikube:
+	`minikube start` iniciamos minikube
+	
+2. Se vuelve a levantar el mismo 
+
 
 ---
 # Guía del Profesor
