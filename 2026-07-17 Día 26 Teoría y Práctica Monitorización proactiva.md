@@ -93,7 +93,9 @@ Si son muchos logs se va el precio, tener precaución con eso.
 	 
 	 (cambio del 05 averageUtilizatios de 5 a 10)
 	 
+	 `kubectl -n labipap get all` para ver si se levanto todo
 	 
+	 Con la diferencia que antes no aparecia el horizontalpodautoscaler, esto se encuentra en el archivo 05-backend-hpa.yaml que contiene, apiVersion autoscaler/v2, kind HorizontalPodAutoscaler, name backend-hpa,  spec kind deployment, minReplicas 1, maxReplicas 3, metrics type resource, resource name cpu, target type utilization averageUtilizatios 10 Como se ve esta hpa en 12, por ende me creo mas pods, igualmente seguramente fueron creaods por el estres que sufre el cpu al 
 	 
 	 Luego en otra terminal tiramos `minikube tunnel` y en otra nuevamente preguntamos si tenemos conexión con `curl `
 	 
