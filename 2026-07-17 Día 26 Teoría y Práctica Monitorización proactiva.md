@@ -119,7 +119,11 @@ Si son muchos logs se va el precio, tener precaución con eso.
 	 
 	 Tenemos el archivo 01-pvc.yml que tiene unos pv (volumenes persistentes) uno para prometheus y otro para grafana.
 	 
-	 Tenemos el archivo 02-configmap.yaml para meter variables entre ellos, prometheus tendra variables y grafana tiene recoje esa información de prometheus. este configmap esta en un archivo aparte solo para que no este todo junto en el archivo 03-deploymen
+	 Tenemos el archivo 02-configmap.yaml para meter variables entre ellos, prometheus tendra variables y grafana tiene recoje esa información de prometheus. este configmap esta en un archivo aparte solo para que no este todo junto en el archivo 03-deployments.yaml y por si me equivoco tipeando en el configmap no implique al deployment
+	 
+	 Tenemos el archivo 03-deployments.yaml apartado de prometheus con spec replicas 1, spec serviceAccountName prometheus-sa, containers .. port 9090 volumesMont. Para grafana parecido, tenemos  spec replicas 1, spec containers .. port 3000 volumesMont. Luego tenemos los servicios para conectarlos a estos dos que prometheus expone el puerto 9090 y el servicio de grafana que expone el puerto 3000.
+	 
+	 Tenemos el archivo 04-rbac.yaml que tiene kind ServiceAccount que es como un usuario de servicio ficticio que le damos indicaciones para que haga, 
 	 
 	 En esta carpeta llamada monitoring tenemos también archivos con nomeclatura para que se desplieguen en orden con `kubectl apply -f monitoring` 
 	 
