@@ -62,7 +62,7 @@ Hay también más stacks: (AlertManagger > Prometheus > Grafana), ELK (Elasticse
 
 ![](04%20-%20Otros/Imagenes/Pasted%20image%2020260804114340.png)
 
-
+La herramienta de las 
 
 
 
