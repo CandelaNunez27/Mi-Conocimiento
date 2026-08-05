@@ -106,14 +106,40 @@ Si son muchos logs se va el precio, tener precaución con eso.
 	 
 	 `
 	 
-	 `kubectl -n labipap get all` para ver como consume de normal luego de ya haber arrancado, actualmente de 7% por ende nos vamos al 05 y a averageUtilizations lo subimos a  20 par ver como nos borra los pod que nos creaba para balancear. Ahora para aplicar los cambios ``
-	 
-	 `
+	 `kubectl -n labipap get all` para ver como consume de normal luego de ya haber arrancado, actualmente de 7% por ende nos vamos al 05 y a averageUtilizations lo subimos a  20 par ver como nos borra los pod que nos creaba para balancear. Ahora para aplicar los cambios `kubectl apply -f labipap` y volvemos a revisar
 	 
 	 
+	 
+	 
+	 
+
+### Monitoring
+
+1. Nueva carpeta:
+	 
+	 Tenemos el archivo 01-pvc.yml que tiene unos pv (volumenes persistentes) uno para prometheus y otro para grafana.
+	 
+	 Tenemos el archivo 02-configmap.yaml para meter variables entre ellos, prometheus tendra variables y grafana tiene recoje esa información de prometheus. este configmap esta en un archivo aparte solo para que no este todo junto en el archivo 03-deploymen
+	 
+	 En esta carpeta llamada monitoring tenemos también archivos con nomeclatura para que se desplieguen en orden con `kubectl apply -f monitoring` 
+	 
+	 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
 	 Luego en otra terminal tiramos `minikube tunnel` y en otra nuevamente preguntamos si tenemos conexión con `curl `
-	 
-	 
+
+
+
 
 ---
 # Guía del Profesor
