@@ -52,18 +52,17 @@ El camino continuo que se divide en dos partes, una vez que ya tengo mi código 
 
 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260805110509.png)
 
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
+**Github Actions:** es el motor de la solución, va a leer código en estructura yaml, su gran ventaja es que su estructurador yaml para indicarle que hacer, estas acciones generan eventos.  Es totalmente trasparente para nuestras pc ya sea windows, linux, mac, ya que solo es descargar git y empezar a escribir las actions. Gran comunidad y gran aportación de soluciones de acciones prefabricadas. 
+
+# Fundamentos Actions por dentro
+
+Como funciona este motor / cual es su arquitectura (mamusca):
+- **Workflow:** tiene la receta completa, donde le dice a github que todo lo que esta aca son procesos que tenes que ejecutar.
+- **Job:** dentro de Workflow tendremos un lugar de trabajo, como una maquina virtual o pensarlo con contenedor. que jaran pequeñas acciones. por ejemplo workflow indicara a github que cree una mv con ubuntu, y el job pues se creara con ese ubuntu.
+- **Step (Run):** Son las tareas personalizadas que tiene que hacer ese job, por ejemplo run npm install.
+- **Step (User):**  Son tareas empaquetadas, tareas creadas por la comunidad como 
+
+
   
 ---
 
