@@ -64,6 +64,14 @@ Como funciona este motor / cual es su arquitectura (mamusca):
 - **Step (Run):** Son las tareas personalizadas que tiene que hacer ese job, por ejemplo run npm install.
 - **Step (User):**  Son tareas empaquetadas, tareas creadas por la comunidad como por jemplo hacer un git pull a un código.
 
+# Ejemplo YAML
+
+![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260805204759.png)
+
+- **Name:** 
+
+
+![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260805204817.png)
 
   
 ---
