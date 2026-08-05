@@ -74,7 +74,9 @@ Si son muchos logs se va el precio, tener precaución con eso.
 1. minikube:
 	`minikube start` iniciamos minikube
 	
-2. Se vuelve a levantar el mismo 
+	
+2. Se vuelve a levantar el mismo labipap:
+	
 
 
 ---
