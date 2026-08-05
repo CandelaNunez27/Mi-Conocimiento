@@ -162,19 +162,26 @@ Si son muchos logs se va el precio, tener precaución con eso.
 	 
 	 en otra terminal revisamos como genera carga el comando anterior, `kubectl -n labipap get all` para ver como consume ahora
 	 
-	 En otra terminal se puede estresar al cpu con este comando `kubectl get hpa -w -n labipap`  o con nos `while true; do curl -s http://l` tomara la consola
+	 En otra terminal se puede estresar al cpu con este comando `kubectl get hpa -w -n labipap`  o con nos `while true; do curl -s http://localhost/api/data > /dev/null; done` tomara la consola
+	 
+	 vemos que tal esta en cpu `kubectl -n labipap get all` vemos cuantos pod creo y nos vamos a grafana con un refresh para ver si se ve en el monitoreo, 
 	 
 	 
-   
-   
-   
-   
-   
-   
-   
-   
-	
+	 Tiramos un en otra terminal ``kubectl port-forward pod/backend-ashdklajsd 3000:3000 -n labipap`
+	 en navegador por `http://localhost:3001` y `http://localhost/api/data`
+	 
 
+5. Vamor apagando las cosas de saturacion:
+	 vemos que tal esta en cpu `kubectl -n labipap get all`
+	 
+	 contamos el `while true; do curl -s http://localhost/api/data > /dev/null; done`  y volvamos a revisar.
+   
+   Conclusiones: los logs los crea kubernetes con el addons metrics-server> prometheus los puede leer porque tiene los permisos para leerlos y los almacena en una pequeña base de datos por ello el pvc > y grafana los lee dese los pvc donde se almacenan los datos
+
+### Borramos todo
+
+1. Manera sencilla para borrar todo:
+	`kubectl delete ns labipap` automaticamente ira borrando todo. porque 
 
 
 
