@@ -130,8 +130,18 @@ Si son muchos logs se va el precio, tener precaución con eso.
 	`kubectl -n labipap get sa` para ver los serviceaccount
 	 
 
-2. 
-	`kubectl -n labipap get all` para ver como consume ahora
+2. Generar logs y primeras visualizaciones
+	 `kubectl -n labipap get all` para ver como consume ahora
+	 
+	 en otra terminal tiramos `minikube tunnel` para tener conexion
+	 
+	 en otra termina tiramos `kubectl port-forward svc/grafana 3000:3000 -n labipap` nos tomara la consola
+	 
+	 en otra terminal tiramos `kubectl port-forward svc/prometheus 9090:9090 -n labipap` nos tomara la consola
+	 
+	 en otra consola tirar `curl localhost:3000` nos saldra en la terminal de grafana handling. luego en el navegador colocamos `http://localhost:3000`  colocandole de contraseña y usuario por primera vez admin, admin. y en otra pestaña tendremos `http://localhost:9090` donde nos vamos a Status > RuleHeath. 
+	 
+	 En Grafana le damos al menu lateral DashBoards > Create DashBoard > le damos al + > config visualization > le indicamos que se muestre los ultimos 15 min > le damos a code >  escribimos este query `up{job="kubernetes-pods"}` > run queries > elejimos el trablero de tarjetas de 1s y 0s
    
    
    
@@ -144,7 +154,7 @@ Si son muchos logs se va el precio, tener precaución con eso.
    
    
    
-	 Luego en otra terminal tiramos `minikube tunnel` y en otra nuevamente preguntamos si tenemos conexión con `curl `
+	
 
 
 
