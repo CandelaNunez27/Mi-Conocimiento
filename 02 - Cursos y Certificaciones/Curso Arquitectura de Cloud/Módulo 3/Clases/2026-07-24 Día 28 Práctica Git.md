@@ -36,10 +36,13 @@
 	 
 	 volvemos al yaml  y colocamos  otro jobs. otro;. runs-on: ubuntu-latest, steps;, - name: LS, run:  ls -la 
 	 
-	 `git add .`,  `git commit -m "actions c1 2"` y ahora `git push origin main`y refrescamos sale  en verde y vemos el hello world mas el hola mundo en el archivo txt
+	 `git add .`,  `git commit -m "actions c1 2"` y ahora `git push origin main`y refrescamos sale  en verde y vemos los jobs en un bloque y vemos lo que agregamos
 	 
+	 volvemos al yaml  y colocamos  debajo del "Hello, world " >> test.txt .  - name: LS, run:  ls -la. Y debajo de otro:, runs-on: ubuntu-latest. needs: [hola]. y arriba del ls. - name: checkout repo, uses: actions/checkout@v4
 	 
+	 `git add .`,  `git commit -m "actions c1 3"` y ahora `git push origin main`y refrescamos sale  en verde y vemos los jobs divididos en dos bloques cada uno, siendo dependientes del otro. y dentro mostramos todo lo que agregamos. vemos el checkout que es un uses, donde nos muestra  run y syncing reposities. nos trajo como esa libreria, donde vemos que el ls se copio todo nuestro repo.
 	 
+	 volvemos al yaml  y colocamos  cambiamos el on. on:,   push,    braches: ["integra"]
 	 
 	 
 	 
