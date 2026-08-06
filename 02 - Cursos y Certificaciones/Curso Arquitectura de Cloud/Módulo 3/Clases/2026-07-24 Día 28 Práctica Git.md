@@ -3,10 +3,19 @@
 ### Preparación
 
 1. Seleccionar repositorio:
-	 Nos vamos a Github y buscamos el repositorio, entramos y le damos al boton verde de code y copiamos el https.
+	 Nos vamos a Github y buscamos el repositorio, entramos y le damos al boton verde de code y copiamos el https. Si es nuestro el repo podemos hacerpo por ssh
 	 
 	 En la consola hacemos `git clone https://dasmdamsasda.git` así clonamos un repo
 	
+	 con ssh `git clone git@github.com:julian/repo.git ` si ya tenemos todo nuestro git logeado en nuestra consola
+	 
+	 para compartirles a otros y que puedan modificar el original hay que ir a ajustes > ssh and gpg keys > new ss key
+	 
+	 Nos paramos en el repo `ls -la` y `get status` o  `git branch` para ver donde estamos posicionados. 
+	 
+	 
+	 en course_ing_cloud le damos crear una nueva carpeta llamada .get/workfows, entro de esta colocamos un archivo llamado hello-world.yaml. volvemos a tirar `get status`
+	 
 	 
 	 
 	 
