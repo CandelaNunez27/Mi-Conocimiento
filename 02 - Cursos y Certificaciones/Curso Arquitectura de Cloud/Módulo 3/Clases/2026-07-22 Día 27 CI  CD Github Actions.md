@@ -78,7 +78,19 @@ Se presenta este escenario por lo que se estructura el siguiente yaml
 
 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260805204817.png)
 
-- **steps:** ahora viene las acciones, se le coloca un nombre a la accion indicandole que accion. uses: actions/checkout@v4 es para clona un codigo en la mv. uses: actions/seup-python@v5 instalar programa en este caso python, run: python roadmap/stats
+- **steps:** ahora viene las acciones, se le coloca un nombre a la accion indicandole que accion. uses: actions/checkout@v4 es para clona un codigo en la mv. uses: actions/seup-python@v5 instalar programa en este caso python, run: python roadmap/stats.py
+
+# Ejemplo El ideal de 0 fricción (automatización)
+
+![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260805214345.png)
+
+La automatización de lo previo a la producción.
+Pero este camino podria ser por ejemplo:
+1. un push a github
+2. el motor de github entienda que se recibio nuevo codigo 
+3. CI utiliza app como SonarQube, JUnit, JFrong para verificar no haya cosas raras, contraseñas erroneas, por ende pasa las pruebas
+4. al pasar las pruebas se llega a crear el a
+
 
 
 
