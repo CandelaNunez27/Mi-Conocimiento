@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2026-07-24 Día 28.md",
+                "file": "2026-07-24 Día 28 Práctica Git.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026-07-24 Día 28"
+              "title": "2026-07-24 Día 28 Práctica Git"
             }
           }
         ]
@@ -210,7 +210,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 225.5
+    "width": 225.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -227,7 +228,7 @@
   "active": "aa92e956f9d1b376",
   "lastOpenFiles": [
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 3/Clases/2026-07-22 Día 27 CI  CD Github Actions.md",
-    "2026-07-24 Día 28.md",
+    "2026-07-24 Día 28 Práctica Git.md",
     "04 - Otros/Imagenes/Pasted image 20260805214345.png",
     "04 - Otros/Imagenes/Pasted image 20260805211411.png",
     "04 - Otros/Imagenes/Pasted image 20260805204817.png",
