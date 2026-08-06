@@ -56,9 +56,11 @@
 3. Mas complicado:
 	 nos vamos a la carpeta course_ing_cloud  > modulos > mod2 > class3 > demo > resiliencia > app-inventario > dockerfile y app.py. los copiamos y los pegamos en course_ing_cloud 
 	 
+	 volvemos al yaml  y colocamos  build:,   runs-on: ubuntu-latest, steps:,  - name: checkout repo, uses: actions/checkout@v4, - name: docker build, uses: docker/setup-buildx-action@v3, - name: build image, uses: docker/build-push-action@v5, witch:,   contex: ., file: ./Dockerfile, tags: jgigena90/app-inventario:1.0
 	 
+	 `git add .`,  `git commit -m "actions c1 5"` y ahora `git push origin integration`y refrescamos sale  en verde y vemos que ahora nos aparece un build donde se trae el repo, se creo en build image y se trajo el dockerfile. 
 	 
-	 
+	 Paso siguiente seria publicar pero se necesita tener configurado la función en settings que nos deja actions secrets and variables para que sean ocultadas y sea más seguro, ya que desde ahí se pueden mencionar sin necesidad de colocarlas explicitamente en el código.
 	 
 	 
 	 
