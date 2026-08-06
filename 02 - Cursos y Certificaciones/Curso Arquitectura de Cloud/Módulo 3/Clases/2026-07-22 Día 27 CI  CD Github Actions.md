@@ -68,10 +68,17 @@ Como funciona este motor / cual es su arquitectura (mamusca):
 
 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260805204759.png)
 
-- **Name:** 
+- **Name:** para colocarle nombre
+- **On: Push: braches: main:** Cuando yo quiero que se coloque en on? pues cuando tenga un push del main.
+- **Jobs: build: runs-on:** le indicamos como será el vm
 
 
 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260805204817.png)
+
+- **steps:** ahora viene las acciones, se le coloca un nombre a la accion indicandole que accion. uses: actions/checkout@v4 es para clona un codigo en la mv. uses: actions/seup-python@v5 instalar programa en este caso python, run: 
+
+
+
 
   
 ---
