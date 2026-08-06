@@ -10,16 +10,19 @@ La idea de esto es dejar de conectarnos directamente a nuestros servidores, que 
 
 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260806110449.png)
 
-Antes conectarse a los servidores se necesitaba configurarlo manualmente para el acceso, permitir ssh, telnet o escritorios remotos
+Antes conectarse a los servidores se necesitaba configurarlo manualmente para el acceso, permitir ssh, telnet o escritorios remotos, teniendo key de ssh o para remeto. Por ende si alguien entra a nuestra pc o por alguna razón acceden a nuestro certificado de ssh corremos el riesgo de que puedan acceder.
 
+# Fundamentos El después
 
+![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260806111152.png)
 
+Hoy la idea es tener la arquitectura como código, que lo tenemos respaldado en un git. Quien tiene la llave segura la tiene git y no mi pc en local, entonces si me roban la pc no pasa nada. Ya no esta todo centralizado en un archivo  completo de configuración que si se perdia era un problema, ahora esta todo en recetas tipo yaml listas para usar en un lugar resguardado como git. Y lo que se busca es llegar a la Gestión de Configuración.
 
+# Fundamentos Gestión de Configuración
 
+![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260806111845.png)
 
-
-
-
+Se busca llegar a este proceso, como la desplegas y la replicas, se menciona Auditoria de procesos que suele tener una empresa para tener gestionada el despliegue y poder replicarlo sin problemas.  
 
 
 
