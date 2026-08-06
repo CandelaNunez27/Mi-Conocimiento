@@ -1,4 +1,4 @@
- # Teoría: CI CD Github Actions
+# Teoría: CI CD Github Actions
 
 # Fundamentos Los primeros pasos
 
