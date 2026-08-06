@@ -66,6 +66,9 @@ Como funciona este motor / cual es su arquitectura (mamusca):
 
 # Ejemplo YAML
 
+Se presenta este escenario por lo que se estructura el siguiente yaml
+![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260805211411.png)
+
 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260805204759.png)
 
 - **Name:** para colocarle nombre
@@ -75,7 +78,7 @@ Como funciona este motor / cual es su arquitectura (mamusca):
 
 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260805204817.png)
 
-- **steps:** ahora viene las acciones, se le coloca un nombre a la accion indicandole que accion. uses: actions/checkout@v4 es para clona un codigo en la mv. uses: actions/seup-python@v5 instalar programa en este caso python, run: 
+- **steps:** ahora viene las acciones, se le coloca un nombre a la accion indicandole que accion. uses: actions/checkout@v4 es para clona un codigo en la mv. uses: actions/seup-python@v5 instalar programa en este caso python, run: python roadmap/stats
 
 
 
