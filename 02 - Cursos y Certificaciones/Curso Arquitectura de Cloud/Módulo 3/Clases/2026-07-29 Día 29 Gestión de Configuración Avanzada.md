@@ -22,7 +22,10 @@ Hoy la idea es tener la arquitectura como código, que lo tenemos respaldado en 
 
 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260806111845.png)
 
-Se busca llegar a este proceso, como la desplegas y la replicas, se menciona Auditoria de procesos que suele tener una empresa para tener gestionada el despliegue y poder replicarlo sin problemas.  
+Se busca llegar a este proceso, como la desplegas y la replicas, se menciona Auditoria de procesos que suele tener una empresa para tener gestionada el despliegue y poder replicarlo sin problemas. Para ello hay que tener documentación de estos procesos para los cambios o escalamientos que puedan ocurrir.
+
+
+# Fundamentos ITIL
 
 
 
