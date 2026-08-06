@@ -16,10 +16,10 @@
 	 
 	 
 	 
-	 
+
 2.  Primeros Actions:
 	 
-	 en course_ing_cloud le damos crear una nueva carpeta llamada .get/workfows, entro de esta colocamos un archivo llamado hello-world-c1.yaml. volvemos a tirar `get status` si refrescamos la web aun no aparece por ende tiramos `git add .`,  `git commit -m "actions c1 1"` y ahora `git push origin main` si aparece el delta es que si algo se cambio. por ende refrezcamos ahora y nos sale arriba actions y nos aparecera unos regitros / eventos de acciones.  nos sale que falta el o en el yaml
+	 en course_ing_cloud le damos crear una nueva carpeta llamada .get/workfows, entro de esta colocamos un archivo llamado primer-actions.yaml. volvemos a tirar `get status` si refrescamos la web aun no aparece por ende tiramos `git add .`,  `git commit -m "actions c1 1"` y ahora `git push origin main` si aparece el delta es que si algo se cambio. por ende refrezcamos ahora y nos sale arriba actions y nos aparecera unos regitros / eventos de acciones.  nos sale que falta el o en el yaml
 	 
 	 
 	 En el archivo  hello-world-c1.yaml escribimos name: Hello-word-Ipap, on: push, jobs:, hola:, run-on: ubuntu-latest
@@ -42,17 +42,19 @@
 	 
 	 `git add .`,  `git commit -m "actions c1 3"` y ahora `git push origin main`y refrescamos sale  en verde y vemos los jobs divididos en dos bloques cada uno, siendo dependientes del otro. y dentro mostramos todo lo que agregamos. vemos el checkout que es un uses, donde nos muestra  run y syncing reposities. nos trajo como esa libreria, donde vemos que el ls se copio todo nuestro repo.
 	 
-	 volvemos al yaml  y colocamos  cambiamos el on. on:,   push,    braches: ["integra"]
+	 volvemos al yaml  y colocamos  cambiamos el on. on:,   push,    braches: ["integration"], pull_request:,    braches:,   - main
 	 
+	 `git add .`,  `git commit -m "actions c1 4"` y ahora `git push origin main`y refrescamos y no nos aparece. porque no tenemos la rama integration. por ende nos vamos a code > main > ver braches > new branch > integration > origen main
+	 Porque por lo general la barra main se suele usar como representar Produccion. que esta protegida,  ya que no sé deberia hacer cambio o borrar como venimos haciendo.  y integrations suele ser de desarrollo donde se trabaja los entornos de prueba, hasta que estemos seguro que lo que tenemos desarrollado va para produccion
 	 
+	 por ende, tiramos `git fetch` que nos trae la rama que creamos trae las cosas pero no trae las modificaciones de cofigo para eso esta pull , nos cambiamos de rama con `git checkout integration`
 	 
+	 `git add .`,  `git commit -m "actions c1 4"` y ahora `git push origin integration`y refrescamos sale  en verde y vemos que ahora ya nos aparece.
 	 
-	 
-	 
-	 
-	 
-	 
-	 
+	
+ 
+3. Mas complicado:
+	 nos vamos a la carpeta course_ing_cloud  > modulos > mod2 > class3 > demo > resiliencia > app-inventario > dockerfile y app.py. los copiamos y los pegamos en course_ing_cloud 
 	 
 	 
 	 
