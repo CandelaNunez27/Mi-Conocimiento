@@ -27,8 +27,16 @@ Se busca llegar a este proceso, como la desplegas y la replicas, se menciona Aud
 
 # Fundamentos ITIL
 
+![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260806114007.png)
+
+Son buenas practicas de nuestras empresa. Planificar objetivos, relevamiento de activos y servicios, gestión de cambios como nos manejamos ante ellos, Registros de estados y  Auditoria de seguridad
 
 
+# Fundamentos Idempotencia
+
+![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260806115101.png)
+
+Idempotencia es algo que siempre va a dar el mismo resultado. 
 
 
 
