@@ -85,11 +85,15 @@ Se presenta este escenario por lo que se estructura el siguiente yaml
 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260805214345.png)
 
 La automatización de lo previo a la producción.
-Pero este camino podria ser por ejemplo:
+Pero este camino podría ser por ejemplo:
 1. un push a github
-2. el motor de github entienda que se recibio nuevo codigo 
-3. CI utiliza app como SonarQube, JUnit, JFrong para verificar no haya cosas raras, contraseñas erroneas, por ende pasa las pruebas
-4. al pasar las pruebas se llega a crear el a
+2. el motor de github entienda que se recibió nuevo código 
+3. CI utiliza app como SonarQube, JUnit, JFrong para verificar no haya cosas raras, contraseñas erróneas, por ende pasa las pruebas
+4. al pasar las pruebas se llega a crear el artefacto que puede ser un contenedor
+5. una vez creada empieza CD el kubernetes tomara todo lo anterior y lo desplegara en el siguiente paso
+6. se despliega en producción que puede ser la nube como aws, o en local on premise. 
+
+El mayor trabajo sería escribir el código, para más seguridad se recomienda que hasta el tercer paso sea automatizado ya el resto manual por si no tenemos mucha confianza del código.
 
 
 
