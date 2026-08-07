@@ -59,9 +59,18 @@ Ejemplo descargamos de github o con git actions de manera automáticamente, el c
 
 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260806234822.png)
 
-AWS ofrece OpsWorks Engine que es un servicio para hacer la gestión de todo lo que es instancias de administración/configuración. Aca como tenemos instancias corriendo  chef y puppet se pueden sincrinizar con OpsWorks para que s
+AWS ofrece OpsWorks Engine que es un servicio para hacer la gestión de todo lo que es instancias de administración/configuración. Aca como tenemos instancias corriendo  chef y puppet se pueden sincrinizar con OpsWorks para que sea más centralizado en la nube. y con eso podemos dirigirlo a CI/CD.
 
+# Cierre Estadio Ideal
 
+![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260807000007.png)
+
+Se busca:
+- Código de infraestructura
+- Ese código tenerlo centralizado y respaldado. idempotente (siempre da un resultado idéntico)
+- La gestión de configuración, o sea la documentación de como despegarlo y gestionarlo, la tenemos en una base de datos accesible y modificable. importante para la ahora que se hacen las auditorias.
+- el motor usar la herramienta que queramos (terraform, puppit, chef.....)
+- la escalabilidad se puede usar aws openWorks o Kubernetes o cual sea mi soluciona a la escalabilidad y modificación de la arquitectura.
 
 
 
