@@ -40,6 +40,29 @@ Idempotencia es algo que siempre va a dar el mismo resultado.  Contemplar los pr
 
 # Fundamentos Herramientas
 
+![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260806225831.png)
+
+Para esto nos sirve:
+- **Terraform:** nos sirve para la arquitectura como código agnostico al entorno donde lo despleguemos.  Se desplegaba y ansible ayudaba. Su alternativa en el mercado seria a chef más robusto. 
+- **Ansible:** Nos construia los servicios y las accciones que queriamos tener en la arquitectura desplegada por terraform. Su alternativa en el mercado seria a puppet más robusto. 
+
+Ejemplo descargamos de github o con git actions de manera automaticamente, el código de terraform, lo corremos y se despliega una arquitectura sin servicios( casa vacía) y luego con ansible le indicamos que configure como usuarios, servicios, etc (casa amueblada). 
+
+# Fundamentos Puppet - Chef las otras Herramientas
+
+![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260806230943.png)
+
+
+
+
+
+
+
+
+
+
+
+
 
 
   

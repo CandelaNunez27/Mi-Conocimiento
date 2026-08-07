@@ -98,7 +98,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "2c47654ff3f8d557",
@@ -226,6 +227,9 @@
   },
   "active": "aa92e956f9d1b376",
   "lastOpenFiles": [
+    "04 - Otros/Imagenes/Pasted image 20260806230943.png",
+    "04 - Otros/Imagenes/Pasted image 20260806225831.png",
+    "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 3/Clases/2026-07-29 Día 29 Gestión de Configuración Avanzada.md",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 3/Clases/2026-07-15 Día 25 Repaso Docker y Kubernetes, Arquitectura Cloud con Ingress y Persistencia.md",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 3/Clases/2026-07-17 Día 26 Teoría y Práctica Monitorización proactiva.md",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 3/Clases/2026-07-22 Día 27 CI  CD Github Actions.md",
@@ -250,8 +254,6 @@
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 1/Clases/2026-05-06 Día 7 (6 fue feriado) Teoría y Práctica Sobre Proveedores.md",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 1/Clases/2026-04-29 Día 5 Redes en la Nube.md",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 1/Clases/2026-04-24 Día 4 Práctica.md",
-    "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 1/Clases/2026-04-22 Día 3 Introducción La Nube.md",
-    "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 1/Clases/2026-04-17 Día 2 Práctica.md",
     "04 - Otros/Imagenes/Pasted image 20260806115101.png",
     "04 - Otros/Imagenes/Pasted image 20260806114007.png",
     "04 - Otros/Imagenes/Pasted image 20260806111845.png",
@@ -261,7 +263,6 @@
     "04 - Otros/Imagenes/Pasted image 20260806110030.png",
     "04 - Otros/Imagenes/Pasted image 20260805214345.png",
     "04 - Otros/Imagenes/Pasted image 20260805211411.png",
-    "04 - Otros/Imagenes/Pasted image 20260805204817.png",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 3/Clases",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 3",
     "01 - Tec Redes Datos y Telecom/2º Año/01 - Redes/Módulo 1.2",
