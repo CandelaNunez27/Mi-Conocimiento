@@ -38,7 +38,7 @@ Son buenas practicas de nuestras empresa. Planificar objetivos, relevamiento de 
 
 Idempotencia es algo que siempre va a dar el mismo resultado.  Contemplar los primeros inconvenientes de preparación (permisos, accesos, backend) que tienen que ser documentadas para que luego se hagan pasos metódicamente las veces que sea.
 
-# Fundamentos Idempotencia
+# Fundamentos Herramientas
 
 
 
