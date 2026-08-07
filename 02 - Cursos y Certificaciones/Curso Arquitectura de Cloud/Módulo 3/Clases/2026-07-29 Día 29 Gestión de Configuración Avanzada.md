@@ -52,12 +52,14 @@ Ejemplo descargamos de github o con git actions de manera automáticamente, el c
 
 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260806230943.png)
 
-- **Chef:** Es imperactivo se le indica que tiene que hacer y cómo, para desarrolladores ya que el lenguaje que usa es el ruby. Su codigo eran como recetas. Usada para entornos elasticos
-- **Puppet:** Es declarativo se le explica que es lo que quiero obtener, para administradores de sistemas porque su lenguaje era propio DSL, parecido a yaml parecido a terraform. Su código era más manifiestos como yml. Usada para entornos escalables.
+- **Chef:** Es imperativo se le indica que tiene que hacer y cómo, para desarrolladores ya que el lenguaje que usa es el ruby. Su codigo eran como recetas. Usada para entornos elásticos, (ahora kubernetes puede usarse para entornos elásticos ).
+- **Puppet:** Es declarativo se le explica que es lo que quiero obtener, para administradores de sistemas porque su lenguaje era propio DSL, parecido a yaml parecido a terraform. Su código era más manifiestos como yml. Usada para entornos escalables, (ahora se usa terraform porque es más fácil que puppet).
 
+# AWS OpsWorks Engine
 
+![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260806234822.png)
 
-
+AWS ofrece OpsWorks Engine que es un servicio para hacer la gestión de todo lo que es instancias de administración/configuración. Aca como tenemos instancias corriendo  chef y puppet se pueden sincrinizar con OpsWorks para que s
 
 
 
