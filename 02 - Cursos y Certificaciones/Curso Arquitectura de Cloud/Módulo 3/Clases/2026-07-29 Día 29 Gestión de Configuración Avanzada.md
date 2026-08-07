@@ -36,9 +36,9 @@ Son buenas practicas de nuestras empresa. Planificar objetivos, relevamiento de 
 
 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260806115101.png)
 
-Idempotencia es algo que siempre va a dar el mismo resultado. 
+Idempotencia es algo que siempre va a dar el mismo resultado.  Contemplar los primeros inconvenientes de preparación (permisos, accesos, backend) que tienen que ser documentadas para que luego se hagan pasos metódicamente.
 
-
+(34 min)
 
 
 
