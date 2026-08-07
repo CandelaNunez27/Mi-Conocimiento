@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 3/Clases/2026-07-29 Día 29 Gestión de Configuración Avanzada.md",
+                "file": "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 3/Clases/2026-07-22 Día 27 CI  CD Github Actions.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026-07-29 Día 29 Gestión de Configuración Avanzada"
+              "title": "2026-07-22 Día 27 CI  CD Github Actions"
             }
           }
         ]
@@ -98,8 +98,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "2c47654ff3f8d557",
@@ -227,13 +226,13 @@
   },
   "active": "aa92e956f9d1b376",
   "lastOpenFiles": [
+    "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 3/Clases/2026-07-24 Día 28 Práctica Git.md",
+    "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 3/Clases/2026-07-29 Día 29 Gestión de Configuración Avanzada.md",
     "04 - Otros/Imagenes/Pasted image 20260806230943.png",
     "04 - Otros/Imagenes/Pasted image 20260806225831.png",
-    "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 3/Clases/2026-07-29 Día 29 Gestión de Configuración Avanzada.md",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 3/Clases/2026-07-15 Día 25 Repaso Docker y Kubernetes, Arquitectura Cloud con Ingress y Persistencia.md",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 3/Clases/2026-07-17 Día 26 Teoría y Práctica Monitorización proactiva.md",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 3/Clases/2026-07-22 Día 27 CI  CD Github Actions.md",
-    "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 3/Clases/2026-07-24 Día 28 Práctica Git.md",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 3/Clases/2026-07-03 Día 24 Práctica Kubernetes minikube.md",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 3/Clases/2026-07-01 Día 23 Kubernetes.md",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 3/Clases/2026-06-26 Día 22 Contenedores Parte 2.md",
@@ -262,7 +261,6 @@
     "04 - Otros/Imagenes/Pasted image 20260806110449.png",
     "04 - Otros/Imagenes/Pasted image 20260806110030.png",
     "04 - Otros/Imagenes/Pasted image 20260805214345.png",
-    "04 - Otros/Imagenes/Pasted image 20260805211411.png",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 3/Clases",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 3",
     "01 - Tec Redes Datos y Telecom/2º Año/01 - Redes/Módulo 1.2",

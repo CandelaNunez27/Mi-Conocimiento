@@ -19,7 +19,7 @@
 
 2.  Primeros Actions:
 	 
-	 en course_ing_cloud le damos crear una nueva carpeta llamada .get/workfows, entro de esta colocamos un archivo llamado primer-actions.yaml. volvemos a tirar `get status` si refrescamos la web aun no aparece por ende tiramos `git add .`,  `git commit -m "actions c1 1"` y ahora `git push origin main` si aparece el delta es que si algo se cambio. por ende refrezcamos ahora y nos sale arriba actions y nos aparecera unos regitros / eventos de acciones.  nos sale que falta el o en el yaml
+	 en course_ing_cloud le damos crear una nueva carpeta llamada .get/workfows, entro de esta colocamos un archivo llamado primer-actions.yaml. volvemos a tirar `get status` si refrescamos la web aun no aparece por ende tiramos `git add .`,  `git commit -m "actions c1 1"` y ahora `git push origin main` si aparece el delta es que si algo se cambio. por ende refrescamos ahora y nos sale arriba actions y nos aparecerá unos registros / eventos de acciones.  nos sale que falta el o en el yaml
 	 
 	 
 	 En el archivo  hello-world-c1.yaml escribimos name: Hello-word-Ipap, on: push, jobs:, hola:, run-on: ubuntu-latest
