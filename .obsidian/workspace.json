@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TP 2 Módulo 2 y 3.md",
+                "file": "2026-07-31 Práctica Repaso de herramientas.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "TP 2 Módulo 2 y 3"
+              "title": "2026-07-31 Práctica Repaso de herramientas"
             }
           }
         ]
@@ -209,7 +209,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 225.5
+    "width": 225.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -225,9 +226,11 @@
   },
   "active": "51c3a8dab38804c2",
   "lastOpenFiles": [
-    "2026-07-31 Repaso de herramientas.md",
     "TP 2 Módulo 2 y 3.md",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 1/TP Obligatorio/TP 1 Módulo 1.md",
+    "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 1/Clases/2026-05-08 Día 8 Práctica.md",
+    "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 1/Clases/2026-05-06 Día 7 (6 fue feriado) Teoría y Práctica Sobre Proveedores.md",
+    "2026-07-31 Práctica Repaso de herramientas.md",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 3/Clases/2026-06-17 Día 19 Gestión de configuraciones Ansible.md",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 3/Clases/2026-06-19 Día 20 Práctica Terraform y Ansible en AWS.md",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 3/Clases/2026-06-12 Día 18 Alternativa de virtualizar Kilecoda.md",
@@ -253,8 +256,6 @@
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 3/Clases/2026-07-01 Día 23 Kubernetes.md",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 3/Clases/2026-06-26 Día 22 Contenedores Parte 2.md",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 3/Clases/2026-06-24 Día 21 Contenedores Parte 1.md",
-    "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 1/Clases/2026-05-08 Día 8 Práctica.md",
-    "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 1/Clases/2026-05-06 Día 7 (6 fue feriado) Teoría y Práctica Sobre Proveedores.md",
     "04 - Otros/Imagenes/Pasted image 20260806115101.png",
     "04 - Otros/Imagenes/Pasted image 20260806114007.png",
     "04 - Otros/Imagenes/Pasted image 20260806111845.png",
