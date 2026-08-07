@@ -69,9 +69,10 @@ Se busca:
 - Código de infraestructura
 - Ese código tenerlo centralizado y respaldado. idempotente (siempre da un resultado idéntico)
 - La gestión de configuración, o sea la documentación de como despegarlo y gestionarlo, la tenemos en una base de datos accesible y modificable. importante para la ahora que se hacen las auditorias.
-- El motor usar la herramienta que queramos (terraform, puppit, chef.....)
+- El motor usar la herramienta que queramos (terraform, ansible, puppit, chef.....)
 - La escalabilidad se puede usar aws openWorks o Kubernetes o cual sea mi soluciona a la escalabilidad y modificación de la arquitectura.
 
+La arquitectura deja de ser un hardware que se configura y se convierte en un software que se compila.
 
 
 
