@@ -88,7 +88,7 @@ Estás asistiendo a un desarrollador Junior que está intentando llevar una nuev
 
 1. **Empaquetado (Docker):** "Ya escribí mi archivo Dockerfile, pero no recuerdo cómo convertirlo en una imagen ejecutable en mi computadora. El comando exacto que debes usar en la terminal es: docker **[ESPACIO 1️⃣]** -t mi-app:v1 . " (buil)
     
-2. **Infraestructura (Terraform):** "Escribí toda la red en mi archivo main.tf. Antes de crearla, quiero ver una 'vista previa' (el ticket de lo que se va a crear) para estar seguro de no cometer errores. El comando que debes usar es: terraform **[ESPACIO 2️⃣] "** (plan)
+2. **Infraestructura (Terraform):** "Escribí toda la red en mi archivo main.tf. Antes de crearla, quiero ver una 'vista previa' (el ticket de lo que se va a crear) para estar seguro de no cometer errores. El comando que debes usar es: terraform **[ESPACIO 2️⃣] "** (plan, también se podría apply sin contestar que yes. pero para no cometer errores se utiliza plan.)
     
 3. **Configuración (Ansible):** "Los servidores ya están creados, pero ahora necesito instalar Nginx en todos a la vez. No quiero instalar agentes en cada máquina, prefiero hacerlo mediante una conexión SSH directa (Push). La herramienta ideal para esta tarea es: **[ESPACIO 3️⃣] "** (ansible con el inventario.ini y un playbook.yml. Como el ejemplo de la clase día 19
    

@@ -98,8 +98,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "2c47654ff3f8d557",
@@ -227,14 +226,14 @@
   },
   "active": "51c3a8dab38804c2",
   "lastOpenFiles": [
+    "TP 2 Módulo 2 y 3.md",
+    "2026-07-31 Práctica Repaso de herramientas.md",
     "04 - Otros/Imagenes/Pasted image 20260807133902.png",
     "04 - Otros/Imagenes/Pasted image 20260807133726.png",
-    "TP 2 Módulo 2 y 3.md",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 3/Clases/2026-07-24 Día 28 Práctica Git.md",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 3/Clases/2026-07-22 Día 27 CI  CD Github Actions.md",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 3/Clases/2026-07-17 Día 26 Teoría y Práctica Monitorización proactiva.md",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 3/Clases/2026-07-29 Día 29 Gestión de Configuración Avanzada.md",
-    "2026-07-31 Práctica Repaso de herramientas.md",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 1/TP Obligatorio/TP 1 Módulo 1.md",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 1/Clases/2026-05-08 Día 8 Práctica.md",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 1/Clases/2026-05-06 Día 7 (6 fue feriado) Teoría y Práctica Sobre Proveedores.md",
@@ -262,7 +261,6 @@
     "04 - Otros/Imagenes/Pasted image 20260806114007.png",
     "04 - Otros/Imagenes/Pasted image 20260806111845.png",
     "04 - Otros/Imagenes/Pasted image 20260806111800.png",
-    "04 - Otros/Imagenes/Pasted image 20260806111152.png",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 3/Clases",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 3",
     "01 - Tec Redes Datos y Telecom/2º Año/01 - Redes/Módulo 1.2",
