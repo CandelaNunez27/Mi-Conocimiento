@@ -1,4 +1,3 @@
-recourse aws_ec2_instance
 
 ### Ejercicio 1 - Módulo 2 (60 ptos.)
 
