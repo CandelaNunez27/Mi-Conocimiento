@@ -52,8 +52,8 @@ Ejemplo descargamos de github o con git actions de manera automáticamente, el c
 
 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260806230943.png)
 
-- **Chef:** nos sirve para la arquitectura como código agnóstico al entorno donde lo despleguemos.  Se desplegaba y ansible ayudaba. Su alternativa en el mercado seria a chef más robusto. 
-- **Puppet:** Nos construía los servicios y las acciones que queríamos tener en la arquitectura desplegada por terraform. Su alternativa en el mercado seria a puppet más robusto. 
+- **Chef:** Es imperactivo se le indica que tiene que hacer y cómo, para desarrolladores ya que el lenguaje que usa es el ruby. Su codigo eran como recetas. Usada para entornos elasticos
+- **Puppet:** Es declarativo se le explica que es lo que quiero obtener, para administradores de sistemas porque su lenguaje era propio DSL, parecido a yaml parecido a terraform. Su código era más manifiestos como yml. Usada para entornos escalables.
 
 
 
