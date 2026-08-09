@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2026-07-31 Práctica Repaso de herramientas.md",
+                "file": "TP 2 Módulo 2 y 3.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026-07-31 Práctica Repaso de herramientas"
+              "title": "TP 2 Módulo 2 y 3"
             }
           }
         ]
@@ -98,8 +98,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "2c47654ff3f8d557",
@@ -225,10 +224,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "51c3a8dab38804c2",
+  "active": "857d4a252756a637",
   "lastOpenFiles": [
-    "2026-07-31 Práctica Repaso de herramientas.md",
     "TP 2 Módulo 2 y 3.md",
+    "2026-07-31 Práctica Repaso de herramientas.md",
     "04 - Otros/Imagenes/Pasted image 20260807133902.png",
     "04 - Otros/Imagenes/Pasted image 20260807133726.png",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 3/Clases/2026-07-24 Día 28 Práctica Git.md",
