@@ -68,4 +68,4 @@
 
 # Grabación de la Clase
 
-**Clase Grabada:** 
+**Clase Grabada:** https://drive.google.com/file/d/1Ph5XmKpvVkGMKvMJjy7A-nPai72_WxlL/view
