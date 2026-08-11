@@ -24,10 +24,15 @@
 	 
 	 Tenemos el archivo main.tf, que crea un recurso namespace llamado name audit-lab. luego resource para un contenedor con name web-app y se asocia al ns,y luego spec que haga una replica,  un spec que tenga nginc:alpine con el puerto 80.
 	 
+	 `kubectl get all -n audit-lab` para ver que desplego terraform
 	 
 	 
-	 
-	 
+
+### Ansible, primeras preguntas de la auditoria
+
+1. Cuantos servidores tenemos?
+	 Ansible nos da una pequeña auditoria / relevamiento.
+	 Tenemos el archivo audit-k8s.yml que en primer lugar se coloca un name, y donde se tiene que conectar con hosts: localhost, con conexión local, creara dos variables internas en ansible. Su primera tarea tasks es 
 	 
 	 
 	 
