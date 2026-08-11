@@ -1,5 +1,5 @@
 # Práctica: Despliegue de las herramientas docker, kubernetes/minikube
-### Preparación
+### Preparación primera parte en local
 
 1. el profe muestra como borro sin querer algunas cosas y las restaura:
 	 `git status` para ver el estado de los archivos, salen en estado deleted
@@ -32,12 +32,22 @@
 
 1. Cuantos servidores tenemos?
 	 Ansible nos da una pequeña auditoria / relevamiento.
-	 Tenemos el archivo audit-k8s.yml que en primer lugar se coloca un name, y donde se tiene que conectar con hosts: localhost, con conexión local, creara dos variables internas en ansible. Su primera tarea tasks es 
+	 Tenemos el archivo audit-k8s.yml que en primer lugar se coloca un name, y donde se tiene que conectar con hosts: localhost, con conexión local, creara dos variables internas en ansible. Su primera tarea tasks es obtener informacion de los pods del ns indicando kind pod namespace audit-lab que es una variable de arriba. 2do valida las politicas de seguridad en los pods con un código. 3ero generar el reporte estructura escrita con todas las variables donde guadaba los datos. 4to mostrar en consola que la auditoria se realizado  con exito.
 	 
 	 
+	 `ansible-playbook audit-k8s.yml` nos mostrara los pasos que hizo.
 	 
-	 
-	 
+	 En la carpeta que estabamos parados se genera un reporte-auditoria-k8s.txt 
+ 
+### Borrar todo
+
+1. Borrar todo con terraform:
+	`terraform destroy -auto-approve `
+ 
+### Preparación segunda parte en aws
+ 
+1. AWS
+	 Nos movemos a 
 	 
 	 
 	 
