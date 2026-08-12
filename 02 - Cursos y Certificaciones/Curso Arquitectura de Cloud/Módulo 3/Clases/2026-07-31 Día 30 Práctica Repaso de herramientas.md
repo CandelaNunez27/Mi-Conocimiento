@@ -84,14 +84,28 @@
 	 Es para comparar con el comando que usábamos antes `ANSIBLE_HOST_KEY_CHECKING=False ansible-playbook -i hosts.ini deply.yml` y veamos sus diferencias, porque si ejecutamos `ssh -i pem-lab-terraform.pem ubuntu@34.224.25.64` nos estamos conectando a la ec2 de nginx que esta en aws pero al conectarnos nos pregunra esta seguro de querer conectarse y le damos yes, bueno ese yes no lo puede colocar ansible por ende se utiliza esa linea donde se le indica que no haga esos chequeos y pase directo.
 	 
 
-1. Revisamos si se ejecuto bien
+2. Revisamos si se ejecuto bien
 	 
-	 Ingresamos a nuestra cuenta de aws y chequeamos que se alla creado la landa (home > lambda), el bucket (home > s3),  las EC2s (home > ec2) la queue y la sns 
-	 
-	 
+	 Ingresamos a nuestra cuenta de aws y chequeamos que se alla creado la landa (home > lambda > procesadorReportesAuditoria-tf), el bucket (home > s3 > formatec-auditoria-tf-99998980989898),  las EC2s (home > ec2) la queue(home > simple queue service> ColaProcesamietoAuditoria-tf) y la sns (home > simple notification service > topic > notificacionesAuditoria-tf) 
 	 
 	 
-	 
+
+### Subimos un archivo de prueba
+
+1. Probamos si anda como el ejercicio que usamos hace varias clases cando vimos lambda
+	En S3 > Buckets > formatec-auditoria-tf-90909989 > upload > Seleccionamos el reporte.txt que creamos en local y lo subimos
+	
+	Luego en la lambda > funtions >procesadorReportesAuditoria.tf > monitor > hace menos de 1 hs > vemos los grafico que nos muestra > tambien vemos los logs con view cloudwhatch logs > ultimo log > y veremos todos los pasos del codigo de la lambda
+
+
+### Revisamos conexión
+
+1. Navegador:
+	Ahora si tiramos http://34.224.25.64:80 que es el nginx y el apache en  http://3.:8080 
+
+
+
+
 
 ---
 # Guía del Profesor
