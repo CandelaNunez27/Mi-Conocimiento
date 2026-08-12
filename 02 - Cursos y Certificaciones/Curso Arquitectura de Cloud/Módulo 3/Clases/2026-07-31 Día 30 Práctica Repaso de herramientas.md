@@ -47,9 +47,10 @@
 ### Preparación segunda parte en aws
  
 1. AWS
-	 Nos movemos a 
+	 Nos movemos a la carpeta aws-II que contiene un providers.tf, main.tf, output.tf, landa_funtion.yml. host.init, deploy-and-
 	 
-	 
+	 Tenemos el archivo providers-tf que contiene 
+	 (39 min)
 	 
 	 
 	 
