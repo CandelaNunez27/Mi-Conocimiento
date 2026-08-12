@@ -43,14 +43,20 @@
 
 1. Borrar todo con terraform:
 	`terraform destroy -auto-approve `
- 
+
+
+
 ### Preparación segunda parte en aws
  
 1. AWS
-	 Nos movemos a la carpeta aws-II que contiene un providers.tf, main.tf, output.tf, landa_funtion.yml. host.init, deploy-and-
 	 
-	 Tenemos el archivo providers-tf que contiene 
-	 (39 min)
+	 `cd modulos/mod3/class7/aws-II` Nos movemos a la carpeta aws-II que contiene un providers.tf, main.tf, output.tf, landa_funtion.yml. host.init, deploy-and-audit.yml `ls`
+	 
+	 
+	 
+	 Tenemos el archivo providers-tf que contiene los required_providers hasicorp/aws , hashicorp/tls y hansicor/local, la region us-east-1 y llamamos a aws_caller_identity porque hay que trabajar con cosas locales.
+	 
+	 Tenemos el archivo main.tf que contiene la parte de seguridad de las maquinas virtuales que crearemos y usaremos colocando recource tls_private_key generando una key con cifrado rsa 4096, luego en resource aws_key_pair le colocamos el key_name pem-lab-terraform, luego para descargarla localmente con resource local_file con permisos a ese archivo 0400. Luego la parte de redes tenemos 
 	 
 	 
 	 
