@@ -101,8 +101,13 @@
 ### Revisamos conexión
 
 1. Navegador:
-	Ahora si tiramos http://34.224.25.64:80 que es el nginx y el apache en  http://3.:8080 
+	Ahora si tiramos http://34.224.25.64:80 que es el nginx y el apache en  http://3.93.68.144:8080 
 
+
+### Borrar todo
+
+1. Borrar todo con terraform:
+	`terraform destroy -auto-approve`
 
 
 
