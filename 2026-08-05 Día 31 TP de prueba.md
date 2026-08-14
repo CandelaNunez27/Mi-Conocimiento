@@ -41,13 +41,13 @@
   
   - Falso (es el compilador/lenguaje de programación que se le cargara a nuestra lambda por ejemplo python)
 
-## 11) En la configuración de una función de Lambda ¿El parámetro runtime se utiliza para elegir la distribución de Linux (como Ubuntu o Amazon Linux) sobre la que correrá el código?
+## 11) ¿Cuál es el comando correcto para crear una imagen a partir de un Dockerfile y asignarle un nombre identificativo?
   
-  - Falso (es el compilador/lenguaje de programación que se le cargara a nuestra lambda por ejemplo python)
+  - docker build -t nombre-imagen . (porque no es la opcion docker run -p nombre-imagen . porque -p es para puertos, no es docker pull -t nombre-imagen . porque es para escalar, no es docker commit -m nombre-imagen . porque ese comando es para generar una imagen de un contenedor pero en caliente)
   
-## 12) En la configuración de una función de Lambda ¿El parámetro runtime se utiliza para elegir la distribución de Linux (como Ubuntu o Amazon Linux) sobre la que correrá el código?
+## 12) Un administrador necesita verificar qué recursos se destruirán antes de aplicar los cambios en terraform ¿Qué comando proporciona ese análisis?
   
-  - Falso (es el compilador/lenguaje de programación que se le cargara a nuestra lambda por ejemplo python)
+  - terraform plan (es el compilador/lenguaje de programación que se le cargara a nuestra lambda por ejemplo python)
 
 ## 13) En la configuración de una función de Lambda ¿El parámetro runtime se utiliza para elegir la distribución de Linux (como Ubuntu o Amazon Linux) sobre la que correrá el código?
   
