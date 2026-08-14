@@ -22,22 +22,18 @@
   
 ## 6) Al ejecutar "docker build -t mi-imagen.v1 ." ¿El punto final indica que el archivo Dockerfile y los archivos necesarios están en el directorio actual?
   
-  - Verdadero (es el compilador/lenguaje de programación que se le cargara a nuestra lambda por ejemplo python)
+  - Verdadero (el punto actúa como la ruta del contexto de construcción, indicandole a Docker dónde buscar el Dockerfile y los recursos para la imagen)
 
-
-
-
-
-## 5) En la configuración de una función de Lambda ¿El parámetro runtime se utiliza para elegir la distribución de Linux (como Ubuntu o Amazon Linux) sobre la que correrá el código?
+## 7) ¿Es el formato .zip un estándar aceptado para empaquetar el código fuente de una función Lambda cuando se despliega mediante infraestructura como Código?
   
-  - Falso (es el compilador/lenguaje de programación que se le cargara a nuestra lambda por ejemplo python)
+  - Verdadero (quedo como sucesor del .rar, y el .zip sirve para subirlo en lamba para subirle varios códigos empaquetados)
   
   
-## 5) En la configuración de una función de Lambda ¿El parámetro runtime se utiliza para elegir la distribución de Linux (como Ubuntu o Amazon Linux) sobre la que correrá el código?
+## 8) Si se desea almacenar modelos de inteligencia artificial entrenados de fomra persistente en AWS mediante terraform ¿Qué recurso es el más apropiado?
   
-  - Falso (es el compilador/lenguaje de programación que se le cargara a nuestra lambda por ejemplo python)
+  - aws_s3_bucket (aws_s3_bucket almacena, aws_iam_policy no es porque es para definir permisos de seguridad, aws_instance no es porque se usa para proporcionar capacidad de computo a las EC2, no es aws_lambda_functio porque esta se encarga de ejecutar lógica de código)
 
-## 5) En la configuración de una función de Lambda ¿El parámetro runtime se utiliza para elegir la distribución de Linux (como Ubuntu o Amazon Linux) sobre la que correrá el código?
+## 9) ¿Qué elemento de configuración es indispensable para que una función Lambda tenga permisos de escribir logs en Clouf wrach ?
   
   - Falso (es el compilador/lenguaje de programación que se le cargara a nuestra lambda por ejemplo python)
 
