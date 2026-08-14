@@ -1,12 +1,12 @@
-# Quiz para  - Módulo 1
+# Quiz para prepararnos al TP 2 
 
-## 1) ¿Cuáles son los símbolos del sistema binario?
+## 1) ¿Es correcto afirmar que el recurso aws_s3_bucket en Terraform es el encargado de instanciar servidores virtuales en el ecosistema de AWS?
   
-  - El 0 y el 1
+  - Falso (aws_ec2_instance seria lo correcto, aws_s3_bucket se limita al almacenaje de objetos)
 
-## 2) ¿Cuáles son los símbolos del sistema hexadecimal?
+## 2) ¿Requiere una función AWS Lambda la asociación de un aws_iam_role a pesar de ser una tecnología Serverless de ejecución temporal?
   
-  - 0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F
+  - Verdadero (lambda necesita permisos explícitos definidos en un rol de IAM para interactuar de forma segura con otros servicios de AWS)
 
 ## 3) PC, significa:
   
