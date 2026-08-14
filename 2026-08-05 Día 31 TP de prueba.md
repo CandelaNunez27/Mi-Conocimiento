@@ -33,18 +33,45 @@
   
   - aws_s3_bucket (aws_s3_bucket almacena, aws_iam_policy no es porque es para definir permisos de seguridad, aws_instance no es porque se usa para proporcionar capacidad de computo a las EC2, no es aws_lambda_functio porque esta se encarga de ejecutar lógica de código)
 
-## 9) ¿Qué elemento de configuración es indispensable para que una función Lambda tenga permisos de escribir logs en Clouf wrach ?
+## 9) ¿Qué elemento de configuración es indispensable para que una función Lambda tenga permisos de escribir logs en Cloudwatch o leer de una base de datos?
+  
+  - aws_iam_role (el rol de IAM actúa como la identidad que asume la función para obtener los permisos necesarios durante la ejecución, terraform_data no es porque es para almacenar información temporal en el estado, aws_s3_bucket_objet este recurso se refiere a un archivo especifico dentro de s3, no es docker_container porque docker gestiona la virtualización a nivel de sistema operativo y no los permisos de identidad nativos de la nube de aws)
+
+## 10) En la configuración de una función de Lambda ¿El parámetro runtime se utiliza para elegir la distribución de Linux (como Ubuntu o Amazon Linux) sobre la que correrá el código?
   
   - Falso (es el compilador/lenguaje de programación que se le cargara a nuestra lambda por ejemplo python)
 
-## 5) En la configuración de una función de Lambda ¿El parámetro runtime se utiliza para elegir la distribución de Linux (como Ubuntu o Amazon Linux) sobre la que correrá el código?
+## 11) En la configuración de una función de Lambda ¿El parámetro runtime se utiliza para elegir la distribución de Linux (como Ubuntu o Amazon Linux) sobre la que correrá el código?
+  
+  - Falso (es el compilador/lenguaje de programación que se le cargara a nuestra lambda por ejemplo python)
+  
+## 12) En la configuración de una función de Lambda ¿El parámetro runtime se utiliza para elegir la distribución de Linux (como Ubuntu o Amazon Linux) sobre la que correrá el código?
   
   - Falso (es el compilador/lenguaje de programación que se le cargara a nuestra lambda por ejemplo python)
 
-## 5) En la configuración de una función de Lambda ¿El parámetro runtime se utiliza para elegir la distribución de Linux (como Ubuntu o Amazon Linux) sobre la que correrá el código?
+## 13) En la configuración de una función de Lambda ¿El parámetro runtime se utiliza para elegir la distribución de Linux (como Ubuntu o Amazon Linux) sobre la que correrá el código?
   
   - Falso (es el compilador/lenguaje de programación que se le cargara a nuestra lambda por ejemplo python)
+
+## 14) En la configuración de una función de Lambda ¿El parámetro runtime se utiliza para elegir la distribución de Linux (como Ubuntu o Amazon Linux) sobre la que correrá el código?
   
+  - Falso (es el compilador/lenguaje de programación que se le cargara a nuestra lambda por ejemplo python)
+
+## 15) En la configuración de una función de Lambda ¿El parámetro runtime se utiliza para elegir la distribución de Linux (como Ubuntu o Amazon Linux) sobre la que correrá el código?
+  
+  - Falso (es el compilador/lenguaje de programación que se le cargara a nuestra lambda por ejemplo python)
+
+## 16) En la configuración de una función de Lambda ¿El parámetro runtime se utiliza para elegir la distribución de Linux (como Ubuntu o Amazon Linux) sobre la que correrá el código?
+  
+  - Falso (es el compilador/lenguaje de programación que se le cargara a nuestra lambda por ejemplo python)
+
+## 17) En la configuración de una función de Lambda ¿El parámetro runtime se utiliza para elegir la distribución de Linux (como Ubuntu o Amazon Linux) sobre la que correrá el código?
+  
+  - Falso (es el compilador/lenguaje de programación que se le cargara a nuestra lambda por ejemplo python)
+
+## 18) En la configuración de una función de Lambda ¿El parámetro runtime se utiliza para elegir la distribución de Linux (como Ubuntu o Amazon Linux) sobre la que correrá el código?
+  
+  - Falso (es el compilador/lenguaje de programación que se le cargara a nuestra lambda por ejemplo python)
   
   
   
