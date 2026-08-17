@@ -47,16 +47,18 @@
   
 ## 12) Un administrador necesita verificar qué recursos se destruirán antes de aplicar los cambios en terraform ¿Qué comando proporciona ese análisis?
   
-  - terraform plan (es el compilador/lenguaje de programación que se le cargara a nuestra lambda por ejemplo python)
+  - terraform plan 
 
-## 13) En la configuración de una función de Lambda ¿El parámetro runtime se utiliza para elegir la distribución de Linux (como Ubuntu o Amazon Linux) sobre la que correrá el código?
+## 13) ¿Qué característica define principalmente a Ansible en comparación con otras herramientas de automatización de IT?
   
-  - Falso (es el compilador/lenguaje de programación que se le cargara a nuestra lambda por ejemplo python)
+  - Su arquitectura sin agentes agentless (utiliza ssh)
 
-## 14) En la configuración de una función de Lambda ¿El parámetro runtime se utiliza para elegir la distribución de Linux (como Ubuntu o Amazon Linux) sobre la que correrá el código?
+## 14) Al configurar un recurso aws_lamba_funtion ¿ Cuál es la función de la propiedad handler?
   
-  - Falso (es el compilador/lenguaje de programación que se le cargara a nuestra lambda por ejemplo python)
+  - Indicar el nombre del archivo y el método que inicia la ejecución (es el es archivo de punto de entrada el archivo para arrancar, dato de color si un proceso dura más de 15 min no utilices lambda )
 
+
+# 1:01 min
 ## 15) En la configuración de una función de Lambda ¿El parámetro runtime se utiliza para elegir la distribución de Linux (como Ubuntu o Amazon Linux) sobre la que correrá el código?
   
   - Falso (es el compilador/lenguaje de programación que se le cargara a nuestra lambda por ejemplo python)
