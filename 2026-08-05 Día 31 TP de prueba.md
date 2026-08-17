@@ -70,24 +70,14 @@
   
   - Para pasar variables de configuración dinámica al código (permite inyectar valores como claves de API o nombres de bases de datos sin harcodearkis en el código fuente)
 
-## 18) En el flujo de trabajo de Docker ¿El parámetro runtime se utiliza para elegir la distribución de Linux (como Ubuntu o Amazon Linux) sobre la que correrá el código?
+## 18) En el flujo de trabajo de Docker ¿Cuál es la distribución clave entre build y run?
   
-  - Falso (es el compilador/lenguaje de programación que se le cargara a nuestra lambda por ejemplo python)
+  - build crea la imagen y run inicia un proceso basado en ella (build es la fase de compilación de la receta Dockerfile y run es la fase de ejecución o despliegue)
   
-## 19) En la configuración de una función de Lambda ¿El parámetro runtime se utiliza para elegir la distribución de Linux (como Ubuntu o Amazon Linux) sobre la que correrá el código?
+## 19) Desde la perspectiva de eficiencia de costos ¿Por qué se elegiria AWS Lambda para una tarea de detección de spam que ocurre ocasionalmente?
   
-  - Falso (es el compilador/lenguaje de programación que se le cargara a nuestra lambda por ejemplo python)
+  - Solo pagas por el tiempo que el código esta procesando (Es más fácil de depurar que un servidor tradicional pero desde la perspectiva de recursos, por ende en costo seria la ventaja del tiempo que se usa es lo único que se paga a diferencia de  un ec2)
   
-  
-  
-  
-  
-  
-  
-  
-  
-  
-
 
 
 ---
