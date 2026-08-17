@@ -62,9 +62,9 @@
   
   - Terraform para la red y Ansible para el software (porque docker no tiene forma de llegar a la VPC ya que es una función de AWS)
 
-## 16) En la configuración de una función de Lambda ¿El parámetro runtime se utiliza para elegir la distribución de Linux (como Ubuntu o Amazon Linux) sobre la que correrá el código?
+## 16) ¿Cuál de los siguentes es un valor válido para la propiedad "runtime" en Terraform al configurar una lambda?
   
-  - Falso (es el compilador/lenguaje de programación que se le cargara a nuestra lambda por ejemplo python)
+  - python3.9 (runtime es donde declaramos el lenguaje de programación, t2.micro no es porque es una familia ec2, ubuntu-22.04 es un sistema operativo )
 
 ## 17) En la configuración de una función de Lambda ¿El parámetro runtime se utiliza para elegir la distribución de Linux (como Ubuntu o Amazon Linux) sobre la que correrá el código?
   
