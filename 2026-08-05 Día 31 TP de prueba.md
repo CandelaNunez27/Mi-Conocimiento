@@ -64,16 +64,19 @@
 
 ## 16) ¿Cuál de los siguentes es un valor válido para la propiedad "runtime" en Terraform al configurar una lambda?
   
-  - python3.9 (runtime es donde declaramos el lenguaje de programación, t2.micro no es porque es una familia ec2, ubuntu-22.04 es un sistema operativo )
+  - python3.9 (runtime es donde declaramos el lenguaje de programación, t2.micro no es porque es una familia ec2, ubuntu-22.04 es un sistema operativo, bash-script es un lenguaje de programación pero porque lambda no lo accepta bash en el runtime nativo directamente el la configuración estandar)
 
-## 17) En la configuración de una función de Lambda ¿El parámetro runtime se utiliza para elegir la distribución de Linux (como Ubuntu o Amazon Linux) sobre la que correrá el código?
+## 17) ¿Para qué se utiliza el bloque environment dentro de una definición de recursos Lambda en Terraform?
+  
+  - Para pasar variables de configuración dinámica al código (permite inyectar valores como claves de API o nombres de bases de datos sin harcodearkis en el código fuente)
+
+## 18) En el flujo de trabajo de Docker ¿El parámetro runtime se utiliza para elegir la distribución de Linux (como Ubuntu o Amazon Linux) sobre la que correrá el código?
   
   - Falso (es el compilador/lenguaje de programación que se le cargara a nuestra lambda por ejemplo python)
-
-## 18) En la configuración de una función de Lambda ¿El parámetro runtime se utiliza para elegir la distribución de Linux (como Ubuntu o Amazon Linux) sobre la que correrá el código?
+  
+## 19) En la configuración de una función de Lambda ¿El parámetro runtime se utiliza para elegir la distribución de Linux (como Ubuntu o Amazon Linux) sobre la que correrá el código?
   
   - Falso (es el compilador/lenguaje de programación que se le cargara a nuestra lambda por ejemplo python)
-  
   
   
   
