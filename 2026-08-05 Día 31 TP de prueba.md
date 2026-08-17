@@ -55,11 +55,11 @@
 
 ## 14) Al configurar un recurso aws_lamba_funtion ¿ Cuál es la función de la propiedad handler?
   
-  - Indicar el nombre del archivo y el método que inicia la ejecución (es el es archivo de punto de entrada el archivo para arrancar, dato de color si un proceso dura más de 15 min no utilices lambda )
+  - Indicar el nombre del archivo y el método que inicia la ejecución (es el es archivo de punto de entrada el archivo para arrancar, dato de color si un proceso dura más de 15 min no utilices lambda porque esta muere)
 
 
 # 1:01 min
-## 15) En la configuración de una función de Lambda ¿El parámetro runtime se utiliza para elegir la distribución de Linux (como Ubuntu o Amazon Linux) sobre la que correrá el código?
+## 15) Deseas crear una red (VPN) y luego instalar un servidor web Nginx ¿Qué combinación de herramientas es la más eficiente?
   
   - Falso (es el compilador/lenguaje de programación que se le cargara a nuestra lambda por ejemplo python)
 
