@@ -11,7 +11,7 @@ El ID es para detectar quién es alguien para permitir acciones las aplicacióne
 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260818012628.png)
 
 
-
+# 15 min
 
 
 # Fundamentos sdjaksl
