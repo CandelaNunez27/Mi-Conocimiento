@@ -98,8 +98,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "2c47654ff3f8d557",
@@ -210,8 +209,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 225.5,
-    "collapsed": true
+    "width": 225.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -225,8 +223,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "51c3a8dab38804c2",
+  "active": "e6bb5d90017c09e9",
   "lastOpenFiles": [
+    "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 4",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 3/Clases/2026-08-05 Día 31 Repaso TP de prueba.md",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 3/TP Obligatorio/TP 2 Módulo 2 y 3.md",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 3/Clases/2026-07-31 Día 30 Práctica Repaso de herramientas.md",
@@ -259,7 +258,6 @@
     "04 - Otros/Imagenes/Pasted image 20260806225831.png",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 3/Clases/2026-07-15 Día 25 Repaso Docker y Kubernetes, Arquitectura Cloud con Ingress y Persistencia.md",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 3/Clases/2026-07-03 Día 24 Práctica Kubernetes minikube.md",
-    "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 3/Clases/2026-07-01 Día 23 Kubernetes.md",
     "04 - Otros/Imagenes/Pasted image 20260806115101.png",
     "04 - Otros/Imagenes/Pasted image 20260806114007.png",
     "04 - Otros/Imagenes/Pasted image 20260806111845.png",
