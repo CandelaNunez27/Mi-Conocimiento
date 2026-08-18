@@ -98,7 +98,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "2c47654ff3f8d557",
@@ -224,7 +225,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "e6bb5d90017c09e9",
+  "active": "51c3a8dab38804c2",
   "lastOpenFiles": [
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 3/Clases/2026-08-05 Día 31 Repaso TP de prueba.md",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 3/TP Obligatorio/TP 2 Módulo 2 y 3.md",
