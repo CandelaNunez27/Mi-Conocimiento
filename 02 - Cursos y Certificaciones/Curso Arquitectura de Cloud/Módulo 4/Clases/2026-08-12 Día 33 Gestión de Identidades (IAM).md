@@ -25,13 +25,15 @@ Siempre es como una cadena de primero identificate para luego date permisos.
 
 # Fundamentos Métodos de ID
 
+![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260818094616.png)
 
+Para validar identidad el más común es la contraseña aunque pueda ser vulnerada por contraseñas débiles, robos o ataques de fuerza bruta. Segundo los Certificados de Clave Pública que tiene un cifrado asimétrico, es como ssh trabajando con encriptaciones. Y la última la más fiable, la biometría que es que no haya unos caracteres digitalizados sino que directamente el usuario sea la clave con su cara o huella.
 
+# Fundamentos MFA (Múltiple Factor de Autenticación)
 
+![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260818095451.png)
 
-
-
-
+Si se recibe un ataque tiene barras barreras, 
 
 
 
