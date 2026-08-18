@@ -37,9 +37,12 @@ Si se recibe un ataque tiene varias barreras gracias al MFA que contiene una con
 
 # Fundamentos Reglas AuthZ
 
+![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260818101714.png)
 
-
-
+Siendo ya un usuarios Verificado que reglas podes tener:
+- Permisos basado en Roles (RBAC): Se puede dar reglas / permisos según el rol o cargo del usuario, o sea se me permite todas acciones según un estándar de lo que debería hacer.
+- Permisos basados en Atributos (ABAC): Se puede dar reglas / permisos según atributos, usualmente asociada con la anterior donde cada rol tiene permisos distintos con atributos de accesos distintos, pero usualmente en rol es como un estándar y esto puede ser más dinámico y flexible.
+- Permisos Globales: Se puede dar reglas / permisos que globalmente se suele aplicar a todos los usuarios estrictamente, hay excepción como . 
 
 
 
