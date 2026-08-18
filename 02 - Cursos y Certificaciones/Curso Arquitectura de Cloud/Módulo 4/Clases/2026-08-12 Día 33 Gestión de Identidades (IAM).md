@@ -33,9 +33,9 @@ Para validar identidad el más común es la contraseña aunque pueda ser vulnera
 
 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260818095451.png)
 
-Si se recibe un ataque tiene barras barreras, 
+Si se recibe un ataque tiene varias barreras gracias al MFA que contiene una contraseña, luego pasa a una segunda autenticación con tokens, o ya pasar a datos biométricos. O sea consiste en no solo quedarse con la contraseña sino validar con un segundo paso si realmente sos vos y no te robaron la contraseña.
 
-
+# Fundamentos Reglas AuthZ
 
 
 
