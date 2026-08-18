@@ -11,6 +11,11 @@
 	`terraform init ` y `terraform validate`
 	
 	En main.tf colocamos data aws_caller_identity. creamos el recurso aws_s3_bucket para data. creamos el rol IAM aws_aim_role para que asume el rol en jsonencode donde permitira a la lambda tener permisos. creamos los permisos para log CloudWatch aws_iam_pole_policy_attachement para que el rol anterior sea adjuntado a la policy arn que ya tiene aws. le colocamos el código en python de como empaquetar. creamos la lambda aws_lambda_funtion para asignarle el rol de antes junto con el handler app.handler que le indica que cuando aparezca app.handler arranque el proceso y que empaquete en un zip la data, y el runtime python3.11, por último debajo unas variables.  
+	
+	En output.tf escribimos que nos muestre el nombre del s3_bucket_auditoria, luego que nos muestre el nombre de la 
+	
+	
+	
 
 
 # 52 min
