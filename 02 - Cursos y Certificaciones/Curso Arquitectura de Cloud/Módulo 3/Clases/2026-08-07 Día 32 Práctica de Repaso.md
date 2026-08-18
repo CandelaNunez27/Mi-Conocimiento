@@ -20,9 +20,16 @@
 ### Despliegue
 
 1. Terraform:
-	Por último solo nos queda aplicarlo todo lo que preparamos con `terraform apply`
+	Por último solo nos queda aplicarlo todo lo que preparamos con `terraform apply` 
 
+2. AWS:
+	Ahora ingresamos a nuestra cuenta de aws para ver que se ccreo lo anterior.
+	Revisamos el s3, la lambda con su ClowdWatch
 
+### Borrar todo
+
+1. Terraform:
+	borramos todo con `terraform destroy` y nos mostrara un plan también donde nos indica todo lo que borrara, le indicamos `yes`. Y ya en aws no estará nada de lo que creamos con terraform
 
 
 ---
