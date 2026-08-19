@@ -61,8 +61,29 @@ Si es vulnerable alguna cuenta es importante que el usuario tenga el menos privi
 Acá podemos ver que esta segmentado en usuarios, grupos y roles:
 - usuario: la persona que se identifica, una persona en expecifico con un rol, ej Juan el desarrollador
 - grupos: pero si tengo muchos como juan el desarrollador me conviene colocarlos en un grupo Los Desarrolladores con el privilegio de ver el código fuente, pero el grupo financias no lo debería ver
-- Rol: es cuando ya se identifico como juan el desarrollador, entro al grupo de desarrolladores y por ende ahora ya tiene el rol que le permite trabajar, por eso l
+- Rol: es cuando ya se identifico como juan el desarrollador, entro al grupo de desarrolladores y por ende ahora ya tiene el rol que le permite trabajar
 
+
+# AWS Política / Policy
+
+![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260819005034.png)
+
+Un ejemplo de como se vería una policy:
+- effect: allow : es para permitir o denegar? en este caso esta iniciando que va a ser una policy de permitir.
+- action: s3:get*, s3:List* : que es lo que puede hacer? en este caso se le esta permitiendo que pueda acceder a ver nada más.
+- Resource: arn:aws:s3:::mi-bucket-seguro/* : donde aplicara esta policy? en este caso esta apuntando específicamente a una carpeta, a ningún otro lado.
+
+# AWS Roles
+
+![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260819005245.png)
+
+Se recomienda no usar usuario root, ni usuario administrador. Se deberia crear un rol cuasi administrador pero con cuenta regresiva solo para que pueda acceder, trabajar y luego ya desaparecer. 
+
+# Conclusión
+
+![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260819005919.png)
+
+Conclusión: El perímetro ya no es un firewall, sino un código criptográfico.
 
 
 # Práctica: sawkl
