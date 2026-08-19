@@ -41,8 +41,14 @@ Si se recibe un ataque tiene varias barreras gracias al MFA que contiene una con
 
 Siendo ya un usuarios Verificado que reglas podes tener:
 - Permisos basado en Roles (RBAC): Se puede dar reglas / permisos según el rol o cargo del usuario, o sea se me permite todas acciones según un estándar de lo que debería hacer.
+  
 - Permisos basados en Atributos (ABAC): Se puede dar reglas / permisos según atributos, usualmente asociada con la anterior donde cada rol tiene permisos distintos con atributos de accesos distintos, pero usualmente en rol es como un estándar y esto puede ser más dinámico y flexible.
-- Permisos Globales: Se puede dar reglas / permisos que globalmente se suele aplicar a todos los usuarios estrictamente, hay excepción como . 
+  
+- Permisos Globales: Se puede dar reglas / permisos que globalmente se suele aplicar a todos los usuarios estrictamente siendo como se dice la policy, hay excepciones con algunos usuarios como el administrador de sistema tiene que tener una policy aparte porque se le permite borrar.
+  
+- OAuth: es el que te permite acceder a los servicios luego de haberte identificado una vez. Ejemplo si me logueo en una cuenta de gmail en google ya se me abra logueado en el resto de aplicaciones asociadas.
+
+# 50 min
 
 
 
