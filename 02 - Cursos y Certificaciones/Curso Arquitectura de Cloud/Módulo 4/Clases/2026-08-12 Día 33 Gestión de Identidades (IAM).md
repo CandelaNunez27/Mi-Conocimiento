@@ -48,13 +48,20 @@ Siendo ya un usuarios Verificado que reglas podes tener:
   
 - OAuth: es el que te permite acceder a los servicios luego de haberte identificado una vez. Ejemplo si me logueo en una cuenta de gmail en google ya se me abra logueado en el resto de aplicaciones asociadas.
 
-# 50 min
+# Fundamentos Mínimos Privilegio (POLP)
 
+![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260819003847.png)
 
+Si es vulnerable alguna cuenta es importante que el usuario tenga el menos privilegio posible y ya en distintos casos de va desbloqueando de a pocos, aunque sea medio tedioso para eso viene el siguiente punto
 
+# Fundamentos Administración IAM
 
+![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260819004026.png)
 
-
+Acá podemos ver que esta segmentado en usuarios, grupos y roles:
+- usuario: la persona que se identifica, una persona en expecifico con un rol, ej Juan el desarrollador
+- grupos: pero si tengo muchos como juan el desarrollador me conviene colocarlos en un grupo Los Desarrolladores con el privilegio de ver el código fuente, pero el grupo financias no lo debería ver
+- Rol: es cuando ya se identifico como juan el desarrollador, entro al grupo de desarrolladores y por ende ahora ya tiene el rol que le permite trabajar, por eso l
 
 
 
