@@ -12,12 +12,15 @@
 	
 	Volvemos al administrador iam > iam users > create user> developer_aws como nombre > provide user access > contraseña > user must create a new > attach policies directly > amazonec2readonlyaccess > vemos que tiene de código > create user
 	
+	Entramos a developer_aws > nos pedira cambiar la clave > al ingresar no mostrara casi nada > se trata de lanzar una ec2 y no nos deja 
 	
+	Volvemos al administrador iam > iam users > developer_aws > security credentials > create access key > command line interface (CLI) > confirmar > descripcion: developer aws > create access key > copiamos la publica y la secret que solo se muestra una unica vez. Luego en iam > iam users > el otro usuario> assign mfa device > nombre: cel-google > autenticatos app > scanear el qr en pantalla con el celular y colocar los codigos que nos apareceran en el celular   
 	
+
+1. Códing:
+	Usaremos el main.tf, output.tf, providers.tf, variables.tf de modulos > extra > repaso 3. 
 	
-	
-	
-	
+	Y la carpeta .github/workflows tendremos deploy_lambda.yml y primer-actions.yaml
 	
 	
 	
