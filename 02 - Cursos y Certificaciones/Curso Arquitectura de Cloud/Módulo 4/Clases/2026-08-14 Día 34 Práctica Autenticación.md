@@ -20,9 +20,9 @@
 1. Códing:
 	Usaremos el main.tf, output.tf, providers.tf, variables.tf de modulos > extra > repaso 3. 
 	
-	Y la carpeta .github/workflows tendremos deploy_lambda.yml y primer-actions.yaml
+	Y la carpeta .github/workflows tendremos deploy_lambda.yml y primer-actions.yaml. En deploy comentamos la linea 27 terraform init  working-directory: ./modulos/extras/repaso3 con esta linea comentada nos dara error
 	
-	
+	Nos vamos al github donde nos metemos al settings del repositorio > secret an variables > actions > new repository secret > 
 	
 	
 	
