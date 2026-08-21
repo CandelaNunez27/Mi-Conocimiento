@@ -86,15 +86,6 @@ Se recomienda no usar usuario root, ni usuario administrador. Se deberia crear u
 Conclusión: El perímetro ya no es un firewall, sino un código criptográfico.
 
 
-# Práctica: sawkl
-### Preparación
-
-1. sdssdf:
-	sdsld
-
----
-# Guía del Profesor
-
   
 ---
 
