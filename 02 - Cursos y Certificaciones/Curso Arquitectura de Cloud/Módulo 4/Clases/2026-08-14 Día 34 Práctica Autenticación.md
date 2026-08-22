@@ -22,9 +22,9 @@
 	
 	Y la carpeta .github/workflows tendremos deploy_lambda.yml y primer-actions.yaml. En deploy comentamos la linea 27 terraform init  working-directory: ./modulos/extras/repaso3 con esta linea comentada nos dara error
 	
-	Nos vamos al github donde nos metemos al settings del repositorio > secret an variables > actions > new repository secret > 
+	Nos vamos al github donde nos metemos al settings del repositorio > secret an variables > actions > new repository secret > Name: AWS_ACCESS_KEY_ID_DEVELOPER > Secret: y copiamos la key publica que antes generamos. Luego creamos otra > 
 	
-	# 48 min
+	
 	
 	
 	
