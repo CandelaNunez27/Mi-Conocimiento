@@ -38,39 +38,24 @@
 	`git commit -m "add yaml C1 1"`
 	`git push orinin main`
 	
-	Volvemos al github y nos vamos a actions > add yaml C1 1 > nos saldra un error y entramos a ver que se quedo en terraform check que llequea que tenga todo el mismo formato > en el main teniamos bucket = "audito...." estaba escrito con el = solo separado por un espacio. Por ende se tiro el comando `terraform fmt` nos mueve a = para dejarla nivelada con todos los otros = del código.Ahora `git status` ,`git add modulos/extras/repaso3/main.tf` (se indico la carpeta solo como buena práctica, ya que impide que subamos cosas que no querramos), `git status`, ahora si `git commint -m "add yaml C1 2"`, `git push origin main`
+	Volvemos al github y nos vamos a actions > add yaml C1 1 > nos saldra un error y entramos a ver que se quedo en terraform check que llequea que tenga todo el mismo formato > en el main teniamos bucket = "audito...." estaba escrito con el = solo separado por un espacio. Por ende se tiro el comando `terraform fmt` nos mueve a = para dejarla nivelada con todos los otros = del código.Ahora `git status` ,`git add modulos/extras/repaso3/main.tf` (se indico la carpeta solo como buena práctica, ya que impide que subamos cosas que no querramos), `git status`, ahora si `git commit -m "add yaml C1 2"`, `git push origin main`
 	
-	Volvemos a github y vemos que paso el check, pero ahora nos sale el error en Terraform plan porque en deploy tenia comentada la linea working-directory del terraform init, pero comentamos los mismos working-directory de terraform plan, apply y destroy . pasamos a de vuelta `git add .`, `git commint -m "add yaml C1 3"`, `git push origin main`. Ahora vemos que si encontro pero salio otro error 
+	Volvemos a github y vemos que paso el check, pero ahora nos sale el error en Terraform plan porque en deploy tenia comentada la linea working-directory del terraform init, pero comentamos los mismos working-directory de terraform plan, apply y destroy . pasamos a de vuelta `git add .`, `git commit -m "add yaml C1 3"`, `git push origin main`. Ahora vemos que si encontro pero salio otro error 
 	
-	Ahora agregamos las secret de developer por ende colocamos aws-access-key-id: ${{secrets.AWS_ACCESS_KEY_ID_DEVELOPER}}, aws-secret-access-key: ${{secrets.AWS_SECRET_ACCESS_KEY_DEVELOPER}}, aws-region: ${{env.AWS_REGION}}, nuevamente tiramos `git add .`, `git commint -m "add yaml C1 4"`, `git push origin main`y veremos el error en terraform apply "is not authorized to perform" porque usamos las key de un usuario que le habiamos colocado solo readonly
+	Ahora agregamos las secret de developer por ende colocamos aws-access-key-id: ${{secrets.AWS_ACCESS_KEY_ID_DEVELOPER}}, aws-secret-access-key: ${{secrets.AWS_SECRET_ACCESS_KEY_DEVELOPER}}, aws-region: ${{env.AWS_REGION}}, nuevamente tiramos `git add .`, `git commit -m "add yaml C1 4"`, `git push origin main`y veremos el error en terraform apply "is not authorized to perform" porque usamos las key de un usuario que le habiamos colocado solo readonly
 	
-	Ya listo de pruebas, descomentamos todo y volvemos a tirar `git add .`, `git commint -m "add yaml C1 5"`, `git push origin main`. Veremos que ahora no tira error y llegamos a una pausa de dos minutos hasta que pase a terraform destroy.
+	Ya listo de pruebas, descomentamos todo y volvemos a tirar `git add .`, `git commit -m "add yaml C1 5"`, `git push origin main`. Veremos que ahora no tira error y llegamos a una pausa de dos minutos hasta que pase a terraform destroy.
 
 6. AWS:
 	En ese lapso de dos minutos nos vamos a aws y abrimos lambda, IAM y s3. En s3 tendremos el bucket auditoria-id, en landa tendremos la functions analizador_registros_transacciones y en iam vemos que creo el rol role_procesador_auditoria_lambda
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+
+
+
+### Paso final por las dudas
+
+1. Desactivar las credentials
+	En aws > iam > iam users > developer_aws > security credentials >  access key > actions > desactive
 	
 
 ---
