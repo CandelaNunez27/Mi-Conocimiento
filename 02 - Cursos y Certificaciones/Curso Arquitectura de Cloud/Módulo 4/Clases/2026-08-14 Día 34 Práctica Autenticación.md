@@ -30,10 +30,10 @@
 	
 
 4. Coding agregamos:
-	En deploy_lambda.yml colocamos arriba de jobs en la linea 11 colocamos las variables que colocamos en github. Colocamos env:  AWS_REGION: ${{vars.AWS_REGION_2 || 'us-east-1' }}. Luego agregamos en el primer steps debajo del checkout - name: Config Credentials AWS, uses: aws-actions/configure-aws-credentials@v4, with:, aws-access-key-id: ${{secrets.AWS_ACCESS_KEY_ID_DEVELOPER}}, aws-secret-access-key: ${{secrets.AWS_SECRET_ACCESS_KEY_DEVELOPER}}, aws-region: ${{env.AWS_REGION}}
+	En deploy_lambda.yml colocamos arriba de jobs en la linea 11 colocamos las variables que colocamos en github. Colocamos env:  AWS_REGION: ${{vars.AWS_REGION_2 || 'us-east-1' }}. Luego agregamos en el primer steps debajo del checkout - name: Config Credentials AWS, uses: aws-actions/configure-aws-credentials@v4, with:, aws-access-key-id: ${{secrets.AWS_ACCESS_KEY_ID}}, aws-secret-access-key: ${{secrets.AWS_SECRET_ACCESS_KEY}}, aws-region: ${{env.AWS_REGION_2}}
 	
 
-5. Github actions:
+5. Github actions Pruebas:
 	`git add .`
 	`git commit -m "add yaml C1 1"`
 	`git push orinin main`
@@ -42,9 +42,9 @@
 	
 	Volvemos a github y vemos que paso el check, pero ahora nos sale el error en Terraform plan porque en deploy tenia comentada la linea working-directory del terraform init, pero comentamos los mismos working-directory de terraform plan, apply y destroy . pasamos a de vuelta `git add .`, `git commint -m "add yaml C1 3"`, `git push origin main`. Ahora vemos que si encontro pero salio otro error 
 	
-	Ahora agregamos las secret de developer ppor ende colocamos, nuevamente tiramos `git add .`, `git commint -m "add yaml C1 4"`, `git push origin main`
+	Ahora agregamos las secret de developer por ende colocamos aws-access-key-id: ${{secrets.AWS_ACCESS_KEY_ID_DEVELOPER}}, aws-secret-access-key: ${{secrets.AWS_SECRET_ACCESS_KEY_DEVELOPER}}, aws-region: ${{env.AWS_REGION}}, nuevamente tiramos `git add .`, `git commint -m "add yaml C1 4"`, `git push origin main`y veremos el error en terraform apply "is not authorized to perform" porque usamos las key de un usuario que le habiamos colocado solo readonly
 	
-	Ya listo de pruebas, descomentamos todo y volvemos a tirar `git add .`, `git commint -m "add yaml C1 5"`, `git push origin main`. Veremos que ahora no tira error y llegamos a una pausa de dos minitos hastes que pase a terraform destroy.
+	Ya listo de pruebas, descomentamos todo y volvemos a tirar `git add .`, `git commint -m "add yaml C1 5"`, `git push origin main`. Veremos que ahora no tira error y llegamos a una pausa de dos minutos hasta que pase a terraform destroy.
 
 6. AWS:
 	En ese lapso de dos minutos nos vamos a aws y abrimos lambda, IAM y s3. En s3 tendremos el bucket auditoria-id, en landa tendremos la functions analizador_registros_transacciones y en iam vemos que creo el rol role_procesador_auditoria_lambda
