@@ -30,12 +30,44 @@
 	
 
 4. Coding agregamos:
-	En deploy_lambda.yml colocamos arriba de jobs en la linea 11 colocamos las variables que colocamos en github. Colocamos env:  AWS_REGION: ${{vars.AWS_REGION_2 || 'us-east-1' }}. Luego agregamos en el primer steps debajo del checkout - name: Config Credentials AWS, uses: aws-actions/configure-aws-credentials@v4, with:, aws-access-key-id: ${{secrets.AWS_ACCESS_KEY_ID_DEVELOPER}}, aws-secret-access-key: ${{secrets.AWS_SECRETS_ACCESS_KEY_DEVELOPER}}, aws-region: ${{env.AWS_REGION}}
+	En deploy_lambda.yml colocamos arriba de jobs en la linea 11 colocamos las variables que colocamos en github. Colocamos env:  AWS_REGION: ${{vars.AWS_REGION_2 || 'us-east-1' }}. Luego agregamos en el primer steps debajo del checkout - name: Config Credentials AWS, uses: aws-actions/configure-aws-credentials@v4, with:, aws-access-key-id: ${{secrets.AWS_ACCESS_KEY_ID_DEVELOPER}}, aws-secret-access-key: ${{secrets.AWS_SECRET_ACCESS_KEY_DEVELOPER}}, aws-region: ${{env.AWS_REGION}}
 	
 
 5. Github actions:
 	`git add .`
-	`git comm`
+	`git commit -m "add yaml C1 1"`
+	`git push orinin main`
+	
+	Volvemos al github y nos vamos a actions > add yaml C1 1 > nos saldra un error y entramos a ver que se quedo en terraform check que llequea que tenga todo el mismo formato > en el main teniamos bucket = "audito...." estaba escrito con el = solo separado por un espacio. Por ende se tiro el comando `terraform fmt` nos mueve a = para dejarla nivelada con todos los otros = del código.Ahora `git status` ,`git add modulos/extras/repaso3/main.tf` (se indico la carpeta solo como buena práctica, ya que impide que subamos cosas que no querramos), `git status`, ahora si `git commint -m "add yaml C1 2"`, `git push origin main`
+	
+	Ahora volvemos a github y vemos que paso el check, pero ahora nos sale el error en Terraform plan porque en deploy tenia comentada la linea working-directory. descomentada pasamos a de vuelta `git add`, `git commint -m "add yaml C1 3"`
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 
 ---
 # Guía del Profesor
