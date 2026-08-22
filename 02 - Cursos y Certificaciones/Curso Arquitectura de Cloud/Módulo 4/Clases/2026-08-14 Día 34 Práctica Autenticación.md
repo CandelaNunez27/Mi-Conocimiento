@@ -40,10 +40,12 @@
 	
 	Volvemos al github y nos vamos a actions > add yaml C1 1 > nos saldra un error y entramos a ver que se quedo en terraform check que llequea que tenga todo el mismo formato > en el main teniamos bucket = "audito...." estaba escrito con el = solo separado por un espacio. Por ende se tiro el comando `terraform fmt` nos mueve a = para dejarla nivelada con todos los otros = del código.Ahora `git status` ,`git add modulos/extras/repaso3/main.tf` (se indico la carpeta solo como buena práctica, ya que impide que subamos cosas que no querramos), `git status`, ahora si `git commint -m "add yaml C1 2"`, `git push origin main`
 	
-	Ahora volvemos a github y vemos que paso el check, pero ahora nos sale el error en Terraform plan porque en deploy tenia comentada la linea working-directory. descomentada pasamos a de vuelta `git add`, `git commint -m "add yaml C1 3"`
+	Volvemos a github y vemos que paso el check, pero ahora nos sale el error en Terraform plan porque en deploy tenia comentada la linea working-directory del terraform init, pero comentamos los mismos working-directory de terraform plan, apply y destroy . pasamos a de vuelta `git add .`, `git commint -m "add yaml C1 3"`, `git push origin main`. Ahora vemos que si encontro pero salio otro error 
 	
-	
-	
+	Ya listo de pruebas, descomentamos todo y volvemos a tirar `git add .`, `git commint -m "add yaml C1 5"`, `git push origin main`. Veremos que ahora no tira error y llegamos a una pausa de dos minitos hastes que pase a terraform destroy.
+
+6. AWS:
+	En ese lapso de dos minutos nos vamos a aws y abrimos lambda, IAM y s3. En s3 tendremos el bucket auditoria-id, en landa tendremos la functions analizador_registros_transacciones y en iam vemos que creo el rol role_procesador_auditoria_lambda
 	
 	
 	
