@@ -24,7 +24,7 @@
 	
 	Nos vamos al github donde nos metemos al settings del repositorio > secret an variables > actions > new repository secret > 
 	
-	
+	# 48 min
 	
 	
 	
