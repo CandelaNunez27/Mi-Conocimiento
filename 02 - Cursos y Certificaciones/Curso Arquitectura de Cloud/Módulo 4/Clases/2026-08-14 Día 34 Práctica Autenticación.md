@@ -17,20 +17,25 @@
 	Volvemos al administrador iam > iam users > developer_aws > security credentials > create access key > command line interface (CLI) > confirmar > descripcion: developer aws > create access key > copiamos la publica y la secret que solo se muestra una unica vez. Luego en iam > iam users > el otro usuario> assign mfa device > nombre: cel-google > autenticatos app > scanear el qr en pantalla con el celular y colocar los codigos que nos apareceran en el celular   
 	
 
-1. Códing:
+2. Códing:
 	Usaremos el main.tf, output.tf, providers.tf, variables.tf de modulos > extra > repaso 3. 
 	
 	Y la carpeta .github/workflows tendremos deploy_lambda.yml y primer-actions.yaml. En deploy comentamos la linea 27 terraform init  working-directory: ./modulos/extras/repaso3 con esta linea comentada nos dara error
+
+3. Github:
+	Nos vamos al github donde nos metemos al settings del repositorio > secret an variables > actions > new repository secret > Name: AWS_ACCESS_KEY_ID_DEVELOPER > Secret: y copiamos la key publica que antes generamos. Luego creamos otra > name: AWS_SECRET_ACCESS_KEY_DEVELOPER > SECRET: Copiamos la key que solo se mmostraba una unica vez.
 	
-	Nos vamos al github donde nos metemos al settings del repositorio > secret an variables > actions > new repository secret > Name: AWS_ACCESS_KEY_ID_DEVELOPER > Secret: y copiamos la key publica que antes generamos. Luego creamos otra > 
-	
-	
-	
-	
-	
+	ahora en variables > new reposity variable > name: AWS_REGION_2 > Value: us-east-2
 	
 	
+
+4. Coding agregamos:
+	En deploy_lambda.yml colocamos arriba de jobs en la linea 11 colocamos las variables que colocamos en github. Colocamos env:  AWS_REGION: ${{vars.AWS_REGION_2 || 'us-east-1' }}. Luego agregamos en el primer steps debajo del checkout - name: Config Credentials AWS, uses: aws-actions/configure-aws-credentials@v4, with:, aws-access-key-id: ${{secrets.AWS_ACCESS_KEY_ID_DEVELOPER}}, aws-secret-access-key: ${{secrets.AWS_SECRETS_ACCESS_KEY_DEVELOPER}}, aws-region: ${{env.AWS_REGION}}
 	
+
+5. Github actions:
+	`git add .`
+	`git comm`
 
 ---
 # Guía del Profesor
