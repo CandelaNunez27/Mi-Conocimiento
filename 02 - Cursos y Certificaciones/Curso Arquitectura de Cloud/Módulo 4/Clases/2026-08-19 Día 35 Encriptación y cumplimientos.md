@@ -26,8 +26,10 @@ La paradoja de la caja fuerte: toda nuestra riqueza son nuestros datos por ende 
 
 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260822234918.png)
 
-1. Se genera con algoritmos
-
+1. Se genera la clave, recomendada con algoritmos matemáticos.
+2. Se distribuye de manera segura, se recomienda que no sea a través de mal, sino por algún software de tokens seguro
+3. Almacenarla en la boveda de secretos.
+4. Su uso debe tener restrin
 
 
 
