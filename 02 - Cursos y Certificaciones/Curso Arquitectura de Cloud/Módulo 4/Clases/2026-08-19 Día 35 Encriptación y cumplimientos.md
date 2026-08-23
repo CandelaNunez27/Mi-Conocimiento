@@ -40,9 +40,21 @@ La paradoja de la caja fuerte: toda nuestra riqueza son nuestros datos por ende 
 Tenemos que cuidar las  claves cuando estan :
 - en reposo: que  este almacenadas localmente en nuestro discos, base de datps y su contenido es legible. tiene que estas acegurada con algun idntificador.
 
-- En tránsito: es cuando las claves las tenemos que ir pasando. por ejemplo las conexiones web a nuestra base de datos todo este proceso debe estar inscriptado para que el que consul
+- En tránsito: es cuando las claves las tenemos que ir pasando. por ejemplo las conexiones web a nuestra base de datos todo este proceso debe estar inscriptado para que el que consulta no vea datos que no deberia.
 
-#  min
+# Fundamentos Metodo de gestión KMS
+
+![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260823020618.png)
+
+Cómo gestionar basandonos en gran parte del ciclo de vida con kms: 
+
+- Capa de customer master key (CMK): es la capa de seguridad superior, siedno la llave maestra que encripta y desencripta datos, 
+
+
+
+
+
+#  48 min
 
 
 
