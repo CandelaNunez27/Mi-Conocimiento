@@ -2,7 +2,9 @@
 
 # Fundamentos Criptografía aplicada y Cumplimiento en la nube
 
-De las Matematicas del cirtificad
+"De las Matemáticas del certificado a la física del hardware y la certificación ISO 21017"
+
+La seguridad se basa en matemáticas porque la criptografía se usa exclusivamente los números primos
 
 
 
