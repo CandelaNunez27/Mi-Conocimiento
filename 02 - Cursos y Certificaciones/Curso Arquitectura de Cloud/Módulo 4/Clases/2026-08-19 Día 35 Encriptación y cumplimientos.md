@@ -33,7 +33,16 @@ La paradoja de la caja fuerte: toda nuestra riqueza son nuestros datos por ende 
 5. Rotación de claves y de usuarios cada cierto tiempo por las dudas, por ejemplo que una clave expire cada 45 días
 6. Renovación y destrucción ya de cuentas/servicios/claves obsoletas, para poder evitar más puntos vulnerables 
 
+# Fundamentos Importancia de la gestión de claves
 
+![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260823015711.png)
+
+Tenemos que cuidar las  claves cuando estan :
+- en reposo: que  este almacenadas localmente en nuestro discos, base de datps y su contenido es legible. tiene que estas acegurada con algun idntificador.
+
+- En tránsito: es cuando las claves las tenemos que ir pasando. por ejemplo las conexiones web a nuestra base de datos todo este proceso debe estar inscriptado para que el que consul
+
+#  min
 
 
 
