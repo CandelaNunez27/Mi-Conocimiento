@@ -7,7 +7,11 @@
 La seguridad se basa en matemáticas porque la criptografía se usa exclusivamente los números primos
 
 
+# Fundamentos La paradoja de la caja fuerte
 
+![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260822232558.png)
+
+La paradoja de la caja fuerte: toda nuestra riqueza son nuestros datos por ende se deben proteger lo máximo posible.  POr lo que se necesita claves seguras
 
 
 
