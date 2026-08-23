@@ -6,7 +6,6 @@
 
 La seguridad se basa en matemáticas porque la criptografía se usa exclusivamente los números primos
 
-
 # Fundamentos La paradoja de la caja fuerte
 
 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260822232558.png)
@@ -83,46 +82,22 @@ Tenemos muchas  isos como estas:
 
 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260823193619.png)
 
-Cual es la seguridad de los aparatos físicos que son los que generan almacena y procesan claves sensibles?
+Cual es la seguridad de los aparatos físicos que son los que generan almacena y procesan claves sensibles? (Aunque son pocos vistos actualmente)
 
-1. Se busca el aislamiento absoluto, ya que se necesita una gran cantidad de computo para generar claves seguras, por ende se busca tener hardware dedicado solo a esta tarea
+1. Se busca el aislamiento absoluto, ya que se necesita una gran cantidad de computo para generar claves seguras, por ende se busca tener hardware dedicado solo a esta tarea y que no deje rastros en los servidores.
 2. ASICs integrados son estos los que genereran la gran carga de computo
-3. 
+3. Es la calidad de esos procesos computacionales de numeros aleatorios (RNG) 
 
+# Conclusiones La cadena inquebrantable
 
+![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260823194402.png)
 
+1. Matemáticas para el cifrado siendo la base de la seguridad
+2. Luego con un HSM y KMS puedan usar esas matemáticas en la práctica, usando un buen manejo de claves, certificados
+3. Por último, con un buen manejo / administración se debería poder pasar las auditorias de las isos, y demostrar que somos una empresa que valora la seguridad
 
+El cifrado sin gestión de hardware es inútil; la gestión sin cumplimientos normativos es invisible.
 
-#  48 min
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# Práctica: sawkl
-### Preparación
-
-1. sdssdf:
-	sdsld
-
----
-# Guía del Profesor
 
   
 ---
