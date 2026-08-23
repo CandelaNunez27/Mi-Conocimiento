@@ -58,16 +58,36 @@ También CMK va rotando periodicamente para tambien rotal la logica/patron de en
 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260823181723.png)
 
 
-Tenemos varias  isos:
+Tenemos muchas  isos como estas:
 
-- **ISO 27001 :** Seria como las normas generales de seguridad de la información, como manehar las password, como manejar los usuarios, como manejar los secretos...
+- **ISO 27001 :** Seria como las normas generales de seguridad de la información, como manejar las password, como manejar los usuarios, como manejar los secretos...
 
-- **ISO 27017 :** Centrada en la seguridad de los servicios de cloud. 
+- **ISO 27017 :** Centrada en la seguridad de los servicios de cloud. es la adapptaciṕn de la iso 27001 a la nube.
 
-- **ISO 27018 :** Basada en la protección de datos personales en la nube pública (más protección por lo ) 
+- **ISO 27018 :** Basada en la protección de datos personales en la nube pública (más protección por lo que es la nube póblica) 
 
-- **GDPR :** esta ya es una ley europea de protección de datos.
+- **GDPR :** esta ya es una ley europea de protección de datos. En europa si hay datos de europeos no pueden salir de eiropa, por ende hay aws con regiones en ialenabia y otros lugares,
 
+
+# Fundamentos El checklist ISO
+
+![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260823193000.png)
+
+1. Gobernanza de password y datos: esa documentación es accesible? quienes pueden accedes? 
+2. Donde estan los activos= don de eastan alojados los datos, 
+3. accessos mediante iam, como se accede? que cierta gente no tenga acceso por rol
+4. criptofradia, rotas cmk? que logica utiliza ? esa logica es de la más segirax?
+5. Los logs donde se almacenan? los logs puieden estar ostrando controseñas sin encriptar y por ende pueden ser culneradas,
+
+# Fundamentos HW Security Modules (HSM)
+
+![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260823193619.png)
+
+Cual es la seguridad de los aparatos físicos que son los que generan almacena y procesan claves sensibles?
+
+1. Se busca el aislamiento absoluto, ya que se necesita una gran cantidad de computo para generar claves seguras, por ende se busca tener hardware dedicado solo a esta tarea
+2. ASICs integrados son estos los que genereran la gran carga de computo
+3. 
 
 
 
