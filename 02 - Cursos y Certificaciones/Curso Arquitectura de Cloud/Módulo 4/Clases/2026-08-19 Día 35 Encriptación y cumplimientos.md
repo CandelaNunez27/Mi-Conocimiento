@@ -58,6 +58,20 @@ También CMK va rotando periodicamente para tambien rotal la logica/patron de en
 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260823181723.png)
 
 
+Tenemos varias  isos:
+
+- **ISO 27001 :** Seria como las normas generales de seguridad de la información, como manehar las password, como manejar los usuarios, como manejar los secretos...
+
+- **ISO 27017 :** Centrada en la seguridad de los servicios de cloud. 
+
+- **ISO 27018 :** Basada en la protección de datos personales en la nube pública (más protección por lo ) 
+
+- **GDPR :** esta ya es una ley europea de protección de datos.
+
+
+
+
+
 
 #  48 min
 
