@@ -30,8 +30,8 @@ La paradoja de la caja fuerte: toda nuestra riqueza son nuestros datos por ende 
 2. Se distribuye de manera segura, se recomienda que no sea a través de mal, sino por algún software de tokens seguro
 3. Almacenarla en la boveda de secretos.
 4. Su uso debe tener restricciones estrictas, la primera para los usuarios deberían tener acceso mediante roles RBAC  y MFA, y la segunda para los servicios deberian tener acceso mediante las bovedas de secretos y de ahí puedan encontrar las rutas url que adjuntan los accesos.
-5. Rotación de claves y de usuarios cada cierto tiempo por las dudas, por ejemplo que una clave expire cada 45 días y si hay usuarios que han sido despedidos también eliminarlos.
-6. 
+5. Rotación de claves y de usuarios cada cierto tiempo por las dudas, por ejemplo que una clave expire cada 45 días
+6. Renovación y destrucción ya de cuentas/servicios/claves obsoletas, para poder evitar más puntos vulnerables 
 
 
 
