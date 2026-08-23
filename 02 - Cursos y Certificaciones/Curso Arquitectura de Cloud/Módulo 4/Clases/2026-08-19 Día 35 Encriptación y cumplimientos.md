@@ -53,7 +53,9 @@ El método de gestión de clave se llama Servicio de Gestión de Claves (KMS) se
 
 También CMK va rotando periodicamente para tambien rotal la logica/patron de encriptación para más seguridad para que no sea adivinado nuestra logica de todas nuestras claves.
 
-# Fundamentos 
+# Fundamentos Normas y cumplimientos
+
+![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260823181723.png)
 
 
 
