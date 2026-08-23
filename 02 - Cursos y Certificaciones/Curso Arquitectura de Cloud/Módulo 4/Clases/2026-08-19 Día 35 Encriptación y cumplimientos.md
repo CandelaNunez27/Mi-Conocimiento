@@ -46,11 +46,14 @@ Tenemos que cuidar las  claves cuando estan :
 
 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260823020618.png)
 
-Cómo gestionar basandonos en gran parte del ciclo de vida con kms: 
+El método de gestión de clave se llama Servicio de Gestión de Claves (KMS) se basa en automatizar el ciclo de vida junto a políticas de acceso: 
 
-- Capa de customer master key (CMK): es la capa de seguridad superior, siedno la llave maestra que encripta y desencripta datos, 
+- Capa de customer master key (CMK): es la capa de seguridad superior, siendo la llave maestra que encripta y desencripta la clave de datos, ej kms cuando le pedimos que genere una nueva clave es cmk la que le dara una clave incriptada sin que la podamos ver.
+- Clave de datos: seria la que encripta ya si los datos reales. Ej kms cuando le pedimos la clave será la cmk la que nos de sin revelar la clave en forma incriptada, luego si ya la queremos ver nos pedira autenticarnos para ver si tenemos los suficientes permisos para darnos la clave de datos desencriptada.
 
+También CMK va rotando periodicamente para tambien rotal la logica/patron de encriptación para más seguridad para que no sea adivinado nuestra logica de todas nuestras claves.
 
+# Fundamentos 
 
 
 
