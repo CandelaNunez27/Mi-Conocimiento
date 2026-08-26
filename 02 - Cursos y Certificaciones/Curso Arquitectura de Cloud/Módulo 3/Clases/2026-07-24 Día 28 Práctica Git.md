@@ -12,7 +12,7 @@
 	 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260826005309.png)
 	 
 	
-	 con ssh `git clone git@github.com:julian/repo.git ` si ya tenemos todo nuestro git logeado en nuestra consola
+	 o con ssh `git clone git@github.com:julian/repo.git ` si ya tenemos todo nuestro git logeado en nuestra consola
 	 
 	 para compartirles a otros y que puedan modificar el original hay que ir a ajustes > ssh and gpg keys > new ss key
 	 
