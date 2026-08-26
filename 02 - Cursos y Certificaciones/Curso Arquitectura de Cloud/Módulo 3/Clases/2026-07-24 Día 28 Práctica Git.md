@@ -5,7 +5,12 @@
 1. Seleccionar repositorio:
 	 Nos vamos a Github y buscamos el repositorio, entramos y le damos al boton verde de code y copiamos el https. Si es nuestro el repo podemos hacerpo por ssh
 	 
-	 En la consola hacemos `git clone https://dasmdamsasda.git` así clonamos un repo
+	 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260826004348.png)
+	 
+	 
+	 En la consola hacemos `git clone https://github.com/juliangigena/course_ing_cloud.git` así clonamos un repo
+	 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260826005309.png)
+	 
 	
 	 con ssh `git clone git@github.com:julian/repo.git ` si ya tenemos todo nuestro git logeado en nuestra consola
 	 

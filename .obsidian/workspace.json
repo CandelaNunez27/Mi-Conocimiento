@@ -98,7 +98,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "2c47654ff3f8d557",
@@ -226,6 +227,8 @@
   },
   "active": "51c3a8dab38804c2",
   "lastOpenFiles": [
+    "04 - Otros/Imagenes/Pasted image 20260826005309.png",
+    "04 - Otros/Imagenes/Pasted image 20260826004348.png",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 3/Clases/2026-07-22 Día 27 CI  CD Github Actions.md",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 3/Clases/2026-07-17 Día 26 Teoría y Práctica Monitorización proactiva.md",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 3/Clases/2026-07-15 Día 25 Repaso Docker y Kubernetes, Arquitectura Cloud con Ingress y Persistencia.md",
@@ -247,7 +250,6 @@
     "04 - Otros/Imagenes/Pasted image 20260822232558.png",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 4/Clases/2026-08-12 Día 33 Gestión de Identidades (IAM).md",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 4/Clases/2026-08-14 Día 34 Práctica Autenticación.md",
-    "04 - Otros/Imagenes/Pasted image 20260819005919.png",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 4/Clases",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 3/Clases/2026-08-07 Día 32 Práctica de Repaso.md",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 4",
@@ -264,7 +266,6 @@
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 3/Clases/2026-06-12 Día 18 Alternativa de virtualizar Kilecoda.md",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 3/Clases/2026-06-10 Día 17 IaC - Terraform.md",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 2/Clases/2026-06-05 Día 16 La era serverless & MLOps (Parte 2) Teoría y Práctica.md",
-    "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 2/Clases/2026-06-03 Día 15 La era serverless & MLOps (Parte 1) Teoría y Práctica.md",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 3/Clases",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 3",
     "01 - Tec Redes Datos y Telecom/2º Año/01 - Redes/Módulo 1.2",
