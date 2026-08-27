@@ -139,27 +139,50 @@
 	 `ansible-playbook -i hosts.ini deploy-and-audit.yml` que nos da error que es esa linea que comentamos. proque si lo descomentamos si funciona.
 	 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260827004904.png)
 	 
-	 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260827004943.png)
+	
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260827004943.png)
 		 Me salia un error porque mi conexión de la bloqueaba por ende tube que usar ProtonVPN
-		 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260827012404.png)![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260827012303.png)
+		 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260827012404.png)
+		 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260827012303.png)
 		 
-		 
-		 
-		 
+	
+	 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260827012816.png)
+	 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260827012859.png)
+	 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260827012912.png)
 	 
-	 Es para comparar con el comando que usábamos antes `ANSIBLE_HOST_KEY_CHECKING=False ansible-playbook -i hosts.ini deply.yml` y veamos sus diferencias, porque si ejecutamos `ssh -i pem-lab-terraform.pem ubuntu@34.224.25.64` nos estamos conectando a la ec2 de nginx que esta en aws pero al conectarnos nos pregunra esta seguro de querer conectarse y le damos yes, bueno ese yes no lo puede colocar ansible por ende se utiliza esa linea donde se le indica que no haga esos chequeos y pase directo.
 	 
+	 
+	 Es para comparar con el comando que usábamos antes `ANSIBLE_HOST_KEY_CHECKING=False ansible-playbook -i hosts.ini deply.yml` y veamos sus diferencias
+	 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260827012955.png)
+	 
+	 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260827013014.png)
+	 
+	 porque si ejecutamos `ssh -i pem-lab-terraform.pem ubuntu@54.234.36.207` nos estamos conectando a la ec2 de nginx que esta en aws pero al conectarnos nos pregunra esta seguro de querer conectarse y le damos yes, bueno ese yes no lo puede colocar ansible por ende se utiliza esa linea donde se le indica que no haga esos chequeos y pase directo.
+	 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260827013126.png)
+	 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260827013144.png)
+	 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260827013224.png)
 
 2. Revisamos si se ejecuto bien
 	 
 	 Ingresamos a nuestra cuenta de aws y chequeamos que se alla creado la landa (home > lambda > procesadorReportesAuditoria-tf), el bucket (home > s3 > formatec-auditoria-tf-99998980989898),  las EC2s (home > ec2) la queue(home > simple queue service> ColaProcesamietoAuditoria-tf) y la sns (home > simple notification service > topic > notificacionesAuditoria-tf) 
+	 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260827013405.png)
 	 
+	 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260827013544.png)
+	 
+	 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260827013631.png)
+	 
+	 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260827013809.png)
+	 
+	 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260827013918.png)
 	 
 
 ### Subimos un archivo de prueba
 
 1. Probamos si anda como el ejercicio que usamos hace varias clases cando vimos lambda
 	En S3 > Buckets > formatec-auditoria-tf-90909989 > upload > Seleccionamos el reporte.txt que creamos en local y lo subimos
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260827014006.png)
+	
+	
 	
 	Luego en la lambda > funtions >procesadorReportesAuditoria.tf > monitor > hace menos de 1 hs > vemos los grafico que nos muestra > tambien vemos los logs con view cloudwhatch logs > ultimo log > y veremos todos los pasos del codigo de la lambda
 
