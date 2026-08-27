@@ -49,15 +49,25 @@
 	 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260826232521.png)
 	 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260826232538.png)
 	 
-	 `ansible-playbook audit-k8s.yml` nos mostrara los pasos que hizo.
+	 `ansible-playbook audit-k8s.yml` nos mostrara los pasos que hizo. 
+		 (me salio error que fañtaba libreria python: Failed to import the required Python library (kubernetes))
+		 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260827001534.png)
+		 Para solucionarlo descargamos la libreria que nos faltaba
+		 `sudo pacman -S python-kubernetes`
+		 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260827002034.png)
+	 
+	 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260827002133.png)
 	 
 	 
 	 En la carpeta que estabamos parados se genera un reporte-auditoria-k8s.txt 
+	 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260827002211.png)
+	 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260827002223.png)
  
 ### Borrar todo
 
 1. Borrar todo con terraform:
 	`terraform destroy -auto-approve `
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260827002258.png)
 
 
 
@@ -66,12 +76,14 @@
 1. AWS
 	 
 	 `cd modulos/mod3/class7/aws-II` Nos movemos a la carpeta aws-II que contiene un providers.tf, main.tf, output.tf, landa_funtion.yml. host.init, deploy-and-audit.yml `ls`
-	 
-	 
+	 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260827002353.png)
+	 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260827002417.png)
 	 
 	 Tenemos el archivo providers-tf que contiene los required_providers hasicorp/aws , hashicorp/tls y hansicor/local, la region us-east-1 y llamamos a aws_caller_identity porque hay que trabajar con cosas locales.
+	 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260827002441.png)
 	 
 	 Tenemos el archivo main.tf que contiene la parte de seguridad de las maquinas virtuales que crearemos y usaremos colocando recource tls_private_key generando una key con cifrado rsa 4096, luego en resource aws_key_pair le colocamos el key_name pem-lab-terraform, luego para descargarla localmente con resource local_file con permisos a ese archivo 0400. Luego la parte de redes tenemos las reglas para a conexion, donde colocamos que el puerto 22 (ssh), 80 (http nginx) y 8080 (http apache) lo abrimos para cualquiera, tambien la regla egress porque es para que lo que creemos pueda navegar. Después tenemos instancias ec2 con resource aws_instance servidor_nginx , resource aws_instance servidor_apache. Sigue un bucket con resource aws_s3_bucket bucket_ingesta y resource aws_s3_bucket_notification. Quinto tenemos las notificacines de sws a sqs con resource aws_sns_topic notificaciones_sns, resource aws_sqs_queue cola_procesamiento, resource aws_sns_topic_subcription, resource aws_sqs_queue_policy. Dentro de estas tiene andemas un name. pero la diferencia es lo que esta al lado de resource es como la variable en el código para terraform pero en aws nos mostrara el name. Y finalmente tenemos el apartado de la lambda resource aws_iam_role rol_lambda donde le indicamos que ejecute el payload.zip 
+	 
 	 
 	 Tenemos el archivo output.tf que contiene putput nginx_public_ip, output apache_public_ip, output s3_bucket_name y output ssh_private_key_pem. Todo esto lo mostrara cuando termine de ejecutarse el terraform apply
 	 
