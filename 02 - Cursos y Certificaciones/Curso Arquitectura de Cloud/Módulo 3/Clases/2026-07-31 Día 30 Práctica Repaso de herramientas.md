@@ -46,9 +46,11 @@
 1. Cuantos servidores tenemos?
 	 Ansible nos da una pequeña auditoria / relevamiento.
 	 Tenemos el archivo audit-k8s.yml que en primer lugar se coloca un name, y donde se tiene que conectar con hosts: localhost, con conexión local, creara dos variables internas en ansible. Su primera tarea tasks es obtener informacion de los pods del ns indicando kind pod namespace audit-lab que es una variable de arriba. 2do valida las politicas de seguridad en los pods con un código. 3ero generar el reporte estructura escrita con todas las variables donde guadaba los datos. 4to mostrar en consola que la auditoria se realizado  con exito.
-	 
+	 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260826232521.png)
+	 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260826232538.png)
 	 
 	 `ansible-playbook audit-k8s.yml` nos mostrara los pasos que hizo.
+	 
 	 
 	 En la carpeta que estabamos parados se genera un reporte-auditoria-k8s.txt 
  
