@@ -83,15 +83,40 @@
 	 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260827002441.png)
 	 
 	 Tenemos el archivo main.tf que contiene la parte de seguridad de las maquinas virtuales que crearemos y usaremos colocando recource tls_private_key generando una key con cifrado rsa 4096, luego en resource aws_key_pair le colocamos el key_name pem-lab-terraform, luego para descargarla localmente con resource local_file con permisos a ese archivo 0400. Luego la parte de redes tenemos las reglas para a conexion, donde colocamos que el puerto 22 (ssh), 80 (http nginx) y 8080 (http apache) lo abrimos para cualquiera, tambien la regla egress porque es para que lo que creemos pueda navegar. Después tenemos instancias ec2 con resource aws_instance servidor_nginx , resource aws_instance servidor_apache. Sigue un bucket con resource aws_s3_bucket bucket_ingesta y resource aws_s3_bucket_notification. Quinto tenemos las notificacines de sws a sqs con resource aws_sns_topic notificaciones_sns, resource aws_sqs_queue cola_procesamiento, resource aws_sns_topic_subcription, resource aws_sqs_queue_policy. Dentro de estas tiene andemas un name. pero la diferencia es lo que esta al lado de resource es como la variable en el código para terraform pero en aws nos mostrara el name. Y finalmente tenemos el apartado de la lambda resource aws_iam_role rol_lambda donde le indicamos que ejecute el payload.zip 
-	 
+	 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260827002634.png)
+	 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260827003019.png)
+	 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260827003039.png)
+	 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260827003107.png)
+	 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260827003137.png)
+	 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260827003152.png)
 	 
 	 Tenemos el archivo output.tf que contiene putput nginx_public_ip, output apache_public_ip, output s3_bucket_name y output ssh_private_key_pem. Todo esto lo mostrara cuando termine de ejecutarse el terraform apply
+	 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260827003242.png)
 	 
 	 Tenemos que tener logeada en la consola el aws con el acceskey
 	 `terraform init` ejecuta todo lo de providers.tf
-	 
+	 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260827003403.png)
 	 
 	 `terraform plan` nos mostrara el resumen
+	 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260827003506.png)
+	 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260827003533.png)
+	 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260827003554.png)
+	 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260827003619.png)
+	 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260827003644.png)
+	 
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260827003705.png)
+	 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260827003735.png)
+	 
+	 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260827003757.png)
+	 
+	 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260827003814.png)
+	 
+	 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260827003842.png)
+	 
+	 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260827003928.png)
+	 
+	 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260827004000.png)
+	 
 	 
 	 
 	 `terraform apply -auto-approve` y tetrraform y aws trabajaran. Aunque yo tire en el proceso de creación un ctrl + c, aws seguira creando porque ya le recibio la señal
