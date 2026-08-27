@@ -12,20 +12,33 @@
 2. minikube y terraform:
 	 
 	 Abrimos terminal en la captera llamada local, que contiene audit-k8s.yml, main.tf, providers.tf. 
+	 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260826231123.png)
+	 
 	 Tenemos el archivo providers.tf donde teniene que llama al proveedor oficial de hashicorp (creador de terraform), luego usa la configuración local de kubernetes / minikube. 
+	 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260826231140.png)
+	 
+	 
 	 
 	 `minikube start` infraestructura local atraves de minikube
+	 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260826231656.png)
 	 
 	 `terraform init` para despertar a terraform
+	 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260826231750.png)
+	 
 	 
 	 `terraform plan` para que me muestre todo lo que creara, antes de ejecutarlo. mostrara lo que creará sin crearlo. por ende, sería un comando opcional.
+	 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260826231911.png)![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260826231927.png)
+	 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260826232032.png)
 	 
 	 `terraform apply`  muestra lo que va a crear pero también lo crea si le indicamos que yes cuando nos pregunte. entonces si queremos crear directamente usamos este comando, si queremos una vista previa antes que todo se despliegue se usa plan.
+	 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260826232301.png)
 	 
 	 Tenemos el archivo main.tf, que crea un recurso namespace llamado name audit-lab. luego resource para un contenedor con name web-app y se asocia al ns,y luego spec que haga una replica,  un spec que tenga nginc:alpine con el puerto 80.
+	 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260826232337.png)
+	 
 	 
 	 `kubectl get all -n audit-lab` para ver que desplego terraform
-	 
+	 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260826232428.png)
 	 
 
 ### Ansible, primeras preguntas de la auditoria
