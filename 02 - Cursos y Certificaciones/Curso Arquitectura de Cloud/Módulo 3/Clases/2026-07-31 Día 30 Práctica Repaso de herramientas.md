@@ -118,8 +118,8 @@
 	 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260827004000.png)
 	 
 	 
-	 
 	 `terraform apply -auto-approve` y tetrraform y aws trabajaran. Aunque yo tire en el proceso de creación un ctrl + c, aws seguira creando porque ya le recibio la señal
+	 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260827004213.png)
 	 
 	 
 
@@ -127,12 +127,20 @@
 ### Ansible instalar cosas en la nube
 
 1. teniendo las ip
-	 Aun no podemos ir al navegador ara ver que tenemos en esas ip porque aun no corremos el archivo deploy-and-audit.yml
+	 Aun no podemos ir al navegador para ver que tenemos en esas ip porque aun no corremos el archivo deploy-and-audit.yml
 	 
 	 Tenemos el archivo deploy-and-audit.yml donde tenemos varios tasks donde 1 actualizaremos cache de api, 2 instalar dependencias, 3 instalar docker, 4 asegurar que docker este activo y corriendo, 5 agregar el usuario para docker y darle permisos para que haga acciones, 6  desplegar nginx dockerizado por puerto 80, 7 desplegar apache dockerizado por el puerto 8080,  8 validación final con respuesta en http local.
+	 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260827004312.png)
+	 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260827004358.png)
 	 
 	 para indicarle a ansible donde tiene que apuntar creamos un archivo llamado hosts.ini donde adentro le colocamos las ip generadas. En ese archivo comentamos con ; por un momento el apartado servidores_web:vars
-	 `ansible-playbook -i hosts.ini deploy-and-audit.yml` que nos da error que es esa linea que comentamos. prque si lo descomentamos si funciona.
+	 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260827004800.png)
+	 
+	 `ansible-playbook -i hosts.ini deploy-and-audit.yml` que nos da error que es esa linea que comentamos. proque si lo descomentamos si funciona.
+	 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260827004904.png)
+	 
+	 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260827004943.png)
+	 
 	 Es para comparar con el comando que usábamos antes `ANSIBLE_HOST_KEY_CHECKING=False ansible-playbook -i hosts.ini deply.yml` y veamos sus diferencias, porque si ejecutamos `ssh -i pem-lab-terraform.pem ubuntu@34.224.25.64` nos estamos conectando a la ec2 de nginx que esta en aws pero al conectarnos nos pregunra esta seguro de querer conectarse y le damos yes, bueno ese yes no lo puede colocar ansible por ende se utiliza esa linea donde se le indica que no haga esos chequeos y pase directo.
 	 
 
