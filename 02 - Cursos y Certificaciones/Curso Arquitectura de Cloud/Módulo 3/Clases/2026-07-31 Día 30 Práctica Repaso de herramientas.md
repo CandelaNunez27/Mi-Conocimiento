@@ -182,21 +182,30 @@
 	En S3 > Buckets > formatec-auditoria-tf-90909989 > upload > Seleccionamos el reporte.txt que creamos en local y lo subimos
 	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260827014006.png)
 	
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260827014357.png)
 	
+	Luego en la lambda > funtions >procesadorReportesAuditoria.tf > monitor > hace menos de 1 hs > vemos los grafico que nos muestra 
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260827014643.png)
 	
-	Luego en la lambda > funtions >procesadorReportesAuditoria.tf > monitor > hace menos de 1 hs > vemos los grafico que nos muestra > tambien vemos los logs con view cloudwhatch logs > ultimo log > y veremos todos los pasos del codigo de la lambda
+	Tambièn vemos los logs con view cloudwhatch logs > ultimo log > y veremos todos los pasos del codigo de la lambda
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260827014555.png)
 
 
 ### Revisamos conexión
 
 1. Navegador:
-	Ahora si tiramos http://34.224.25.64:80 que es el nginx y el apache en  http://3.93.68.144:8080 
+	Ahora si tiramos http://54.234.36.207:80 que es el nginx
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260827014841.png)
+	
+	 y el apache en  http://35.173.183.172:8080 
+	 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260827015041.png)
 
 
 ### Borrar todo
 
 1. Borrar todo con terraform:
 	`terraform destroy -auto-approve`
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260827015326.png)
 
 
 
