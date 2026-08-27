@@ -140,6 +140,12 @@
 	 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260827004904.png)
 	 
 	 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260827004943.png)
+		 Me salia un error porque mi conexión de la bloqueaba por ende tube que usar ProtonVPN
+		 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260827012404.png)![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260827012303.png)
+		 
+		 
+		 
+		 
 	 
 	 Es para comparar con el comando que usábamos antes `ANSIBLE_HOST_KEY_CHECKING=False ansible-playbook -i hosts.ini deply.yml` y veamos sus diferencias, porque si ejecutamos `ssh -i pem-lab-terraform.pem ubuntu@34.224.25.64` nos estamos conectando a la ec2 de nginx que esta en aws pero al conectarnos nos pregunra esta seguro de querer conectarse y le damos yes, bueno ese yes no lo puede colocar ansible por ende se utiliza esa linea donde se le indica que no haga esos chequeos y pase directo.
 	 
