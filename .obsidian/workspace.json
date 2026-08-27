@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 3/Clases/2026-07-24 Día 28 Práctica Git.md",
+                "file": "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 3/Clases/2026-07-31 Día 30 Práctica Repaso de herramientas.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026-07-24 Día 28 Práctica Git"
+              "title": "2026-07-31 Día 30 Práctica Repaso de herramientas"
             }
           }
         ]
@@ -98,8 +98,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "2c47654ff3f8d557",
@@ -227,6 +226,12 @@
   },
   "active": "51c3a8dab38804c2",
   "lastOpenFiles": [
+    "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 3/Clases/2026-07-29 Día 29 Gestión de Configuración Avanzada.md",
+    "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 3/Clases/2026-07-24 Día 28 Práctica Git.md",
+    "04 - Otros/Imagenes/Pasted image 20260826230147.png",
+    "04 - Otros/Imagenes/Pasted image 20260826230051.png",
+    "04 - Otros/Imagenes/Pasted image 20260826230009.png",
+    "04 - Otros/Imagenes/Pasted image 20260826225837.png",
     "04 - Otros/Imagenes/Pasted image 20260826005309.png",
     "04 - Otros/Imagenes/Pasted image 20260826004348.png",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 3/Clases/2026-07-22 Día 27 CI  CD Github Actions.md",
@@ -243,11 +248,6 @@
     "04 - Otros/Imagenes/Pasted image 20260823193619.png",
     "04 - Otros/Imagenes/Pasted image 20260823193000.png",
     "04 - Otros/Imagenes/Pasted image 20260823181723.png",
-    "04 - Otros/Imagenes/Pasted image 20260823020618.png",
-    "04 - Otros/Imagenes/Pasted image 20260823015711.png",
-    "04 - Otros/Imagenes/Pasted image 20260822234918.png",
-    "04 - Otros/Imagenes/Pasted image 20260822233720.png",
-    "04 - Otros/Imagenes/Pasted image 20260822232558.png",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 4/Clases/2026-08-12 Día 33 Gestión de Identidades (IAM).md",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 4/Clases/2026-08-14 Día 34 Práctica Autenticación.md",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 4/Clases",
@@ -258,8 +258,6 @@
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 3/Clases/2026-07-31 Día 30 Práctica Repaso de herramientas.md",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 1/Clases/2026-05-08 Día 8 Práctica.md",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 3/TP Obligatorio",
-    "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 3/Clases/2026-07-29 Día 29 Gestión de Configuración Avanzada.md",
-    "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 3/Clases/2026-07-24 Día 28 Práctica Git.md",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 1/TP Obligatorio/TP 1 Módulo 1.md",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 1/Clases/2026-05-06 Día 7 (6 fue feriado) Teoría y Práctica Sobre Proveedores.md",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 3/Clases/2026-06-17 Día 19 Gestión de configuraciones Ansible.md",

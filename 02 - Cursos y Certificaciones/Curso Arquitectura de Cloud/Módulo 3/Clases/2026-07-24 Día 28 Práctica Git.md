@@ -15,16 +15,21 @@
 	 o con ssh `git clone git@github.com:julian/repo.git ` si ya tenemos todo nuestro git logeado en nuestra consola
 	 
 	 para compartirles a otros y que puedan modificar el original hay que ir a ajustes > ssh and gpg keys > new ss key
-	 
-	 Nos paramos en el repo `ls -la` y `get status` o  `git branch` para ver donde estamos posicionados. 
-	 
-	 
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260826225837.png)
+	
+	
+	 Nos paramos en el repo `ls -la` y `git status` o  `git branch` para ver donde estamos posicionados. 
+	 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260826230009.png)
+	 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260826230147.png)
 	 
 	 
 
 2.  Primeros Actions:
 	 
-	 en course_ing_cloud le damos crear una nueva carpeta llamada .get/workfows, entro de esta colocamos un archivo llamado primer-actions.yaml. volvemos a tirar `get status` si refrescamos la web aun no aparece por ende tiramos `git add .`,  `git commit -m "actions c1 1"` y ahora `git push origin main` si aparece el delta es que si algo se cambio. por ende refrescamos ahora y nos sale arriba actions y nos aparecerá unos registros / eventos de acciones.  nos sale que falta el o en el yaml
+	 en course_ing_cloud le damos crear una nueva carpeta llamada .get/workfows
+	 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260826230051.png)
+	 
+	 entro de esta colocamos un archivo llamado primer-actions.yaml. volvemos a tirar `git status` si refrescamos la web aun no aparece por ende tiramos `git add .`,  `git commit -m "actions c1 1"` y ahora `git push origin main` si aparece el delta es que si algo se cambio. por ende refrescamos ahora y nos sale arriba actions y nos aparecerá unos registros / eventos de acciones.  nos sale que falta el o en el yaml
 	 
 	 
 	 En el archivo  hello-world-c1.yaml escribimos name: Hello-word-Ipap, on: push, jobs:, hola:, run-on: ubuntu-latest
@@ -58,7 +63,7 @@
 	 
 	
  
-3. Mas complicado:
+3. Más complicado:
 	 nos vamos a la carpeta course_ing_cloud  > modulos > mod2 > class3 > demo > resiliencia > app-inventario > dockerfile y app.py. los copiamos y los pegamos en course_ing_cloud 
 	 
 	 volvemos al yaml  y colocamos  build:,   runs-on: ubuntu-latest, steps:,  - name: checkout repo, uses: actions/checkout@v4, - name: docker build, uses: docker/setup-buildx-action@v3, - name: build image, uses: docker/build-push-action@v5, witch:,   contex: ., file: ./Dockerfile, tags: jgigena90/app-inventario:1.0
