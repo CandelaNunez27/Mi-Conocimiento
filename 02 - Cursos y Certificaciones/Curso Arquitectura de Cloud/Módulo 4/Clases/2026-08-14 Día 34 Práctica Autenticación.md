@@ -23,7 +23,19 @@
 	
 	Volviendo al administrador vamos a ver el usuario en iam > iam user > usuario que creamos > add permisions > create goup > administraAccess se vera que dice que admite todo a todo> colocamos el nombre admin > add
 	
-	Volvimos al usuario creado y ya nos muestra lo que antes no mostraba. pero si se lo borramos desde el administrador volvera a no mostrar nada casi
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260901004512.png)
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260901004857.png)
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260901004949.png)
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260901005057.png)
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260901005136.png)
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260901005301.png)
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260901005314.png)
+	
+	
+	Volvimos al usuario creado y ya nos muestra lo que antes no mostraba. pero si se lo borramos desde el administrador volvera a no mostrar nada casi  
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260901005546.png)
+	
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260901005607.png)
 	
 	Volvemos al administrador iam > iam users > create user> developer_aws como nombre > provide user access > contraseña > user must create a new > attach policies directly > amazonec2readonlyaccess > vemos que tiene de código > create user
 	
