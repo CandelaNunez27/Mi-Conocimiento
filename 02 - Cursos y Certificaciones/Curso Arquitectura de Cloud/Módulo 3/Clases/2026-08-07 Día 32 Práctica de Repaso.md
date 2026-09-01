@@ -5,7 +5,16 @@
 1. terraform:
 	`touch main.tf` creamos el main pero las buenas prácticas que minimamente separemos los proveedores en otro archivo, `touch providers.tf` y opcionalmente creamos el output  `touch outputs.tf`
 	
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260831232528.png)
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260831232558.png)
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260831232621.png)
+	
+	
 	En providers.tf le indicamos que necesitamos tener instalado terraform >= 1.0.0, otra instancia que le indicamos a aws la versión ~> 5.0, y archive la versión ~> 2.4, luego que el proveedor aws la región var.aws_region y en un archivo de variables `touch variables.tf` colocamos una variable que aws_region por default sea us-easte-1. `teraform validate` para ver si no nos equivocamos codiando y nos dira que nos faltan cosas.
+	
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260831232740.png)
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260831232811.png)
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260831232851.png)
 	
 	
 	`terraform init ` y `terraform validate`
