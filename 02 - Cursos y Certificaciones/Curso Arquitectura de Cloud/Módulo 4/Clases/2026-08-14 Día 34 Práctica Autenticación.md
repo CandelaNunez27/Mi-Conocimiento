@@ -6,14 +6,20 @@
 	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260901002219.png)
 	
 	
-	Iam > iam users > creater user > nombre > provide user access (Proporcione acceso de usuario) > custom assword (sin tildar que la cambien en la siguente secion) > Set permisos > add user to grup >  crear grupo > databasaseadminiostrator > desplegar sus permisos >  le colocamos nombre DBAs2 > creat user.
+	Iam > iam users > creater user > nombre > provide user access (Proporcione acceso de usuario) > custom assword (sin tildar que la cambien en la siguente secion) > Set permisos > add user to grup (agregar persona al grupo) >  crear grupo > databasaseadminiostrator > desplegar sus permisos >  le colocamos nombre DBAs2 > creat user.
 	
 	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260901002908.png)
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260901003145.png)
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260901003304.png)
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260901003330.png)
 	
-	
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260901003400.png)
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260901003422.png)
 	
 	
 	Con el usuario creado ingresamos a este, y ya vemos que hay cosas que no nos muestra hasta en panel iam. 
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260901003908.png)
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260901003949.png)
 	
 	Volviendo al administrador vamos a ver el usuario en iam > iam user > usuario que creamos > add permisions > create goup > administraAccess se vera que dice que admite todo a todo> colocamos el nombre admin > add
 	
