@@ -50,7 +50,7 @@
 	 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260826232538.png)
 	 
 	 `ansible-playbook audit-k8s.yml` nos mostrara los pasos que hizo. 
-		 (me salio error que fañtaba libreria python: Failed to import the required Python library (kubernetes))
+		 (me salio error que faltaba libreria python: Failed to import the required Python library (kubernetes))
 		 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260827001534.png)
 		 Para solucionarlo descargamos la libreria que nos faltaba
 		 `sudo pacman -S python-kubernetes`
