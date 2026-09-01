@@ -69,10 +69,7 @@
 	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260901001132.png)
 
 
----
-# Guía del Profesor
 
-  
 ---
 
 # Material de Clase

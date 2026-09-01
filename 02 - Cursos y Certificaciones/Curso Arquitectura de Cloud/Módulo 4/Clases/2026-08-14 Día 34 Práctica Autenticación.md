@@ -1,8 +1,17 @@
-# Práctica: sawkl
+# Práctica: Autenticación
 ### Preparación
 
 1. AWS web:
-	Ingresar a nuestro usuario administrador de aws, y nos vamos a IAM y veremos los usuarios, y se aconsoja crear un usuario diferente a root. Iam > iam users > creater user > nombre > provide user access > custom assword (sin tildar que la cambien en la siguente secion) > Set permisos > add user to grup >  crear grupo > databasaseadminiostrator > desplegar sus permisos >  le colocamos nombre DBAs2 > creat user.
+	Ingresar a nuestro usuario administrador de aws, y nos vamos a IAM y veremos los usuarios, y se aconsoja crear un usuario diferente a root. 
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260901002219.png)
+	
+	
+	Iam > iam users > creater user > nombre > provide user access (Proporcione acceso de usuario) > custom assword (sin tildar que la cambien en la siguente secion) > Set permisos > add user to grup >  crear grupo > databasaseadminiostrator > desplegar sus permisos >  le colocamos nombre DBAs2 > creat user.
+	
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260901002908.png)
+	
+	
+	
 	
 	Con el usuario creado ingresamos a este, y ya vemos que hay cosas que no nos muestra hasta en panel iam. 
 	

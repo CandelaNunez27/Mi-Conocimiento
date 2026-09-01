@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 3/Clases/2026-08-07 Día 32 Práctica de Repaso.md",
+                "file": "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 4/Clases/2026-08-14 Día 34 Práctica Autenticación.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026-08-07 Día 32 Práctica de Repaso"
+              "title": "2026-08-14 Día 34 Práctica Autenticación"
             }
           }
         ]
@@ -227,6 +227,14 @@
   },
   "active": "51c3a8dab38804c2",
   "lastOpenFiles": [
+    "04 - Otros/Imagenes/Pasted image 20260901002908.png",
+    "04 - Otros/Imagenes/Pasted image 20260901002420.png",
+    "04 - Otros/Imagenes/Pasted image 20260901002308.png",
+    "04 - Otros/Imagenes/Pasted image 20260901002219.png",
+    "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 4/Clases/2026-08-12 Día 33 Gestión de Identidades (IAM).md",
+    "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 4/Clases/2026-08-14 Día 34 Práctica Autenticación.md",
+    "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 3/TP Obligatorio/TP 2 Módulo 2 y 3.md",
+    "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 3/Clases/2026-08-07 Día 32 Práctica de Repaso.md",
     "04 - Otros/Imagenes/Pasted image 20260901001132.png",
     "04 - Otros/Imagenes/Pasted image 20260901001106.png",
     "04 - Otros/Imagenes/Pasted image 20260901000812.png",
@@ -234,10 +242,6 @@
     "04 - Otros/Imagenes/Pasted image 20260831234053.png",
     "04 - Otros/Imagenes/Pasted image 20260831233943.png",
     "04 - Otros/Imagenes/Pasted image 20260831233919.png",
-    "04 - Otros/Imagenes/Pasted image 20260831233858.png",
-    "04 - Otros/Imagenes/Pasted image 20260831233829.png",
-    "04 - Otros/Imagenes/Pasted image 20260831233732.png",
-    "04 - Otros/Imagenes/Pasted image 20260831233631.png",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 3/Clases/2026-08-05 Día 31 Repaso TP de prueba.md",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 3/Clases/2026-07-31 Día 30 Práctica Repaso de herramientas.md",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 3/Clases/2026-07-29 Día 29 Gestión de Configuración Avanzada.md",
@@ -252,12 +256,8 @@
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 3/Clases/2026-06-19 Día 20 Práctica Terraform y Ansible en AWS.md",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 4/Clases/2026-08-21 Día 36 Llaves asimetricas y conexión ssh.md",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 4/Clases/2026-08-19 Día 35 Encriptación y cumplimientos.md",
-    "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 4/Clases/2026-08-12 Día 33 Gestión de Identidades (IAM).md",
-    "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 4/Clases/2026-08-14 Día 34 Práctica Autenticación.md",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 4/Clases",
-    "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 3/Clases/2026-08-07 Día 32 Práctica de Repaso.md",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 4",
-    "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 3/TP Obligatorio/TP 2 Módulo 2 y 3.md",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 1/Clases/2026-05-08 Día 8 Práctica.md",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 3/TP Obligatorio",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 1/TP Obligatorio/TP 1 Módulo 1.md",
