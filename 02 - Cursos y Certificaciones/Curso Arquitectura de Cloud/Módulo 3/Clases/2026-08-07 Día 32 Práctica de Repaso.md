@@ -53,13 +53,20 @@
 	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260831234053.png)
 
 2. AWS:
-	Ahora ingresamos a nuestra cuenta de aws para ver que se ccreo lo anterior.
-	Revisamos el s3, la lambda con su ClowdWatch
+	Ahora ingresamos a nuestra cuenta de aws para ver que se creo lo anterior.
+	Revisamos el s3, la lambda
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260901000752.png)
+	
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260901000812.png)
+	
+	
 
 ### Borrar todo
 
 1. Terraform:
 	borramos todo con `terraform destroy` y nos mostrara un plan también donde nos indica todo lo que borrara, le indicamos `yes`. Y ya en aws no estará nada de lo que creamos con terraform
+	
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260901001132.png)
 
 
 ---
