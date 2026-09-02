@@ -20,8 +20,37 @@
               "icon": "lucide-file",
               "title": "2026-08-14 Día 34 Práctica Autenticación"
             }
+          },
+          {
+            "id": "6c08eda659f06c4e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 4/Clases/Info de la organización.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Info de la organización"
+            }
+          },
+          {
+            "id": "1aff810a8f4102ed",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 4/Clases/Informe HPC.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Informe HPC"
+            }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -224,11 +253,15 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "51c3a8dab38804c2",
+  "active": "1aff810a8f4102ed",
   "lastOpenFiles": [
+    "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 4/Clases/Info de la organización.md",
+    "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 4/Clases/Informe HPC.md",
+    "Informe HPC",
+    "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 4/Clases/2026-08-14 Día 34 Práctica Autenticación.md",
+    "02 - Cursos y Certificaciones/Competición HPC Carla2026",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 4/Clases/2026-08-19 Día 35 Encriptación y cumplimientos.md",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 4/Clases/2026-08-21 Día 36 Llaves asimetricas y conexión ssh.md",
-    "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 4/Clases/2026-08-14 Día 34 Práctica Autenticación.md",
     "04 - Otros/Imagenes/Pasted image 20260901005607.png",
     "04 - Otros/Imagenes/Pasted image 20260901005546.png",
     "04 - Otros/Imagenes/Pasted image 20260901005314.png",
@@ -263,14 +296,11 @@
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 3/Clases/2026-06-17 Día 19 Gestión de configuraciones Ansible.md",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 3/Clases/2026-06-12 Día 18 Alternativa de virtualizar Kilecoda.md",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 3/Clases/2026-06-10 Día 17 IaC - Terraform.md",
-    "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 2/Clases/2026-06-05 Día 16 La era serverless & MLOps (Parte 2) Teoría y Práctica.md",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 3/Clases",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 3",
     "01 - Tec Redes Datos y Telecom/2º Año/01 - Redes/Módulo 1.2",
     "01 - Tec Redes Datos y Telecom/2º Año/01 - Redes/Portafolio Redes",
     "01 - Tec Redes Datos y Telecom/2º Año/01 - Redes/Módulo 1.1",
-    "01 - Tec Redes Datos y Telecom/2º Año/01 - Redes",
-    "01 - Tec Redes Datos y Telecom/2º Año/00- Índice",
     "1° Año/01 - Arquitectura de Computadoras/Sin título.canvas"
   ]
 }
