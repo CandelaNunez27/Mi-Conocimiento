@@ -28,7 +28,7 @@
 	![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260904013234.png)
 	
 	
-	**nodo-master (Servicios, Ansible y Compilación Base)**: Le damos a crear nueva maquina virtual > Medio de instalación local > siguiente > seleccionamos la iso que descargamos > siguiente > memoria 3815 MiB y 2 nucleos de CPU > siguiente> dejar marcaado "habilitar almacenamiento para la mv" y asignar 20 GiB > siguente  > marcamos personalizar configuración antes de instalar > en red le colocamos 
+	**nodo-master (Servicios, Ansible y Compilación Base)**: Le damos a crear nueva maquina virtual > Medio de instalación local > siguiente > seleccionamos la iso que descargamos > siguiente > memoria 3815 MiB y 2 nucleos de CPU > siguiente> dejar marcaado "habilitar almacenamiento para la mv" y asignar 20 GiB > siguente  > marcamos personalizar configuración antes de instalar > en red le colocamos  
 	
 	![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260904013405.png) 
 	![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260904013706.png) 
@@ -51,5 +51,27 @@
 	![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260904020339.png)
 	![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260904021026.png)
 	
-	Creamos las otras maquinas virtuales con el mismo hardware y el mismo proceso. Por ende nos quedara las tres maquinas virtuales listas para usar (nodo-master, nodo-calculo1, node-calculo2)
+	Creamos las otras maquinas virtuales con el mismo hardware y el mismo proceso. Por ende nos quedara las tres maquinas virtuales listas para usar (nodo-master, nodo-calculo1, node-calculo2) 
 
+5. Instalación de Rocky linux minimal 9.8
+	Arrancamos la maquina node-master y nos saldra con interfaz gráfica la instalación.
+	Seleccionamos idioma Español (Argentina) > seleccionamos teclado > creación de usuario > hpc-user , LocalHPC-1234, 
+	![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260904022215.png)
+	![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260904022503.png)
+	
+	![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260904022318.png)
+	
+	![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260904022939.png)
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
