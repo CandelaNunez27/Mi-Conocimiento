@@ -46,5 +46,10 @@
 	Para que deje de salir inactiva una vez ya acticada cancele todo y volve a realizar los pasos.
 	
 	![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260904015811.png) 
-	Luego nos sale un menu de configuración avanzaf
+	Luego nos sale un menu de configuración avanzada. Donde nos nos vamos a CPU > y nos aseguramos que este marcada la opción Copiar configuración de la CPU del anfitrión (host-passthrough) > iniciar la instalación
+	![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260904020310.png)
+	![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260904020339.png)
+	![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260904021026.png)
 	
+	Creamos las otras maquinas virtuales con el mismo hardware y el mismo proceso. Por ende nos quedara las tres maquinas virtuales listas para usar (nodo-master, nodo-calculo1, node-calculo2)
+
