@@ -54,11 +54,14 @@
 	
 	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260904003957.png)
 	
-	Volvemos al administrador iam > iam users > developer_aws > security credentials > create access key > command line interface (CLI) > confirmar > descripcion: developer aws > create access key > copiamos la publica y la secret que solo se muestra una unica vez. Luego en iam > iam users > el otro usuario> assign mfa device > nombre: cel-google > autenticatos app > scanear el qr en pantalla con el celular y colocar los codigos que nos apareceran en el celular     
+	Volvemos al administrador iam > iam users > developer_aws > security credentials > create access key > command line interface (CLI) > confirmar > descripcion: developer aws > create access key > copiamos la publica y la secret que solo se muestra una unica vez. 
 	
 	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260904004113.png) ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260904004146.png)
 	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260904004215.png)
 	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260904004242.png)
+	
+	
+	Luego en iam > iam users > el otro usuario> assign mfa device > nombre: cel-google > autenticatos app > scanear el qr en pantalla con el celular y colocar los codigos que nos apareceran en el celular     
 	
 	
 
