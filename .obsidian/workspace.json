@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "02 - Cursos y Certificaciones/Competición HPC Carla2026/Pasos de HPC de prueba.md",
+                "file": "02 - Cursos y Certificaciones/Competición HPC Carla2026/Info de la organización.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Pasos de HPC de prueba"
+              "title": "Info de la organización"
             }
           }
         ]
@@ -114,7 +114,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "02 - Cursos y Certificaciones/Competición HPC Carla2026/Pasos de HPC de prueba.md",
+                "file": "02 - Cursos y Certificaciones/Competición HPC Carla2026/Info de la organización.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -209,7 +209,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 225.5
+    "width": 225.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -223,10 +224,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "2a41270ba61315d0",
+  "active": "8464ad5eebc345b8",
   "lastOpenFiles": [
-    "02 - Cursos y Certificaciones/Competición HPC Carla2026/Info de la organización.md",
+    "04 - Otros/Imagenes/Pasted image 20260904025924.png",
     "02 - Cursos y Certificaciones/Competición HPC Carla2026/Pasos de HPC de prueba.md",
+    "02 - Cursos y Certificaciones/Competición HPC Carla2026/Info de la organización.md",
     "04 - Otros/Imagenes/Pasted image 20260904025238.png",
     "04 - Otros/Imagenes/Pasted image 20260904025019.png",
     "04 - Otros/Imagenes/Pasted image 20260904024851.png",
