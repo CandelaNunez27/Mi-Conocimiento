@@ -17,3 +17,5 @@
 	
 	Luego cerrar sesión o reiniciar PC para que se apliquen los cambios.
 	
+
+3. Gestor de Máquinas Virtuales
