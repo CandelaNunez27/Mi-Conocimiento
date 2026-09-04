@@ -19,3 +19,4 @@
 	
 
 3. Gestor de Máquinas Virtuales
+	Luego de reiniciar en las Apps nos saldra una llamada Gestor de Máquinas Virtuales (virt-manager) la cual abriremos
