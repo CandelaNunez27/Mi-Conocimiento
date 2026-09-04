@@ -55,7 +55,7 @@
 
 5. Instalación de Rocky linux minimal 9.8
 	Arrancamos la maquina node-master y nos saldra con interfaz gráfica la instalación.
-	Seleccionamos idioma Español (Argentina) > seleccionamos teclado > creación de usuario > hpc-user , LocalHPC-1234, 
+	Seleccionamos idioma Español (Argentina) > seleccionamos teclado > creación de usuario > hpc-user , LocalHPC-1234, marcamos Hacer de este usuario un administrador > Luego en contraseña de root le cole que la misma > selecionamos el disco de 20 y que quede en las particionado automatico > en red le colocamos el nombre
 	![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260904022215.png)
 	![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260904022503.png)
 	
@@ -63,11 +63,13 @@
 	
 	![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260904022939.png)
 	
+	![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260904023418.png)
 	
+	![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260904023649.png)
 	
+	![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260904023911.png)
 	
-	
-	
+	![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260904024449.png)
 	
 	
 	
