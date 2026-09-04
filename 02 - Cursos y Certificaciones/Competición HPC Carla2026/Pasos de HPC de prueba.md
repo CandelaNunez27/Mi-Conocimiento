@@ -19,7 +19,7 @@
 	
 
 3. ISO y Gestor de Máquinas Virtuales
-	Antes de seguir descargamos Rocky Linux 9 (Minimal ISO) desde https://rockylinux.org/download 
+	Antes de seguir descargamos Rocky Linux 9 (Minimal ISO) desde https://rockylinux.org/download (activar vpn en ee.uu para una descarga rápida)
 	
 	![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260903230535.png)
 

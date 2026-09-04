@@ -39,9 +39,49 @@
 	
 	Volvemos al administrador iam > iam users > create user> developer_aws como nombre > provide user access > contraseña > user must create a new > attach policies directly > amazonec2readonlyaccess > vemos que tiene de código > create user
 	
-	Entramos a developer_aws > nos pedira cambiar la clave > al ingresar no mostrara casi nada > se trata de lanzar una ec2 y no nos deja 
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260904002644.png)
 	
-	Volvemos al administrador iam > iam users > developer_aws > security credentials > create access key > command line interface (CLI) > confirmar > descripcion: developer aws > create access key > copiamos la publica y la secret que solo se muestra una unica vez. Luego en iam > iam users > el otro usuario> assign mfa device > nombre: cel-google > autenticatos app > scanear el qr en pantalla con el celular y colocar los codigos que nos apareceran en el celular   
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260904002822.png)
+	 que contiene este codigo
+	 ```
+	 {
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": [
+                "ec2:Describe*",
+                "ec2:GetSecurityGroupsForVpc"
+            ],
+            "Resource": "*"
+        },
+        {
+            "Effect": "Allow",
+            "Action": "elasticloadbalancing:Describe*",
+            "Resource": "*"
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "cloudwatch:ListMetrics",
+                "cloudwatch:GetMetricStatistics",
+                "cloudwatch:Describe*"
+            ],
+            "Resource": "*"
+        },
+        {
+            "Effect": "Allow",
+            "Action": "autoscaling:Describe*",
+            "Resource": "*"
+        }
+    ]
+}
+	 ```
+	
+	
+	Entramos a developer_aws > nos pedira cambiar la clave > al ingresar no mostrara casi nada > se trata de lanzar una ec2 y no nos deja  
+	
+	Volvemos al administrador iam > iam users > developer_aws > security credentials > create access key > command line interface (CLI) > confirmar > descripcion: developer aws > create access key > copiamos la publica y la secret que solo se muestra una unica vez. Luego en iam > iam users > el otro usuario> assign mfa device > nombre: cel-google > autenticatos app > scanear el qr en pantalla con el celular y colocar los codigos que nos apareceran en el celular    
 	
 
 2. Códing:
