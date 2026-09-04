@@ -25,4 +25,15 @@
 
 4. Gestor de Máquinas Virtuales
 	Luego del reinicio, en las Apps nos saldra una llamada Gestor de Máquinas Virtuales (virt-manager) la cual abriremos
+	![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260904013234.png)
+	
+	
+	**nodo-master (Servicios, Ansible y Compilación Base)**: Le damos a crear nueva maquina virtual > Medio de instalación local > siguiente > seleccionamos la iso que descargamos > siguiente > memoria 3815 MiB y 2 
+	
+	![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260904013405.png) 
+	![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260904013706.png) 
+	
+	
+	
+	
 	
