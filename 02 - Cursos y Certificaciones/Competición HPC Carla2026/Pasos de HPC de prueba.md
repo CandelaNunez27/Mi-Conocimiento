@@ -28,12 +28,23 @@
 	![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260904013234.png)
 	
 	
-	**nodo-master (Servicios, Ansible y Compilación Base)**: Le damos a crear nueva maquina virtual > Medio de instalación local > siguiente > seleccionamos la iso que descargamos > siguiente > memoria 3815 MiB y 2 
+	**nodo-master (Servicios, Ansible y Compilación Base)**: Le damos a crear nueva maquina virtual > Medio de instalación local > siguiente > seleccionamos la iso que descargamos > siguiente > memoria 3815 MiB y 2 nucleos de CPU > siguiente> dejar marcaado "habilitar almacenamiento para la mv" y asignar 20 GiB > siguente  > marcamos personalizar configuración antes de instalar > en red le colocamos 
 	
 	![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260904013405.png) 
 	![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260904013706.png) 
+	![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260904014548.png)
+	
+	![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260904014909.png)
+	
+	![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260904015622.png)
 	
 	
+	Como nos salia la nat inactiva la activamos con este comando `sudo virsh net-start default` y `sudo virsh net-autostart default` para que arranque cada vez que prenda la computadora.
+	![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260904015422.png)
+	![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260904015552.png)
 	
+	Para que deje de salir inactiva una vez ya acticada cancele todo y volve a realizar los pasos.
 	
+	![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260904015811.png) 
+	Luego nos sale un menu de configuración avanzaf
 	
