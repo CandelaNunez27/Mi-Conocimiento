@@ -24,16 +24,25 @@ Los dispositivos móviles que también se conectan a internet:
 - **Reloj inteligente:** puede conectarse a un celular para proporcionar al usuario alertas y mensajes, porporcionando también alertas de frecuencia cardíaca y contador de pasos.
 - **Gafas inteligentes:** una computadora portátil en forma de anteojos para navegar sin dejar de ver por las gafas, como Google Glass, contiene una pequeña pantalla y un pequeño panel táctil en el costado.
 
+![](../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260906034153.png)
 
 ## 1.4 Dispositivos Domésticos Conectados
 
 Los dispositivos domésticos que también se conectan a internet:
 - **Sistema de seguridad:** como sistemas de seguridad, la iluminación y los controles de climatización, se pueden supervisar y configurar en forma remota con un dispositivo móvil. 
 - **Dispositivos:** como refrigeradores, hornos y lavavajillas, se pueden supervisar y controlar en forma remota con un dispositivo móvil.
-- **Televisor inteligente:** puede conectarse a un celular para proporcionar al usuario alertas y mensajes, porporcionando también alertas de frecuencia cardíaca y contador de pasos.
-- **Consola de Juegos:** una computadora portátil en forma de anteojos para navegar sin dejar de ver por las gafas, como Google Glass, contiene una pequeña pantalla y un pequeño panel táctil en el costado.
+- **Televisor inteligente:** puede conectarse a Internet para tener acceso a contenido sin necesidad de equipo del proveedor de servicios de televisión. También permite navegar por la web, mostrar contenidos multimedia, etc.
+- **Consola de Juegos:** pueden conectarse a Internet para descargar juegos y jugar con amigos en línea.
+
+![](../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260906033402.png)
 
 
+## 1.4 Otros Dispositivos Conectados
 
+Los dispositivos domésticos que también se conectan a internet:
+- **Sistema de seguridad:** . 
+- **Dispositivos:** .
+- **Televisor inteligente:** puede conectarse a Internet para tener acceso a contenido sin necesidad de equipo del proveedor de servicios de televisión. También permite navegar por la web, mostrar contenidos multimedia, etc.
+- **Consola de Juegos:** pueden conectarse a Internet para descargar juegos y jugar con amigos en línea.
 
-
+![](../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260906033827.png)
