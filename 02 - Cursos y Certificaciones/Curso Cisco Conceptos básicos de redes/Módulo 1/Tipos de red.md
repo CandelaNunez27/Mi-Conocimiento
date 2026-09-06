@@ -21,10 +21,17 @@ Las redes locales se clasifican segun su tamaño:
 Los dispositivos móviles que también se conectan a internet:
 - **Celulares:** funcionalidad de múltiples dispositivos, como teléfonos, cámaras, GPS y demás. 
 - **Tablets:** como los celulares pero con una pantalla más grande para mejorar la esperiencia de ciartas tareas.
-- **Reloj inteligente:** puede conectarse a un celular para proporcionar al usuario alertas y mensajes, porporcionando también alertas de frecuencia car.
-- **Redes Mundiales:** Internet es una red de rede que coneta a cientos de millones de PCs en todo el mundo.
+- **Reloj inteligente:** puede conectarse a un celular para proporcionar al usuario alertas y mensajes, porporcionando también alertas de frecuencia cardíaca y contador de pasos.
+- **Gafas inteligentes:** una computadora portátil en forma de anteojos para navegar sin dejar de ver por las gafas, como Google Glass, contiene una pequeña pantalla y un pequeño panel táctil en el costado.
 
 
+## 1.4 Dispositivos Domésticos Conectados
+
+Los dispositivos domésticos que también se conectan a internet:
+- **Sistema de seguridad:** como sistemas de seguridad, la iluminación y los controles de climatización, se pueden supervisar y configurar en forma remota con un dispositivo móvil. 
+- **Dispositivos:** como refrigeradores, hornos y lavavajillas, se pueden supervisar y controlar en forma remota con un dispositivo móvil.
+- **Televisor inteligente:** puede conectarse a un celular para proporcionar al usuario alertas y mensajes, porporcionando también alertas de frecuencia cardíaca y contador de pasos.
+- **Consola de Juegos:** una computadora portátil en forma de anteojos para navegar sin dejar de ver por las gafas, como Google Glass, contiene una pequeña pantalla y un pequeño panel táctil en el costado.
 
 
 
