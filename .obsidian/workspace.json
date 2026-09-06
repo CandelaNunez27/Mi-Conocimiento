@@ -98,8 +98,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "2c47654ff3f8d557",
@@ -225,8 +224,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "8464ad5eebc345b8",
+  "active": "e6bb5d90017c09e9",
   "lastOpenFiles": [
+    "Curso Cisco Conceptos básicos de redes",
     "04 - Otros/Imagenes/Pasted image 20260904030347.png",
     "04 - Otros/Imagenes/Pasted image 20260904030238.png",
     "02 - Cursos y Certificaciones/Competición HPC Carla2026/Info de la organización.md",
@@ -239,7 +239,6 @@
     "04 - Otros/Imagenes/Pasted image 20260904023911.png",
     "04 - Otros/Imagenes/Pasted image 20260904023818.png",
     "04 - Otros/Imagenes/Pasted image 20260904023649.png",
-    "04 - Otros/Imagenes/Pasted image 20260904023418.png",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 4/Clases/sin terminar2026-08-14 Día 34 Práctica Autenticación.md",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 4/Clases/2026-08-21 Día 36 Llaves asimetricas y conexión ssh.md",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 4/Clases/2026-08-12 Día 33 Gestión de Identidades (IAM).md",
