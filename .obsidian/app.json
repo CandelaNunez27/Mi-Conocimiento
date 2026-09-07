@@ -4,5 +4,6 @@
   "attachmentFolderPath": "04 - Otros/Imagenes",
   "newFileLocation": "current",
   "useMarkdownLinks": true,
-  "newLinkFormat": "relative"
+  "newLinkFormat": "relative",
+  "spellcheck": true
 }
