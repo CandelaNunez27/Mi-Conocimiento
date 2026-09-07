@@ -43,6 +43,6 @@ Los dispositivos domésticos que también se conectan a internet:
 - **Automóviles Inteligentes:** Autos modernos se pueden conectar a internet para mapas, audio, videos, mensajes, llamadas, o alertas del auto. 
 - **Etiquetas de RFID:** Las etiquetas de identificación por radiofrecuencia (Radio Frequency Indication - RFID) se pueden colocar dentro o sobre objetos para rastrearlos o monitorear sensores para muchas condiciones.
 - **Sensores y accionadores:** Los sensores pueden proporcionar datos de temperatura, humedad, velocidad del viento, presión barométrica y humedad del suelo. Los accionadores pueden activarse automáticamente según las condiciones actuales. Entre ellos pueden trabajar juntos para automatizar y monitorear.
-- **Dispositivos Médicos:** como los marcapasos, las bombas de insulina y los monitores hospitalarios.
+- **Dispositivos Médicos:** como los marcapasos, las bombas de insulina y los monitores hospitalarios, ofrecen  información o alertas médicas.
 
 ![](../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260906033827.png)
