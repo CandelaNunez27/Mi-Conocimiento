@@ -36,6 +36,20 @@
             }
           },
           {
+            "id": "a1403f5d017f70cd",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "02 - Cursos y Certificaciones/Curso Cisco Conceptos básicos de redes/Módulo 1/Examen 1  Módulo 1.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Examen 1  Módulo 1"
+            }
+          },
+          {
             "id": "92649d90c8b4fc3e",
             "type": "leaf",
             "state": {
@@ -64,7 +78,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -141,8 +155,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "2c47654ff3f8d557",
@@ -268,13 +281,15 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "b5c35f6330b4519a",
+  "active": "92649d90c8b4fc3e",
   "lastOpenFiles": [
-    "02 - Cursos y Certificaciones/Curso Cisco Conceptos básicos de redes/Módulo 1/1. Tipos de red.md",
+    "02 - Cursos y Certificaciones/Curso Cisco Conceptos básicos de redes/Módulo 1/Examen 1  Módulo 1.md",
     "02 - Cursos y Certificaciones/Curso Cisco Conceptos básicos de redes/Módulo 1/Resumen Módulo 1.md",
+    "02 - Cursos y Certificaciones/Curso Cisco Conceptos básicos de redes/Módulo 2",
+    "02 - Cursos y Certificaciones/Curso Cisco Conceptos básicos de redes/Módulo 1/2. Transmisión de datos.md",
+    "02 - Cursos y Certificaciones/Curso Cisco Conceptos básicos de redes/Módulo 1/1. Tipos de red.md",
     "02 - Cursos y Certificaciones/Curso Cisco Conceptos básicos de redes/Módulo 1/3. Ancho de Banda y Rendimiento.md",
     "04 - Otros/Imagenes/Pasted image 20260907041034.png",
-    "02 - Cursos y Certificaciones/Curso Cisco Conceptos básicos de redes/Módulo 1/2. Transmisión de datos.md",
     "04 - Otros/Imagenes/Pasted image 20260907034442.png",
     "04 - Otros/Imagenes/Pasted image 20260906034153.png",
     "04 - Otros/Imagenes/Pasted image 20260906033827.png",
@@ -309,13 +324,11 @@
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 3/Clases/2026-07-03 Día 24 Práctica Kubernetes minikube.md",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 3/Clases/2026-07-01 Día 23 Kubernetes.md",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 3/Clases/2026-06-26 Día 22 Contenedores Parte 2.md",
-    "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 3/Clases/2026-06-24 Día 21 Contenedores Parte 1.md",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 4/Clases",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 4",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 3/TP Obligatorio",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 3/Clases",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 3",
-    "01 - Tec Redes Datos y Telecom/2º Año/01 - Redes/Módulo 1.2",
     "1° Año/01 - Arquitectura de Computadoras/Sin título.canvas"
   ]
 }
