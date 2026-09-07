@@ -9,7 +9,7 @@ Internet no pertenece a una persona o un grupo. Internet es una colección mundi
 
 Las redes locales se clasifican segun su tamaño:
 - **Redes Domésticas Pequeñas:** consiste en conexión de pocas PCs entre sí y hacia internet.
-- **Redes Domésticas/De oficina Pequeñas:** Denominadas SOHO (Small Office/Home Office), consite en PCs se conecten a una red corporativa o accedan a recursis comparticos centralizados.
+- **Redes Domésticas/De oficina Pequeñas:** *Denominadas SOHO (Small Office/Home Office), consite en PCs se conecten a una red corporativa o accedan a recursis comparticos centralizados.
 - **Redes Medianas a Grandes:** consiste en muchas ubicaciones con cientos o miles de hosts interconectados, usado generalmente en corporaciones y escuelas.
 - **Redes Mundiales:** Internet es una red de rede que coneta a cientos de millones de PCs en todo el mundo.
 
@@ -41,7 +41,7 @@ Los dispositivos domésticos que también se conectan a internet:
 
 Los dispositivos domésticos que también se conectan a internet:
 - **Automóviles Inteligentes:** Autos modernos se pueden conectar a internet para mapas, audio, videos, mensajes, llamadas, o alertas del auto. 
-- **Etiquetas de RFID:** Las etiquetas de identificación por radiofrecuencia (Radio Frequency Indication - RFID) se pueden colocar dentro o sobre objetos para rastrearlos o monitorear sensores para muchas condiciones.
+- **Etiquetas de RFID:** *Las etiquetas de identificación por radiofrecuencia (Radio Frequency Indication - RFID) se pueden colocar dentro o sobre objetos para rastrearlos o monitorear sensores para muchas condiciones.
 - **Sensores y accionadores:** Los sensores pueden proporcionar datos de temperatura, humedad, velocidad del viento, presión barométrica y humedad del suelo. Los accionadores pueden activarse automáticamente según las condiciones actuales. Entre ellos pueden trabajar juntos para automatizar y monitorear.
 - **Dispositivos Médicos:** como los marcapasos, las bombas de insulina y los monitores hospitalarios, ofrecen  información o alertas médicas.
 

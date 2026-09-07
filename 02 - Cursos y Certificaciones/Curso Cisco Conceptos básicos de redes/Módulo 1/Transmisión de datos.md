@@ -1,6 +1,6 @@
-# 1 Transmisión de datos
+# 2 Transmisión de datos
 
-## 1.1 El bit
+## 2.1 El bit
 
 Todos nuestros datos se almacenan y transmiten como una serie de bits en binario (dos valores posibles), ya que las computadoras solo interpretan patrones de bits.
 
@@ -14,7 +14,7 @@ Las computadoras para representar e interpretar letras, números, caracteres, co
 
 Los códigos se pueden usar para representar casi cualquier tipo de información en formato digital: datos informáticos, gráficos, fotos, voz, video y música.
 
-
+## 2.2 Métodos Comunes de Transmisión de Datos
 
 
 
