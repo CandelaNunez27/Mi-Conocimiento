@@ -28,21 +28,21 @@
   
   - Etiquetas de RFID.
 
-## 8) ¿A quién le pertenece Internet?
+## 8) ¿Cuántos bits tiene un byte?
   
-  - A ninguna persona o grupo.
+  - 8.
 
-## 9) ¿A quién le pertenece Internet?
+## 9) ¿Qué dos números son validos posibles de un bit?
   
-  - A ninguna persona o grupo.
+  - 1 y 0.
 
-## 10) ¿A quién le pertenece Internet?
+## 10) ¿Qué medida se utiliza para indicar miles de bist por segundo?
   
-  - A ninguna persona o grupo.
+  - Kilobits por segundo (Kbps).
 
-## 11) ¿A quién le pertenece Internet?
+## 11) ¿A qué tipo de red debe acceder un usuario doméstico para realizar compras en línea?
   
-  - A ninguna persona o grupo.
+  - Internet.
 
 
 # Nota: 100
