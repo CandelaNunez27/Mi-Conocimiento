@@ -27,6 +27,6 @@
 	Facilidad de configuración.
 
 10)  **¿Cuál es la característica de una aplicación punto a punto (P2P)?**
-	  Los recursos necesarios para la aplicación están centralizados.
+	  Cada dispositivo que utiliza la aplicación proporciona una interfaz de usuario y ejecuta un servicio en segundo plano.
 
 # Nota: 10 (diez)
