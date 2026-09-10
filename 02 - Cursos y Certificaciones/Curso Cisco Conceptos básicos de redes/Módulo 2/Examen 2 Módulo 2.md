@@ -1,23 +1,23 @@
 
 1) **¿Qué tipo de red está definida por dos computadoras que pueden enviar y recibir solicitudes de recurso?**
-	 Que los trabajadores remotos puedan conectarse a los archivos y recursos de la empresa de forma privada y segura desde cualquier lugar.
+	 Entre pares.
 
-2) **Una conexión VPN ayuda a proteger la privacidad en línea del usuario al cifrar los datos en código y ocultar la dirección IP del dispositivo, volviendo la información ilegible para terceros.**
-	Verdadero.
+2) **¿Cuáles de las siguientes son dos funciones de los dispositivos finales en una red?**
+	Constituyen la interfaz entre los humanos y la red de comunicación y Dan origen a los datos que fluyen por la red.
 
-3) **En la estrategia de optimización de costos (FinOps) de Microsoft Azure, la "Ventaja Híbrida" consiste en obtener grandes ahorros económicos al reutilizar en la nube las licencias locales preexistentes de Windows o SQL Server de la empresa.**
-	Verdadero.
+3) **Un usuario particular está buscando una conexión ISP que proporcione transmisión digital de alta velocidad en líneas telefónicas comunes. ¿Qué tipo de conexión ISP debe utilizar?**
+	DSL.
 
-4) **¿Cuál es el caso de uso central para configurar una red "VPN de Extranet"?**
-	Vincular redes locales (LAN) de distintas organizaciones, lo que es útil para colaborar de forma segura con proveedores o socios externos.
+4) **¿Qué tipo de conexión a internet sería el más adecuado para una residencia en un área remota sin cobertura de telefonía móvil ni conectividad cableada?**
+	Red satelital.
 
-5) **La Nube Híbrida no consiste simplemente en "usar dos nubes distintas", sino que exige una conexión técnica sólida (como un túnel VPN o Direct Connect) entre ambas infraestructuras.**
-	Verdadero.
+5) **¿Qué término describe correctamente la función de un ISP?**
+	Responsable de proporcionar el enlace entre una red privada e Internet.
 
-6) **Al diseñar y segmentar una red virtual en la nube, ¿dónde recomiendan las buenas prácticas ubicar una base de datos?**
-	En una subred privada, aislada, donde solo reciba tráfico de red interno.
+6) **¿Qué dispositivo es un dispositivo intermediario?**
+	Cortafuegos.
 
-7) **¿Qué característica técnica define con exactitud a un hipervisor de Tipo 1 (Bare Metal)?**
+7) **¿Qué situación describe una red entre pares?**
 	Se instala de forma directa sobre el hardware físico del equipo y es el más eficiente.
 
 8) **¿Cuál de las siguientes es una característica técnica que define a una Nube Pública?**
