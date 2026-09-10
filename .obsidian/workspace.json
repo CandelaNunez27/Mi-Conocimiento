@@ -77,7 +77,8 @@
               "title": "Examen 2 Módulo 2"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -281,21 +282,22 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "e2e8589c6db541fc",
+  "active": "72a0cabb1e9ce7ba",
   "lastOpenFiles": [
+    "04 - Otros/Imagenes/Pasted image 20260908043459.png",
+    "02 - Cursos y Certificaciones/Curso Cisco Conceptos básicos de redes/Módulo 2/1. Clientes y Servidores.md",
+    "02 - Cursos y Certificaciones/Curso Cisco Conceptos básicos de redes/Módulo 2/2. Componentes de la Red.md",
     "04 - Otros/Imagenes/Pasted image 20260908042612.png",
     "04 - Otros/Imagenes/Pasted image 20260908041754.png",
     "04 - Otros/Imagenes/Pasted image 20260908040324.png",
     "04 - Otros/Imagenes/Pasted image 20260908033048.png",
     "04 - Otros/Imagenes/Pasted image 20260908030700.png",
     "02 - Cursos y Certificaciones/Curso Cisco Conceptos básicos de redes/Módulo 1/1. Tipos de red.md",
-    "02 - Cursos y Certificaciones/Curso Cisco Conceptos básicos de redes/Módulo 2/1. Clientes y Servidores.md",
     "02 - Cursos y Certificaciones/Curso Cisco Conceptos básicos de redes/Módulo 2/Examen 2 Módulo 2.md",
     "02 - Cursos y Certificaciones/Curso Cisco Conceptos básicos de redes/Módulo 1/3. Ancho de Banda y Rendimiento.md",
     "02 - Cursos y Certificaciones/Curso Cisco Conceptos básicos de redes/Módulo 1/2. Transmisión de datos.md",
     "02 - Cursos y Certificaciones/Curso Cisco Conceptos básicos de redes/Módulo 2/Resumen Módulo 2.md",
     "02 - Cursos y Certificaciones/Curso Cisco Conceptos básicos de redes/Módulo 2/3. Opciones de Conectividad al ISP.md",
-    "02 - Cursos y Certificaciones/Curso Cisco Conceptos básicos de redes/Módulo 2/2. Componentes de la Red.md",
     "02 - Cursos y Certificaciones/Curso Cisco Conceptos básicos de redes/Módulo 1/Examen 1  Módulo 1.md",
     "02 - Cursos y Certificaciones/Curso Cisco Conceptos básicos de redes/Módulo 1/Resumen Módulo 1.md",
     "02 - Cursos y Certificaciones/Curso Cisco Conceptos básicos de redes/Módulo 2",
@@ -304,7 +306,6 @@
     "04 - Otros/Imagenes/Pasted image 20260906034153.png",
     "04 - Otros/Imagenes/Pasted image 20260906033827.png",
     "04 - Otros/Imagenes/Pasted image 20260906033556.png",
-    "04 - Otros/Imagenes/Pasted image 20260906033402.png",
     "02 - Cursos y Certificaciones/Competición HPC Carla2026/Info de la organización.md",
     "02 - Cursos y Certificaciones/Competición HPC Carla2026/Informe HPC.md",
     "02 - Cursos y Certificaciones/Competición HPC Carla2026/Pasos de HPC de prueba.md",
