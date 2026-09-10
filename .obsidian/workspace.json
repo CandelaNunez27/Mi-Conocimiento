@@ -63,8 +63,7 @@
               "title": "Examen 3 Módulo 3"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -141,7 +140,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "2c47654ff3f8d557",
@@ -267,10 +267,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "2e435438633fe305",
+  "active": "3902a9656c65151d",
   "lastOpenFiles": [
-    "02 - Cursos y Certificaciones/Curso Cisco Conceptos básicos de redes/Módulo 3/2. Conectividad de Dispositivos Móviles.md",
     "02 - Cursos y Certificaciones/Curso Cisco Conceptos básicos de redes/Módulo 3/Resumen Módulo 3.md",
+    "02 - Cursos y Certificaciones/Curso Cisco Conceptos básicos de redes/Módulo 3/2. Conectividad de Dispositivos Móviles.md",
     "02 - Cursos y Certificaciones/Curso Cisco Conceptos básicos de redes/Módulo 3/Examen 3 Módulo 3.md",
     "02 - Cursos y Certificaciones/Curso Cisco Conceptos básicos de redes/Módulo 3/1. Redes inalámbricas.md",
     "02 - Cursos y Certificaciones/Curso Cisco Conceptos básicos de redes/Módulo 2/Examen 2 Módulo 2.md",
