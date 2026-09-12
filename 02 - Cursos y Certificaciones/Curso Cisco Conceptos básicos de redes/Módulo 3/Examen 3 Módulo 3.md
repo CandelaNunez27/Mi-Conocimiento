@@ -1,28 +1,28 @@
 1) **¿Qué término se usa para describir la conexión de un dispositivo móvil a otro dispositivo móvil o computadora para compartir una conexión de red?**
 	 Anclaje de red.
 
-2) **¿Qué tecnología inalámbrixa utiliza un proceso de emparejamiento de dispositivos para comunicarse y funcionar en distancias cortas de ?**
-	Verdadero.
+2) **¿Qué tecnología inalámbrixa utiliza un proceso de emparejamiento de dispositivos para comunicarse y funcionar en distancias cortas de 100 metros?**
+	Bluetooth.
 
-3) **En la estrategia de optimización de costos (FinOps) de Microsoft Azure, la "Ventaja Híbrida" consiste en obtener grandes ahorros económicos al reutilizar en la nube las licencias locales preexistentes de Windows o SQL Server de la empresa.**
-	Verdadero.
+3) **¿Qué tecnologia permite que un teléfono móvil se use como dispositivo manos libre? 4G, Bluetooth, wi-fi, nfc**
+	Bluetooth.
 
-4) **¿Cuál es el caso de uso central para configurar una red "VPN de Extranet"?**
-	Vincular redes locales (LAN) de distintas organizaciones, lo que es útil para colaborar de forma segura con proveedores o socios externos.
+4) **Un estudiante compró una nueva tableta habilitada para WI-FI. ¿Qué se necesita para conectarse este dispositivo a internet?**
+	Una LAN inálambrica.
 
-5) **La Nube Híbrida no consiste simplemente en "usar dos nubes distintas", sino que exige una conexión técnica sólida (como un túnel VPN o Direct Connect) entre ambas infraestructuras.**
-	Verdadero.
+5) **¿Qué tecnología permite que un dispositivo móvil establezca una comunicación inalámbrica con otro dispositivo móvil al tocarlos?**
+	NFC.
 
-6) **Al diseñar y segmentar una red virtual en la nube, ¿dónde recomiendan las buenas prácticas ubicar una base de datos?**
-	En una subred privada, aislada, donde solo reciba tráfico de red interno.
+6) **¿Qué tecnología permite que un dispositivo móvil comparta una conexión a Internet con otros dispositivos a través del anclaje de red?**
+	Wi-fi.
 
-7) **¿Qué característica técnica define con exactitud a un hipervisor de Tipo 1 (Bare Metal)?**
-	Se instala de forma directa sobre el hardware físico del equipo y es el más eficiente.
+7) **¿Cuáles son los dos métodos que se utilizan comúnmente en un dispositivo  móvil para proporcionar conectividad a internet?**
+	Wi-fi y Datos Móviles .
 
-8) **¿Cuál de las siguientes es una característica técnica que define a una Nube Pública?**
-	Los servicios se ofrecen a través de internet público y son compartidos por múltiples organizaciones (multi-tenancy).
+8) **¿Qué tecnoñogía permite que un cliente se conecte a un sistema de pago con un teléfono inteligente?**
+	NFC.
 
-9) **Si tu organización adquiere otra empresa en Azure y quieres que los servidores virtuales de ambas redes se comuniquen directamente usando direcciones IP privadas sin salir al internet público, ¿qué mecanismo de red debes usar?**
+9) **Un vendedor utiliza una aplicación de mapas de teléfonos inteligentes para ubicar un negocio. ¿Qué tecnologia inalámbric?**
 	VNet Peering.
 
 10) **Según el ecosistema estratégico actual de proveedores cloud (hacia 2026), ¿cuál de los siguientes mantiene el liderazgo global en cuota de mercado con alrededor de un 31%?**
