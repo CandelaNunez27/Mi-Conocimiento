@@ -64,7 +64,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -268,8 +268,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "c3b49a4cba0161a7",
+  "active": "55d1e9b3a62c9755",
   "lastOpenFiles": [
+    "02 - Cursos y Certificaciones/Curso Cisco Conceptos básicos de redes/Módulo 3/2. Conectividad de Dispositivos Móviles.md",
     "04 - Otros/Imagenes/Pasted image 20260910121141.png",
     "02 - Cursos y Certificaciones/Curso Cisco Conceptos básicos de redes/Módulo 3/1. Redes inalámbricas.md",
     "04 - Otros/Imagenes/Pasted image 20260910120051.png",
@@ -277,7 +278,6 @@
     "04 - Otros/Imagenes/Pasted image 20260910115827.png",
     "04 - Otros/Imagenes/Pasted image 20260910115709.png",
     "02 - Cursos y Certificaciones/Curso Cisco Conceptos básicos de redes/Módulo 3/Resumen Módulo 3.md",
-    "02 - Cursos y Certificaciones/Curso Cisco Conceptos básicos de redes/Módulo 3/2. Conectividad de Dispositivos Móviles.md",
     "02 - Cursos y Certificaciones/Curso Cisco Conceptos básicos de redes/Módulo 3/Examen 3 Módulo 3.md",
     "02 - Cursos y Certificaciones/Curso Cisco Conceptos básicos de redes/Módulo 2/Examen 2 Módulo 2.md",
     "02 - Cursos y Certificaciones/Curso Cisco Conceptos básicos de redes/Módulo 3",
@@ -291,7 +291,6 @@
     "04 - Otros/Imagenes/Pasted image 20260910023137.png",
     "04 - Otros/Imagenes/Pasted image 20260910022535.png",
     "04 - Otros/Imagenes/Pasted image 20260910015556.png",
-    "04 - Otros/Imagenes/Pasted image 20260910015539.png",
     "02 - Cursos y Certificaciones/Curso Cisco Conceptos básicos de redes/Módulo 1/1. Tipos de red.md",
     "02 - Cursos y Certificaciones/Curso Cisco Conceptos básicos de redes/Módulo 1/3. Ancho de Banda y Rendimiento.md",
     "02 - Cursos y Certificaciones/Curso Cisco Conceptos básicos de redes/Módulo 1/2. Transmisión de datos.md",

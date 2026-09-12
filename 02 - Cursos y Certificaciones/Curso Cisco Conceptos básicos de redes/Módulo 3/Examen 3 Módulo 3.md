@@ -1,7 +1,7 @@
-1) **¿Cuál es el principal caso de uso operativo de una "VPN de acceso remoto" (cliente a sitio)?**
-	 Que los trabajadores remotos puedan conectarse a los archivos y recursos de la empresa de forma privada y segura desde cualquier lugar.
+1) **¿Qué término se usa para describir la conexión de un dispositivo móvil a otro dispositivo móvil o computadora para compartir una conexión de red?**
+	 Anclaje de red.
 
-2) **Una conexión VPN ayuda a proteger la privacidad en línea del usuario al cifrar los datos en código y ocultar la dirección IP del dispositivo, volviendo la información ilegible para terceros.**
+2) **¿Qué tecnología inalámbrixa utiliza un proceso de emparejamiento de dispositivos para comunicarse y funcionar en distancias cortas de ?**
 	Verdadero.
 
 3) **En la estrategia de optimización de costos (FinOps) de Microsoft Azure, la "Ventaja Híbrida" consiste en obtener grandes ahorros económicos al reutilizar en la nube las licencias locales preexistentes de Windows o SQL Server de la empresa.**
