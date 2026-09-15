@@ -245,8 +245,8 @@
             "state": {
               "type": "calendar",
               "state": {},
-              "icon": "calendar-with-checkmark",
-              "title": "Calendar"
+              "icon": "lucide-ghost",
+              "title": "calendar"
             }
           }
         ]
@@ -264,8 +264,7 @@
       "templates:Insertar plantilla": false,
       "command-palette:Abrir paleta de comandos": false,
       "bases:Crear nueva base": false,
-      "daily-notes:Abrir la nota de hoy": false,
-      "obsidian-git:Open Git source control": false
+      "daily-notes:Abrir la nota de hoy": false
     }
   },
   "active": "55d1e9b3a62c9755",
