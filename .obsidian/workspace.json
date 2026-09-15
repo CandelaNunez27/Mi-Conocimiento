@@ -20,8 +20,23 @@
               "icon": "lucide-file",
               "title": "1. Conceptos  Básicos de Redes Domésticas"
             }
+          },
+          {
+            "id": "a56fc50f6419caef",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "02 - Cursos y Certificaciones/Curso Cisco Conceptos básicos de redes/Módulo 4/2. Tecnologías de Red en el Hogar.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "2. Tecnologías de Red en el Hogar"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -225,11 +240,13 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "9c1ac70effb77ed6",
+  "active": "a56fc50f6419caef",
   "lastOpenFiles": [
+    "02 - Cursos y Certificaciones/Curso Cisco Conceptos básicos de redes/Módulo 4/1. Conceptos  Básicos de Redes Domésticas.md",
+    "02 - Cursos y Certificaciones/Curso Cisco Conceptos básicos de redes/Módulo 4/2. Tecnologías de Red en el Hogar.md",
+    "04 - Otros/Imagenes/Pasted image 20260915000803.png",
     "04 - Otros/Imagenes/Pasted image 20260914234839.png",
     "02 - Cursos y Certificaciones/Curso Cisco Conceptos básicos de redes/Módulo 3/2. Conectividad de Dispositivos Móviles.md",
-    "02 - Cursos y Certificaciones/Curso Cisco Conceptos básicos de redes/Módulo 4/1. Conceptos  Básicos de Redes Domésticas.md",
     "02 - Cursos y Certificaciones/Curso Cisco Conceptos básicos de redes/Módulo 4",
     "02 - Cursos y Certificaciones/Curso Cisco Conceptos básicos de redes/Módulo 3/Examen 3 Módulo 3.md",
     "04 - Otros/Imagenes/Pasted image 20260910121141.png",
@@ -249,8 +266,6 @@
     "04 - Otros/Imagenes/Pasted image 20260910025335.png",
     "04 - Otros/Imagenes/Pasted image 20260910024236.png",
     "04 - Otros/Imagenes/Pasted image 20260910023137.png",
-    "04 - Otros/Imagenes/Pasted image 20260910022535.png",
-    "04 - Otros/Imagenes/Pasted image 20260910015556.png",
     "02 - Cursos y Certificaciones/Curso Cisco Conceptos básicos de redes/Módulo 1/1. Tipos de red.md",
     "02 - Cursos y Certificaciones/Curso Cisco Conceptos básicos de redes/Módulo 1/3. Ancho de Banda y Rendimiento.md",
     "02 - Cursos y Certificaciones/Curso Cisco Conceptos básicos de redes/Módulo 1/2. Transmisión de datos.md",
