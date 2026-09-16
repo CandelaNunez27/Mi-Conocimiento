@@ -106,13 +106,16 @@
 	creación de usuario
 	![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260916032518.png)
 	
-	red y no
+	red y nombre de equipo: activar la interfaz eno1np0 y colocamos el nombre nodo-1 no lo hacemos
 	
+	![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260916032937.png)
 	
+	Le damos a comenzar instalacion
+	![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260916033251.png)
+	![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260916033950.png)
 	
-	
-	
-	
+	al terminar mostrara la consola
+	![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260916034330.png)
 	
 	
 	
