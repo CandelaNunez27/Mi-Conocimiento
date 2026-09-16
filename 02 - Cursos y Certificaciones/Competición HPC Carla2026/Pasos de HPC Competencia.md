@@ -74,7 +74,19 @@
 	
 	![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260916025802.png)
 	
+	Cuando aparezcan las opciones del teclado apretar F11 para ingresar a la lista de booteo. Elegir iLO Virtual CD-ROM.
 	
+	![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260916025921.png) 
+	![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260916030234.png)
+	
+	Luego seleccionar del GRUB la opcion Install Rocky Linux Minimal 10.2
+	
+	![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260916030418.png)
+	
+
+1. Completar los pasos de instalación:
+	
+	![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260916031226.png)
 	
 	
 	
