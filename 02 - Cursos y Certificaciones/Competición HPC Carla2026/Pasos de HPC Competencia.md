@@ -51,6 +51,28 @@
 	En la consola donde tiramos el primer ssh descargamos la iso `wget https://mirror.hnd.cl/rockylinux/10.2/isos/x86_64/Rocky-10.2-x86_64-minimal.iso`
 	![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260916020402.png)
 
+7. Lenvantar el servidor HTTP:
+	Montar la iso descargada e instalarla. Primero tiramos el comando `python3 -m RangeHTTPServer 8013 --bind 10.7.12.102`en la primera consola, el puerto y la ip del bastión local es asignada por la organización.
+	
+	Ahora si, ngresando a https:\\localhost:8000 nos vamos a Remote Console & Media -> Virtual Media -> Connect CD/DVD-ROM
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 --- 
 **
