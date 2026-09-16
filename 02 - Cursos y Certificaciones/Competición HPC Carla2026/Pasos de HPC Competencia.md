@@ -27,7 +27,24 @@
 	![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260916002516.png)
 	
 
-
+4. Puente ssh para la red del BMC:
+	nodo  1 : 10.1.13.1
+	nodo  2 : 10.1.13.2
+	nodo  3 : 10.1.13.3
+	
+	Ahora harás un "puente" a través del bastión para alcanzar la interfaz de administración (BMC) de tu Nodo 1, abrir nueva terminal : `ssh -L 8000:10.1.13.1:443 scct-2613@bastion.tail263e10.ts.net`
+	![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260916005243.png)
+	
+	Luego en el navegador buscar `https:\\localhost:8000
+	![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260916005423.png)
+	
+	Ingresamos con nuestras credenciales proporcionadas por los organizadores:
+	- Usuario: scct-2613
+	- Password: -
+	
+	
+	
+	
 
 
 
