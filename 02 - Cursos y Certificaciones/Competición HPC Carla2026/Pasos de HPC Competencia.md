@@ -21,7 +21,7 @@
 	   ![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260916001905.png)
 	   ![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260916001935.png)
 
-2. Nos conectamos al bastion por ssh con su nombre de dominio completo:
+4. Nos conectamos al bastion por ssh con su nombre de dominio completo:
 	`ssh scct-2613@bastion.tail263e10.ts.net` 
 	
 	![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260916002516.png)
