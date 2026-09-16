@@ -49,6 +49,7 @@
 
 6.  ISO:
 	En la consola donde tiramos el primer ssh descargamos la iso `wget https://mirror.hnd.cl/rockylinux/10.2/isos/x86_64/Rocky-10.2-x86_64-minimal.iso`
+	![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260916020402.png)
 
 
 --- 
