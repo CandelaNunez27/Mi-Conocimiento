@@ -7,8 +7,25 @@
 
 2. Usa el siguiente enlace para agregar el host bastión a tu red de Tailscale: **[https://login.tailscale.com/admin/invite/SFneanC8udULcaAz7ymb11](https://login.tailscale.com/admin/invite/SFneanC8udULcaAz7ymb11)** 
    ![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260916001236.png)
+   ![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260916001302.png)
    
+   3. Descargar desde **[https://tailscale.com/download](https://tailscale.com/download)** 
+	   `curl -fsSL https://tailscale.com/install.sh | sh` 
+	   ![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260916001445.png)
+	   ![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260916001512.png)
+	   
+	   nos loging en la consola
+	   `sudo tailscale up
+	   ![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260916001841.png)
+	   ![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260916001854.png)
+	   ![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260916001905.png)
+	   ![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260916001935.png)
 
+2. Nos conectamos al bastion por ssh con su nombre de dominio completo:
+	`ssh scct-2613@bastion.tail263e10.ts.net` 
+	
+	![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260916002516.png)
+	
 
 
 
