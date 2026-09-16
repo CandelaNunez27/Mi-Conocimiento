@@ -14,7 +14,7 @@
 	   ![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260916001445.png)
 	   ![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260916001512.png)
 	   
-	   nos loging en la consola
+	   iniciamos sesión en la consola
 	   `sudo tailscale up
 	   ![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260916001841.png)
 	   ![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260916001854.png)
@@ -27,12 +27,12 @@
 	![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260916002516.png)
 	
 
-4. Puente ssh para la red del BMC:
+5. Puente ssh para la red del BMC:
 	nodo  1 : 10.1.13.1
 	nodo  2 : 10.1.13.2
 	nodo  3 : 10.1.13.3
 	
-	Ahora harás un "puente" a través del bastión para alcanzar la interfaz de administración (BMC) de tu Nodo 1, abrir nueva terminal : `ssh -L 8000:10.1.13.1:443 scct-2613@bastion.tail263e10.ts.net`
+	Ahora creamos un "puente" a través del bastión para alcanzar la interfaz de administración (BMC) del Nodo 1, abrir nueva terminal : `ssh -L 8000:10.1.13.1:443 scct-2613@bastion.tail263e10.ts.net`
 	![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260916005243.png)
 	
 	Luego en el navegador buscar `https:\\localhost:8000
@@ -42,12 +42,13 @@
 	- Usuario: scct-2613
 	- Password: -
 	
-	
+	![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260916005850.png)
 	
 	
 
 
-
+6.  ISO:
+	
 
 
 --- 
