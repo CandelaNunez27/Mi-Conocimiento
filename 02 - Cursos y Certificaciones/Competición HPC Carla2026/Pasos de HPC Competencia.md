@@ -88,6 +88,31 @@
 	
 	![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260916031226.png)
 	
+	![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260916031528.png)
+	
+	
+	Reclamar espacio
+	![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260916031538.png)
+	
+	
+	
+	Eliminar todo y reclamar espacio
+	![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260916031600.png)  
+	
+	contraseña de root 
+	![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260916032136.png)
+	
+	
+	creación de usuario
+	![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260916032518.png)
+	
+	red y no
+	
+	
+	
+	
+	
+	
 	
 	
 	
