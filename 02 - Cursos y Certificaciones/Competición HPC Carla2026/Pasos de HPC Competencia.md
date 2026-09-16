@@ -52,13 +52,35 @@
 	![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260916020402.png)
 
 7. Lenvantar el servidor HTTP:
-	Montar la iso descargada e instalarla. Primero tiramos el comando `python3 -m RangeHTTPServer 8013 --bind 10.7.12.102`en la primera consola, el puerto y la ip del bastión local es asignada por la organización.
+	Montar la iso descargada e instalarla. Primero tiramos el comando `python3 -m RangeHTTPServer 8013 --bind 10.7.12.102`en la primera consola, el puerto y la ip del bastión local es asignada por la organización. si sale error instalar el módulo faltante con `python3 -m pip install --user RangeHTTPServer
 	
-	Ahora si, ngresando a https:\\localhost:8000 nos vamos a Remote Console & Media -> Virtual Media -> Connect CD/DVD-ROM
+	![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260916024441.png)
+	
+	![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260916024522.png)
+	
+	Ahora si, ngresando a https:\\localhost:8000 nos vamos a Remote Console & Media -> Virtual Media -> Connect CD/DVD-ROM -> virtual media URL = http://10.7.12.102:8013/Rocky-10.2-x86_64-minimal.iso -> Insert media
+	
+	![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260916024911.png)
+	
+	![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260916024929.png)
+	
 
 
+### Acceder al Nodo 1
 
-
+1. Consola remota HTML5
+	Ir a Remote Console & Media -> Launch -> HTML5 Console (Abrira una nueva pastaña con el servidor apagado), logo de iLO 5 -> Power -> momentary press
+	![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260916025613.png)
+	
+	![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260916025802.png)
+	
+	
+	
+	
+	
+	
+	
+ 
 
 
 
