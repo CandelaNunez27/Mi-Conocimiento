@@ -277,9 +277,12 @@
 	
 
 1. Ansible
-	descargar nano y 
-	Crear el arhivo de host
+	descargar nano y saltar error
+	![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260918102450.png)
+	![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260918102507.png)
 	
+	Crear el arhivo de host
+	![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260918102521.png)
 
 
 
