@@ -277,6 +277,7 @@
 	
 
 1. Ansible
+	descargar nano y 
 	Crear el arhivo de host
 	
 
