@@ -255,7 +255,29 @@
 	
 
 
+### Nodo 1 maestro
 
+1. Agregar dns
+	
+	`sudo nmcli connection modify eno1np0 ipv4.dns 8.8.8.8 
+	`sudo nmcli connection up eno1np0
+	
+	![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260918095645.png)
+	![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260918095802.png)
+	
+
+1. Descargar e instalar ansible
+	`sudo dnf install epel-release -y
+	![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260918095905.png)
+	
+	refrescamos el repositorio por tirar error `sudo dnf makecache`y tiramos `sudo dnf install ansible-core -y`
+	![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260918100344.png)
+	`ansible --version
+	![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260918100458.png)
+	
+
+1. Ansible
+	Crear el arhivo de host
 
 
 
