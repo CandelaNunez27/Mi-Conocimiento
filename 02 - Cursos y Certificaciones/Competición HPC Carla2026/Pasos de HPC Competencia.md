@@ -101,15 +101,17 @@
 	![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260916031600.png)  
 	
 	contraseña de root 
-	![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260916032136.png) 
+	![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260918014725.png) 
 	
 	
 	creación de usuario
-	![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260916032518.png)
+	![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260918014826.png)
 	
 	red y nombre de equipo: activar la interfaz eno1np0 y colocamos el nombre nodo-1 no lo hacemos
 	
-	![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260916032937.png)
+	![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260916032937.png) 
+	
+	![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260918015018.png)
 	
 	Le damos a comenzar instalacion
 	![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260916033251.png) 
@@ -148,10 +150,14 @@
 
 1. Los mismos pasos de configuracion:
 	Se sigue los mismos pasos que el nodo 1
+	nodo2:
 	![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260918012107.png)
 	![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260918012526.png)
 	![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260918012704.png)
 	![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260918012719.png)
+	![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260918013916.png)
+	
+	nodo 3:
 	
 
 
