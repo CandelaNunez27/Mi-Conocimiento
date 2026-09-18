@@ -196,7 +196,7 @@
 	
 	Nodo-3:
 	![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260918025213.png)
-	
+	![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260918030851.png)
 	
 	Volvemos a conectarnos al bastión y desde ahí nos conectaremos a los nodos
 	`ssh scct-2613@bastion.tail263e10.ts.net` junto con `ssh zonda-hpc1@10.2.13.1
