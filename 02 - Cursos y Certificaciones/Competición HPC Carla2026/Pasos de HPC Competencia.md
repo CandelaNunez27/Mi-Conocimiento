@@ -183,14 +183,23 @@
 	`sudo systemctl restart NetworkManager`
 	![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260918024222.png)
 	
+	Aunque le forzamos que levante la  interfaz 
+	`sudo nmcli connection up eno1np0
+	![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260918030134.png)
+	
 	Volvemos a conectarnos al bastión y desde ahí nos conectaremos a los nodos
 	`ssh scct-2613@bastion.tail263e10.ts.net` junto con `ssh zonda-hpc1@10.2.13.1
 	
 	Nodo-2:
 	![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260918024850.png)
+	![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260918030641.png)
 	
 	Nodo-3:
 	![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260918025213.png)
+	
+	
+	Volvemos a conectarnos al bastión y desde ahí nos conectaremos a los nodos
+	`ssh scct-2613@bastion.tail263e10.ts.net` junto con `ssh zonda-hpc1@10.2.13.1
 	
 
 
