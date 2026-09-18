@@ -117,10 +117,33 @@
 	al terminar mostrara la consola
 	![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260916034330.png)
 	
+
+
+
+### Acceso a los otros nodos
+
+1. Tunel para cada uno
+	Tener tres consolas corriendo
+	`ssh -L 8000:10.1.13.3:443 scct-2613@bastion.tail263e10.ts.net
+	`ssh -L 8001:10.1.13.3:443 scct-2613@bastion.tail263e10.ts.net
+	`ssh -L 8002:10.1.13.3:443 scct-2613@bastion.tail263e10.ts.net
+	
+	![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260918004322.png)
+	
+	![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260918004338.png)
+	
+	![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260918004350.png)
+	
+	Ir al navegador y para cada una tener su ventana
+	![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260918004427.png)
+	
+	![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260918004437.png)
+	
+	![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260918004455.png)
+	
+	y hacemos los mismos pasos de cargarele la url de la iso
 	
 	
-	
- 
 
 
 
