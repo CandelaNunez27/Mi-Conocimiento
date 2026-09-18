@@ -218,15 +218,43 @@
 	`sudo nmcli connection modify eno1np0 ipv4.method manual ipv4.addresses 10.2.13.3/24 ipv4.gateway 10.2.13.254 connection.autoconnect yes
 	`sudo nmcli connection up eno1np0
 	
+	![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260918034036.png)
+	![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260918034051.png)
+	
 	![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260918030851.png)
 	
 	Volvemos a conectarnos al bastión y desde ahí nos conectaremos a los nodos
 	`ssh scct-2613@bastion.tail263e10.ts.net` junto con `ssh zonda-hpc1@10.2.13.1 , ssh zonda-hpc2@10.2.13.2  . ssh zonda-hpc3@10.2.13.3
 	
+	![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260918034126.png)
 	
 	![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260918033010.png)
 	
+	![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260918034231.png)
 	
+
+
+2. Generar ssh para que se comuniquen sin contraseñas entre los nodos
+	Nodo-1 (maestro)
+	`ssh-keygen -t ed25519`
+	![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260918034640.png)
+	
+	Se las copiamos a los otros nodos desde el Nodo-1
+	`ssh-copy-id zonda-hpc2@10.2.13.2
+	
+	![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260918034949.png)
+	
+	
+	`ssh-copy-id zonda-hpc3@10.2.13.3
+	![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260918035026.png)
+	
+	Para comprobar `ssh zonda-hpc2@10.2.13.2` y  `ssh zonda-hpc2@10.2.13.3` estando dentro del Nodo 1. Deberías entrar instantáneamente al Nodo 2 sin contraseña.
+	![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260918035256.png)
+	
+
+
+
+
 
 
 
