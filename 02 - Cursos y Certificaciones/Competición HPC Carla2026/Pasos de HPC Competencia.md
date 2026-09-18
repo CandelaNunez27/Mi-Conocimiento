@@ -159,6 +159,14 @@
 	
 	nodo 3:
 	
+	![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260918020722.png)
+	![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260918020523.png)
+	![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260918020623.png)
+	
+	
+	
+	
+	
 
 
 
