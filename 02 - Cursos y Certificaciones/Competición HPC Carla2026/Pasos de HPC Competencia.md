@@ -84,11 +84,12 @@
 	![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260916030418.png)
 	
 
-1. Completar los pasos de instalación:
+2. Completar los pasos de instalación:
+	![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260918011809.png)
 	
-	![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260916031226.png)
+	![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260916031226.png) 
 	
-	![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260916031528.png)
+	![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260916031528.png)   
 	
 	
 	Reclamar espacio
@@ -100,7 +101,7 @@
 	![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260916031600.png)  
 	
 	contraseña de root 
-	![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260916032136.png)
+	![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260916032136.png) 
 	
 	
 	creación de usuario
@@ -111,7 +112,7 @@
 	![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260916032937.png)
 	
 	Le damos a comenzar instalacion
-	![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260916033251.png)
+	![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260916033251.png) 
 	![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260916033950.png)
 	
 	al terminar mostrara la consola
@@ -141,8 +142,13 @@
 	
 	![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260918004455.png)
 	
-	y hacemos los mismos pasos de cargarele la url de la iso
-	
+	y hacemos los mismos pasos de cargarele la url de la iso, pero antes asegurarse que este corriendo
+	`ssh scct-2613@bastion.tail263e10.ts.net` junto con `python3 -m RangeHTTPServer 8013 --bind 10.7.12.102`
+
+
+1. Los mismos pasos de configuracion:
+	Se sigue los mismos pasos que el nodo 1
+	![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260918012107.png)
 	
 
 
