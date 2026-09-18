@@ -163,7 +163,7 @@
 	![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260918020523.png)
 	![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260918020623.png)
 	
-	
+	![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260918022328.png)
 	
 	
 	
@@ -172,12 +172,19 @@
 
 1. Nodo 1 (maestro)
 	
+	En la interfaz web una vez dentro de nodo-1 usamos `sudo nmtui
+	![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260918023425.png)
+	![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260918023518.png)
+	
+	
+	
+	
+	Volvemos a conectarnos al bastión y desde ahí nos conectaremos a los nodos
+	`ssh scct-2613@bastion.tail263e10.ts.net` junto con `ssh zonda-hpc1@10.2.13.1
+	
+	
+	
 
 
 
-
-
-
-
-
-
+`
