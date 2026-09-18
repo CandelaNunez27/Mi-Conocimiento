@@ -149,6 +149,9 @@
 1. Los mismos pasos de configuracion:
 	Se sigue los mismos pasos que el nodo 1
 	![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260918012107.png)
+	![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260918012526.png)
+	![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260918012704.png)
+	![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260918012719.png)
 	
 
 
