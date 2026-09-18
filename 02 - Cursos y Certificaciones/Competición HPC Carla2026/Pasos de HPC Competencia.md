@@ -168,7 +168,10 @@
 	
 	
 
+### Establecer comunicación sin contraseñas entre nodos
 
+1. Nodo 1 (maestro)
+	
 
 
 
