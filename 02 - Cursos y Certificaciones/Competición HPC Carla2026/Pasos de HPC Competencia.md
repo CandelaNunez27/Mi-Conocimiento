@@ -248,8 +248,10 @@
 	`ssh-copy-id zonda-hpc3@10.2.13.3
 	![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260918035026.png)
 	
-	Para comprobar `ssh zonda-hpc2@10.2.13.2` y  `ssh zonda-hpc2@10.2.13.3` estando dentro del Nodo 1. Deberías entrar instantáneamente al Nodo 2 sin contraseña.
+	Para comprobar `ssh zonda-hpc2@10.2.13.2` y  `ssh zonda-hpc3@10.2.13.3` estando dentro del Nodo 1. Deberías entrar instantáneamente al Nodo 2 sin contraseña.
 	![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260918035256.png)
+	
+	![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260918035409.png)
 	
 
 
