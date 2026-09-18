@@ -170,19 +170,27 @@
 
 ### Establecer comunicación sin contraseñas entre nodos
 
-1. Nodo 1 (maestro)
+1. Colocarles las IP a los Nodos 
 	
+	Nodo-1:
 	En la interfaz web una vez dentro de nodo-1 usamos `sudo nmtui
+	![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260918024009.png)
 	![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260918023425.png)
 	![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260918023518.png)
+	![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260918023919.png)
 	
-	
-	
+	Reiniciamos el servicio
+	`sudo systemctl restart NetworkManager`
+	![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260918024222.png)
 	
 	Volvemos a conectarnos al bastión y desde ahí nos conectaremos a los nodos
 	`ssh scct-2613@bastion.tail263e10.ts.net` junto con `ssh zonda-hpc1@10.2.13.1
 	
+	Nodo-2:
+	![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260918024850.png)
 	
+	Nodo-3:
+	![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260918025213.png)
 	
 
 
