@@ -9,6 +9,9 @@ A las 09:15, una vez recuperado el acceso a los clústeres, conéctate a través
 ssh scct-2613@bastion.tail263e10.ts.net
 ```
 
+![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260922114521.png)
+
+
 ### **Paso 1: Restauración del BIOS (Obligatorio)**
 
 Dado que la organización restableció la configuración de la BIOS a los valores de fábrica antes de la final, debes cargar obligatoriamente el perfil optimizado (HPC, Hyperthreading desactivado, etc.) que respaldaste previamente.
