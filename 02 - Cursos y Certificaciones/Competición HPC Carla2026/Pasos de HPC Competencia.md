@@ -720,20 +720,13 @@ https://github.com/pedroA37/zonda-hpc-carla2026.git
     
     _Verificación:_ Una vez finalizada, revisa que el archivo `resultados.csv` contenga las líneas correspondientes y que los puntajes muestren el estado **PASSED**. Guarda una copia de respaldo del archivo de datos ganador como `HPL-fabrica.dat` en `/shared/hpl-run/`.
     
-      
-    
-
-#### 2. Fase B: Verificación y Respaldo del BIOS
-
-Los nodos HPE iLO permiten guardar y restaurar la configuración de hardware (como la desactivación del Hyperthreading para evitar pérdida de ciclos en AVX-512).
-
-  
+	#### 2. Fase B: Verificación y Respaldo del BIOS
+	
+	Los nodos HPE iLO permiten guardar y restaurar la configuración de hardware (como la desactivación del Hyperthreading para evitar pérdida de ciclos en AVX-512).
+	
+	  
 
 - **Verificar el estado actual del BIOS desde el bastión:**
-    
-      
-    
-    Bash
     
     ```
     ilorest login 10.1.13.1 -u scct-2613 -p '<PASS_BMC>'
@@ -742,11 +735,7 @@ Los nodos HPE iLO permiten guardar y restaurar la configuración de hardware (co
     ```
     
 - **Realizar el respaldo (Backup) de los 3 nodos:**
-    
-      
-    
-    Bash
-    
+
     ```
     for i in 1 2 3; do
       ilorest login 10.1.13.$i -u scct-2613 -p '<PASS_BMC>'
@@ -756,21 +745,13 @@ Los nodos HPE iLO permiten guardar y restaurar la configuración de hardware (co
     ```
     
     _Verificación:_ Comprueba que se hayan generado los archivos `bios-nodo-1.json`, `bios-nodo-2.json` y `bios-nodo-3.json`.
-    
-      
-    
-
-#### 3. Fase C: Tuning de Procesos por Nodo vs. Hilos
-
-Consiste en barrer diferentes combinaciones de paralelismo para encontrar el punto óptimo donde la factorización del panel no deje núcleos esperando.
-
-  
+	
+	
+	#### 3. Fase C: Tuning de Procesos por Nodo vs. Hilos
+	
+	Consiste en barrer diferentes combinaciones de paralelismo para encontrar el punto óptimo donde la factorización del panel no deje núcleos esperando.
 
 - **Generar y ejecutar la grilla ganadora de 36 procesos por nodo con 1 hilo ($P=9, Q=12$):**
-    
-      
-    
-    Bash
     
     ```
     ./gen_dat.sh 80640 384 9 12 > c-36x1.dat
@@ -778,18 +759,11 @@ Consiste en barrer diferentes combinaciones de paralelismo para encontrar el pun
     ```
     
     _Verificación:_ Abre el archivo `bindings.txt` dentro de la carpeta de la corrida en `corridas/<sello>/` para confirmar que los procesos MPI estén correctamente distribuidos y anclados a los núcleos físicos sin solaparse.
-    
-      
-    
-
-#### 4. Fase D y E: Ajuste de Bloque ($NB$) y Broadcast ($BCAST$)
-
+	
+	#### 4. Fase D y E: Ajuste de Bloque ($NB$) y Broadcast ($BCAST$)
+	
 - **Barrido de tamaños de bloque ($NB$) con la configuración ganadora:**
-    
-      
-    
-    Bash
-    
+   
     ```
     ./gen_dat.sh 80640 "192 256 336 384" 9 12 > d-nb.dat
     BIOS=tuneado ./run.sh d-nb.dat nodo-1,nodo-2,nodo-3 36 1
@@ -797,20 +771,12 @@ Consiste en barrer diferentes combinaciones de paralelismo para encontrar el pun
     
     _Verificación:_ Analiza los GFLOPS resultantes en el archivo `resultados.csv` para identificar qué tamaño de bloque (por lo general $NB=192$ o $256$) exprime mejor la caché y las instrucciones vectoriales.
     
-      
-    
-
-#### 5. Fase F: Corrida Grande Final
-
-Con todos los parámetros optimizados ($N$ escalado, $NB$ ideal, grilla $P \times Q$ y procesos de 1 hilo), se ejecuta la prueba de alta carga que simula la entrega final.
-
-  
-
+	#### 5. Fase F: Corrida Grande Final
+	
+	Con todos los parámetros optimizados ($N$ escalado, $NB$ ideal, grilla $P \times Q$ y procesos de 1 hilo), se ejecuta la prueba de alta carga que simula la entrega final.
+	
 - **Lanzar la corrida de gran escala (ej. $N=161280$):**
     
-      
-    
-    Bash
     
     ```
     ./gen_dat.sh 161280 192 9 12 > f-final.dat
@@ -819,10 +785,6 @@ Con todos los parámetros optimizados ($N$ escalado, $NB$ ideal, grilla $P \time
     
 - **Monitorear el rendimiento de la CPU y la frecuencia real en otra terminal:**
     
-      
-    
-    Bash
-    
     ```
     ssh nodo-2 sudo turbostat --quiet --show Busy%,Bzy_MHz --interval 30
     ```
@@ -830,6 +792,64 @@ Con todos los parámetros optimizados ($N$ escalado, $NB$ ideal, grilla $P \time
     _Verificación:_ El resultado final de la corrida debe indicar **PASSED**, registrando un puntaje competitivo en GFLOPS (por encima de los 2100 GFLOPS en este hardware) y una eficiencia lógica adecuada frente al $R_{peak}$ teórico del clúster.
 	
 	
+
+12. Reinicio
+	El objetivo de este paso es comprobar que el clúster es totalmente autónomo y que, tras un reinicio completo de las tres máquinas simultáneamente, todos los servicios críticos (red, NFS, InfiniBand y el entorno de HPL) se levantan solos y sin intervención manual.
+	
+	Configurar para que el sistema sea persistente
+	`nano scripts/07-sistema.sh`
+	
+	```
+	
+	#!/bin/bash
+	# Paso 11 del plan - sistema persistente (correr en cada nodo, requiere reinicio después).
+	set -e
+	sudo systemctl enable --now tuned
+	sudo tuned-adm profile throughput-performance
+	sudo grubby --update-kernel=ALL --args="transparent_hugepage=always"
+	echo "Falta: sudo reboot para que transparent_hugepage=always tome efecto."
+	
+	
+	```
+	
+	- **`tuned` y perfil de rendimiento:** Habilita el demonio gestor de energía y rendimiento del sistema operativo, fijando el perfil `throughput-performance` para forzar al procesador a mantener un rendimiento elevado.
+	- **`grubby` (_Transparent Hugepages_):** Actualiza los argumentos de arranque del kernel para habilitar `transparent_hugepage=always`, lo cual mejora la eficiencia en el manejo de bloques grandes de memoria RAM utilizados por el benchmark.
+	
+	
+	
+	Ejecutar en los 3 nodos desde nodo-1
+	`chmod +x scripts/07-sistema.sh
+	
+	`for n in nodo-1 nodo-2 nodo-3; do
+	 ` ssh $n 'bash -s' < scripts/07-sistema.sh
+	`done
+	
+	
+	reinicio limpio en los nodos
+	`for n in nodo-1 nodo-2 nodo-3; do ssh $n "sudo systemd-run --on-active=1 --unit=hpc-reboot-final reboot" & done; wait
+	
+	
+	`nano scripts/check.sh`Para comprobar de forma rápida que todos los componentes críticos del clúster volvieron a subir por sí solos, se utiliza el script de chequeo.
+	
+	```
+	
+	#!/bin/bash
+	# Paso 11 del plan - chequeo post-reinicio. Correr desde nodo-1.
+	for n in nodo-1 nodo-2 nodo-3; do
+	    echo "== $n"
+	    ssh $n 'ip -4 -br a show eno1np0; df -h /shared | tail -1; ls /opt/hpl/bin/xhpl; ibstat | grep -E "State|Rate"; systemctl is-active chronyd tuned; tuned-adm active; cat /sys/kernel/mm/transparent_hugepage/enabled; nproc'
+	done
+	ssh nodo-1 'systemctl is-active nfs-server'
+	
+	
+	
+	```
+	
+	Otorgar permisos chmod +x scripts/check.sh
+	
+	
+	Ejecutar
+	/scripts/check.sh
 	
 	
 	
