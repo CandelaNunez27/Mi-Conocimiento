@@ -8,34 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "9c1ac70effb77ed6",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "02 - Cursos y Certificaciones/Curso Cisco Conceptos básicos de redes/Módulo 4/1. Conceptos  Básicos de Redes Domésticas.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "1. Conceptos  Básicos de Redes Domésticas"
-            }
-          },
-          {
-            "id": "a56fc50f6419caef",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "02 - Cursos y Certificaciones/Curso Cisco Conceptos básicos de redes/Módulo 4/2. Tecnologías de Red en el Hogar.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "2. Tecnologías de Red en el Hogar"
-            }
-          },
-          {
             "id": "ddbe7e0629339e14",
             "type": "leaf",
             "state": {
@@ -49,8 +21,7 @@
               "title": "Pasos de HPC Competencia"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"

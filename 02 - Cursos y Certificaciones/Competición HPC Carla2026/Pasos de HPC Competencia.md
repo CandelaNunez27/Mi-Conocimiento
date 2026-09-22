@@ -255,9 +255,9 @@
 	
 
 
-### Nodo 1 maestro (DNS, ANSIBLE, )
+### Nodo 1 maestro (DNS, ANSIBLE, herramientas básicas, almacenamiento compartido NFS,)
 
-1. Agregar dns
+1. Agregar dns, lo mismo en los otros nodos
 	
 	`sudo nmcli connection modify eno1np0 ipv4.dns 8.8.8.8 
 	`sudo nmcli connection up eno1np0
@@ -290,7 +290,7 @@
 	
 	
 
-3. Herramientas necesarias
+4. Herramientas necesarias
 	 Crearemos un script donde nos descargara lo necesario para la seguridad, red y dependencias para compilar y ejecutar software HPC
 	 - **Validación y Actualización:** Verifica la conexión a internet con `curl`, actualiza el sistema base y descarga compiladores (como GCC) requeridos para compilar HPL desde cero.
 	- **Dependencias Críticas:** Instala `numactl` para el manejo de memoria NUMA, `environment-modules` para controlar versiones de software y `nfs-utils` para permitir el almacenamiento en red.
@@ -338,6 +338,37 @@
 	- **`numactl -H`**: Comprueba la topología de la memoria para asegurar que el sistema operativo identifica correctamente los 2 nodos NUMA de los procesadores.
 	- **`free -g` y `grep MemTotal /proc/meminfo`**: Validan que la memoria RAM total detectada ronde los 192 GB esperados para cada nodo.
 	- **`lspci | grep -i -E "mellanox|infiniband"`**: Confirma que el bus PCI del servidor reconozca físicamente la tarjeta de red de alta velocidad (Mellanox/InfiniBand) necesaria para la interconexión del clúster.
+	
+
+5. Creamos el almacenamiento compartido NFS para que nodo 2 y 3 lo vean como local
+	`nano scripts/02-nfs.sh` para crear el script y le colocamos lo siguiente.
+	
+	```
+		#!/bin/bash
+	set -e
+	if [ "$(hostname -s)" = "nodo-1" ]; then
+		sudo mkdir -p /shared
+		sudo chown $USER: /shared
+		echo "/shared 10.2.13.0/24(rw,sync)" | sudo tee /etc/exports
+		sudo systemctl enable --now nfs-server
+		sudo exportfs -ra
+	else
+		sudo mkdir -p /shared
+		grep -q "nodo-1:/shared" /etc/fstab || echo "nodo-1:/shared /shared nfs defaults,_netdev 0 0" | sudo tee -a /etc/fstab
+		sudo mount -a
+	fi
+	mkdir -p /shared/registros /shared/hpl-run /shared/src
+		
+		
+	
+	```
+	
+	
+	
+	
+	
+	
+	
 	
 	
 
