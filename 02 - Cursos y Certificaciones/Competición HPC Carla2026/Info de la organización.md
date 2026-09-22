@@ -49,3 +49,6 @@
 	- Preparación y estrategia: Cronogramas, entrenamiento y actividades previas.
 	- Estrategias de diseño: SO, gestores de recursos, compiladores y sistemas de archivos.
 	- Presentación visual: Atractivo visual y eficacia en la visualización del contenido.
+	  
+
+![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260922002515.png)

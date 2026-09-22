@@ -367,7 +367,7 @@
 	```
 	![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260921230254.png)
 	
-	Ejecutarlo en todos los nodos y luego reiniciar
+	Lo ejecutamos en cada nodo desde el nodo 1  y luego reiniciar cada nodo individualmente
 	``ssh nodo-1 'bash -s' < scripts/01-base.sh``
 	`ssh nodo-2 'bash -s' < scripts/01-base.sh
 	`ssh nodo-3 'bash -s' < scripts/01-base.sh
@@ -419,7 +419,7 @@
 	 **Carpetas finales:** Finalmente, crea tres subcarpetas dentro de `/shared` (`registros`, `hpl-run`, `src`) para organizar el código fuente y las pruebas.
 	
 	
-	Lo corremos en los tres nodos
+	Lo ejecutamos en cada nodo desde el nodo 1
 	`ssh nodo-1 'bash -s' < scripts/02-nfs.sh
 	`ssh nodo-2 'bash -s' < scripts/02-nfs.sh
 	`ssh nodo-3 'bash -s' < scripts/02-nfs.sh
@@ -430,5 +430,24 @@
 
 
 6. Validación de la red InfiniBand 
+	Para usar InfiniBand se necesita RDMA yUCX para que OpenMPI pueda enrutar el cálculo matemático por esta red.
+	
+	`nano scripts/04-ib.sh
+	
+	```
+	#!/bin/bash
+	set -e
+	sudo dnf -y install rdma-core infiniband-diags perftest libibverbs-utils ucx ucx-ib
+	ibstat
+	ibv_devinfo | grep -E "hca_id|state|active_mtu"
+	
+	```
+	
+	Lo ejecutamos en cada nodo desde el nodo 1
+	`ssh nodo-1 'bash -s' < scripts/04-ib.sh 
+	`ssh nodo-2 'bash -s' < scripts/04-ib.sh
+	`ssh nodo-3 'bash -s' < scripts/04-ib.sh
+	
+	Verificar que nos muestre: El puerto InfiniBand (`mlx5_0`) debe mostrar `State: Active` y `Physical state: LinkUp`. Si dice `Initializing`, hay un problema con la red de la organización y debes detenerte.
 	
 
