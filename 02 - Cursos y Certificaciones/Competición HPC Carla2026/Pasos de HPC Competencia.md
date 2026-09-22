@@ -562,7 +562,7 @@ https://github.com/pedroA37/zonda-hpc-carla2026.git
 	* **Respaldo Local (Plan B):** El bucle final copia el ejecutable desde la carpeta de red (`/shared`) hacia el disco local de cada uno de los tres nodos (`/opt/hpl/bin`). Esto garantiza que, si el servidor NFS falla el día de la competencia, el clúster pueda seguir ejecutando el benchmark.
 	
 
-9. Scripts de corrida y primera prueba
+9. Scripts de corrida
 	
 	nos ubicamos en `/shared/hpl-run/` para crear los dos script
 	
@@ -615,8 +615,70 @@ https://github.com/pedroA37/zonda-hpc-carla2026.git
 	
 	luego el otro script también debe estar en `/shared/hpl-run/ ` 
 	
-	`nano run.sh` 
+	`nano run.sh` Este script lanza OpenMPI, limpia la memoria caché de los nodos antes de cada corrida para asegurar mediciones justas, fuerza el tráfico por la capa UCX/InfiniBand, y extrae los GFLOPS resultantes a un archivo `resultados.csv`
 	
+	```
+	
+	#!/bin/bash
+	# uso: BIOS=fabrica ./run.sh <archivo.dat> <nodos> <procesos_por_nodo> <hilos_por_proceso> [local]
+	# ej:  BIOS=fabrica ./run.sh prueba.dat nodo-1,nodo-2,nodo-3 2 18
+	set -e
+	IBDEV=mlx5_0
+	DAT=$1; NODOS=$2; PPN=$3; HILOS=$4; MODO=${5:-shared}
+	BIOS=${BIOS:-sin-dato}
+	SELLO=$(date +%m%d-%H%M%S)
+	NNODOS=$(echo $NODOS | tr ',' '\n' | wc -l)
+	NP=$((NNODOS * PPN))
+	HOSTS=$(echo $NODOS | sed "s/\([^,]*\)/\1:$PPN/g")
+	if [ "$MODO" = "local" ]; then
+		XHPL=/opt/hpl/bin/xhpl; RAIZ=$HOME/hpl-run
+	else
+		XHPL=/shared/opt/hpl/bin/xhpl; RAIZ=/shared/hpl-run
+	fi
+	DIR=$RAIZ/corridas/$SELLO
+	mkdir -p $DIR
+	cp $DAT $DIR/HPL.dat
+	cp $(readlink -f $0) $DIR/run.sh
+	echo "BIOS=$BIOS $0 $@" > $DIR/comando.txt
+	for n in $(echo $NODOS | tr ',' ' '); do
+		ssh $n "mkdir -p $DIR; sync; echo 3 | sudo tee /proc/sys/vm/drop_caches >/dev/null; echo 1 | sudo tee /proc/sys/vm/compact_memory >/dev/null"
+	done
+	cd $DIR
+	mpirun -np $NP --host $HOSTS \
+		--map-by ppr:$((PPN / 2)):package:PE=$HILOS --bind-to core --report-bindings \
+		--mca pml ucx -x UCX_NET_DEVICES=$IBDEV:1 \
+		-x OMP_NUM_THREADS=$HILOS -x MKL_NUM_THREADS=$HILOS -x MKL_DYNAMIC=false \
+		-x OMP_PROC_BIND=close -x OMP_PLACES=cores -x LD_LIBRARY_PATH \
+		$XHPL 2> bindings.txt | tee salida.txt
+	PASO=$(grep -c PASSED salida.txt || true)
+	awk -v s=$SELLO -v b=$BIOS -v p=$PPN -v h=$HILOS -v ok=$PASO \
+		'/^WR/ {print s","b","p","h","$2","$3","$4","$5","$6","$7","ok}' salida.txt >> $RAIZ/resultados.csv
+	grep -E "^WR|PASSED|FAILED" salida.txt
+		
+		
+		
+	
+	```
+	
+	
+	- **Configuración y Directorios:** Recibe los parámetros de entrada (archivo `.dat`, nodos, procesos por nodo e hilos) y crea una carpeta única basada en la fecha y hora (`corridas/<sello>`) para guardar de forma ordenada los archivos de cada ejecución.
+	- **Preparación del Hardware:** Se conecta por SSH a cada nodo involucrado para limpiar la caché del sistema (`drop_caches`) y compactar la memoria RAM (`compact_memory`) antes de arrancar, asegurando que cada prueba comience en igualdad de condiciones.
+	- **Lanzamiento Paralelo (OpenMPI):** Ejecuta el binario `xhpl` usando `mpirun`, forzando el tráfico de red a través de la interfaz InfiniBand (`mlx5_0`) mediante la capa UCX y aplicando una asignación estricta de procesos e hilos a los núcleos físicos (`--bind-to core`).
+	- **Registro de Métricas:** Analiza la salida de la ejecución, verifica si superó la prueba de validación (`PASSED`) y extrae automáticamente los datos de rendimiento (como los GFLOPS y el tiempo) para añadirlos a un archivo acumulativo (`resultados.csv`).
+	
+	
+	darle permisos de ejecución `chmod +x run.sh`
+	
+	Luego para que no nos salte el error del buffer RDMA por falta de memoria, tirar
+	
+	`for n in nodo-1 nodo-2 nodo-3; do
+	  `ssh $n "echo -e '* soft memlock unlimited\n* hard memlock unlimited' | sudo tee /etc/security/limits.d/99-hpc-memlock.conf"
+	`done
+	
+
+10. Primera prueba solo en nodo 1
+	
+	situarnos en la carpeta compartida `cd /share/hpl-run/` 
 	
 	
 	
