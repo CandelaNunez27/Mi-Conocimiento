@@ -451,3 +451,13 @@
 	Verificar que nos muestre: El puerto InfiniBand (`mlx5_0`) debe mostrar `State: Active` y `Physical state: LinkUp`. Si dice `Initializing`, hay un problema con la red de la organización y debes detenerte.
 	
 
+6. MKL () y MPI ()
+	
+	
+	
+	
+	
+	
+	
+	
+	
