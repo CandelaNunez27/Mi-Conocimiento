@@ -676,11 +676,158 @@ https://github.com/pedroA37/zonda-hpc-carla2026.git
 	`done
 	
 
-10. Primera prueba solo en nodo 1
+10. Primeras pruebas 
+	primera prueba con solo un nodo:
 	
-	situarnos en la carpeta compartida `cd /share/hpl-run/` 
+	situarnos en la carpeta compartida `cd /share/hpl-run/` y tirar
+	`./gen_dat.sh 40320 384 1 2 > n1.dat 
+	
+	`BIOS=fabrica ./run.sh n1.dat nodo-1 2 18
+	
+	verificar que la salida diga **PASSED** indicando un residuo seguro por debajo del umbral. (Debería dar alrededor de **120.07 GFLOPS**). 
+	
+	segunda prueba con los tres nodos:
+	`./gen_dat.sh 40320 384 2 3 > n3.dat
+	`BIOS=fabrica ./run.sh n3.dat nodo-1,nodo-2,nodo-3 2 18
+	
+	verificar que la salida diga **PASSED** y aproximadamente **338.02 GFLOPS**. Esto demuestra un ~93.8% de eficiencia de escalado contra el nodo individual, lo que certifica que la interconexión RDMA/UCX funciona sin cuellos de botella.
 	
 	
+	
+
+11. Tunnig y Corrida de rendimiento (fases a a f)
+	
+	la Fase A (Línea base formal con el BIOS de fábrica o de HPC con el tamaño de problema grande N=80640) y la Fase B, C, D, E, F (Tuning y Corrida Grande). El objetivo de este paso es llevar el clúster al límite de su rendimiento midiendo el impacto de los parámetros de HPL y la distribución de hilos/procesos.
+	
+	#### 1. Fase A: Línea base formal ($N = 80640$)
+	
+	Se ejecutan dos configuraciones extremas para tener una referencia inicial con el tamaño de matriz grande (~85% de la RAM del nodo).
+	
+	  
+
+- **Lanzar la prueba híbrida (2 procesos por nodo, 18 hilos cada uno):**
+
+    
+    `./gen_dat.sh 80640 384 2 3 > base-2x18.dat
+    `BIOS=tuneado ./run.sh base-2x18.dat nodo-1,nodo-2,nodo-3 2 18
+    
+    
+- **Lanzar la prueba plana (36 procesos por nodo, 1 hilo cada uno):**
+    
+    _Nota: Como esta corrida toma varios minutos, se recomienda desacoplarla de la sesión SSH usando `nohup` y `setsid` para evitar que se interrumpa si se cierra la terminal._
+    
+    `setsid nohup ./run.sh base-36x1.dat nodo-1,nodo-2,nodo-3 36 1 > base-36x1.out 2>&1 &
+    
+    _Verificación:_ Una vez finalizada, revisa que el archivo `resultados.csv` contenga las líneas correspondientes y que los puntajes muestren el estado **PASSED**. Guarda una copia de respaldo del archivo de datos ganador como `HPL-fabrica.dat` en `/shared/hpl-run/`.
+    
+      
+    
+
+#### 2. Fase B: Verificación y Respaldo del BIOS
+
+Los nodos HPE iLO permiten guardar y restaurar la configuración de hardware (como la desactivación del Hyperthreading para evitar pérdida de ciclos en AVX-512).
+
+  
+
+- **Verificar el estado actual del BIOS desde el bastión:**
+    
+      
+    
+    Bash
+    
+    ```
+    ilorest login 10.1.13.1 -u scct-2613 -p '<PASS_BMC>'
+    ilorest select Bios.
+    ilorest get WorkloadProfile ProcHyperthreading PowerRegulator SubNumaClustering
+    ```
+    
+- **Realizar el respaldo (Backup) de los 3 nodos:**
+    
+      
+    
+    Bash
+    
+    ```
+    for i in 1 2 3; do
+      ilorest login 10.1.13.$i -u scct-2613 -p '<PASS_BMC>'
+      ilorest save --selector Bios. -f bios-nodo-$i.json
+      ilorest logout
+    done
+    ```
+    
+    _Verificación:_ Comprueba que se hayan generado los archivos `bios-nodo-1.json`, `bios-nodo-2.json` y `bios-nodo-3.json`.
+    
+      
+    
+
+#### 3. Fase C: Tuning de Procesos por Nodo vs. Hilos
+
+Consiste en barrer diferentes combinaciones de paralelismo para encontrar el punto óptimo donde la factorización del panel no deje núcleos esperando.
+
+  
+
+- **Generar y ejecutar la grilla ganadora de 36 procesos por nodo con 1 hilo ($P=9, Q=12$):**
+    
+      
+    
+    Bash
+    
+    ```
+    ./gen_dat.sh 80640 384 9 12 > c-36x1.dat
+    BIOS=tuneado ./run.sh c-36x1.dat nodo-1,nodo-2,nodo-3 36 1
+    ```
+    
+    _Verificación:_ Abre el archivo `bindings.txt` dentro de la carpeta de la corrida en `corridas/<sello>/` para confirmar que los procesos MPI estén correctamente distribuidos y anclados a los núcleos físicos sin solaparse.
+    
+      
+    
+
+#### 4. Fase D y E: Ajuste de Bloque ($NB$) y Broadcast ($BCAST$)
+
+- **Barrido de tamaños de bloque ($NB$) con la configuración ganadora:**
+    
+      
+    
+    Bash
+    
+    ```
+    ./gen_dat.sh 80640 "192 256 336 384" 9 12 > d-nb.dat
+    BIOS=tuneado ./run.sh d-nb.dat nodo-1,nodo-2,nodo-3 36 1
+    ```
+    
+    _Verificación:_ Analiza los GFLOPS resultantes en el archivo `resultados.csv` para identificar qué tamaño de bloque (por lo general $NB=192$ o $256$) exprime mejor la caché y las instrucciones vectoriales.
+    
+      
+    
+
+#### 5. Fase F: Corrida Grande Final
+
+Con todos los parámetros optimizados ($N$ escalado, $NB$ ideal, grilla $P \times Q$ y procesos de 1 hilo), se ejecuta la prueba de alta carga que simula la entrega final.
+
+  
+
+- **Lanzar la corrida de gran escala (ej. $N=161280$):**
+    
+      
+    
+    Bash
+    
+    ```
+    ./gen_dat.sh 161280 192 9 12 > f-final.dat
+    BIOS=tuneado ./run.sh f-final.dat nodo-1,nodo-2,nodo-3 36 1
+    ```
+    
+- **Monitorear el rendimiento de la CPU y la frecuencia real en otra terminal:**
+    
+      
+    
+    Bash
+    
+    ```
+    ssh nodo-2 sudo turbostat --quiet --show Busy%,Bzy_MHz --interval 30
+    ```
+    
+    _Verificación:_ El resultado final de la corrida debe indicar **PASSED**, registrando un puntaje competitivo en GFLOPS (por encima de los 2100 GFLOPS en este hardware) y una eficiencia lógica adecuada frente al $R_{peak}$ teórico del clúster.
 	
 	
 	
