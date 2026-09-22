@@ -379,6 +379,8 @@ https://github.com/pedroA37/zonda-hpc-carla2026.git
 	
 	Luego para verigicar que todo haya salido bien se tira este comando en todos los nodos
 	`lscpu; numactl -H; free -g; grep MemTotal /proc/meminfo; lspci | grep -i -E "mellanox|infiniband"` 
+	![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260922104921.png)
+	![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260922104959.png)
 	
 	- **`lscpu`**: Verifica que el sistema detecte los 36 núcleos físicos, la presencia de las instrucciones avanzadas `avx512f`, y permite confirmar si el Hyperthreading está desactivado (si estuviera activo, mostraría 72 CPUs).
 	- **`numactl -H`**: Comprueba la topología de la memoria para asegurar que el sistema operativo identifica correctamente los 2 nodos NUMA de los procesadores.
