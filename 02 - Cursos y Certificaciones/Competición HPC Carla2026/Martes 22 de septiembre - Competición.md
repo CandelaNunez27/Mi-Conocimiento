@@ -90,6 +90,33 @@ _Verificación:_ La salida en consola debe finalizar obligatoriamente con el est
 
 ### **Paso 4: Ejecución de la Corrida Final de Alto Rendimiento (Fase F)**
 
+Si el equipo dispone de tiempo antes de la entrega final y quiere comprobar si existe una combinación superior a la base, ejecute las siguientes tandas de pruebas de forma controlada (registrando cada resultado en `resultados.csv`):
+
+- **A. Barrido de Procesos vs. Hilos (Fase C):** Prueba diferentes distribuciones de paralelismo para verificar si se mantiene la eficiencia con la configuración de 36 procesos por nodo y 1 hilo ($P=9, Q=12$):
+    
+    
+    ```
+    ./gen_dat.sh 80640 384 9 12 > c-36x1.dat
+    BIOS=tuneado ./run.sh c-36x1.dat nodo-1,nodo-2,nodo-3 36 1
+    ```
+- **B. Barrido de Tamaños de Bloque ($NB$ - Fase D):** Evalúa si un tamaño de bloque alternativo exprime mejor la caché del Skylake (por ejemplo, probando $NB = 192$ o $256$ en una sola corrida):
+    
+    Bash
+    
+    ```
+    ./gen_dat.sh 80640 "192 256 336 384" 9 12 > d-nb.dat
+    BIOS=tuneado ./run.sh d-nb.dat nodo-1,nodo-2,nodo-3 36 1
+    ```
+
+- **C. Verificación de Red y Escalabilidad (Sanity Check a 3 Nodos):** Comprueba que el factor de escala entre 1 y 3 nodos mantenga una eficiencia superior al 90% en la red InfiniBand:
+ 
+    
+    ```
+    ./gen_dat.sh 40320 384 2 3 > n3.dat
+    BIOS=tuneado ./run.sh n3.dat nodo-1,nodo-2,nodo-3 2 18
+    ```
+
+
 Utiliza la configuración ganadora de la sesión de sintonización previa ($N = 161280$, tamaño de bloque $NB = 192$, grilla de procesos $P = 9, Q = 12$, con 36 procesos por nodo y 1 hilo por proceso).
 
 Como esta ejecución tomará más de 20 minutos, **desacóplala por completo de la sesión SSH** usando `setsid` y `nohup` para evitar que se interrumpa si se cierra la terminal:
@@ -101,12 +128,12 @@ cd /shared/hpl-run/
 setsid nohup ./run.sh f-final.dat nodo-1,nodo-2,nodo-3 36 1 > f-final.out 2>&1 &
 ```
 
-(Opcional) Monitoreo en tiempo real de la frecuencia real del procesador bajo instrucciones AVX-512 desde otra terminal:
+(Opcional) Monitoreo en tiempo real de la frecuencia real del procesador bajo instrucciones AVX-512 desde otra terminal y tambien lo guarda en un log:
 
   
 
 ```
-ssh nodo-2 sudo turbostat --quiet --show Busy%,Bzy_MHz --interval 30
+ssh nodo-2 sudo turbostat --quiet --show Busy%,Bzy_MHz --interval 30 | tee turbostat_avx512.log
 ```
 
 _Verificación:_ Una vez finalizada la corrida, revisa el archivo de salida o el registro acumulativo para confirmar que el resultado final indique **PASSED**. El puntaje objetivo de referencia para este hardware ronda los **2136.7 GFLOPS**.
