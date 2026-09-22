@@ -329,10 +329,15 @@
 	`ssh nodo-2 'bash -s' < scripts/01-base.sh
 	`ssh nodo-3 'bash -s' < scripts/01-base.sh
 	
-	`sudo reboot`en cada nodo
+	`sudo systemd-run --on-active=1 --unit=hpc-reboot reboot`en cada nodo para reiniciar y que la sesión ssh actual se cierre limpiamente.
 	
+	Luego para verigicar que todo haya salido bien se tira este comando en todos los nodos
+	`lscpu; numactl -H; free -g; grep MemTotal /proc/meminfo; lspci | grep -i -E "mellanox|infiniband"` 
 	
-	
+	- **`lscpu`**: Verifica que el sistema detecte los 36 núcleos físicos, la presencia de las instrucciones avanzadas `avx512f`, y permite confirmar si el Hyperthreading está desactivado (si estuviera activo, mostraría 72 CPUs).
+	- **`numactl -H`**: Comprueba la topología de la memoria para asegurar que el sistema operativo identifica correctamente los 2 nodos NUMA de los procesadores.
+	- **`free -g` y `grep MemTotal /proc/meminfo`**: Validan que la memoria RAM total detectada ronde los 192 GB esperados para cada nodo.
+	- **`lspci | grep -i -E "mellanox|infiniband"`**: Confirma que el bus PCI del servidor reconozca físicamente la tarjeta de red de alta velocidad (Mellanox/InfiniBand) necesaria para la interconexión del clúster.
 	
 	
 
