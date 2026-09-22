@@ -1,4 +1,6 @@
 
+https://github.com/pedroA37/zonda-hpc-carla2026.git
+
 ### Preparación
 
 1. Crear cuenta en https://tailscale.com/
@@ -512,74 +514,52 @@
 	
 
 8. Compilar HPL
+	
+	HPL (High-Performance Linpack) es el programa de benchmarking oficial de la competencia CARLA 2026 (y del Top500 global). Su única función es generar un sistema de ecuaciones lineales gigantesco y resolverlo, midiendo el rendimiento final en operaciones de punto flotante por segundo (GFLOPS). HPL no realiza los cálculos matemáticos pesados por sí mismo; actúa como un "director" que le entrega las piezas del rompecabezas a MPI para que las distribuya por la red y a la librería BLAS (en nuestro caso, Intel oneMKL) para que haga las multiplicaciones de matrices a máxima velocidad.
+	
 	`nano scripts/06-build-hpl.sh
 	
 	```
 	#!/bin/bash
-    set -e
-    source /etc/profile.d/hpc.sh
-    cd /shared/src
-    
-    # Descargar y extraer el código fuente
-    [ -f hpl-2.3.tar.gz ] || wget [https://www.netlib.org/benchmark/hpl/hpl-2.3.tar.gz](https://www.netlib.org/benchmark/hpl/hpl-2.3.tar.gz)
-    rm -rf hpl-2.3
-    tar xzf hpl-2.3.tar.gz
-    cd hpl-2.3
-    
-    # Configurar la compilación para Intel Skylake AVX-512 y OpenMP
-    ./configure CC=mpicc \
-      CFLAGS="-O3 -march=skylake-avx512 -fopenmp" \
-      LDFLAGS="-L$MKLROOT/lib -Wl,--no-as-needed -fopenmp" \
-      LIBS="-lmkl_intel_lp64 -lmkl_gnu_thread -lmkl_core -lgomp -lpthread -lm -ldl" \
-      --prefix=/shared/opt/hpl
-      
-    # Compilar en paralelo usando los 36 núcleos del nodo
-    make -j 36
-    make install
-    
-    # Verificación de librerías enlazadas
-    ldd /shared/opt/hpl/bin/xhpl | grep -i mkl
-    
-    # Copiar el binario localmente a todos los nodos (Plan B por si falla el NFS)
-    for n in nodo-1 nodo-2 nodo-3; do
-      ssh $n "sudo mkdir -p /opt/hpl/bin && sudo cp /shared/opt/hpl/bin/xhpl /opt/hpl/bin/"
-    done
+	set -e
+	source /etc/profile.d/hpc.sh
+	cd /shared/src
 	
-	
-	#!/bin/bash
-	
+	# Descargar y extraer el código fuente
 	[ -f hpl-2.3.tar.gz ] || wget https://www.netlib.org/benchmark/hpl/hpl-2.3.tar.gz
-	
-	
+	rm -rf hpl-2.3
+	tar xzf hpl-2.3.tar.gz
 	cd hpl-2.3
+	
+	# Configurar la compilación para Intel Skylake AVX-512 y OpenMP
 	./configure CC=mpicc \
-		CFLAGS="-O3 -march=skylake-avx512 -fopenmp" \
-		LDFLAGS="-L$MKLROOT/lib -Wl,--no-as-needed -fopenmp" \
-		LIBS="-lmkl_intel_lp64 -lmkl_gnu_thread -lmkl_core -lgomp -lpthread -lm -ldl" \
-		--prefix=/shared/opt/hpl
+	  CFLAGS="-O3 -march=skylake-avx512 -fopenmp" \
+	  LDFLAGS="-L$MKLROOT/lib -Wl,--no-as-needed -fopenmp" \
+	  LIBS="-lmkl_intel_lp64 -lmkl_gnu_thread -lmkl_core -lgomp -lpthread -lm -ldl" \
+	  --prefix=/shared/opt/hpl
+	  
+	# Compilar en paralelo usando los 36 núcleos del nodo
 	make -j 36
 	make install
+	
+	# Verificación de librerías enlazadas
 	ldd /shared/opt/hpl/bin/xhpl | grep -i mkl
-	# copia local en cada nodo (por si NFS falla en la final)
+	
+	# Copiar el binario localmente a todos los nodos (Plan B por si falla el NFS)
 	for n in nodo-1 nodo-2 nodo-3; do
-		ssh $n "sudo mkdir -p /opt/hpl/bin && sudo cp /shared/opt/hpl/bin/xhpl /opt/hpl/bin/"
+	  ssh $n "sudo mkdir -p /opt/hpl/bin && sudo cp /shared/opt/hpl/bin/xhpl /opt/hpl/bin/"
 	done
-		
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 	
 	```
 	
+	* **Preparación (`source...`):** Carga las variables de entorno configuradas previamente (rutas de OpenMPI y MKL) y se sitúa en la carpeta compartida (`/shared/src`) para evitar compilar tres veces
+	* **Descarga:** Obtiene y extrae el código fuente oficial de HPL 2.3 desde la web de netlib.
+	* **Configuración Avanzada (`./configure`):** * Usa el compilador de MPI (`CC=mpicc`).
+		* Añade banderas de optimización extrema (`CFLAGS="-O3 -march=skylake-avx512 -fopenmp"`) para instruir al compilador a generar instrucciones específicas que exprimen el hardware Intel Xeon Skylake de los nodos.
+		* Enlaza el benchmark contra la librería Intel oneMKL en modo multihilo (`LIBS="-lmkl_intel_lp64... -lgomp..."`), delegando las multiplicaciones de matrices pesadas a este motor matemático.
+	* **Compilación Paralela:** Ejecuta `make -j 36` para utilizar todos los núcleos físicos del nodo-1 simultáneamente, agilizando la construcción, y `make install` para colocar el binario resultante (`xhpl`) en la carpeta compartida.
+	* **Verificación de Cumplimiento:** Ejecuta `ldd` sobre el binario `xhpl` y filtra por "mkl" para auditar y confirmar que el programa quedó enlazado a las librerías dinámicas correctas del fabricante.
+	* **Respaldo Local (Plan B):** El bucle final copia el ejecutable desde la carpeta de red (`/shared`) hacia el disco local de cada uno de los tres nodos (`/opt/hpl/bin`). Esto garantiza que, si el servidor NFS falla el día de la competencia, el clúster pueda seguir ejecutando el benchmark.
 	
-	
-	
-	
+
+9.
