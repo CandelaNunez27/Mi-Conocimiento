@@ -451,12 +451,44 @@
 	Verificar que nos muestre: El puerto InfiniBand (`mlx5_0`) debe mostrar `State: Active` y `Physical state: LinkUp`. Si dice `Initializing`, hay un problema con la red de la organización y debes detenerte.
 	
 
-6. MKL () y MPI ()
+7. MKL () y MPI ()
+	- **MKL (Intel oneMKL):** Es la **librería matemática** (una implementación de BLAS). En supercomputación, el benchmark HPL no hace las multiplicaciones de matrices por sí solo, sino que "llama" a esta librería para que las haga. Utilizar Intel oneMKL es una decisión de diseño crítica de tu equipo porque está hiperoptimizada para exprimir las instrucciones avanzadas **AVX-512** de los procesadores Intel Xeon Skylake de sus nodos, lo que disparará los GFLOPS. 
+	
+	* **MPI (Message Passing Interface):** Es el **estándar de comunicación**. Mientras MKL calcula rápido dentro de un solo nodo, MPI es el director de orquesta que divide la gran matriz inicial y envía los pedazos a través de la red hacia los Nodos 2 y 3 para que todos trabajen en paralelo. Decidimos usar **OpenMPI** configurado con la capa de transporte **UCX**, lo que obliga a MPI a enrutar todos esos pedazos matemáticos por los cables de altísima velocidad de **InfiniBand** (kernel bypass) en lugar de usar la red Ethernet lenta.
+	
+	`nano scripts/05-mkl-mpi.sh
 	
 	
+	```
 	
+	#!/bin/bash
+	set -e
+	sudo tee /etc/yum.repos.d/oneAPI.repo >/dev/null <<EOF
+	[oneAPI]
+	name=Intel oneAPI repository
+	baseurl=https://yum.repos.intel.com/oneapi
+	enabled=1
+	gpgcheck=1
+	repo_gpgcheck=1
+	gpgkey=https://yum.repos.intel.com/intel-gpg-keys/GPG-PUB-KEY-INTEL-SW-PRODUCTS.PUB
+	EOF
 	
+	sudo dnf -y install intel-oneapi-mkl-devel libfabric
+	sudo dnf -y install openmpi openmpi-devel
 	
+	sudo tee /etc/profile.d/hpc.sh >/dev/null <<'EOF'
+	export MKLROOT=/opt/intel/oneapi/mkl/latest
+	export PATH=/usr/lib64/openmpi/bin:$PATH
+	export LD_LIBRARY_PATH=/usr/lib64/openmpi/lib:$MKLROOT/lib:$LD_LIBRARY_PATH
+	EOF
+	
+	```
+
+	
+	Lo ejecutamos en cada nodo desde el nodo 1
+	`ssh nodo-1 'bash -s' < scripts/05-mkl-mpi.sh 
+	`ssh nodo-2 'bash -s' < scripts/05-mkl-mpi.sh
+	`ssh nodo-3 'bash -s' < scripts/05-mkl-mpi.sh
 	
 	
 	
