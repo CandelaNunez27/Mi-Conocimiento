@@ -845,13 +845,23 @@ https://github.com/pedroA37/zonda-hpc-carla2026.git
 	
 	```
 	
-	Otorgar permisos chmod +x scripts/check.sh
+	- **Red y NFS:** Verifica que la interfaz Ethernet `eno1np0` tenga IP asignada, que el recurso compartido `/shared` esté montado correctamente como cliente NFS en los nodos 2 y 3, y que el servidor NFS esté activo en el nodo 1.
+    - **Binarios y Respaldo:** Confirma la presencia del binario local `xhpl` en `/opt/hpl/bin/` en cada máquina como medida de contingencia.
+    - **InfiniBand:** Ejecuta `ibstat` para validar que el dispositivo `mlx5_0` se encuentra en estado `Active` con un _Rate_ de 100 Gb/s.
+    - **Servicios del Sistema:** Comprueba que `chronyd` y `tuned` estén activos, que el perfil de rendimiento esté aplicado, que las páginas de memoria transparentes estén habilitadas y que el sistema detecte los 36 núcleos físicos (_Hyperthreading_ desactivado).
 	
 	
-	Ejecutar
-	/scripts/check.sh
+	Otorgar permisos `chmod +x scripts/check.sh
+	
+	Ejecutar comprobación
+	`/scripts/check.sh
 	
 	
+	Última confirmación de una corrida cn el parámetro ganador
+	`cd /shared/hpl-run/
+	`./gen_dat.sh 40320 384 1 2 > confirmacion.dat
+	`BIOS=tuneado ./run.sh confirmacion.dat nodo-1,nodo-2,nodo-3 2 18
 	
+	**Resultado esperado:** La ejecución debe finalizar indicando **PASSED** en aproximadamente 13 segundos, lo que confirma de manera definitiva que el clúster se recupera de un reinicio completo sin pérdida de estabilidad ni rendimiento
 	
 	
