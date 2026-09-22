@@ -3,7 +3,7 @@
 
 A las 09:15, una vez recuperado el acceso a los clústeres, conéctate a través de la VPN de Tailscale hacia el nodo bastión:
 
-  `sudo tailscale up
+  `sudo tailscale up` 
 
 ```
 ssh scct-2613@bastion.tail263e10.ts.net
