@@ -253,6 +253,29 @@
 	
 	![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260918035409.png)
 	
+	Pero para que este bien configurado el ssh y tenga exppecificado el usuario exacto para cada destino y evitar de tirar un comando tan largo expecificando usuario junto con ip
+	En ~/.ssh/config y debe quedar de esta manera.
+	```
+	Host nodo-1
+	  HostName 10.2.13.1
+	  User zonda-hpc1
+	Host nodo-2
+	  HostName 10.2.13.2
+	  User zonda-hpc2
+	Host nodo-3
+	  HostName 10.2.13.3
+	  User zonda-hpc3
+	
+	
+	
+	
+	
+	
+	```
+	
+	
+	
+	
 
 
 ### Nodo 1 maestro (DNS, ANSIBLE, herramientas básicas, almacenamiento compartido NFS,)
@@ -341,7 +364,7 @@
 	
 
 5. Creamos el almacenamiento compartido NFS para que nodo 2 y 3 lo vean como local
-	`nano scripts/02-nfs.sh` para crear el script y le colocamos lo siguiente.
+	`nano scripts/02-nfs.sh` para crear el script que comparta la carpeta `/sharedy` le colocamos lo siguiente. Evita tener que compilar HPL tres veces o copiar los binarios a mano nodo por nodo
 	
 	```
 		#!/bin/bash
