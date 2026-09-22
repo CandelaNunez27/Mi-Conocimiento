@@ -485,10 +485,100 @@
 	```
 
 	
+	- **Repositorio Intel (`tee /etc/yum.repos.d/...`):** Le enseña al gestor de paquetes (`dnf`) de Rocky Linux dónde encontrar los servidores oficiales de Intel para poder descargar herramientas que no vienen por defecto en Linux.
+	* **Instalación (`dnf install...`):** Descarga el paquete de desarrollo matemático (`intel-oneapi-mkl-devel`), la herramienta de comunicación (`openmpi`) y, de forma crucial, la dependencia de red `libfabric` que  faltaba en OpenMPI 5.0.9 para que funcionara correctamente
+	* **Variables de Entorno (`/etc/profile.d/hpc.sh`):** Este es el paso más importante para que el clúster funcione. Exporta las rutas (`$PATH` y `$LD_LIBRARY_PATH`) donde se instalaron estas herramientas a nivel global
+		 * *¿Por qué en `profile.d`?* Porque cuando OpenMPI lance procesos a los otros nodos de forma automática y transparente (sesiones no interactivas), esos procesos deben saber exactamente en qué carpeta de la computadora buscar la librería matemática MKL para poder hacer los cálculos. Si estuviera en un archivo local como `.bashrc`, la conexión remota podría fallar al no encontrar las herramientas.
+	
+	
 	Lo ejecutamos en cada nodo desde el nodo 1
 	`ssh nodo-1 'bash -s' < scripts/05-mkl-mpi.sh 
 	`ssh nodo-2 'bash -s' < scripts/05-mkl-mpi.sh
 	`ssh nodo-3 'bash -s' < scripts/05-mkl-mpi.sh
+	
+	Verificar que se haya instalado bien las librerías Inter oneMKL, lo ejecutamos en cada nodo desde el nodo 1
+	`ssh nodo-1 'source /etc/profile.d/hpc.sh && ls -l $MKLROOT/lib/libmkl_core.so'
+	`ssh nodo-2 'source /etc/profile.d/hpc.sh && ls -l $MKLROOT/lib/libmkl_core.so'
+	`ssh nodo-3 'source /etc/profile.d/hpc.sh && ls -l $MKLROOT/lib/libmkl_core.so'
+	
+	Verificar que openMPI enrute el tráfico a través del puente InfiniBand (`mlx5_0`) y no por ethernet
+	`source /etc/profile.d/hpc.sh
+	`ompi_info --param pml ucx | grep -i ucx
+	`mpirun -np 3 --host nodo-1,nodo-2,nodo-3 hostname
+	`mpirun -np 2 --host nodo-1,nodo-2 --mca pml ucx -x UCX_NET_DEVICES=mlx5_0:1 -x UCX_TLS=rc,sm,self hostname
+	
+	_Si aparece el mensaje `plm:ssh: Warning: setpgid failed... Permission denied`, es un artefacto normal de las sesiones anidadas y no afecta la validez de la prueba.
+	
+	
+
+8. Compilar HPL
+	`nano scripts/06-build-hpl.sh
+	
+	```
+	#!/bin/bash
+    set -e
+    source /etc/profile.d/hpc.sh
+    cd /shared/src
+    
+    # Descargar y extraer el código fuente
+    [ -f hpl-2.3.tar.gz ] || wget [https://www.netlib.org/benchmark/hpl/hpl-2.3.tar.gz](https://www.netlib.org/benchmark/hpl/hpl-2.3.tar.gz)
+    rm -rf hpl-2.3
+    tar xzf hpl-2.3.tar.gz
+    cd hpl-2.3
+    
+    # Configurar la compilación para Intel Skylake AVX-512 y OpenMP
+    ./configure CC=mpicc \
+      CFLAGS="-O3 -march=skylake-avx512 -fopenmp" \
+      LDFLAGS="-L$MKLROOT/lib -Wl,--no-as-needed -fopenmp" \
+      LIBS="-lmkl_intel_lp64 -lmkl_gnu_thread -lmkl_core -lgomp -lpthread -lm -ldl" \
+      --prefix=/shared/opt/hpl
+      
+    # Compilar en paralelo usando los 36 núcleos del nodo
+    make -j 36
+    make install
+    
+    # Verificación de librerías enlazadas
+    ldd /shared/opt/hpl/bin/xhpl | grep -i mkl
+    
+    # Copiar el binario localmente a todos los nodos (Plan B por si falla el NFS)
+    for n in nodo-1 nodo-2 nodo-3; do
+      ssh $n "sudo mkdir -p /opt/hpl/bin && sudo cp /shared/opt/hpl/bin/xhpl /opt/hpl/bin/"
+    done
+	
+	
+	#!/bin/bash
+	
+	[ -f hpl-2.3.tar.gz ] || wget https://www.netlib.org/benchmark/hpl/hpl-2.3.tar.gz
+	
+	
+	cd hpl-2.3
+	./configure CC=mpicc \
+		CFLAGS="-O3 -march=skylake-avx512 -fopenmp" \
+		LDFLAGS="-L$MKLROOT/lib -Wl,--no-as-needed -fopenmp" \
+		LIBS="-lmkl_intel_lp64 -lmkl_gnu_thread -lmkl_core -lgomp -lpthread -lm -ldl" \
+		--prefix=/shared/opt/hpl
+	make -j 36
+	make install
+	ldd /shared/opt/hpl/bin/xhpl | grep -i mkl
+	# copia local en cada nodo (por si NFS falla en la final)
+	for n in nodo-1 nodo-2 nodo-3; do
+		ssh $n "sudo mkdir -p /opt/hpl/bin && sudo cp /shared/opt/hpl/bin/xhpl /opt/hpl/bin/"
+	done
+		
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	```
+	
 	
 	
 	
