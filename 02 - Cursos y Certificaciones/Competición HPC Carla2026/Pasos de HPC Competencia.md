@@ -255,7 +255,7 @@
 	
 
 
-### Nodo 1 maestro
+### Nodo 1 maestro (DNS, ANSIBLE, )
 
 1. Agregar dns
 	
@@ -266,7 +266,7 @@
 	![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260918095802.png)
 	
 
-1. Descargar e instalar ansible
+2. Descargar e instalar ansible
 	`sudo dnf install epel-release -y
 	![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260918095905.png)
 	
@@ -276,7 +276,7 @@
 	![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260918100458.png)
 	
 
-1. Ansible
+3. Ansible
 	descargar nano y saltar error
 	![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260918102450.png)
 	![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260918102507.png)
@@ -289,14 +289,47 @@
 	`ansible all -i inventario.ini -m ping`para comprobar
 	
 	
+
+3. Herramientas necesarias
+	 Crearemos un script donde nos descargara lo necesario para la seguridad, red y dependencias para compilar y ejecutar software HPC
+	 - **Validación y Actualización:** Verifica la conexión a internet con `curl`, actualiza el sistema base y descarga compiladores (como GCC) requeridos para compilar HPL desde cero.
+	- **Dependencias Críticas:** Instala `numactl` para el manejo de memoria NUMA, `environment-modules` para controlar versiones de software y `nfs-utils` para permitir el almacenamiento en red.
+	- **Red y Sincronización:** Mapea las IPs locales en `/etc/hosts` para la comunicación de OpenMPI, unifica los relojes de los nodos con `chronyd` y abre el cortafuegos exclusivamente para el tráfico de la subred interna.
+	- **Seguridad:** Bloquea el acceso remoto (SSH) al superusuario root.
+	- **Parche InfiniBand:** Fija el parámetro `memlock` como ilimitado para que la red de alta velocidad (UCX/RDMA) pueda mover grandes bloques de memoria sin abortar los procesos.
+	- **Aplicación de Cambios:** Ejecuta un reinicio (`reboot`) para garantizar que el servidor arranque utilizando el nuevo kernel instalado en el primer paso.
 	
+	`nano scripts/01-base.sh
 	
+	```
+		#!/bin/bash
+	# Paso 4 del plan - base comun. Correr en cada nodo:
+	#   ssh nodo-N 'bash -s' < scripts/01-base.sh
+	set -e
+	curl -sI https://dl.rockylinux.org | head -1
+	sudo dnf -y update
+	sudo dnf -y groupinstall "Development Tools"
+	sudo dnf -y install wget git tar rsync numactl numactl-devel hwloc pciutils environment-modules chrony nfs-utils tuned kernel-tools python3
+	for h in "10.2.13.1 nodo-1" "10.2.13.2 nodo-2" "10.2.13.3 nodo-3"; do
+		grep -q "$h" /etc/hosts || echo "$h" | sudo tee -a /etc/hosts
+	done
+	echo "PermitRootLogin no" | sudo tee /etc/ssh/sshd_config.d/10-noroot.conf
+	sudo systemctl restart sshd
+	sudo systemctl enable --now chronyd
+	sudo firewall-cmd --permanent --zone=trusted --add-source=10.2.13.0/24 || true
+	sudo firewall-cmd --reload
+	# memlock para RDMA/UCX (encontrado en la practica el 18/09, no estaba en la receta original)
+	printf "* soft memlock unlimited\n* hard memlock unlimited\n" | sudo tee /etc/security/limits.d/99-hpc-memlock.conf
+	echo "Falta: sudo reboot (kernel nuevo de dnf update)."
+	```
+	![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260921230254.png)
 	
+	Ejecutarlo en todos los nodos y luego reiniciar
+	``ssh nodo-1 'bash -s' < scripts/01-base.sh``
+	`ssh nodo-2 'bash -s' < scripts/01-base.sh
+	`ssh nodo-3 'bash -s' < scripts/01-base.sh
 	
-	
-	
-	
-	
+	`sudo reboot`en cada nodo
 	
 	
 	
