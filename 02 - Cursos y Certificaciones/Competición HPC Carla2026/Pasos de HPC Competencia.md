@@ -266,19 +266,30 @@
 	  HostName 10.2.13.3
 	  User zonda-hpc3
 	
-	
-	
-	
-	
-	
 	```
 	
+	Autorizar y copiar la clave pública nuevamente
 	
+	`cat ~/.ssh/id_ed25519.pub >> ~/.ssh/authorized_keys
+	`ssh-copy-id nodo-2
+	`ssh-copy-id nodo-3`
 	
+	Ahora para que la comunicación funcione para todas las direcciones posibles, mandamos el par de claves en los dos nodos junto con el archivo de configuración.
+	
+	`for n in nodo-2 nodo-3; do
+	  `scp ~/.ssh/id_ed25519 ~/.ssh/id_ed25519.pub ~/.ssh/config $n:.ssh/
+	`done`
+	
+	Para comprobar que todo las conexiones anden se tira
+	`for a in nodo-1 nodo-2 nodo-3; do
+	  `for b in nodo-1 nodo-2 nodo-3; do
+	    `ssh $a "ssh $b hostname" || echo "FALLA $a -> $b"
+	`  done
+	`done
 	
 
 
-### Nodo 1 maestro (DNS, ANSIBLE, herramientas básicas, almacenamiento compartido NFS,)
+### Nodo 1 maestro (DNS, ANSIBLE, herramientas básicas, almacenamiento compartido NFS, IndiniBand)
 
 1. Agregar dns, lo mismo en los otros nodos
 	
@@ -386,10 +397,23 @@
 	
 	```
 	
+	**Condicional `if [ "$(hostname -s)" = "nodo-1" ];`:** El script verifica el nombre de la máquina. Si detecta que está corriendo en el `nodo-1`, actúa como el **Servidor NFS**. 
+	* Crea la carpeta `/shared` y le asigna los permisos de tu usuario (`chown`).
+	* Escribe en `/etc/exports` la orden de compartir esa carpeta exclusivamente con la subred del clúster (`10.2.13.0/24`). 
+	* Inicia el servicio NFS (`systemctl enable --now nfs-server`) y aplica la configuración (`exportfs -ra`).
+	
+	**Sección `else`:** Si el script se ejecuta en los Nodos 2 o 3, actúan como **Clientes NFS**.
+	 * Crean su propia carpeta `/shared` vacía. 
+	 * Agregan una línea al archivo `/etc/fstab` indicando que deben montar la carpeta remota del Nodo 1 cada vez que arranquen (`nodo-1:/shared`).
+	 * Ejecutan `mount -a` para conectar la carpeta inmediatamente
+	 
+	 **Carpetas finales:** Finalmente, crea tres subcarpetas dentro de `/shared` (`registros`, `hpl-run`, `src`) para organizar el código fuente y las pruebas.
 	
 	
-	
-	
+	Lo corremos en los tres nodos
+	`ssh nodo-1 'bash -s' < scripts/02-nfs.sh
+	`ssh nodo-2 'bash -s' < scripts/02-nfs.sh
+	`ssh nodo-3 'bash -s' < scripts/02-nfs.sh
 	
 	
 	
