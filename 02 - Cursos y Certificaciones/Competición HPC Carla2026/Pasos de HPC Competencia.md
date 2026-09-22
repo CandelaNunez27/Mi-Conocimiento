@@ -323,6 +323,7 @@ https://github.com/pedroA37/zonda-hpc-carla2026.git
 
 3. Ansible
 	descargar nano y saltar error
+	export TERM=xterm256color
 	![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260918102450.png)
 	![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260918102507.png)
 	
