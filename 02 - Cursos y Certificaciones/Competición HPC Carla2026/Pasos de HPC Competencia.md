@@ -253,7 +253,7 @@
 	
 	![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260918035409.png)
 	
-	Pero para que este bien configurado el ssh y tenga exppecificado el usuario exacto para cada destino y evitar de tirar un comando tan largo expecificando usuario junto con ip
+	Pero para que este bien configurado el ssh y tenga especificado el usuario exacto para cada destino y evitar de tirar un comando tan largo especificando usuario junto con ip
 	En ~/.ssh/config y debe quedar de esta manera.
 	```
 	Host nodo-1
@@ -268,24 +268,33 @@
 	
 	```
 	
-	Autorizar y copiar la clave pública nuevamente
+	Autorizar y copiar la clave pública nuevamente pero de manera automatica con script
 	
-	`cat ~/.ssh/id_ed25519.pub >> ~/.ssh/authorized_keys
-	`ssh-copy-id nodo-2
-	`ssh-copy-id nodo-3`
+	`nano scripts/03-shh-nodos.sh`
 	
-	Ahora para que la comunicación funcione para todas las direcciones posibles, mandamos el par de claves en los dos nodos junto con el archivo de configuración.
+	```
+	set -e
+	[ -f ~/.ssh/id_ed25519 ] || ssh-keygen -t ed25519 -N "" -f ~/.ssh/id_ed25519
+	grep -qf ~/.ssh/id_ed25519.pub ~/.ssh/authorized_keys 2>/dev/null || cat ~/.ssh/id_ed25519.pub >> ~/.ssh/authorized_keys
+	chmod 600 ~/.ssh/authorized_keys
+	grep -q "Host nodo-\*" ~/.ssh/config 2>/dev/null || printf "Host nodo-*\n\tStrictHostKeyChecking accept-new\n" >> ~/.ssh/config
+	chmod 600 ~/.ssh/config
+	for n in nodo-2 nodo-3; do
+		ssh-copy-id $n
+		scp ~/.ssh/id_ed25519 ~/.ssh/id_ed25519.pub ~/.ssh/config $n:.ssh/
+	done
+	for a in nodo-1 nodo-2 nodo-3; do
+		for b in nodo-1 nodo-2 nodo-3; do
+			ssh $a "ssh $b hostname" || echo "FALLA $a -> $b"
+		done
+	done
+		
+	```
 	
-	`for n in nodo-2 nodo-3; do
-	  `scp ~/.ssh/id_ed25519 ~/.ssh/id_ed25519.pub ~/.ssh/config $n:.ssh/
-	`done`
-	
-	Para comprobar que todo las conexiones anden se tira
-	`for a in nodo-1 nodo-2 nodo-3; do
-	  `for b in nodo-1 nodo-2 nodo-3; do
-	    `ssh $a "ssh $b hostname" || echo "FALLA $a -> $b"
-	`  done
-	`done
+	- **Generación de identidad:** Crea una clave SSH segura (`ed25519`) sin contraseña en caso de no existir y se auto-autoriza agregándola al archivo local `authorized_keys`.
+	- **Evasión de confirmaciones:** Inyecta la regla `StrictHostKeyChecking accept-new` en la configuración SSH para que el sistema confíe automáticamente en las identidades de los demás nodos, evitando que los procesos en segundo plano se traben esperando a que el usuario escriba "yes".
+	- **Clonación de credenciales:** Distribuye la llave pública (`ssh-copy-id`), la llave privada y la configuración hacia los Nodos 2 y 3 mediante `scp`, logrando que todos compartan la misma identidad y una conexión bidireccional.
+	- **Diagnóstico de matriz (3x3):** Ejecuta un bucle de validación donde cada nodo intenta contactar a todos los demás de forma cruzada, confirmando que las 9 combinaciones posibles se conectan exitosamente sin mostrar la palabra "FALLA".
 	
 
 
@@ -420,5 +429,6 @@
 	
 
 
-
+6. Validación de la red InfiniBand 
+	
 
