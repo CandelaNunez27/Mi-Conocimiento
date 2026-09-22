@@ -283,6 +283,23 @@
 	
 	Crear el arhivo de host
 	![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260918102521.png)
+	
+	![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260921215710.png)
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 
 
 
