@@ -286,6 +286,8 @@
 	
 	![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260921215710.png)
 	
+	`ansible all -i inventario.ini -m ping`para comprobar
+	
 	
 	
 	
