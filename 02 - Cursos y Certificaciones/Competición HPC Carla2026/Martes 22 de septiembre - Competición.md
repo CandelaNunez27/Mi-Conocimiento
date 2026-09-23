@@ -156,3 +156,6 @@ Antes del límite de las **18:00**, asegúrate de empaquetar y tener listos los 
 3. **Scripts de ejecución y metadatos:** `run.sh`, `gen_dat.sh` y `comando.txt`.
 
 4. **Script de compilación:** `scripts/06-build-hpl.sh` (para certificar el cumplimiento estricto de la regla de compilar desde el código fuente de netlib).
+   
+   
+   ![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260922142410.png)
