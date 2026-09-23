@@ -214,11 +214,45 @@ ibv_devinfo | grep -E "hca_id|state|active_mtu"
 
 
 
-`nano scripts/05
-`chmod 777 02-nfs.sh
-`./02-nfs.sh 
+`nano scripts/05-mkl-mpi.sh
+
+![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260923003025.png)
+
+```
+#!/bin/bash
+set -e
+sudo tee /etc/yum.repos.d/oneAPI.repo >/dev/null <<EOF
+[oneAPI]
+name=Intel oneAPI repository
+baseurl=https://yum.repos.intel.com/oneapi
+enabled=1
+gpgcheck=1
+repo_gpgcheck=1
+gpgkey=https://yum.repos.intel.com/intel-gpg-keys/GPG-PUB-KEY-INTEL-SW-PRODUCTS.PUB
+EOF
+sudo dnf -y install intel-oneapi-mkl-devel
+sudo dnf -y install openmpi openmpi-devel
+sudo tee /etc/profile.d/hpc.sh >/dev/null <<'EOF'
+export MKLROOT=/opt/intel/oneapi/mkl/latest
+export PATH=/usr/lib64/openmpi/bin:$PATH
+export LD_LIBRARY_PATH=/usr/lib64/openmpi/lib:$MKLROOT/lib:$LD_LIBRARY_PATH
+EOF
+
+```
+![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260923002957.png)
 
 
+`chmod 777 05-mkl-mpi.sh
+![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260923003037.png)
+
+`./05-mkl-mpi.sh
+![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260923003100.png)
+![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260923003118.png)
+![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260923003140.png)
+![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260923003349.png)
+![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260923003414.png)![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260923003439.png)![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260923003524.png)![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260923003601.png)![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260923003620.png)
+![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260923003651.png)
+![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260923003717.png)![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260923003732.png)
 
 
 
@@ -263,7 +297,9 @@ BIOS=tuneado ./run.sh confirmacion.dat nodo-1,nodo-2,nodo-3 2 18
 ```
 
 _Verificación:_ La salida en consola debe finalizar obligatoriamente con el estado **PASSED**. Si el residual falla, detén la ejecución y revisa los logs.
+![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260923003839.png)
 
+desde aqui lo hizo pedro
   
 
 ### **Paso 4: Ejecución de la Corrida Final de Alto Rendimiento (Fase F)**
@@ -334,3 +370,6 @@ Antes del límite de las **18:00**, asegúrate de empaquetar y tener listos los 
    
    
    ![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260922142410.png)
+
+
+Se llego a 
