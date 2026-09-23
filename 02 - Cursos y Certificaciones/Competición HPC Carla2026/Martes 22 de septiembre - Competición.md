@@ -59,12 +59,18 @@ es la contraseña proporcionada por correo.
 ![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260922225332.png)
 ![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260922225529.png)
 
-### **Paso 2: Verificación Post-Reinicio del Sistema (`check.sh`)**
+Se agrego los usuarios en ~/ssh/config en los tres
+
+
+
+
+### **Paso 2: Correr los script (`check.sh`)**
+
+### **Paso 3: Verificación Post-Reinicio del Sistema (`check.sh`)**
 
 Accede al `nodo-1` para comprobar que la red, el almacenamiento NFS, InfiniBand y los servicios se levantaron de manera autónoma:
 
-  
-
+ 
 Bash
 
 ```
@@ -86,6 +92,42 @@ _Verificación esperada:_
 - Binario local `xhpl` presente en `/opt/hpl/bin/`.
 
 - 36 núcleos detectados por nodo (Hyperthreading deshabilitado).
+
+ `[scct-2613@carlanga ~]$ ssh zonda-hpc1@10.2.13.1 `
+ `mkdir scripts`
+ `cd scripts
+ `TERM=xtern ssh zonda-hpc1@10.2.13.1
+ `nano 01-base,sh
+
+![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260922230107.png)
+![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260922230206.png)
+![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260922230333.png)
+![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260922230559.png)
+
+```
+#!/bin/bash
+# Paso 4 del plan - base comun. Correr en cada nodo:
+#   ssh nodo-N 'bash -s' < scripts/01-base.sh
+set -e
+curl -sI https://dl.rockylinux.org | head -1
+sudo dnf -y update
+sudo dnf -y groupinstall "Development Tools"
+sudo dnf -y install wget git tar rsync numactl numactl-devel hwloc pciutils environment-modules chrony nfs-utils tuned kernel-tools python3
+for h in "10.2.13.1 nodo-1" "10.2.13.2 nodo-2" "10.2.13.3 nodo-3"; do
+	grep -q "$h" /etc/hosts || echo "$h" | sudo tee -a /etc/hosts
+done
+echo "PermitRootLogin no" | sudo tee /etc/ssh/sshd_config.d/10-noroot.conf
+sudo systemctl restart sshd
+sudo systemctl enable --now chronyd
+sudo firewall-cmd --permanent --zone=trusted --add-source=10.2.13.0/24 || true
+sudo firewall-cmd --reload
+# memlock para RDMA/UCX (encontrado en la practica el 18/09, no estaba en la receta original)
+printf "* soft memlock unlimited\n* hard memlock unlimited\n" | sudo tee /etc/security/limits.d/99-hpc-memlock.conf
+echo "Falta: sudo reboot (kernel nuevo de dnf update)."
+
+```
+
+
 
 ### **Paso 3: Corrida Corta de Confirmación (Sanity Check)**
 
