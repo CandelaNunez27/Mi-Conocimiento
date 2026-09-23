@@ -52,14 +52,30 @@
 17) **¿En cuál de estas capas del modelo OSI se agregaría una dirección lógica durante el encapsulamiento?**
 	Capa de red.
 
-18) **Para evitar la dependencia tecnológica con un solo proveedor (Vendor Lock-in), se recomienda firmar contratos de uso exclusivo a largo plazo en lugar de usar despliegues de contenedores como Kubernetes.**
-	Falso.
+18) **¿Cuáles son los dos criterios que se utilizan para seleccionar un medio de red para una red? (Elija dos opciones).**
+	La distancia que el medio seleccionado puede transportar una señal correctamente, el entorno donde se instalará el medio seleccionado.
 
-19) **Según el "Modelo de Responsabilidad Compartida", si borras una base de datos por accidente en la nube, el proveedor asume la culpa y es responsable de recuperar tu información.**
-	Falso.
+19) **¿Qué tipo de modelo de red describe las funciones que deben completarse en una capa en particular, pero no especifica exactamente cómo debe funcionar cada protocolo?**
+	Modelo de referencia.
 
-20) **¿Qué beneficio principal aportan los procesadores Graviton4 en la infraestructura de cómputo de AWS?**
-	Permiten un ahorro de costos de hasta el 40% frente a la arquitectura x86 tradicional.
+20) **¿Qué información se agrega a la tabla de switches desde las tramas entrantes?**
+	dirección MAC de origen y número de puerto entrante.
+
+21) **¿Cuántos bits hay en una dirección IPv4?**
+	32 bits.
+
+22) **¿Qué diseño de red tiene la menor cantidad de dominios de difusión?**
+	![](../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260923013736.png)
+
+23) **¿Cuántos bits hay en una dirección IPv4?**
+	32 bits.
+
+
+
+
+
+
+
 
 # Nota: 10 (diez)
 
