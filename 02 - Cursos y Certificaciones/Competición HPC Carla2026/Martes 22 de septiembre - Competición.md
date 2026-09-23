@@ -194,13 +194,27 @@ mkdir -p /shared/registros /shared/hpl-run /shared/src
 
 
 ![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260922234631.png)
+
+
+```
+#!/bin/bash
+set -e
+sudo dnf -y install rdma-core infiniband-diags perftest libibverbs-utils ucx ucx-ib
+ibstat
+ibv_devinfo | grep -E "hca_id|state|active_mtu"
+
+```
+
+![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260923002651.png)
+
+
 ![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260922234758.png)
 ![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260922234832.png)
 ![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260922234947.png)
 
 
 
-`nano scripts/04-ib.sh
+`nano scripts/05
 `chmod 777 02-nfs.sh
 `./02-nfs.sh 
 
