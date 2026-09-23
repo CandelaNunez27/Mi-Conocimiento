@@ -90,9 +90,58 @@
 	2001:DB8:0:1470::200
 
 
-29) **¿Cuál grupo de números es una dirección IPv6 válida?**
+29) **Observe la ilustración.Un técnico está intentando configurar la dirección IPv6 2001:db8::1111::0200 en un dispositivo.¿Por qué el dispositivo devuelve un mensaje de error que indica que la dirección no es válida?**
+	La notación de dirección IPv6 es incorrecta.
+	![](../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260923015258.png)
+	
+
+
+30) **Observe la ilustración.¿Cuántos bits son representados po cada grupo de cuatro valores hexadecimales contenidos entre los dos puntos en una dirección IPv6?**
+	16
+	![](../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260923015348.png)
+
+
+
+31) **Una pequeña oficina de contabilidad está configurando una red inalámbrica para conectar dispositivos finales y proporcionar acceso a Internet. ¿En cuales dos situaciones realiza un enrutador inalámbrico la traducción de direcciones de red (NAT)? (Elija dos opciones).**
+	cuando un host envía paquetes a un sitio remoto propiedad del fabricante del enrutador inalámbrico para solicitar una copia digital del manual del dispositivo. cuando un host envía paquetes al ISP para solicitar un aumento de velocidad para los servicios de Internet
+
+
+
+32) **¿Un administrador de red tiene una LAN de varios pisos para supervisar y mantener. A través de un monitoreo cuidadoso, el administrador ha notado una gran cantidad de tráfico de difusión que ralentiza la red. ¿Qué dispositivo usaría para resolver mejor este problema?**
+	enrutador
+
+
+
+33) **Observe la ilustración. PC1 emite una solicitud ARP porque necesita enviar un paquete a PC3. En este escenario, ¿qué pasará a continuación?**
+	RT1 enviará una respuesta ARP con su propia dirección MAC Fa0/0
+
+
+34) **¿Cuál grupo de números es una dirección IPv6 válida?**
 	2001:0db8:3c55:0015:1010:0000:abcd:ff13
 
+
+35) **¿Cuál grupo de números es una dirección IPv6 válida?**
+	2001:0db8:3c55:0015:1010:0000:abcd:ff13
+
+
+36) **¿Cuál grupo de números es una dirección IPv6 válida?**
+	2001:0db8:3c55:0015:1010:0000:abcd:ff13
+
+
+37) **¿Cuál grupo de números es una dirección IPv6 válida?**
+	2001:0db8:3c55:0015:1010:0000:abcd:ff13
+
+
+38) **¿Cuál grupo de números es una dirección IPv6 válida?**
+	2001:0db8:3c55:0015:1010:0000:abcd:ff13
+
+
+39) **¿Cuál grupo de números es una dirección IPv6 válida?**
+	2001:0db8:3c55:0015:1010:0000:abcd:ff13
+
+
+40) **¿Cuál grupo de números es una dirección IPv6 válida?**
+	2001:0db8:3c55:0015:1010:0000:abcd:ff13
 
 
 # Nota: 10 (diez)
