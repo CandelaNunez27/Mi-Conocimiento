@@ -40,17 +40,17 @@
 13) **¿Qué tecnología de codificación de datos se utiliza en los cables de cobre?**
 	pulsos eléctricos.
 
-14) **A nivel de virtualización, el hipervisor de Tipo 2 (Hosted) se instala como una aplicación regular sobre un sistema operativo tradicional (como Windows), y algunos ejemplos de esto son VirtualBox o VMware Workstation.**
-	Verdadero.
+14) **En el contexto de una instalación de red, ¿cuál representa una ventaja real al elegir cableado de fibra óptica por encima del cableado de cobre clásico?**
+	Es totalmente inmune a las interferencias de radiofrecuencia (RFI) y electromagnéticas (EMI)..
 
-15) **¿Por qué razón ciertas industrias muy reguladas (como bancos o centros de salud) a menudo prefieren seguir alojando sus sistemas ERP centrales en una infraestructura On-Premise en lugar de la Nube Pública?**
-	  Para integrar sus procesos asegurando un control físico, exclusivo y estricto sobre todos sus datos confidenciales.
+15) **¿Cuáles son las dos capas del modelo OSI que tienen la misma funcionalidad que las dos capas del modelo TCP/IP?(Escoge dos.)**
+	  transporte, red.
 
-16) **En el modelo de Software como Servicio (SaaS), ¿de qué aspecto es responsable el usuario final?**
-	Únicamente de realizar las configuraciones básicas de su cuenta de usuario.
+16) **¿Qué hace un switch LAN de Cisco si recibe una trama entrante y la dirección MAC de destino no figura en la tabla de direcciones MAC?**
+	Reenvía la trama a todos los puertos, excepto al puerto donde se recibe la trama.
 
-17) **El modelo de infraestructura "On-Premise" significa que el software y la infraestructura están alojados dentro de las instalaciones físicas o el centro de datos de la empresa.**
-	Verdadero.
+17) **¿En cuál de estas capas del modelo OSI se agregaría una dirección lógica durante el encapsulamiento?**
+	Capa de red.
 
 18) **Para evitar la dependencia tecnológica con un solo proveedor (Vendor Lock-in), se recomienda firmar contratos de uso exclusivo a largo plazo en lugar de usar despliegues de contenedores como Kubernetes.**
 	Falso.
