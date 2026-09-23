@@ -372,4 +372,13 @@ Antes del límite de las **18:00**, asegúrate de empaquetar y tener listos los 
    ![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260922142410.png)
 
 
-Se llego a 
+
+# Resultados final
+
+Se llego a 4811 gbflops
+
+`[scct-2613@carlanga submission]$ cat README.md
+![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260923004119.png)
+
+![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260923004136.png)
+![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260923004141.png)

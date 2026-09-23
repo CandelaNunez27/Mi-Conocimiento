@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "02 - Cursos y Certificaciones/Competición HPC Carla2026/Martes 22 de septiembre - Competición.md",
+                "file": "02 - Cursos y Certificaciones/Curso Cisco Conceptos básicos de redes/Examen Final/Examen de fin de curso.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Martes 22 de septiembre - Competición"
+              "title": "Examen de fin de curso"
             }
           }
         ],
@@ -241,6 +241,14 @@
   },
   "active": "8b2b09cc87f16d13",
   "lastOpenFiles": [
+    "04 - Otros/Plantillas/Examen largo plantilla.md",
+    "04 - Otros/Plantillas/Examen Corto Plantilla.md",
+    "02 - Cursos y Certificaciones/Curso Cisco Conceptos básicos de redes/Examen Final/Examen de fin de curso.md",
+    "02 - Cursos y Certificaciones/Competición HPC Carla2026/Martes 22 de septiembre - Competición.md",
+    "02 - Cursos y Certificaciones/Curso Cisco Conceptos básicos de redes/Examen Final",
+    "04 - Otros/Imagenes/Pasted image 20260923004141.png",
+    "04 - Otros/Imagenes/Pasted image 20260923004136.png",
+    "04 - Otros/Imagenes/Pasted image 20260923004119.png",
     "04 - Otros/Imagenes/Pasted image 20260923003839.png",
     "04 - Otros/Imagenes/Pasted image 20260923003732.png",
     "04 - Otros/Imagenes/Pasted image 20260923003717.png",
@@ -248,13 +256,8 @@
     "04 - Otros/Imagenes/Pasted image 20260923003620.png",
     "04 - Otros/Imagenes/Pasted image 20260923003601.png",
     "04 - Otros/Imagenes/Pasted image 20260923003524.png",
-    "04 - Otros/Imagenes/Pasted image 20260923003439.png",
-    "04 - Otros/Imagenes/Pasted image 20260923003414.png",
-    "04 - Otros/Imagenes/Pasted image 20260923003349.png",
-    "04 - Otros/Imagenes/Pasted image 20260923003140.png",
     "02 - Cursos y Certificaciones/Competición HPC Carla2026/Pasos de HPC de prueba.md",
     "02 - Cursos y Certificaciones/Competición HPC Carla2026/Pasos de HPC Competencia.md",
-    "02 - Cursos y Certificaciones/Competición HPC Carla2026/Martes 22 de septiembre - Competición.md",
     "02 - Cursos y Certificaciones/Competición HPC Carla2026/Informe HPC.md",
     "02 - Cursos y Certificaciones/Competición HPC Carla2026/Info de la organización.md",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 4/Clases/2026-08-21 Día 36 Llaves asimetricas y conexión ssh.md",
@@ -277,8 +280,6 @@
     "02 - Cursos y Certificaciones/Curso Cisco Conceptos básicos de redes/Módulo 1/Resumen Módulo 1.md",
     "02 - Cursos y Certificaciones/Curso Cisco Conceptos básicos de redes/Módulo 1/1. Tipos de red.md",
     "02 - Cursos y Certificaciones/Curso Cisco Conceptos básicos de redes/Módulo 1/3. Ancho de Banda y Rendimiento.md",
-    "02 - Cursos y Certificaciones/Curso Cisco Conceptos básicos de redes/Módulo 1/2. Transmisión de datos.md",
-    "02 - Cursos y Certificaciones/Curso Cisco Conceptos básicos de redes/Módulo 1/Examen 1  Módulo 1.md",
     "02 - Cursos y Certificaciones/Curso Cisco Conceptos básicos de redes/Módulo 2",
     "02 - Cursos y Certificaciones/Curso Cisco Conceptos básicos de redes/Módulo 1",
     "02 - Cursos y Certificaciones/Curso Cisco Conceptos básicos de redes",
@@ -286,7 +287,6 @@
     "02 - Cursos y Certificaciones/Competición HPC Carla2026",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 4/Clases",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 4",
-    "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 3/TP Obligatorio",
     "1° Año/01 - Arquitectura de Computadoras/Sin título.canvas"
   ]
 }
