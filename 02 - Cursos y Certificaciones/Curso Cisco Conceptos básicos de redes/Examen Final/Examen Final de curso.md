@@ -160,11 +160,12 @@
 42) **Un técnico en redes intenta hacer ping a www.example.net desde la computadora de un cliente, pero el ping falla. El acceso a las unidades de red asignadas y una impresora compartida funcionan correctamente. ¿Cuáles son las dos posibles causas de este problema? (Elija dos opciones).**
 	El servicio DNS no está disponible en la red del cliente. El servidor web de destino está desactivado.
 
-43) **¿Cuál grupo de números es una dirección IPv6 válida?**
-	2001:0db8:3c55:0015:1010:0000:abcd:ff13
+43) **Se emitieron dos pings desde un host en una red local. El primer ping se emitió a la dirección IP de la puerta de enlace predeterminada del host y falló. El segundo ping se emitió a la dirección IP de un host fuera de la red local y se realizó correctamente. ¿Cuál es la posible causa del ping fallido?**
+	Se aplican reglas de seguridad al dispositivo de puerta de enlace predeterminado, lo que evita que procese solicitudes de ping.
 
-44) **¿Cuál grupo de números es una dirección IPv6 válida?**
-	2001:0db8:3c55:0015:1010:0000:abcd:ff13
+44) **Observe la ilustración. PC1 necesita resolver el nombre de host del servidor web en una dirección IP mediante DNS. ¿Qué dirección IP de destino y número de puerto de destino asignará PC1 al paquete de consulta DNS?**
+	192.168.20.3 puerto 53
+	![](../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260923022749.png)
 
 
 45) **¿Cuál grupo de números es una dirección IPv6 válida?**
