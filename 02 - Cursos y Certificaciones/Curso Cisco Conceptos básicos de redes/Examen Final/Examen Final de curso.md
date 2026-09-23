@@ -1,7 +1,7 @@
-1) **¿Cuál de las siguientes descripciones te caracteriza mejor??**
-	 Profesional de TI/Redes de nivel básico.
+1) **¿Cuál es el principal caso de uso operativo de una "VPN de acceso remoto" (cliente a sitio)?**
+	 Que los trabajadores remotos puedan conectarse a los archivos y recursos de la empresa de forma privada y segura desde cualquier lugar.
 
-2) **Por favor, elija la siguiente opción que mejor describa su objetivo actual o motivación para tomar este curso:**
+2) **Una conexión VPN ayuda a proteger la privacidad en línea del usuario al cifrar los datos en código y ocultar la dirección IP del dispositivo, volviendo la información ilegible para terceros.**
 	Verdadero.
 
 3) **En la estrategia de optimización de costos (FinOps) de Microsoft Azure, la "Ventaja Híbrida" consiste en obtener grandes ahorros económicos al reutilizar en la nube las licencias locales preexistentes de Windows o SQL Server de la empresa.**
@@ -59,3 +59,4 @@
 	Permiten un ahorro de costos de hasta el 40% frente a la arquitectura x86 tradicional.
 
 # Nota: 10 (diez)
+
