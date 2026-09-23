@@ -187,49 +187,17 @@
 	netstat
 	
 
-49) **¿Cuales dos campos de encabezado TCP se utilizan para confirmar la recepción de datos? (Elija dos opciones).**
-	número de reconocimiento, Número de secuencia
+49) **Un técnico está solucionando un problema de conectividad de red. Los pings al router inalámbrico local son exitosos, pero los pings a un servidor en Internet no tienen éxito. ¿Qué comando de la CLI podría ayudar al técnico a encontrar la ubicación del problema de red?**
+	tracert
 	
 
 
-50) **¿Cuales dos campos de encabezado TCP se utilizan para confirmar la recepción de datos? (Elija dos opciones).**
-	número de reconocimiento, Número de secuencia
-	
-
-51) **¿Cuales dos campos de encabezado TCP se utilizan para confirmar la recepción de datos? (Elija dos opciones).**
-	número de reconocimiento, Número de secuencia
-	
-
-52) **¿Cuales dos campos de encabezado TCP se utilizan para confirmar la recepción de datos? (Elija dos opciones).**
-	número de reconocimiento, Número de secuencia
-	
-
-53) **¿Cuales dos campos de encabezado TCP se utilizan para confirmar la recepción de datos? (Elija dos opciones).**
-	número de reconocimiento, Número de secuencia
+50) **Observe la ilustración. Un administrador está intentando solucionar problemas de conectividad entre PC1 y PC2 y utiliza el comando tracert de PC1 para hacerlo. Según la salida que se muestra, ¿dónde debe comenzar el administrador a solucionar el problema?**
+	R1
+	![](../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260923024126.png)
 	
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# Nota: 10 (diez)
+# Nota: 98 
 
