@@ -67,13 +67,31 @@
 22) **¿Qué diseño de red tiene la menor cantidad de dominios de difusión?**
 	![](../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260923013736.png)
 
-23) **¿Cuántos bits hay en una dirección IPv4?**
-	32 bits.
+23) **Observe la ilustración. Si todos los dispositivos usan una máscara de subred 255.255.255.0, ¿qué computadora portátil tendría una dirección IP con el mismo número de red que el servidor?**
+	C
+	![](../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260923014008.png)
+
+24) **Cuando un host envía un paquete, ¿cómo determina si el destino del paquete está en la misma red local o en una red remota?**
+	Utiliza la máscara de subred para comparar la dirección IP de origen y de destino.
+
+25) **¿Qué tres direcciones son direcciones públicas válidas? (Elija tres opciones).**
+	128.107.12.117, 198.133.219.17, 64.104.78.227
 
 
+26) **¿Cuál grupo de números es una dirección IPv6 válida?**
+	2001:0db8:3c55:0015:1010:0000:abcd:ff13
 
 
+27) **En un escenario donde una universidad asigna rangos de red distintos según el campus (ej. 10.1.x.x para uno y 10.2.x.x para otro) y además reserva un patrón específico en el tercer octeto exclusivamente para los teléfonos IP (ej. 10.1.40.x), ¿qué dos criterios se aplicaron para estructurar este esquema de direcciones? (Elija dos).**
+	Tipo de dispositivo, Ubicación geográfica
 
+
+28) **¿Cuál es la representación válida más corta de la dirección IPv6 2001:0DB8:0000:1470:0000:0000:0000:0200?**
+	2001:DB8:0:1470::200
+
+
+29) **¿Cuál grupo de números es una dirección IPv6 válida?**
+	2001:0db8:3c55:0015:1010:0000:abcd:ff13
 
 
 
