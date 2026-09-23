@@ -110,7 +110,7 @@ done
  `mkdir scripts`
  `cd scripts
  `TERM=xtern ssh zonda-hpc1@10.2.13.1
- `nano 01-base,sh
+ `nano 01-base.sh
 
 ![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260922230107.png)
 ![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260922230206.png)
@@ -154,11 +154,48 @@ para comprobar usamos `lscpu; numactl -H; free -g; grep MemTotal /proc/meminfo; 
 ![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260922233656.png)
 ![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260922233720.png)
 
+ `nano scripts/02-nfs.sh
+`chmod 777 02-nfs.sh
+`./02-nfs.sh 
+
+![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260922233903.png)
+
+```
+#!/bin/bash
+set -e
+if [ "$(hostname -s)" = "nodo-1" ]; then
+	sudo mkdir -p /shared
+	sudo chown $USER: /shared
+	echo "/shared 10.2.13.0/24(rw,sync)" | sudo tee /etc/exports
+	sudo systemctl enable --now nfs-server
+	sudo exportfs -ra
+else
+	sudo mkdir -p /shared
+	grep -q "nodo-1:/shared" /etc/fstab || echo "nodo-1:/shared /shared nfs defaults,_netdev 0 0" | sudo tee -a /etc/fstab
+	sudo mount -a
+fi
+mkdir -p /shared/registros /shared/hpl-run /shared/src
+
+```
+
+![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260922234254.png)
+
+![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260922234117.png)
+![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260922234141.png)
+
+`su -c "echo 'zonda-hpc1 ALL=(ALL) NOPASSWD: ALL' > /etc/sudoers.d/hpc"`
+`./02-nfs.sh 
+![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260922234439.png)
 
 
+`nano scripts/04-ib.sh
+`chmod 777 02-nfs.sh
+`./02-nfs.sh 
 
 
-
+![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260922234631.png)
+![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260922234758.png)
+![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260922234832.png)
 
 
 ### **Paso 3: Verificación Post-Reinicio del Sistema (`check.sh`)**
