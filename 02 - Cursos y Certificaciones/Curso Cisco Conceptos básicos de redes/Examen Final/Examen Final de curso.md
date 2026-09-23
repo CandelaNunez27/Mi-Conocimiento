@@ -114,29 +114,33 @@
 
 33) **Observe la ilustración. PC1 emite una solicitud ARP porque necesita enviar un paquete a PC3. En este escenario, ¿qué pasará a continuación?**
 	RT1 enviará una respuesta ARP con su propia dirección MAC Fa0/0
+	![](../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260923020011.png)
 
 
-34) **¿Cuál grupo de números es una dirección IPv6 válida?**
-	2001:0db8:3c55:0015:1010:0000:abcd:ff13
+34) **¿Qué tipo de ruta indica el código C en una tabla de enrutamiento IPv4 en un enrutador Cisco?**
+	ruta conectada directamente
 
 
-35) **¿Cuál grupo de números es una dirección IPv6 válida?**
-	2001:0db8:3c55:0015:1010:0000:abcd:ff13
+35) **Un empleado tiene problemas de conectividad. ¿Por qué un técnico de red podría intentar hacer ping a la puerta de enlace predeterminada desde la computadora portátil del empleado?**
+	para verificar la conectividad con el dispositivo que proporciona acceso a redes remotas
 
 
-36) **¿Cuál grupo de números es una dirección IPv6 válida?**
-	2001:0db8:3c55:0015:1010:0000:abcd:ff13
+36) **Observe la ilustración. El host H2 envía un mensaje de unidifusión al host H6. ¿Qué dirección IP de destino está contenida en el encabezado del paquete cuando llega al host H6?**
+	la dirección IP asignada al adaptador de red en el host H6
+	![](../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260923020445.png)
 
 
-37) **¿Cuál grupo de números es una dirección IPv6 válida?**
-	2001:0db8:3c55:0015:1010:0000:abcd:ff13
+37) **¿Observe la ilustración. ¿La dirección IP de cuál interfaz del dispositivo debe usarse como la configuración de puerta de enlace predeterminada del host H1?**
+	R1: G0/0
+	![](../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260923020501.png)
 
 
-38) **¿Cuál grupo de números es una dirección IPv6 válida?**
-	2001:0db8:3c55:0015:1010:0000:abcd:ff13
+38) **Observe la ilustración. La PC1 intenta conectarse con File_server1 y envía una solicitud ARP para obtener una dirección MAC de destino. ¿Qué dirección MAC recibirá la PC1 en la respuesta ARP?**
+	la dirección MAC de la interfaz G0/0 en R1
+	![](../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260923020622.png)
 
 
-39) **¿Cuál grupo de números es una dirección IPv6 válida?**
+39) **Segun la actividad, ¿Qué dirección IP debe usarse como dirección de puerta de enlace predeterminada en la PC0?**
 	2001:0db8:3c55:0015:1010:0000:abcd:ff13
 
 
