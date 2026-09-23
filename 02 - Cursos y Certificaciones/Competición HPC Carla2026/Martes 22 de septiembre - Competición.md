@@ -11,6 +11,12 @@ ssh scct-2613@bastion.tail263e10.ts.net
 
 ![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260922114521.png)
 
+Prender los nodos por interfaz gráfica
+`ssh -L 8000:10.1.13.1:443 scct-2613@bastion.tail263e10.ts.net`
+`ssh -L 8001:10.1.13.1:443 scct-2613@bastion.tail263e10.ts.net`
+`ssh -L 8002:10.1.13.1:443 scct-2613@bastion.tail263e10.ts.net`
+
+![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260922224627.png)
 
 ### **Paso 1: Restauración del BIOS (Obligatorio)**
 
