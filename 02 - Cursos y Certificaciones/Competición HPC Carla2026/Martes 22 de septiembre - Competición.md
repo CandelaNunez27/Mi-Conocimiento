@@ -13,11 +13,12 @@ ssh scct-2613@bastion.tail263e10.ts.net
 
 Prender los nodos por interfaz gráfica
 `ssh -L 8000:10.1.13.1:443 scct-2613@bastion.tail263e10.ts.net`
-`ssh -L 8001:10.1.13.1:443 scct-2613@bastion.tail263e10.ts.net`
-`ssh -L 8002:10.1.13.1:443 scct-2613@bastion.tail263e10.ts.net`
+`ssh -L 8001:10.1.13.2:443 scct-2613@bastion.tail263e10.ts.net`
+`ssh -L 8002:10.1.13.3:443 scct-2613@bastion.tail263e10.ts.net`
 
 ![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260922224627.png)
-
+![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260922224914.png)
+![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260922225006.png)
 ### **Paso 1: Restauración del BIOS (Obligatorio)**
 
 Dado que la organización restableció la configuración de la BIOS a los valores de fábrica antes de la final, debes cargar obligatoriamente el perfil optimizado (HPC, Hyperthreading desactivado, etc.) que respaldaste previamente.
@@ -51,7 +52,12 @@ ilorest logout
 _Verificación:_ Comprueba con `ilorest get` en cada BMC que los parámetros de rendimiento se hayan aplicado correctamente. _(Nota: Dale unos minutos a los nodos para que completen el reinicio físico)._
 
 es la contraseña proporcionada por correo.
-  
+![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260922225114.png)
+![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260922225152.png)
+![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260922225237.png)
+![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260922225302.png)
+![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260922225332.png)
+![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260922225529.png)
 
 ### **Paso 2: Verificación Post-Reinicio del Sistema (`check.sh`)**
 
