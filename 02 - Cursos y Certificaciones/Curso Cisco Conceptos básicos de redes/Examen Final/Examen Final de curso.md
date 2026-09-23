@@ -1,19 +1,22 @@
-1) **¿Cuál es el principal caso de uso operativo de una "VPN de acceso remoto" (cliente a sitio)?**
-	 Que los trabajadores remotos puedan conectarse a los archivos y recursos de la empresa de forma privada y segura desde cualquier lugar.
+1) **¿Qué banda de RF inalámbrica utiliza los dispositivos IEEE 802.11b/g?**
+	 2.4 GHz.
 
-2) **Una conexión VPN ayuda a proteger la privacidad en línea del usuario al cifrar los datos en código y ocultar la dirección IP del dispositivo, volviendo la información ilegible para terceros.**
-	Verdadero.
+2) **Una empresa está contemplando la posibilidad de utilizar una red de cliente-servidor o una red entre pares. ¿Cuáles son tres características de una red entre pares? (Elija tres opciones).**
+	Administración descentralizada, Facilidad de creación, Menor costo de implementación.
 
-3) **En la estrategia de optimización de costos (FinOps) de Microsoft Azure, la "Ventaja Híbrida" consiste en obtener grandes ahorros económicos al reutilizar en la nube las licencias locales preexistentes de Windows o SQL Server de la empresa.**
-	Verdadero.
+3) **Un representante de ventas que viaja utiliza un teléfono celular para interactuar con la oficina en el hogar y los clientes, realizar un seguimiento de las muestras, realizar llamadas de ventas, registrar el kilometraje y cargar/descargar datos mientras se encuentra en el hotel. ¿Qué método de conectividad a Internet sería el método preferido para utilizar en el dispositivo móvil debido a su bajo costo?**
+	Wifi.
 
-4) **¿Cuál es el caso de uso central para configurar una red "VPN de Extranet"?**
-	Vincular redes locales (LAN) de distintas organizaciones, lo que es útil para colaborar de forma segura con proveedores o socios externos.
+4) **¿Cuáles son los tres pasos que deben realizarse para conectar manualmente un dispositivo Android o IOS a una red inalámbrica asegurada? (Elija tres opciones).**
+	Introducir el SSID de la red, Elegir el tipo de seguridad correcto, Ingresar la contraseña de autenticación.
 
-5) **La Nube Híbrida no consiste simplemente en "usar dos nubes distintas", sino que exige una conexión técnica sólida (como un túnel VPN o Direct Connect) entre ambas infraestructuras.**
-	Verdadero.
+5) **¿Cuál es una de las desventajas de implementar un modelo de red entre pares?**
+	Falta de administración centralizada.
 
 6) **Al diseñar y segmentar una red virtual en la nube, ¿dónde recomiendan las buenas prácticas ubicar una base de datos?**
+	
+	![](../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260923010923.png)
+	
 	En una subred privada, aislada, donde solo reciba tráfico de red interno.
 
 7) **¿Qué característica técnica define con exactitud a un hipervisor de Tipo 1 (Bare Metal)?**
