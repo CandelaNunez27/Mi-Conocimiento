@@ -141,11 +141,60 @@
 
 
 39) **Segun la actividad, ¿Qué dirección IP debe usarse como dirección de puerta de enlace predeterminada en la PC0?**
+	192.168.1.1
+	![](../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260923021018.png)
+	![](../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260923021030.png)
+	
+	
+
+
+40) **Un usuario configura una red inalámbrica doméstica. Se debe usar una dirección global en las traducciones de NAT para el tráfico que fluye a través del router inalámbrico. ¿Cómo se asigna esta dirección global?**
+	El router inalámbrico actuará como cliente DHCP para recibir direccionamiento global del ISP.
+
+
+41) **¿Cuál es la dirección IP de este servidor?**
+	209.165.201.4
+	![](../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260923021536.png)
+	![](../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260923021548.png)
+
+42) **Un técnico en redes intenta hacer ping a www.example.net desde la computadora de un cliente, pero el ping falla. El acceso a las unidades de red asignadas y una impresora compartida funcionan correctamente. ¿Cuáles son las dos posibles causas de este problema? (Elija dos opciones).**
+	El servicio DNS no está disponible en la red del cliente. El servidor web de destino está desactivado.
+
+43) **¿Cuál grupo de números es una dirección IPv6 válida?**
+	2001:0db8:3c55:0015:1010:0000:abcd:ff13
+
+44) **¿Cuál grupo de números es una dirección IPv6 válida?**
 	2001:0db8:3c55:0015:1010:0000:abcd:ff13
 
 
-40) **¿Cuál grupo de números es una dirección IPv6 válida?**
+45) **¿Cuál grupo de números es una dirección IPv6 válida?**
 	2001:0db8:3c55:0015:1010:0000:abcd:ff13
+
+
+46) **¿Cuál grupo de números es una dirección IPv6 válida?**
+	2001:0db8:3c55:0015:1010:0000:abcd:ff13
+47) **¿Cuál grupo de números es una dirección IPv6 válida?**
+	2001:0db8:3c55:0015:1010:0000:abcd:ff13
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 # Nota: 10 (diez)
