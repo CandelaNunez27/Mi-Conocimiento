@@ -13,32 +13,32 @@
 5) **¿Cuál es una de las desventajas de implementar un modelo de red entre pares?**
 	Falta de administración centralizada.
 
-6) **Al diseñar y segmentar una red virtual en la nube, ¿dónde recomiendan las buenas prácticas ubicar una base de datos?**
+6) **Observe la ilustración. ¿Qué término identifica correctamente el tipo de dispositivo incluido en el área B?**
 	
 	![](../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260923010923.png)
 	
-	En una subred privada, aislada, donde solo reciba tráfico de red interno.
+	Intermediario.
 
-7) **¿Qué característica técnica define con exactitud a un hipervisor de Tipo 1 (Bare Metal)?**
-	Se instala de forma directa sobre el hardware físico del equipo y es el más eficiente.
+7) **¿Qué tecnología inalámbrica permite que un cliente se conecte a una terminal de pago en la tienda con un teléfono inteligente?**
+	NFC.
 
-8) **¿Cuál de las siguientes es una característica técnica que define a una Nube Pública?**
-	Los servicios se ofrecen a través de internet público y son compartidos por múltiples organizaciones (multi-tenancy).
+8) **¿Cuál de las siguientes afirmaciones describe el uso de tecnología de redes por línea eléctrica?**
+	Un dispositivo se conecta a una LAN doméstica existente mediante un adaptador y un tomacorriente.
 
-9) **Si tu organización adquiere otra empresa en Azure y quieres que los servidores virtuales de ambas redes se comuniquen directamente usando direcciones IP privadas sin salir al internet público, ¿qué mecanismo de red debes usar?**
-	VNet Peering.
+9) **¿Qué tipo de dispositivo proporciona una conexión de Internet mediante el uso de una toma telefónica?**
+	Módem DSL.
 
-10) **Según el ecosistema estratégico actual de proveedores cloud (hacia 2026), ¿cuál de los siguientes mantiene el liderazgo global en cuota de mercado con alrededor de un 31%?**
-	  Amazon Web Services (AWS).
+10) **Un turista viaja por el campo y necesita conectarse a internet desde un equipo portátil. Sin embargo, el equipo portátil solo tiene conexiones Wi-Fi y Ethernet. El turista tiene un teléfono inteligente con conectividad 3G/4G. ¿Qué puede hacer el turista para permitir que el equipo portátil se conecte a internet?**
+	  Habilitar el anclaje a red y crear una zona de cobertura.
 
-11) **En un entorno de Plataforma como Servicio (PaaS), tú eres el responsable de instalar y gestionar el sistema operativo, el servidor web y el entorno de ejecución, ya que el proveedor solo se limita a entregarte el hardware.**
-	Falso.
+11) **¿Qué proceso implica colocar un formato de mensaje dentro de otro formato de mensaje?**
+	encapsulación.
 
-12) **La virtualización surgió como el corazón de la nube para solucionar el desperdicio de los recursos físicos, permitiendo ejecutar múltiples máquinas virtuales dentro de un solo servidor físico.**
-	Verdadero.
+12) **¿Qué información examina y utiliza un conmutador Ethernet para armar su tabla de direcciones?**
+	Dirección MAC de origen.
 
-13) **Si tu empresa contrata infraestructura bajo un modelo IaaS (como una instancia EC2 en AWS), el proveedor de la nube se encarga de administrar, actualizar y parchear automáticamente tu sistema operativo.**
-	Falso.
+13) **¿Qué tecnología de codificación de datos se utiliza en los cables de cobre?**
+	pulsos eléctricos.
 
 14) **A nivel de virtualización, el hipervisor de Tipo 2 (Hosted) se instala como una aplicación regular sobre un sistema operativo tradicional (como Windows), y algunos ejemplos de esto son VirtualBox o VMware Workstation.**
 	Verdadero.
