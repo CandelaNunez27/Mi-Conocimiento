@@ -196,6 +196,16 @@ mkdir -p /shared/registros /shared/hpl-run /shared/src
 ![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260922234631.png)
 ![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260922234758.png)
 ![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260922234832.png)
+![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260922234947.png)
+
+
+
+`nano scripts/04-ib.sh
+`chmod 777 02-nfs.sh
+`./02-nfs.sh 
+
+
+
 
 
 ### **Paso 3: Verificación Post-Reinicio del Sistema (`check.sh`)**
