@@ -59,39 +59,52 @@ es la contraseña proporcionada por correo.
 ![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260922225332.png)
 ![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260922225529.png)
 
-Se agrego los usuarios en ~/ssh/config en los tres
-
-
-
-
-### **Paso 2: Correr los script (`check.sh`)**
-
-### **Paso 3: Verificación Post-Reinicio del Sistema (`check.sh`)**
-
-Accede al `nodo-1` para comprobar que la red, el almacenamiento NFS, InfiniBand y los servicios se levantaron de manera autónoma:
-
- 
-Bash
+Se agrego los usuarios en ~/ssh/config en los tres, con su script
 
 ```
-ssh nodo-1
-cd /shared/hpl-run/
-./scripts/check.sh
+Host nodo-1
+  HostName 10.2.13.1
+  User zonda-hpc1
+Host nodo-2
+  HostName 10.2.13.2
+  User zonda-hpc2
+Host nodo-3
+  HostName 10.2.13.3
+  User zonda-hpc3
+
+
 ```
 
-_Verificación esperada:_
+```
+#!/bin/bash
+# Paso 3 del plan - SSH sin contraseña entre los 3 nodos. Correr en nodo-1.
+# Nota (18/09): esto se hizo a mano por bloqueo del clasificador de permisos de
+# Claude Code sobre acciones de acceso persistente entre maquinas. Se deja el
+# script para referencia/repetibilidad, pero en la practica se corrio paso a paso.
+# Requiere que ~/.ssh/config en nodo-1 tenga "User zonda-hpcN" explicito por host
+# (si falta, ssh-copy-id intenta entrar con el usuario local en vez del remoto).
+set -e
+[ -f ~/.ssh/id_ed25519 ] || ssh-keygen -t ed25519 -N "" -f ~/.ssh/id_ed25519
+grep -qf ~/.ssh/id_ed25519.pub ~/.ssh/authorized_keys 2>/dev/null || cat ~/.ssh/id_ed25519.pub >> ~/.ssh/authorized_keys
+chmod 600 ~/.ssh/authorized_keys
+grep -q "Host nodo-\*" ~/.ssh/config 2>/dev/null || printf "Host nodo-*\n\tStrictHostKeyChecking accept-new\n" >> ~/.ssh/config
+chmod 600 ~/.ssh/config
+for n in nodo-2 nodo-3; do
+	ssh-copy-id $n
+	scp ~/.ssh/id_ed25519 ~/.ssh/id_ed25519.pub ~/.ssh/config $n:.ssh/
+done
+for a in nodo-1 nodo-2 nodo-3; do
+	for b in nodo-1 nodo-2 nodo-3; do
+		ssh $a "ssh $b hostname" || echo "FALLA $a -> $b"
+	done
+done
 
-  
 
-- Interfaces de red con IP activa.
+```
+![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260922232405.png)
 
-- Directorio `/shared` montado correctamente en los tres nodos.
+### **Paso 2: Correr los script**
 
-- Dispositivo InfiniBand `mlx5_0` en estado **Active** a **100 Gb/s**.
-
-- Binario local `xhpl` presente en `/opt/hpl/bin/`.
-
-- 36 núcleos detectados por nodo (Hyperthreading deshabilitado).
 
  `[scct-2613@carlanga ~]$ ssh zonda-hpc1@10.2.13.1 `
  `mkdir scripts`
@@ -127,6 +140,37 @@ echo "Falta: sudo reboot (kernel nuevo de dnf update)."
 
 ```
 
+`chmod 777 01-base.sh`
+![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260922232552.png)
+
+
+
+### **Paso 3: Verificación Post-Reinicio del Sistema (`check.sh`)**
+
+Accede al `nodo-1` para comprobar que la red, el almacenamiento NFS, InfiniBand y los servicios se levantaron de manera autónoma:
+
+ 
+Bash
+
+```
+ssh nodo-1
+cd /shared/hpl-run/
+./scripts/check.sh
+```
+
+_Verificación esperada:_
+
+  
+
+- Interfaces de red con IP activa.
+
+- Directorio `/shared` montado correctamente en los tres nodos.
+
+- Dispositivo InfiniBand `mlx5_0` en estado **Active** a **100 Gb/s**.
+
+- Binario local `xhpl` presente en `/opt/hpl/bin/`.
+
+- 36 núcleos detectados por nodo (Hyperthreading deshabilitado).
 
 
 ### **Paso 3: Corrida Corta de Confirmación (Sanity Check)**
