@@ -103,7 +103,7 @@ done
 ```
 ![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260922232405.png)
 
-### **Paso 2: Correr los script**
+### **Paso 2: Correr los script (hacer lo mismo en los tres, cada integrante uso un nodo para hacer los mismos pasos)** 
 
 
  `[scct-2613@carlanga ~]$ ssh zonda-hpc1@10.2.13.1 `
@@ -140,8 +140,24 @@ echo "Falta: sudo reboot (kernel nuevo de dnf update)."
 
 ```
 
-`chmod 777 01-base.sh`
+`chmod 777 01-base.sh
+`./01-base.sh ` 
 ![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260922232552.png)
+![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260922233212.png)
+![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260922233233.png)
+![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260922233301.png)![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260922233334.png)
+![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260922233357.png)
+
+reboot en los tres
+
+para comprobar usamos `lscpu; numactl -H; free -g; grep MemTotal /proc/meminfo; lspci | grep -i -E "mellanox|infiniband"`
+![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260922233656.png)
+![](../../04%20-%20Otros/Imagenes/Pasted%20image%2020260922233720.png)
+
+
+
+
+
 
 
 
