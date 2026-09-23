@@ -168,14 +168,47 @@
 	![](../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260923022749.png)
 
 
-45) **¿Cuál grupo de números es una dirección IPv6 válida?**
-	2001:0db8:3c55:0015:1010:0000:abcd:ff13
+45) **¿Qué código muestra la página web?**
+	Bien hecho
+	![](../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260923023234.png)
+	
 
 
-46) **¿Cuál grupo de números es una dirección IPv6 válida?**
-	2001:0db8:3c55:0015:1010:0000:abcd:ff13
-47) **¿Cuál grupo de números es una dirección IPv6 válida?**
-	2001:0db8:3c55:0015:1010:0000:abcd:ff13
+46) **¿Cuales dos campos de encabezado TCP se utilizan para confirmar la recepción de datos? (Elija dos opciones).**
+	número de reconocimiento, Número de secuencia
+	
+
+
+47) **¿Cómo se utilizan los números de puerto en el proceso de encapsulación TCP/IP?**
+	Si se producen varias conversaciones que utilizan el mismo servicio, el número de puerto de origen se utiliza para realizar un seguimiento de las conversaciones separadas.
+
+
+48) **¿Qué comando utilizaría un técnico para ver las conexiones de red en una computadora host?**
+	netstat
+	
+
+49) **¿Cuales dos campos de encabezado TCP se utilizan para confirmar la recepción de datos? (Elija dos opciones).**
+	número de reconocimiento, Número de secuencia
+	
+
+
+50) **¿Cuales dos campos de encabezado TCP se utilizan para confirmar la recepción de datos? (Elija dos opciones).**
+	número de reconocimiento, Número de secuencia
+	
+
+51) **¿Cuales dos campos de encabezado TCP se utilizan para confirmar la recepción de datos? (Elija dos opciones).**
+	número de reconocimiento, Número de secuencia
+	
+
+52) **¿Cuales dos campos de encabezado TCP se utilizan para confirmar la recepción de datos? (Elija dos opciones).**
+	número de reconocimiento, Número de secuencia
+	
+
+53) **¿Cuales dos campos de encabezado TCP se utilizan para confirmar la recepción de datos? (Elija dos opciones).**
+	número de reconocimiento, Número de secuencia
+	
+
+
 
 
 
