@@ -5,8 +5,13 @@
 1. Almacenamiento de contraseña:
 	Creamos un dockerfile: FROM ubuntu:22.04, RUN apt-get update && apt-get insatall -y openssh-server sudo, RUN mkdir /var/run/sshd, RUN useradd -rm -d /home/admin -s /bin/bash -g root -G sudo adminlab, RUN echo 'adminlab:password_temporal_blanqueada' | chpassws, RUN mkdir -p /home/adminlab/.ss && chmod 700 /home/adminlab/.ssh, COPY id_demo_ssh.pub /home/adminlab/.ssh/authorized_keys, RUN chmod 600 /home/adminlab/.ssh/autorized_keys && chown -R adminlab:root /home/adminlab/.ssh, EXPONSE 22, CMD ["/usr/sbin/sshd","-D"]
 	
-	`cd` nos vamos a ~ (no hacer)
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260924024709.png)
+	
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260924024645.png)
+	
 	`ssh-keygen -t ed25519 -C "demo-alumno@lab-cumplimiento" -f ~/.ssh/id_demo_ssh -N ""` para generar las doble claves privadas y publicas
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260924025600.png)
+	
 	`ls -la` buscamos la carpeta .ssh `ls -ls .ssh/` veremos las llaves
 	
 	`cat .ssh/id_demo_ssh` y `cat .ssh/id_demo_ssh.pub`
