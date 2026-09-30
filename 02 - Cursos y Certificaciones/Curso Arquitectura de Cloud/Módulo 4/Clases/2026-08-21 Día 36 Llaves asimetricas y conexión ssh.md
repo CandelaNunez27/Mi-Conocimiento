@@ -61,14 +61,19 @@
 	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260929234351.png)
 	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260929234359.png)
 	
-	Ahora si corremos el que si anda, `docker build --no-cache -t servidor-ssh-demo .` , `docker run -d --name contenedor_seguro -p 2222:22 \ -e SSH_PUBLIC_KEY="${cat ~.ssh/id_demo_ssh.pub}" \ servidor-ssh-demo`
+	Ahora si corremos el que si anda, `docker build --no-cache -t servidor-ssh-demo .` , `sudo docker run -d --name contenedor_seguro -p 2222:22 -e SSH_PUBLIC_KEY="$(cat ~/.ssh/id_demo_ssh.pub)" servidor-ssh-demo`
 	
 	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260929234551.png)
 	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260929234624.png)
 	
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260929235603.png) 
 	
 	
 	Nos conectamos `ssh-keygen -R "[localhost]:2222" ` y `ssh -i ~/.ssh/id_demo_ssh -p 2222 adminlab@localhost`, Nos pregunrara si queremos conectarnos y le colocamos que yes y no nos pedirá contraseña
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260929235808.png)
+	
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260929235818.png) 
+	
 	
 
 
@@ -77,8 +82,13 @@
 1. ssh
 	Dentro de la consola conectada podemos tirar `ls`, `pwd` y `exit` para salir
 	Y no es lo mismo que conectarse por `docker exec -it contenedor_seguro bash` por que al ingresar tiramos `pwd` y veremos que el usuario es root. y dijimos queno se recomeinda usar el root. `exit`
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260929235852.png)
+	
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260929235929.png)
 	
 	por ende volvemos a adminlab, dentro nos dejara crear por ejemplo `mkdir cande` y tendremos los permisos para hacerlo
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260930000005.png)
+	
 
 
 
