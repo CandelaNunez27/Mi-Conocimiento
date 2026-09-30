@@ -20,9 +20,19 @@ Asumir que las cosas fallan y planificar que hacer en esos eventos.
 
 # Fundamentos Evento Cero (datos vs velocidad)
 
-Buen monitoreo para darnos cuenta del evento comenzo y esta en el momento 0. Por ende se evalua varios aspectos, principalmente el costo. Para RPO tener menos perdida de datos es un gran costo por
+Buen monitoreo para darnos cuenta del evento comenzó y esta en el momento 0. Por ende se evalúa varios aspectos, principalmente el costo. Para RPO tener menos perdida de datos es un gran costo porque requiere back up más grandes y frecuentes (más espacio de almacenamiento). Para RTO tener menos inactividad es un gran costo porque requiere un mayor trabajo constante del empleado para que vuelva el servicio.
 
 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260930020045.png)
+
+
+# Fundamentos RPO
+
+Enfocado a la protección de los datos midiendo en tiempo. 
+
+# 18 min
+
+![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260930020830.png)
+
 
 
 
@@ -59,4 +69,4 @@ Buen monitoreo para darnos cuenta del evento comenzo y esta en el momento 0. Por
 
 # Grabación de la Clase
 
-**Clase Grabada:** 
+**Clase Grabada:** https://drive.google.com/file/d/1bjgIR5RZFhqW6vqOX_tRtSvtKXLXAPi4/view
