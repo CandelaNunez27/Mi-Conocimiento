@@ -1,6 +1,24 @@
-# Teoría: sawkp
+# Teoría: Recuperación desastres (DRP)
 
 # Fundamentos sdjaksl
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
