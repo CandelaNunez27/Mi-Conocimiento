@@ -13,9 +13,13 @@
 	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260924025600.png)
 	
 	`ls -la` buscamos la carpeta .ssh `ls -ls .ssh/` veremos las llaves
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260924025810.png)
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260924025831.png)
+	
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260924025907.png)
 	
 	`cat .ssh/id_demo_ssh` y `cat .ssh/id_demo_ssh.pub`
-	
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260924025942.png)
 
 2. Docker:
 	
