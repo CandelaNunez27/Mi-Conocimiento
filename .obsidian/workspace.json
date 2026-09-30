@@ -98,7 +98,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "2c47654ff3f8d557",
@@ -229,6 +230,7 @@
   },
   "active": "943568e03b6713a3",
   "lastOpenFiles": [
+    "04 - Otros/Imagenes/Pasted image 20260930014723.png",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 4/Clases/2026-08-19 Día 35 Encriptación y cumplimientos.md",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 4/Clases/2026-08-14 Día 34 Práctica Autenticación.md",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 4/Clases/2026-08-12 Día 33 Gestión de Identidades (IAM).md",
@@ -267,7 +269,6 @@
     "02 - Cursos y Certificaciones/Curso Cisco Conceptos básicos de redes/Módulo 2/Examen 2 Módulo 2.md",
     "02 - Cursos y Certificaciones/Curso Cisco Conceptos básicos de redes/Módulo 3",
     "02 - Cursos y Certificaciones/Curso Cisco Conceptos básicos de redes/Módulo 2/Resumen Módulo 2.md",
-    "02 - Cursos y Certificaciones/Curso Cisco Conceptos básicos de redes/Módulo 2/1. Clientes y Servidores.md",
     "02 - Cursos y Certificaciones/Curso Cisco Conceptos básicos de redes/Módulo 2",
     "02 - Cursos y Certificaciones/Curso Cisco Conceptos básicos de redes/Módulo 1",
     "02 - Cursos y Certificaciones/Curso Cisco Conceptos básicos de redes",

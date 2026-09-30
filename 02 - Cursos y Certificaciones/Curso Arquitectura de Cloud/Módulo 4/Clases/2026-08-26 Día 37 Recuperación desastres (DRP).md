@@ -1,7 +1,10 @@
 # Teoría: Recuperación desastres (DRP)
 
-# Fundamentos sdjaksl
+# Fundamentos Resiliencia
 
+Asumir que las cosas fallan y 
+
+![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260930014723.png)
 
 
 
