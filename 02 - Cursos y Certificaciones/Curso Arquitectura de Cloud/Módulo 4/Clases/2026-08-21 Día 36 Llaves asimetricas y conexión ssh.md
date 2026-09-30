@@ -24,12 +24,22 @@
 2. Docker:
 	
 	Volvemos a la carpeta clase 2 DockerFile `docker build -t servidor-ssh-demo . --no-cahe`  ,`docker image ls` buildiamos la imagen
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260929233505.png)
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260929233552.png)
+	
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260929233635.png)
+	
+	
 	
 	`docker run -d --name contenedor_seguro -p 2222:22 servidor-ssh-demo` corremos la imagen y le abrimos el puerto 22 para poder conectarnos por ssh
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260929233801.png)
 	
 	`docker ps` lista los docker activos
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260929233829.png)
 	
 	`ssh -i ~/.ssh/id_demo_ssh -p 2222 adminlab@localhost` para conectarnos le damos yes y nos pedirá contraseña
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260929233936.png)
+	
 	
 	
 
@@ -37,9 +47,26 @@
 3. Salio mal porque pedia contraseña
 	Se copio un nuevo dockerfile y un archivo entrypoint.sh, se le dio permisos `chmod +x entrypoint.sh` , `ls -la` nos dara que tiene permisos de escritura.
 	
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260929234017.png)
+	
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260929234037.png)
+	
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260929234207.png)
+	
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260929234222.png)
+	
+	
 	Ahora paramos y borramos el anterior docker `docker stop contenedor_seguro`, `docker ps`, `docker container prune`
 	
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260929234351.png)
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260929234359.png)
+	
 	Ahora si corremos el que si anda, `docker build --no-cache -t servidor-ssh-demo .` , `docker run -d --name contenedor_seguro -p 2222:22 \ -e SSH_PUBLIC_KEY="${cat ~.ssh/id_demo_ssh.pub}" \ servidor-ssh-demo`
+	
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260929234551.png)
+	![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260929234624.png)
+	
+	
 	
 	Nos conectamos `ssh-keygen -R "[localhost]:2222" ` y `ssh -i ~/.ssh/id_demo_ssh -p 2222 adminlab@localhost`, Nos pregunrara si queremos conectarnos y le colocamos que yes y no nos pedirá contraseña
 	
