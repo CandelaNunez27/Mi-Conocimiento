@@ -90,7 +90,7 @@ Hay que prácticar los planes porque a la hora que el escenario se vuelva realid
 
 # Conclusión
 
-
+Apender que los sistemas se rompen, aprender como se rompen y como solucionarla. Lograr replicar esas roturas para entender como solucionarlas, para ello esta bueno la guia aws dissaster recovery planning , INCIBE que es una guia de negocio y la iso 22301 para la normativa. Constantemente estar atento a las vulnerabilidades que van apareciendo con el paso del tiempo.
 
 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020261002132109.png)
 
