@@ -27,11 +27,18 @@ Buen monitoreo para darnos cuenta del evento comenzó y esta en el momento 0. Po
 
 # Fundamentos RPO
 
-Enfocado a la protección de los datos midiendo en tiempo. 
-
-# 18 min
+Enfocado a la protección de los datos midiendo en tiempo. su mecanismo en principalmente el backup volviendo para atras perdiendo una franja horaria, cada más antiguio sea el backup menos costo pero más perdida de datos. 
 
 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020260930020830.png)
+
+# Fundamento RTO
+
+Enfocada en la continuedad del negocio y la funcionalidad a futuro, 
+
+![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020261001234835.png)
+
+
+
 
 
 
