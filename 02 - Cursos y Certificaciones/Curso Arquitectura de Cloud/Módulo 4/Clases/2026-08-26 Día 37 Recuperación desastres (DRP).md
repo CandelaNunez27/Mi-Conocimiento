@@ -40,7 +40,8 @@ Enfocada en la continuidad del negocio y la funcionalidad a futuro. su mecanismo
 
 # Fundamentos La nube y la resiliencia
 
-Hablando de RTO, unas de las mejores soluciones para continuidad es la nube. 
+Hablando de RTO, unas de las mejores soluciones para continuidad es la nube. También es bueno tener redundancia de varios proveedores, tener dos datacenter separados físicamente o simplemente la nube. Tener nuestra estructura en varias regiones, servicios de base de datos que hacen backup, las base de datos casi siempre tienen dos nodos donde uno es readonly y otro tiene acceso a escritura, pero el readonly puede ser resilientes al otro teniendo muy poca perdida de datos al sustituir al otro, y ademas seguros para usar el readonly porque así no modificamos sin querer algo. 
+Migrar a la nube se trata de buscar con más facilidad que lo que se pueda lograr con on-prime
 
 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020261002001645.png)
 
