@@ -45,7 +45,14 @@ Migrar a la nube se trata de buscar con más facilidad que lo que se pueda logra
 
 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020261002001645.png)
 
+# Fundamentos Estrategias de Recovery
 
+- Backup y Restore: Bajo costo de inversión pero perdida de tiempo ya que es lento por emde más tiempo de inactividad.
+- Pilot light: 
+
+# 48 min
+
+![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020261002004006.png)
 
 
 
