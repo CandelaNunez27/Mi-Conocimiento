@@ -33,12 +33,16 @@ Enfocado a la protección de los datos midiendo en tiempo. su mecanismo en princ
 
 # Fundamento RTO
 
-Enfocada en la continuedad del negocio y la funcionalidad a futuro, 
+Enfocada en la continuidad del negocio y la funcionalidad a futuro. su mecanismo es establezer un tiempo estimado que los técnicos tendran que volver a dejar el sisntema operavito, por ende se hacen sistemas redundantes, conmutación y arquitectura de alta disponibilidad, para solucionar problemas variados que pueden ser hardware, software, humano. Mientras mejores sean las soluciones serán más costosas pero con la ganancia de poco tiempo de inactividad.
 
 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020261001234835.png)
 
 
+# Fundamentos La nube y la resiliencia
 
+Hablando de RTO, unas de las mejores soluciones para continuidad es la nube. 
+
+![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020261002001645.png)
 
 
 

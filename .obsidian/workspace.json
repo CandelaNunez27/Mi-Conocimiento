@@ -98,7 +98,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "2c47654ff3f8d557",
@@ -229,6 +230,7 @@
   },
   "active": "943568e03b6713a3",
   "lastOpenFiles": [
+    "04 - Otros/Imagenes/Pasted image 20261002001645.png",
     "04 - Otros/Imagenes/Pasted image 20261001234835.png",
     "04 - Otros/Imagenes/Pasted image 20260930020830.png",
     "04 - Otros/Imagenes/Pasted image 20260930020045.png",
@@ -244,7 +246,6 @@
     "04 - Otros/Imagenes/Pasted image 20260929235852.png",
     "04 - Otros/Imagenes/Pasted image 20260929235818.png",
     "04 - Otros/Imagenes/Pasted image 20260929235808.png",
-    "04 - Otros/Imagenes/Pasted image 20260929235603.png",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 3/Clases/2026-08-07 Día 32 Práctica de Repaso.md",
     "02 - Cursos y Certificaciones/Curso Cisco Conceptos básicos de redes/Examen Final/Examen Final de curso.md",
     "02 - Cursos y Certificaciones/Curso Cisco Conceptos básicos de redes/Examen Final/Encuesta de fin de curso.md",
