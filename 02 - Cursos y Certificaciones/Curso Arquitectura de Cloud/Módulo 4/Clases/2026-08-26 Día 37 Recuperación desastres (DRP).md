@@ -72,7 +72,13 @@ Migrar a la nube se trata de buscar con más facilidad que lo que se pueda logra
 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020261002004006.png)
 
 
+# Fundamentos DRP vs BCP
 
+- DRP (Plande recuperación de desastres): conjunto de BCP (Plan de continuidad de negocio) con la Norma ISO 22301. 
+- La comunicación es fundamental para unas buenas primeras acciones, luego los roles para ver quien se encarga de qué acción y no se pisen. La logística para tener el área de trabajo buena para dar lugar a trabajo  para dar con  la solución
+
+
+![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020261002130800.png)
 
 
 # Práctica: sawkl
