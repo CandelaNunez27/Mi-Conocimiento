@@ -48,21 +48,28 @@ Migrar a la nube se trata de buscar con más facilidad que lo que se pueda logra
 # Fundamentos Estrategias de Recovery
 
 - Backup y Restore: Bajo costo de inversión pero perdida de tiempo ya que es lento por emde más tiempo de inactividad.
+  
+  ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020261002124700.png)
+  
 - Pilot light: mantiene una versión mínima de la infraestructura crítica ejecutándose constantemente en una región o entorno secundario. Esta configuración "llama piloto" siempre encendida, permite escalar rápidamente a un entorno de producción completo en caso de interrupción.
-- Warm Standbly: es parecido a pilot light pero esta apagado, con mucha más grande cantidad. se apaga el que falla y se levanta el war
+  
+  ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020261002124854.png)
+  
+  
+  
+- Warm Standbly: es parecido a pilot light pero esta apagado, con mucha más grande cantidad. se apaga el que falla y se levanta el warm standbly.
+  
+  ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020261002124909.png)
+  
+  
+  
+  
+- Multi-Site: duplicación 100% y manejado 100% de manera activca y que entre ellos no sé pisen o rompam.
 
-# 48 min
+  ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020261002124937.png)
+
 
 ![](../../../../04%20-%20Otros/Imagenes/Pasted%20image%2020261002004006.png)
-
-
-
-
-
-
-
-
-
 
 
 
