@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 4/Clases/2026-08-26 Día 37 Recuperación desastres (DRP).md",
+                "file": "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 4/Clases/2026-08-28 Día 38.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026-08-26 Día 37 Recuperación desastres (DRP)"
+              "title": "2026-08-28 Día 38"
             }
           }
         ]
@@ -98,8 +98,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "2c47654ff3f8d557",
@@ -213,8 +212,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 225.5,
-    "collapsed": true
+    "width": 225.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -230,6 +228,9 @@
   },
   "active": "943568e03b6713a3",
   "lastOpenFiles": [
+    "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 4/Clases/2026-08-26 Día 37 Recuperación desastres (DRP).md",
+    "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 4/Clases/2026-08-28 Día 38.md",
+    "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 4/Clases/Sin título.md",
     "04 - Otros/Imagenes/Pasted image 20261002132109.png",
     "04 - Otros/Imagenes/Pasted image 20261002131719.png",
     "04 - Otros/Imagenes/Pasted image 20261002130800.png",
@@ -240,12 +241,10 @@
     "04 - Otros/Imagenes/Pasted image 20261002124700.png",
     "04 - Otros/Imagenes/Pasted image 20261002124648.png",
     "04 - Otros/Imagenes/Pasted image 20261002004006.png",
-    "04 - Otros/Imagenes/Pasted image 20261002001645.png",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 4/Clases/2026-08-19 Día 35 Encriptación y cumplimientos.md",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 4/Clases/2026-08-14 Día 34 Práctica Autenticación.md",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 4/Clases/2026-08-12 Día 33 Gestión de Identidades (IAM).md",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 4/Clases/2026-08-21 Día 36 Llaves asimetricas y conexión ssh.md",
-    "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 4/Clases/2026-08-26 Día 37 Recuperación desastres (DRP).md",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 3/Clases/2026-08-07 Día 32 Práctica de Repaso.md",
     "02 - Cursos y Certificaciones/Curso Cisco Conceptos básicos de redes/Examen Final/Examen Final de curso.md",
     "02 - Cursos y Certificaciones/Curso Cisco Conceptos básicos de redes/Examen Final/Encuesta de fin de curso.md",
@@ -268,7 +267,6 @@
     "02 - Cursos y Certificaciones/Curso Cisco Conceptos básicos de redes/Módulo 3/Resumen Módulo 3.md",
     "02 - Cursos y Certificaciones/Curso Cisco Conceptos básicos de redes/Módulo 2/Examen 2 Módulo 2.md",
     "02 - Cursos y Certificaciones/Curso Cisco Conceptos básicos de redes/Módulo 3",
-    "02 - Cursos y Certificaciones/Curso Cisco Conceptos básicos de redes/Módulo 2/Resumen Módulo 2.md",
     "02 - Cursos y Certificaciones/Curso Cisco Conceptos básicos de redes/Módulo 2",
     "02 - Cursos y Certificaciones/Curso Cisco Conceptos básicos de redes/Módulo 1",
     "02 - Cursos y Certificaciones/Curso Cisco Conceptos básicos de redes",
