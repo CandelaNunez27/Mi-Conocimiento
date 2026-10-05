@@ -21,28 +21,28 @@ Cuestionario: https://gemini.google.com/share/e668fd2c4072
 7) **¿Cuál es la característica fundamental de la Infraestructura como Código (IaC) en herramientas como Terraform?**
 	Idempotencia: ejecutar el código varias veces produce el mismo resultado final.
 
-8) **¿Cuál de las siguientes es una característica técnica que define a una Nube Pública?**
-	Los servicios se ofrecen a través de internet público y son compartidos por múltiples organizaciones (multi-tenancy).
+8) **¿Qué componente de Kubernetes se encarga de mantener el estado deseado de los pods dentro de un nodo?**
+	Kubelet.
 
-9) **Si tu organización adquiere otra empresa en Azure y quieres que los servidores virtuales de ambas redes se comuniquen directamente usando direcciones IP privadas sin salir al internet público, ¿qué mecanismo de red debes usar?**
-	VNet Peering.
+9) **En seguridad en la nube, ¿qué significa el principio de 'Menor Privilegio' (Least Privilege)?**
+	Otorgar solo los permisos estrictamente necesarios para que el usuario realice su tarea.
 
-10) **Según el ecosistema estratégico actual de proveedores cloud (hacia 2026), ¿cuál de los siguientes mantiene el liderazgo global en cuota de mercado con alrededor de un 31%?**
-	  Amazon Web Services (AWS).
+10) **¿Qué métrica define el tiempo máximo que una organización puede permitirse estar sin servicio después de un desastre?**
+	  RTO (Recovery Time Objective).
 
-11) **En un entorno de Plataforma como Servicio (PaaS), tú eres el responsable de instalar y gestionar el sistema operativo, el servidor web y el entorno de ejecución, ya que el proveedor solo se limita a entregarte el hardware.**
-	Falso.
+11) **¿Cuál es el objetivo principal de la metodología FinOps en la gestión de la nube?**
+	Fomentar la responsabilidad financiera y la optimización de costos en tiempo real.
 
-12) **La virtualización surgió como el corazón de la nube para solucionar el desperdicio de los recursos físicos, permitiendo ejecutar múltiples máquinas virtuales dentro de un solo servidor físico.**
-	Verdadero.
+12) **En un pipeline de CI/CD, ¿qué fase se encarga de integrar el código nuevo en el repositorio principal y ejecutar pruebas automáticas?**
+	Continuous Integration (CI).
 
-13) **Si tu empresa contrata infraestructura bajo un modelo IaaS (como una instancia EC2 en AWS), el proveedor de la nube se encarga de administrar, actualizar y parchear automáticamente tu sistema operativo.**
-	Falso.
+13) **¿Para qué sirve el etiquetado (tagging) de recursos en una estrategia multi-cloud?**
+	Para organizar, asignar costos y gestionar la seguridad de forma coherente.
 
-14) **A nivel de virtualización, el hipervisor de Tipo 2 (Hosted) se instala como una aplicación regular sobre un sistema operativo tradicional (como Windows), y algunos ejemplos de esto son VirtualBox o VMware Workstation.**
-	Verdadero.
+14) **¿Cuál es la principal ventaja de utilizar contenedores (Docker) frente a máquinas virtuales tradicionales?**
+	Mayor eficiencia de recurso y tiempo de arranque mucho más rápidos.
 
-15) **¿Por qué razón ciertas industrias muy reguladas (como bancos o centros de salud) a menudo prefieren seguir alojando sus sistemas ERP centrales en una infraestructura On-Premise en lugar de la Nube Pública?**
+15) **En el contexto de serverless, ¿por qué se dice que el escalado es 'transparente' para el desarrollador?**
 	  Para integrar sus procesos asegurando un control físico, exclusivo y estricto sobre todos sus datos confidenciales.
 
 16) **En el modelo de Software como Servicio (SaaS), ¿de qué aspecto es responsable el usuario final?**
