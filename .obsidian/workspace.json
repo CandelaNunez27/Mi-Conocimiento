@@ -113,7 +113,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "2c47654ff3f8d557",
@@ -244,15 +245,17 @@
   },
   "active": "a465d003b86801f6",
   "lastOpenFiles": [
+    "04 - Otros/Imagenes/Pasted image 20261015014922.png",
+    "04 - Otros/Imagenes/Pasted image 20261015014845.png",
+    "04 - Otros/Imagenes/Pasted image 20261015014837.png",
+    "04 - Otros/Imagenes/Pasted image 20261015014446.png",
+    "04 - Otros/Imagenes/Pasted image 20261015014434.png",
     "04 - Otros/Imagenes/Pasted image 20261015013715.png",
     "04 - Otros/Imagenes/Pasted image 20261015013658.png",
     "04 - Otros/Imagenes/Pasted image 20261015012925.png",
     "04 - Otros/Imagenes/Pasted image 20261015012905.png",
     "04 - Otros/Imagenes/Pasted image 20261015012544.png",
     "04 - Otros/Imagenes/Pasted image 20261015012514.png",
-    "04 - Otros/Imagenes/Pasted image 20261015012450.png",
-    "04 - Otros/Imagenes/Pasted image 20261015011453.png",
-    "04 - Otros/Imagenes/Pasted image 20261015011043.png",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 4/Clases/2026-08-26 Día 37 Recuperación desastres (DRP).md",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 4/Clases/2026-08-21 Día 36 Llaves asimetricas y conexión ssh.md",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 4/Clases/2026-08-28 Día 38.md",
@@ -269,8 +272,6 @@
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 4/Clases/Sin título.md",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 5/Clases",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 5",
-    "04 - Otros/Imagenes/Pasted image 20261002132109.png",
-    "04 - Otros/Imagenes/Pasted image 20261002131719.png",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 4/Clases/2026-08-19 Día 35 Encriptación y cumplimientos.md",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 4/Clases/2026-08-14 Día 34 Práctica Autenticación.md",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 4/Clases/2026-08-12 Día 33 Gestión de Identidades (IAM).md",
