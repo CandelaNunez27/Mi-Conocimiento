@@ -43,21 +43,34 @@ Cuestionario: https://gemini.google.com/share/e668fd2c4072
 	Mayor eficiencia de recurso y tiempo de arranque mucho más rápidos.
 
 15) **En el contexto de serverless, ¿por qué se dice que el escalado es 'transparente' para el desarrollador?**
-	  Para integrar sus procesos asegurando un control físico, exclusivo y estricto sobre todos sus datos confidenciales.
+	  Porque el proveedor de nube gestiona automáticamente el aprovisionamiento según la demanda.
 
-16) **En el modelo de Software como Servicio (SaaS), ¿de qué aspecto es responsable el usuario final?**
-	Únicamente de realizar las configuraciones básicas de su cuenta de usuario.
+16) **¿Qué herramienta de gestión de configuración se basa en el envío de configuraciones mediante SSH (Push model) y usa YAML?**
+	Ansible.
 
-17) **El modelo de infraestructura "On-Premise" significa que el software y la infraestructura están alojados dentro de las instalaciones físicas o el centro de datos de la empresa.**
-	Verdadero.
+17) **¿Qué servicio de AWS se utiliza para el registro y auditoría de todas las llamadas a la API en una cuenta?**
+	CloudTrail.
 
-18) **Para evitar la dependencia tecnológica con un solo proveedor (Vendor Lock-in), se recomienda firmar contratos de uso exclusivo a largo plazo en lugar de usar despliegues de contenedores como Kubernetes.**
-	Falso.
+18) **En Kubernetes, ¿cuál es la unidad mínima de despliegue que puede contener uno o más contenedores?**
+	Pod siendo la unidad más pequeña y básica
 
-19) **Según el "Modelo de Responsabilidad Compartida", si borras una base de datos por accidente en la nube, el proveedor asume la culpa y es responsable de recuperar tu información.**
-	Falso.
+19) **¿Cuál es la principal diferencia entre una Nube Híbrida y una Multi-Cloud?**
+	La híbrida mezcla on-prime y nube pública; la multi-cloud usa varios proveedores de nube pública.
 
-20) **¿Qué beneficio principal aportan los procesadores Graviton4 en la infraestructura de cómputo de AWS?**
-	Permiten un ahorro de costos de hasta el 40% frente a la arquitectura x86 tradicional.
+20) **¿Qué tecnología permite el autoescalado inteligente mediante el uso de modelos de IA/ML?**
+	Escalado Predictivo (Predictive Scaling).
 
-# Nota: 10 (diez)
+21) **¿Cuál es el propósito del patrón de diseño 'Saga' en arquitecturas de microservicios?**
+	Gestionar transacciones distribuidas y asegurar la consistencia eventual mediante compensaciones.
+
+22) **¿Qué beneficio ofrece el uso de 'Savings Plans' o 'Reserved Instances'?**
+	Ofrecen descuentos significativos a cambio de un compromiso de uso a largo plazo.
+
+23) **¿Qué herramienta se utiliza para monitorizar infraestructuras de contenedores y suele usarse con Grafana para visualización?**
+	Prometheus.
+
+24) **En seguridad de la nube, ¿cuál es la función de un servicio de KMS (Key Management Service)?**
+	Crear y gestionar llaves criptográficas para encriptar datos.
+
+25) **Al planificar un DRP (Disaster Recovery Plan), ¿cuál de estos escenarios ofrece el menor RTO pero el mayor costo?**
+	Multi-site Active-Active (sitio dual activo).
