@@ -8,20 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "943568e03b6713a3",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 3/TP Obligatorio/TP 2 Módulo 2 y 3.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "TP 2 Módulo 2 y 3"
-            }
-          },
-          {
             "id": "a465d003b86801f6",
             "type": "leaf",
             "state": {
@@ -35,8 +21,7 @@
               "title": "2026-08-28 Día 38"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -245,6 +230,7 @@
   },
   "active": "a465d003b86801f6",
   "lastOpenFiles": [
+    "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 4/Clases/2026-08-28 Día 38.md",
     "04 - Otros/Imagenes/Pasted image 20261015223657.png",
     "04 - Otros/Imagenes/Pasted image 20261015223644.png",
     "04 - Otros/Imagenes/Pasted image 20261015223605.png",
@@ -255,10 +241,8 @@
     "04 - Otros/Imagenes/Pasted image 20261015223232.png",
     "04 - Otros/Imagenes/Pasted image 20261015222310.png",
     "04 - Otros/Imagenes/Pasted image 20261015222221.png",
-    "04 - Otros/Imagenes/Pasted image 20261015222142.png",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 4/Clases/2026-08-26 Día 37 Recuperación desastres (DRP).md",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 4/Clases/2026-08-21 Día 36 Llaves asimetricas y conexión ssh.md",
-    "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 4/Clases/2026-08-28 Día 38.md",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Autoevaluación Integral - Infraestructura y Cloud Computing.md",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 3/TP Obligatorio/TP 2 Módulo 2 y 3.md",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 5/Clases/2026-09-25 Día 46.md",
