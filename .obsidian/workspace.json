@@ -98,7 +98,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "2c47654ff3f8d557",
@@ -229,6 +230,10 @@
   },
   "active": "a465d003b86801f6",
   "lastOpenFiles": [
+    "04 - Otros/Imagenes/Pasted image 20261017031723.png",
+    "04 - Otros/Imagenes/Pasted image 20261017031420.png",
+    "04 - Otros/Imagenes/Pasted image 20261017031257.png",
+    "04 - Otros/Imagenes/Pasted image 20261017031156.png",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 4/Clases/2026-08-26 Día 37 Recuperación desastres (DRP).md",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 4/Clases/2026-08-28 Día 38.md",
     "04 - Otros/Imagenes/Pasted image 20261017025106.png",
@@ -238,9 +243,6 @@
     "04 - Otros/Imagenes/Pasted image 20261017022814.png",
     "04 - Otros/Imagenes/Pasted image 20261015223657.png",
     "04 - Otros/Imagenes/Pasted image 20261015223644.png",
-    "04 - Otros/Imagenes/Pasted image 20261015223605.png",
-    "04 - Otros/Imagenes/Pasted image 20261015223519.png",
-    "04 - Otros/Imagenes/Pasted image 20261015223353.png",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 4/Clases/2026-08-21 Día 36 Llaves asimetricas y conexión ssh.md",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Autoevaluación Integral - Infraestructura y Cloud Computing.md",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 3/TP Obligatorio/TP 2 Módulo 2 y 3.md",
