@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 4/Clases/2026-09-02 Día 39.md",
+                "file": "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 4/Clases/2026-09-04 Día 40.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026-09-02 Día 39"
+              "title": "2026-09-04 Día 40"
             }
           }
         ]
@@ -98,8 +98,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "2c47654ff3f8d557",
@@ -230,6 +229,18 @@
   },
   "active": "a465d003b86801f6",
   "lastOpenFiles": [
+    "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 5/Clases/2026-09-09 Día 41.md",
+    "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 5/Clases/2026-09-25 Día 46.md",
+    "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 5/Clases/2026-10-02 Día 48.md",
+    "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 5/Clases/2026-09-30 Día 47.md",
+    "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Autoevaluación Integral - Infraestructura y Cloud Computing.md",
+    "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Sin título.md",
+    "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 5/Clases/2026-09-23 Día 45.md",
+    "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 5/Clases/2026-09-18 Día 44.md",
+    "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 5/Clases/2026-09-16 Día 43.md",
+    "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 5/Clases/2026-09-11 Día 42.md",
+    "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 4/Clases/2026-09-04 Día 40.md",
+    "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 4/Clases/2026-09-02 Día 39.md",
     "04 - Otros/Imagenes/Pasted image 20261113014449.png",
     "04 - Otros/Imagenes/Pasted image 20261113014310.png",
     "04 - Otros/Imagenes/Pasted image 20261113013807.png",
@@ -237,23 +248,13 @@
     "04 - Otros/Imagenes/Pasted image 20261113013126.png",
     "04 - Otros/Imagenes/Pasted image 20261113012207.png",
     "04 - Otros/Imagenes/Pasted image 20261113011403.png",
-    "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 4/Clases/2026-09-04 Día 40.md",
-    "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 4/Clases/2026-09-02 Día 39.md",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 4/Clases/2026-08-28 Día 38.md",
     "04 - Otros/Imagenes/Pasted image 20261112000505.png",
     "04 - Otros/Imagenes/Pasted image 20261112000002.png",
     "04 - Otros/Imagenes/Pasted image 20261111234328.png",
-    "04 - Otros/Imagenes/Pasted image 20261111234038.png",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 4/Clases/2026-08-26 Día 37 Recuperación desastres (DRP).md",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 4/Clases/2026-08-21 Día 36 Llaves asimetricas y conexión ssh.md",
-    "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Autoevaluación Integral - Infraestructura y Cloud Computing.md",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 3/TP Obligatorio/TP 2 Módulo 2 y 3.md",
-    "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 5/Clases/2026-09-25 Día 46.md",
-    "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 5/Clases/2026-09-23 Día 45.md",
-    "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 5/Clases/2026-09-18 Día 44.md",
-    "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 5/Clases/2026-09-16 Día 43.md",
-    "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 5/Clases/2026-09-11 Día 42.md",
-    "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 5/Clases/2026-09-09 Día 41.md",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 4/Clases/Sin título.md",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 5/Clases",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 5",
@@ -267,8 +268,6 @@
     "04 - Otros/Plantillas/Examen Corto Plantilla.md",
     "02 - Cursos y Certificaciones/Competición HPC Carla2026/Martes 22 de septiembre - Competición.md",
     "02 - Cursos y Certificaciones/Curso Cisco Conceptos básicos de redes/Examen Final",
-    "02 - Cursos y Certificaciones/Competición HPC Carla2026/Pasos de HPC de prueba.md",
-    "02 - Cursos y Certificaciones/Competición HPC Carla2026/Pasos de HPC Competencia.md",
     "02 - Cursos y Certificaciones/Curso Cisco Conceptos básicos de redes/Módulo 4",
     "02 - Cursos y Certificaciones/Curso Cisco Conceptos básicos de redes/Módulo 3",
     "02 - Cursos y Certificaciones/Curso Cisco Conceptos básicos de redes/Módulo 2",
