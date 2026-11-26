@@ -9,15 +9,10 @@ Planear como irnos a la nube. Lo primero que uno pensaría sería plantear lo qu
 
 Para esto se busca al empleado con perfil FinOps, que es la persona que tiene que velar por la parte financiera operativamente hablando, evaluando costos y beneficios de usar distintas arquitecturas como puede ser la nube.
 
-# Práctica: sawkl
-### Preparación
+# Fundamentos El riesgo vs El éxito
 
-1. sdssdf:
-	sdsld
 
----
-# Guía del Profesor
-
+# 12 min
   
 ---
 
