@@ -98,7 +98,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "2c47654ff3f8d557",
@@ -229,6 +230,7 @@
   },
   "active": "a465d003b86801f6",
   "lastOpenFiles": [
+    "04 - Otros/Imagenes/Pasted image 20261126020442.png",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 5/Clases/2026-09-11 Día 42.md",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 4/Clases/2026-09-04 Día 40 Seguridad en Capas.md",
     "02 - Cursos y Certificaciones/Curso Arquitectura de Cloud/Módulo 4/Clases/2026-09-02 Día 39 Seguridad en Capas.md",
