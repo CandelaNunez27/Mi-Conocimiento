@@ -7,7 +7,7 @@ teoria
 
 Planear como irnos a la nube. Lo primero que uno pensaría sería plantear lo que tengo como on-price tratar de copiarlo en la nube, aunque no sería lo más eficiente a largo plazo. Luego sería más eficaz desglosarlo por servicios, con docker o clusters o kubernetes. 
 
-Para esto se busca al empledo con perfil FinOps, que es la persona que tiene que velar por la parte financiera operativamente hablando, evaluando costos y beneficios de usar distintas arquitecturas como puede ser la nube.
+Para esto se busca al empleado con perfil FinOps, que es la persona que tiene que velar por la parte financiera operativamente hablando, evaluando costos y beneficios de usar distintas arquitecturas como puede ser la nube.
 
 # Práctica: sawkl
 ### Preparación
