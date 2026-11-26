@@ -1,5 +1,5 @@
-teoria Cloud Financial Mgmt (FinOps)
-# Teoría: sawkp
+teoria 
+# Teoría: Cloud Financial Mgmt (FinOps)
 
 # Fundamentos sdjaksl
 

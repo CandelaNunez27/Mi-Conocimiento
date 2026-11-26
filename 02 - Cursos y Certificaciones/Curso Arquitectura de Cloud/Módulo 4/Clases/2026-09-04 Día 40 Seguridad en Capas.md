@@ -1,5 +1,5 @@
 
-# Práctica: sawkl
+# Práctica: 
 ### Preparación
 
 1. Antes:
